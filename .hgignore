@@ -1,0 +1,8 @@
+.*\.aux
+.*\.pdf
+.*\.nav
+.*\.out
+.*\.snm
+.*\.toc
+.*\.log
+hg_version.txt

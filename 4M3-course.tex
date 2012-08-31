@@ -1,0 +1,45 @@
+\documentclass[handout, 11pt]{beamer}
+%\documentclass[11pt]{beamer}
+
+%\begin{exampleblock}{Title here}
+%	\centering{Text here}
+%\end{exampleblock}
+% \tiny\scriptsize\footnotesize\small\normalsize\large\Large\LARGE\huge\Huge
+
+\input{preamble.tex}
+
+\newdateformat{mydate}{\THEYEAR} % \twodigit{\THEDAY}-\twodigit{\THEMONTH}-\THEYEAR
+\mydate
+\title[]{\large Separation Processes}
+\subtitle[]{ChE 4M3}
+\author[]{}
+\institute[]{}
+\date[]{\copyright~ Kevin Dunn, \today \\ \vspace{1cm}{\footnotesize {\tt kevin.dunn@mcmaster.ca}\\ http://learnche.mcmaster.ca\\ \vspace{1cm}}
+
+{\footnotesize Revision: \hgversion (\monthname~\THEYEAR)} %\twodigit{\THEDAY}-\twodigit{\THEMONTH}-
+}
+
+\global\let\hgversion
+
+\ifeof18
+	\newcommand{\hgversion}{Unknown version}
+\else
+    % Windows users: download http://en.wikipedia.org/wiki/UnxUtils to get "grep" and "cut"
+	\immediate\write18{hg log -l1|grep changeset| cut -b 11-21>hg_version.txt}
+	\immediate\openin 10=hg_version.txt
+	\immediate\read 10 to \localline
+	\global\let\hgversion\localline
+	\closein10\relax
+	% http://stackoverflow.com/questions/2671079/how-can-i-save-shell-output-to-a-variable-in-latex
+	% http://stackoverflow.com/questions/2485651/print-current-mercurial-revision-hash
+	% http://tex.stackexchange.com/questions/16790/write18-capturing-shell-script-output-as-command-variable
+\fi
+
+\begin{document}
+	
+\begin{frame} \titlepage \end{frame}
+
+\input{\jobname}
+
+\end{document}
+

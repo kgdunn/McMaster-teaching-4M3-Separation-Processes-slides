@@ -1,0 +1,84 @@
+\usepackage[latin1]{inputenc}  % allows direct input of Unicode characters
+\usepackage{amsmath,amssymb,amsfonts,euscript,mathrsfs,wasysym,textcomp}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{multimedia}
+\usepackage{fancybox}
+\usepackage{psfrag}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{datetime} % For better date/time display
+\usepackage{comment}  % To block out parts of the notes
+%\usepackage{rotating} % Rotated text
+
+\usepackage{etoolbox}  % For selective compiling: figure sources might be on different machines
+%\providetoggle{instructor}
+%\providetoggle{student}
+\providetoggle{unixmac}
+%\settoggle{instructor}{true}    %\iftoggle{instructor}{}{}
+%\settoggle{student}{false}      %\iftoggle{student}{}{}
+\settoggle{unixmac}{true}
+\iftoggle{unixmac}
+{
+	\newcommand{\imagedir}{/Users/kevindunn/Sync/Figures}
+}{
+	\newcommand{\imagedir}{C:/Figures}
+}
+
+\usetheme{default} 
+\setbeamertemplate{navigation symbols}{}          % suppress all navigation symbols
+\setbeamertemplate{blocks}[rounded][shadow=true]  % use rounded blocks (boxes), with shadows
+
+\definecolor{todoGreen}{rgb}{0.0, 0.9, 0.0}
+\definecolor{myGreen}{rgb}{0.,0.4,0.}
+\definecolor{myOrange}{rgb}{1.,0.5,0.}
+\definecolor{myBlue}{rgb}{0.0,0.1,0.9}
+\definecolor{myRed}{rgb}{1.0,0.0,0.0}
+\definecolor{myLightGrey}{rgb}{0.8,0.8,0.8}
+\definecolor{Brown}{cmyk}{0,0.81,1,0.60}
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+
+
+
+% Show page numbers and dates on slides
+\setbeamertemplate{footline}{\begin{beamercolorbox}[right]{section in head/foot}{\color{myLightGrey}{\copyright Kevin Dunn, \today}} ~~~ \vskip5pt \end{beamercolorbox}}
+
+\setbeamercovered{transparent} 
+
+\hypersetup{colorlinks        = true,    
+ 			linkcolor         = blue,    
+}
+% 			linkbordercolor   = {1 0 0},    
+% 			urlcolor          = cyan,    
+% 			bookmarks         = {true,},    
+% 			bookmarksopen     = {true,},    
+% 			bookmarksnumbered = {false,},    
+% 			pdftitle          = {Kevin Dunn},
+% 			pdfsubject        = {Kevin Dunn},
+% 			pdfauthor         = {Kevin Dunn},
+% 			pdfproducer       = {LaTeX, wiki2beamer, beamer, BeamerPDF},    
+% 			pdfkeywords       = http://learnche.mcmaster.ca/,
+% 		}
+\usepackage{pgfpages}
+
+\makeatletter
+\def\hlinewd#1{%
+\noalign{\ifnum0=`}\fi\hrule \@height #1 %
+\futurelet\reserved@a\@xhline}
+\makeatother
+
+% Some definitions
+\newcommand{\todo}[1]{{\center{\color{todoGreen} #1}}}
+\newcommand{\q}{{\textbf{Q}}}
+\newcommand{\adv}{{\small {\color{Brown} (advanced)}}}
+\newcommand{\extra}{{\small {\color{Brown} (extra)}}}
+\newcommand{\lit}[1]{\href{http://literature.connectmv.com/item/#1}{http://literature.connectmv.com/item/#1}}
+\newcommand{\lititem}[2]{\href{http://literature.connectmv.com/item/#1}{#2 {\tiny (http://literature.connectmv.com/item/#1)}}}
+\newcommand{\liturl}[2]{\href{#1}{#2 {\tiny ~(#1)}}}
+
+
+
+%\newcommand{\transp}[1]{\ensuremath{{#1}^\textnormal{\textsf{T}}}}  % transpose
+%\newcommand{\RR}{\textnormal{\textsf{I}\!\textsf{R}}}  % Real number
+%\newcommand{\En}[1]{\ensuremath{\RR^{#1}}}             % Real number raised to a power
