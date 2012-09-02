@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>documents</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Makefile</string>
+			<key>lastUsed</key>
+			<date>2012-08-31T18:14:27Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>4M3-course.tex</string>
+			<key>lastUsed</key>
+			<date>2012-08-31T18:14:25Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>preamble.tex</string>
+			<key>lastUsed</key>
+			<date>2012-08-31T18:14:26Z</date>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>classes</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>sourceDirectory</key>
+			<string>classes</string>
+		</dict>
+		<dict>
+			<key>expanded</key>
+			<true/>
+			<key>name</key>
+			<string>slides</string>
+			<key>regexFolderFilter</key>
+			<string>!.*/(\.[^/]*|CVS|_darcs|_MTN|\{arch\}|blib|.*~\.nib|.*\.(framework|app|pbproj|pbxproj|xcode(proj)?|bundle))$</string>
+			<key>sourceDirectory</key>
+			<string>slides</string>
+		</dict>
+	</array>
+	<key>fileHierarchyDrawerWidth</key>
+	<integer>200</integer>
+	<key>metaData</key>
+	<dict/>
+	<key>showFileHierarchyDrawer</key>
+	<true/>
+	<key>windowFrame</key>
+	<string>{{1650, -1020}, {870, 1920}}</string>
+</dict>
+</plist>
