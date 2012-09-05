@@ -20,8 +20,9 @@ all: clean
 $(CLASSES): %:
     # Runs PDF latex on the main file, sending in jobname that is used in 
     # $(MAIN).tex to \input{} the correct class file
-	pdflatex --shell-escape --jobname=$(SUBDIR)2012-class-$* $(MAIN).tex  
-    #open $(SUBDIR)2011-class-$*.pdf
+	pdflatex --shell-escape --jobname=$(SUBDIR)2012-class-$* $(MAIN).tex;
+    
+	open $(SUBDIR)2012-class-$*.pdf
 
 clean:  
     # Windows requires one wildcard entry per line, unfortunately
