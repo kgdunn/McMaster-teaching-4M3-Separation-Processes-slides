@@ -1,5 +1,13 @@
 %!TEX root = ../4M3-course.tex
 
+\begin{frame}\frametitle{Last class (06 September 2012)}
+	\begin{itemize}
+		\item	We covered the admin issues
+		\item	Grading
+		\item	And in particular what is appropriate group work
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Overview of Separation Processes}
 	
 	\begin{itemize}
@@ -12,11 +20,42 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Why separate?}
+	\begin{itemize}
+		\item	Can't beat Nature: ``Second Law of Thermodynamics''
+			\begin{itemize}
+				\item	salt left in water
+				\item	$\text{CO}_2$ pumped into the atmosphere
+				\item	pollutants dumped into water
+				\item	and even the kitchen sink
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{How to separate salts from water}
+	\begin{itemize}		
+		\item	\iftoggle{instructor}{\href{http://en.wikipedia.org/wiki/Electrodialysis}{electrodialysis}}{\href{http://en.wikipedia.org/wiki/Electrodialysis}{electrodialysis}}
+		\item	\iftoggle{instructor}{\href{http://en.wikipedia.org/wiki/Electrodeionization}{electrodeionization}}{\href{http://en.wikipedia.org/wiki/Electrodeionization}{electrodeionization}}
+		\item	\iftoggle{instructor}{evaporation through heating with condensation}{}
+		\item	\iftoggle{instructor}{evaporation under vacuum}{}
+		\item	\iftoggle{instructor}{freezing to form ice crystals}{}
+		\item	\iftoggle{instructor}{reverse osmosis}{}
+		\item	\iftoggle{instructor}{ion exchange}{}
+		\item	\iftoggle{instructor}{apply pressure and force it through a membrane that delays salts}{}
+	\end{itemize}
+	Reference: \seefull{King, p 16}
+	\vspace{12pt}
+	
+	Usually there are multiple ways to achieve a required separation.
+\end{frame}
+
 \begin{frame}\frametitle{Why study separation processes?}
 	\begin{itemize}
-		\item	50\% to 90\% of capital expense on most flowsheets
-		\item	60 to 100\% of the ongoing operating costs in chemical plants
-		\item	\todo{See: King, Treybal, Seader intros}
+		\item	50\% to 90\% of capital investment on petroleum and other chemical-reaction based flowsheets \see{King, p 15}
+		\begin{itemize}
+			\item	Expense often in proportion to the level of purity (called the separation factor) \see{Treybal, p 2}
+		\end{itemize}
+		\item	60 to 100\% of the ongoing operating costs in chemical plants  % Reference for this? Uhlmann overview PDF?
 		\item	Some important problems facing (the global) ``us'' are \textbf{separation problems}:
 		\begin{itemize}
 			\item	carbon capture and sequestration/storage (CCS) ... don't forget about methane
@@ -41,9 +80,9 @@
 	Separation processes at home:
 	\begin{itemize}
 		\item	{\color{myGreen}{screening}}: sieve to strain water from pasta
-		\item	{\color{myGreen}{absorption}}: washing dishes/hands (fat dissolves into non-polar branch)
+		\item	{\color{myGreen}{absorption}}: washing dishes/hands {\scriptsize (fat dissolves into non-polar branch)}
 		\item	{\color{myGreen}{liquid/liquid extraction}}: soak spices in oil to extract flavour 
-		\item	\iftoggle{instructor}{\href{https://www.youtube.com/watch?v=uQTGKLbh9X4}{{\color{myGreen}{cyclone:}} vacuum cleaner}}{\href{https://www.youtube.com/watch?v=uQTGKLbh9X4}{cyclone:}}
+		\item	\iftoggle{instructor}{\href{https://www.youtube.com/watch?v=QpXQpRYxUCY.mp4}{{\color{myGreen}{cyclone:}} vacuum cleaner}}{\href{https://www.youtube.com/watch?v=QpXQpRYxUCY.mp4}{cyclone:}}
 		\item	\iftoggle{instructor}{{\color{myGreen}{filtering}}: vacuum cleaner; furnace filter}{{\color{myGreen}{filter}}:}		
 		\item	\iftoggle{instructor}{{\color{myGreen}{leaching}}: coffee/espresso maker}{{\color{myGreen}{leaching}}:} % See Seader-3rd,p653
 		\item	\iftoggle{instructor}{{\color{myGreen}{leaching}}: making tea}{{\color{myGreen}{leaching}}:}
@@ -61,7 +100,7 @@
 		\item	lungs: release of $\text{CO}_2$ from blood
 		\item	liver: breaks down toxins, excreted into bile
 		\item	gallbladder: concentrates bile
-		\item	intestines: absorbed nutrients
+		\item	intestines: absorb nutrients
 		\item	spleen: removed old red blood cells
 		\item	lymph nodes: filter foreign particles (e.g. cancers)
 	\end{itemize}
@@ -87,9 +126,29 @@
 	\emph{Source}: C.J. King, Separation Processes
 \end{frame}
 
+\begin{frame}\frametitle{Topics that you want to cover}
+	Based on the class activity yesterday, from highest to lowest:
+	\begin{itemize}
+		\item	Reverse osmosis
+		\item	Membranes, including (hemo)dialysis and pervaporation
+		\item	Distillation
+		\item	Centrifuges
+		\item	Cyclones
+		\item	Filtration (various types: regular, ultra-, nano-)
+		\item	Juicing (has relationship to bioseparation steps)
+		\item	Ion-exchange
+		\item	Crystallization
+		\item	Chromatography
+		\item	Electrophoresis
+		\item	Zeolites
+		\item	Column-based operations: stripping, absorption, packed beds
+		\item	Interesting: petro fracking, hydro-fracking, winnowing, demisters 
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Current plan for 4M3 in 2012}
 	\begin{center}
-		\todo{Mind map here}
+		\includegraphics[width=\textwidth]{\imagedir/separations/overview-class/Separation-Processes-Mindmap.png}
 	\end{center}
 \end{frame}
 
@@ -97,6 +156,7 @@
 	\begin{itemize}
 		\item	Many of the topics we will cover are part of a pure bioseparations course
 		\item	Often called ``downstream'' processing in the bio literature
+		\item	Only difference: they are operated under ``bio-compatible'' conditions: $T$, $P$, pH, aqueous media
 		\begin{itemize}
 			\item	i.e. all unit operations downstream of the bioreactors
 		\end{itemize}
@@ -120,13 +180,13 @@
 \begin{frame}\frametitle{How this course is structured}
 	\begin{itemize}
 		\item	We aim to consider a variety of separation systems
-		\item	Solids, liquids and gases
+		\item	Solids and (liquids and gases) = fluids
 		\item	Cover unit operations that rely on:
 		\begin{itemize}
 			\item	mechanical techniques to separate
 			\item	mass transfer
-			\item	heat transfer
 			\item	phase creation or addition
+			\item	heat transfer
 		\end{itemize}
 		\item	For each unit operation we consider
 		\begin{itemize}
@@ -140,11 +200,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Topics}
-	Separating agent: MSA and ESA
-\end{frame}
-
-\begin{frame}\frametitle{Separating agents}	
+\begin{frame}\frametitle{Separating agents: MSA and ESA}	
 	\begin{exampleblock}
 		{A material, force, or energy source applied to the feed for separation }
 	\end{exampleblock}
@@ -154,6 +210,7 @@
 	\begin{itemize}
 		\item	heat
 		\item	pressure
+		\pause
 		\item	\iftoggle{instructor}{vacuum}{}
 		\item	\iftoggle{instructor}{membrane}{}
 		\item	\iftoggle{instructor}{filter media}{}
@@ -167,11 +224,11 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Tutorial question}
-	* classification matrix
-	
-	
-	
+\begin{frame}\frametitle{Tutorial question: another way of looking at separations}
+	Fill in various separation processes in these 9 rectangles:
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/overview-class/separation-matrix.png}
+	\end{center}
 \end{frame}
 
 

@@ -3,20 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>slides/overview.tex</string>
+	<string>Makefile</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>Makefile</string>
 			<key>lastUsed</key>
-			<date>2012-09-05T20:51:41Z</date>
+			<date>2012-09-06T13:31:16Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>4M3-course.tex</string>
 			<key>lastUsed</key>
-			<date>2012-09-05T22:30:31Z</date>
+			<date>2012-09-06T13:31:16Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -25,6 +25,8 @@
 			<date>2012-09-05T20:09:38Z</date>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>classes</string>
 			<key>regexFolderFilter</key>
@@ -52,9 +54,23 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>8</integer>
+				<integer>28</integer>
 				<key>line</key>
-				<integer>22</integer>
+				<integer>1</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>Makefile</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>24</integer>
+				<key>line</key>
+				<integer>24</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -66,19 +82,20 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>32</integer>
 				<key>line</key>
-				<integer>145</integer>
+				<integer>10</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>117</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>slides/overview.tex</string>
+		<string>Makefile</string>
 		<string>4M3-course.tex</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>

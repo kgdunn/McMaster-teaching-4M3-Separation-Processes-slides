@@ -16,7 +16,7 @@
 \providetoggle{instructor}
 %\providetoggle{student}
 \providetoggle{unixmac}
-\settoggle{instructor}{true}    %\iftoggle{instructor}{}{}
+\settoggle{instructor}{false}    %\iftoggle{instructor}{}{}
 %\settoggle{student}{false}      %\iftoggle{student}{}{}
 \settoggle{unixmac}{true}
 \iftoggle{unixmac}
@@ -76,3 +76,5 @@
 \newcommand{\lititem}[2]{\href{http://literature.connectmv.com/item/#1}{#2 {\tiny (http://literature.connectmv.com/item/#1)}}}
 \newcommand{\liturl}[2]{\href{#1}{#2 {\tiny ~(#1)}}}
 \newcommand{\micron}{$\mu $m}
+\newcommand{\see}[1]{{\tiny [{\color{myBlue}{#1}}]}}
+\newcommand{\seefull}[1]{{\color{myBlue}{#1}}}
