@@ -61,38 +61,23 @@
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>slides/admin.tex</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>66</integer>
-				<key>line</key>
-				<integer>195</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>182</integer>
-		</dict>
 		<key>slides/overview.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>116</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>136</integer>
+				<integer>145</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>91</integer>
+			<integer>117</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>slides/admin.tex</string>
 		<string>slides/overview.tex</string>
 		<string>4M3-course.tex</string>
 	</array>
