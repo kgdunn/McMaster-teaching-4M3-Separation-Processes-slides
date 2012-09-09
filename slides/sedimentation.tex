@@ -1,3 +1,24 @@
+\begin{comment}
+
+	/Users/kevindunn/Sync/Figures/examples/waste-water-treatment/flickr-4578619015_895f8dabbb_o-CC-BY-NC-SA-2.jpg
+
+	See: http://www.flickr.com/photos/sawater/6434889743/  
+
+	Watch video: http://www.youtube.com/watch?v=gVeW1rr8GEI&feature=related
+
+	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
+
+	Flooculation: http://www.youtube.com/watch?v=M2gRyYR482A&feature=related
+
+	MIT video on water cleaning: http://www.youtube.com/watch?v=5uuQ77vAV_U&feature=related
+
+	Lab video on sedimentation: http://www.youtube.com/watch?v=E9rHSLUr3PU&feature=related
+
+References 
+* Svarovsky: also see their chapter on filtration vs sedimentation
+* 
+
+
 In wastewater treatment: Perry's section 22.5.6
 
 Gravity Sedimentation Slowly settling particles are removed with gravity sedimentation tanks. For the most part, these tanks are designed on the basis of retention time, surface overflow rate, and minimum depth. A sedimentation tank can be rectangular or circular. The important factor affecting its removal efficiency is the hydraulic flow pattern through the tank. The energy contained in the incoming-wastewater flow must be dissipated before the solids can settle. The wastewater flow must be distributed properly through the sedimentation volume for maximum settling efficiency. After the solids have settled, the settled effluent should be collected without creating serious hydraulic currents that could adversely affect the sedimentation process. Effluent weirs are placed at the end of rectangular sedimentation tanks and around the periphery of circular sedimentation tanks to ensure uniform flow out of the tanks. Once the solids have settled, they must be removed from the sedimentation-tank floor by scraping and hydraulic flow. Conventional sedimentation tanks have sludge hoppers to collect the concentrated sludge and to prevent removal of excess volumes of water with the settled solids. Cross-sectional diagrams of conventional sedimentation tanks are shown in Figs. 22-32 and 22-33.
@@ -14,3 +35,197 @@ The surface overflow rate (SOR) for primary sedimentation is normally held close
 And Perry's section 22.5.7
 
 edimentation Tanks These tanks are an integral part of any activated-sludge system. It is essential to separate the suspended solids from the treated liquid if a high-quality effluent is to be produced. Circular sedimentation tanks with various types of hydraulic sludge collectors have become the standard secondary sedimentation system. Square tanks have been used with commonwall construction for compact design with multiple tanks. Most secondary sedimentation tanks use center-feed inlets and peripheral-weir outlets. Recently, efforts have been made to employ peripheral inlets with submerged-orifice flow controllers and either center-weir outlets or peripheral-weir outlets adjacent to the peripheral-inlet channel.
+
+\end{comment}
+
+\begin{frame}\frametitle{References}
+	\begin{enumerate}
+		\item	Schweitzer
+		\item	Svarovsky 4th ed, Ch 5 and Ch 18
+		\item	Geankoplis
+		\item	Seader, Henly and Roper
+		\item	Perry's
+		
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{What is sedimentation}
+	Class demonstration with
+	\begin{itemize}
+		\item	concrete powder in water
+		\item	drywall compound (calcium carbonate and other particles)
+	\end{itemize}
+
+	\vspace{12pt}
+	DIY: add 2 to 3 tablespoons of vinegar to a glass of milk and stir	
+\end{frame}
+
+\begin{frame}\frametitle{Definition}
+	
+	\textbf{Sedimentation}
+	
+	Removal of suspended solid particles from a fluid (\textbf{liquid} or gas) stream by gravitational settling.
+	
+	\vspace{12pt}
+	
+	Most common to use \textbf{liquid} rather than gas phase.
+	
+	\vspace{12pt}
+	
+	Thickening: increase the solids concentration
+	
+	Clarification: remove solids from a relatively dilute stream
+	
+\end{frame}
+
+\begin{frame}\frametitle{Where is it applied?}
+	%\begin{itemize}
+		%\item	Descriptions and discussions of gravity sedimentation in textbooks (and this one is no exception) are usually dominated by water treatment and mineral processing applications.One must not loses sight, however, of the many chemical, pharmaceutical, nuclear, petrochemical or petroleum applications where gravity settling is used to resolve emulsions or to separate other liquid±liquid dispersions. As the density difference in such cases is
+	%\end{itemize}
+	
+\end{frame}
+
+\begin{frame}\frametitle{List any factors that influence sedimentation process}
+	\begin{itemize}
+		\item	\iftoggle{instructor}{viscosity of fluid}{}
+		\item	\iftoggle{instructor}{particle concentration (hindered)}{}
+		\item	\iftoggle{instructor}{diameter of the vessel: NO}{}
+		\item	\iftoggle{instructor}{mass of particle: NO}{}
+		\item	\iftoggle{instructor}{diameter of the vessel: NO}{}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Topics we will cover}
+	\todo{Mindmap here}
+	\begin{itemize}
+		\item	thickener
+		\item	clarifier
+		\item	Stokes' law
+		\item	flocculation		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Video of sedimentation}
+	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
+\end{frame}
+
+\begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}
+	
+	Forces acting:
+	\begin{itemize}
+		\item	Drag
+		\item	Buoyancy
+		\item	Gravity	
+		\item	Brownian 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Stokes' law}
+	
+	Force balance:
+	
+	\[
+		V_m = \frac{\left( \rho_S - \rho_F \right) g D^2}{18 \mu_B}
+	\]
+	
+	
+	\begin{itemize}
+		\item	$V_m$ = terminal velocity [m/s]
+		\item	$\rho_S$ %- \rho_F \right) g D^2}{18 \mu_B}
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}\frametitle{Settler design}
+	\begin{enumerate}
+		\item	What width and depth should the settler be?
+		\item	How long should the particles be in the settler? Does residence time matter?
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Settler depth}
+	\begin{itemize}
+		\item	Does not affect the settler's performance: only residence time
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}\frametitle{How can we accelerate settling}
+	\begin{itemize}
+		\item	raking or stirring
+		\item	flocculation
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{How well have we done?}
+	\begin{itemize}
+		\item	separation efficiency
+		\item	mass fraction of solids in overflow
+		\item	dryness/moisture of solid fraction
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Type 1: unhindered settling}
+	Settling is at a linear rate.
+	
+	\vspace{12pt}
+	
+	\textbf{Example}: a sample of material was settled in a graduated lab cylinder 300mm tall. The interface dropped from 500mL to 215mL on the scale during a 4 minute period. What diameter clarifier would be required to treat a waste stream of 145 L per minute if it enters through a pipe at a velocity of 330 mm per minute? 	
+	Over-design the unit by a factor of 2.
+	
+	
+	
+	hat is the cross sectional area required for a settler where a sample of material
+	
+	Settler example in Geankoplis with residence time 
+	
+	
+\end{frame}
+
+\begin{frame}\frametitle{Sludge line}
+	Once you have the settling curve for one height, you have it for other heights also, given the same concentration
+	See figure in your red book; UCT notes?
+	
+\end{frame}
+
+\begin{frame}\frametitle{Hindered settling}
+	Particles will not settle as perfect spheres at their terminal velocity under a variety of conditions:
+	\begin{itemize}
+		\item	if they are hindered by other particles
+		\item	they are non-spherical
+		\item	they are in a dilute suspension; concentrated particles form clusters that settle faster
+		\item	small particles are dragged in the wake of larger
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Cost}
+	Svarovsky 3rd, p179: cost = $a x^b$
+	\begin{itemize}
+		\item	$x$ = tank diameter between 10 and 225 ft
+		\item	$a=147$ and $b=1.38$ for thickeners
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Further self-study}
+	\begin{itemize}
+		\item	Deep cone thickener
+		\item	Lamella (inclined plate or tubes): often for gas-solid applications 
+				\vspace{12pt}
+				\todo{Link in YouTube video} %AzGH6ObX_Uk or FLmzCkFa9VA
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Flocculation}
+	MIT video
+\end{frame}
+
+\begin{frame}\frametitle{CCD}
+	
+\end{frame}
+
+\begin{frame}\frametitle{Other references to check still}
+	* Ind Eng Chem, v46, 1164-1172, 1954
+	* Review of sedimentation theory, Chem Eng, v66, p 75-80, 1959
+	* Fitch, Current theory and thickener design, Ind Eng Chem, v 57, p 18, 1965
+	
+\end{frame}
