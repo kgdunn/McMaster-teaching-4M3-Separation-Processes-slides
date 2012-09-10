@@ -109,15 +109,67 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
 \end{frame}
 
-\begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}
+\begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}	
+	Forces acting on a spherical particle in a fluid:
+	\begin{enumerate}
+		\item	\textbf{Gravity}: a constant downward force = $mg = V_p \rho_p g$		
+		\item	\textbf{Buoyancy}: proportional to volume displaced = $V_p \rho_f g$
+		\item	\textbf{Drag}: opposes the particle's motion (next slide)
+		\item	\textbf{Particle-particle interactions} and Brownian motion: assumed zero for now
+	\end{enumerate}	
+	\[
+		\begin{array}{rcl}
+			V_p		&=& \text{particle's volume} = \displaystyle \frac{\pi D_p^3}{6} ~[\text{m}^3]\\
+			\rho_p 	&=& \text{particle density}~[\text{kg.m}^{-3}]\\
+			\rho_f  &=& \text{density of fluid}~[\text{kg.m}^{-3}]\\
+			\mu_f   &=& \text{fluid's viscosity}~[\text{Pa.s}]\\
+			g		&=& \text{gravitational constant} = 9.81~[\text{m.s}^{-2}] \\
+			D_p 	&=& \text{particle's diameter}~[\text{m}]
+		\end{array}
+	\]
+\end{frame}
+
+\begin{frame}\frametitle{Drag force}
+	\[
+	 	F_\text{drag} = C_D A \frac{\rho_f v^2}{2}
+	\]
+	where
+	\[
+		\begin{array}{rcl}
+			v	&=& \text{relative velocity between the particle and the fluid}\\
+			A	&=& \text{projected area of particle in direction of travel} \\
+			C_D	&=& \text{drag coefficient (it's assumed constant!)}
+		\end{array}
+	\]
+\end{frame}
+
+\begin{frame}\frametitle{Estimating the drag coefficient}
+	It's a function of Reynolds number = Re $= \displaystyle \frac{D_p v \rho_f}{\mu_f}$ \\
+	\see{Richardson and Barker, p 150-153}
+	\begin{enumerate}
+		\item	If Re $< 0.2$
+				\[
+					C_D = \frac{24}{Re}
+				\]
+				
+		\item	If $0.2 < \text{Re} < \text{1000}$
+				\[
+					C_D = \frac{24}{Re}\left(1 + 0.15 Re^{0.687} \right)
+				\]
+		\item	If $\text{1000} < \text{Re} < 2\times10^5 $
+				\[
+					C_D = 0.44
+				\]
+		\item	If $\text{Re} > 2\times10^5 $
+				\[
+					C_D = 0.10
+				\]			
+	\end{enumerate}
 	
-	Forces acting:
-	\begin{itemize}
-		\item	Drag
-		\item	Buoyancy
-		\item	Gravity	
-		\item	Brownian 
-	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Momentum balance (Newton's second law)}
+	$m\frac{dv}{dt} =  F_\text{gravity} - F_\text{buoyancy} - F_\text{drag}$
 \end{frame}
 
 \begin{frame}\frametitle{Stokes' law}
@@ -136,6 +188,14 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	
 \end{frame}
 
+\begin{frame}\frametitle{Sedimentation: lab data}
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
+	\end{center}
+	\see{Svarovsky, 3rd ed, p 135}
+\end{frame}
+
+
 \begin{frame}\frametitle{Settler design}
 	\begin{enumerate}
 		\item	What width and depth should the settler be?
@@ -148,6 +208,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 		\item	Does not affect the settler's performance: only residence time
 	\end{itemize}
 	
+	See figure 5.3 in Svarovsky4, p 170
 \end{frame}
 
 \begin{frame}\frametitle{How can we accelerate settling}
@@ -178,6 +239,8 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	hat is the cross sectional area required for a settler where a sample of material
 	
 	Settler example in Geankoplis with residence time 
+
+	Also see example in C+R v2, Example 5.1 , p265
 	
 	
 \end{frame}
