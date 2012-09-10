@@ -21,7 +21,7 @@ References
 
 In wastewater treatment: Perry's section 22.5.6
 
-Gravity Sedimentation Slowly settling particles are removed with gravity sedimentation tanks. For the most part, these tanks are designed on the basis of retention time, surface overflow rate, and minimum depth. A sedimentation tank can be rectangular or circular. The important factor affecting its removal efficiency is the hydraulic flow pattern through the tank. The energy contained in the incoming-wastewater flow must be dissipated before the solids can settle. The wastewater flow must be distributed properly through the sedimentation volume for maximum settling efficiency. After the solids have settled, the settled effluent should be collected without creating serious hydraulic currents that could adversely affect the sedimentation process. Effluent weirs are placed at the end of rectangular sedimentation tanks and around the periphery of circular sedimentation tanks to ensure uniform flow out of the tanks. Once the solids have settled, they must be removed from the sedimentation-tank floor by scraping and hydraulic flow. Conventional sedimentation tanks have sludge hoppers to collect the concentrated sludge and to prevent removal of excess volumes of water with the settled solids. Cross-sectional diagrams of conventional sedimentation tanks are shown in Figs. 22-32 and 22-33.
+Gravity Sedimentation Slowly settling particles are removed with gravity sedimentation tanks. For the most part,  A sedimentation tank can be rectangular or circular. The important factor affecting its removal efficiency is the hydraulic flow pattern through the tank. The energy contained in the incoming-wastewater flow must be dissipated before the solids can settle. The wastewater flow must be distributed properly through the sedimentation volume for maximum settling efficiency. After the solids have settled, the settled effluent should be collected without creating serious hydraulic currents that could adversely affect the sedimentation process. Effluent weirs are placed at the end of rectangular sedimentation tanks and around the periphery of circular sedimentation tanks to ensure uniform flow out of the tanks. Once the solids have settled, they must be removed from the sedimentation-tank floor by scraping and hydraulic flow. Conventional sedimentation tanks have sludge hoppers to collect the concentrated sludge and to prevent removal of excess volumes of water with the settled solids. Cross-sectional diagrams of conventional sedimentation tanks are shown in Figs. 22-32 and 22-33.
 
 Design criteria for gravity sedimentation tanks normally provide for 2-h retention based on average flow, with longer retention periods used for light solids or inert solids that do not change during their retention in the tank. Care should be taken that sedimentation time is not too long; otherwise, the solids will compact too densely and affect solids collection and removal. Organic solids generally will not compact to more than 5 to 10 percent. Inorganic solids will compact up to 20 or 30 percent. Centrifugal sludge pumps can handle solids up to 5 or 6 percent, while positive-displacement sludge pumps can handle solids up to 10 percent. With solids above 10 percent the sludge tends to lose fluid properties and must be handled as a semi-solid rather than a fluid. Circular sedimentation tanks have steel truss boxes with angled sludge scrapers on the lower side. As the sludge scrapers rotate, the solids are pushed toward the sludge hopper for removal on a continuous or semicontinuous basis. The rectangular sedimentation tanks employ chain-and-flight sludge collectors or rail-mounted sludge collectors. When floating solids can occur in primary sedimentation tanks, surface skimmers are mounted on the sludge scrapers so that the surface solids are removed at regular intervals.
 
@@ -60,33 +60,53 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	DIY: add 2 to 3 tablespoons of vinegar to a glass of milk and stir	
 \end{frame}
 
-\begin{frame}\frametitle{Definition}
+\begin{frame}\frametitle{Definitions}
 	
 	\textbf{Sedimentation}
-	
-	Removal of suspended solid particles from a fluid (\textbf{liquid} or gas) stream by gravitational settling.
-	
+	\begin{quote}	
+		Removal of suspended solid particles from a fluid (\textbf{liquid} or gas) stream by gravitational settling.
+	\end{quote}
+	Most common to use a \textbf{liquid} rather than gas phase.
+
 	\vspace{12pt}
+	Some semantics:
 	
-	Most common to use \textbf{liquid} rather than gas phase.
-	
+	\vspace{12pt}	
+	{\color{myGreen}{Thickening}}: generally aims to increase the solids to higher concentration; higher throughput processes
+
 	\vspace{12pt}
+	{\color{myGreen}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for coagulation of feed.
 	
-	Thickening: increase the solids concentration
-	
-	Clarification: remove solids from a relatively dilute stream
+	\seefull{Perry, 8ed, Ch18.5}
 	
 \end{frame}
 
-\begin{frame}\frametitle{Where is it applied?}
-	%\begin{itemize}
-		%\item	Descriptions and discussions of gravity sedimentation in textbooks (and this one is no exception) are usually dominated by water treatment and mineral processing applications.One must not loses sight, however, of the many chemical, pharmaceutical, nuclear, petrochemical or petroleum applications where gravity settling is used to resolve emulsions or to separate other liquid±liquid dispersions. As the density difference in such cases is
-	%\end{itemize}
+\begin{frame}\frametitle{Where is it applied?}	
+	Most commonly:
+	\begin{itemize}
+		\item	water treatment
+		\item	and mineral processing applications
+	\end{itemize}
 	
+	\vspace{12pt}
+	But also chemical, pharmaceutical, nuclear, petrochemical processes use gravity settling to resolve emulsions or other liquid-liquid dispersions. \see{Svarovsky}	
+\end{frame}
+
+\begin{frame}\frametitle{Topics we will cover}
+	\todo{Mindmap here}
+	\begin{itemize}
+		\item	factors that influence sedimentation
+		\item	designing a settler unit
+		\item	costs of building and operating a settler unit
+		\item	flocculation (coagulation)
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{List any factors that influence sedimentation process}
 	\begin{itemize}
+		\item	diameter of the particles
+		\pause
+		\item	\iftoggle{instructor}{relative density of particle vs fluid}{}
 		\item	\iftoggle{instructor}{viscosity of fluid}{}
 		\item	\iftoggle{instructor}{particle concentration (hindered)}{}
 		\item	\iftoggle{instructor}{diameter of the vessel: NO}{}
@@ -95,15 +115,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Topics we will cover}
-	\todo{Mindmap here}
-	\begin{itemize}
-		\item	thickener
-		\item	clarifier
-		\item	Stokes' law
-		\item	flocculation		
-	\end{itemize}
-\end{frame}
+
 
 \begin{frame}\frametitle{Video of sedimentation}
 	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
@@ -195,7 +207,6 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\see{Svarovsky, 3rd ed, p 135}
 \end{frame}
 
-
 \begin{frame}\frametitle{Settler design}
 	\begin{enumerate}
 		\item	What width and depth should the settler be?
@@ -205,15 +216,22 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 
 \begin{frame}\frametitle{Settler depth}
 	\begin{itemize}
-		\item	Does not affect the settler's performance: only residence time
+		\item	Does not affect the settler's performance: only residence time and terminal velocity of slowest particle are important
 	\end{itemize}
 	
-	See figure 5.3 in Svarovsky4, p 170
+	\[
+		\text{area} = \frac{Q_c}{V_m}
+	\]
+	
+	\todo{See figure 5.3 in Svarovsky4, p 170}
+	
+	\vspace{12pt}
+	These tanks are designed on the basis of retention time, surface overflow rate, and minimum depth. \see{Perry 8ed, }
 \end{frame}
 
 \begin{frame}\frametitle{How can we accelerate settling}
 	\begin{itemize}
-		\item	raking or stirring
+		\item	raking or stirring: creates free channels for particles to settle in
 		\item	flocculation
 	\end{itemize}
 \end{frame}
@@ -261,12 +279,48 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Cost}
+\begin{frame}\frametitle{Capital costs considerations}
 	Svarovsky 3rd, p179: cost = $a x^b$
 	\begin{itemize}
 		\item	$x$ = tank diameter between 10 and 225 ft
 		\item	$a=147$ and $b=1.38$ for thickeners
 	\end{itemize}
+	
+	\seefull{Perry, 8ed, section 18.6}
+	\begin{itemize}
+		\item	Installation costs will be at least 3 to 4 times the actual equipment costs.
+		\item	Equipment items must include:
+		\begin{itemize}
+			\item	rakes, drivehead and motors
+			\item	walkways and bridge (center pier) and railings
+			\item	pumps, piping, instrumentation and lift mechanisms
+			\item	overflow launder and feed 
+		\end{itemize}
+		Installation is affected by:
+		\begin{itemize}			
+			\item	site surveying
+			\item	site preparation and excavation, 
+			\item	reinforcing bar placement, 
+			\item	backfill			
+		\end{itemize}		
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Operating costs}
+	These are mostly insignificant
+	\begin{itemize}
+		\item	e.g. 60 m (200 ft) diameter thickener, torque rating = 1.0 MN.m: require $\sim$ 12 kW
+		\item	due to slow rotating speed: peripheral speed is about 9 m/min 
+		\item	implies low maintenance costs
+		\item	little attention from operators after start-up
+		\item	chemicals for flocculation (if required), frequently dwarfs all other operating costs \see{Perry, 8ed, Ch18.6}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Feed mechanisms}
+	to control turbulence
+	to mix in flocculants
+	to control entry velocity
 \end{frame}
 
 \begin{frame}\frametitle{Further self-study}
