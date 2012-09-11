@@ -105,7 +105,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 		\item	\iftoggle{instructor}{viscosity of fluid}{}
 		\item	\iftoggle{instructor}{particle concentration (hindered)}{}
 		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: diameter of the vessel}{}
-		\item	\iftoggle{instructor}{{\color{myRed}{no effect}} :mass of particle}{}
+		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: mass of particle}{}
 	\end{itemize}
 \end{frame}
 
@@ -131,7 +131,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 
 \begin{frame}\frametitle{Drag force}
 	\[
-	 	F_\text{drag} = C_D A \frac{\rho_f v^2}{2}
+	 	F_\text{drag} = C_D A_p \frac{\rho_f v^2}{2}
 	\]
 	where
 	\[
@@ -193,7 +193,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 
 \begin{frame}\frametitle{Stokes' law}
 	
-	Simplification of the above equation when Re $< 0.2$:
+	Simplification of the above equation when Re $< 1$:
 	
 	\[
 		v = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
@@ -231,7 +231,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\begin{itemize}
 		\item	if they are hindered by other particles
 		\item	they are non-spherical
-		\item	they are in a dilute suspension; concentrated particles form clusters that tend to settle faster
+		\item	concentrated feeds: particles form clusters that tend to settle faster
 		\item	concentrated feeds: modify the apparent density and viscosity of the fluid
 		\item	upward velocity of displaced fluids
 		\item	small particles are dragged in the wake of larger particles
