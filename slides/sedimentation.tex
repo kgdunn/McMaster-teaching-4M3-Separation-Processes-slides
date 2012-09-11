@@ -8,15 +8,11 @@
 
 	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
 
-	Flooculation: http://www.youtube.com/watch?v=M2gRyYR482A&feature=related
+	Flocculation: http://www.youtube.com/watch?v=M2gRyYR482A&feature=related
 
 	MIT video on water cleaning: http://www.youtube.com/watch?v=5uuQ77vAV_U&feature=related
 
 	Lab video on sedimentation: http://www.youtube.com/watch?v=E9rHSLUr3PU&feature=related
-
-References 
-* Svarovsky: also see their chapter on filtration vs sedimentation
-* 
 
 
 In wastewater treatment: Perry's section 22.5.6
@@ -38,17 +34,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 
 \end{comment}
 
-\begin{frame}\frametitle{References}
-	\begin{enumerate}
-		\item	Schweitzer
-		\item	Svarovsky 4th ed, Ch 5 and Ch 18
-		\item	Geankoplis
-		\item	Seader, Henly and Roper
-		\item	Perry's
-		
-	\end{enumerate}
-\end{frame}
-
+% 11 September 2012
 \begin{frame}\frametitle{What is sedimentation}
 	Class demonstration with
 	\begin{itemize}
@@ -60,8 +46,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	DIY: add 2 to 3 tablespoons of vinegar to a glass of milk and stir	
 \end{frame}
 
-\begin{frame}\frametitle{Definitions}
-	
+\begin{frame}\frametitle{Definitions}	
 	\textbf{Sedimentation}
 	\begin{quote}	
 		Removal of suspended solid particles from a fluid (\textbf{liquid} or gas) stream by gravitational settling.
@@ -77,8 +62,17 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\vspace{12pt}
 	{\color{myGreen}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for coagulation of feed.
 	
-	\seefull{Perry, 8ed, Ch18.5}
-	
+	\seefull{Perry, 8ed, Ch18.5}	
+\end{frame}
+
+\begin{frame}\frametitle{References for this section}
+	\begin{enumerate}
+		\item	Schweitzer: Handbook of Separation Techniques
+		\item	Svarovsky 4ed, Ch 5 and Ch 18
+		\item	Geankoplis: 3ed and 4ed, Chapter 14
+		\item	Perry's: 8ed, Chapter 18
+		\item	Richardson \emph{et al}.: Volume 2, Chapter 3 and 5		
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Where is it applied?}	
@@ -93,7 +87,6 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 \end{frame}
 
 \begin{frame}\frametitle{Topics we will cover}
-	\todo{Mindmap here}
 	\begin{itemize}
 		\item	factors that influence sedimentation
 		\item	designing a settler unit
@@ -106,19 +99,14 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\begin{itemize}
 		\item	diameter of the particles
 		\pause
+		\item	\iftoggle{instructor}{strength of gravitational field}{}
 		\item	\iftoggle{instructor}{relative density of particle vs fluid}{}
+		\item	\iftoggle{instructor}{density of fluid}{}
 		\item	\iftoggle{instructor}{viscosity of fluid}{}
 		\item	\iftoggle{instructor}{particle concentration (hindered)}{}
-		\item	\iftoggle{instructor}{diameter of the vessel: NO}{}
-		\item	\iftoggle{instructor}{mass of particle: NO}{}
-		\item	\iftoggle{instructor}{diameter of the vessel: NO}{}
+		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: diameter of the vessel}{}
+		\item	\iftoggle{instructor}{{\color{myRed}{no effect}} :mass of particle}{}
 	\end{itemize}
-\end{frame}
-
-
-
-\begin{frame}\frametitle{Video of sedimentation}
-	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
 \end{frame}
 
 \begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}	
@@ -148,9 +136,9 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	where
 	\[
 		\begin{array}{rcl}
-			v	&=& \text{relative velocity between the particle and the fluid}\\
-			A	&=& \text{projected area of particle in direction of travel} \\
-			C_D	&=& \text{drag coefficient (it's assumed constant!)}
+			v	&=& \text{relative velocity between the particle and the fluid}~[\text{m.s}^{-1}] \\
+			A_p &=& \text{projected area of particle in direction of travel}~[\text{m}^2] \\
+			C_D	&=& \text{drag coefficient (it's assumed constant!)}~[-]
 		\end{array}
 	\]
 \end{frame}
@@ -159,14 +147,14 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	It's a function of Reynolds number = Re $= \displaystyle \frac{D_p v \rho_f}{\mu_f}$ \\
 	\see{Richardson and Barker, p 150-153}
 	\begin{enumerate}
-		\item	If Re $< 0.2$
+		\item	If Re $< 1$
 				\[
-					C_D = \frac{24}{Re}
+					C_D = \frac{24}{\text{Re}}
 				\]
 				
-		\item	If $0.2 < \text{Re} < \text{1000}$
+		\item	If $1 < \text{Re} < \text{1000}$
 				\[
-					C_D = \frac{24}{Re}\left(1 + 0.15 Re^{0.687} \right)
+					C_D = \frac{24}{\text{Re}}\left(1 + 0.15 \text{Re}^{0.687} \right)
 				\]
 		\item	If $\text{1000} < \text{Re} < 2\times10^5 $
 				\[
@@ -176,29 +164,92 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 				\[
 					C_D = 0.10
 				\]			
-	\end{enumerate}
-	
+	\end{enumerate}	
 \end{frame}
 
-\begin{frame}\frametitle{Momentum balance (Newton's second law)}
-	$m\frac{dv}{dt} =  F_\text{gravity} - F_\text{buoyancy} - F_\text{drag}$
+\begin{frame}\frametitle{Drag coefficient as a function of Re}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/drag-coefficient-Reynolds-number-function.png}
+	\end{center}
+	\seefull{Geankoplis, 3rd p818, 4th p921}
+\end{frame}
+
+\begin{frame}\frametitle{Momentum balance (Newton's second law)}	
+	\[
+	\begin{array}{rcccccl}
+		\displaystyle m\frac{dv}{dt} &=&  F_\text{gravity} &-& F_\text{buoyancy} &-& F_\text{drag} = 0 \qquad \text{\color{myOrange}{at steady state}} \\		
+		\\
+		0 &=&  V_p \rho_p g &-& V_p \rho_f g &-& C_D A_p \displaystyle \frac{\rho_f v^2}{2} 
+	\end{array}
+	\]
+	Substitute $V_p = \displaystyle \frac{\pi D_p^3}{6}$ and $A_p = \displaystyle \frac{\pi D_p^2}{4}$ for spherical particles and solve for $v$:
+	
+	\begin{exampleblock}{Terminal velocity of an unhindered particle}
+		\[
+			v = \sqrt{\frac{4\left(\rho_p - \rho_f \right)g D_p}{3 C_D \rho_f}}
+		\]
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}\frametitle{Stokes' law}
 	
-	Force balance:
+	Simplification of the above equation when Re $< 0.2$:
 	
 	\[
-		V_m = \frac{\left( \rho_S - \rho_F \right) g D^2}{18 \mu_B}
-	\]
+		v = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
+	\]	
 	
+	\vspace{12pt}
+	\textbf{Confirm it for yourself}: \emph{hint}: use the solution for a quadratic equation $ax^2 + bx + c = 0$
+\end{frame}
+
+\begin{frame}\frametitle{Solving the general equation for $v$}
 	
+	$v = fn(C_D)$, but $C_D = fn(\text{Re}) = fn(v)$
+	
+	\begin{enumerate}
+		\item	Assume Re $< 1$ (Stokes' region); calculate $C_D$
+		\item	Solve for $v$
+		\item	Calculate Reynolds number, Re
+		\item	Was Reynolds number region assumption true? If so: stop. 
+		\item	If not, use new Re and recalculate $C_D$
+		\item	Repeat from step 2 to 5 until convergence		
+	\end{enumerate}
+	
+	\vspace{12pt}
+	Alternative approach shown in Geankoplis.	
+\end{frame}
+
+\begin{frame}\frametitle{Why is the terminal velocity so important?}
+	\begin{exampleblock}{Design criterion}
+		Terminal velocity of the slowest particle is our limiting design criterion
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}\frametitle{Hindered settling}
+	Particles will not settle as perfect spheres at their terminal velocity under a variety of conditions:
 	\begin{itemize}
-		\item	$V_m$ = terminal velocity [m/s]
-		\item	$\rho_S$ %- \rho_F \right) g D^2}{18 \mu_B}
+		\item	if they are hindered by other particles
+		\item	they are non-spherical
+		\item	they are in a dilute suspension; concentrated particles form clusters that tend to settle faster
+		\item	concentrated feeds: modify the apparent density and viscosity of the fluid
+		\item	upward velocity of displaced fluids
+		\item	small particles are dragged in the wake of larger particles
+		\item	ionized conditions can cause particle coagulation $\rightarrow$ larger diameters $\rightarrow$ faster settling
 	\end{itemize}
 	
+	\vspace{12pt}
+	Video: \href{http://www.youtube.com/watch?v=h8n3Nt4tPXU}{http://www.youtube.com/watch?v=h8n3Nt4tPXU}
+	
+	How to deal with this issue?
 \end{frame}
+
+\begin{frame}\frametitle{Video of sedimentation experiments}
+	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
+\end{frame}
+
+% 13 September 2012
+\begin{comment}
 
 \begin{frame}\frametitle{Sedimentation: lab data}
 	\begin{center}
@@ -226,7 +277,7 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\todo{See figure 5.3 in Svarovsky4, p 170}
 	
 	\vspace{12pt}
-	These tanks are designed on the basis of retention time, surface overflow rate, and minimum depth. \see{Perry 8ed, }
+	These tanks are designed on the basis of retention time, surface overflow rate, and minimum depth. \see{Perry 8ed, Ch22.5}
 \end{frame}
 
 \begin{frame}\frametitle{How can we accelerate settling}
@@ -259,24 +310,28 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	Settler example in Geankoplis with residence time 
 
 	Also see example in C+R v2, Example 5.1 , p265
+
+	Perry, Ch 22.5.6:  
+	%* provide for 2-h retention based on average flow (not too much longer else solids are too compact)
+	%* surface overflow rate (SOR) for primary sedimentation is normally held close to 40.74 m 3/(m 2 .day) [1000 gal/(ft 2·day)] for average flow rates, depending upon the solids characteristics. Lowering the SOR below 40.74 m 3/(m 2·day) does not produce improved effluent quality in proportion to the reduction in SOR. Generally, the minimum depth of sedimentation tanks is 3.0 m (10 ft), with circular sedimentation tanks having a minimum diameter of 6.0 m (20 ft) and rectangular sedimentation tanks having length-to-width ratios of 5:1. Chain-and-flight limitations generally keep the width of rectangular sedimentation tanks to increments of 6.0 m (20 ft) or less. While hydraulic overflow rates have been limited on the effluent weirs, operating experience has indicated that the recommended limit of 186 m 3/ (m.day) [15,000 gal/(ft·day)] is lower than necessary for good operation. A circular sedimentation tank with a single-edge weir provides adequate weir length and is easier to adjust than one with a double sided weir. More problems appear to be created from improper adjustment of the effluent weirs than from improper length.
+	
+	%Secondary units: Surface overflow rates have been slowly reduced from 33 m 3/(m 2·day) [800 gal/(ft 2·day)] to 24 m 3/(m 2·day) to 16 m 3/(m 2·day) [600 gal/(ft 2·day) to 400 gal/(ft 2·day)] and even to 12 m 3 (m 2·day) [300 gal/(ft 2·day)] in some instances, based on average raw-waste flows. 
 	
 	
+	Perry, Ch 22.5.8:  Loading rates on thickeners range from 50-122 kg/m 2/d (10-25 lb/ft 2/d) for primary sludge to 12-45 kg/m 2/d (2.5-9 lb/ft 2/d). Solids detention time is 0.5 days in summer to several days in winter.
 \end{frame}
 
-\begin{frame}\frametitle{Sludge line}
-	Once you have the settling curve for one height, you have it for other heights also, given the same concentration
-	See figure in your red book; UCT notes?
+\begin{frame}\frametitle{Sludge interface experiments}
 	
-\end{frame}
-
-\begin{frame}\frametitle{Hindered settling}
-	Particles will not settle as perfect spheres at their terminal velocity under a variety of conditions:
-	\begin{itemize}
-		\item	if they are hindered by other particles
-		\item	they are non-spherical
-		\item	they are in a dilute suspension; concentrated particles form clusters that settle faster
-		\item	small particles are dragged in the wake of larger
-	\end{itemize}
+	\begin{exampleblock}{Interesting point}
+		For a given feed stream, if you have the settling curve for one height, you have it for other heights also. Ratio 0A' : 0A'' is constant everywhere.
+	\end{exampleblock}
+	
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{\imagedir/separations/sedimentation/settling-rates-different-heights.png}
+	\end{center}
+	
+	
 \end{frame}
 
 \begin{frame}\frametitle{Capital costs considerations}
@@ -346,3 +401,5 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	* Fitch, Current theory and thickener design, Ind Eng Chem, v 57, p 18, 1965
 	
 \end{frame}
+
+\end{comment}
