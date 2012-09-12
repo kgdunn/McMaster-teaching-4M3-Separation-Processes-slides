@@ -16,13 +16,13 @@
 			<key>filename</key>
 			<string>4M3-course.tex</string>
 			<key>lastUsed</key>
-			<date>2012-09-11T00:41:52Z</date>
+			<date>2012-09-12T14:55:26Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-09-11T19:01:47Z</date>
+			<date>2012-09-12T14:55:32Z</date>
 		</dict>
 		<dict>
 			<key>expanded</key>
@@ -54,14 +54,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>110</integer>
+				<integer>48</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>87</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
