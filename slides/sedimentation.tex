@@ -5,16 +5,6 @@
 	Watch video: http://www.youtube.com/watch?v=gVeW1rr8GEI&feature=related
 	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
 
-Figure 22-32. Schematic diagram of a circular sedimentation tank.
-
-Figure 22-33. Schematic diagram of a rectangular sedimentation tank.
-The surface overflow rate (SOR) for primary sedimentation is normally held close to 40.74 m 3/(m 2·day) [1000 gal/(ft 2·day)] for average flow rates, depending upon the solids characteristics. Lowering the SOR below 40.74 m 3/(m 2·day) does not produce improved effluent quality in proportion to the reduction in SOR. Generally, the minimum depth of sedimentation tanks is 3.0 m (10 ft), with circular sedimentation tanks having a minimum diameter of 6.0 m (20 ft) and rectangular sedimentation tanks having length-to-width ratios of 5:1. Chain-and-flight limitations generally keep the width of rectangular sedimentation tanks to increments of 6.0 m (20 ft) or less. While hydraulic overflow rates have been limited on the effluent weirs, operating experience has indicated that the recommended limit of 186 m 3/ (m·day) [15,000 gal/(ft·day)] is lower than necessary for good operation. A circular sedimentation tank with a single-edge weir provides adequate weir length and is easier to adjust than one with a doublesided weir. More problems appear to be created from improper adjustment of the effluent weirs than from improper length.
-
-
-And Perry's section 22.5.7
-
-edimentation Tanks These tanks are an integral part of any activated-sludge system. It is essential to separate the suspended solids from the treated liquid if a high-quality effluent is to be produced. Circular sedimentation tanks with various types of hydraulic sludge collectors have become the standard secondary sedimentation system. Square tanks have been used with commonwall construction for compact design with multiple tanks. Most secondary sedimentation tanks use center-feed inlets and peripheral-weir outlets. Recently, efforts have been made to employ peripheral inlets with submerged-orifice flow controllers and either center-weir outlets or peripheral-weir outlets adjacent to the peripheral-inlet channel.
-
 \end{comment}
 
 % 11 September 2012
@@ -298,25 +288,140 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	
 \end{frame}
 	
-\begin{comment}
-	Settler example in Geankoplis with residence time 
+\begin{frame}\frametitle{Setting zones during sedimentation}
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
+	\end{center}
+	\see{Svarovsky, 3rd ed, p 135}
+\end{frame}
 
-	Also see example in C+R v2, Example 5.1 , p265
+\begin{frame}\frametitle{Hindered settling}
+	For a high concentration of particles we have hindered settling:
+	\begin{itemize}
+		\item	form clusters that settle faster
+		\item	however, there is upward flow from displaced fluids
+		\item	apparent density and viscosity of the fluid phase is increased
+		\item	drag force increased due to other particles
+	\end{itemize}
 	
-	See UCT tutorial : separate 4800 kg solids per hour
+	Approaches to dealing with this:
+	\begin{enumerate}
+		\item	Modify the density, viscosity and other terms in the momentum balance: use correction factors
+		\item	Resort to lab tests on samples that closely match the actual feed material
+		\begin{itemize}
+			\item	use lab results to design the settler
+		\end{itemize}
+	\end{enumerate}
+\end{frame}
 
-	Perry, Ch 22.5.6:  
-	%* provide for 2-h retention based on average flow (not too much longer else solids are too compact)
-	%* surface overflow rate (SOR) for primary sedimentation is normally held close to 40.74 m 3/(m 2 .day) [1000 gal/(ft 2·day)] for average flow rates, depending upon the solids characteristics. Lowering the SOR below 40.74 m 3/(m 2·day) does not produce improved effluent quality in proportion to the reduction in SOR. Generally, the minimum depth of sedimentation tanks is 3.0 m (10 ft), with circular sedimentation tanks having a minimum diameter of 6.0 m (20 ft) and rectangular sedimentation tanks having length-to-width ratios of 5:1. Chain-and-flight limitations generally keep the width of rectangular sedimentation tanks to increments of 6.0 m (20 ft) or less. While hydraulic overflow rates have been limited on the effluent weirs, operating experience has indicated that the recommended limit of 186 m 3/ (m.day) [15,000 gal/(ft·day)] is lower than necessary for good operation. A circular sedimentation tank with a single-edge weir provides adequate weir length and is easier to adjust than one with a double sided weir. More problems appear to be created from improper adjustment of the effluent weirs than from improper length.
+\begin{frame}\frametitle{The effect of particle concentration}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-rate-conc-vs-time.png}
+	\end{center}
 	
-	%Secondary units: Surface overflow rates have been slowly reduced from 33 m 3/(m 2·day) [800 gal/(ft 2·day)] to 24 m 3/(m 2·day) to 16 m 3/(m 2·day) [600 gal/(ft 2·day) to 400 gal/(ft 2·day)] and even to 12 m 3 (m 2·day) [300 gal/(ft 2·day)] in some instances, based on average raw-waste flows. 
+	More concentrated solutions take longer to settle; sometimes see clearer supernatants with concentrated solutions: small particles are pulled down in wake of larger particles.
+\end{frame}
+
+\begin{frame}\frametitle{How can we accelerate settling?}
+	\begin{itemize}
+		\item	modify the particle shape: spherical vs needle shape (usually not possible)
+		\item	modify the fluid viscosity and density 
+		\begin{itemize}
+			\item	not practical in most cases
+			\item	e.g. used to separate diamonds in a process called ``dense medium separation''
+		\end{itemize}
+		\item	raking or stirring: creates free channels for particles to settle in
+		\item	flocculation: a way of modifying particle shape
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Flocculation}
+	MIT video on water cleaning: \href{http://www.youtube.com/watch?v=5uuQ77vAV\_U}{http://www.youtube.com/watch?v=5uuQ77vAV\_U}
 	
+	\vspace{7cm}
+	{\tiny Please take notes from the video}
+\end{frame}
+
+\begin{frame}\frametitle{Flocculation}
+	Small particles (around $< 40 \mu m$) and some biologically active particles will take unreasonably long times to settle, if at all.
 	
-	Perry, Ch 22.5.8:  Loading rates on thickeners range from 50-122 kg/m 2/d (10-25 lb/ft 2/d) for primary sludge to 12-45 kg/m 2/d (2.5-9 lb/ft 2/d). Solids detention time is 0.5 days in summer to several days in winter.
-\end{comment}
+	Flocculated particles cluster together and settler at higher rates
+	\begin{itemize}
+		\item	impossible to predict shape and hence settling rate
+		\item	used in clarifiers, where clear supernatant is desire
+	\end{itemize}
+	
+	Flocculation is commonly ``included'' with the sedimentation step:
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{\imagedir/separations/sedimentation/flocculation-Perry-ch22.png}
+	\end{center}
+	\see{Perry, 8ed, Ch22}
+	\begin{itemize}
+		\item	important to not disrupt the flocs after contacting with flocculant: 30 seconds to 2 minutes contact time
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Sludge interface experiments}
+	Since flocculant and concentration effects cannot be derived from theory, resort to lab settling tests.
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-batch-lab-experiment-Svarovsky-updated.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Sludge interface experiments}
+	\begin{exampleblock}{Interesting point}
+		For a given feed, if you have the settling curve for one height, you have it for other heights also. Ratio 0A' : 0A'' is constant everywhere.
+	\end{exampleblock}
+	
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{\imagedir/separations/sedimentation/settling-rates-different-heights.png}
+	\end{center}
+	\see{Richardson and Harker, 5ed, v2}
+\end{frame}
+
+\begin{frame}\frametitle{Sludge interface experiments}
+	\begin{itemize}
+		\item	initial constant rate of settling is observed
+		\item	a critical point is reached: point of inflection
+		\item	slow compression of the solids after this point
+	\end{itemize}
+	\vspace{12pt}
+	At least 2 procedures in the literature to design settlers from settling curves:
+	\begin{itemize}
+		\item	Talmage and Fitch: tends to overdesign the area
+		\item	Coe and Clevenger: underdesign of the thickener area 
+	\end{itemize}
+	\see{Svarovsky, 4ed, p 180}
+
+	\vspace{12pt}	
+	In practice: we will rely on outside consultants and civil engineers, most likely, to size and design the unit. Else see the references at end for more details.
+\end{frame}
+
+\begin{frame}\frametitle{Settler design: shape, length, width}
+	\begin{enumerate}
+		\item	What width and depth should the settler be?
+		\item	How long should the particles be in the settler? Does residence time matter?
+	\end{enumerate}
+	
+	Perry's, section 22.5.6:
+	\begin{itemize}
+		\item	sedimentation tank can be rectangular or circular
+		\begin{itemize}
+			\item	rectangular: effluent weirs at the end 
+			\item	circular: around the periphery 
+		\end{itemize}
+		\item	main concern: uniform flow in the tank (no shortcuts)		
+		\item	removal efficiency = f(hydraulic flow pattern in tank)
+		\begin{itemize}
+			\item	incoming flow must be dissipated before solids can settle
+			\item	evenly distributed; minimal disruption to existing fluid
+			\item	overflow and underflow draw collected without creating hydraulic currents
+			\item	solids are removed by scraping, and hydraulic flow
+		\end{itemize}
+	\end{itemize}
+\end{frame}
 
 \begin{frame}\frametitle{Concept: the ideal rectangular settling basin}
-	
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/rectangular-tank-sedimentation.png}
 	\end{center}
@@ -344,162 +449,48 @@ edimentation Tanks These tanks are an integral part of any activated-sludge syst
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Setting zones during sedimentation}
+\begin{frame}\frametitle{Settler design rules of thumb: size}
+	
+	For wastewater treatment the \textbf{main design criterion}: solids percentage in underflow
+	\begin{itemize}
+		\item	A volume and mass balance on solids and liquids is then used to find the liquid overflow rate
+		\item	surface overflow rate (SOR) $\sim 40 \text{m}^3$ per day per $\text{m}^2$ for primary units
+		\item	secondary units as low as 12 up to $30 \text{m}^3$ per day per $\text{m}^2$
+		\item	minimum depth of sedimentation tanks is around 3.0 m 
+		\item	circular sedimentation tanks having a minimum diameter of 6.0 m 
+		\item	length to width ratio of 5:1
+	\end{itemize} 
+\end{frame}
+
+\begin{frame}\frametitle{Settler design rules of thumb: residence time}
+	\begin{itemize}
+		\item	gravity sedimentation tanks normally provide for 2 hour retention of solids, based on average flow
+		\item	longer times for light solids, or in winter times
+		\item	organic solids generally will not compact to more than 5 to 10\%
+		\item	inorganic solids will compact up to 20 or 30\%
+		\item	why important: we have to design sludge pumps to remove the solids: high concentration solids require diaphragm pumps		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Some thickener designs}
 	\begin{center}
-		\includegraphics[width=0.75\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/thickener-design-Svarovsky.png}
 	\end{center}
-	\see{Svarovsky, 3rd ed, p 135}
-\end{frame}
-
-\begin{frame}\frametitle{Hindered settling}
-	For a high concentration of particles we have hindered settling:
-	\begin{itemize}
-		\item	form clusters that settle faster
-		\item	however, there is upward flow from displaced fluids
-		\item	apparent density and viscosity of the fluid phase is increased
-		\item	drag force increased due to other particles
-	\end{itemize}
-	
-	Approaches to dealing with this:
-	\begin{enumerate}
-		\item	Modify the density, viscosity and other terms in the momentum balance with correction factors
-		\item	Resort to lab tests on samples that closely match the actual feed material
-		\begin{itemize}
-			\item	use lab results to design the settler
-		\end{itemize}
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{How can we accelerate settling?}
-	\begin{itemize}
-		\item	modify the particle shape: spherical vs needle shape (not always possible)
-		\item	modify the fluid viscosity and density 
-		\begin{itemize}
-			\item	not practical in most cases
-			\item	e.g. used to separate diamonds in a process called ``dense medium separation''
-		\end{itemize}
-		\item	raking or stirring: creates free channels for particles to settle in
-		\item	flocculation: a way of modifying particle shape
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{The effect of particle concentration}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-rate-conc-vs-time.png}
-	\end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Flocculation}
-	Small particles (around $< 40 \mu m$) will take unreasonably long times to settle, if at all.
-	
-	Flocculated particles cluster together and settler at higher rates
-	\begin{itemize}
-		\item	impossible to predict shape and hence settling rate
-		\item	used in clarifiers, where clear supernatant is desire
-	\end{itemize}
-	
-	Flocculation is commonly used in wastewater treatment
-	\todo{From UCT notes}
-	
-	\todo{Section 18-65 in Perry and 18-70}
-\end{frame}
-
-\begin{frame}\frametitle{Flocculation}
-	MIT video on water cleaning: \href{http://www.youtube.com/watch?v=5uuQ77vAV\_U}{http://www.youtube.com/watch?v=5uuQ77vAV\_U}
-	\href{}{}
-\end{frame}
-
-\begin{frame}\frametitle{Sludge interface experiments}
-	Why?
-\end{frame}
-
-\begin{frame}\frametitle{Sludge interface experiments}
-
-
-	\begin{exampleblock}{Interesting point}
-		For a given feed stream, if you have the settling curve for one height, you have it for other heights also. Ratio 0A' : 0A'' is constant everywhere.
-	\end{exampleblock}
-	
-	\begin{center}
-		\includegraphics[width=0.6\textwidth]{\imagedir/separations/sedimentation/settling-rates-different-heights.png}
-	\end{center}	
-\end{frame}
-
-\begin{frame}\frametitle{Se}
-	Settling rate is a function of solids concentration
-	
-	This concentration varies with depth in the settler
-\end{frame}
-
-\begin{frame}\frametitle{Settler design: shape, length, width}
-	\begin{enumerate}
-		\item	What width and depth should the settler be?
-		\item	How long should the particles be in the settler? Does residence time matter?
-	\end{enumerate}
-	
-	Perry's, section 22.5.6:
-	\begin{itemize}
-		\item	sedimentation tank can be rectangular or circular
-		\begin{itemize}
-			\item	rectangular: effluent weirs at the end 
-			\item	circular: around the periphery 
-		\end{itemize}
-		\item	main concern: uniform flow in the tank (no shortcuts)		
-		\item	removal efficiency = f(hydraulic flow pattern in tank)
-		\begin{itemize}
-			\item	incoming flow must be dissipated before solids can settle
-			\item	evenly distributed; minimal disruption to existing fluid
-			\item	overflow and underflow draw collected without creating hydraulic currents
-			\item	solids are removed by scraping, and hydraulic flow
-		\end{itemize}
-	\end{itemize}
-	% . Once the s. Conventional sedimentation tanks have sludge hoppers to collect the concentrated sludge and to prevent removal of excess volumes of water with the settled solids. Cross-sectional diagrams of conventional sedimentation tanks are shown in Figs. 22-32 and 22-33.
-\end{frame}
-
-\begin{frame}\frametitle{Settler design: residence time}
-	\begin{itemize}
-		\item	gravity sedimentation tanks normally provide for 2-h retention based on average flow
-		\item	longer times for light solids
-	\end{itemize}
-not too long; otherwise, the solids will compact too densely and affect solids collection and removal. Organic solids generally will not compact to more than 5 to 10 percent. Inorganic solids will compact up to 20 or 30 percent. Centrifugal sludge pumps can handle solids up to 5 or 6 percent, while positive-displacement sludge pumps can handle solids up to 10 percent. With solids above 10 percent the sludge tends to lose fluid properties and must be handled as a semi-solid rather than a fluid. Circular sedimentation tanks have steel truss boxes with angled sludge scrapers on the lower side. As the sludge scrapers rotate, the solids are pushed toward the sludge hopper for removal on a continuous or semicontinuous basis. The rectangular sedimentation tanks employ chain-and-flight sludge collectors or rail-mounted sludge collectors. When floating solids can occur in primary sedimentation tanks, surface skimmers are mounted on the sludge scrapers so that the surface solids are removed at regular intervals.
-	
-\end{frame}
-
-\begin{frame}\frametitle{Settler depth}
-	\begin{itemize}
-		\item	Does not affect the settler's performance: only residence time and terminal velocity of slowest particle are important
-		\item	however, greater depth is required is solids need time to settle and compact (lower the water content)
-	\end{itemize}
-	
-	\[
-		\text{area} = \frac{Q_c}{V_m}
-	\]
-	
-	\todo{See figure 5.3 in Svarovsky4, p 170}
+	\see{Svarovsky, 3ed, p172}
 	
 	\vspace{12pt}
-	These tanks are designed on the basis of retention time, surface overflow rate, and minimum depth. \see{Perry 8ed, Ch22.5}
+	Can replace the steel with a sloped concrete slab.
 \end{frame}
 
-\begin{frame}\frametitle{Design aim: \textbf{underflow} concentration }
-	For a desired  \textbf{underflow} concentration, use a velocity vs concentration diagram
+\begin{frame}\frametitle{Feed area: feedwell}
+	We must aim to minimize turbulence from entry velocity and avoid disruption to existing settling.
 	
-\end{frame}
-
-\begin{frame}\frametitle{How well have we done?}
-	\begin{itemize}
-		\item	separation efficiency
-		\item	mass fraction of solids in overflow
-		\item	dryness/moisture of solid fraction
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Gravity thickeners}
-	/Users/kevindunn/Sync/Figures/separations/sedimentation/gravity-thickener-Svarovsky.png
-\end{frame}
-
-\begin{frame}\frametitle{Clarifiers}
-	Pictures
+	Also must avoid breaking up existing flocs.
+	
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/sedimentation/Fitch-feedwell-Svarovsky.png}
+	\end{center}
+	\see{Svarovsky, 3ed, p174}
 \end{frame}
 
 \begin{frame}\frametitle{Capital costs considerations}
@@ -540,31 +531,25 @@ not too long; otherwise, the solids will compact too densely and affect solids c
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Feed mechanisms}
-	to control turbulence
-	to mix in flocculants
-	to control entry velocity
-\end{frame}
-
-\begin{frame}\frametitle{CCD}
-	
-\end{frame}
-
 \begin{frame}\frametitle{Further self-study}
 	\begin{itemize}
+		\item	Designs with peripheral inlets (submerged-orifice flow control) and either center-weir outlets or peripheral-weir outlets adjacent to the peripheral-inlet channel.
 		\item	Deep cone thickener
 		\item	Lamella (inclined plate or tubes): often for gas-solid applications 
-				\vspace{12pt}
-				\todo{Link in YouTube video} %AzGH6ObX_Uk or FLmzCkFa9VA
+				%\vspace{12pt}
+				%\todo{Link in YouTube video} %AzGH6ObX_Uk or FLmzCkFa9VA
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Further references to explore}	
 	\begin{itemize}
-		\item	Talmage and Fitch, 9155, ``Determining Thickener Unit Areas'', \emph{Ind. Eng. Chem.},\textbf{47}, 38-41, \href{http://dx.doi.org/10.1021/ie50541a022}{\small DOI:10.1021/ie50541a022}
+		\item	Talmage and Fitch, 1955, ``Determining Thickener Unit Areas'', \emph{Ind. Eng. Chem.},\textbf{47}, 38-41, \href{http://dx.doi.org/10.1021/ie50541a022}{\small DOI:10.1021/ie50541a022}
+		
+		\item	Fitch, 1965, ``Current theory and thickener design'', \emph{Ind. Eng. Chem.}, \textbf{57}, p 18-28, \href{http://dx.doi.org/10.1021/ie50682a006}{\small DOI:10.1021/ie50682a006}
+		
+		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition. Particularly regarding the settler's mechanical accessories: pumps, scrapers, \emph{etc}.
 	\end{itemize}
-	* Ind Eng Chem, v46, 1164-1172, 1954
-	* Review of sedimentation theory, Chem Eng, v66, p 75-80, 1959
-	* Fitch, Current theory and thickener design, Ind Eng Chem, v 57, p 18, 1965	
+	%* Ind Eng Chem, v46, 1164-1172, 1954
+	%* Review of sedimentation theory, Chem Eng, v66, p 75-80, 1959
 \end{frame}
 
