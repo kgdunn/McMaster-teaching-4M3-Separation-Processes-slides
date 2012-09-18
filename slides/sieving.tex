@@ -1,4 +1,6 @@
-References: C+R, UCT notes
+\begin{comment}
+	
+References: C+R, UCT notes, Perry's
 
 See UCT notes for ChE337Z
 
@@ -6,39 +8,356 @@ See Perry, Chapter 21: first part
 
 See ``Uhlmann - Solid-solid separation.pdf''
 
-Perry: http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition/p200139d899721_8001#p200139d899821_18
+% Perry: http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition/p200139d899721_8001#p200139d899821_18
 
-Sieving is probably the most frequently used and abused method of analysis because the equipment, analytical procedure, and basic concepts are deceptively simple. In sieving, the particles are presented to equal-size apertures that constitute a series of go–no go gauges. Sieve analysis implies three major difficulties: (1) with woven-wire sieves, the weaving process produces three-dimensional apertures with considerable tolerances, particularly for fine-woven mesh; (2) the mesh is easily damaged in use; (3) the particles must be efficiently presented to the sieve apertures to prevent blinding.
-
-Sieves are often referred to their mesh size, which is a number of wires per linear unit. Electroformed sieves with square or round apertures and tolerances of ±2 μm are also available (ISO 3310, Test Sieves—Technical Requirements and Testing, 2000/2004: Part 1: Test Sieves of Metal Wire Cloth; 1999; Part 2: Test Sieves of Perforated Metal Plate; 1990; Part 3: Test Sieves of Electroformed Sheets).
+Sieving is probably the most frequently used and abused method of analysis because the equipment, analytical procedure, and basic concepts are deceptively simple. In sieving, the particles are presented to equal-size apertures that constitute a series of go-no go gauges. Sieve analysis implies three major difficulties: (1) with woven-wire sieves, the weaving process produces three-dimensional apertures with considerable tolerances, particularly for fine-woven mesh; (2) the mesh is easily damaged in use; (3) the particles must be efficiently presented to the sieve apertures to prevent blinding.
 
 For coarse separation, dry sieving is used, but other procedures are necessary for finer and more cohesive powders. The most aggressive agitation is performed with Pascal Inclyno and Tyler Ro-tap sieves, which combine gyratory and jolting movement, although a simple vibratory agitation may be suitable in many cases. With Air-Jet sieves, a rotating jet below the sieving surface cleans the apertures and helps the passage of fines through the apertures. The sonic sifter combines two actions, a vertical oscillating column of air and a repetitive mechanical pulse. Wet sieving is frequently used with cohesive powders
 
 Perrys: Section 22.5.6:
 
-Wastewater treatment is directed toward removal of pollutants with the least effort. Suspended solids are removed by either physical or chemical separation techniques and handled as concentrated solids.
-
-Screens Fine screens such as hydroscreens are used to remove moderate-size particles that are not easily compressed under fluid flow. Fine screens are normally used when the quantities of screened particles are large enough to justify the additional units. Mechanically cleaned fine screens have been used for separating large particles. A few industries have used large bar screens to catch large solids that could clog or damage pumps or equipment following the screens.
-
 Uhlmann, vol 8, p 81: ``Classifying Separations''
 
-arsest sieve, and the sieve column is vibrated either mechanically or electro-mechanically. The particles pass through the sieve openings, and the coarser ones are retained on the sieves. As soon as the particles cease to pass through the openings, the vibration is stopped. The amount of particles on each individual sieve is weighed, and the histogram of the density distribution is ob- tained by weight.
+coarsest sieve, and the sieve column is vibrated either mechanically or electro-mechanically. The particles pass through the sieve openings, and the coarser ones are retained on the sieves. As soon as the particles cease to pass through the openings, the vibration is stopped. The amount of particles on each individual sieve is weighed, and the histogram of the density distribution is obtained by weight.
+\end{comment}
 
-
+% 18 September 2012
 \begin{frame}\frametitle{Administrative}
 	Assignment 2 is posted
 	\vspace{12pt}
-	If handing in via Google Docs, please:
+	If handing in with Google Docs, please:
 	\begin{itemize}
-		\item	Add the TA's address: 
+		\item	Add the TA's address: {\color{myGreen}{\href{mcmasterche4mta@gmail.com}{mcmasterche4mta@gmail.com}}}
+		\item	Make sure ``4M3'' is in the title
+		\item	Please put your group members' last names in the title also
+		\item	e.g. \texttt{4M3-Sivakumaran-Dunn-Assignment-2}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Some context}
+	\begin{exampleblock}{}
+		The three most important characteristics of an individual solid particle are its composition, its size and its shape. 
+	\end{exampleblock}
+	
+	
+	\vspace{12pt}
+	{\color{myGreen}{Composition}}: affects density, conductivity, \emph{etc}, if the particle is uniform	
 \end{frame}
 
 \begin{frame}\frametitle{Particle size characterization}
 	So far we have assumed particles to be separated are of a single size. This is never true: there is always a size distribution.
 	
 	\vspace{12pt}
-	\begin{exampleblock}{Aim}
-		How do we measure this distribution? How do we describe (characterize) a size distribution? 
+	{\color{myGreen}{Particle size}}: affects surface per unit volume, rate of settling in a fluid, \emph{etc}
+	
+	\vspace{12pt}	
+	\begin{exampleblock}{{\color{myRed}{Aims}}}
+		\vspace{12pt}
+		How do we measure this distribution?
+		
+		\vspace{12pt}
+		How do we describe (characterize) a size distribution? 
 	\end{exampleblock}
+	\begin{itemize}
+		\item	what is the ``\textbf{{\color{Brown}{average}}}'' particle size?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Particle shape characterization}
+	
+	A particle may be regular shaped: \emph{spherical} or \emph{cubic}
+	\begin{itemize}
+		\item	capable of precise definition using equations
+	\end{itemize}
+	
+	\vspace{12pt}
+	Irregular shaped: e.g. broken glass, sand, rock, most solids
+	\begin{itemize}
+		\item	properties of irregular shapes expressed ito a regular shaped particle's characteristics
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Other reasons to consider particle size distributions?}
+	\begin{itemize}
+		\item	Understand your colleagues: ``After crushing, the feed may be ground in several stages from a size of 5 to 6 cm to a powder of 75 to 90 percent passing a 200-mesh sieve.''
+		\item	Solid material handling industry (foods, grains, pulp, sand, cement, coal, \emph{etc}): we must deal with distributions 
+		\item	e.g. activity of a powdered drug = $f$(particle size)
+		\item	e.g. ``hiding power'' of a paint/pigment = $f$(particle size)
+	\end{itemize}
+	
+	\vspace{12pt}
+	\begin{exampleblock}{}
+		We will require this understanding for future sections: filtration, flow of fluids through packed beds, membranes, and so on.
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}\frametitle{Some guides on particle sizes}
+	\begin{center}
+		\includegraphics[height=0.85\textheight]{\imagedir/separations/screens/typical-powder-sizes-CRv2-5ed-p4.png}
+	\end{center}
+	\see{Richardson and Harker, 5ed, p4}
+\end{frame}
+
+\begin{frame}\frametitle{Particle shape: Sphericity}
+	Why use a sphere?
+	\begin{itemize}
+		\item	it has the same shape from all angles
+		\item	behaves the same way from all angles
+	\end{itemize}
+	
+	Other particles behave less ideally; we define sphericity as one metric of a particle's shape:
+	
+	
+	\[
+		\psi = \frac{\text{surface area of sphere with same volume as particle}}{\text{surface area of particle}}
+	\]
+	
+	\vspace{12pt}
+	For all particles: \( 0 < \psi \leq 1 \)
+	
+	\vspace{12pt}
+	To try: calculate the sphericity of a cube with side length = $c$ \\ {\scriptsize {\color{myGreen}{Answer: $\psi = 0.806$}}}	
+\end{frame}
+
+\begin{frame}\frametitle{Other shape metrics}
+	Find the diameter of a sphere that has the same \_\_\_\_\_\_ as the particle
+	\begin{itemize}
+		\item	volume
+		\item	surface area
+		\item	surface area per unit volume
+		\item	area in the direction of travel [drag diameter]
+		\item	projected area, but in a position of maximum stability
+		\item	settling velocity [Stokes' diameter]
+		\item	will fit through the same size square aperture  [sieve diameter]
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Standard screens}
+	\begin{center}
+		\includegraphics[width=0.95\textwidth]{\imagedir/separations/screens/standard-screen-mesh-10.jpg}
+	\end{center}
+	Mesh 10 screen = 2.00 mm opening = 10 openings per linear inch.
+\end{frame}
+
+\begin{frame}\frametitle{Standard screen sizes}
+	The US standard (Tyler series). Selected examples are:	
+	\vspace{8pt}
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{tabular}{c|c}
+				Mesh number & Square aperture opening (\micron) \\ \hline
+				3.5		&	5600	\\
+				$\vdots$& 	$\vdots$\\
+				10		&	2000	\\
+				$\vdots$& 	$\vdots$\\
+				20		&	850		\\
+				25		& 	710		\\
+				30		& 	600		\\
+				$\vdots$& 	$\vdots$\\
+				140 	& 	106		\\
+				170		& 	90		\\
+				200		&	75		\\
+				230 	&	63		\\ 
+				$\vdots$& 	$\vdots$\\
+				450 	& 	32
+			\end{tabular}
+		\column{0.40\textwidth}
+			\small
+			Tyler standard:
+			\begin{itemize}				
+				\item	e.g. 75\micron ~opening: called 200 mesh screen
+				\item	i.e. apertures per inch = 200 mesh screen
+				\vspace{12pt}
+				\hrule
+				\vspace{12pt}
+				\item	Successive apertures decrease by factor of $\sim \sqrt[4]{2}$
+				\vspace{12pt}
+				\hrule
+				\vspace{12pt}
+				\item	Other standards: British I.M.M. and \\ U.S. A.S.T.M.				
+			\end{itemize}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Screens}
+	Stack screens: apertures from largest on top to smallest
+	\begin{center}
+		\includegraphics[height=0.80\textheight]{\imagedir/separations/screens/Laborsiebmaschine_BMK-wikipedia.jpg}
+	\end{center}
+	\see{\href{http://en.wikipedia.org/wiki/File:Laborsiebmaschine\_BMK.jpg}{http://en.wikipedia.org/wiki/File:Laborsiebmaschine\_BMK.jpg}}
+\end{frame}
+
+\begin{frame}\frametitle{Screens}
+	\begin{itemize}
+		\item	Top screen usually has 100\% material passing through
+		\item	Shaken for a predetermined time; or rate of screening levels out
+		\item	Shake intensity balanced: not too aggressive to break particles apart
+		\item	Smaller particles tend to stick to each other, so small size fractions inaccurate
+		\item	Done on wet or dry material
+		\item	Wet screening: washes smaller particles off larger ones
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Other particle size methods}
+	\begin{itemize}		
+		\item	Sedimentation on a scale {\tiny (careful temperature control)}
+		\item	Elutriation: reverse sedimentation
+		\item	Permeability methods
+			\begin{itemize}
+				\item	$\text{flow} = k \Delta P$; where $k \propto \displaystyle \frac{\text{surface area}}{\text{volume}}$ 
+				\item	from which we can calculate equivalent spherical diameter
+			\end{itemize}
+		\item	Laser diffraction
+			\begin{itemize}
+				\item	uses principle of radial laser beam scattering
+				\item	handles ranges from 0.1 to 600 \micron
+				\item	can be applied online for real-time monitoring
+			\end{itemize}
+			%\todo{illustration http://www.malvern.com/labeng/technology/laser_diffraction/laser_diffraction.htm or http://www.malvern.com/labeng/technology/laser_diffraction/particle_sizing.htm}
+	\end{itemize}
+	\seefull{Many others: see Perry's Chapter 21}
+\end{frame}
+
+\begin{frame}\frametitle{Differential screen analysis}
+	* Picture of a screen: oversize and undersize
+	* Mass fractions
+	* Cumulative plot
+	* Take the derivative of it
+	* Show an actual example: Seader, p 678 
+	* Plot the example
+	* Show the derivative of it: 
+	* What is a suitable ``Average'' particle size ?
+	** The most commonly occurring frequency
+	** Weighted mean?
+	* Might want to use a log scale over a wide size range
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	\begin{tabular}{ccc|c|c}
+		Mesh&Aperture [\micron]	& Mass retained [g]	& Avg size* & {\scriptsize Cuml. \% passing} \\ \hline
+		14	& 1400		& 0		& -      &  100           \\
+		16	& 1180		& 9.1	& 1290   &  98.1          \\
+		18	& 1000		& 32.1	& 1090   &  91.6          \\
+		20	& 850		& 39.8	& 925    &  83.5          \\
+		30	& 600		& 235.4	& 725    &  35.5          \\
+		40	& 425		& 89.1	& 513    &  17.4          \\
+		50	& 300		& 54.4	& 363    &  6.3           \\
+		70	& 212		& 22.0	& 256    &  1.8           \\
+		100	& 150		& 7.2	& 181    &  0.4           \\
+		140	& 106		& 1.2	& 128    &  0.1           \\
+		Pan	& 0			& 0.5	& 53     &  0.0           \\ \hline 
+		Sum	&  			& \textbf{491}   &     			  \\ \hline
+	\end{tabular}
+	
+	\vspace{12pt}
+	$\ast$ \emph{\scriptsize average screen size used for differential plots}
+\end{frame}
+ 
+\begin{frame}\frametitle{Differential and Cumulative analysis}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/screens/screen-result-analysis.png}
+	\end{center}
+	\hrule
+	\vspace{6pt}
+	Theory:
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+			{\color{myBlue}{\[f(x) = \displaystyle\frac{dF(x)}{dx}\]}}
+		\column{0.50\textwidth}
+			{\color{myGreen}{\[F(x) = \text{percent passing curve}\]}}
+	\end{columns}
+	\vspace{18pt}
+	\seefull{Seader, 3ed, p 676-677}
+\end{frame}
+
+\begin{frame}\frametitle{Theoretical view}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/screens/theoretical-size-analysis-Svarovsky4.png}
+	\end{center}
+	\vfill
+	\see{Svarovsky, 4ed, p42}
+\end{frame}
+
+\begin{frame}\frametitle{Mean diameter calculations}
+	A number of mean diameters can be calculated. These can be derived:
+	\begin{columns}[c]
+		\column{0.30\textwidth}
+			\scriptsize
+			\begin{itemize}
+				\item	Seader, 3ed, p 678 - 679
+				\item	Svarovsky, 4ed, p37 - 43
+			\end{itemize}
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=0.8\textwidth]{\imagedir/separations/screens/screen-result-differential-only.png}
+			\end{center}
+	\end{columns}
+	
+	
+	\vspace{12pt}
+	\begin{itemize}
+		\item	Arithmetic mean = 318 \micron
+		\item	Volume mean diameter = 430 \micron
+		\item	Surface mean diameter (Sauter mean diameter) = 565 \micron
+		\item	Weight or mass-mean diameter = 666 \micron
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Which mean should I use?}
+	\begin{itemize}
+		\item	Rather use the distribution curve, if available
+		\item	If one has to resort to a single number, use what is appropriate
+		\begin{itemize}
+			\item	volume mean diameter: used for packing estimation
+			\item	surface mean diameter: used for skin friction, and mass transfer calculations
+		\end{itemize}
+		
+		\item	The idea is that if two distributions had the same ``mean diameter'', that they behave the same way in the application being considered
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Two distributions, same arithmetic mean}
+	\begin{center}
+		\includegraphics[height=0.85\textheight]{\imagedir/separations/screens/particle-distributions-two-cases.png}
+	\end{center}
+	\see{Svarovsky, 4ed, p59}
+\end{frame}
+
+\begin{comment}
+\begin{frame}\frametitle{Arithmetic means}	
+	\vspace{12pt}
+	\[
+		\overline{x} = \int_{0}^{\infty}{x f(x) dx}
+	\]
+	\begin{enumerate}
+		\item	take the size 
+	\end{enumerate}
+	\begin{itemize}
+		\item	Arithmetic mean
+		\item	Weight or mass-mean diameter		
+		\item	Volume mean diameter
+		\item	Surface mean diameter (Sauter mean diameter)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Percent passing: cut size}
+	\begin{exampleblock}{Now it should be clearer}
+		``powder of 75 to 90 percent passing a 200-mesh sieve''
+	\end{exampleblock}
+	
+	\todo{show a cumulative histogram; draw a vertical line}	
+\end{frame}
+\end{comment}
+
+\begin{frame}\frametitle{Sampling a stream}
+	Particle size measurements are strongly dependent on the sample taken. The ``golden'' rules of sampling:
+	
+	\begin{enumerate}
+		\item	take sample from a moving stream: dry powders and slurry
+		\item	sample \emph{whole} stream for many short (not part of stream for whole time)
+	\end{enumerate}
+	
+	\vspace{12pt}
+	There are books written on the topic of sampling. Consult an experienced person if important decisions rest on the sample taken.
+	
 \end{frame}
