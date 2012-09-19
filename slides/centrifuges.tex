@@ -1,47 +1,216 @@
-Disk stack centrifuge: http://www.youtube.com/watch?v=bzXUiLajVlg
+
+
+
+
+
+
+
+* Disk stack centrifuge: http://www.youtube.com/watch?v=bzXUiLajVlg
+* UCT notes?
+* C+R v2
+* Perry's
+* Uhlmanns
+* Svarovsky
+* Sweitzer
+* Seader
+* Geankoplis	
+
 
 Perry's: 18.8.6. CONTINUOUS FILTERING CENTRIFUGES
 
 Where processing conditions and objectives allow, continuous filtering centrifuges offer the combination of high processing capacities and good wash capabilities. Inherently they are less flexible than batch filtering centrifuges, primarily constrained by much shorter retention time, and in some cases liquid handling capacity requires upstream preconcentration of the slurry. Fines loss to the filtrate is also greater with continuous designs compared to batch.
 
-COSTS: also see chapter 18.8 in Perry's
+\begin{frame}\frametitle{Uses}
+	Used since 1700's:
+	\begin{enumerate}
+		\item	separate particles from fluid based on density
+		\item	separate immiscible fluids (liquid and gas!) of different densities
+		\item	to enhance drainage of fluid from particles for drying
+		\item	enhance mass transfer (look at centrifugal packed bed contactors in your own time)
+	\end{enumerate}
+	
+	\vspace{12pt}
+	Examples:
+	\begin{itemize}
+		\item	Cream from milk (milk is an emulsion)
+		\item	Clarification: juice, beer (yeast removal), essential oils
+		\item	Bioseparations: blood, virus, proteins, 
+		\item	Remove sand and water from heavy oils
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Interesting use: gas-gas separation}
+	\begin{itemize}
+		\item	\small Uranium enrichment in a \href{http://en.wikipedia.org/wiki/Zippe-type_centrifuge}{Zippe-type centrifuge}:  U-235 is only 1.26\% less dense than U-238: requires counter-current cascade
+	\end{itemize}
+	\begin{center}
+		\includegraphics[height=0.75\textheight]{\imagedir/separations/centrifuge/Gas_centrifuge_cascade-wikipedia.jpg}
+	\end{center}
+	\vspace{-12pt}
+	\see{http://en.wikipedia.org/wiki/File:Gas\_centrifuge\_cascade.jpg}
+\end{frame}
+
+\begin{frame}\frametitle{Principle of operation}
+	* item that is being separated has density > medium (liquid-liquid; or solid (minor) in liquid (major))
+	* useful for viscous liquids
+	
+	fig 14.4-1 from Geankoplis
+	fig 14.4-2 from Geankoplis
+	fig 14.4-3 from Geankoplis
+	fig 14.4-4 from Geankoplis
+\end{frame}
+
+\begin{frame}\frametitle{$d_\text{max}$}
+	See UCT notes (C+R; Svarovsky)
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	See UCT notes:
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	Pellet: hard-packed concentration of particles in a tube or rotor after centrifugation.
+	Supernatant: The clarified liquid above the pellet.
+	Adapter: A device used to fit smaller tubes or centrifugal devices in the rotor cavities.
+	RPM: Revolutions Per Minute (Speed).
+	Rmax: Maximum radius from the axis of rotation in centimeters.
+	Rmin: Minimum radius from the axis of rotation in centimeters.
+	RCF: Relative centrifugal Force. RCF = 11.17 x Rmax (RPM/1000)2
+	K-factor: Pelleting efficiency of a rotor. Smaller the K-factor, better the pelleting efficiency.
+
+	S-value: the sedimentation coefficient is a number that gives information about the molecular weight and shape of the particle. S-value is expressed in Svedberg units. The larger the S-value, the faster the particle separates.
+	For more information about sedimentation coefficients, please refer to the section on references and suggested readings in this article.
+
+	Pelleting time: time taken to pellet a given particle. T = K/S where T= pellet time in hours. K = K-factor of the rotor, and S = sedimentation coefficient (see Ghosh book for $S$)
+\end{frame}
+
+\begin{frame}\frametitle{Differential centrifugation}
+	http://www.coleparmer.com/TechLibraryArticle/30
+\end{frame}
 
 
-SEDIMENTATION CENTRIFUGES (Perry's 18.8.3)
+\begin{frame}\frametitle{Why centrifuge?}
+	\begin{itemize}
+		\item	greater rate of separation: practical rates of settling are achieved
+		\item	size of equipment is reduced
+		\item	impossible separations under sedimentation e.g. Brownian motion disruption, can now occur 
+	\end{itemize}
+\end{frame}
 
-When a spherical particle of diameter d settles in a viscous liquid under earth gravity g, the terminal velocity V s is determined by the weight of the particle-balancing buoyancy and the viscous drag on the particle in accordance to Stokes’ law. In a rotating flow, Stokes’ law is modified by the “centrifugal gravity” G = Ω 2r, thus
+\begin{frame}\frametitle{Application areas}
+	
+\end{frame}
 
-(18-103)
-
-In order to have good separation or high settling velocity, a combination of the following conditions is generally sufficient:
-
-1. High centrifuge speed
-
-2. Large particle size
-
-3. Large density difference between solid and liquid
-
-4. Large separation radius
-
-5. Low liquor viscosity
-
-Among the five parameters, the settling velocity is very sensitive to change in speed and particle size. It varies as the square of both parameters. The maximum achievable rotational speed of a centrifuge is normally dictated by the stresses exerted by the processing medium on the bowl and the stresses of the bowl on periphery equipment, most notably the drive system, which consists of a gear unit or hydraulic pump. If the particles in the feed slurry are too small to be separated in the existing G-field, coagulation and flocculation by polymers are effective ways to create larger agglomerated particles for settling. Unlike separation under a constant gravitational field, the settling velocity under a centrifugal field increases linearly with the radius. The greater the radius at which the separation takes place in a given centrifuge at a given rotational speed, the better the separation. Sedimentation of particles is favorable in a less viscous liquid. Some processes are run under elevated temperature where liquid viscosity drops to a fraction of its original value at room temperature.
-
-
-\begin{frame}\frametitle{}
+\begin{frame}\frametitle{Design issues}
+	\begin{itemize}
+		\item	two, four, six, or many more (usually even numbered) wells of samples,
+	\end{itemize}
 	Add a basket to separate based on size, in addition to the density differences
+	
+		Fixed vs swing out: different energy use profiles
+		Fixed: heavy???
+		Swing out rotors: cells, course particles
+	
 \end{frame}
 
-\begin{frame}\frametitle{Ultracentrifuges}
-	Biological cell constituents, macromolecules
-	Also isotopes: Iran centrifuges and computer virus (Israeli and US operatives)
+\begin{frame}\frametitle{Capital costs}
+	COSTS: also see chapter 18.8 in Perry's
 \end{frame}
 
-\begin{frame}\frametitle{Scale-up}
+\begin{frame}\frametitle{Scale-up: the sigma concept}
 	Sigma theory used for sedimenting centrifuges?
+	
+	* used to scale up centrifuges from lab data (see Seader example)
+	* used to design a new centrifuge
+	* used to re-purpose a centrifuge: will it work on the new stream?
+	
 \end{frame}
 
+\begin{frame}\frametitle{Principle}
+	Back seat of a car going around a 90 $\deg$ corner: < 0.3 revolutions per second
+	Washing machine at home: 12 to 25 revolutions per second (720 - 1500 RPM) 
+	Zippe-type centrifuge: 1500 revolutions per second 
+	Heavier particles get thrown out more: why? 
+	Isn't the force only a function of ``g''?
+	Centripetal or centrifugal force? Perry
+	
+	
+\end{frame}
+
+
+\begin{frame}\frametitle{Performance}
+	\see{Perry, 8ed, section 18.8.3}
+	
+	In order to have good separation or high settling velocity, a combination of the following conditions is generally sufficient:
+
+	1. High centrifuge speed
+
+	2. Large particle size
+
+	3. Large density difference between solid and liquid
+
+	4. Large separation radius
+
+	5. Low liquor viscosity
+	
+	% Among the five parameters, the settling velocity is very sensitive to change in speed and particle size. It varies as the square of both parameters. The maximum achievable rotational speed of a centrifuge is normally dictated by the stresses exerted by the processing medium on the bowl and the stresses of the bowl on periphery equipment, most notably the drive system, which consists of a gear unit or hydraulic pump. If the particles in the feed slurry are too small to be separated in the existing G-field, coagulation and flocculation by polymers are effective ways to create larger agglomerated particles for settling. Unlike separation under a constant gravitational field, the settling velocity under a centrifugal field increases linearly with the radius. The greater the radius at which the separation takes place in a given centrifuge at a given rotational speed, the better the separation. Sedimentation of particles is favorable in a less viscous liquid. Some processes are run under elevated temperature where liquid viscosity drops to a fraction of its original value at room temperature.
+	
+\end{frame}
+
+\begin{frame}\frametitle{Choice of centrifuge type}
+	Fig 7.15 in Svarovsky
+\end{frame}
+
+\begin{frame}\frametitle{Flowsheet layout}
+	Series or parallel? Svarovsky, p 274
+\end{frame}
+
+\begin{frame}\frametitle{Speeds}
+	Low speed: 1000 rpm = 100 rad/sec
+	G  = $\frac{r\omega^2}{g}$
+	Lab scale: 1 to 5000 mL
+	Lab: 1000 - 20000G	
+	Sugar industry: speed?
+\end{frame}
+
+\begin{frame}\frametitle{Lab centrifugues}
+	Fig 6.3 Ghosh
+\end{frame}
+
+\begin{frame}\frametitle{Safety}
+	\begin{itemize}
+		\item	rotational equipment requires careful balance
+		\item	digital control is critical
+		\begin{itemize}
+			\item	\href{http://en.wikipedia.org/wiki/Programmable_logic_controller}{PLC}: programmable logical controllers 
+			\item	\href{http://en.wikipedia.org/wiki/SCADA}{SCADA}: supervisory control and data acquisition
+		\end{itemize} 
+		\item	flammable fluids (e.g. solvents): nitrogen blanket
+		\item	Svarovsky, p 277
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Design}
+	Fixed vs swing out: different energy use profiles
+	Fixed: heavy???
+	Swing out rotors: cells, course particles
+\end{frame}
+
+\begin{frame}\frametitle{Svedberg S-value?}
+	What is it;
+	how is it calculated?
+\end{frame}
 
 \begin{frame}\frametitle{Choosing a solid-fluid separation unit}
 	Figure 2.1 from blue Svarovsky book: shows separation unit chosen based on particle size
+\end{frame}
+
+\begin{frame}\frametitle{Ultracentrifuges}
+	* Biological cell constituents, macromolecules
+	* Instrumented to measure progress of the separation: sedFIT software
+	Also isotopes: Iran centrifuges and computer virus (Israeli and US operatives)
+\end{frame}
+
+\begin{frame}\frametitle{References}
+	As listed on course website
 \end{frame}
