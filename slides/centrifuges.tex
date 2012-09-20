@@ -1,4 +1,5 @@
-\begin{frame}\frametitle{Why look at centrifuges?}
+% 20 September 2012
+\begin{frame}\frametitle{Why consider centrifuges?}
 	\begin{itemize}
 		\item	When gravity (freely available) is not fast enough
 		\item	Decrease the separation time and increase {\color{myGreen}{\emph{separation factor}}}
@@ -10,6 +11,9 @@
 				\item	overcome stabilizing forces that hold an emulsion together
 			\end{itemize}
 	\end{itemize}
+	\begin{exampleblock}{}
+		{\color{myGreen}{Why not just apply flocculation}}		
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}\frametitle{Terminology}
@@ -96,10 +100,10 @@
 		
 		\textbf{Example}							& \textbf{Revolutions per minute}  & \textbf{G's}\\		 \hline
 		Car going round and round 	    			& 10 to 15   			  & 1 to 2	\\
-		Washing machine at home 					& 1500       			  & 1200	\\
+		Washing machine at home 					& 1500       			  & 625 (r=0.25m)	\\
 		Industrial centrifuge						& $<15 000$ 			  & 25000 (r=0.1m)	\\
 		Laboratory centrifuge 						& 30,000 to 100,000       & 100,000 to 800,000\\
-		Zippe-type centrifuge*						& 90,000                  & $> 1 \times 10^6$ \\ \hline
+		Zippe-type centrifuge*						& 90,000                  & $\sim 1 \times 10^6$ \\ \hline
 	\end{tabular}		
 	* tangential velocity $> \text{Mach 2} \sim 700 \text{m.s}^{-1}$
 \end{frame}
@@ -126,7 +130,7 @@
 			{\small e.g. $S_{20} = 6.43$ for collagen}
 		\column{0.60\textwidth}
 			\begin{itemize}
-				\item	$S$ = Svedberg coefficient of the material (from tables, experiments) 
+				\item	$S$ = \href{http://en.wikipedia.org/wiki/Svedberg}{Svedberg coefficient} of the material (from tables, experiments) 
 				\item	$r_\text{max}$ and $r_\text{min}$ as shown above [cm]
 				\item	$k = 2.53 \times 10^{11} \left(\displaystyle \frac{\ln\left( r_\text{max} -r_\text{min} \right)}{\text{RPM}_\text{max}^2} \right)$
 			\end{itemize}
@@ -143,7 +147,7 @@
 				\]				
 			\end{exampleblock}
 			
-		\item	The particle is also forced in the direction of the fluid, so net trajectory:
+		\item	The particle is also forced in the direction of fluid flow, so its net trajectory:
 		\begin{center}
 			\includegraphics[width=0.65\textwidth]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
 		\end{center}
@@ -172,14 +176,14 @@
 		Q_\text{max} = \frac{V}{t_T} = \frac{D_p^2\left(\rho_p - \rho_f\right)\omega^2}{18 \mu_f \ln (r_2/r_1)} \pi \left(r_2^2 - r_1^2\right) h
 	\]
 	\begin{itemize}
-		\item	Alternative interpretation: for a given flow $Q$, find the largest particle diameter that will arrive exactly at $r_2$
+		\item	Alternative interpretation: for a given flow $Q$, find the largest particle diameter that will arrive exactly at $r_2$ at height $h$
 		\item	Assume particles with smaller $D_p$ leave in supernatant
-		\item	Obviously this is excessive: we have a discharge weir to \emph{retain particles} that might not have reached $r_2$
+		\item	Obviously this is excessive: we have a discharge weir to \emph{retain particles} that might not have reached $r_2$ at height $h$
 	\end{itemize}	
 \end{frame}
 
 \begin{frame}\frametitle{Cut-size diameter}
-	So to prevent excessive over design, we rather find a mid point between $r_1$ and $r_2$, and solve the equations for the diameter of the particle that reaches this \emph{cut point}:
+	So to prevent excessive over design, we rather find the halfway mark between $r_1$ and $r_2$, and solve the equations for the diameter of the particle that reaches this \emph{cut point}:
 	\[
 		Q_\text{cut} = \frac{V}{t_{T,\text{cut}}} = \frac{D_{p,\text{cut}}^2\left(\rho_p - \rho_f\right)\omega^2}{18 \mu_f \ln \left[2r_2/(r_1+r_2)\right]} \pi \left(r_2^2 - r_1^2\right) h
 	\]
@@ -200,9 +204,15 @@
 		Q_\text{cut} =  2\left( \frac{\left( \rho_p - \rho_f \right) g D_{p,\text{cut}}^2}{18 \mu_f}  \right) \cdot ( \Sigma ) = 2 v_\text{TSV} \cdot \Sigma
 	\]
 	\[
-		\Sigma \approx \frac{\omega^2}{g} \pi h \left(1.5r_2^2 + 0.5r_1^2 \right)
+		\Sigma = \frac{\omega^2 \left[\pi h \left(r_2^2 - r_1^2\right)\right]}{2g \ln \left[2r_2/(r_1+r_2) \right]} 
 	\]
-	which is a simplification of the true $\Sigma$, but only has about 4\% error.
+	
+	\vspace{12pt}
+	$\Sigma = f(r_1, r_2, h, \omega)$
+	%\[
+	%	\Sigma \approx \frac{\omega^2}{2g} \pi h \left(1.5r_2^2 + 0.5r_1^2 \right)
+	%\]
+	%which is a simplification of the true $\Sigma$, but only has about 4\% error.
 \end{frame}
 
 \begin{frame}\frametitle{Why use the Sigma term?}
@@ -210,10 +220,10 @@
 		\item	$\Sigma = f(r_1, r_2, h, \omega)$
 		\item	it is only a function of the centrifuge's characteristics; not the particle or fluid
 		\item	$\Sigma$ has units of $\text{m}^2$: it is the equivalent surface area required for a gravity sedimentation basin
-		\item	Centrifuge 1: $Q_{\text{cut},1} = 2 v_\text{TSV} \cdot \Sigma_1$
-		\item	Centrifuge 2: $Q_{\text{cut},2} = 2 v_\text{TSV} \cdot \Sigma_2$
+		\item	Centrifuge 1: $Q_{\text{cut},A} = 2 v_\text{TSV} \cdot \Sigma_A$
+		\item	Centrifuge 2: $Q_{\text{cut},B} = 2 v_\text{TSV} \cdot \Sigma_B$
 		\item	\[
-					\frac{Q_{\text{cut},1}}{Q_{\text{cut},2}}  = \frac{\Sigma_1}{\Sigma_2}
+					\frac{Q_{\text{cut},A}}{Q_{\text{cut},B}}  = \frac{\Sigma_A}{\Sigma_B}
 				\]
 		\item	Used for scale-up \textbf{within the same types of equipment}
 		\item	$\Sigma$ equation is different for other centrifuge types				
@@ -221,21 +231,20 @@
 \end{frame}
 
 \begin{frame}\frametitle{More on the tubular bowl centrifuge}
-	Can be used for fluid-fluid separation
+	\begin{itemize}	
+		\item	Batch operation: stop to clean out solids; restart again; use paper on wall to assist solids removal [$\sim$ 15 min turnaround]
+		\item	Contamination possible, \emph{not always} suitable for bioseparations
+		\item	A high L/D aspect ratio: stable to operate
+		\item	Can be used for fluid-fluid separation
+	\end{itemize}	
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\begin{center}
 				\includegraphics[width=0.7\textwidth]{\imagedir/separations/centrifuge/liquid-liquid-Geankoplis-fig14-4-3.jpg}
 			\end{center}
 		\column{0.40\textwidth}
-				$\displaystyle \frac{\rho_H}{\rho_L} = \displaystyle \frac{r_2^2 - r_1^2}{r_2^2 - r_4^2}$
-				
+				$\displaystyle \frac{\rho_H}{\rho_L} = \displaystyle \frac{r_2^2 - r_1^2}{r_2^2 - r_4^2}$				
 	\end{columns}
-	\begin{itemize}	
-		\item	Batch operation: stop to clean out solids; restart again; use paper on wall to assist solids removal [$\sim$ 15 min turnaround]
-		\item	Contamination possible, \emph{not always} suitable for bioseparations
-		\item	A high L/D aspect ratio: stable to operate
-	\end{itemize}	
 \end{frame}
 
 \begin{frame}\frametitle{More on the tubular bowl centrifuge}
@@ -264,11 +273,11 @@
 	\begin{itemize}		
 		\item	Recall from tubular centrifuge: $Q_\text{max} = V / t_T$
 		\item	If we can increase the volume of fluid, we get a higher throughput, $Q$
-		\item	Adding angled disks gives a greater surface area, hence volume, without increasing diameter $r_2$
+		\item	Adding angled disks gives a greater surface area, hence volume, without increasing bowl diameter
 		\item	Widely used in bio separations: no contamination (aseptic) 
 		\item	Also for: fish oil, fruit juice, beer clarification
 		\item	As seen in the video, continuous operation is possible on some units
-		\item	Periodic cleaning is required though
+		\item	Periodic cleaning of the disks is required though
 		\item	$\Sigma = \displaystyle \frac{2\pi\omega^2 N(r_1^3 - r_2^3)}{3g \tan \theta}$
 			\begin{itemize}
 				\item	$N$ = number of disk plates
@@ -344,6 +353,7 @@
 			\item	\href{http://en.wikipedia.org/wiki/Programmable_logic_controller}{PLC}: programmable logical controllers 
 			\item	\href{http://en.wikipedia.org/wiki/SCADA}{SCADA}: supervisory control and data acquisition
 			\item	safety interlocks
+			\item	cameras are increasingly used to monitor sediment buildup: auto-stop and clean
 		\end{itemize} 
 		\item	flammable fluids (e.g. solvents): nitrogen blanket
 	\end{itemize}
