@@ -30,6 +30,8 @@
 		\item	Please do not share a Word or PDF file
 		\item	We cannot comment on those
 		\item	File name: \texttt{2012-4M3-Lastname1-Lastname2-Assignment-NN}
+		\item	Ensure full names and student numbers are inside the document
+		\item	Other details on course website
 	\end{itemize}
 \end{frame}
 
@@ -52,55 +54,94 @@
 \end{frame}
 
 \begin{frame}\frametitle{Uses}
+	Wide variety of uses:
 	\begin{itemize}
-		\item	dust removal (principal application)
+		\item	dust removal (principal application) in many industries
 		\item	mist (droplets) removed from air streams
 		\item	recovery of spray-dried particles
+		\item	separating immiscible liquids (different densities)
+		\item	dewater suspensions: concentrate the product
+		\item	remove dissolved gases from liquid stream
+		\item	solids-solids separation
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Principle of operation}
 	\begin{itemize}
-		\item	Same principle as a centrifuge
-		\item	Except {\color{myOrange}{no moving parts}}!
+		\item	Same principle as a centrifuge: \textbf{{\color{myGreen}{density difference required}}}
+		\item	{\color{myOrange}{No moving parts}}!
 		\item	Very low operating costs: essentially only pay for $\Delta P$
-		\item	Particle sizes 5 \micron and higher are effectively removed
-	\end{itemize}
+		\item	Very low capital costs: can be made from many materials
+		\item	Particle sizes 5\micron\,  and higher are effectively removed
+		\item	Even different particle shapes (due to different settling velocities) can be separated
+	\end{itemize}	
 	
-	\begin{columns}[t]
-		\column{0.60\textwidth}
-			\todo{picture here}
-		\column{0.40\textwidth}
-			\begin{itemize}
-				\item	Cylindrical section
-				\item	Conical section
-				\item	Vortex finder
-				\item	Spigot (where solids leave)
-			\end{itemize}
-	\end{columns}	
 \end{frame}
 
-\begin{frame}\frametitle{General path of travel in a cyclone}
+\begin{frame}\frametitle{General path of travel in a cyclone {\color{myGreen}{{\scriptsize low viscosity, low solids concentration}}}}
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\begin{center}
 				\includegraphics[height=.9\textheight]{\imagedir/separations/cyclones/flow-pattern-CRv6-p451.png}
 			\end{center}
 		\column{0.40\textwidth}
-			However, it is more complex than this. 
+			Generally, flow pattern is more complex than this. 
 			
+			\vspace{12pt}			
 			See, for example, \href{http://www.youtube.com/watch?v=CWLARs\_dJO0}{this video of a PET scan} of a radioactive isotope labelled particle $^{18}F$
 			
 			\vspace{12pt}
-			Vortex and tangential forces formed by the fluid
+			\begin{itemize}
+				\item	Vortex and tangential forces formed by the fluid
+			\end{itemize}
 	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Velocity profile}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-velocity-profile-CRv2-5ed-p53.png}
-	\end{center}
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=1.05\textwidth]{\imagedir/separations/cyclones/cyclone-velocity-profile-CRv2-5ed-p53.jpg}
+			\end{center}
+		\column{0.5\textwidth}
+			{\color{myOrange}{\textbf{3 directions of travel:}}}
+			\begin{enumerate}
+				\item	LZVV = locus of zero \textbf{vertical velocity} (axial velocity)
+				\item	radial velocity (small)
+				\item	tangential velocity
+					\begin{itemize}
+						\item	$v_t r^n$ = constant
+						\item	true at all heights inside cyclone 
+					\end{itemize}
+			\end{enumerate}
+			\hrule
+			\begin{itemize}
+				\item	centrifugal force (acts $\longrightarrow$)
+				\item	drag force (acts $\longleftarrow$)
+				\item	if centrifugal $>$ drag: particle moves outwards
+				\item	then pulled down in axial stream and exits in underflow
+			\end{itemize}
+	\end{columns}	
 \end{frame}
+
+\begin{frame}\frametitle{Velocity profiles}
+	\begin{exampleblock}{}
+		The above description is extremely simplistic; velocity profiles cannot be theoretically derived for most practical cases.
+	\end{exampleblock}
+	
+	\begin{itemize}
+		\item	it is \textbf{not} gravity that removes the heavier particles in underflow
+		\item	it is the slower, boundary layer flow at the walls and downward air flow
+		\item	particles rotate at a radius where centrifugal force is balanced by drag force
+		\item	larger, denser particles move selectively towards the wall
+		\item	residence time must be long enough to achieve equilibrium orbits
+		\item	all of this comes down to a careful balance of radial and tangential velocities
+		%\item	entry velocities: 5 m.s$^{-1}$ or often greater for solid-gas separation
+	\end{itemize}	
+	% Good description: Svarovsky, 3rd ed, p 207.
+\end{frame}
+
+\begin{comment}
 
 \begin{frame}\frametitle{Grade efficiency}
 	
@@ -228,3 +269,5 @@
 	U
 	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.	
 \end{frame}
+
+\end{comment}
