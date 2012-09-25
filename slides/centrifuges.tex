@@ -1,4 +1,17 @@
 % 20 September 2012
+
+% Changes to make for 2013: 
+% * Q_cut vs Q_max notation: in fact, Q_cut > Q_max, so Q_max is bad notation
+% * Also, call it \Sigma_cut and \Sigma_max (but don't use max anymore). These correspond to their flowrates. Add this on the page "Cut-size diameter"
+% * See red notebook for \Sigma_cut and \Sigma_max 
+% * Add an example (e.g. the last example)
+%
+% For reference: Q_max: integrating from r_1 to r_2 within length 0 to h to find the t_T time
+%                Q_cut: integrating from r_1 to midpoint, within length 0 to h, to find the t_T time
+% Make this point clear
+% Emphasize that we could have used any other point, e.g. 0.8(r_2 - r_1): just that 50% is used by convention:
+% Accounts for uncertainties in our flows, physical properties and idealities assumed with Stokes' law
+
 \begin{frame}\frametitle{Why consider centrifuges?}
 	\begin{itemize}
 		\item	When gravity (freely available) is not fast enough
@@ -417,8 +430,7 @@
 	\end{itemize}
 	
 	It is being used to separate bacteria from a fermentation broth:
-	\begin{enumerate}
-		\item	Calculate the $\Sigma$ factor for this centrifuge.
+	\begin{enumerate}		
 		\item	If the broth has the following properties:
 			\begin{itemize}
 				\item	$\rho_f = 1010~\text{kg.m}^{-3}$
@@ -427,6 +439,7 @@
 				\item	$\rho_p = 1040~\text{kg.m}^{-3}$
 			\end{itemize}
 			calculate both $Q_\text{max}$ and the more realistic $Q_\text{cut}$.
+		\item	Calculate the $\Sigma$ factor for this centrifuge based on the cut-size flowrate.
 	\end{enumerate}
 \end{frame}
 
