@@ -36,24 +36,12 @@
 \end{frame}
 
 \begin{frame}\frametitle{Alternatives}
-	A number of alternatives exist; based on the principle that particle's momentum $>$ air momentum. {\color{myGreen}{Other options?}}
+	A number of alternatives exist; based on the principle that particle's momentum $>$ air momentum. {\color{myBlue}{Other options?}}
 	
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{\imagedir/separations/cyclones/cyclone-alternative-CRv2-5ed-p81.png}
 	\end{center}	
 	\see{Richardson and Harker, 5ed, p81}
-\end{frame}
-
-\begin{frame}\frametitle{Principle of operation}
-	\begin{itemize}
-		\item	Same principle as a centrifuge: \textbf{{\color{myGreen}{density difference required}}}
-		\item	{\color{myOrange}{No moving parts!}}
-		\item	Very low operating costs: essentially only pay for $\Delta P$
-		\item	Very low capital costs: can be made from many materials
-		\item	Particle sizes 5\micron\, and higher are effectively removed
-		\item	Even different particle shapes (due to different settling velocities) can be separated
-		\item	Forces acting on particles: between 5 (large cyclones) and 2500 G (small cyclones)
-	\end{itemize}	
 \end{frame}
 
 \begin{frame}\frametitle{Cyclone operation}
@@ -82,6 +70,26 @@
 	\end{columns}
 \end{frame}
 
+\begin{frame}\frametitle{Principle of operation}
+	\begin{itemize}
+		\item	Same principle as a centrifuge: \textbf{{\color{myGreen}{density difference required}}}
+		\item	{\color{myOrange}{No moving parts!}}
+		\item	Very low operating costs: essentially only pay for $\Delta P$
+		\item	Very low capital costs: can be made from many materials
+		\item	Particle sizes 5\micron\, and higher are effectively removed
+		\item	Even different particle shapes (due to different settling velocities) can be separated
+		\item	Forces acting on particles: between 5 (large cyclones) and 2500 G (small cyclones)
+	\end{itemize}	
+	\vspace{12pt}
+	Videos:
+	\begin{itemize}
+		\item	\href{http://www.youtube.com/watch?v=2bUlytvimy4}{http://www.youtube.com/watch?v=2bUlytvimy4}
+		\item	\href{http://www.youtube.com/watch?v=GxA49uVP2Ns}{http://www.youtube.com/watch?v=GxA49uVP2Ns}
+		\item	\href{http://www.youtube.com/watch?v=BicR3JGlE5M}{http://www.youtube.com/watch?v=BicR3JGlE5M}
+		\item	and many other videos of people making their own cyclones.
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Velocity profile}
 	\begin{columns}[c]
 		\column{0.60\textwidth}
@@ -103,7 +111,7 @@
 			\begin{itemize}
 				\item	centrifugal force (acts $\longrightarrow$)
 				\item	drag force (acts $\longleftarrow$)
-				\item	if centrifugal $>$ drag: particle moves outwards
+				\item	if $F_\text{centrifugal} > F_\text{drag}$\\ particle moves towards wall
 				\item	then pulled down in axial stream and exits in underflow
 			\end{itemize}
 	\end{columns}	
@@ -115,12 +123,13 @@
 	\end{exampleblock}
 	
 	\begin{itemize}
-		\item	it is \textbf{not} gravity that removes the heavier particles in underflow
-		\item	it is the slower, boundary layer flow at the walls and downward air flow
+		\item	it is \textbf{not} \emph{gravity} that removes the heavier particles in underflow
+		\item	it is the slower, boundary layer flow at the walls and air flow out of the spigot
 		\item	particles rotate at a radius where centrifugal force is balanced by drag force
 		\item	larger, denser particles move selectively towards the wall
-		\item	residence time must be long enough to achieve equilibrium orbits
+		\item	residence time must be long enough to achieve equilibrium orbits; spiral patterns help
 		\item	all of this comes down to a careful balance of radial and tangential velocities
+		\item	velocities: those are our degrees of freedom to operate the cyclone
 		\item	models use Stokes' law: does this seem right?
 		%\item	entry velocities: 5 m.s$^{-1}$ or often greater for solid-gas separation
 	\end{itemize}	
@@ -161,7 +170,7 @@
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{\imagedir/separations/screens/particle-size-distribution.png}
 	\end{center}
-	Percentage area under the curve at that size fraction.
+	Percentage area under the curve at size fraction $x$.
 \end{frame}
 
 \begin{frame}\frametitle{Back to grade efficiency}
@@ -170,7 +179,7 @@
 	\end{exampleblock}
 	\begin{itemize}
 		\item	$G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the overflow
-		\item	and the other half in the underflow; 50-50 (mass) split in the two outlets for particles of size $x$
+		\item	and the other half in the underflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{myRed}{cut size}}''.
 		\item	$G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
 		\item	$G(x) = 1.0$: also means the \emph{largest particle size} we expect to ever see in overflow
 		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [$G(x)$ curves don't always reach 0\%]}
@@ -275,25 +284,6 @@
 	http://www.youtube.com/watch?v=BicR3JGlE5M
 \end{frame}
 
-\end{comment}
-
-\begin{frame}\frametitle{Cyclone as a classifier, not a separator}
-	
-	
-	
-\end{frame}
-
-\begin{frame}\frametitle{Circuits of cyclones}
-	How is the flowsheet designed?
-
-	Fig 6.15
-	Fig 6.18
-\end{frame}
-
-\begin{frame}\frametitle{}
-	Figre 6.19
-\end{frame}
-
 \begin{frame}\frametitle{Circuit selection}
 	Crushing circuit: to separate fines from coarse: recycle coarse material for recrushing. Could also use a screen. Why use a cyclone instead?
 	Also: could use elutriation with air rather than screens or cyclones. Why would you use elutriation?
@@ -302,6 +292,96 @@
 	Use: mists separated from gas
 	U
 	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.	
+\end{frame}
+
+\begin{frame}\frametitle{Circuits of cyclones}
+	How is the flowsheet designed?
+	Fig 6.15
+	Fig 6.18
+	\item Figre 6.19
+\end{frame}
+\end{comment}
+
+\begin{frame}\frametitle{Circuits of separators}
+	{\scriptsize \textbf{The remaining slides can be applied to any separation system, though most commonly used for cyclones and other solid-fluid separations.}}
+	\vspace{12pt}
+	\hrule
+	\vspace{6pt}
+	When one unit is not enough... 
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	we need a lower cut size
+				\item	need a sharper cut (slope of grade efficiency curve at $x_\text{cut}$)
+				\item	we need high concentrations
+				\item	use lower velocities to reduce abrasion on equipment, but this will change efficiency, so then ...
+			\end{itemize}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/grade-efficiency-curve.png}
+			\end{center}
+	\end{columns}	
+	\vspace{24pt}
+	\seefull{The rest of this section is from Svarovsky, 4ed, Chapter 16}
+\end{frame}
+
+\begin{frame}\frametitle{Units in series: overflow}
+	\begin{columns}[t]
+		\column{0.7\textwidth}
+		Grade efficiency curve for the entire sequence
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-efficiency-series-overflow-Svarovsky-4ed-p480.png}
+			\end{center}
+		\column{0.40\textwidth}
+		\begin{itemize}
+			\item	cut size becomes smaller with more units in series
+			\item	cut size sharpness (steepness of curve) increases
+			\item	but there are diminishing returns after 3 to 4 units
+		\end{itemize}
+	\end{columns}
+	\vspace{12pt}
+	e.g. $G(x\rightarrow 0)=10\%$: implies that 10\% of the smallest size fractions are always found in the coarse underflow: we cannot remove these fines
+\end{frame}
+
+\begin{frame}\frametitle{Recycle around a unit}
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-efficiency-recycle-Svarovsky-4ed-p483.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{itemize}
+				\item	dilutes feed, which improves efficiency
+				\item	decreases cut size for increasing recycle ratio: $Q/q$
+				\item	again diminishing returns after a ratio of 3 is exceeded
+			\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Units in series: underflow}
+	\begin{columns}[t]
+		\column{0.7\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-efficiency-series-underflow-Svarovsky-4ed-p488.png}
+			\end{center}
+		\column{0.40\textwidth}
+		\begin{itemize}
+			\item	is this useful for anything?
+		\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Recycle in the underflow}
+	\begin{columns}[t]
+		\column{0.7\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-efficiency-recycle-underflow-Svarovsky-4ed-p485.png}
+			\end{center}
+		\column{0.40\textwidth}
+		\begin{itemize}
+			\item	Best of both worlds?
+		\end{itemize}
+	\end{columns}	
 \end{frame}
 
 \begin{frame}\frametitle{References}
@@ -313,5 +393,3 @@
 		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 4-135
 	\end{itemize}
 \end{frame}
-
-
