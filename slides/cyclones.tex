@@ -1,40 +1,4 @@
 % Was supposed to be 21 September 2012; realistically, only 24 September
-\begin{comment}
-\begin{frame}\frametitle{}
-	See: http://www.nzifst.org.nz/unitoperations/, UNIT OPERATIONS IN FOOD PROCESSING
-
-	http://www.nzifst.org.nz/unitoperations/mechseparation3.htm
-
-	Cyclones are often used for the removal from air streams of particles of about 10 mm or more diameter. They are also used for separating particles from liquids and for separating liquid droplets from gases. The cyclone is a settling chamber in the form of a vertical cylinder, so arranged that the particle-laden air spirals round the cylinder to create centrifugal forces which throw the particles to the outside walls. Added to the gravitational forces, the centrifugal action provides reasonably rapid settlement rates. The spiral path, through the cyclone, provides sufficient separation time. A cyclone is illustrated in Fig. 10.2(a).
-
-
-	Figure 10.2 Cyclone separator: (a) equipment (b) efficiency of dust collection
-
-
-	Stokes' Law shows that the terminal velocity of the particles is related to the force acting. In a centrifugal separator, such as a cyclone, for a particle, rotating round the periphery of the cyclone:
-	           Fc = (mv2)/r                                                                                                         (10.4)
-
-	where Fc is the centrifugal force acting on the particle, m is the mass of the particle, v is the tangential velocity of the particle and r is the radius of the cyclone.
-
-	This equation shows that the force on the particle increases as the radius decreases, for a fixed velocity. Thus, the most efficient cyclones for removing small particles are those of smallest diameter. The limitations on the smallness of the diameter are the capital costs of small diameter cyclones to provide sufficient output, and the pressure drops.
-
-	The optimum shape for a cyclone has been evolved mainly from experience and proportions similar to those indicated in Fig. 10.2(a) have been found effective. The efficient operation of a cyclone depends very much on a smooth double helical flow being produced and anything which creates a flow disturbance or tends to make the flow depart from this pattern will have considerable and adverse effects upon efficiency. For example, it is important that the air enters tangentially at the top. Constricting baffles or lids should be avoided at the outlet for the air.
-
-	The efficiency of collection of dust in a cyclone is illustrated in Fig. 10.2(b). Because of the complex flow, the size cut of particles is not sharp and it can be seen that the percentage of entering particles which are retained in the cyclone falls off for particles below about 10 mm diameter. Cyclones can be used for separating particles from liquids as well as from gases and also for separating liquid droplets from gases.
-\end{frame}
-\end{comment}
-
-\begin{frame}\frametitle{Administrative}
-	Please ensure assignment is a ``pure'' Google Doc
-	\begin{itemize}
-		\item	Please do not share a Word or PDF file
-		\item	We cannot comment on those
-		\item	File name: \texttt{2012-4M3-Lastname1-Lastname2-Assignment-NN}
-		\item	Ensure full names and student numbers are inside the document
-		\item	Other details on course website
-	\end{itemize}
-\end{frame}
-
 \begin{frame}\frametitle{The cyclone}
 	\vspace{-24pt}
 	\begin{columns}[b]
@@ -57,6 +21,11 @@
 	Wide variety of uses:
 	\begin{itemize}
 		\item	dust removal (principal application) in many industries
+			\begin{itemize}
+				\item	cement industry
+				\item	sawmills
+				\item	catalyst particle recovery in reactors
+			\end{itemize}
 		\item	mist (droplets) removed from air streams
 		\item	recovery of spray-dried particles
 		\item	separating immiscible liquids (different densities)
@@ -72,9 +41,17 @@
 		\item	{\color{myOrange}{No moving parts}}!
 		\item	Very low operating costs: essentially only pay for $\Delta P$
 		\item	Very low capital costs: can be made from many materials
-		\item	Particle sizes 5\micron\,  and higher are effectively removed
+		\item	Particle sizes 5\micron\, and higher are effectively removed
 		\item	Even different particle shapes (due to different settling velocities) can be separated
+		\item	Forces acting on particles: between 5 (large cyclones) and 2500 G (small cyclones)
 	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Cyclone operation}
+	\begin{center}
+		\includegraphics[width=0.62\textwidth]{\imagedir/separations/cyclones/cyclone-Brown-and-Associates-p119.png}
+	\end{center}
+	\see{Brown and Associates, Unit Operations, p 119}
 \end{frame}
 
 \begin{frame}\frametitle{General path of travel in a cyclone {\color{myGreen}{{\scriptsize low viscosity, low solids concentration}}}}
@@ -135,6 +112,7 @@
 		\item	larger, denser particles move selectively towards the wall
 		\item	residence time must be long enough to achieve equilibrium orbits
 		\item	all of this comes down to a careful balance of radial and tangential velocities
+		\item	models use Stokes' law: does this seem right?
 		%\item	entry velocities: 5 m.s$^{-1}$ or often greater for solid-gas separation
 	\end{itemize}	
 	% Good description: Svarovsky, 3rd ed, p 207.
@@ -144,18 +122,94 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-psd-Svarovsky.png}
 	\end{center}
+	
+	\vspace{-48pt}
+	Mass balance: $\text{M} = \text{M}_\text{f} + \text{M}_\text{c}$	
+	\vfill
 	\see{Svarovsky, 3ed, p210}
 \end{frame}
 
-\begin{comment}
+\begin{frame}\frametitle{{\color{myOrange}{Concept}}: Grade efficiency}
+	\begin{exampleblock}{Total efficiency defined}
+		$E_T = \displaystyle \frac{\text{M}_\text{c}}{\text{M}} = 1 - \displaystyle \frac{\text{M}_\text{f}}{\text{M}}$
+	\end{exampleblock}	
+	\begin{itemize}
+		\item	not too much to interpret here: it is just a definition
+		\item	0\% efficiency: all mass is being sent to overflow (fines) stream
+		\item	100\% efficiency: all mass to underflow (coarse) stream
+	\end{itemize}
+	\vspace{12pt}
+	More useful though:
+	\begin{exampleblock}{Grade efficiency defined}
+		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
+	\end{exampleblock}
+	\begin{itemize}
+		\item	calculated at a particle size fraction $x$
+	\end{itemize}	
+\end{frame}
 
-\begin{frame}\frametitle{Grade efficiency}
+\begin{frame}\frametitle{``What is fraction of size $x$?''}	
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{\imagedir/separations/screens/particle-size-distribution.png}
+	\end{center}
+	Percentage area under the curve at that size fraction.
+\end{frame}
+
+\begin{frame}\frametitle{Back to grade efficiency}
+	\begin{exampleblock}{Grade efficiency}
+		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
+	\end{exampleblock}
+	\begin{itemize}
+		\item	$G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the overflow
+		\item	and the other half in the underflow; 50-50 (mass) split in the two outlets for particles of size $x$
+		\item	$G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow)
+		\item	$G(x) = 1.0$: also means the \emph{largest particle size} we expect to ever see in overflow
+		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [$G(x)$ curves don't always reach 0\%]}
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Grade efficiency curve}
+	Calculate efficiency at each size fraction and plot it:
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/cyclones/grade-efficiency-curve-CRv2-5ed-p78.png}
+	\end{center}
+	Which is a better cyclone?
+\end{frame}
+
+\begin{frame}\frametitle{Day-to-day operation}
+	% C+R v6, p 453
+	\begin{itemize}
+		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} pressures
+		\item	increase $\Delta P$, increases efficiency
+		\item	$\Delta P \propto \rho_f \qquad  \Delta P \propto u_\text{in}^2~\text{and}~u_\text{overflow}^2 \qquad  \Delta P \propto \displaystyle\frac{1}{d_\text{under}}$
+		\item	$u_\text{in}$ = entry velocity and $d_\text{under}$ = diameter of underflow
+		\item	efficiency drops off at high solids concentration: try to operate as dilutely as possible if requiring high solids recovery
+		\item	leave the underflow opening diameter as an physically adjustable variable: it is hard to predict its size from theory
+		\item	air leaks at this point are disastrous for efficiency \see{Perry, Ch 17.2, 8ed}
+	\end{itemize}
+	% Perry 17.2: A cyclone will operate equally well on the suction or pressure side of a fan if the dust receiver is airtight. Probably the greatest single cause of poor cyclone performance, however, is the leakage of air into the dust outlet of the cyclone. A slight air leak at this point can result in a tremendous drop in collection efficiency, particularly with fine dusts.
+\end{frame}
+
+\begin{frame}\frametitle{Operational advantages and disadvantages}
+	{\color{myGreen}{Advantages}}
+	\begin{itemize}
+		\item	cost of operation: related to $\Delta P$ (i.e. electrical cost only)
+		\item	cheap capital cost
+		\item	small size
+		\item	mounted in any orientation (except for very large units)
+		\item	versatile: multiple uses
+	\end{itemize}
 	
+	
+	Balanced by some {\color{myOrange}{disadvantages}}:
+	\begin{itemize}
+		\item	subject to abrasion
+		\item	cannot use flocculation: high shear forces
+		\item	limits on their efficiency curves
+		\item	requires consistant feed rate and concentration to maintain efficiency i.e. not suitable for variable feeds
+	\end{itemize}	
 \end{frame}
 
-\begin{frame}\frametitle{Pressure drop}
-	p 453 C+R v6
-\end{frame}
 
 \begin{frame}\frametitle{Design considerations: HYDROcyclone}
 	C+R v2, 5ed, p54
@@ -182,7 +236,7 @@
 	or, if a blower is required, to give the lowest operating cost.
 \end{frame}
 
-\begin{frame}\frametitle{}
+\begin{frame}\frametitle{Design: typical dimensions and options}
 	C+R v6, p404
 	Liquid cyclones can be used for the classification of solid particles over a size range from 5 to 100\micron. Commercial units are available in a wide range of materials of
 	￼
@@ -190,20 +244,15 @@
 	construction and sizes; from as small as 10 mm to up to 30 m diameter. The separating efficiency of liquid cyclones depends on the particle size and density, and the density and viscosity of the liquid medium.
 \end{frame}
 
-\begin{frame}\frametitle{Merits and disadvantages}
-	p 212 Svarovsky
+\begin{frame}\frametitle{Operational}
+	C+R v2: p 77
+	
+	A small inlet and outlet therefore result in the separation of smaller particles but, as the pressure drop over the separator varies with the square of the inlet velocity and the square of the outlet velocity(56), the practical limit is set by the permissible drop in pressure. The depth and diameter of the body should be as large as possible because the former determines the radial component of the gas velocity and the latter controls the tangential component at any radius. In general, the larger the particles, the larger should be the diameter of the separator because the greater is the radius at which they rotate. The larger the diameter, the greater too is the inlet velocity which can be used without causing turbulence within the separator. The factor which ultimately settles the maximum size is, of course, the cost. Because the separating power is directly related to the throughput of gas, the cyclone separator is not very flexible though its efficiency can be improved at low throughputs by restricting the area of the inlet with a damper and thereby increasing the velocity. Generally, however, it is better to use a number of cyclones in parallel and to keep the load on each approximately the same whatever the total throughput.
+	
 \end{frame}
 
-\begin{frame}\frametitle{Design}
-	d50 design: C+R v6, p 423
-\end{frame}
-
-\begin{frame}\frametitle{Design}
-	p 426 C+R v6
-\end{frame}
-
-\begin{frame}\frametitle{Design}
-	p 450 C+R v6
+\begin{frame}\frametitle{how is it designed: simple nomographs, equations, etc}
+	d50 design: C+R v6, p 423 and p 426 and 	p 450 C+R v6
 \end{frame}
 
 \begin{frame}\frametitle{Effect of solids flow rate}
@@ -227,36 +276,18 @@
 	Figre 6.19
 \end{frame}
 
-\begin{frame}\frametitle{Typical dimensions}
-	How are they designed?
-	Scaled-up?	
+\begin{frame}\frametitle{Centrifuge, cyclones or sedimentation}
+	
 \end{frame}
 
-\begin{frame}\frametitle{Operational issue}
-	Pressure drop
-	Electrical costs to operation
-\end{frame}
-
-\begin{frame}\frametitle{Capital costs}
-	Is a function of ...
-	\begin{itemize}
-		\item	pressure rating (ASME conformance)
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{References}
-	* Svarovsky3, Ch 6
-	* C+R v2, page 73
-\end{frame}
 
 \begin{frame}\frametitle{References}
 	\begin{itemize}
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, Chapter XXXX
-		\item	Sinnot, ``Chemical Engineering, Volume 6'', XXXXth edition, Chapter XXXX
-		\item	Perry's, ``Chemical Engineers' Handbook'', 8th edition, Chapter XXXX
 		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition, Chapter 6. Clearly written.
-		\item	Seader et al. ``Separation Process Principles", page XXXXX in 3rd edition 
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter XXXX
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, Chapter 1
+		\item	Sinnot, ``Chemical Engineering, Volume 6'', 4th edition, Chapter 10
+		\item	Perry's, ``Chemical Engineers' Handbook'', 8th edition, Chapter 17.2
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 4-135
 	\end{itemize}
 \end{frame}
 
@@ -275,5 +306,3 @@
 	U
 	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.	
 \end{frame}
-
-\end{comment}
