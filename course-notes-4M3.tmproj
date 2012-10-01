@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>slides/cyclones.tex</string>
+	<string>slides/membranes.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -49,43 +49,43 @@
 	<integer>185</integer>
 	<key>metaData</key>
 	<dict>
-		<key>classes/2012-4M3-class-04.tex</key>
+		<key>classes/2012-4M3-class-05.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>18</integer>
 				<key>line</key>
-				<integer>0</integer>
+				<integer>1</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
 		</dict>
-		<key>slides/cyclones.tex</key>
+		<key>slides/membranes.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>26</integer>
+				<integer>11</integer>
 				<key>line</key>
-				<integer>146</integer>
+				<integer>19</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>26</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
-		<string>classes/2012-4M3-class-04.tex</string>
-		<string>slides/cyclones.tex</string>
+		<string>classes/2012-4M3-class-05.tex</string>
+		<string>slides/membranes.tex</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{-925, 0}, {1725, 578}}</string>
+	<string>{{1635, -180}, {1725, 1080}}</string>
 </dict>
 </plist>
