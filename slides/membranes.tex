@@ -81,6 +81,9 @@
 		\item	withstanding high pressure differences but still have thin membrane
 		\item	increasing selectivity (separation factor) for specific application areas
 		\item	dealing with fouling and cleaning
+		\item	uniformity of pore sizes
+		\item	temperature stability (e.g. steam sterilization)
+		\item	
 	\end{itemize}
 \end{frame}
 
@@ -105,12 +108,13 @@
 	{\color{myGreen}{semipermeable}}: partially permeable, e.g. your skin allows certain size particles in, but not others
 
 	\vspace{12pt}
-
 	{\color{myGreen}{mass separating agent}}: the membrane itself
 	
-	\vspace{12pt}
-	
+	\vspace{12pt}	
 	{\color{myGreen}{energy separating agent}}: the applied pressure (pressure drop)
+	
+	\vspace{12pt}
+	{\color{myGreen}{porosity}} = $\displaystyle \frac{\text{area of open pores}}{\text{total surface area}}$ 
 		%\item	permeate: the material passing through the membrane from feed to outlet side
 		%\item	retentate: the material retained on the feed-side of the membrane
 		%\item	solute: most often retained on the inside (feed side) of the membrane and deposited on the membrane wall
@@ -119,7 +123,7 @@
 		%\item	cross-flow:
 		%\item	sweep:
 		%\item	kilodalton
-		%\item	MWCO
+		%\item	MWCO: C+Rv2ed5, p 440 and 441: A parameter often quoted in manufacturer’s literature is the nominal molecular weight cut-off (MWCO) of a membrane. This is based on studies of how solute molecules are rejected by membranes. A solute will pass through a membrane if it is sufficiently small to pass through a pore, if it does not significantly interact with the membrane and if it does not interact with other, larger solutes. It is possible to define a solute rejection coefficient R by: R = 1 − (C_p/C_f ) where C_f is the concentration of solute in the feed stream and C_p is the concentration of solute in the permeate. See fig 8.3 in C+Rv2ed5
 		%\item	Pervaporation
 		%\item	Reverse osmosis
 		%\item	Permeability
@@ -192,8 +196,80 @@
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Transport through a membrane}
-	Fig 3 in green book: velocity function
+\begin{frame}\frametitle{The general equation}
+	\[
+		\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}  = \text{Flux} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle \frac{\text{driving force}}{\text{resistance}} 
+	\]
+\end{frame}
+
+\begin{frame}\frametitle{Microfiltration}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	0.1 \micron ~to 10 \micron
+				\item	conventional filters: not effective below $\sim 5$~\micron
+				\item	microfiltration membranes: generally symmetric pores
+				\item	porosity as high as $\epsilon = 0.8$
+				\item	driving force: primarily pressure difference
+				\item	application areas:
+					\begin{itemize}
+						\item	yeast cells
+						\item	wine/beer/juice clarification
+						\item	large bacteria
+					\end{itemize}
+			\end{itemize}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=0.95\textwidth]{\imagedir/separations/membranes/symmetric-pore-structure-Henk-Koops-talk.png}
+			\end{center}
+			\see{Henk Koops' slide}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{General modelling equation applied}
+	\begin{exampleblock}{}
+		\begin{columns}[c]
+			\column{0.30\textwidth}
+				\[
+					\text{Flux} = J = \displaystyle \frac{\Delta P}{\mu \left(R_m + R_c \right)}
+				\]
+			\column{0.70\textwidth}
+				\begin{center}
+					\includegraphics[width=0.53\textwidth]{\imagedir/separations/membranes/solute-build-up-CRv2-5ed-p446.png}
+				\end{center}
+		\end{columns}		
+	\end{exampleblock}	
+	\vspace{6pt}
+	\begin{tabular}{lll}
+		$J$			&	[$\text{kg}.\text{s}^{-1}\text{.m}^{-2}$] 			& permeate flux \\
+		$\Delta P$	&	$[Pa] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ 	& generally $0.1 \text{~to~} 0.5 \times 10^6$ Pa \\
+		$\mu$ 		&  	$[\text{kg}.\text{m}^{-1}\text{.s}^{-1}]$			& permeate viscosity\\
+		$R_m$ 		&  	$[\text{m}^2.\text{kg}^{-1}]$						& resistance due to the membrane (small)\\
+		$R_c$ 		&  	$[\text{m}^2.\text{kg}^{-1}]$						& resistance due to the cake build up (large)\\
+	\end{tabular}
+\end{frame}
+
+\begin{frame}\frametitle{Flow patterns for microfiltration}
+	% The particle-containing fluid to be filtered is pumped at a velocity in the range 1–8 m/s parallel to the face of the membrane and with a pressure difference of (MPa) across the membrane. T
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+			Dead-end flow
+			\begin{itemize}
+				\item	only for very low concentration feeds
+				\item	else becomes rapidly clogged
+			\end{itemize}
+		\column{0.50\textwidth}
+			Cross-flow
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
+			\end{center}
+			\begin{itemize}
+				\item	TFF = tangential flow filtration
+				\item	main purpose?
+				%\item	$\Delta P = \displaystyle \frac{P}{}$
+			\end{itemize}
+	\end{columns}
+	
 \end{frame}
 
 \begin{frame}\frametitle{References}
@@ -223,7 +299,19 @@
 \end{frame}
 	
 \begin{frame}\frametitle{Ultrafiltration}
-	eqn 20-84 Perry
+	% eqn 20-84 Perry
+	
+	\begin{itemize}
+		\item	recovery of proteins
+		\item	separate permanent emulsions: oil phase will not pass
+		\item	fine colloidal particles: e.g. paint/dyes in wastewater
+		\item	large molecules in retentate
+		\item	See Wankat, p 574
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Transport through a membrane}
+	Fig 3 in green book: velocity function for ultrafiltration
 \end{frame}
 
 \begin{frame}\frametitle{Wastewater applications}
