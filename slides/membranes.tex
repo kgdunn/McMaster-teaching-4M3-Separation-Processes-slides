@@ -1,3 +1,4 @@
+% 02 October 2012
 \begin{frame}\frametitle{Membranes}
 	On a loose sheet of paper, please list/describe 5 topics related to membranes that you want to learn about in the next 5 classes.
 	
@@ -16,7 +17,11 @@
 	e.g. recall interesting ideas from Henk Koops' talk; check the internet; talk with the person next to you
 \end{frame}
 
-\begin{frame}\frametitle{Why use membrane?}
+\begin{frame}\frametitle{Introduction to membranes}
+	Please refer to Henk Koops' slides/video from 28 September 2012 on \href{http://learnche.mcmaster.ca/4M3/Membranes,_dialysis,_reverse_osmosis,_filters_and_bioseparations_-_2012}{the course website}
+\end{frame}
+
+\begin{frame}\frametitle{Why use membranes?}
 	Some really difficult separations:
 	\begin{itemize}
 		\item	finely dispersed solids; density close to liquid phase; gelatinous particles
@@ -40,73 +45,208 @@
 			\item	effective
 			\item	maybe slow?
 		\end{itemize}
-	\end{exampleblock}	
+	\end{exampleblock}		
 \end{frame}
 
 \begin{frame}\frametitle{Why use membranes?}
-	Relatively new separation step (``new'' meaning since 1960 to 1980s)
+	Relatively new separation step {\small (``new'' meaning since 1960 to 1980s)}
 	\begin{itemize}
 		\item	often saves energy costs over alternative separations
 		\begin{itemize}
 			\item	ambient temperature operation
 		\end{itemize}
-		\item	modularized: easier to maintain and replace parts
-		\item	modules: smaller footprint
-		\item	modules: feed stream is split into parallel units
 		\item	often easier to operate and control
 	\end{itemize}
-	\todo{image of modules vs one larger unit}
+	
+	
+	\begin{columns}[c]
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-module-Henk-Koops-talk.png}
+			\end{center}
+			\see{Henk Koops' slides, GE Water and Process Technologies}
+		\column{0.60\textwidth}
+			Modules:
+			\begin{itemize}
+				\item	feed stream split into parallel units
+				\item	easier to maintain and replace parts
+				\item	can be expanded as needs grow
+			\end{itemize}			
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Challenges in membrane design}
 	Challenges:
 	\begin{itemize}
 		\item	withstanding high pressure differences but still have thin membrane
-		\item	increasing selectivity for specific applications
+		\item	increasing selectivity (separation factor) for specific application areas
+		\item	dealing with fouling and cleaning
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Terminology}
-	See paper notes
+\begin{frame}\frametitle{Market size}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-market-size-Perrys.png}
+	\end{center}
+	\see{Perry's: Chapter 20, 8ed}
+\end{frame}
+
+\begin{frame}\frametitle{Let's formalize some terminology}
 	
-	Add fig 14.1 Seader
+	%\todo{Mindmap of terms}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/some-terminology-Seader-based.png}
+	\end{center}
+	\see{Seader, Henley and Roper, p 501}
+\end{frame}
+
+\begin{frame}\frametitle{More terminology}
 	
-	membrane: 
-	* semipermeable
-	* not breakdown, dissolve or disintegrate
+	{\color{myGreen}{semipermeable}}: partially permeable, e.g. your skin allows certain size particles in, but not others
+
+	\vspace{12pt}
+
+	{\color{myGreen}{mass separating agent}}: the membrane itself
 	
-	* Separating agent: membrane itself
-	* Principle(s) used:
-	 - diffusion differences (different solubilities)
-	 - size differences
-	 - electric attraction
-	 - 
+	\vspace{12pt}
 	
+	{\color{myGreen}{energy separating agent}}: the applied pressure (pressure drop)
+		%\item	permeate: the material passing through the membrane from feed to outlet side
+		%\item	retentate: the material retained on the feed-side of the membrane
+		%\item	solute: most often retained on the inside (feed side) of the membrane and deposited on the membrane wall
+		%\item	solvent: the liquid phase that carries the solute
+		%\item	gel effect / buildup: the solute will build up on the membrane wall and form a gel
+		%\item	cross-flow:
+		%\item	sweep:
+		%\item	kilodalton
+		%\item	MWCO
+		%\item	Pervaporation
+		%\item	Reverse osmosis
+		%\item	Permeability
+		%\item	permeance
+\end{frame}
+
+\begin{frame}\frametitle{What is flux?}
+	\begin{exampleblock}{}
+		\centering
+		\small The (volumetric) or (molar) or (mass) flow per unit time for 1 unit of area
+	\end{exampleblock}
+	\vspace{12pt}
+	\begin{columns}[t]
+		\column{0.80\textwidth}
+			\begin{itemize}
+				\item	$J$ = flux = $\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}$
+				\item	e.g. 42 $\text{mol.s}^{-1}\text{.m}^{-2}$
+				\item	never simplify the units: write 13 $\text{m}^3.\text{s}^{-1}\text{.m}^{-2}$
+				\item	{\color{myRed}{do not write}} 13 $\text{m}\text{.s}^{-1}$
+			\end{itemize}
+		\column{0.35\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/flux-concept.png}
+			\end{center}
+	\end{columns}
+	\begin{exampleblock}{General principle}
+		For a given unit area, we want the highest flux possible (at the lowest possible cost)
+	\end{exampleblock}	
+\end{frame}
+
+\begin{frame}\frametitle{Membrane classification}
+	
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-application-areas-CRv2-5ed-p438.png}
+	\end{center}
+	
+	\see{Richardson and Harker, p 438}
 \end{frame}
 
 \begin{frame}\frametitle{Transport through a membrane}
-	Geankop: Fig 7.1.3 
+	\begin{exampleblock}{Why study theoretical models?}
+		All forms of membrane applications rely to some extent on the same equation \textbf{structure}. The details will change.
+	\end{exampleblock}
+
+	\vspace{12pt}
 	
-	Why have sweep: increase $k_c2$ coefficient
+	Will allow us to:
+	\begin{itemize}
+		\item	troubleshoot problems with the process
+		\item	predict expected impact of improvements/changes to the process
+		\item	used for crudely sizing the unit (order or magnitude estimates)
+	\end{itemize}
+	
+	%Geankop: Fig 7.1.3 	
+	%Why have sweep: increase $k_c2$ coefficient
+	%Film on wall effect
+	%Diffusion if $\Delta C$
+	%Pressure $\Delta P$
+	%Asymmetric and symmetric membrane equations
+	%Kozeny-Carmen equation
+	%Surface adsorption or materials and fouling
 \end{frame}
 
+\begin{frame}\frametitle{Examples you will be able to solve}
+	\begin{enumerate}
+		\item	how long should we operate unit at constant \( \Delta P \) to achieve desired separation?
+		\item	what is the mass transfer coefficient through the lab membrane?
+		\item	what pressure drop (and therefore pump size) do I expect?
+		\item	how many cassettes does this application require?
+	\end{enumerate}
+\end{frame}
 
+\begin{frame}\frametitle{Transport through a membrane}
+	Fig 3 in green book: velocity function
+\end{frame}
+
+\begin{frame}\frametitle{References}
+	% Notes from Dickson
+	\begin{itemize}
+		\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16
+		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 14
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13
+		\item	Ghosh, ``Principles of bioseparation engineering'', chapter 11
+		%* Ridgeway talk on internet
+		%* Membrane bioreactors: http://www.gewater.com/products/equipment/mf\_uf\_mbr/mbr.jsp
+	\end{itemize}
+\end{frame}
+
+\begin{comment}
+
+\begin{frame}\frametitle{Application areas}
+	\begin{itemize}
+		\item	blood cleaning and oxygenation
+		\item	wastewater treatment
+		\item	desalination
+		\item	reverse osmosis
+		\item	MBR
+		\item	high flux membranes with carbon nanotubes (Shol and Johnson)
+	\end{itemize}
+\end{frame}
+	
+\begin{frame}\frametitle{Ultrafiltration}
+	eqn 20-84 Perry
+\end{frame}
 
 \begin{frame}\frametitle{Wastewater applications}
 	Perry's Chapter 22.5.8
-	
+
 	Membrane Processes These processes use a selectively permeable membrane to separate pollutants from water. Most of the membranes are formulated from complex organics that polymerize during membrane preparation. This allows the membrane to be tailored to discriminate by molecular size or by degree of hydrogen bonding potential. Ultrafiltration membranes discriminate by molecular size or weight, while reverse osmosis membranes discriminate by hydrogenbonding characteristics. The permeability of these membranes is low: from 0.38-3.8 m/day (10-100 gal/d/ft 2). The apparatus in which they are used must provide a high surface area per unit volume.
 
 	Membrane Bioreactors (MBRs): Membrane bioreactors are a technology that combines biological degradation of waste products with membrane filtratio
 \end{frame}
 
-\begin{frame}\frametitle{References}
-	References:
-	* Notes from Dickson
-	* Wankat, Separation Process Engineering, Chapter 16
-	* Seader
-	* Coulson and Richardson
-	* Geankoplis
-	* Ghosh
-	* Seader and Henly
-	* Ridgeway talk on internet
-	* Membrane bioreactors: http://www.gewater.com/products/equipment/mf\_uf\_mbr/mbr.jsp
-	
+\begin{frame}\frametitle{Principles used to separate: DISCUSS THESE AS NEEDED, ie. when you are introducing microfiltration vs dialysis}
+	* Principle(s) used:
+	 - diffusion differences (different solubilities)
+	 - size differences
+	 - electric attraction
 \end{frame}
+
+\begin{frame}\frametitle{Water treatment}
+	http://www.youtube.com/watch?v=YlMGZWmh\_Mw
+	Desalination (with some energy recovery): http://www.youtube.com/watch?v=M3mpJysa6zQ
+\end{frame}
+	
+\end{comment}
+
+
+
