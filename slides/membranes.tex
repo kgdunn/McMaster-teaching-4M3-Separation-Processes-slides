@@ -294,7 +294,7 @@
 						\item	\iftoggle{instructor}{microfiltration: tends to have cake build up}{}
 						\item	\iftoggle{instructor}{cross-flow induces shearing to erode cake}{}
 						\item	\iftoggle{instructor}{reduces cake resistance, $R_c$}{}
-						\item	$\Delta P = \displaystyle \frac{P_\text{in} - P_\text{out}}{2} - P_\text{P}$
+						\item	\iftoggle{instructor}{$\Delta P = \displaystyle \frac{P_\text{in} - P_\text{out}}{2} - P_\text{P}$}{}
 					\end{itemize}
 			\end{itemize}
 	\end{columns}	
@@ -361,13 +361,15 @@
 	
 	\begin{itemize}
 		\item	\iftoggle{instructor}{$J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
+		
 		\vspace{6pt}
 		\item	\iftoggle{instructor}{$R'_m$: estimate using pure solvent through membrane}{}
+		
 		\vspace{6pt}
 		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtained from a plot of $J_i$ vs $\Delta P_i$}{}
-			\begin{itemize}
+			\iftoggle{instructor}{\begin{itemize}
 				\item	set different $\Delta P_i$; then measure corresponding $J_i$ once steady
-			\end{itemize}
+			\end{itemize}}{}
 	\end{itemize}
 \end{frame}
 
