@@ -195,7 +195,7 @@
 	\vfill
 	{\color{myOrange}{Symbolically:}}
 	\[
-		\displaystyle \rho_f\frac{Q}{A} = \displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \displaystyle \frac{(\text{permeability})(\text{driving force})}{L} = \displaystyle \frac{\text{driving force}}{R} 
+		\displaystyle \rho_f\frac{Q_p}{A} = \displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \displaystyle \frac{(\text{permeability})(\text{driving force})}{L} = \displaystyle \frac{\text{driving force}}{R} 
 	\]
 	\begin{itemize}
 		\item	 $\text{\color{purple}{permeance}} = \displaystyle \frac{\text{\color{purple}{permeability}}}{L} = \displaystyle \frac{1}{\text{\color{purple}{resistance}}} = \displaystyle \frac{1}{R} = \text{{\color{purple}{\tiny ``mass transfer coeff''}}}$
@@ -256,8 +256,8 @@
 	\vspace{-12pt}
 	\begin{tabular}{cll}
 		$J$			&	[$\text{kg}.\text{s}^{-1}\text{.m}^{-2}$] 				& permeate flux \\
-		$\Delta P$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & generally $0.1 \text{~to~} 0.5 \times 10^6$ Pa \\
 		$\mu$ 		&  	$[\text{kg}.\text{m}^{-1}\text{.s}^{-1}]$				& permeate viscosity\\
+		$\Delta P$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & TMP varies for different applications\\		
 		$R_m$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through membrane (small)\\
 		$R_c$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through cake (large)\\
 		$\ell_m$ 	&   $[\text{m}]$											& membrane thickness\\
@@ -283,12 +283,12 @@
 					\]
 			\end{exampleblock}
 		\column{0.60\textwidth}
-			{\color{myBlue}{Cross-flow}}
+			{\color{myBlue}{Cross-flow (TFF)}}
 			\begin{center}
 				\includegraphics[width=1.1\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
 			\end{center}
 			\begin{itemize}
-				\item	TFF = tangential flow filtration
+				\item	{\color{purple}{TFF}} = tangential flow filtration
 				\item	main purpose?
 				\pause
 					\begin{itemize}
@@ -308,7 +308,7 @@
 			\begin{itemize}
 				\item	cake thickness increases with time: $L_c(t)$
 				\item	implies cake resistance changes with time: $R'_c(t)$
-				\item	for a constant $\Delta P$, implies $J(t)$ falls off
+				\item	so for a constant $\Delta P$, implies $J(t)$ falls off
 			\end{itemize}
 			\vspace{12pt}
 			\begin{exampleblock}{}
@@ -317,7 +317,7 @@
 					\]
 			\end{exampleblock}			
 		\column{0.60\textwidth}
-			{\color{myBlue}{Cross-flow}}
+			{\color{myBlue}{Cross-flow (TFF)}}
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
 			\end{center}
@@ -325,7 +325,7 @@
 			\begin{itemize}
 				\item	fluid velocity: 1 to 8 m.s$^{-1}$ tangentially
 				\item	keeps mass transfer resistance low
-				\item	for a given $\Delta P$: cross flow allows us to obtain higher fluxes than dead-end (usually $\Delta P$ is 100 to 500 kPa)
+				\item	for a given $\Delta P$: TFF allows us to obtain higher fluxes than dead-end (usually $\Delta P$ is 100 to 500 kPa)
 				\item	cannot take lab test results with a filter cloth dead-end and apply it to cross-flow situation
 			\end{itemize}
 	\end{columns}
@@ -353,7 +353,7 @@
 
 \begin{frame}\frametitle{A preliminary design}	
 	\begin{exampleblock}{Main aim}
-		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of of permeate.
+		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of permeate.
 	\end{exampleblock}
 	We have a reasonable budget to purchase equipment, and membrane samples from suppliers.
 	
@@ -361,7 +361,7 @@
 	How would you set up your lab experiment(s) to get the information required?
 	\pause
 	\begin{itemize}
-		\item	\iftoggle{instructor}{$J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
+		\item	\iftoggle{instructor}{$J = \displaystyle \rho_f	 \frac{Q_p}{A} = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
 		
 		\vspace{6pt}
 		\item	\iftoggle{instructor}{$R'_m$: estimated using pure solvent through membrane at $\Delta P$}{}
@@ -370,6 +370,7 @@
 		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtained from a plot of $J_i$ vs $\Delta P_i$}{}
 			\iftoggle{instructor}{\begin{itemize}
 				\item	set different $\Delta P_i$; then measure corresponding $J_i$ once steady
+				\item	find $J_i$ (interpolate) that gives required $Q_p$ by varying $A$
 			\end{itemize}}{}
 	\end{itemize}
 \end{frame}
@@ -377,15 +378,16 @@
 \begin{frame}\frametitle{Factors to improve flux}
 	\begin{itemize}
 		\item	increase pressure difference
-		\item	membrane structure
-		\item	feed concentration
+		\item	regular backflush
+		\item	choose alternative membrane structure
+		\item	feed concentration kept low
 		\item	shear rate (velocity in cross-flow): reduces $R'_c = R_c L_c$
-		\item	temperature of feed
+		\item	increase temperature of feed
 		\item	nature of the solids deposited: affects resistance $R_c$
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Estimating the cake resistance}
+\begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
 	\begin{itemize}		
 		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
 		\item	$R_{c,v} = R_{c} \cdot \rho_f$ and similarly $R_{m,v} = R_{m} \cdot \rho_f$
