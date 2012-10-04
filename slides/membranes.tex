@@ -361,8 +361,10 @@
 	
 	\begin{itemize}
 		\item	\iftoggle{instructor}{$J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
+		\vspace{6pt}
 		\item	\iftoggle{instructor}{$R'_m$: estimate using pure solvent through membrane}{}
-		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtain from a plot of $\Delta P$ vs $J$}{}
+		\vspace{6pt}
+		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtained from a plot of $J_i$ vs $\Delta P_i$}{}
 			\begin{itemize}
 				\item	set different $\Delta P_i$; then measure corresponding $J_i$ once steady
 			\end{itemize}
@@ -371,18 +373,19 @@
 
 \begin{frame}\frametitle{Factors to improve flux}
 	\begin{itemize}
+		\item	increase pressure difference
 		\item	membrane structure
 		\item	feed concentration
-		\item	shear rate (velocity in cross-flow)
+		\item	shear rate (velocity in cross-flow): reduces $R'_c = R_c L_c$
 		\item	temperature of feed
-		\item	nature of the solids deposited: affect resistance $R_c$
+		\item	nature of the solids deposited: affects resistance $R_c$
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Estimating the cake resistance}
 	\begin{itemize}		
 		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
-		\item	$R_{c,v} = R_{c} \rho_f$
+		\item	$R_{c,v} = R_{c} \cdot \rho_f$ and similarly $R_{m,v} = R_{m} \cdot \rho_f$
 		\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}]$
 		\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$ 
 		\item	$e$ = porosity of the cake; $e ~\sim 0.4$ if unknown
@@ -406,6 +409,7 @@
 			\item	What is the estimated thickness of the cake build-up if the average particle size diameter is 2\micron?
 		\end{itemize}
 	\end{exampleblock}
+	\vfill
 	Practical use of this example?
 \end{frame}
 
@@ -416,7 +420,7 @@
 		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 14
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13
-		\item	Ghosh, ``Principles of bioseparation engineering'', chapter 11
+		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 11
 		%* Ridgeway talk on internet
 		%* Membrane bioreactors: http://www.gewater.com/products/equipment/mf\_uf\_mbr/mbr.jsp
 	\end{itemize}
