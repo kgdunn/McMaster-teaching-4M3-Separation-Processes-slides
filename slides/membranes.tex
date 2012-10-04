@@ -1,4 +1,4 @@
-% 02 October 2012
+% 02 October 2012: including a brain storming session
 \begin{frame}\frametitle{Membranes}
 	On a loose sheet of paper, please list/describe 5 topics related to membranes that you want to learn about in the next 5 classes.
 	
@@ -104,29 +104,25 @@
 
 \begin{frame}\frametitle{More terminology}
 	
-	{\color{myGreen}{semipermeable}}: partially permeable, e.g. your skin allows certain size particles in, but not others
+	{\color{purple}{semipermeable}}: partially permeable, e.g. your skin allows certain size particles in, but not others
 
 	\vspace{12pt}
-	{\color{myGreen}{mass separating agent}}: the membrane itself
+	{\color{purple}{mass separating agent}}: the membrane itself
 	
 	\vspace{12pt}	
-	{\color{myGreen}{energy separating agent}}: the applied pressure (pressure drop)
+	{\color{purple}{energy separating agent}}: the applied pressure (pressure drop)
 	
 	\vspace{12pt}
-	{\color{myGreen}{porosity}} = $\displaystyle \frac{\text{area of open pores}}{\text{total surface area}}$ 
+	{\color{purple}{porosity}} = $\displaystyle \frac{\text{area of open pores}}{\text{total surface area}}$ 
 		%\item	permeate: the material passing through the membrane from feed to outlet side
 		%\item	retentate: the material retained on the feed-side of the membrane
 		%\item	solute: most often retained on the inside (feed side) of the membrane and deposited on the membrane wall
 		%\item	solvent: the liquid phase that carries the solute
 		%\item	gel effect / buildup: the solute will build up on the membrane wall and form a gel
-		%\item	cross-flow:
-		%\item	sweep:
 		%\item	kilodalton
 		%\item	MWCO: C+Rv2ed5, p 440 and 441: A parameter often quoted in manufacturer’s literature is the nominal molecular weight cut-off (MWCO) of a membrane. This is based on studies of how solute molecules are rejected by membranes. A solute will pass through a membrane if it is sufficiently small to pass through a pore, if it does not significantly interact with the membrane and if it does not interact with other, larger solutes. It is possible to define a solute rejection coefficient R by: R = 1 − (C_p/C_f ) where C_f is the concentration of solute in the feed stream and C_p is the concentration of solute in the permeate. See fig 8.3 in C+Rv2ed5
 		%\item	Pervaporation
 		%\item	Reverse osmosis
-		%\item	Permeability
-		%\item	permeance
 \end{frame}
 
 \begin{frame}\frametitle{What is flux?}
@@ -175,15 +171,7 @@
 		\item	predict expected impact of improvements/changes to the process
 		\item	used for crudely sizing the unit (order of magnitude estimates)
 	\end{itemize}
-	
-	%Geankop: Fig 7.1.3 	
-	%Why have sweep: increase $k_c2$ coefficient
-	%Film on wall effect
-	%Diffusion if $\Delta C$
-	%Pressure $\Delta P$
-	%Asymmetric and symmetric membrane equations
-	%Kozeny-Carmen equation
-	%Surface adsorption or materials and fouling
+
 \end{frame}
 
 \begin{frame}\frametitle{Examples you will be able to solve}
@@ -195,28 +183,52 @@
 	\end{enumerate}
 \end{frame}
 
+% 04 October 2012
 \begin{frame}\frametitle{The general equation}
+	\begin{exampleblock}{}
+		\[
+			\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}  = \text{flux} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle \frac{\text{driving force}}{\text{resistance}}
+		\]
+	\end{exampleblock}
+
+	
+	\vfill
+	{\color{myOrange}{Symbolically:}}
 	\[
-		\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}  = \text{Flux} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle \frac{\text{driving force}}{\text{resistance}} 
+		\displaystyle \rho_f\frac{Q}{A} = \displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \displaystyle \frac{(\text{permeability})(\text{driving force})}{L} = \displaystyle \frac{\text{driving force}}{R} 
 	\]
+	\begin{itemize}
+		\item	 $\text{\color{purple}{permeance}} = \displaystyle \frac{\text{\color{purple}{permeability}}}{L} = \displaystyle \frac{1}{\text{\color{purple}{resistance}}} = \displaystyle \frac{1}{R} = \text{{\color{purple}{\tiny ``mass transfer coeff''}}}$
+		\item	permeance: easier to measure
+		\item	permeance units: depend on choice of (driving force) and $J$
+		\item	resistance = $f(\text{thickness, viscosity, porosity, pore size})$
+		\item	we will specifically define resistance in each case				
+	\end{itemize}
+	
 \end{frame}
 
 \begin{frame}\frametitle{Microfiltration}
 	\begin{columns}[t]
-		\column{0.60\textwidth}
+		\column{0.65\textwidth}
+			\vspace{-20pt}
 			\begin{itemize}
-				\item	0.1 \micron ~to 10 \micron
+				\item	0.1 \micron ~to 10 \micron ~retained mainly by sieving mechanism
 				\item	conventional filters: not effective below $\sim 5$~\micron
 				\item	microfiltration membranes: generally symmetric pores
+				\item	\href{http://en.wikipedia.org/wiki/Polysulfone}{polysulfone} membrane
 				\item	porosity as high as $\epsilon = 0.8$
-				\item	driving force: pressure difference
+				\item	driving force = $\Delta P$: 100 to 500 kPa % C+Rv2;5ed;p443
+				\item	high fluxes at low {\color{purple}{TMP}} (trans-membrane pressure)
 				\item	application areas:
 					\begin{itemize}
-						\item	yeast cells
+						\item	yeast cells harvesting
 						\item	wine/beer/juice clarification
-						\item	large bacteria
+						\item	bacteria and virus removal
+						\item	air filtration
+						\item	cytology: concentrate up cells
 					\end{itemize}
 			\end{itemize}
+			% no more text allowed
 		\column{0.40\textwidth}
 			\begin{center}
 				\includegraphics[width=0.95\textwidth]{\imagedir/separations/membranes/symmetric-pore-structure-Henk-Koops-talk.png}
@@ -226,55 +238,181 @@
 \end{frame}
 
 \begin{frame}\frametitle{General modelling equation applied}
-	\begin{exampleblock}{}
-		\begin{columns}[c]
-			\column{0.30\textwidth}
-				\[
-					\text{Flux} = J = \displaystyle \frac{\Delta P}{\mu \left(R_m + R_c \right)}
-				\]
-			\column{0.70\textwidth}
-				\begin{center}
-					\includegraphics[width=0.53\textwidth]{\imagedir/separations/membranes/solute-build-up-CRv2-5ed-p446.png}
-				\end{center}
-		\end{columns}		
-	\end{exampleblock}	
-	\vspace{6pt}
+	
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\[
+				\begin{array}{rl}
+					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_M + R_c L_c \right)} \\
+					\\					
+					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R'_c \right)} 
+				\end{array}
+			\]
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up-CRv2-5ed-p446.png}
+			\end{center}
+	\end{columns}
+	\vspace{-12pt}
 	\begin{tabular}{cll}
 		$J$			&	[$\text{kg}.\text{s}^{-1}\text{.m}^{-2}$] 				& permeate flux \\
 		$\Delta P$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & generally $0.1 \text{~to~} 0.5 \times 10^6$ Pa \\
 		$\mu$ 		&  	$[\text{kg}.\text{m}^{-1}\text{.s}^{-1}]$				& permeate viscosity\\
-		$R_m$ 		&  	$[\text{m}^2.\text{kg}^{-1}]$							& resistance due to the membrane (small)\\
-		$R_c$ 		&  	$[\text{m}^2.\text{kg}^{-1}]$							& resistance due to the cake build up (large)\\
+		$R_m$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through membrane (small)\\
+		$R_c$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through cake (large)\\
+		$\ell_m$ 	&   $[\text{m}]$											& membrane thickness\\
+		$L_c$ 		&   $[\text{m}]$											& effective cake thickness
 	\end{tabular}
 \end{frame}
 
 \begin{frame}\frametitle{Flow patterns for microfiltration}
-	% The particle-containing fluid to be filtered is pumped at a velocity in the range 1–8 m/s parallel to the face of the membrane and with a pressure difference of (MPa) across the membrane. T
 	\begin{columns}[t]
-		\column{0.50\textwidth}
+		\column{0.40\textwidth}
 			{\color{myBlue}{Dead-end flow}}
+			\begin{center}
+				\includegraphics[width=.7\textwidth]{\imagedir/separations/membranes/solute-build-up-CRv2-5ed-p446.png}
+			\end{center}
 			\begin{itemize}
 				\item	only for very low concentration feeds
 				\item	else becomes rapidly clogged
+				\item	air filtration and virus removal applications
 			\end{itemize}
-		\column{0.50\textwidth}
+			\begin{exampleblock}{}
+					\[
+						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)} 
+					\]
+			\end{exampleblock}
+		\column{0.60\textwidth}
 			{\color{myBlue}{Cross-flow}}
 			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
+				\includegraphics[width=1.1\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
 			\end{center}
 			\begin{itemize}
 				\item	TFF = tangential flow filtration
 				\item	main purpose?
-				%\item	$\Delta P = \displaystyle \frac{P}{}$
+					\begin{itemize}
+						\item	\iftoggle{instructor}{microfiltration: tends to have cake build up}{}
+						\item	\iftoggle{instructor}{cross-flow induces shearing to erode cake}{}
+						\item	\iftoggle{instructor}{reduces cake resistance, $R_c$}{}
+						\item	$\Delta P = \displaystyle \frac{P_\text{in} - P_\text{out}}{2} - P_\text{P}$
+					\end{itemize}
+			\end{itemize}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Dead-end flow vs cross-flow geometries}
+	\begin{columns}[t]
+		\column{0.40\textwidth}
+			{\color{myBlue}{Dead-end flow}}
+			\begin{itemize}
+				\item	cake thickness increases with time: $L_c(t)$
+				\item	implies cake resistance changes with time: $R'_c(t)$
+				\item	for a constant $\Delta P$, implies $J(t)$ falls off
+			\end{itemize}
+			\vspace{12pt}
+			\begin{exampleblock}{}
+					\[
+						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)} 
+					\]
+			\end{exampleblock}			
+		\column{0.60\textwidth}
+			{\color{myBlue}{Cross-flow}}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
+			\end{center}
+			\vspace{-12pt}
+			\begin{itemize}
+				\item	fluid velocity: 1 to 8 m.s$^{-1}$ tangentially
+				\item	keeps mass transfer resistance low
+				\item	for a given $\Delta P$: cross flow allows us to obtain higher fluxes than dead-end (usually $\Delta P$ is 100 to 500 kPa)
+				\item	cannot take lab test results with a filter cloth dead-end and apply it to cross-flow situation
 			\end{itemize}
 	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Cross-flow flowsheet}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/flowsheet-for-microfiltration-CRv2-5ed-p444.png}
+	\end{center}
 	
+	\vspace{-12pt}
+	How to pressurize the unit?	
+	\begin{enumerate}
+		\item	\small Supply feed at pressure; valve at retentate to adjust/control $\Delta P$
+		\item	Draw a vacuum at permeate and pull material through membrane
+	\end{enumerate}
+	% Ghosh: p 212
+\end{frame}
+
+\begin{frame}\frametitle{Dealing with fouling}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/membranes/cross-flow-patters-CRv2-5ed-p444.png}
+	\end{center}	
+\end{frame}
+
+\begin{frame}\frametitle{A preliminary design}	
+	\begin{exampleblock}{Main aim}
+		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of of permeate.
+	\end{exampleblock}
+	We have a reasonable budget to purchase equipment, and membrane samples from suppliers.
+	
+	\vspace{12pt}
+	How would you set up your lab experiment(s) to get the information required?
+	
+	\begin{itemize}
+		\item	\iftoggle{instructor}{$J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
+		\item	\iftoggle{instructor}{$R'_m$: estimate using pure solvent through membrane}{}
+		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtain from a plot of $\Delta P$ vs $J$}{}
+			\begin{itemize}
+				\item	set different $\Delta P_i$; then measure corresponding $J_i$ once steady
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Factors to improve flux}
+	\begin{itemize}
+		\item	membrane structure
+		\item	feed concentration
+		\item	shear rate (velocity in cross-flow)
+		\item	temperature of feed
+		\item	nature of the solids deposited: affect resistance $R_c$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Estimating the cake resistance}
+	\begin{itemize}		
+		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
+		\item	$R_{c,v} = R_{c} \rho_f$
+		\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}]$
+		\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$ 
+		\item	$e$ = porosity of the cake; $e ~\sim 0.4$ if unknown
+		\item	$D_p$ = \href{http://en.wikipedia.org/wiki/Sauter_mean_diameter}{Sauter mean particle diameter} [m]
+		\item	$L_c$ = estimated cake thickness [m]
+		\item	$R'_{c,v}$ has units of $[\text{m}^{-1}]$
+		\item	$R_{c,v}$ has units of $[\text{m}^{-2}]$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Microfiltration example}
+	The previous lab experiment to determine mass-transfer resistance is preferred. But we can estimate it. 
+	\vspace{12pt}
+	\begin{exampleblock}{Water microfiltration}
+		\begin{itemize}
+			\item	Constant $\Delta P = 50\text{kPa}$ applied in cross-flow membrane set up
+			\item	Membrane area = 50cm$^2$ = 0.005m$^2$
+			\item	Pure water at this $\Delta P$ produced a flux of 1.0 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$
+			\item	Feed at this same TMP produced a flux of 0.065 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ permeate
+			%\item	Cake porosity estimated at $\epsilon = 0.55$ for particles of $D_p$ = 2\micron
+			\item	What is the estimated thickness of the cake build-up if the average particle size diameter is 2\micron?
+		\end{itemize}
+	\end{exampleblock}
+	Practical use of this example?
 \end{frame}
 
 \begin{frame}\frametitle{References}
-	% Notes from Dickson
 	\begin{itemize}
 		\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 2.1
 		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 14
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13
@@ -285,6 +423,74 @@
 \end{frame}
 
 \begin{comment}
+	
+	
+	%Geankop: Fig 7.1.3 	
+	%Why have sweep: increase $k_c2$ coefficient
+	%Film on wall effect
+	%Diffusion if $\Delta C$
+	%Pressure $\Delta P$
+	%Asymmetric and symmetric membrane equations
+	%Kozeny-Carmen equation
+	%Surface adsorption or materials and fouling
+	
+	\begin{frame}\frametitle{Effect of pressure difference}
+		Ghosh fig 11.18
+	\end{frame}
+
+	\begin{frame}\frametitle{Velocity function}
+		Green book, or Ghosh 11.20
+	\end{frame}
+
+	\begin{frame}\frametitle{Feed concentration function}
+		Ghosh 11.20
+	\end{frame}
+	
+	\begin{frame}\frametitle{Applications of microfiltration}
+		Schweitzer, 
+	\end{frame}
+	
+	
+	\begin{frame}\frametitle{Pumps used for microfiltration}
+		* Pumps
+		* Capital cost
+		* Operating costs
+	\end{frame}
+	
+	\begin{frame}\frametitle{Understanding mass transfer}
+		* Geankop book
+		* Ghosh: p 214
+	\end{frame}
+	
+	\begin{frame}\frametitle{Bubble point test}
+		Bio applications: sterilize membranes
+		Bubble-point test: Appendix A of Schweitzer, p 2-89
+	\end{frame}
+
+	% 05 October 2012
+	\begin{frame}\frametitle{Ultrafiltration}
+
+	\end{frame}
+
+	\begin{frame}\frametitle{Nanofiltration}
+		Wankat intro: nano  is just ultra filtration at 
+	\end{frame}
+
+	\begin{frame}\frametitle{Geometries and flow patterns}
+		Wankat p 537
+	\end{frame}
+
+	\begin{frame}\frametitle{Economics and operating costs}
+		Schweitzer, p 2-69
+	\end{frame}
+
+	\begin{frame}\frametitle{Waste water flowsheet options}
+		Schweitzer, p 2-77
+	\end{frame}
+
+	\begin{frame}\frametitle{Membrane bioreactors}
+
+	\end{frame}
 
 \begin{frame}\frametitle{Application areas}
 	\begin{itemize}

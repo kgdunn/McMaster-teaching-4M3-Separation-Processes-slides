@@ -16,17 +16,15 @@
 			<key>filename</key>
 			<string>4M3-course.tex</string>
 			<key>lastUsed</key>
-			<date>2012-09-14T02:01:30Z</date>
+			<date>2012-10-01T23:44:51Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-09-18T13:35:24Z</date>
+			<date>2012-10-01T23:44:52Z</date>
 		</dict>
 		<dict>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>classes</string>
 			<key>regexFolderFilter</key>
@@ -68,14 +66,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>1</integer>
+				<integer>44</integer>
 				<key>line</key>
-				<integer>36</integer>
+				<integer>23</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>16</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
