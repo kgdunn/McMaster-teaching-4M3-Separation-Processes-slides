@@ -387,6 +387,7 @@
 	\end{itemize}
 \end{frame}
 
+% 05 October 2012
 \begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
 	\begin{itemize}		
 		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
@@ -418,6 +419,103 @@
 	Practical use of this example?
 \end{frame}
 
+\begin{frame}\frametitle{Ultrafiltration (UF)}	
+	\begin{columns}[c]
+		\column{0.65\textwidth}
+			\vspace{-20pt}
+			\begin{itemize}
+				\item	5 nm to 100 nm (0.1 \micron) particles are retained
+				\item	1 to 1000 kDa particles are retained (move to using molecular weight)
+				\begin{itemize}
+					\item	1 dalton = 1 atomic mass unit
+					\item	1 kilodalton = 1000 dalton = 1000~g/mol
+					\item	particles with lower molecular weight, e.g. most solvents, pass through
+				\end{itemize}
+				\item	pore sizes: 1 to 20nm
+				\item	driving force = $\Delta P$:  0.1 to 1.0 MPa % Perry and C+Rv2
+				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,50 \text{~L}\text{.m}^{-2}.\text{hr}^{1}$ ({\color{purple}{LMH}})
+				\item	asymmetric structure
+				\item	almost always operated in TFF
+			\end{itemize}
+			% no more text allowed
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/asymmetrical-membrane-Perrys-fig-20-62.png}
+			\end{center}
+			\vspace{-12pt}
+			\see{Perry's 8ed; Ch20.4}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Ultrafiltration applications} 
+	UF: loosely considered: {\color{myGreen}{``cross-flow filtration at molecular level''}}
+	\begin{itemize}
+		\item	Recovery of proteins and high molecular weight materials ({\color{purple}{solute}})
+		\item	Permanent emulsions: e.g. oil phase will not pass
+		\item	Fine colloidal particles: e.g. paint/dyes 
+		\item	Large molecules of interest might remain in retentate; permeate discarded
+		\item	e.g. albumin (egg white) concentration
+		\item	e.g whey processing:
+		\begin{itemize}
+			\item	UF first, followed by reverse osmosis (RO)
+			\item	valuable proteins retained by UF
+			\item	permeate sent to RO to concentrate smaller molecule sugars and salts
+			\item	this concentrated permeate: used for ethanol and lactic acid production
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Ultrafiltration transport phenomena}
+	
+	\begin{itemize}		
+		\item	``tight'', low-permeability side faces the TFF to retain particles
+		\item	this skin layer is about 10\micron~ thick; provides selectivity 
+		\item	open, high-permeability side is primarily for mechanical strength % Perrys
+		\item	precipitate forms colloidal gel on the membrane
+		\item	reduced flux of permeate 
+		\item	increasing $\Delta P$ leads to compacting this layer
+		\item	so diminishing returns from increasing $\Delta P$
+		\item	solute (i.e. particles) carried towards membrane with the solvent
+		\item	diffusion \emph{away} from membrane due to concentration gradients
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
+	\end{center}	
+	% Perry: Component Transport Transport through membranes can be considered as mass transfer in series: (1) transport through a polarization layer above the membrane that may include static or dynamic cake layers, (2) partitioning between the upstream polarization layer and membrane phases at the membrane surface, (3) transport through the membrane, and (4) partitioning between the membrane and downstream fluid.
+\end{frame}
+
+\begin{frame}\frametitle{Transport through a UF membrane}
+	Several transport phenomena happening:
+	\begin{enumerate}
+		\item	Movement of solute from the bulk, through polarization layer
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Flux behaviour}
+	Dilute solutions up to 1\% and 5 to 10psi 
+	Linear region
+	Perry: Fig20-63
+	Fig 3 in green book: velocity function for ultrafiltration
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{itemize}
+		\item	MWCO: measure of selectivity
+		\begin{itemize}
+			\item	e.g. MWCO of 10 kDa implies 90\% of feed at 10 kDa will be retained
+			\item	subjective: does not specify TMP, feed concentration, \emph{etc}
+		\end{itemize}
+		\item	kDa
+		\item	sieving curve: Perry 20-65
+		\item	R =  1 − (Cp/Cf )
+	\end{itemize}	\todo{Draw nonlinear flux vs pressure curve} 
+	
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/rejection-coefficient-C+Rv2-5ed-p441.png}
+	\end{center}
+	
+\end{frame}
+
 \begin{frame}\frametitle{References}
 	\begin{itemize}
 		\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16
@@ -432,6 +530,76 @@
 \end{frame}
 
 \begin{comment}
+	
+	\begin{frame}\frametitle{UF: continuous operation}
+		% eqn 20-84 Perry
+	\end{frame}
+	
+	\begin{frame}\frametitle{Geometries for ultrafiltration}
+		% Spiral wound (Green book)
+		% hollow fibres
+		% 100 to 200 \micron, with walls of 25\micron: high surface area in a small volume; fibres can be spun at low cost
+
+		% Perry: 
+		 UF modules include cassettes, spirals, hollow fibers, tubes, flat sheets, and inorganic monoliths. These are primarily run in TFF operation to increase flux by reducing plugging
+
+		Continuous operation provides lower-cost operation, but the biologicals process requires batch processing to meet regulatory requirements
+
+		Applications with high solids require multiple-pass operation to obtain a significant conversion ratio, but water treatment can achieve high conversion in one pass. 
+	\end{frame}
+	
+	
+	
+	\begin{frame}\frametitle{UF: material of construction: ....}
+		Perry: TABLE 20-24
+	\end{frame}
+	
+	\begin{frame}\frametitle{Factors to picking a membrane}
+		% Perry's: Chapter 20.4
+		\begin{itemize}
+			\item	size rating (MWCO) from vendor [rough guide only]
+			\item	selectivity (quantified by a separation factor)
+			\item	permeability
+			\item	mechanical robustness (to allow module fabrication and withstand operating conditions)
+			\item	chemical robustness (to fabrication materials, process fluids, cleaners, and sanitizers)
+			\item	low fouling
+			\item	high flux
+			\item	low cost
+			\item	and manufacturer's consistency in producing membrane
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}\frametitle{UF: Membrane selection}
+		Millipore catalog
+
+		Membrane geometry: Geankoplis, p 893 describes trade-off for geometry
+
+	\end{frame}
+
+	\begin{frame}\frametitle{UF: Example}
+		Whey flowsheet
+		Green book chapter
+	\end{frame}
+
+	
+	\begin{frame}\frametitle{Geometries}
+		TABLE 20-17 Commercial TFF Modules
+
+		Very useful table
+	\end{frame}
+	
+	\begin{frame}\frametitle{Making membrane}
+		% Perry: 20.4
+		
+		Composition and Structure Commercial membranes consist primarily of polymers and some ceramics. Other membrane types include sintered metal, glass, and liquid film. Polymeric membranes are formed by precipitating a 5 to 25 wt \% casting solution (lacquer) into a film by solvent evaporation (air casting), liquid extraction (immersion casting), or cooling (melt casting or thermally induced phase separation). Membranes can be cast as flat sheets on a variety of supports or as fibers through a die. Ceramic membranes are formed by depositing successive layers of smaller and smaller inorganic particles on a monolith substrate, to create smaller and smaller interstices or “pores” between particles. These layers are then sintered below the melting point to create a rigid structure.
+
+		Membranes may be surface-modified to reduce fouling or improve chemical resistance. This can involve adding surface-modifying agents directly to the lacquer or modifying the cast membrane through chemical or physical treatment. Membranes can also be formed by selective etching or track-etching (radiation treatment followed by etching). Stretching is used to change pore morphology.
+
+		Liquid film membranes consist of immiscible solutions held in membrane supports by capillary forces. The chemical composition of these solutions is designed to enhance transport rates of selected components through them by solubility or coupled chemical reaction.
+
+		
+		
+	\end{frame}
 	
 	
 	%Geankop: Fig 7.1.3 	
@@ -455,8 +623,9 @@
 		Ghosh 11.20
 	\end{frame}
 	
-	\begin{frame}\frametitle{Applications of microfiltration}
-		Schweitzer, 
+	
+	\begin{frame}\frametitle{RO: costs}
+		Perry: TABLE 20-23 Representative RO Process Costs
 	\end{frame}
 	
 	
@@ -477,9 +646,7 @@
 	\end{frame}
 
 	% 05 October 2012
-	\begin{frame}\frametitle{Ultrafiltration}
-
-	\end{frame}
+	
 
 	\begin{frame}\frametitle{Nanofiltration}
 		Wankat intro: nano  is just ultra filtration at 
@@ -512,20 +679,12 @@
 	\end{itemize}
 \end{frame}
 	
-\begin{frame}\frametitle{Ultrafiltration}
-	% eqn 20-84 Perry
-	
-	\begin{itemize}
-		\item	recovery of proteins
-		\item	separate permanent emulsions: oil phase will not pass
-		\item	fine colloidal particles: e.g. paint/dyes in wastewater
-		\item	large molecules in retentate
-		\item	See Wankat, p 574
-	\end{itemize}
+\begin{frame}\frametitle{GAS-SEPARATION MEMBRANES}
+	Perrys has a section on it
 \end{frame}
 
 \begin{frame}\frametitle{Transport through a membrane}
-	Fig 3 in green book: velocity function for ultrafiltration
+	
 \end{frame}
 
 \begin{frame}\frametitle{Wastewater applications}
