@@ -295,7 +295,7 @@
 						\item	\iftoggle{instructor}{microfiltration: tends to have cake build up}{}
 						\item	\iftoggle{instructor}{cross-flow induces shearing to erode cake}{}
 						\item	\iftoggle{instructor}{reduces cake resistance, $R'_c$}{}
-						\item	\iftoggle{instructor}{$\Delta P = \displaystyle \frac{P_\text{in} - P_\text{out}}{2} - P_\text{P}$}{}
+						\item	\iftoggle{instructor}{$\Delta P = \displaystyle \frac{P_\text{in} + P_\text{out}}{2} - P_\text{P}$}{}
 					\end{itemize}
 			\end{itemize}
 	\end{columns}	
@@ -387,12 +387,21 @@
 	\end{itemize}
 \end{frame}
 
-% 05 October 2012
+% 05 October 2012: course evaluation; in-class pop-quiz and the example to end microfiltration
+\begin{frame}\frametitle{Pop-quiz question}
+	A microfiltration membrane operating with pure feed of water produces a flux of 0.06 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ when operated with a TMP of 30 kPa.
+	
+	\begin{enumerate}
+		\item	What is the resistance due to the membrane? Specify the units.
+		\item	If operated with a protein-water mixture at a 20 kPa pressure difference, a flux of $216 \times 10^{-6}$ $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ is measured at steady state. What is the resistance due to cake build-up? Specify the units.
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
 	\begin{itemize}		
 		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
 		\item	$R_{c,v} = R_{c} \cdot \rho_f$ and similarly $R_{m,v} = R_{m} \cdot \rho_f$
-		\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}]$
+		\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $\left[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}\right]$
 		\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$ 
 		\item	$e$ = porosity of the cake; $e ~\sim 0.4$ if unknown
 		\item	$D_p$ = \href{http://en.wikipedia.org/wiki/Sauter_mean_diameter}{Sauter mean particle diameter} [m]
@@ -419,6 +428,7 @@
 	Practical use of this example?
 \end{frame}
 
+% 09 October 2012: UF and nano-filtration
 \begin{frame}\frametitle{Ultrafiltration (UF)}	
 	\begin{columns}[c]
 		\column{0.65\textwidth}
@@ -432,7 +442,7 @@
 					\item	particles with lower molecular weight, e.g. most solvents, pass through
 				\end{itemize}
 				\item	pore sizes: 1 to 20nm
-				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,50 \text{~L}\text{.m}^{-2}.\text{hr}^{1}$ ({\color{purple}{LMH}})
+				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,50 \text{~L}\text{.m}^{-2}.\text{hr}^{-1}$ ({\color{purple}{LMH}})
 				\item	asymmetric structure
 				\item	almost always operated in TFF
 			\end{itemize}
@@ -467,7 +477,7 @@
 \begin{frame}\frametitle{Ultrafiltration (UF)}
 	
 	\begin{itemize}		
-		\item	driving force = $\Delta P$:  0.1 to 1.0 MPa % Perry and C+Rv2
+		\item	driving force = $\Delta P$ of 0.1 to 1.0 MPa % Perry and C+Rv2
 		\item	``tight'', low-permeability side faces the TFF to retain particles
 		\item	this skin layer is about 10\micron~ thick; provides selectivity 
 		\item	open, high-permeability side mainly for mechanical strength % Perrys		
@@ -504,7 +514,7 @@
 	\end{itemize}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
-	\end{center}	
+	\end{center}
 	% Perry: Component Transport Transport through membranes can be considered as mass transfer in series: (1) transport through a polarization layer above the membrane that may include static or dynamic cake layers, (2) partitioning between the upstream polarization layer and membrane phases at the membrane surface, (3) transport through the membrane, and (4) partitioning between the membrane and downstream fluid.
 \end{frame}
 
@@ -521,6 +531,8 @@
 	\begin{center}
 		\includegraphics[width=.6\textwidth]{\imagedir/separations/membranes/UF-flux-pressure-velocity-Green-Chemical-Engineering-book.png}
 	\end{center}
+	\vspace{-12pt}
+	\see{Chemical Engineering Magazine, 8 May 1978}
 \end{frame}
 
 \begin{frame}\frametitle{Transport phenomena in UF}
@@ -736,14 +748,6 @@
 	
 \end{comment}
 
-\begin{frame}\frametitle{Question}
-	A membrane operating with pure feed of water produces a flux of 0.20 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$.
-	
-	\begin{enumerate}
-		\item	What is the resistance due to the membrane? Specify the units.
-		\item	If operated with a protein-water mixture at a 20 kPa pressure difference, a flux of 0.04 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ is measured at steady state. What is the resistance due to cake build-up? Specify the units.
-	\end{enumerate}
-\end{frame}
 
 
 
