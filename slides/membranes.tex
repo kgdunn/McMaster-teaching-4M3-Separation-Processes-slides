@@ -432,7 +432,6 @@
 					\item	particles with lower molecular weight, e.g. most solvents, pass through
 				\end{itemize}
 				\item	pore sizes: 1 to 20nm
-				\item	driving force = $\Delta P$:  0.1 to 1.0 MPa % Perry and C+Rv2
 				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,50 \text{~L}\text{.m}^{-2}.\text{hr}^{1}$ ({\color{purple}{LMH}})
 				\item	asymmetric structure
 				\item	almost always operated in TFF
@@ -465,18 +464,43 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Ultrafiltration transport phenomena}
+\begin{frame}\frametitle{Ultrafiltration (UF)}
 	
 	\begin{itemize}		
+		\item	driving force = $\Delta P$:  0.1 to 1.0 MPa % Perry and C+Rv2
 		\item	``tight'', low-permeability side faces the TFF to retain particles
 		\item	this skin layer is about 10\micron~ thick; provides selectivity 
-		\item	open, high-permeability side is primarily for mechanical strength % Perrys
-		\item	precipitate forms colloidal gel on the membrane
-		\item	reduced flux of permeate 
-		\item	increasing $\Delta P$ leads to compacting this layer
-		\item	so diminishing returns from increasing $\Delta P$
-		\item	solute (i.e. particles) carried towards membrane with the solvent
-		\item	diffusion \emph{away} from membrane due to concentration gradients
+		\item	open, high-permeability side mainly for mechanical strength % Perrys		
+	\end{itemize}
+	
+	
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/rejection-coefficient-C+Rv2-5ed-p441.png}
+			\end{center}
+		\column{0.30\textwidth}
+		
+			$R = 1 -\displaystyle \frac{C_\text{permeate}}{C_\text{feed}}$
+			
+			$R = 1- \displaystyle \frac{C_p}{C_f}$
+			
+			\vspace{12pt}
+			{\color{purple}{MWCO}}: molecular weight where $R=0.9$
+			
+			\vspace{12pt}
+			i.e. 10\% of that molecular weight passes through to the permeate
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Transport phenomena in UF}
+	\begin{itemize}		
+		\item	solute (i.e. particles) carried towards membrane by solvent
+		\item	$J = \displaystyle\frac{\Delta P}{R_m + R_{cp}}$
+		\item	$R_m$ = membrane resistance [$\text{m.s}^{-1}$ if $J$ is mass flux] 
+		\item	$R_{cp}$ = resistance due to ``concentration polarization''
+		\item	$R_{cp}$ effectively is the resistance due to solute boundary layer
+		\item	Mass concentration $C_f$ (feed), steadily increasing to $C_w$ (wall)
 	\end{itemize}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
@@ -484,36 +508,37 @@
 	% Perry: Component Transport Transport through membranes can be considered as mass transfer in series: (1) transport through a polarization layer above the membrane that may include static or dynamic cake layers, (2) partitioning between the upstream polarization layer and membrane phases at the membrane surface, (3) transport through the membrane, and (4) partitioning between the membrane and downstream fluid.
 \end{frame}
 
-\begin{frame}\frametitle{Transport through a UF membrane}
-	Several transport phenomena happening:
-	\begin{enumerate}
-		\item	Movement of solute from the bulk, through polarization layer
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{Flux behaviour}
-	Dilute solutions up to 1\% and 5 to 10psi 
-	Linear region
-	Perry: Fig20-63
-	Fig 3 in green book: velocity function for ultrafiltration
-\end{frame}
-
-\begin{frame}\frametitle{Terminology}
+\begin{frame}\frametitle{Transport phenomena in UF}
 	\begin{itemize}
-		\item	MWCO: measure of selectivity
-		\begin{itemize}
-			\item	e.g. MWCO of 10 kDa implies 90\% of feed at 10 kDa will be retained
-			\item	subjective: does not specify TMP, feed concentration, \emph{etc}
-		\end{itemize}
-		\item	kDa
-		\item	sieving curve: Perry 20-65
-		\item	R =  1 − (Cp/Cf )
-	\end{itemize}	\todo{Draw nonlinear flux vs pressure curve} 
-	
+		\item	Experimental evidence agrees well with theory ... to a point.
+		\item	Increasing $\Delta P$ leads to compacting this layer, increasing $C_w$
+		\item	So diminishing returns from increasing $\Delta P$
+		\item	Also, there is a strong concentration gradient
+		\item	Diffusion \emph{away} from membrane due to concentration gradients		
+		\item	Eventually solute forms a colloidal gel on the membrane, $C_g$
+		\item	Adjusting pressure has little/no effect anymore
+	\end{itemize}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/rejection-coefficient-C+Rv2-5ed-p441.png}
+		\includegraphics[width=.6\textwidth]{\imagedir/separations/membranes/UF-flux-pressure-velocity-Green-Chemical-Engineering-book.png}
 	\end{center}
-	
+\end{frame}
+
+\begin{frame}\frametitle{Transport phenomena in UF}
+	\begin{itemize}
+		\item	Mass flow towards membrane: $\displaystyle \frac{J\cdot C}{\rho_f} = J_v C$
+		\\
+		\item	Diffusion away from membrane: $-D_{AB} \displaystyle \frac{dC}{dy}$
+	\end{itemize}
+	\[ 
+		\begin{array}{rl}
+			\displaystyle-\frac{J}{D_{AB}} \int_{0}^{L_c}{dy} &= \displaystyle \int_{C_w}^{C_f}{\frac{dC}{C}} \\ \\
+			\displaystyle\ln\left(\frac{C_w}{C_f}\right) &= \displaystyle\frac{J L_c}{D_{AB}} = \displaystyle \frac{J}{h_w}
+		\end{array}
+			\]
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
+	\end{center}	
+	% Perry: Component Transport Transport through membranes can be considered as mass transfer in series: (1) transport through a polarization layer above the membrane that may include static or dynamic cake layers, (2) partitioning between the upstream polarization layer and membrane phases at the membrane surface, (3) transport through the membrane, and (4) partitioning between the membrane and downstream fluid.
 \end{frame}
 
 \begin{frame}\frametitle{References}
@@ -601,6 +626,8 @@
 		
 	\end{frame}
 	
+	
+	%sieving curve: Perry 20-65
 	
 	%Geankop: Fig 7.1.3 	
 	%Why have sweep: increase $k_c2$ coefficient
