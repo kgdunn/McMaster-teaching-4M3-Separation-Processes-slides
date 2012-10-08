@@ -444,7 +444,7 @@
 				\item	pore sizes: 1 to 20nm
 				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,50 \text{~L}\text{.m}^{-2}.\text{hr}^{-1}$ ({\color{purple}{LMH}})
 				\item	asymmetric structure
-				\item	almost always operated in TFF
+				\item	almost always operated in {\color{purple}{TFF}}
 			\end{itemize}
 			% no more text allowed
 		\column{0.40\textwidth}
@@ -483,7 +483,7 @@
 		\item	open, high-permeability side mainly for mechanical strength % Perrys		
 	\end{itemize}
 	
-	
+	%\todo{Sieving curve terminology}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -493,7 +493,7 @@
 		
 			$R = 1 -\displaystyle \frac{C_\text{permeate}}{C_\text{feed}}$
 			
-			$R = 1- \displaystyle \frac{C_p}{C_f}$
+			$R = 1- \displaystyle \frac{C_p}{C_f} = 1 -S$
 			
 			\vspace{12pt}
 			{\color{purple}{MWCO}}: molecular weight where $R=0.9$
@@ -511,6 +511,7 @@
 		\item	$R_{cp}$ = resistance due to ``concentration polarization''
 		\item	$R_{cp}$ effectively is the resistance due to solute boundary layer
 		\item	Mass concentration $C_f$ (feed), steadily increasing to $C_w$ (wall)
+		\item	Units of $C$ are kg solute per m$^3$ solvent
 	\end{itemize}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
@@ -537,20 +538,95 @@
 
 \begin{frame}\frametitle{Transport phenomena in UF}
 	\begin{itemize}
-		\item	Mass flow towards membrane: $\displaystyle \frac{J\cdot C}{\rho_f} = J_v C$
-		\\
-		\item	Diffusion away from membrane: $-D_{AB} \displaystyle \frac{dC}{dy}$
+		\item	Solute flux towards membrane: $\displaystyle \frac{J\cdot C}{\rho_f} = J_v C$
+		\\		
+		\item	Solute flux out of membrane: $J_v C_\text{permeate} \approx 0$  {\tiny if membrane retains solute}
 	\end{itemize}
+	\begin{exampleblock}{}
+		Net transport of solute = $J(C - C_p)$
+	\end{exampleblock}
+	
+	\begin{tabular}{cll}
+		$J_v$		&	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& permeate volumetric flux \\
+		$C$ 		&  	$\left[\displaystyle\frac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration in bulk\\
+		$C_p \approx 0$ &  	$\left[\displaystyle\frac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration in permeate\\
+	\end{tabular}
+	\vfill
+	{\tiny Space for picture}
+\end{frame}
+
+\begin{frame}\frametitle{Diffusion term}
+	\begin{itemize}
+		\item	Solute {\color{purple}{diffusion}} away from membrane
+		\begin{exampleblock}{}
+			\[	
+				J_\text{v,diffusion} = -D_{AB} \displaystyle \frac{1}{\rho_f}\frac{dC}{dy}
+			\]
+		\end{exampleblock}		
+	\end{itemize}
+	
+	\begin{tabular}{cll}
+		$D_{AB}$				&	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m.s}}\right] = \left[\text{m}^2\text{.s}^{-1}\right]$	& diffusion of solute in solvent \\
+		$J_\text{v,diffusion}$ 	&  	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& solvent volumetric flux\\
+	\end{tabular}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
+	\end{center}
+	\vspace{-6pt}
+	\begin{itemize}
+		\item	See \href{http://en.wikipedia.org/wiki/File:DiffusionMicroMacro.gif}{animation on Wikipedia}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Transport at steady state}
+	At steady state: diffusion back equals transfer through membrane
 	\[ 
 		\begin{array}{rl}
-			\displaystyle-\frac{J}{D_{AB}} \int_{0}^{L_c}{dy} &= \displaystyle \int_{C_w}^{C_f}{\frac{dC}{C}} \\ \\
-			\displaystyle\ln\left(\frac{C_w}{C_f}\right) &= \displaystyle\frac{J L_c}{D_{AB}} = \displaystyle \frac{J}{h_w}
+		 	\displaystyle  \frac{J(C - C_p)}{\rho_f}  &= -D_{AB} \displaystyle \frac{1}{\rho_f}\frac{dC}{dy} \\
+			\displaystyle -\frac{J}{D_{AB}} \int_{0}^{L_c}{dy} &= \displaystyle \int_{C_w}^{C_f}{\frac{dC}{C-C_p}} \\ \\
+			\displaystyle\ln\left(\frac{C_w - C_p}{C_f - C_p}\right) &= \displaystyle\frac{J L_c}{D_{AB}} = \displaystyle \frac{J}{h_w}
 		\end{array}
-			\]
+	\]
+	\vspace{6pt}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
 	\end{center}	
 	% Perry: Component Transport Transport through membranes can be considered as mass transfer in series: (1) transport through a polarization layer above the membrane that may include static or dynamic cake layers, (2) partitioning between the upstream polarization layer and membrane phases at the membrane surface, (3) transport through the membrane, and (4) partitioning between the membrane and downstream fluid.
+\end{frame}
+
+\begin{frame}\frametitle{UF: mass-transfer {\color{myOrange}{key points}}}
+	Assuming $C_p \approx 0$
+	\begin{exampleblock}{}
+		\[
+			\displaystyle\frac{J L_c}{D_{AB}} =  \displaystyle \frac{J}{h_w} = \displaystyle \ln\left(\frac{C_w }{C_f }\right) 
+		\]
+	\end{exampleblock}
+	where $h_w$ is a  mass-transfer coefficient, with units of $\text{m.s}^{-1}$
+	\begin{itemize}
+		\item	there are correlations for $h_w= f(\text{velocity, temperature, channel diameter, viscosity})$
+		\item	when gelling occurs, $C_w = C_g$ at the wall
+		\item	the effect of increasing $\Delta P$ is 
+		\begin{itemize}
+			\item	increase in solute flux towards boundary layer
+			\item	diffusion increases to oppose it
+			\item	net effect: almost zero (see earlier plot)
+			\item	experiments mostly agree with this theory
+		\end{itemize}
+		\item	there is a limiting flux $J_\text{lim} = f(C_w, C_f, h_w)$
+		\item	at higher feed concentrations, lower fluxes if we are at/near the gel polarization state (gelling)
+		\item	typical diffusivities: $1 \times 10^{-9}$ (fast!) to $1 \times 10^{-11} \text{~m}^2\text{.s}^{-1}$ 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Question (\emph{tomorrow})}
+	An ultrafiltration application is required to treat a waste stream that has 0.5 g protein per litre waste. Pilot plant students show the flux can be expressed as 
+	\[
+		J = 0.02 \ln \left(\frac{25}{C_f} \right)
+	\]
+	in units of $\text{m}^3.\text{m}^{-2}.\text{hour}^{-1}$. Due to fouling the flux from this membrane system never exceeds 0.05 $\text{m}^3.\text{m}^{-2}.\text{hour}^{-1}$.
+	
+	\vspace{12pt}
+	Will we have to dilute our feed, and if so, by how much, to avoid this fouling constraint?
 \end{frame}
 
 \begin{frame}\frametitle{References}
@@ -560,18 +636,88 @@
 		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 14
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13
-		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 11
+		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 11 
+		\item	Uhlmann's Encyclopedia, ``Membrane Separation Processes, 1. Principles'',  \href{http://dx.doi.org/10.1002/14356007.a16_187.pub3}{DOI:10.1002/14356007.a16\_187.pub3}
 		%* Ridgeway talk on internet
 		%* Membrane bioreactors: http://www.gewater.com/products/equipment/mf\_uf\_mbr/mbr.jsp
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Course evaluation feedback}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/admin/evaluations-2012-things-you-like.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/admin/evaluations-2012-things-to-improve.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/admin/evaluations-2012-histograms.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/admin/evaluations-2012-histograms-2.png}
+	\end{center}
+	\textbf{Google Docs}
+	\vspace{-6pt}
+	\small
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	Hard to enter equations and tables
+				\item	Can be slow in the library
+				\item	I HATE GOOGLE DOCS
+				\item	Formatting is difficult (tables, etc)
+				\item	Hard to add pictures/graphs
+				\item	Time consuming
+				\item	Hard to get used to
+				\item	Don't know how to use it			
+			\end{itemize}
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	Convenient
+				\item	Frustrating yet helpful
+				\item	Good for group work
+				\item	Semi-useful
+				\item	Saves paper
+				\item	Don't come to class to submit
+				\item	I like the option of an online submission				
+			\end{itemize}
+	\end{columns}
+	
+\end{frame}
+
 \begin{comment}
 	
+	\begin{frame}\frametitle{Other factors influencing UF flux}
+		Ghosh book:
+		\begin{itemize}			
+			\item	p 219
+			\item	p 226
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}\frametitle{UF example}
+		Batch equation:
+		Ghosh book p. 231
+	\end{frame}
+	
+	\begin{frame}\frametitle{UF: Example}
+		Whey flowsheet
+		Green book chapter
+	\end{frame}
+
 	\begin{frame}\frametitle{UF: continuous operation}
 		% eqn 20-84 Perry
 	\end{frame}
-	
+
 	\begin{frame}\frametitle{Geometries for ultrafiltration}
 		% Spiral wound (Green book)
 		% hollow fibres
@@ -583,6 +729,14 @@
 		Continuous operation provides lower-cost operation, but the biologicals process requires batch processing to meet regulatory requirements
 
 		Applications with high solids require multiple-pass operation to obtain a significant conversion ratio, but water treatment can achieve high conversion in one pass. 
+	\end{frame}
+
+	\begin{frame}\frametitle{Nanofiltration}
+		Wankat intro: nano  is just ultra filtration at 
+	\end{frame}
+	
+	\begin{frame}\frametitle{Dialysis}
+		Uhlmanns2-pdf, p 467
 	\end{frame}
 	
 	
@@ -613,12 +767,6 @@
 
 	\end{frame}
 
-	\begin{frame}\frametitle{UF: Example}
-		Whey flowsheet
-		Green book chapter
-	\end{frame}
-
-	
 	\begin{frame}\frametitle{Geometries}
 		TABLE 20-17 Commercial TFF Modules
 
@@ -639,7 +787,7 @@
 	\end{frame}
 	
 	
-	%sieving curve: Perry 20-65
+	
 	
 	%Geankop: Fig 7.1.3 	
 	%Why have sweep: increase $k_c2$ coefficient
@@ -687,9 +835,7 @@
 	% 05 October 2012
 	
 
-	\begin{frame}\frametitle{Nanofiltration}
-		Wankat intro: nano  is just ultra filtration at 
-	\end{frame}
+	
 
 	\begin{frame}\frametitle{Geometries and flow patterns}
 		Wankat p 537
