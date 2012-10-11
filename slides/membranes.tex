@@ -255,7 +255,7 @@
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up-CRv2-5ed-p446.png}
 			\end{center}
 	\end{columns}
-	\vspace{-12pt}
+	\vspace{-24pt}
 	\begin{tabular}{cll}
 		$J$			&	[$\text{kg}.\text{s}^{-1}\text{.m}^{-2}$] 				& permeate flux \\
 		$\mu$ 		&  	$[\text{kg}.\text{m}^{-1}\text{.s}^{-1}]$				& permeate viscosity\\
@@ -265,6 +265,8 @@
 		$\ell_m$ 	&   $[\text{m}]$											& membrane thickness\\
 		$L_c$ 		&   $[\text{m}]$											& effective cake thickness
 	\end{tabular}
+	\vspace{6pt}
+	\see{Illustration from Richardson and Harker, Ch8}
 \end{frame}
 
 \begin{frame}\frametitle{Flow patterns for microfiltration}
@@ -284,6 +286,7 @@
 						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)} 
 					\]
 			\end{exampleblock}
+			
 		\column{0.60\textwidth}
 			{\color{myBlue}{Cross-flow (TFF)}}
 			\begin{center}
@@ -344,13 +347,16 @@
 		\item	\small Supply feed at pressure; valve at retentate to adjust/control $\Delta P$
 		\item	Draw a vacuum at permeate and pull material through membrane
 	\end{enumerate}
-	% Ghosh: p 212
+	% Also see Ghosh: p 212
+	\see{Illustration from Richardson and Harker, Ch8}
 \end{frame}
 
 \begin{frame}\frametitle{Dealing with fouling}
 	\begin{center}
-		\includegraphics[width=0.9\textwidth]{\imagedir/separations/membranes/cross-flow-patters-CRv2-5ed-p444.png}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/membranes/cross-flow-patters-CRv2-5ed-p444.png}
 	\end{center}	
+	\vspace{-12pt}
+	\see{Richardson and Harker, Ch8}
 \end{frame}
 
 \begin{frame}\frametitle{A preliminary design}	
@@ -491,9 +497,12 @@
 	%\todo{Sieving curve terminology}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
+			\vspace{-12pt}
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/rejection-coefficient-C+Rv2-5ed-p441.png}
 			\end{center}
+			\vspace{-12pt}
+			\see{Richardson and Harker, Ch8}
 		\column{0.30\textwidth}
 		
 			$R = 1 -\displaystyle \frac{C_\text{permeate}}{C_\text{feed}}$
@@ -515,7 +524,7 @@
 		\item	$R_m$ = membrane resistance [$\text{m.s}^{-1}$ if $J$ is mass flux] 
 		\item	$R_{cp}$ = resistance due to ``concentration polarization''
 		\item	$R_{cp}$ effectively is the resistance due to solute boundary layer
-		\item	Mass concentration $C_f$ (feed), steadily increasing to $C_w$ (wall)
+		\item	Mass concentration $C_f$ (in retentate), steadily increasing to $C_w$ (wall)
 		\item	Units of $C$ are kg solute per m$^3$ solvent
 	\end{itemize}
 	\begin{center}
@@ -625,14 +634,14 @@
 \end{frame}
 
 \begin{frame}\frametitle{Example question}
-	An ultrafiltration application is required to treat a waste stream that has 0.5~$\text{kg}^3\text{.m}^{-3}$ waste in the feed. The desired solute concentrate must be 20~$\text{kg}^3\text{.m}^{-3}$.
+	An ultrafiltration application is required to treat a waste stream that has 0.5~$\text{kg}\text{.m}^{-3}$ waste in the feed. The desired solute concentrate must be 20~$\text{kg}^3\text{.m}^{-3}$.
 	
 	\vspace{12pt}
 	Pilot plant studies show the flux can be expressed as 
 	\[
 		J = 0.02 \ln \left(\frac{25}{C_f} \right)
 	\]
-	in units of $\text{m}^3.\text{m}^{-2}.\text{hour}^{-1}$. Due to fouling the flux from this membrane system never exceeds 0.05 $\text{m}^3.\text{m}^{-2}.\text{hour}^{-1}$.
+	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$. Due to fouling the flux from this membrane system never exceeds 0.05 $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 	
 	\vspace{12pt}
 	What is the limiting final concentration, $C_f$? What is the interpretation of it?
@@ -663,7 +672,7 @@
 		\item	In fixed sizes; so need to be combined (next section)
 		\item	Also as cassettes, tubes and flat sheets run in TFF to increase flux. % Perry: 
 	\end{itemize}
-	
+	\see{Illustrations from Wankat, 2ed, Ch 16}
 	%figure for future use: /Users/kevindunn/Sync/Figures/separations/membranes/application-area-geometry-Perrys-8ed-Table-20-25.png
 \end{frame}
 
@@ -680,6 +689,7 @@
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/geometry-4-Wankat-2ed-p540.png}
 			\end{center}
+			\see{Illustrations from Wankat, 2ed, Ch 16}
 		\column{0.50\textwidth}
 			\textbf{Hollow fibre membranes}
 			\begin{itemize}
@@ -697,9 +707,8 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/hollow-fibres-CRv2-5ed-p457.png}
 	\end{center}
+	\see{Richardson and Harker, Ch8}
 \end{frame}
-
-
 
 \begin{frame}\frametitle{Sequencing membrane modules}
 	\begin{columns}[t]
@@ -720,6 +729,7 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/geometry-1-Wankat-2ed-p540.png}
 	\end{center}
+	\see{Wankat, Ch16}
 \end{frame}
 
 \begin{frame}\frametitle{Example of an installation}
@@ -730,6 +740,7 @@
 		\item	21.5 million $\text{m}^3$ per year
 		\item	parallel and series
 	\end{itemize}	
+	\see{ide-tech.com}
 \end{frame}
 
 \begin{frame}\frametitle{Operating UF units}
@@ -748,6 +759,7 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/recycle-flowsheet.png}
 	\end{center}
+	\see{Modified from Richardson and Harker, Ch8}
 	\begin{itemize}
 		\item	Initially close retentate valve (batch mode operation)
 		\item	Fluxes slowly reduce
@@ -756,14 +768,14 @@
 \end{frame}
 
 \begin{frame}\frametitle{Class example}
-	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}^3\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}^3\text{.m}^{-3}$. The plant operates 20 hours per day.
+	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
 	
 	\vspace{12pt}
 	At steady-state the feed-plus-bleed circuit operates with a flux 
 	\[
 		J = 0.02 \ln \left(\frac{25}{C_f} \right)
 	\]
-	in units of $\text{m}^3.\text{m}^{-2}.\text{hour}^{-1}$.
+	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 	
 	\vspace{12pt}
 	If each membrane module is 30 m$^2$:	
@@ -778,9 +790,7 @@
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/feed-and-bleed-in-series.png}
 	\end{center}
 	
-	Now consider the previous example. Find the optimal areas, $A_1$ and $A_2$ for the membranes.
-	
-	
+	Now consider the previous example. Find the optimal areas, $A_1$ and $A_2$ for the membranes.	
 \end{frame}
 
 % \begin{frame}\frametitle{UF: continuous operation}
