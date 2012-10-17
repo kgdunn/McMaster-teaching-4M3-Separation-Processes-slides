@@ -25,6 +25,8 @@
 			<date>2012-10-12T20:38:23Z</date>
 		</dict>
 		<dict>
+			<key>expanded</key>
+			<true/>
 			<key>name</key>
 			<string>classes</string>
 			<key>regexFolderFilter</key>
@@ -52,14 +54,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>17</integer>
 				<key>line</key>
-				<integer>811</integer>
+				<integer>981</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>814</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
