@@ -1008,19 +1008,23 @@
 
 \begin{frame}\frametitle{Reverse osmosis}
 	\begin{itemize}
-		\item	The most requested topic on your lists of learning objectives
-		\item	Second largest market for membranes, after dialysis
+		\item	The \textbf{most requested} topic on your list of learning objectives
+		\item	Membrane market by \$ size
+			\begin{enumerate}
+				\item	Dialysis
+				\item	Reverse osmosis (water treatment)
+			\end{enumerate}
 		\item	What is osmosis? [Greek = ``push'']
-		\item	Then look at reverse osmosis
-		\item	Applications
-		\item	Modelling of it
+		\item	Then we look at reverse osmosis (RO)
+		\item	Applications of RO
+		\item	Modelling RO
 	\end{itemize}	
 \end{frame}
 
 \begin{frame}\frametitle{Reverse osmosis principle}
 	\vfill
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/reverse-osmosis-initially.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/reverse-osmosis-initial.png}
 	\end{center}
 \end{frame}
 
@@ -1040,32 +1044,49 @@
 
 \begin{frame}\frametitle{(Reverse) Osmosis principle}
 	\begin{itemize}
-		\item	assume solute barely passes through membrane ($C_p \approx 0$)
-		\item	solvent passes freely
-		\item	chemical potential drives pure solvent (water) to dilute the solute/solvent
-		\item	until equilibrium is reached
+		\item	Assume solute barely passes through membrane ($C_p \approx 0$)
+		\item	Solvent passes freely
+		\item	Chemical potential drives pure solvent (water) to dilute the solute/solvent (mixture). 
+		\item	This \emph{solvent flux} continues until equilibrium is reached
 			\begin{itemize}
-				\item	solvent flow left equal solvent flow right
+				\item	solvent flow to the left equals solvent flow to the right
 				\item	results in a pressure difference (head)
 				\item	called the \emph{osmotic pressure} = $\pi$ [Pa]
-			\end{itemize}		
-		\item	osmosis in action:
-		\begin{itemize}
-			\item	trees and plants to bring water to the cells in upper branches
-			\item	killing snails by placing salt on them
-			\item	why freshwater fish die in salt water and \emph{vice versa}
-			\item	try at home: place peeled potato is very salty water
-		\end{itemize}
-		\item	If you exceed osmotic pressure: reverses the solvent flow
-		\item	Called ``reverse osmosis''
-		\item	Driving force = \underline{$\qquad\qquad\qquad$}
+				\item	a thermodynamic property $\neq f(\text{membrane})$
+			\end{itemize}
 	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{(Reverse) Osmosis principle}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	Osmosis in action:
+				\begin{itemize}
+					\item	trees and plants to bring water to the cells in upper branches
+					\item	killing snails by placing salt on them
+					\item	why freshwater fish die in salt water and \emph{vice versa}
+					\item	try at home: place peeled potato in very salty water
+				\end{itemize}
+				\item	If you exceed osmotic pressure you reverse the solvent flow
+				\item	Called ``reverse osmosis''
+				\item	Net driving force = \underline{$\qquad\qquad\qquad$}
+			\end{itemize}
+		\column{0.40\textwidth}
+			\vspace{-1cm}
+			\begin{center}
+				\includegraphics[width=0.6\textwidth]{\imagedir/separations/membranes/johnny_automatic_tree-open-clipart-7411.png}
+			\end{center}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/reverse-osmosis-developed.png}
+			\end{center}
+	\end{columns}	
 \end{frame}
 
 \begin{frame}\frametitle{Typical values of osmotic press}
 	\begin{exampleblock}{}
 		\[
-			\pi \approx \displaystyle \frac{nRT}{V_m}
+			\pi \approx \displaystyle \frac{nRT}{V_m} = CRT
 		\]
 	\end{exampleblock}
 	\begin{tabular}{cll}
@@ -1073,12 +1094,14 @@
 		$n$ 		&  	[mol]													& mols of \textbf{ions}: e.g. $\text{Na}^{+}$ and $\text{Cl}^{-}$\\
 		$R$			&	$[\text{m}^3\text{.atm.K}^{-1}\text{.mol}^{-1}]$ 		& gas law constant: $8.2057 \times 10^{-5}$\\
 		$V_m$ 		&  	$[\text{m}^{3}]$										& volume of solvent associated with solute\\
-		$T$ 		&  	[K]														& temperature
+		$T$ 		&  	[K]														& temperature\\
+		$C$ 		&  	[mol of ions per m$^{-3}$]								& generic concentration
 	\end{tabular}
 	
+	\vspace{12pt}
 	\textbf{Example}
 	
-	\vspace{12pt}
+	\vspace{6pt}
 	Prove to yourself: 0.1 mol of NaCl dissolved in 1 L of water at 25$^\circ$C is \textbf{4.9 atm}!
 	\begin{itemize}
 		\item	that's almost 500 kPa
@@ -1105,11 +1128,25 @@
 		\item	Reverse osmosis: increase $\Delta P > \pi$
 		\item	So the net useful driving force applied: $\Delta P - \pi$
 		\item	Ultrafiltration $\Delta P$ was 0.1 to 1.0 MPa typically
-		\item	RO: typical $\Delta P$ values: 2.0 MPa to 7.0 MPa 
+		\item	RO: typical $\Delta P$ values: 2.0 MPa to 8.0 MPa, even 10.5 MPa  % 7.0 in Seader, p 532; 8.0 in C+Rv2;5ed;p454; 10.5 from Perry's 8ed; p20-45
 	\end{itemize}	
 \end{frame}
 
-\begin{frame}\frametitle{Widest application: desalination}
+\begin{frame}\frametitle{Let's be a little more accurate}
+	\begin{itemize}
+		\item	The solute (salt) passes through the membrane to the permeate side
+		\item	$C_p \neq 0$
+		\item	There is an osmotic pressure, $\pi_\text{perm}$ back into the membrane.
+		\item	Correct, net driving force = $\Delta P - \Delta \pi$
+		\begin{itemize}
+			\item	$\Delta P$ is the usual TMP we measure
+			\item	$\Delta \pi = \pi_\text{feed} - \pi_\text{perm}$ 
+			\item	$\Delta \pi = C_\text{ions,feed}RT_\text{feed} - C_\text{ions,perm}RT_\text{perm}$ 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Widest application for RO: desalination}
 	Some quotes:
 	\begin{itemize}
 		\item	``\emph{McIlvaine forecasts that world RO equipment and membrane sales will reach \$5.6 billion (USD) in 2012, compared to \$3.8 billion in 2008 (actual).}''
@@ -1118,7 +1155,20 @@
 \end{frame}
 
 \begin{frame}\frametitle{Industrial applications of RO}
-	
+	\begin{itemize}
+		\item	demineralization of industrial water before ion exchange
+		\item	not primary aim, but RO membranes retain $>$ 300 Dalton organics %Perry's 8ed; 20-45
+		\item	ultrahigh-purity water
+		 	\begin{itemize}
+		 		\item	laboratories
+		 		\item	kidney dialysis
+		 		\item	microelectronic manufacturing
+		 		\item	pharmaceutical manufacturing (purified water)
+		 	\end{itemize}
+		 \item	tomato, citrus, and apple juice dewatering [$\sim$ 4.5 c/L; 1995]
+		 \item	dealcoholization of wine and beer to retain flavour in the retentate
+		 \item	other: keep antifreeze, paint, dyes, PAH, pesticides in retentate; discharge permeate to municipal wastewater
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Videos to watch}
@@ -1126,24 +1176,103 @@
 	
 	\begin{itemize}
 		\item	\href{http://www.youtube.com/watch?v=YlMGZWmh\_Mw}{http://www.youtube.com/watch?v=YlMGZWmh\_Mw}: how spiral membranes are made
-		\item	\href{http://www.youtube.com/watch?v=M3mpJysa6zQ}{http://www.youtube.com/watch?v=M3mpJysa6zQ}: very novel way of recovering pressure energy
+		\item	\href{http://www.youtube.com/watch?v=M3mpJysa6zQ}{http://www.youtube.com/watch?v=M3mpJysa6zQ}: novel way of recovering pressure energy
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Greek example again}
-	
+\begin{frame}\frametitle{Salt-water reverse osmosis example}
+	\includegraphics[width=\textwidth]{\imagedir/separations/membranes/ide-tech.com-1D13_0-low-res.jpg}
+	\begin{itemize}
+		\item	Larnaca, Cyprus [island state near Greece/Turkey]
+		\item	Desalination plant: Build, Own, Operate, and Transfer
+		\item	21.5 million $\text{m}^3$ per year
+		\item	Seawater intake $\rightarrow$ flocculation and filtration [why?] $\rightarrow$ RO $\rightarrow$ chemical dosing $\rightarrow$ chlorination
+		\item	Energy recovery of $\Delta P$ {\tiny (see YouTube video mentioned earlier)}
+		% Chemical dosing: neutralize scale-forming salts
+		% Chlorination: kill bacteria
+	\end{itemize}	
+	\see{ide-tech.com}
 \end{frame}
 
-\begin{frame}\frametitle{RO: costs}
-	Perry: TABLE 20-23 Representative RO Process Costs
+\begin{frame}\frametitle{RO costs [Perry's; 8ed], 1992}
+	\begin{columns}[t]
+		\column{0.90\textwidth}
+			\begin{center}
+				\includegraphics[height=0.92\textheight]{\imagedir/separations/membranes/desalination-costs-Perrys-8ed-Table-20-23.png}
+			\end{center}
+		\column{0.30\textwidth}
+			Household RO\\
+			cost:			
+			\begin{itemize}
+				\item	\$ 0.015 to \$0.07/L % Perrys 8ed; p 20-45
+			\end{itemize}
+	\end{columns}	
 \end{frame}
 
+%Ghosh, Dickson notes
 \begin{frame}\frametitle{Transport modelling of RO}
-	Ghosh, Dickson notes
+	{\color{myOrange}{Symbolically:}}
+	{ \small
+	\[
+		J = \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle (\text{permeance})(\text{driving force}) = \displaystyle \frac{\text{driving force}}{\text{resistance}} 
+	\]
+	}
+	\begin{itemize}
+		\item	permeability = $f(\text{membrane properties}, \text{diffusivity}, \text{other physical properties})$
+		\item	permeance: easier to calculate:
+		\begin{itemize}
+			\item	given the driving force: easy to measure
+			\item	given the flux: easy to measure
+		\end{itemize}
+		\item	units are always case specific and must be self consistent [check!]
+	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Example of transport modelling in RO}
+\begin{frame}\frametitle{Simplified RO modelling}
+	\begin{itemize}
+		\item	We don't consider ``cake build-up'': we assume that solid particles are mostly removed in an upstream separation step
+		\item	So $\Delta P$ overcome osmotic pressure and membrane resistance
+	\end{itemize}
+	\vspace{-6pt}
+	\begin{enumerate}
+		\item	\textbf{Solvent} flux
+			\[	J_v = J_\text{solv} = \frac{(\Delta P - \Delta \pi)}{R_{m,v} + \cancelto{0}{R_{cp,v}}} = \frac{P_\text{solv}}{\ell_M}(\Delta P - \Delta \pi) \] \\
+			\[	R_{m,v} = f(\text{membrane's thickness, diffusivity of solvent in membrane})\]
+		\item	\textbf{Solute} (\emph{salt}) flux
+			\[
+				J_\text{salt} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \displaystyle \frac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
+			\]
+			\begin{itemize}
+				\item	Our assumption implies: $C_w = C_\text{f} = C_\text{bulk}$ = bulk solute conc$^\text{n}$
+				\begin{itemize}
+					\item	how would you enforce this?
+				\end{itemize}
+				\item	$P_\text{solv}$ = permeability of the solvent 
+				\item	$C_p$ = concentration of solute in the permeate
+				\item	$P_\text{salt}$ = permeability of the salt
+				\item	$\ell_M$ = membrane thickness				
+			\end{itemize}			
+	\end{enumerate}
+	%\textbf{Note}: all units must be checked for consistency
+\end{frame}
+
+\begin{frame}\frametitle{Example to try at home}
+	Brackish water of 1.8wt\% NaCl at 25$^{\circ}\text{C}$ and 1000 psia is fed to a spiral wound membrane.
 	
+	\vspace{6pt}
+	Conditions on the permeate side are 0.05 wt\% NaCl, at same temperature, but 50 psia.
+	
+	\vspace{6pt}
+	The permeance of water has been established as $1.1 \times 10^{-4} \text{~kg.s}^{-1}\text{.m}^{-2}\text{.atm}^{-1}$ [how would you get this number?] and $16 \times 10^{-8} \text{m}^{3}\text{.s}^{-1}\text{.m}^{-2}$ for salt is determined experimentally (we won't cover this in the course).
+	
+	\begin{enumerate}
+		\item	Calculate the flux of water in LMH.
+		\item	What is the flux of salt through the membrane?
+		\item	How do these fluxes compare?
+		\item	Calculate the rejection coefficient for salt.
+		\item	Calculate the separation factor.
+	\end{enumerate}
+
 \end{frame}
 
 \begin{frame}\frametitle{References}
