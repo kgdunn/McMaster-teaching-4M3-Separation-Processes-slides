@@ -1095,7 +1095,7 @@
 		$R$			&	$[\text{m}^3\text{.atm.K}^{-1}\text{.mol}^{-1}]$ 		& gas law constant: $8.2057 \times 10^{-5}$\\
 		$V_m$ 		&  	$[\text{m}^{3}]$										& volume of solvent associated with solute\\
 		$T$ 		&  	[K]														& temperature\\
-		$C$ 		&  	[mol of ions per m$^{-3}$]								& generic concentration
+		$C$ 		&  	[mol of ions per {\color{myRed}{m$^{3}$}}]								& generic concentration
 	\end{tabular}
 	
 	\vspace{12pt}
@@ -1123,8 +1123,8 @@
 	\end{tabular}
 	
 	\begin{itemize}
-		\item	Driving force in membranes is pressure difference
-		\item	$\Delta P = \pi$ implies we only counteract osmosis
+		\item	Driving force in membrane separation is pressure difference
+		\item	$\Delta P = \pi$ implies we only counteract the osmotic pressure
 		\item	Reverse osmosis: increase $\Delta P > \pi$
 		\item	So the net useful driving force applied: $\Delta P - \pi$
 		\item	Ultrafiltration $\Delta P$ was 0.1 to 1.0 MPa typically
@@ -1142,6 +1142,7 @@
 			\item	$\Delta P$ is the usual TMP we measure
 			\item	$\Delta \pi = \pi_\text{feed} - \pi_\text{perm}$ 
 			\item	$\Delta \pi = C_\text{ions,feed}RT_\text{feed} - C_\text{ions,perm}RT_\text{perm}$ 
+			\item	Even more correctly: $\Delta \pi = C_\text{ions,wall}RT_\text{wall} - C_\text{ions,perm}RT_\text{perm}$ 
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -1243,9 +1244,9 @@
 				J_\text{salt} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \displaystyle \frac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
 			\]
 			\begin{itemize}
-				\item	Our assumption implies: $C_w = C_\text{f} = C_\text{bulk}$ = bulk solute conc$^\text{n}$
+				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n} \approx C_\text{feed}$ 
 				\begin{itemize}
-					\item	how would you enforce this?
+					\item	how would you enforce this assumption?
 				\end{itemize}
 				\item	$P_\text{solv}$ = permeability of the solvent 
 				\item	$C_p$ = concentration of solute in the permeate
