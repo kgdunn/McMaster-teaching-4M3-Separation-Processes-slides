@@ -1053,6 +1053,7 @@
 				\item	results in a pressure difference (head)
 				\item	called the \emph{osmotic pressure} = $\pi$ [Pa]
 				\item	a thermodynamic property $\neq f(\text{membrane})$
+				\item	a thermodynamic property $= f(\text{fluid and solute properties})$
 			\end{itemize}
 	\end{itemize}	
 \end{frame}
@@ -1095,7 +1096,7 @@
 		$R$			&	$[\text{m}^3\text{.atm.K}^{-1}\text{.mol}^{-1}]$ 		& gas law constant: $8.2057 \times 10^{-5}$\\
 		$V_m$ 		&  	$[\text{m}^{3}]$										& volume of solvent associated with solute\\
 		$T$ 		&  	[K]														& temperature\\
-		$C$ 		&  	[mol of ions per {\color{myRed}{m$^{3}$}}]								& generic concentration
+		$C$ 		&  	[mol of ions per m$^{3}$]								& generic concentration
 	\end{tabular}
 	
 	\vspace{12pt}
@@ -1225,33 +1226,33 @@
 			\item	given the driving force: easy to measure
 			\item	given the flux: easy to measure
 		\end{itemize}
-		\item	units are always case specific and must be self consistent [check!]
+		\item	units are always case specific and must be self-consistent [check!]
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Simplified RO modelling}
 	\begin{itemize}
 		\item	We don't consider ``cake build-up'': we assume that solid particles are mostly removed in an upstream separation step
-		\item	So $\Delta P$ overcome osmotic pressure and membrane resistance
+		\item	So $\Delta P$ overcomes osmotic pressure and membrane resistance
 	\end{itemize}
 	\vspace{-6pt}
 	\begin{enumerate}
 		\item	\textbf{Solvent} flux
 			\[	J_v = J_\text{solv} = \frac{(\Delta P - \Delta \pi)}{R_{m,v} + \cancelto{0}{R_{cp,v}}} = \frac{P_\text{solv}}{\ell_M}(\Delta P - \Delta \pi) \] \\
-			\[	R_{m,v} = f(\text{membrane's thickness, diffusivity of solvent in membrane})\]
+			\[	R_{m,v} = f(\text{\small membrane's thickness=$\ell_M$, diffusivity of solvent in membrane})\]
 		\item	\textbf{Solute} (\emph{salt}) flux
 			\[
 				J_\text{salt} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \displaystyle \frac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
 			\]
 			\begin{itemize}
-				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n} \approx C_\text{feed}$ 
+				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n}$ = $C_\text{p}$
 				\begin{itemize}
-					\item	how would you enforce this assumption?
+					\item	how would you enforce this reasonable assumption?
 				\end{itemize}
-				\item	$P_\text{solv}$ = permeability of the solvent 
+				\item	Crudely assume: $C_\text{bulk}  \approx C_\text{feed}$ [back-of-envelope calculation]
+				\item	$P_\text{solv}$ = permeability of the solvent [notation: $P_\text{solv} \equiv P_\text{w}$]
 				\item	$C_p$ = concentration of solute in the permeate
 				\item	$P_\text{salt}$ = permeability of the salt
-				\item	$\ell_M$ = membrane thickness				
 			\end{itemize}			
 	\end{enumerate}
 	%\textbf{Note}: all units must be checked for consistency
@@ -1273,13 +1274,111 @@
 		\item	Calculate the rejection coefficient for salt.
 		\item	Calculate the separation factor.
 	\end{enumerate}
+\end{frame}
 
+\begin{frame}\frametitle{Some questions to consider}
+	\begin{enumerate}
+		\item	What happens, in terms of osmosis, on a really hot day to fluid flow in a tree?
+		\item	Is $P_\text{solv}$ going to change if we use a different solute?
+		\item	If we double the pressure drop, will we double the solvent flux?
+		\item	Why did we not take osmotic pressure in account for microfiltration and ultrafiltration?
+		\item	In RO: what will be the expected effect of increasing operating temperature?
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Some old and new terminology}
+	
+	Recall from ultrafiltration:
+	\begin{itemize}
+		\item	$R = 1 - \displaystyle\frac{C_P}{C_R}$
+		
+		\item	This {\color{purple}{rejection coefficient}} also applies to reverse osmosis.
+		
+		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Another example: calculating permeances}
+	At 25 $^\circ$C in a lab membrane with area $A = 2 \times 10^{-3}$ $\text{m}^{2}$ we feed a solution of 10 kg NaCl per m$^3$ solution so well mixed that essentially it has the same strength leaving.
+	
+	\vspace{12pt}
+	The permeate is measured as 0.39 kg NaCl per $\text{m}^{3}$ solution at a rate of $1.92 \times 10^{-8}~\text{m}^3\text{.s}^{-1}$ when applying a constant pressure difference of 54.42 atm.
+	
+	\vspace{12pt}
+	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.	
+\end{frame}
+
+\begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
+	\begin{enumerate}
+		\item	Usually we specify the desired cut, $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$
+		\item	$Q_\text{F} C_\text{F} = Q_\text{R} C_\text{R} + Q_\text{P} C_\text{P}$
+		\item	$Q_\text{F} = Q_\text{R} + Q_\text{P}$
+		\item	$1 = \displaystyle \frac{Q_\text{R}}{Q_\text{F}} + \theta$
+		\item	$C_\text{F} = (1 - \theta)C_\text{R} + \theta C_\text{P}$
+		\item	$J_\text{solv}C_\text{P} = A_\text{solv}(\Delta P - \Delta \pi)C_\text{P}$ = salt flux leaving in permeate
+		\item	$J_\text{salt} = A_\text{salt}(C_\text{R} - C_\text{P})$ = salt flux into membrane
+	\end{enumerate}
+	\hrule
+	\begin{itemize}
+		\item	Specify $C_\text{F}$ and $\theta$
+		\item	Guess $C_\text{P}$ value
+		\item	Calculate $C_\text{R}$ from equation 5
+		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
+		\item	Note then that equation 6 and 7 must be equal
+		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Nanofiltration (NF)}
+	
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-application-areas-CRv2-5ed-p438.png}
+	\end{center}	
+	\see{Richardson and Harker, p 438}
+	
+	\vspace{24pt}
+	
+	Nanofiltration removes particles intermediate to UF and RO. 
+	\begin{itemize}
+		\item	only difference:  $\Delta P$ is 0.3 to 3 MPa for NF
+		\item	same particle sizes removed as RO: 8 to 50 \AA
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{Wastewater applications: membrane bioreactor}
+	
+	%Membrane Processes These processes use a selectively permeable membrane to separate pollutants from water. Most of the membranes are formulated from complex organics that polymerize during membrane preparation. This allows the membrane to be tailored to discriminate by molecular size or by degree of hydrogen bonding potential. Ultrafiltration membranes discriminate by molecular size or weight, while reverse osmosis membranes discriminate by hydrogen bonding characteristics. The permeability of these membranes is low: from 0.38-3.8 m/day (10-100 gal/d/ft 2). The apparatus in which they are used must provide a high surface area per unit volume.
+
+	%Membrane Bioreactors (MBRs): Membrane bioreactors are a technology that combines biological degradation of waste products with membrane filtratio
+	
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/MBRvsASP-Schematic-Wikipedia.png}
+	\end{center}
+	\see{\href{http://en.wikipedia.org/wiki/File:MBRvsASP\_Schematic.jpg}{http://en.wikipedia.org/wiki/File:MBRvsASP\_Schematic.jpg}}
+	
+	% Perry's Chapter 22.5.8
+	\begin{itemize}
+		\item	Use a membrane instead of a traditional settler to remove impurities and solids
+		\item	Bleed the sludge from retentate (feed-and-bleed)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Research topics in membranes}
+	\begin{itemize}
+		\item	Materials of construction
+		\begin{itemize}
+			\item	carbon nanotubes to improve flux %  (Shol and Johnson)
+		\end{itemize}
+		
+		\item	Energy recovery (ongoing)
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{References}
 	\begin{itemize}
 		\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 2.1
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 2.1 % <---- very well written; use this reference more in future years
 		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 14
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13
@@ -1293,9 +1392,29 @@
 	% \begin{frame}\frametitle{UF: continuous operation}
 	% 	% eqn 20-84 Perry
 	% \end{frame}
-	\begin{frame}\frametitle{Nanofiltration}
-		Wankat (p537): nanofiltration is just RO, except $\Delta P$ is 0.3 to 3 MPa and sizes retained are 8 to 50 Angstrom. It is essentially a loose (?) RO membrane
-	\end{frame}	
+	\begin{frame}\frametitle{Introduction to dialysis}
+		Picture from Seader
+		Log-mean concentration difference
+		Sized like a heat-exchanger in counter-current mode
+	\end{frame}
+
+	\begin{frame}\frametitle{Gas Separation Membranes}
+		\begin{itemize}
+			\item	
+		\end{itemize}
+	\end{frame}
+	
+	\begin{frame}\frametitle{Dialysis}
+		Uhlmanns2-pdf, p 467
+	\end{frame}
+
+	\begin{frame}\frametitle{Economics and operating costs}
+		Schweitzer, p 2-69
+	\end{frame}
+
+	\begin{frame}\frametitle{Waste water flowsheet options}
+		Schweitzer, p 2-77
+	\end{frame}
 	
 	\begin{frame}\frametitle{Other factors influencing UF flux}
 		Ghosh book:
@@ -1309,11 +1428,7 @@
 		Batch equation:
 		Ghosh book p. 231
 	\end{frame}		
-	
-	\begin{frame}\frametitle{Dialysis}
-		Uhlmanns2-pdf, p 467
-	\end{frame}
-	
+		
 	\begin{frame}\frametitle{UF: material of construction: ....}
 		Perry: TABLE 20-24
 	\end{frame}
@@ -1388,55 +1503,14 @@
 
 	\begin{frame}\frametitle{Geometries and flow patterns}
 		Wankat p 537
-	\end{frame}
-
-	\begin{frame}\frametitle{Economics and operating costs}
-		Schweitzer, p 2-69
-	\end{frame}
-
-	\begin{frame}\frametitle{Waste water flowsheet options}
-		Schweitzer, p 2-77
-	\end{frame}
-
-	\begin{frame}\frametitle{Membrane bioreactors}
-
-	\end{frame}
-
-	\begin{frame}\frametitle{Application areas}
-		\begin{itemize}
-			\item	blood cleaning and oxygenation
-			\item	wastewater treatment
-			\item	desalination
-			\item	reverse osmosis
-			\item	MBR
-			\item	high flux membranes with carbon nanotubes (Shol and Johnson)
-		\end{itemize}
-	\end{frame}
+	\end{frame}	
 	
-	\begin{frame}\frametitle{GAS-SEPARATION MEMBRANES}
-		Perrys has a section on it
-	\end{frame}
-
-	\begin{frame}\frametitle{Wastewater applications}
-		Perry's Chapter 22.5.8
-
-		Membrane Processes These processes use a selectively permeable membrane to separate pollutants from water. Most of the membranes are formulated from complex organics that polymerize during membrane preparation. This allows the membrane to be tailored to discriminate by molecular size or by degree of hydrogen bonding potential. Ultrafiltration membranes discriminate by molecular size or weight, while reverse osmosis membranes discriminate by hydrogenbonding characteristics. The permeability of these membranes is low: from 0.38-3.8 m/day (10-100 gal/d/ft 2). The apparatus in which they are used must provide a high surface area per unit volume.
-
-		Membrane Bioreactors (MBRs): Membrane bioreactors are a technology that combines biological degradation of waste products with membrane filtratio
-	\end{frame}
-
 	\begin{frame}\frametitle{Principles used to separate: DISCUSS THESE AS NEEDED, ie. when you are introducing microfiltration vs dialysis}
 		* Principle(s) used:
 		 - diffusion differences (different solubilities)
 		 - size differences
 		 - electric attraction
 	\end{frame}
-
-	\begin{frame}\frametitle{Water treatment}
-		http://www.youtube.com/watch?v=YlMGZWmh\_Mw
-		Desalination (with some energy recovery): http://www.youtube.com/watch?v=M3mpJysa6zQ
-	\end{frame}	
-
 \end{comment}
 
 
