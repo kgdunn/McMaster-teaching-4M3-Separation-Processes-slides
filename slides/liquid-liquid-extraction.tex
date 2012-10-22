@@ -1,4 +1,41 @@
-References:
+% References:
+% Green book: Separation Techniques 1: Liquid-liquid systems, articles from "Chemical Engineering Magazine"
+% Uhlmanns articles
+% C+R v2, Chapter 13
+% Perry's
 
-* Green book: Separation Techniques 1: Liquid-liquid systems, articles from "Chemical Engineering Magazine"
-*
+
+\begin{frame}\frametitle{Slide 76: Some old and new terminology}
+	
+	Recall from ultrafiltration:
+	\begin{itemize}
+		\item	{\color{myRed}{$R = 1 - \displaystyle\frac{C_P}{C_F}$   }}
+		
+		\item	This {\color{purple}{rejection coefficient}} also applies to reverse osmosis.
+		
+		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
+	\end{itemize}	
+\end{frame}
+
+% These slides were not covered: assigned as SDL
+\begin{frame}\frametitle{Slide 78: Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
+	\begin{enumerate}
+		\item	Usually we specify the desired cut, $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$
+		\item	$Q_\text{F} C_\text{F} = Q_\text{R} C_\text{R} + Q_\text{P} C_\text{P}$
+		\item	$Q_\text{F} = Q_\text{R} + Q_\text{P}$
+		\item	$1 = \displaystyle \frac{Q_\text{R}}{Q_\text{F}} + \theta$
+		\item	$C_\text{F} = (1 - \theta)C_\text{R} + \theta C_\text{P}$ from equation (2) and (4)
+		\item	$J_\text{solv}C_\text{P} = A_\text{solv}(\Delta P - \Delta \pi)C_\text{P}$ = salt flux leaving in permeate
+		\item	$J_\text{salt} = A_\text{salt}(C_\text{R} - C_\text{P})$ = salt flux into membrane
+	\end{enumerate}
+	\hrule
+	\begin{itemize}
+		\item	Specify $C_\text{F}$ and $\theta$
+		\item	Guess $C_\text{P}$ value [how?]
+		\item	Calculate $C_\text{R}$ from equation 5
+		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
+		\item	Note then that equation 6 and 7 must be equal
+		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
+	\end{itemize}	
+\end{frame}
+

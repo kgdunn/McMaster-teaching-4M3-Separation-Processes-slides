@@ -3,7 +3,7 @@
 #* http://stackoverflow.com/questions/4058840/makefile-that-distincts-between-windows-and-unix-like-systems
 
 .PHONY: all clean
-CLASSES = 01 02 03 04 05 06 07
+CLASSES = 01 02 03 04 05 06 07 08 09 10 11 12 13
 MAIN = 4M3-course
 
 ifdef SystemRoot

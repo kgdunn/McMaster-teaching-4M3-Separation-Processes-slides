@@ -1,6 +1,4 @@
 % 02 October 2012: including a brain storming session
-%\begin{comment}
-
 \begin{frame}\frametitle{Membranes}
 	On a loose sheet of paper, please list/describe 5 topics related to membranes that you want to learn about in the next 5 classes.
 	
@@ -435,8 +433,6 @@
 	\vfill
 	Practical use of this example?
 \end{frame}
-
-%\end{comment}
 
 % 09 October 2012: UF and nano-filtration
 % Delayed: covered assignment 3 solutions and course evaluation feedback in the class
@@ -1291,7 +1287,7 @@
 	
 	Recall from ultrafiltration:
 	\begin{itemize}
-		\item	$R = 1 - \displaystyle\frac{C_P}{C_R}$
+		\item	$R = 1 - \displaystyle\frac{C_P}{C_F}$   
 		
 		\item	This {\color{purple}{rejection coefficient}} also applies to reverse osmosis.
 		
@@ -1309,21 +1305,21 @@
 	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.	
 \end{frame}
 
-% Slides were not covered
+% These slides were not covered: assigned as SDL
 \begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
 	\begin{enumerate}
 		\item	Usually we specify the desired cut, $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$
 		\item	$Q_\text{F} C_\text{F} = Q_\text{R} C_\text{R} + Q_\text{P} C_\text{P}$
 		\item	$Q_\text{F} = Q_\text{R} + Q_\text{P}$
 		\item	$1 = \displaystyle \frac{Q_\text{R}}{Q_\text{F}} + \theta$
-		\item	$C_\text{F} = (1 - \theta)C_\text{R} + \theta C_\text{P}$
+		\item	$C_\text{F} = (1 - \theta)C_\text{R} + \theta C_\text{P}$ from equation (2) and (4)
 		\item	$J_\text{solv}C_\text{P} = A_\text{solv}(\Delta P - \Delta \pi)C_\text{P}$ = salt flux leaving in permeate
 		\item	$J_\text{salt} = A_\text{salt}(C_\text{R} - C_\text{P})$ = salt flux into membrane
 	\end{enumerate}
 	\hrule
 	\begin{itemize}
 		\item	Specify $C_\text{F}$ and $\theta$
-		\item	Guess $C_\text{P}$ value
+		\item	Guess $C_\text{P}$ value [how?]
 		\item	Calculate $C_\text{R}$ from equation 5
 		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
 		\item	Note then that equation 6 and 7 must be equal
