@@ -3,7 +3,7 @@
 % Uhlmanns articles
 % C+R v2, Chapter 13
 % Perry's
-
+% Existing slides from Santiago/Dickson/Ghosh
 
 \begin{frame}\frametitle{Slide 76: Some old and new terminology}
 	
@@ -37,5 +37,183 @@
 		\item	Note then that equation 6 and 7 must be equal
 		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
 	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Definitions}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/terminology.png}
+	\end{center}
+	
+	\begin{itemize}
+		\item	{\color{purple}{solute}}: species we aim to recover (A) from the feed 
+		\item	{\color{purple}{feed or ``feed solvent''}}: one of the liquids in the system {\tiny (``{\color{purple}{carrier}}'')}
+		\item	{\color{purple}{solvent}}: MSA (by convention: the ``added'' liquid)
+		\item	{\color{purple}{extract}}: solute mostly present in this layer = $y_\text{A}$
+		\item	{\color{purple}{raffinate}}: residual solute in this layer = $x_\text{A}$
+		\item	{\color{purple}{distribution}}: how the solute {\color{purple}{partitions}} itself = $D_\text{A} = \displaystyle \frac{y_\text{A}}{x_\text{A}}$
+			\begin{itemize}
+				\item	measure of affinity of solute
+				\item	$D_\text{A} = \displaystyle \frac{\mu_R^0 - \mu_E^0}{RT} = \displaystyle \frac{\text{chemical potential difference}}{(R)(\text{temperature})}$	% Ghosh, p 92
+				%\item	$D_\text{A}$ roughly constant at low concentrations of $x_\text{A}$ and $y_\text{A}$
+				% where did you read this; does this make sense?
+			\end{itemize}
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Extractor types}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/terminology.png}
+	\end{center}
+	\begin{enumerate}
+		\item	Mixing/contacting:
+		 	\begin{itemize}
+		 		\item	turbulent contact between liquid phases
+		 		\item	small droplet {\color{purple}{dispersion}} in a {\color{purple}{continuous}} phase
+				\begin{itemize}
+					\item	which phase is dispersed?
+				\end{itemize}
+		 		\item	mass-transfer between phases
+		 		\item	limited by solute loading in solvent
+		 	\end{itemize}
+		\item	Phase separation: 
+			\begin{itemize}
+				\item	reverse of mixing step
+				\item	drops coalesce 
+				\item	relies on density difference
+			\end{itemize}
+		\item	Collection of phases leaving the unit
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{What are we aiming for?}
+	Assume: solute dissolved in undesirable phase, e.g. solvent
+	\begin{itemize}
+		\item	\iftoggle{instructor}{High recovery of solute in desired phase (phase)}{}
+		\item	\iftoggle{instructor}{Concentrated solute in extract (water)}{}
+	\end{itemize}
+	\textbf{Note}: we can have that the solute/solvent is the desirable phase
+	
+	\vspace{12pt}
+	\emph{How to achieve this}?
+	\begin{itemize}
+		\item	Counter-current mixer-settlers in series
+		\item	High interfacial area during mixing
+		\item	Reduce mass-transfer resistance
+		\item	Promote mass transfer
+		\begin{itemize}
+			\item	molecular diffusion
+			\item	eddy diffusion  \hfill {\color{myOrange}{$\leftarrow$ orders of magnitude greater}}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Equipment for LLE}
+	
+	\begin{enumerate}
+		\item	Mixer-settlers
+		\item	Columns with (a) nothing (b) trays or (c) packing or (d) pulsating
+		\item	Rotating devices
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Mixer-settlers}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/mixer-settler-CRv2-5ed-p745.png}
+	\end{center}
+	\see{Richardson and Harker, p 745}
+\end{frame}
+
+\begin{frame}\frametitle{Mixer-settlers}
+	KnitMesh coalescer: consistency of ``steel wool''
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/KnitMesh-mixer-settler-CRv2-5ed-p747.png}
+	\end{center}
+	\see{Richardson and Harker, p 747}
+\end{frame}
+
+\begin{frame}\frametitle{Spray columns}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{\imagedir/separations/liquid-liquid-extraction/spray-towers-CRv2-5ed-p750.png}
+	\end{center}
+	\vspace{-14pt}
+	\see{Richardson and Harker, p 751}
+\end{frame}
+
+\begin{frame}\frametitle{Tray columns}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{\imagedir/separations/liquid-liquid-extraction/baffle-plate-columns-CRv2-5ed-p749.png}
+	\end{center}
+	\vspace{-14pt}
+	\see{Richardson and Harker, p 749}
+\end{frame}
+
+\begin{frame}\frametitle{Rotating devices}
+	\begin{center}
+		\includegraphics[width=0.7\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Uhlmanns-v21-p272.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Uhlmanns, v21, p272}
+\end{frame}
+
+\begin{frame}\frametitle{Linking up units (more on this later)}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723.png}
+	\end{center}
+	\see{Richardson and Harker, p 723}
+\end{frame}
+
+\begin{frame}\frametitle{Triangular phase diagrams: from laboratory studies}
+	\begin{center}
+		\includegraphics[width=0.60\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
+	\end{center}
+	\vspace{-12pt}
+	\see{\href{http://www.flickr.com/photos/39357285@N00/3453475667/}{Flickr\# 3453475667}}
+\end{frame}
+
+\begin{frame}\frametitle{Using a triangular phase diagrams}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/Water-MIBK-acetone-from-youtube-gGYHXhcKM5s.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{\href{http://www.youtube.com/watch?v=gGYHXhcKM5s}{http://www.youtube.com/watch?v=gGYHXhcKM5s}}
+\end{frame}
+
+\begin{frame}\frametitle{Lever rule}
+	\begin{columns}[t]
+		\column{0.80\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Water-MIBK-acetone-from-CRv2-5ed-p726-mod.png}
+			\end{center}
+			\see{Richardson and Harker, p 726}
+		\column{0.30\textwidth}
+			\textbf{Mix P and Q}
+			
+			\begin{itemize}
+				\item	mixture = K
+				\vspace{12pt}
+				\item	$\displaystyle \frac{\text{PK}}{\text{KQ}} = \displaystyle\frac{\text{amount Q}}{\text{amount P}}$
+				\vspace{12pt}
+				\item	The converse applies also: when separating a settled mixture
+				\item	Applies anywhere: even in the miscible region
+			\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{References}
+	\begin{itemize}
+		%\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16
+		%\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 2.1 % <---- very well written; use this reference more in future years
+		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 8
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 13
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 12.5
+		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 7
+		\item	Uhlmann's Encyclopedia, ``Liquid-Liquid Extraction'',  \href{http://dx.doi.org/10.1002/14356007.b03\_06.pub2}{DOI:10.1002/14356007.b03\_06.pub2}
+	\end{itemize}
 \end{frame}
 
