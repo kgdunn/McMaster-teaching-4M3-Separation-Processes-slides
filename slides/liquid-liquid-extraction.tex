@@ -17,7 +17,6 @@
 	\end{itemize}	
 \end{frame}
 
-% These slides were not covered: assigned as SDL
 \begin{frame}\frametitle{Slide 78: Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
 	\begin{enumerate}
 		\item	Usually we specify the desired cut, $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$
@@ -41,8 +40,10 @@
 
 \begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
+		\includegraphics[width=0.60\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
 	\end{center}
+	\vspace{-12pt}
+	\see{\href{http://www.flickr.com/photos/39357285@N00/3453475667/}{Flickr\# 3453475667}}
 \end{frame}
 
 \begin{frame}\frametitle{Definitions}
@@ -64,6 +65,26 @@
 				% where did you read this; does this make sense?
 			\end{itemize}
 	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Where/why LLE is used}
+	Where?
+	\begin{itemize}
+		\item	Bioseparations
+		\item	Nuclear (uranium recovery)
+		\item	Mining: nickel/cobalt; copper/iron
+		\item	Perfumes, fragrances and essential oils
+		\item	Fine and specialty chemicals
+	\end{itemize}
+	Why?
+	\begin{itemize}
+		\item	Temperature sensitive products
+		\item	High purity requirements
+		\item	High-boiling point species in low quantity
+		\item	Need to separate by species type (rather than relative volatility)
+		\item	Close-boiling points, but high solubility difference
+		\item	Azeotrope-forming mixtures
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Extractor types}
@@ -92,12 +113,12 @@
 \end{frame}
 
 \begin{frame}\frametitle{What are we aiming for?}
-	Assume: solute dissolved in undesirable phase, e.g. solvent
+	\sout{Assume: solute dissolved in undesirable phase, e.g. solvent}
 	\begin{itemize}
-		\item	\iftoggle{instructor}{High recovery of solute in desired phase (phase)}{}
-		\item	\iftoggle{instructor}{Concentrated solute in extract (water)}{}
+		\item	{\color{myGreen}{\iftoggle{instructor}{High recovery of solute in desired phase (phase)}{}}}
+		\item	{\color{myGreen}{\iftoggle{instructor}{Concentrated solute in extract (water)}{}}}
 	\end{itemize}
-	\textbf{Note}: we can have that the solute/solvent is the desirable phase
+	\sout{\textbf{Note}: we can have that the solute/solvent is the desirable phase}
 	
 	\vspace{12pt}
 	\emph{How to achieve this}?
@@ -113,11 +134,28 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Equipment for LLE}
-	
+\begin{frame}\frametitle{Equipment for LLE}	
 	\begin{enumerate}
 		\item	Mixer-settlers
-		\item	Columns with (a) nothing (b) trays or (c) packing or (d) pulsating
+		\begin{itemize}
+			\item	mix: impellers
+			\item	mix: nozzles
+			\item	mix: feeds meet directly in the pump
+			\item	mix: geared-teeth devices
+			\item	{\color{myOrange}{main aim: good contact; avoid droplets smaller than 2 \micron}}
+			\item	settle: baffles, membranes
+			\item	settle: ultrasound
+			\item	settle: chemical treatment
+			\item	settle: centrifuges
+		\end{itemize}
+		\item	Columns with:
+			\begin{itemize}
+				\item	(a) nothing or
+				\item	(b) trays and/or
+				\item	(c) packing and/or
+				\item	(d) pulsating and/or
+				\item	(e) agitation
+			\end{itemize}
 		\item	Rotating devices
 	\end{enumerate}
 \end{frame}
@@ -146,11 +184,21 @@
 \end{frame}
 
 \begin{frame}\frametitle{Tray columns}
-	\begin{center}
-		\includegraphics[height=0.9\textheight]{\imagedir/separations/liquid-liquid-extraction/baffle-plate-columns-CRv2-5ed-p749.png}
-	\end{center}
-	\vspace{-14pt}
-	\see{Richardson and Harker, p 749}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\vspace{-0.5cm}
+			\begin{center}
+				\includegraphics[height=0.9\textheight]{\imagedir/separations/liquid-liquid-extraction/baffle-plate-columns-CRv2-5ed-p749.png}
+			\end{center}
+			\vspace{-20pt}
+			\see{Richardson and Harker, p 749}
+		\column{0.40\textwidth}
+			\begin{itemize}
+				\item	coalescence on each tray
+				\item	tray holes: $\sim$ 3mm
+				\item	breaks gradient formation (axial dispersion)
+			\end{itemize}
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Rotating devices}
@@ -211,6 +259,10 @@
 				\item	Applies anywhere: even in the miscible region
 			\end{itemize}
 	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Phase rule}
+	\emph{Next class}
 \end{frame}
 
 \begin{frame}\frametitle{References}
