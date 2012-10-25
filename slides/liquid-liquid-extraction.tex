@@ -5,6 +5,8 @@
 % Perry's
 % Existing slides from Santiago/Dickson/Ghosh
 
+% 23 October 2012 (first 2 slides are from membranes; spent about 15 minutes on them)
+\begin{comment}
 \begin{frame}\frametitle{Slide 76: Some old and new terminology}
 	
 	Recall from ultrafiltration:
@@ -37,7 +39,9 @@
 		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
 	\end{itemize}	
 \end{frame}
-
+\end{comment}
+	
+% 23 October 2012: Liquid-liquid extraction section
 \begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
 	\begin{center}
 		\includegraphics[width=0.60\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
@@ -57,7 +61,7 @@
 		\item	{\color{purple}{solvent}}: MSA (by convention: the ``added'' liquid)
 		\item	{\color{purple}{extract}}: solute mostly present in this layer = $y_\text{A}$
 		\item	{\color{purple}{raffinate}}: residual solute in this layer = $x_\text{A}$
-		\item	{\color{purple}{distribution}}: how the solute {\color{purple}{partitions}} itself = $D_\text{A} = \displaystyle \frac{y_\text{A}}{x_\text{A}}$
+		\item	{\color{purple}{distribution}}: how the solute {\color{purple}{partitions}} itself = $D_\text{A} = \displaystyle \frac{y_\text{A}}{x_\text{A}} = \displaystyle \frac{y_\text{E}}{x_\text{R}}$
 			\begin{itemize}
 				\item	measure of affinity of solute
 				\item	$D_\text{A} = \displaystyle \frac{\mu_R^0 - \mu_E^0}{RT} = \displaystyle \frac{\text{chemical potential difference}}{(R)(\text{temperature})}$	% Ghosh, p 92
@@ -113,13 +117,12 @@
 \end{frame}
 
 \begin{frame}\frametitle{What are we aiming for?}
-	\sout{Assume: solute dissolved in undesirable phase, e.g. solvent}
-	\begin{itemize}
-		\item	{\color{myGreen}{\iftoggle{instructor}{High recovery of solute in desired phase (phase)}{}}}
-		\item	{\color{myGreen}{\iftoggle{instructor}{Concentrated solute in extract (water)}{}}}
-	\end{itemize}
-	\sout{\textbf{Note}: we can have that the solute/solvent is the desirable phase}
-	
+	\begin{exampleblock}{{\color{myRed}{Main aims}}}
+		\begin{itemize}
+			\item	High recovery of solute overall (low $x_R$ and high $y_E$)
+			\item	Concentrated solute in extract (high $y_E$)
+		\end{itemize}
+	\end{exampleblock}
 	\vspace{12pt}
 	\emph{How to achieve this}?
 	\begin{itemize}
@@ -158,13 +161,16 @@
 			\end{itemize}
 		\item	Rotating devices
 	\end{enumerate}
+	{\color{myRed}{Important point}}: LLE is an equilibrium-limited separation (as opposed to rate limited separations seen up to now).
 \end{frame}
 
+% 25 October 2012
 \begin{frame}\frametitle{Mixer-settlers}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/mixer-settler-CRv2-5ed-p745.png}
 	\end{center}
 	\see{Richardson and Harker, p 745}
+	Common in mining industry: requirements $\sim$40000 L/min flows
 \end{frame}
 
 \begin{frame}\frametitle{Mixer-settlers}
@@ -173,6 +179,13 @@
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/KnitMesh-mixer-settler-CRv2-5ed-p747.png}
 	\end{center}
 	\see{Richardson and Harker, p 747}
+\end{frame}
+
+\begin{frame}\frametitle{Horizontal gravity settling vessel}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/settler-only-Seader-3ed-p302}
+	\end{center}
+	\see{Seader, 3ed, p302}
 \end{frame}
 
 \begin{frame}\frametitle{Spray columns: separation principle is {\color{myRed}{gravity}}}
@@ -203,10 +216,15 @@
 
 \begin{frame}\frametitle{Rotating devices}
 	\begin{center}
-		\includegraphics[width=0.7\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Uhlmanns-v21-p272.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Seader-3ed-p306.png}
 	\end{center}
 	\vspace{-12pt}
-	\see{Uhlmanns, v21, p272}
+	\see{Seader, 3ed, p 306}
+	\begin{itemize}
+		\item	``white'' = lighter liquid
+		\item	``grey'' = heavier liquid
+	\end{itemize}
+	Used when foams and emulsions would easily form: i.e. gentle mass transfer.
 \end{frame}
 
 \begin{frame}\frametitle{Linking up units (more on this later)}
@@ -218,10 +236,58 @@
 
 \begin{frame}\frametitle{Integration with downstream units}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/acetic-acid-Perrys-8ed-Fig-15-1.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/acetic-acid-Schweitzer-p1-257.png}
 	\end{center}
 	\vspace{-10pt}
-	\see{Perrys, 8ed, Ch 15}
+	\see{Schweitzer, p 1-257}
+\end{frame}
+
+\begin{frame}\frametitle{Selecting a solvent}
+	Schweitzer: ``The \textbf{choice of solvent} for a LLE process can often have a more significant impact on the process economics than any other design decision that has to be made''.
+	
+	\vspace{12pt}
+	Which properties of a solvent influence our aims with LLE?
+	\begin{itemize}
+		\item	High distribution coefficient (selectivity) for solute 
+		\pause
+		\item	\iftoggle{instructor}{Low distribution coefficient for carrier}{}
+		\item	\iftoggle{instructor}{Reasonable volatility difference with solute and carrier}{}
+		\item	\iftoggle{instructor}{Reasonable surface tension: easy to disperse \textbf{and} coalesce}{}
+		\item	\iftoggle{instructor}{High density difference: separates rapidly by gravity}{}
+		\item	\iftoggle{instructor}{Stability to maximize its reuse}{}
+		\item	\iftoggle{instructor}{Inert to materials of construction}{}
+		\item	\iftoggle{instructor}{Low viscosity: maximizes mass transfer}{}
+		\item	\iftoggle{instructor}{Safe: non-toxic, non-flammable}{}
+		\item	\iftoggle{instructor}{Cheap, and easily available}{}
+		\item	\iftoggle{instructor}{Compatible with carrier and solute: avoid contamination}{}
+		\item	\iftoggle{instructor}{Doesn't foam, form emulsions, scum layers at interface}{}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Calculating the distribution coefficient}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			Mass balance:
+			\[ F x_F + S y_S = E y_E + R x_R \]
+			\[ D = \frac{y_E}{x_R} \]
+
+			\vspace{12pt}
+			If $F = S = E = R$ and $y_s = 0$, then only measure $x_R$:
+			\[ D = \frac{x_F}{x_R} - 1\]
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263.png}
+			\end{center}
+	\end{columns}
+	\begin{itemize}
+		\item	Capital letters refer to mass amounts
+		\item	$y_\Box \,\, \leftarrow\,\,$  refers to mass fractions in solvent layer
+		\item	$x_\Box \,\, \leftarrow\,\,$  refers to mass fractions in carrier and extract layers
+	\end{itemize}
+	Once $D$ is determined, we can obtain phase diagrams to understand how the process will operate.
+	
+	\vspace{12pt}
+	Also: see Perry's for many values of $D$
 \end{frame}
 
 \begin{frame}\frametitle{Triangular phase diagrams: from laboratory studies}
@@ -261,14 +327,120 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Phase rule}
-	\emph{Next class}
+\begin{frame}\frametitle{Q1: Using the lever rule}
+	Which is a more or effective system?
+	\begin{itemize}
+		\item	S = pure solvent used 
+		\item	F = feed concentration
+	\end{itemize}
+	
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{\imagedir/separations/liquid-liquid-extraction/solubility-effect-on-range-Seader-3ed-p312.png}
+	\end{center}
+	\iftoggle{instructor}{
+		Answer: range of feed concentrations ($F$) is widest, i.e. more desirable for (a). Difference between (a) and (b): 
+		\begin{itemize}
+			\item	due to solvent choice 
+			\item	due to different temperatures
+			\item	due to pH modification, \emph{etc}
+		\end{itemize}
+	}{Answer: }
 \end{frame}
+
+\begin{frame}\frametitle{Q2: Using the lever rule}
+	
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram.png}
+	\end{center}
+	Which is a more effective as a solvent: C or S ?
+\end{frame}
+
+\begin{frame}\frametitle{Q3: Using the lever rule}
+	
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
+	\end{center}
+	Mix a feed stream, $F$, containing $C$ and $A$ (i.e. $x_f$) with a pure solvent stream $S$ (i.e. $y_S = 0$). Composition of the mixture?
+\end{frame}
+
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Q3 {\color{myOrange}{\emph{solution}}}: Using the lever rule}		
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
+		\end{center}
+		Composition of the mixture? Trick question: \emph{we need more information} (e.g. amount of $F$ or $S$ must be given)
+	\end{frame}
+}{}
+
+\begin{frame}\frametitle{Q4: Going to equilibrium}	
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
+	\end{center}
+	Let that mixture $M$ achieve equilibrium. What is the composition of the raffinate and extract?
+\end{frame}
+
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Q4 {\color{myOrange}{\emph{solution}}}: Going to equilibrium}		
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E.png}
+		\end{center}
+		What is the composition of the raffinate and extract? \emph{Use the tie lines}.
+	\end{frame}
+}{}
+
+\begin{frame}\frametitle{Q5: Altering flows}	
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
+	\end{center}
+	Same system, but now lower solvent flow rate {\tiny (to try save money!)}. What happens to (a) extract concentration and (b) solute recovery?
+\end{frame}
+
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Q5 {\color{myOrange}{\emph{solution}}}: Altering flows}
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E-R-E.png}
+		\end{center}
+		(a) {\small \emph{extract concentration increases}}: (A at E*) $>$ (A at E): $y_{E^*}>y_{E}$
+		
+		\vspace{2pt}
+		(b) {\small \emph{solute recovery drops}}: (A at R*) $>$ (A at R): $x_{R^*}>x_{R}$
+	\end{frame}
+}{}
+
+%\begin{frame}\frametitle{The phase rule}
+	%{\color{myGreen}{\iftoggle{instructor}{Recall the phase rule: $F = C - P + 2$}{}}}
+%\end{frame}
+
+% \begin{frame}\frametitle{Approach to sizing a unit}
+% 	There are so many variations in LLE equipment: mixer-settlers; towers; rotating devices.
+% 	
+% 	\vspace{12pt}
+% 	How do we design for them?
+% 	
+% 	\vspace{12pt}
+% 	General approach:
+% 	\begin{enumerate}
+% 		\item	Use ternary diagrams to determine operating curves
+% 		\item	Estimate number of ``theoretical plates''
+% 		\item	Convert ``theoretical plates'' to actual equipment size
+% 			\begin{itemize}
+% 				\item	using mass transfer coefficients, and
+% 				\item	concentration differences
+% 			\end{itemize}
+% 		\item	Take co- or counter-current operation into account
+% 	\end{enumerate}
+% 	\begin{itemize}
+% 		\item	{\color{purple}{HETS = height equivalent to a theoretical stage}}
+% 	\end{itemize}
+% 	
+% 	\vspace{12pt}
+% 	Let's start slowly: a single stage, well-mixed.
+% \end{frame}
+
 
 \begin{frame}\frametitle{References}
 	\begin{itemize}
-		%\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16
-		%\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 2.1 % <---- very well written; use this reference more in future years
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 1.9
 		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 8
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 13
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 12.5
