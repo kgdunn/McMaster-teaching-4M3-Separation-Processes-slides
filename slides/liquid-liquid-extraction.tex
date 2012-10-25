@@ -161,7 +161,7 @@
 			\end{itemize}
 		\item	Rotating devices
 	\end{enumerate}
-	{\color{myRed}{Important point}}: LLE is an equilibrium-limited separation (as opposed to rate limited separations seen up to now).
+	{\color{myRed}{Important point}}: LLE is an equilibrium-limited separation (as opposed to rate-limited separations seen up to now).
 \end{frame}
 
 % 25 October 2012
@@ -214,6 +214,25 @@
 	\end{columns}
 \end{frame}
 
+\begin{frame}\frametitle{Tray columns with mechanical agitation}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/rotating-contactor-Seader-3ed-p302.png}
+			\end{center}
+			
+		\column{0.40\textwidth}
+			\begin{itemize}
+				\item	shearing to create dispersion
+				\item	can have alternating layers of packing (coalescence)
+				\item	some column designs pulsate $\Uparrow \Downarrow$
+			\end{itemize}
+	\end{columns}
+	\see{Seader, 3ed, p302}
+\end{frame}
+
+% 2013: add slides of centrifuge settlers
+
 \begin{frame}\frametitle{Rotating devices}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Seader-3ed-p306.png}
@@ -264,7 +283,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Calculating the distribution coefficient}
+\begin{frame}\frametitle{Calculating the distribution coefficient {\color{myOrange}{(in the lab only)}}}
 	\begin{columns}[t]
 		\column{0.60\textwidth}
 			Mass balance:
@@ -328,7 +347,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Q1: Using the lever rule}
-	Which is a more or effective system?
+	Which is a more \emph{flexible} system?
 	\begin{itemize}
 		\item	S = pure solvent used 
 		\item	F = feed concentration
@@ -337,8 +356,9 @@
 	\begin{center}
 		\includegraphics[width=0.75\textwidth]{\imagedir/separations/liquid-liquid-extraction/solubility-effect-on-range-Seader-3ed-p312.png}
 	\end{center}
+	
 	\iftoggle{instructor}{
-		Answer: range of feed concentrations ($F$) is widest, i.e. more desirable for (a). Difference between (a) and (b): 
+		Answer: \pause range of feed concentrations ($F$) is widest, i.e. more desirable for (a). Difference between (a) and (b): 
 		\begin{itemize}
 			\item	due to solvent choice 
 			\item	due to different temperatures
@@ -373,9 +393,15 @@
 }{}
 
 \begin{frame}\frametitle{Q4: Going to equilibrium}	
-	\begin{center}
-		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
-	\end{center}
+	\iftoggle{instructor}{
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
+		\end{center}
+	}{
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
+		\end{center}
+	}
 	Let that mixture $M$ achieve equilibrium. What is the composition of the raffinate and extract?
 \end{frame}
 
@@ -388,10 +414,16 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Q5: Altering flows}	
-	\begin{center}
-		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
-	\end{center}
+\begin{frame}\frametitle{Q5: Altering flows}
+	\iftoggle{instructor}{	
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
+		\end{center}
+	}{
+		\begin{center}
+			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
+		\end{center}
+	}
 	Same system, but now lower solvent flow rate {\tiny (to try save money!)}. What happens to (a) extract concentration and (b) solute recovery?
 \end{frame}
 
