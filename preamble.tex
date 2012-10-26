@@ -18,10 +18,10 @@
 
 \usepackage{etoolbox}  % For selective compiling: figure sources might be on different machines
 \providetoggle{instructor}
-%\providetoggle{student}
+\providetoggle{student}
 \providetoggle{unixmac}
-\settoggle{instructor}{true}    %\iftoggle{instructor}{}{}
-%\settoggle{student}{false}      %\iftoggle{student}{}{}
+\settoggle{instructor}{false}    %\iftoggle{instructor}{}{}
+\settoggle{student}{true}      %\iftoggle{student}{}{}
 \settoggle{unixmac}{true}
 \iftoggle{unixmac}
 {
