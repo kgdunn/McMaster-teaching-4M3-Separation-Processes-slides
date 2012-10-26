@@ -379,15 +379,16 @@
 	\begin{center}
 		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
 	\end{center}
-	Mix a feed stream, $F$, containing $C$ and $A$ (i.e. $x_f$) with a pure solvent stream $S$ (i.e. $y_S = 0$). Composition of the mixture?
+	Mix a feed stream, $F$, containing $C$ and $A$ (i.e. $x_F$) with a pure solvent stream $S$ (i.e. $y_S = 0$). Composition of the mixture?
 \end{frame}
 
+% Remove red colour here
 \iftoggle{instructor}{
 	\begin{frame}\frametitle{Q3 {\color{myOrange}{\emph{solution}}}: Using the lever rule}		
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
 		\end{center}
-		Composition of the mixture? Trick question: \emph{we need more information} (e.g. amount of $F$ or $S$ must be given)
+		Composition of the mixture? Trick question: \emph{we need more information} (e.g. amount of $F$ {\color{myRed}{\textbf{and}}} $S$ must be given)
 	\end{frame}
 }{}
 
@@ -409,7 +410,7 @@
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E.png}
 		\end{center}
-		What is the composition of the raffinate and extract? \emph{Use the tie lines}.
+		What is the composition of the raffinate and extract? \emph{Use the tie lines} [solid lines]; \emph{or interpolate between existing ones}.
 	\end{frame}
 }{}
 
@@ -473,18 +474,23 @@
 			\column{0.3\textwidth}
 				\vspace{-1cm}
 				\begin{center}
-					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation-red-M.png}
 				\end{center}
 				{\scriptsize
-				\begin{tabular}{ll}
-					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
-					$F$ = 250 kg		&	$S$ = 100 kg \\
-					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-					$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-					$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
-				\end{tabular}}
+					\begin{tabular}{ll}
+						\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+						$F$ = 250 kg		&	$S$ = 100 kg \\
+						$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+						$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+						$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+					\end{tabular}
+					\vspace{12pt}
+					\begin{exampleblock}{}
+						\[M = F + S\]
+					\end{exampleblock}			
+				}
 		\end{columns}
-		Answer: $M = 350 kg;\quad x_{M,A} = 0.17;\quad x_{M,C} = 0.54;\quad x_{M,S} = 0.29$
+		Answer: $M = 350\text{kg};\,\, x_{M,A} = 0.17;\,\, x_{M,C} = 0.54;\,\, x_{M,S} = 0.29$
 	\end{frame}
 }{}
 
@@ -501,13 +507,14 @@
 				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
 			\end{center}
 			{\scriptsize
-			\begin{tabular}{ll}
-				\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
-				$F$ = 250 kg		&	$S$ = 100 kg \\
-				$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-				$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-				$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
-			\end{tabular}}
+				\begin{tabular}{ll}
+					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+					$F$ = 250 kg		&	$S$ = 100 kg \\
+					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+					$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+				\end{tabular}
+			}
 	\end{columns}
 	$R_1 = \qquad\quad x_{R_1,A} = \qquad\quad x_{R_1,C} = \qquad\quad x_{R_1,S} = \qquad\quad$ $E_1 = \qquad\quad x_{E_1,A} = \qquad\quad x_{E_1,C} = \qquad\quad x_{E_1,S} = \qquad\quad$ 
 \end{frame}
@@ -523,16 +530,21 @@
 			\column{0.3\textwidth}
 				\vspace{-1cm}
 				\begin{center}
-					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation-red-M.png}
 				\end{center}
 				{\scriptsize
-				\begin{tabular}{ll}
-					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
-					$F$ = 250 kg		&	$S$ = 100 kg \\
-					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-					$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-					$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
-				\end{tabular}}
+					\begin{tabular}{ll}
+						\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+						$F$ = 250 kg		&	$S$ = 100 kg \\
+						$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+						$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+						$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+					\end{tabular}
+					\vspace{12pt}
+					\begin{exampleblock}{}
+						\[M = E_1 + R_1\]
+					\end{exampleblock}
+				}
 		\end{columns}
 		$R_1 = 222\text{kg};\quad x_{R_1,A} = 0.10;\quad x_{R_1,C} = 0.82;\quad x_{R_1,S} = 0.08$ $E_1 = 128\text{kg};\quad x_{E_1,A} = 0.33;\quad x_{E_1,C} = 0.06;\quad x_{E_1,S} = 0.61$ 
 	\end{frame}
@@ -560,8 +572,7 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	\textbf{Question}: how much solvent should we use in the second stage?
-	%Answer: less solvent added: higher extract concentration, but raffinate will also contain more solute (i.e. lower recovery). We can't achieve both with units in series.	
+	\textbf{Question}: how much solvent should we use in the second stage?	
 \end{frame}
 
 \iftoggle{instructor}{
@@ -580,15 +591,17 @@
 				\end{center}
 		\end{columns}
 		\vspace{12pt}
-		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs recovery}
+		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs lower recovery}
+		%Answer: less solvent added: higher extract concentration, but raffinate will also contain more solute (i.e. lower recovery). We can't achieve both with units in series.	
+		% Note that at point B, for example, E2 vs R2 ratio is about the same; but at D, we get a very low quantity of E2 with a higher concentration (conversely at R2 we get a lower solute concentration of A [desirable], but a very high quantity of raffinate])
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Some theory: Counter-current units}
+\begin{frame}\frametitle{Some theory: \emph{Counter-current} units}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-counter-current-notation-p313.png}
 	\end{center}
-	Just \textbf{{\color{myGreen}{consider 2 stages}}} for now. Mass balance at steady state:
+	Just \textbf{{\color{myGreen}{consider $N=2$ stages}}} for now. Steady state mass balance:
 	\begin{center}
 		\begin{columns}[t]
 			\column{0.30\textwidth}
@@ -608,7 +621,7 @@
 		\vspace{12pt}
 		$F - E_1  =  R_1 - E_2 = R_2 - S = P$
 	\end{center}
-	So create $P$ as a fictitious {\color{purple}{operating point}}
+	Note: each difference is equal to $P$ (look on the diagram where those differences are).
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution}
@@ -622,26 +635,35 @@
 	\[	R_1 + P = E_2 \]
 	\[	R_2 + P = S \]
 	
-	Interpretation:
+	\vspace{6pt}
+	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}}}
+	\vspace{6pt}
 	\begin{itemize}
 		\item	$P$ connects $F$ and $E_1$ 
 		\item	$P$ connects $R_1$ and $E_2$ 
 		\item	$P$ connects $R_{n-1}$ and $E_{n}$ in general
-		\item	$P$ connects $R_{N}$ and $S$ in general (or simply $R_2$ and $S$ in the case of 2 units)
+		\item	$P$ connects $R_{N}$ and $S$ in general {\scriptsize (or $R_2$ and $S$ in the case of $N=2$)}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution}
+	\vspace{-6pt}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-operating-point-P-p316.png}
 	\end{center}
+	
+	\vspace{-3cm}
+	\hfill {\small $P$ is always on the raffinate}
+	
+	\hfill {\small envelope side of the diagram}
+	\vspace{2cm}
 	\begin{columns}[t]
 		\column{0.50\textwidth}
 		\vspace{-18pt}
 		{\scriptsize
 			\begin{itemize}
 				\item	We know $F$ and $S$; connect with a line and locate ``mixture'' $M$
-				\item	Either specify $E_1$ or $R_N$ (we will always know one of them)
+				\item	Either specify $E_1$ or {\color{myRed}{$R_N$}} (we will always know one of them)
 				\item	Connect a straight line through $M$ passing through the one specified
 				\item	Solve for the unspecified one
 			\end{itemize}}
@@ -649,7 +671,7 @@
 		\vspace{-18pt}
 		{\scriptsize	
 			\begin{itemize}
-				\item	Connect $S$ through $R_N$ and extrapolate to $P$
+				\item	Connect $S$ through {\color{myRed}{$R_N$}} and extrapolate to $P$
 				\item	Connect $E_1$ through $F$ and extrapolate to $P$
 				\item	Locate $P$ by intersection of 2 lines
 				\item	In general: connect $E_n$ and $R_n$ via {\color{myOrange}{equilibrium tie lines}}
