@@ -231,8 +231,7 @@
 	\see{Seader, 3ed, p302}
 \end{frame}
 
-% 2013: add slides of centrifuge settlers
-
+% To do for 2013: add slides of centrifuge settlers
 \begin{frame}\frametitle{Rotating devices}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Seader-3ed-p306.png}
@@ -248,7 +247,7 @@
 
 \begin{frame}\frametitle{Linking up units (more on this later)}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-modified.png}
 	\end{center}
 	\see{Richardson and Harker, p 723}
 \end{frame}
@@ -346,6 +345,7 @@
 	\end{columns}
 \end{frame}
 
+% 26 October 2012
 \begin{frame}\frametitle{Q1: Using the lever rule}
 	Which is a more \emph{flexible} system?
 	\begin{itemize}
@@ -439,36 +439,225 @@
 	\end{frame}
 }{}
 
-%\begin{frame}\frametitle{The phase rule}
-	%{\color{myGreen}{\iftoggle{instructor}{Recall the phase rule: $F = C - P + 2$}{}}}
-%\end{frame}
+\begin{frame}\frametitle{Q6: Composition of the mixture, $M$?}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+			\end{center}
+			\vfill
+		\column{0.3\textwidth}
+			\vspace{-1cm}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+			\end{center}
+			{\scriptsize
+			\begin{tabular}{ll}
+				\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+				$F$ = 250 kg		&	$S$ = 100 kg \\
+				$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+				$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+				$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+			\end{tabular}}
+	\end{columns}
+	Answer: $M = \qquad\quad x_{M,A} = \qquad\quad x_{M,C} = \qquad\quad x_{M,S} = \qquad\quad$
+\end{frame}
 
-% \begin{frame}\frametitle{Approach to sizing a unit}
-% 	There are so many variations in LLE equipment: mixer-settlers; towers; rotating devices.
-% 	
-% 	\vspace{12pt}
-% 	How do we design for them?
-% 	
-% 	\vspace{12pt}
-% 	General approach:
-% 	\begin{enumerate}
-% 		\item	Use ternary diagrams to determine operating curves
-% 		\item	Estimate number of ``theoretical plates''
-% 		\item	Convert ``theoretical plates'' to actual equipment size
-% 			\begin{itemize}
-% 				\item	using mass transfer coefficients, and
-% 				\item	concentration differences
-% 			\end{itemize}
-% 		\item	Take co- or counter-current operation into account
-% 	\end{enumerate}
-% 	\begin{itemize}
-% 		\item	{\color{purple}{HETS = height equivalent to a theoretical stage}}
-% 	\end{itemize}
-% 	
-% 	\vspace{12pt}
-% 	Let's start slowly: a single stage, well-mixed.
-% \end{frame}
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Q6 {\color{myOrange}{\emph{solution}}}: Composition of the mixture, $M$?}
+		\begin{columns}[t]
+			\column{0.70\textwidth}
+				\begin{center}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture.png}
+				\end{center}
+				\vfill
+			\column{0.3\textwidth}
+				\vspace{-1cm}
+				\begin{center}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+				\end{center}
+				{\scriptsize
+				\begin{tabular}{ll}
+					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+					$F$ = 250 kg		&	$S$ = 100 kg \\
+					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+					$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+				\end{tabular}}
+		\end{columns}
+		Answer: $M = 350 kg;\quad x_{M,A} = 0.17;\quad x_{M,C} = 0.54;\quad x_{M,S} = 0.29$
+	\end{frame}
+}{}
 
+\begin{frame}\frametitle{Q7: Composition of the 2 phases leaving in equilibrium?}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+			\end{center}
+			\vfill
+		\column{0.3\textwidth}
+			\vspace{-1cm}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+			\end{center}
+			{\scriptsize
+			\begin{tabular}{ll}
+				\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+				$F$ = 250 kg		&	$S$ = 100 kg \\
+				$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+				$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+				$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+			\end{tabular}}
+	\end{columns}
+	$R_1 = \qquad\quad x_{R_1,A} = \qquad\quad x_{R_1,C} = \qquad\quad x_{R_1,S} = \qquad\quad$ $E_1 = \qquad\quad x_{E_1,A} = \qquad\quad x_{E_1,C} = \qquad\quad x_{E_1,S} = \qquad\quad$ 
+\end{frame}
+
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Q7 {\color{myOrange}{\emph{solution}}}: Composition of the 2 phases in equilibrium?}
+		\begin{columns}[t]
+			\column{0.70\textwidth}
+				\begin{center}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated.png}
+				\end{center}
+				\vfill
+			\column{0.3\textwidth}
+				\vspace{-1cm}
+				\begin{center}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+				\end{center}
+				{\scriptsize
+				\begin{tabular}{ll}
+					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+					$F$ = 250 kg		&	$S$ = 100 kg \\
+					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+					$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+				\end{tabular}}
+		\end{columns}
+		$R_1 = 222\text{kg};\quad x_{R_1,A} = 0.10;\quad x_{R_1,C} = 0.82;\quad x_{R_1,S} = 0.08$ $E_1 = 128\text{kg};\quad x_{E_1,A} = 0.33;\quad x_{E_1,C} = 0.06;\quad x_{E_1,S} = 0.61$ 
+	\end{frame}
+}{}
+
+\begin{frame}\frametitle{Link units in \emph{series}}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-modified.png}
+	\end{center}
+	\see{Richardson and Harker, p 723}
+\end{frame}
+
+\begin{frame}\frametitle{Q8: send raffinate from Q7 to second mixer-settler}
+
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated.png}
+			\end{center}
+		\column{0.4\textwidth}			
+			\begin{center}
+				\hspace{-3cm}
+				\vspace{24pt}
+				\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
+			\end{center}
+	\end{columns}
+	\vspace{12pt}
+	\textbf{Question}: how much solvent should we use in the second stage?
+	%Answer: less solvent added: higher extract concentration, but raffinate will also contain more solute (i.e. lower recovery). We can't achieve both with units in series.	
+\end{frame}
+
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Q8 {\color{myOrange}{\emph{solution}}}: send raffinate from Q7 to second mixer-settler}
+
+		\begin{columns}[t]
+			\column{0.70\textwidth}
+				\begin{center}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated-second-round.png}
+				\end{center}
+			\column{0.4\textwidth}			
+				\begin{center}
+					\hspace{-3cm}
+					\vspace{24pt}
+					\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
+				\end{center}
+		\end{columns}
+		\vspace{12pt}
+		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs recovery}
+	\end{frame}
+}{}
+
+
+\begin{frame}\frametitle{Some theory: Counter-current units}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-counter-current-notation-p313.png}
+	\end{center}
+	Just \textbf{{\color{myGreen}{consider 2 stages}}} for now. Mass balance at steady state:
+	\begin{center}
+		\begin{columns}[t]
+			\column{0.30\textwidth}
+				$F + E_2 = E_1 + R_1$
+			\column{0.30\textwidth}
+				$E_2 + R_2 = S + R_1$
+		\end{columns}
+	\end{center}
+	Rearrange:
+	\begin{center}		
+		\begin{columns}[t]
+		\column{0.30\textwidth}
+				$F - E_1 = R_1 - E_2$
+			\column{0.30\textwidth}
+				$R_1 - E_2 = R_2 - S$
+		\end{columns}
+		\vspace{12pt}
+		$F - E_1  =  R_1 - E_2 = R_2 - S = P$
+	\end{center}
+	So create $P$ as a fictitious {\color{purple}{operating point}}
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-counter-current-notation-p313.png}
+	\end{center}
+	
+	\vspace{6pt}
+	Rearranging again:
+	\[	F + P = E_1 \]
+	\[	R_1 + P = E_2 \]
+	\[	R_2 + P = S \]
+	
+	Interpretation:
+	\begin{itemize}
+		\item	$P$ connects $F$ and $E_1$ 
+		\item	$P$ connects $R_1$ and $E_2$ 
+		\item	$P$ connects $R_{n-1}$ and $E_{n}$ in general
+		\item	$P$ connects $R_{N}$ and $S$ in general (or simply $R_2$ and $S$ in the case of 2 units)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-operating-point-P-p316.png}
+	\end{center}
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+		\vspace{-18pt}
+		{\scriptsize
+			\begin{itemize}
+				\item	We know $F$ and $S$; connect with a line and locate ``mixture'' $M$
+				\item	Either specify $E_1$ or $R_N$ (we will always know one of them)
+				\item	Connect a straight line through $M$ passing through the one specified
+				\item	Solve for the unspecified one
+			\end{itemize}}
+		\column{0.50\textwidth}
+		\vspace{-18pt}
+		{\scriptsize	
+			\begin{itemize}
+				\item	Connect $S$ through $R_N$ and extrapolate to $P$
+				\item	Connect $E_1$ through $F$ and extrapolate to $P$
+				\item	Locate $P$ by intersection of 2 lines
+				\item	In general: connect $E_n$ and $R_n$ via {\color{myOrange}{equilibrium tie lines}}
+			\end{itemize}}
+	\end{columns}
+\end{frame}
 
 \begin{frame}\frametitle{References}
 	\begin{itemize}
@@ -481,3 +670,34 @@
 	\end{itemize}
 \end{frame}
 
+\begin{comment}
+	\begin{frame}\frametitle{The phase rule}
+		{\color{myGreen}{\iftoggle{instructor}{Recall the phase rule: $F = C - P + 2$}{}}}
+	\end{frame}
+	
+	\begin{frame}\frametitle{Approach to sizing a unit}
+		There are so many variations in LLE equipment: mixer-settlers; towers; rotating devices.
+
+		\vspace{12pt}
+		How do we design for them?
+
+		\vspace{12pt}
+		General approach:
+		\begin{enumerate}
+			\item	Use ternary diagrams to determine operating curves
+			\item	Estimate number of ``theoretical plates''
+			\item	Convert ``theoretical plates'' to actual equipment size
+				\begin{itemize}
+					\item	using mass transfer coefficients, and
+					\item	concentration differences
+				\end{itemize}
+			\item	Take co- or counter-current operation into account
+		\end{enumerate}
+		\begin{itemize}
+			\item	{\color{purple}{HETS = height equivalent to a theoretical stage}}
+		\end{itemize}
+
+		\vspace{12pt}
+		Let's start slowly: a single stage, well-mixed.
+	\end{frame}
+\end{comment}
