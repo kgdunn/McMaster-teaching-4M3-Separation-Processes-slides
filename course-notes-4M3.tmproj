@@ -22,7 +22,7 @@
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-10-26T11:49:39Z</date>
+			<date>2012-10-26T18:37:41Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -52,14 +52,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>50</integer>
+				<integer>0</integer>
 				<key>line</key>
-				<integer>393</integer>
+				<integer>649</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>6</integer>
+			<integer>609</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
