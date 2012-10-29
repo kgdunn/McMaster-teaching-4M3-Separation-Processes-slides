@@ -59,9 +59,9 @@
 		\item	{\color{purple}{solute}}: species we aim to recover (A) from the feed 
 		\item	{\color{purple}{feed or ``feed solvent''}}: one of the liquids in the system {\tiny (``{\color{purple}{carrier}}'')}
 		\item	{\color{purple}{solvent}}: MSA (by convention: the ``added'' liquid)
-		\item	{\color{purple}{extract}}: solute mostly present in this layer = $y_\text{A}$
-		\item	{\color{purple}{raffinate}}: residual solute in this layer = $x_\text{A}$
-		\item	{\color{purple}{distribution}}: how the solute {\color{purple}{partitions}} itself = $D_\text{A} = \displaystyle \frac{y_\text{A}}{x_\text{A}} = \displaystyle \frac{y_\text{E}}{x_\text{R}}$
+		\item	{\color{purple}{extract}}: {\color{myRed}{solvent (not solute) mostly present in this layer. $y_\text{E,A} =$~concentration of A, the solute, in extract.}}
+		\item	{\color{purple}{raffinate}}: residual solute in this layer = $x_\text{R,A}$
+		\item	{\color{purple}{distribution}}: how the solute {\color{purple}{partitions}} itself = $D_\text{A} = \displaystyle \frac{y_\text{E,A}}{x_\text{R,A}}$
 			\begin{itemize}
 				\item	measure of affinity of solute
 				\item	$D_\text{A} = \displaystyle \frac{\mu_R^0 - \mu_E^0}{RT} = \displaystyle \frac{\text{chemical potential difference}}{(R)(\text{temperature})}$	% Ghosh, p 92
@@ -369,15 +369,15 @@
 \begin{frame}\frametitle{Q2: Using the lever rule}
 	
 	\begin{center}
-		\includegraphics[width=0.9\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram.png}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram.png}
 	\end{center}
-	Which is a more effective as a solvent: C or S ?
+	{\color{myRed}{Which of C or S, when used as a solvent, will obtain a higher extract composition?}} {\color{myOrange}{Answer:}} S
 \end{frame}
 
 \begin{frame}\frametitle{Q3: Using the lever rule}
 	
 	\begin{center}
-		\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
 	\end{center}
 	Mix a feed stream, $F$, containing $C$ and $A$ (i.e. $x_F$) with a pure solvent stream $S$ (i.e. $y_S = 0$). Composition of the mixture?
 \end{frame}
@@ -455,8 +455,8 @@
 				\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
 				$F$ = 250 kg		&	$S$ = 100 kg \\
 				$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-				$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-				$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+				$x_{F,C} = 0.76$	&	$x_{S,C} = 0.0$\\
+				$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
 			\end{tabular}}
 	\end{columns}
 	Answer: $M = \qquad\quad x_{M,A} = \qquad\quad x_{M,C} = \qquad\quad x_{M,S} = \qquad\quad$
@@ -480,8 +480,8 @@
 						\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
 						$F$ = 250 kg		&	$S$ = 100 kg \\
 						$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-						$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-						$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+						$x_{F,C} = 0.76$	&	$x_{S,C} = 0.0$\\
+						$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
 					\end{tabular}
 					\vspace{12pt}
 					\begin{exampleblock}{}
@@ -510,8 +510,8 @@
 					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
 					$F$ = 250 kg		&	$S$ = 100 kg \\
 					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-					$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-					$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+					$x_{F,C} = 0.76$	&	$x_{S,C} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
 				\end{tabular}
 			}
 	\end{columns}
@@ -536,8 +536,8 @@
 						\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
 						$F$ = 250 kg		&	$S$ = 100 kg \\
 						$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
-						$x_{F,C} = 0.76$	&	$x_{S,A} = 0.0$\\
-						$x_{F,S} = 0.00$	&	$x_{S,A} = 1.0$\\\hline
+						$x_{F,C} = 0.76$	&	$x_{S,C} = 0.0$\\
+						$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
 					\end{tabular}
 					\vspace{12pt}
 					\begin{exampleblock}{}
@@ -550,6 +550,80 @@
 }{}
 
 % 30 October 2012
+\iftoggle{instructor}{
+    % Handout: to print for class
+	%\begin{frame}\frametitle{}
+	%	\begin{center}
+	%		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/furfural-water-ethylene-glycol-ternary-phase-diagram-Seader-3ed-p153.png}
+	%	\end{center}
+	%\end{frame}
+	
+	\begin{frame}\frametitle{Phase diagram: furfural, water, ethylene glycol}
+		\begin{columns}[b]
+			\column{0.60\textwidth}
+				\begin{center}
+					\includegraphics[width=.95\textwidth]{\imagedir/separations/liquid-liquid-extraction/furfural-water-ethylene-glycol-ternary-phase-diagram-Seader-3ed-p153.png}
+				\end{center}				
+			\column{0.4\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation-red-M.png}
+				\end{center}
+				{\scriptsize
+				\begin{tabular}{ll}
+					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+					$F$ = 100 kg		&	$S$ = 200 kg \\
+					$x_{F,A} = 0.45$	&	$x_{S,A} = 0.0$\\
+					$x_{F,C} = 0.55$	&	$x_{S,C} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
+				\end{tabular}
+				\begin{itemize}
+					\item	A = ethylene glycol solute
+					\item	C = water (carrier)
+					\item	S = furfural solvent
+				\end{itemize}}
+		\end{columns}
+		\textbf{AIM}: to remove ethylene glycol (solute) from water (carrier) into solvent (furfural)
+		\begin{enumerate}
+			\item	Calculate the mixture composition, {\color{myRed}{$M$}}
+			\item	Calculate the equilibrium compositions
+		\end{enumerate}
+		{\scriptsize \textbf{Note}: raffinate is the stream leaving that contains \emph{less solute} than came in the feed, $F$}
+	\end{frame}
+	
+	\begin{frame}\frametitle{}
+		\begin{center}
+			\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/furfural-water-ethylene-glycol-ternary-phase-diagram-Seader-3ed-p153-solution.png}
+		\end{center}
+	\end{frame}
+	
+	\begin{frame}\frametitle{{\color{myOrange}{Solution}}: Phase diagram: furfural, water, ethylene glycol}
+		\begin{columns}[m]
+			\column{0.70\textwidth}
+				\begin{center}
+					\includegraphics[width=.95\textwidth]{\imagedir/separations/liquid-liquid-extraction/furfural-water-ethylene-glycol-ternary-phase-diagram-Seader-3ed-p153-solution.png}
+				\end{center}				
+			\column{0.4\textwidth}
+				{\scriptsize
+				\begin{tabular}{ll}
+					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+					$F$ = 100 kg		&	$S$ = 200 kg \\
+					$x_{F,A} = 0.45$	&	$x_{S,A} = 0.0$\\
+					$x_{F,C} = 0.55$	&	$x_{S,C} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
+				\end{tabular}
+				\begin{itemize}
+					\item	A = ethylene glycol solute
+					\item	C = water (carrier)
+					\item	S = furfural solvent
+				\end{itemize}}
+		\end{columns}
+		\vspace{12pt}
+		$M = 300\text{kg};\quad x_{M,A} = 0.15;\quad x_{M,C} = 0.18;\quad x_{M,S} = 0.67$ 
+		$R_1 = ~82\text{kg};\quad x_{R_1,A} = 0.33;\quad x_{R_1,C} = 0.57;\quad x_{R_1,S} = 0.10$ 
+		$E_1 = 218\text{kg};\quad x_{E_1,A} = 0.09;\quad x_{E_1,C} = 0.04;\quad x_{E_1,S} = 0.87$ 
+	\end{frame}
+}{}
+
 \begin{frame}\frametitle{Link units in \emph{series}}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-modified.png}
@@ -575,9 +649,9 @@
 	\textbf{Question}: how much solvent should we use in the second stage?	
 \end{frame}
 
+%\todo{Come back to this one}
 \iftoggle{instructor}{
 	\begin{frame}\frametitle{Q8 {\color{myOrange}{\emph{solution}}}: send raffinate from Q7 to second mixer-settler}
-
 		\begin{columns}[t]
 			\column{0.70\textwidth}
 				\begin{center}
@@ -589,6 +663,17 @@
 					\vspace{24pt}
 					\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
 				\end{center}
+				Compare extract:
+				\vspace{24pt}
+				%\begin{itemize}
+				%	\item	$x_\text{solute}$ from mixture B \_\_\_ $x_\text{solute}$ from D
+				%\end{itemize}
+				
+				Compare volumes:
+				\vspace{24pt}
+				%\begin{itemize}
+				%	\item	$x_\text{solute}$ from mixture B \_\_\_ $x_\text{solute}$ from D
+				%\end{itemize}
 		\end{columns}
 		\vspace{12pt}
 		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs lower recovery}
@@ -597,9 +682,9 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Some theory: \emph{Counter-current} units}
+\begin{frame}\frametitle{Some theory: Two \emph{counter-current} units}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-counter-current-notation-p313.png}
+		\includegraphics[width=0.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 	\end{center}
 	Just \textbf{{\color{myGreen}{consider $N=2$ stages}}} for now. Steady state mass balance:
 	\begin{center}
@@ -621,33 +706,169 @@
 		\vspace{12pt}
 		$F - E_1  =  R_1 - E_2 = R_2 - S = P$
 	\end{center}
-	Note: each difference is equal to $P$ (look on the diagram where those differences are).
+	Note: each difference is equal to $P$ (look on the flow sheet where those differences are).
 \end{frame}
 
-\begin{frame}\frametitle{Counter-current graphical solution}
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-counter-current-notation-p313.png}
+		\includegraphics[width=0.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 	\end{center}
 	
-	\vspace{6pt}
+	
 	Rearranging again:
 	\[	F + P = E_1 \]
 	\[	R_1 + P = E_2 \]
 	\[	R_2 + P = S \]
 	
-	\vspace{6pt}
-	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}}}
+	
+	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}} on the ternary diagram}
 	\vspace{6pt}
 	\begin{itemize}
 		\item	$P$ connects $F$ and $E_1$ 
 		\item	$P$ connects $R_1$ and $E_2$ 
-		\item	$P$ connects $R_{n-1}$ and $E_{n}$ in general
-		\item	$P$ connects $R_{N}$ and $S$ in general {\scriptsize (or $R_2$ and $S$ in the case of $N=2$)}
+		\item	$P$ connects $R_2$ and $S$
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Counter-current graphical solution}
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step1.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+	\end{columns}
+	\vspace{12pt}
+	We require $x_{R2,A} = 0.05$ (solute concentration). What is $x_{E1,A}$?	
+	\vfill
+\end{frame}
 
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step2.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+			\textbf{Note}: the line connecting $E_1$ to $R_2$ is not a tie line. We can use the lever rule and a mass balance $(F + S = E_1 + R_2)$ to solve for all flows and compositions of $F, S, E_1,$ and $R_2$.
+	\end{columns}
+	\vspace{12pt}
+	$x_{E1,A}\approx 0.38$ is found from an overall mass balance, through $M$.
+	\vfill
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step3.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+			\textbf{Recall}: 
+			\vspace{-12pt}
+			\[	F + P = E_1 \]
+			\[	R_2 + P = S \]			
+	\end{columns}
+	\vspace{12pt}
+	Extrapolate through these lines until intersection at point {\color{myGreen}{$P$}}.
+	\vfill
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step4.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+	\end{columns}
+	\vspace{12pt}
+	In stage 1: $R_1$ and $E_1$ leave in equilibrium and can be connected with a tie line.
+	\vfill
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step5.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+			\textbf{Again recall}: 
+			\vspace{-12pt}
+			\[	R_1 + P = E_2 \]
+	\end{columns}
+	\vspace{12pt}
+	Since we have point $P$ and $R_1$ we can bring the line back and locate point $E_2$
+	\vfill
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step6.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+	\end{columns}
+	\vspace{12pt}
+	The last unit in a cascade is a special case: we have $R_2$, but we could have also calculated it from the tie line. Usually we have some overshoot or undershoot. {\scriptsize Good agreement in this example.}
+\end{frame}
+
+\begin{frame}\frametitle{In general: \emph{Counter-current} units}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-counter-current-notation-p313.png}
+	\end{center}
+		\begin{center}
+			\begin{columns}[t]
+				\column{0.30\textwidth}
+					\small $F + E_2 = E_1 + R_1$
+				\column{0.30\textwidth}
+					\small $E_2 + R_2 = E_3 + R_1$
+				\column{0.30\textwidth}
+					\small $E_n + R_n = E_{n+1} + R_{n-1}$
+			\end{columns}
+		\end{center}
+		\vspace{-12pt}
+		Rearrange:
+		\begin{center}		
+			\begin{columns}[t]
+				\column{0.30\textwidth}
+					\small $F - E_1 = R_1 - E_2$
+				\column{0.30\textwidth}
+					\small $R_1 - E_2 = R_2 - E_3$
+				\column{0.30\textwidth}
+					\small $R_{n-1} - E_n = R_{n} + E_{n+1}$
+			\end{columns}
+			\vspace{12pt}
+			$F - E_1  =  R_1 - E_2 = \ldots = R_{n-1} - E_n = R_{n} + E_{n+1} = \ldots R_2 - S = P$
+		\end{center}
+		Notes:
+		\begin{enumerate}
+			\item	each difference is equal to $P$ (the difference between flows)
+			\item	$E_n$ and $R_{n}$ are in equilibrium, leaving each stage [tie line]
+		\end{enumerate} 
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-operating-point-P-p316.png}
 	\end{center}
@@ -665,7 +886,7 @@
 				\item	We know $F$ and $S$; connect with a line and locate ``mixture'' $M$
 				\item	Either specify $E_1$ or {\color{myRed}{$R_N$}} (we will always know one of them)
 				\item	Connect a straight line through $M$ passing through the one specified
-				\item	Solve for the unspecified one
+				\item	Find for the unspecified one {\color{myOrange}{[tie line]}}
 			\end{itemize}}
 		\column{0.50\textwidth}
 		\vspace{-18pt}
@@ -676,6 +897,26 @@
 				\item	Locate $P$ by intersection of 2 lines
 				\item	In general: connect $E_n$ and $R_n$ via {\color{myOrange}{equilibrium tie lines}}
 			\end{itemize}}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{For practice}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+			\end{center}			
+		\column{0.30\textwidth}			
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{For practice}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+			\end{center}			
+		\column{0.30\textwidth}			
 	\end{columns}
 \end{frame}
 
