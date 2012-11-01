@@ -773,7 +773,7 @@
 			\begin{itemize}
 				\item	We combine multiple extract streams
 				\item	(Only 2 in illustration)
-				\item	In general: $y_{E1} > y_{E2} > \ldots$
+				\item	In general: $y_{E_1} > y_{E_2} > \ldots$
 				\item	Fresh solvent added at each stage
 			\end{itemize}
 		\column{0.50\textwidth}
@@ -810,7 +810,7 @@
 				$R_1 - E_2 = R_2 - S$
 		\end{columns}
 		\vspace{12pt}
-		$F - E_1  =  R_1 - E_2 = R_2 - S = P$
+		$(F - E_1)  =  (R_1 - E_2) = (R_2 - S) = P$
 	\end{center}
 	Note: each difference is equal to $P$ (look on the flow sheet where those \emph{differences} are).
 \end{frame}
@@ -846,7 +846,7 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	For example, let's require $x_{R2,A} = 0.05$ {\scriptsize (solute concentration in raffinate)}. What is $x_{E1,A}$ then {\scriptsize (concentration of solute in the extract)}?	
+	For example, let's require $x_{R_2,A} = 0.05$ {\scriptsize (solute concentration in raffinate)}. What is $y_{E_1,A}$ then {\scriptsize (concentration of solute in the extract)}?	
 	\vfill
 \end{frame}
 
@@ -860,10 +860,10 @@
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 			\end{center}
-			\textbf{Note}: the line connecting {\color{myBlue}{\textbf{$E_1$ to $R_2$ is not a tie line}}}. We use the lever rule and a mass balance $(F + S = E_1 + R_2)$ to solve for all flows and compositions of $F, S, E_1,$ and $R_2$.
+			\textbf{Note}: the line connecting {\color{myBlue}{\textbf{$E_1$ to $R_2$ is not a tie line}}}. We use the lever rule and an overall mass balance $(F + S = E_1 + R_2)$ to solve for all flows and compositions of $F, S, E_1,$ and $R_2$.
 	\end{columns}
 	\vspace{12pt}
-	$x_{E1,A}\approx 0.38$ is found from an overall mass balance, through $M$.
+	$y_{E_1,A}\approx 0.38$ is found from an overall mass balance, through $M$.
 	\vfill
 \end{frame}
 
@@ -912,7 +912,7 @@
 		\begin{itemize}
 			\item	occurs at a certain \emph{maximum} solvent flow rate indicated by {\LARGE{\color{myRed}{$\mathbf{\circ}$}}}
 			\vspace{-6pt}
-			\item	note that $R_2$ is always fixed (specified)
+			\item	note that $R_2$ is {\color{myRed}{\sout{always}}} fixed (specified) in this example
 		\end{itemize}
 	}
 \end{frame}
@@ -964,7 +964,7 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	The last unit in a cascade is a special case: we have $R_{N=2}$, but we could have also calculated it from the tie line. Usually we have some overshoot or undershoot. {\scriptsize Good agreement in this example.}
+	The last unit in a cascade is a special case: we already know $R_{N=2}$, but we could have also calculated it from the tie line with $E_2$. We aim for some overshoot of $R_N$. {\scriptsize (Good agreement in this example.)}
 \end{frame}
 
 \begin{frame}\frametitle{In general: \emph{Counter-current} units}
@@ -1047,7 +1047,7 @@
 	\textbf{Note:}
 	\begin{itemize}
 		\item	does not mean we require 6 mixer-settlers (though we could do that, but costly)
-		\item	it means we need a \textbf{column} which has equivalent operation of 6 counter current mixer-settlers that fully reach equilibrium
+		\item	it means we need a \textbf{column} which has equivalent operation of 6 counter-current mixer-settlers that fully reach equilibrium
 		\item	at this point we resort to correlations and vendor assistance
 	\end{itemize}
 \end{frame}
