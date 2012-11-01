@@ -16,13 +16,13 @@
 			<key>filename</key>
 			<string>4M3-course.tex</string>
 			<key>lastUsed</key>
-			<date>2012-10-26T11:49:39Z</date>
+			<date>2012-11-01T02:06:52Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-10-30T11:51:57Z</date>
+			<date>2012-11-01T01:49:27Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -47,28 +47,58 @@
 	<integer>185</integer>
 	<key>metaData</key>
 	<dict>
+		<key>4M3-course.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>59</integer>
+				<key>line</key>
+				<integer>26</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>preamble.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>19</integer>
+				<key>line</key>
+				<integer>32</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>30</integer>
+		</dict>
 		<key>slides/liquid-liquid-extraction.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>4</integer>
+				<integer>111</integer>
 				<key>line</key>
-				<integer>732</integer>
+				<integer>1002</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>597</integer>
+			<integer>684</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
 		<string>slides/liquid-liquid-extraction.tex</string>
+		<string>preamble.tex</string>
+		<string>4M3-course.tex</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{195, 66}, {1245, 812}}</string>
+	<string>{{1635, -180}, {1725, 1080}}</string>
 </dict>
 </plist>
