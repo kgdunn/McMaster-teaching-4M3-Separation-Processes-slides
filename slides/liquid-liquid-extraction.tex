@@ -39,8 +39,7 @@
 		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
 	\end{itemize}	
 \end{frame}
-\end{comment}
-	
+\end{comment}	
 % 23 October 2012: Liquid-liquid extraction section
 \begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
 	\begin{center}
@@ -550,7 +549,7 @@
 }{}
 
 % 30 October 2012
-\iftoggle{instructor}{
+\iftoggle{student}{
     % Handout: to print for class
 	%\begin{frame}\frametitle{}
 	%	\begin{center}
@@ -650,7 +649,7 @@
 \end{frame}
 
 %\todo{Come back to this one}
-\iftoggle{instructor}{
+\iftoggle{student}{
 	\begin{frame}\frametitle{Q8 {\color{myOrange}{\emph{solution}}}: send raffinate from Q7 to second mixer-settler}
 		\begin{columns}[t]
 			\column{0.70\textwidth}
@@ -682,6 +681,113 @@
 	\end{frame}
 }{}
 
+	
+\begin{frame}\frametitle{Course project}
+	{\color{myGreen}{You should have all received feedback from me, via Google Docs}}
+	
+	\vspace{6pt}
+	For the final report:
+	\begin{itemize}
+		\item	Please give a flowsheet of the overall process
+		\item	Only focus on 1 separation unit operation
+		\item	Some groups have 2 or 3 separation steps: only 10 pages!
+		\item	You must focus on the {\color{myRed}{\textbf{separation}}} step in the flowsheet
+		\item	Provide a detailed drawing of the unit
+		\item	You must show the detailed design calculation for \textbf{sizing} the unit		
+		\item	Choose a basis for sizing: e.g.
+			\begin{itemize}
+				\item	based on the inlet requirement(s), or
+				\item	based on the outlet requirement(s)
+			\end{itemize}
+		\item	Brief discussion on capital costs and annual operating costs
+		\begin{itemize}
+			\item	maintenance 
+			\item	ESA and/or MSA requirements
+		\end{itemize}
+	\end{itemize}
+	\begin{exampleblock}{Report's length}
+		10 pages maximum, please see \href{http://learnche.mcmaster.ca/4M3/Course_project_-_2012}{course website}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}\frametitle{Administrative issues: dates}
+	\begin{tabular}{lll}
+		\textbf{Unit}		& 	\textbf{Previous date} 	&	\textbf{Revised date}\\ \hline
+		Assignment 4		&	01 November				&	06 November\\
+		Project report		&  	09 November				&   16 November\\
+		Assignment 5		&	16 November			    & 	23 November\\
+		Take-home exam 		&  	30 November				& 	30 November
+	\end{tabular}
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/revised-calendar.png}
+	\end{center}
+\end{frame}
+
+% 31 October 2012
+\begin{frame}\frametitle{Series of co-current units}
+	\begin{columns}[t]
+		\column{0.40\textwidth}			
+			\begin{center}
+				\vspace{-12pt}
+				{\color{myOrange}{$N=3$ in this illustration}}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/cross-current-extraction-Schweitzer-p1-263.png}
+			\end{center}
+			\see{Schweitzer, p 1-263}
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	{\color{purple}{Recovery}} = fraction of solute recovered
+					\begin{exampleblock}{}
+						\[1 - \displaystyle\frac{(x_{R_N})(R_N)}{(x_F) (F)}\]
+					\end{exampleblock}
+				
+				\vspace{6pt}
+				\item	{\color{purple}{Concentration}} of overall extract = solute leaving in each extract stream, divided by total extract flow rate 
+					\begin{exampleblock}{}
+						\[\frac{\displaystyle \sum_n^N{(y_{E_n})(E_n)}}{ \displaystyle \sum_n^N{E_n}}\]
+					\end{exampleblock}
+			\end{itemize}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Co-current \emph{vs} counter-current}
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+			{\color{myGreen}{Co-current ($N=2$ stages)}} 
+		\column{0.50\textwidth}
+			{\color{myGreen}{Counter-current ($N=2$ stages)}}
+	\end{columns}
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-modified.png}
+			\end{center}
+		\column{0.50\textwidth}
+			\vspace{-12pt}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+	\end{columns}
+	
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+			\begin{itemize}
+				\item	We combine multiple extract streams
+				\item	(Only 2 in illustration)
+				\item	In general: $y_{E1} > y_{E2} > \ldots$
+				\item	Fresh solvent added at each stage
+			\end{itemize}
+		\column{0.50\textwidth}
+			\begin{itemize}
+				\item	``Re-use'' the solvent, so
+				\item	Far lower solvent flows
+				\item	Recovery = 	\(1 - \displaystyle\frac{(x_{R_N})(R_N)}{(x_F) (F)}\)
+				\item	Concentration = \(\displaystyle  y_{E_1}\)
+			\end{itemize}
+	\end{columns}	
+	\vspace{6pt}
+	You will have an assignment question to compare and contrast these two configurations
+\end{frame}
+
 \begin{frame}\frametitle{Some theory: Two \emph{counter-current} units}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
@@ -706,22 +812,20 @@
 		\vspace{12pt}
 		$F - E_1  =  R_1 - E_2 = R_2 - S = P$
 	\end{center}
-	Note: each difference is equal to $P$ (look on the flow sheet where those differences are).
+	Note: each difference is equal to $P$ (look on the flow sheet where those \emph{differences} are).
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
 	\begin{center}
 		\includegraphics[width=0.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 	\end{center}
-	
-	
+		
 	Rearranging again:
 	\[	F + P = E_1 \]
 	\[	R_1 + P = E_2 \]
 	\[	R_2 + P = S \]
-	
-	
-	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}} on the ternary diagram}
+		
+	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}} on the ternary diagram} (from lever rule)
 	\vspace{6pt}
 	\begin{itemize}
 		\item	$P$ connects $F$ and $E_1$ 
@@ -742,7 +846,7 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	We require $x_{R2,A} = 0.05$ (solute concentration). What is $x_{E1,A}$?	
+	For example, let's require $x_{R2,A} = 0.05$ {\scriptsize (solute concentration in raffinate)}. What is $x_{E1,A}$ then {\scriptsize (concentration of solute in the extract)}?	
 	\vfill
 \end{frame}
 
@@ -756,7 +860,7 @@
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 			\end{center}
-			\textbf{Note}: the line connecting $E_1$ to $R_2$ is {\color{myRed}{\textbf{not}}} a tie line. We use the lever rule and a mass balance $(F + S = E_1 + R_2)$ to solve for all flows and compositions of $F, S, E_1,$ and $R_2$.
+			\textbf{Note}: the line connecting {\color{myBlue}{\textbf{$E_1$ to $R_2$ is not a tie line}}}. We use the lever rule and a mass balance $(F + S = E_1 + R_2)$ to solve for all flows and compositions of $F, S, E_1,$ and $R_2$.
 	\end{columns}
 	\vspace{12pt}
 	$x_{E1,A}\approx 0.38$ is found from an overall mass balance, through $M$.
@@ -774,13 +878,43 @@
 				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 			\end{center}
 			\textbf{Recall}: 
-			\vspace{-12pt}
+			\vspace{-10pt}
+			\[	F + P = E_1 \]
+			\[	R_2 + P = S \]			
+	\end{columns}
+	\begin{exampleblock}{}
+		Extrapolate through these lines until intersection at point {\color{myGreen}{$P$}}.
+	\end{exampleblock}	
+	\vspace{-6pt}
+	{\small
+		Minimal achievable $E_1$ concentration? \emph{mentally move point} {\color{myRed}{$M$}} \emph{towards} $S$. What happens to $P$? Alternative (simpler?) explanation on next slide.
+	}
+\end{frame}
+
+\begin{frame}\frametitle{Counter-current graphical solution: minimal solvent flow}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step3-min-E1.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+			\textbf{Recall}: 
+			\vspace{-10pt}
 			\[	F + P = E_1 \]
 			\[	R_2 + P = S \]			
 	\end{columns}
 	\vspace{12pt}
-	Extrapolate through these lines until intersection at point {\color{myGreen}{$P$}}.
-	\vfill
+	{\color{myOrange}{Subtle point}}: minimal achievable $E^\text{min}_1$ concentration: 
+	{\small
+		\begin{itemize}
+			\item	occurs at a certain \emph{maximum} solvent flow rate indicated by {\LARGE{\color{myRed}{$\mathbf{\circ}$}}}
+			\vspace{-6pt}
+			\item	note that $R_2$ is always fixed (specified)
+		\end{itemize}
+	}
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
@@ -795,7 +929,7 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	In stage 1: $R_1$ and $E_1$ leave in equilibrium and can be connected with a tie line.
+	Once we have $E_1$, we can start: note that in stage 1 the $R_1$ and $E_1$ streams leave in equilibrium and can be connected with a tie line.
 	\vfill
 \end{frame}
 
@@ -814,7 +948,7 @@
 			\[	R_1 + P = E_2 \]
 	\end{columns}
 	\vspace{12pt}
-	Since we have point $P$ and $R_1$ we can bring the line back and locate point $E_2$
+	Since we have point $P$ and $R_1$ we can bring the operating line back and locate point $E_2$
 	\vfill
 \end{frame}
 
@@ -830,7 +964,7 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	The last unit in a cascade is a special case: we have $R_2$, but we could have also calculated it from the tie line. Usually we have some overshoot or undershoot. {\scriptsize Good agreement in this example.}
+	The last unit in a cascade is a special case: we have $R_{N=2}$, but we could have also calculated it from the tie line. Usually we have some overshoot or undershoot. {\scriptsize Good agreement in this example.}
 \end{frame}
 
 \begin{frame}\frametitle{In general: \emph{Counter-current} units}
@@ -859,12 +993,12 @@
 					\small $R_{n-1} - E_n = R_{n} + E_{n+1}$
 			\end{columns}
 			\vspace{12pt}
-			$F - E_1  =  R_1 - E_2 = \ldots = R_{n-1} - E_n = R_{n} - E_{n+1} = \ldots R_2 - S = P$
+			$F - E_1  =  R_1 - E_2 = \ldots = R_{n-1} - E_n = R_{n} - E_{n+1} = \ldots R_N - S = P$
 		\end{center}
 		Notes:
 		\begin{enumerate}
 			\item	each difference is equal to $P$ (the difference between flows)
-			\item	$E_n$ and $R_{n}$ are in equilibrium, leaving each stage [tie line]
+			\item	$E_n$ and $R_{n}$ are in equilibrium, leaving each stage {\color{myOrange}{[via tie line]}}
 		\end{enumerate} 
 \end{frame}
 
@@ -872,32 +1006,50 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-3ed-operating-point-P-p316.png}
 	\end{center}
-	
-	\vspace{-3cm}
-	\hfill {\small $P$ is always on the raffinate}
-	
-	\hfill {\small envelope side of the diagram}
-	\vspace{2cm}
+	\vspace{-4cm}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+		\column{0.40\textwidth}
+			\begin{exampleblock}{}
+				\hfill {\small $P$ is always on the raffinate}
+
+				\hfill {\small envelope side of the diagram}
+			\end{exampleblock}
+	\end{columns}	
+	\vspace{2.5cm}
 	\begin{columns}[t]
 		\column{0.50\textwidth}
 		\vspace{-18pt}
 		{\scriptsize
-			\begin{itemize}
+			\begin{enumerate}
 				\item	We know $F$ and $S$; connect with a line and locate ``mixture'' $M$
 				\item	Either specify $E_1$ or {\color{myRed}{$R_N$}} (we will always know one of them)
 				\item	Connect a straight line through $M$ passing through the one specified
-				\item	Find for the unspecified one {\color{myOrange}{[tie line]}}
-			\end{itemize}}
+				\item	Solve for unspecified one {\color{myOrange}{[via tie line]}}
+			\end{enumerate}}
 		\column{0.50\textwidth}
 		\vspace{-18pt}
-		{\scriptsize	
-			\begin{itemize}
-				\item	Connect $S$ through {\color{myRed}{$R_N$}} and extrapolate to $P$
-				\item	Connect $E_1$ through $F$ and extrapolate to $P$
+		{\scriptsize				
+			\begin{enumerate}
+				\setcounter{enumi}{4}
+				\item	Connect $S$ through {\color{myRed}{$R_N$}} and extrapolate
+				\item	Connect $E_1$ through $F$ and extrapolate; cross lines at $P$
 				\item	Locate $P$ by intersection of 2 lines
 				\item	In general: connect $E_n$ and $R_n$ via {\color{myOrange}{equilibrium tie lines}}
-			\end{itemize}}
+			\end{enumerate}}
 	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Relating the theoretical stages to an actual unit}
+ 	Assume we calculated $N\approx 6$, for example, as the theoretical stages required:
+
+	\vspace{12pt}
+	\textbf{Note:}
+	\begin{itemize}
+		\item	does not mean we require 6 mixer-settlers (though we could do that, but costly)
+		\item	it means we need a \textbf{column} which has equivalent operation of 6 counter current mixer-settlers that fully reach equilibrium
+		\item	at this point we resort to correlations and vendor assistance
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{For practice}
