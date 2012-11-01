@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>slides/liquid-liquid-extraction.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -16,13 +14,15 @@
 			<key>filename</key>
 			<string>4M3-course.tex</string>
 			<key>lastUsed</key>
-			<date>2012-11-01T02:06:52Z</date>
+			<date>2012-11-01T23:32:25Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-11-01T01:49:27Z</date>
+			<date>2012-11-01T23:32:24Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -46,56 +46,7 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>185</integer>
 	<key>metaData</key>
-	<dict>
-		<key>4M3-course.tex</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>59</integer>
-				<key>line</key>
-				<integer>26</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>0</integer>
-		</dict>
-		<key>preamble.tex</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>19</integer>
-				<key>line</key>
-				<integer>32</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>30</integer>
-		</dict>
-		<key>slides/liquid-liquid-extraction.tex</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>111</integer>
-				<key>line</key>
-				<integer>1002</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>684</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>slides/liquid-liquid-extraction.tex</string>
-		<string>preamble.tex</string>
-		<string>4M3-course.tex</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
