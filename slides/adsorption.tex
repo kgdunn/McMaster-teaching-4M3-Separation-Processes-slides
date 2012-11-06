@@ -1,21 +1,405 @@
-References
+% See Rousseau PDF's, "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
 
-* Wankat, Separation Process Engineering, Chapter 16
-* Perry's, section 22
+\begin{comment}
+	Perry's section 22.5.8
 
-Perry's section 22.5.8
+	Adsorption This is the most widely used of the physical-chemical treatment processes. It is used primarily for the removal of soluble organics with activated carbon serving as the adsorbent. Most liquid-phase-activated carbon adsorption reactions follow a Freundlich Isotherm [Eq. (22-25)].
 
-Adsorption This is the most widely used of the physical-chemical treatment processes. It is used primarily for the removal of soluble organics with activated carbon serving as the adsorbent. Most liquid-phase-activated carbon adsorption reactions follow a Freundlich Isotherm [Eq. (22-25)].
+	y = kc ^\frac{1/m}
 
-y = kc ^\frac{1/m}
+	(22-25)
 
-(22-25)
+	where:            y = adsorbent capacity, mass pollutant/mass carbon
+	                      c = concentration of pollutant in waste, mass/volume
+	             k and m = empirical constants
+	EPA has compiled significant data on values of k and n for environmentally significant pollutants with typical activated carbons. Assuming equilibrium is reached, the isotherm provides the dose of carbon required for treatment. In a concurrent contacting process, the capacity is set by the required effluent concentration. In a countercurrent process, the capacity of the carbon is set by the untreated waste pollutant concentration. Thus countercurrent contacting is preferred.
 
-where:            y = adsorbent capacity, mass pollutant/mass carbon
-                      c = concentration of pollutant in waste, mass/volume
-             k and m = empirical constants
-EPA has compiled significant data on values of k and n for environmentally significant pollutants with typical activated carbons. Assuming equilibrium is reached, the isotherm provides the dose of carbon required for treatment. In a concurrent contacting process, the capacity is set by the required effluent concentration. In a countercurrent process, the capacity of the carbon is set by the untreated waste pollutant concentration. Thus countercurrent contacting is preferred.
+	Activated carbon is available in powdered form (200–400 mesh) and granular form (10–40 mesh). The latter is more expensive but is easier to regenerate and easier to utilize in a countercurrent contactor. Powdered carbon is applied in well-mixed slurry-type contactors for detention times of several hours after which separation from the flow occurs by sedimentation. Often coagulation, flocculation, and filtration are required in addition to sedimentation. As it is difficult to regenerate, powdered carbon is usually discarded after use. Granular carbon is used in column contactors with EBCT of 30 minutes to 1 hour. Often several contactors are used in series, providing for full countercurrent contact. A single contactor will provide only partial countercurrent contact. When a contactor is exhausted, the carbon is regenerated either by a thermal method or by passing a solvent through the contactor. For waste-treatment applications where a large number of pollutants must be removed but the quantity of each pollutant is small, thermal regeneration is favored. In situations where a single pollutant in large quantity is removed by the carbon, solvent extraction regeneration can be used, especially where the pollutant can be recovered from the solvent and reused. Thermal regeneration is a complex operation. It requires removal of the carbon from the contactor, drainage of free water, transport to a furnace, heating under controlled conditions of temperature, oxygen, time, water vapor partial pressure, quenching, transport back to the reactor, and reloading of the column. Five to ten percent of the carbon is lost in this regeneration process due to burning and attrition during each regeneration cycle. Multiple hearth, rotary kiln, and fluidized bed furnaces have all been successfully used for carbon regeneration.
 
-Activated carbon is available in powdered form (200–400 mesh) and granular form (10–40 mesh). The latter is more expensive but is easier to regenerate and easier to utilize in a countercurrent contactor. Powdered carbon is applied in well-mixed slurry-type contactors for detention times of several hours after which separation from the flow occurs by sedimentation. Often coagulation, flocculation, and filtration are required in addition to sedimentation. As it is difficult to regenerate, powdered carbon is usually discarded after use. Granular carbon is used in column contactors with EBCT of 30 minutes to 1 hour. Often several contactors are used in series, providing for full countercurrent contact. A single contactor will provide only partial countercurrent contact. When a contactor is exhausted, the carbon is regenerated either by a thermal method or by passing a solvent through the contactor. For waste-treatment applications where a large number of pollutants must be removed but the quantity of each pollutant is small, thermal regeneration is favored. In situations where a single pollutant in large quantity is removed by the carbon, solvent extraction regeneration can be used, especially where the pollutant can be recovered from the solvent and reused. Thermal regeneration is a complex operation. It requires removal of the carbon from the contactor, drainage of free water, transport to a furnace, heating under controlled conditions of temperature, oxygen, time, water vapor partial pressure, quenching, transport back to the reactor, and reloading of the column. Five to ten percent of the carbon is lost in this regeneration process due to burning and attrition during each regeneration cycle. Multiple hearth, rotary kiln, and fluidized bed furnaces have all been successfully used for carbon regeneration.
+	Pretreatment prior to carbon adsorption is usually for removal of suspended solids. Often this process is used as tertiary treatment after primary and biological treatment. In either situation, the carbon columns must be designed to provide for backwash. Some solids will escape pretreatment, and biological growth will occur on the carbon, even with extensive pretreatment. Originally carbon treatment was viewed only as applicable for removal of toxic organics or those that are difficult to degrade biologically. Present practice applies carbon adsorption as a procedure for removal of all types of organics. It is realized that some biological activity will occur in virtually any activated carbon unit, so the design must be adjusted accordingly.
+\end{comment}
 
-Pretreatment prior to carbon adsorption is usually for removal of suspended solids. Often this process is used as tertiary treatment after primary and biological treatment. In either situation, the carbon columns must be designed to provide for backwash. Some solids will escape pretreatment, and biological growth will occur on the carbon, even with extensive pretreatment. Originally carbon treatment was viewed only as applicable for removal of toxic organics or those that are difficult to degrade biologically. Present practice applies carbon adsorption as a procedure for removal of all types of organics. It is realized that some biological activity will occur in virtually any activated carbon unit, so the design must be adjusted accordingly.
+\begin{frame}\frametitle{Introduction to \textbf{{\color{purple}{sorption}}} processes}
+	\begin{exampleblock}{\textbf{Sorption}}
+		Components in a fluid phase, {\color{myGreen}{solutes}}, are selectively transferred to insoluble, (rigid) particles that are suspended in a vessel or packed in a column.
+	\end{exampleblock}
+	\begin{itemize}
+		\item	{\color{purple}{(ad)sorbate}}: the (ad)sorbed solute that's usually of interest
+		\item	{\color{purple}{(ad)sorbent}}: the (ad)sorbing agent, i.e. the MSA
+		\item	Is there an ESA?
+	\end{itemize}
+	
+	\vspace{12pt}
+	\emph{Some sorption processes}:
+	\begin{itemize}
+		\item	a\textbf{b}sorption: gas into liquid phase [it is strictly speaking a sorption process, but not considered here (3M4)]
+		\item	{\color{purple}{adsorption}}: molecules bond with a solid surface
+		\item	{\color{purple}{ion-exchange}}: ions displace dissimilar ions from solid phase
+			\begin{itemize}
+				\item	Water softening: $\text{Ca}^{2+}_\text{(aq)} + 2\text{NaR}_\text{(s)} \longleftrightarrow \text{CaR}_{2\text{(s)}} + 2\text{Na}^{+}_\text{(aq)}$
+			\end{itemize}
+		\item	{\color{purple}{chromatography}}: solutes move through column with an eluting fluid. Column is continuously regenerated.
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{Sorption examples}
+	\begin{exampleblock}{}
+		We will focus on {\color{myGreen}{(ad)sorption}} for the next few classes.
+	\end{exampleblock}
+	
+	\vspace{12pt}
+	Some well-known examples:
+	\begin{itemize}
+		\item	adsorption: charred wood products to improve water taste
+		\item	adsorption: decolourize liquid with bone char
+		\item	adsorption: those little white packets in boxes of electronics
+		\item	ion-exchange: passing water through certain sand deposits removed salt
+		\item	ion-exchange: synthetic polymer resins widely used to soften water
+	\end{itemize}
+	
+	Industrial use of adsorption picked up with molecular zeolites in the 1960s
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	General principle (more details coming up soon)
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Adsorbent-pores-Seader-p569-3ed-mod.png}
+			\end{center}
+		\column{0.40\textwidth}
+			Molecules attach to the particle's surfaces: outside and on the pore walls
+			
+			\vspace{12pt}
+			Main characterization: {\color{purple}{pore diameter}}
+	\end{columns}
+	\see{Modified from: Seader, 3ed, p 569}
+\end{frame}
+
+\begin{frame}\frametitle{Quick recap of some familiar concepts}
+	\begin{itemize}
+		\item	1m = 100cm = 1000mm = $10^6$\micron = $10^9$nm = $10^{10}$\AA
+		\item	Hydrogen and helium atoms: $\sim 1$\AA
+		\item	For a pore: \[\frac{\text{Surface area}}{\text{Volume}} = \frac{\pi d_p L}{\pi d_p^2 L/4} = \frac{4}{d_p}\]
+		\item	$d_p$ = pore diameter: typically around 10 to 200 \AA
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	Helpful to see what they look like to understand the principles:	
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Active_Al2O3-Wikipedia.png}
+			\end{center}
+			\vspace{-12pt}
+			\see{\href{http://en.wikipedia.org/wiki/File:Active_Al2O3.jpg}{Wikipedia}}
+		\column{0.40\textwidth}
+			{\color{myGreen}{Activated alumina}}
+			
+			\begin{itemize}
+				\item	made from from aluminum hydroxide
+				\item	$\sim 300~\text{m}^2$ per gram
+				\item	most widely used adsorbent
+				\item	hydrophilic
+				\item	pore diameter: 10 to 75 \AA
+			\end{itemize} 
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/DOI-{10.1016}{j.saa.2011.10.012}1-s2.0-S1386142511009012-gr3.jpg}
+			\end{center}
+			\vspace{-12pt}
+			\see{\href{http://dx.doi.org/10.1016/j.saa.2011.10.012}{DOI:10.1016/j.saa.2011.10.012}}
+		\column{0.40\textwidth}
+			{\color{myGreen}{Activated carbon}}
+			
+			\begin{itemize}
+				\item	partially oxidized coconut shells, nuts, wood, peat, bones
+				\item	400 to 1200 $\text{m}^2$ per gram
+				\item	hydrophobic
+				\item	pore diameter:  10 to over 50 \AA 
+			\end{itemize} 
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	\begin{columns}[t]
+		
+		\column{0.60\textwidth}
+			\vspace{-24pt}
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Zeolites-Seader-3ed-p575.png}
+			\end{center}
+			\see{Seader, 3ed, p575}
+			
+			\see{Uhlmanns, p565}
+			\vspace{-4pt}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Zeolites-Uhlmanns-p565.png}
+			\end{center}
+		\column{0.40\textwidth}
+			{\color{myGreen}{Zeolite lattices}}
+			
+			\vspace{12pt}
+			\emph{Some examples}
+			
+			\vspace{6pt}
+			$\text{K}_{12}[(\text{AlO}_2)_{12}(\text{SiO}_2)_{12}]$: 
+			
+			\hfill {\color{myOrange}{drying gases  [2.9\AA]}}
+			
+			\vspace{12pt}			
+			$\text{Na}_{12}[(\text{AlO}_2)_{12}(\text{SiO}_2)_{12}]$: 
+			
+			\hfill {\color{myOrange}{$\text{CO}_2$ removal  [3.8\AA]}}
+			
+			
+			\vspace{12pt}			
+			$\text{Ca}_{43}[(\text{AlO}_2)_{86}(\text{SiO}_2)_{106}]$: 
+			
+			\hfill {\color{myOrange}{air separation [8\AA]}}
+			
+			
+			\vspace{24pt}
+			Very specific pore diameters
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Pore diameter characterization}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Pore-size-distribution-Seader-3ed-p574.png}
+	\end{center}
+	\see{Seader, 3ed, p574}
+	{\scriptsize Determined using He and Hg porosimetry (see reference for details)}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorption examples}
+	\begin{itemize}
+		\item	Gas {\color{purple}{purification}}:
+		\begin{itemize}
+			\item	Volatile organics from a vent stream
+			\item	Sulphur compounds from gas stream
+			\item	Water vapour (we'll look at pressure swing adsorption)
+			\item	Removal of $\text{CO}_2$ from natural gas [alternatives ?]
+		\end{itemize}
+		\item	{\color{purple}{Bulk separation}} in the gas phase:
+		\begin{itemize}
+			\item	$\text{N}_2$ (adsorbed more strongly onto zeolites) from $\text{O}_2$
+			\item	$\text{H}_2\text{O}$ from ethanol
+			\item	High acetone quantities from air vent streams
+		\end{itemize}
+		\item	Liquid-liquid separation and purification:
+		\begin{itemize}
+			\item	Organics from water
+			\item	Sulphur compounds from water
+			\item	Normal vs iso-paraffin separation
+			\item	Separation of isomers: \emph{p}$\,$- vs \emph{m}-cresol
+			\item	Fructose from dextrose separation
+			\item	Gold in cyanide solutions
+		\end{itemize}
+		\vspace{-2.5cm}
+		\begin{columns}[t]
+			\column{0.75\textwidth}				
+			\column{0.20\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/P-cresol-spaceFilling.png}
+					
+					\emph{p}-cresol
+				\end{center}
+			\column{0.20\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/M-cresol-spaceFill.png}					
+					
+					\emph{m}-cresol
+				\end{center}
+				
+		\end{columns}
+		\hfill\see{Cresol figures from Wikipedia}
+		
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{When to consider adsorption}
+	Distillation, membranes, absorption, liquid-liquid extraction are sometimes viable alternatives. 
+	
+	\vspace{12pt}
+	But adsorption is considered when:
+	\begin{itemize}
+		\item	relative volatility between components is $<1.5$ (e.g. isomers)
+		\item	large reflux ratios would be required
+		\item	excessive temperatures or high pressure drops
+		\item	too large area for a membrane
+		\item	high selectivity is required
+		\item	feed is a very dilute streams of solute (adsorbate) 
+	\end{itemize}
+	But, some disadvantages:
+	\begin{itemize}
+		\item	only surface of the adsorbent used
+		\item	regeneration of MSA adsorbent required
+		\item	MSA will break down mechanically over time
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Quantifying the adsorbent}
+	\seefull{Perry's, Ch 22}: A fixed bed of porous adsorbent material. Bulk density is 500 kg.m$^{-3}$, and the {\color{purple}{interparticle}} [between] void fraction is 0.40. The {\color{purple}{intraparticle}} [within] porosity is 0.50, with two-thirds of this in cylindrical pores of diameter 1.4 nm and the rest in much larger pores. \textbf{Find}:
+	\begin{itemize}
+		\item	surface area of the adsorbent
+		\item	if solute has formed a complete {\color{purple}{monomolecular layer}} 0.3 nm thick inside the pores, determine the percent of the particle volume and the percent of the total bed volume filled with adsorbate.
+	\end{itemize}
+	
+	\vspace{12pt}
+	\emph{Solution}:
+	Assume from surface area to volume ratio that the internal area is practically all in the small pores [ignore large pores]. 
+	One gram of the adsorbent occupies 2cm$^3$ as packed and has 0.4cm$^3$ in small pores, which gives a surface area of 1150 m$^2$/gram {\scriptsize (university stadium field area $\sim 5000~\text{to}~8000 \text{m}^2$)}. 
+	Based on the area of the annular region filled with adsorbate, the solute occupies 22.5\% of the internal pore volume and 13.5\% of the total packed-bed volume.	
+\end{frame}
+
+\begin{frame}\frametitle{Physical principles}
+	\begin{exampleblock}{Adsorption releases heat. Why?}
+		\iftoggle{instructor}{Loss of degrees of freedom of fluid: free energy is reduced}{Thermodynamics ...}
+	\end{exampleblock}
+	\vspace{12pt}
+	
+	Two types of adsorption:
+	\begin{enumerate}
+		\item	Physical adsorption:
+		\begin{itemize}
+			\item	Low heat of adsorption: 30 to 60 kJ/mol
+			\item	van der Waals attractions 
+			\item	easily reversible
+		\end{itemize}
+		\item	Chemical adsorption:
+		\begin{itemize}
+			\item	High heat of adsorption: $> 100$ kJ/mol
+			\item	Chemical bond formation
+			\item	more energy intensive to reverse
+		\end{itemize}
+	\end{enumerate}
+	\pause
+	Conceptual steps as adsorbate concentration increases:
+	\begin{enumerate}
+		\item	single layer of molecules first form on surface
+		\item	then multiple layers form
+		\item	condensation, once pore size limitations exceeded
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorption equipment}	
+	Adsorption, Desorption and Recovery (ADR) plant in Burkina Faso
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/adsorption/flickr-5043854546_4ff634cc5a_b.jpg}
+	\end{center}
+	\see{\href{http://www.flickr.com/photos/isurusen/5043854546/}{Flickr \#5043854546}}
+\end{frame}
+
+\begin{frame}\frametitle{Fluidized beds}
+	\begin{center}
+		\includegraphics[height=0.9\textheight]{\imagedir/separations/adsorption/Fluidized-bed-Uhlmanns-p556.png}
+	\end{center}
+	\vspace{-18pt}
+	\see{Uhlmanns, p556}
+\end{frame}
+
+\begin{frame}\frametitle{Packed beds: adsorption and desorption steps}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Packed-bed-CR-v2-5ed-p1028-1.png}
+	\end{center}
+	\see{Richardson and Harker, p 1028}
+\end{frame}
+
+\begin{frame}\frametitle{Rotary devices}
+	\begin{center}
+		%\includegraphics[width=.7\textwidth]{\imagedir/separations/adsorption/Rotary-adsorber-Uhlmanns-p557.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Rotary-devices-CR-v2-5ed-p1034.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Richardson and Harker, p 1034}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorption equipment: Sorbex column}	
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Sorbex-Uhlmanns-p560.png}
+	\end{center}
+	\see{Uhlmanns, p 560}
+	
+	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
+\end{frame}
+
+\begin{frame}\frametitle{Mechanisms during adsorption}
+	\begin{itemize}
+		\item	{\color{purple}{equilibrium interaction}}: solid-fluid interactions (later)
+		\item	{\color{purple}{kinetic}}: differences in diffusion
+		\item	{\color{purple}{steric}}: pore structure hinders/retains molecules of a certain shape
+	\end{itemize}
+\end{frame}
+
+% \begin{frame}\frametitle{}
+% 	\begin{enumerate}
+% 		\item	Equilibrium
+% 		\item	Kinetics
+% 		\item	Diffusion
+% 	\end{enumerate}	
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Isotherms}
+% 	Why required?
+% 	
+% 	How are they found; calculated?
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Isotherm models}
+% 	
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Favourable vs unfavourable isotherms}
+% 	
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Multicomponent isotherms}
+% 	
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Modelling of diffusion, heat transfer and mass transfer}
+% 	
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Batch system}
+% 	
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Potential theory}
+% 	/Users/kevindunn/Sync/Figures/separations/adsorption/CR-v2-5ed-p991.png
+% \end{frame}
+
+% \begin{frame}\frametitle{Some more terminology}
+% 	\begin{itemize}
+% 		\item	Breakpoint
+% 		\item	Isotherm
+% 		\item	Usable capacity
+% 		\item	Superficial velocity
+% 		\item	Regeneration: puts the adsorbate in a new solvent or medium, usually at a higher concentration than it was at originally, or at least in a medium that is much easier to separate from.
+% 			\begin{itemize}
+% 				\item	use high temperatures to ensure desorption is fast
+% 			\end{itemize}
+% 	\end{itemize}
+% \end{frame}
+
+\begin{frame}\frametitle{References}
+	\begin{itemize}
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 3.1
+		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 15
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 17
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 12
+		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 8
+		\item	Perry's Chemical Engineers' Handbook, Chapter 22
+		\item	Uhlmann's Encyclopedia, ``Adsorption'',  \href{http://dx.doi.org/10.1002/14356007.b03\_09.pub2}{DOI:10.1002/14356007.b03\_09.pub2}
+		\item	Wankat, ``Separation Process Engineering'', Chapter 16
+	\end{itemize}
+\end{frame}
+
+
