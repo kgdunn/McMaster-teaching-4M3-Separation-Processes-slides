@@ -19,6 +19,7 @@
 	Pretreatment prior to carbon adsorption is usually for removal of suspended solids. Often this process is used as tertiary treatment after primary and biological treatment. In either situation, the carbon columns must be designed to provide for backwash. Some solids will escape pretreatment, and biological growth will occur on the carbon, even with extensive pretreatment. Originally carbon treatment was viewed only as applicable for removal of toxic organics or those that are difficult to degrade biologically. Present practice applies carbon adsorption as a procedure for removal of all types of organics. It is realized that some biological activity will occur in virtually any activated carbon unit, so the design must be adjusted accordingly.
 \end{comment}
 
+% 05 November 2012 (half a class only)
 \begin{frame}\frametitle{Introduction to \textbf{{\color{purple}{sorption}}} processes}
 	\begin{exampleblock}{\textbf{Sorption}}
 		Components in a fluid phase, {\color{myGreen}{solutes}}, are selectively transferred to insoluble, (rigid) particles that are suspended in a vessel or packed in a column.
@@ -133,6 +134,7 @@
 				\item	hydrophobic
 				\item	pore diameter:  10 to over 50 \AA 
 			\end{itemize} 
+			e.g. bone char: decolourizing syrups % Article by Johnston, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
 	\end{columns}
 \end{frame}
 
@@ -175,8 +177,27 @@
 			
 			
 			\vspace{24pt}
-			Very specific pore diameters
+			Very specific pore diameters.
+			\begin{itemize}
+				\item	40 naturally occurring
+				\item	$\sim$  150 synthesized % C+R v2, 5ed, p975
+			\end{itemize}
 	\end{columns}
+\end{frame}
+
+% 07 November 2012
+\begin{frame}\frametitle{Adsorbents}
+	Molecular sieves (zeolites):
+	
+	\begin{tabular}{cll}\\
+		\textbf{Size}	&	\textbf{Adsorbs} ... 					&	\textbf{Dehydrates} ...\vspace{6pt}\\ \hline 
+		3\AA			&	$\text{H}_2\text{O}$, $\text{NH}_3$		& 	unsaturated hydrocarbons\\
+		4\AA			&  	$\text{H}_2\text{S}$, $\text{CO}_2$, $\text{C}_3\text{H}_6$		& 	saturated hydrocarbons\\
+		5\AA			&	\emph{n}-paraffins from iso-paraffins   & \\
+		8\AA			& 	iso-paraffins and olefins				&	\\
+	\end{tabular}
+	\vspace{12pt}
+	\see{Johnston}%, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
 \end{frame}
 
 \begin{frame}\frametitle{Pore diameter characterization}
@@ -239,6 +260,25 @@
 	\end{itemize}	
 \end{frame}
 
+\begin{frame}\frametitle{Gold leaching and adsorption}	
+	\begin{itemize}
+		\item	Crushed rock has gold particles exposed
+		\item	Leaching: $4\text{Au} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \longrightarrow  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
+		\item	Adsorption: aurocyanide complex, $\text{Au(CN)}_2^{-}$, is adsorbed onto activated carbon
+			\begin{itemize}
+				\item	drives the equilibrium in the leaching step forward
+				\item	separates the gold from the pulp (slurry)
+				\item	obtain $C_\text{A,s}$ = 8000 grams of Au per tonne of carbon
+			\end{itemize}
+		\item	Desorption: 
+			\begin{itemize}
+				\item	separate the highly concentrated gold-carbon pulp (screens/filter)
+				\item	desorb the gold off the carbon with caustic contact
+				\item	recycle the regenerated carbon
+			\end{itemize}
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{When to consider adsorption}
 	Distillation, membranes, absorption, liquid-liquid extraction are sometimes viable alternatives. 
 	
@@ -277,7 +317,9 @@
 \begin{frame}\frametitle{Physical principles}
 	\begin{exampleblock}{Adsorption releases heat. Why?}
 		\pause
-		\iftoggle{instructor}{Loss of degrees of freedom of fluid: free energy is reduced}{Thermodynamics ...}
+		\iftoggle{instructor}{Loss of degrees of freedom of fluid: free energy is reduced, so $\Delta S \downarrow$}{Thermodynamics: ...}
+		
+		$\Delta G = \Delta H - T \Delta S \quad \Longrightarrow  \quad \Delta H = \Delta G + T \Delta S \quad \Longrightarrow  \quad \Delta H < 0$
 	\end{exampleblock}
 	
 	\vspace{6pt}
@@ -286,26 +328,24 @@
 	\begin{enumerate}
 		\item	Physical adsorption ({\color{purple}{physisorption}}):
 		\begin{itemize}
-			\item	Low heat of adsorption: 30 to 60 kJ/mol
-			\item	van der Waals attractions 
+			\item	Low heat of adsorption released: $\Delta H_\text{ads} \sim$ 30 to 60 kJ/mol
+			\item	Theory: {\color{purple}{van der Waals attractions}} 
 			\item	easily reversible
 		\end{itemize}
 		\item	Chemical adsorption ({\color{purple}{chemisorption}}):
 		\begin{itemize}
-			\item	High heat of adsorption: $> 100$ kJ/mol
-			\item	chemical bond formation
+			\item	High heat of adsorption released: $\Delta H_\text{ads} > 100$ kJ/mol
+			\item	chemical bond formation, in the order of chemical bond strengths
 			\item	leads to reaction products 
 			\item	more energy intensive to reverse
 			\item	e.g.: catalysis, corrosion
 		\end{itemize}
 	\end{enumerate}
 	\pause
-	Conceptual steps as adsorbate concentration increases:
-	\begin{enumerate}
-		\item	single layer of molecules first form on surface
-		\item	then multiple layers form
-		\item	condensation, once pore size limitations exceeded
-	\end{enumerate}
+	As adsorbate concentration increases:
+	\begin{itemize}
+		\item	single layers form, then multiple layers, then condensation
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Adsorption equipment}	
@@ -358,6 +398,133 @@
 	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
 \end{frame}
 
+\begin{frame}\frametitle{TO INCLUDE}
+	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.19.51 .png
+	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.20.09 .png
+	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.19.36 .png
+	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.19.22 .png
+	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.18.11 .png
+	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.17.27 .png
+\end{frame}
+
+\begin{frame}\frametitle{Modelling the adsorption process}
+	\begin{enumerate}
+		\item	Diffusion
+			\begin{itemize}
+				\item	diffusion of the adsorbate in the bulk fluid (usually very fast)
+				\item	diffusion of the adsorbate to the adsorbent surface
+				\item	diffusion of the adsorbate into the pore to an open site
+				\begin{itemize}
+					\item	steric (shape) effects
+				\end{itemize}
+			\end{itemize}
+		\item	Equilibrium
+			\begin{itemize}
+				\item	adsorbate will attach to a vacant site
+				\item	adsorbate will detach from an occupied site
+			\end{itemize}
+	\end{enumerate}
+	\todo{Picture here}
+\end{frame}
+
+\begin{frame}\frametitle{Equilibrium modelling}
+	\begin{exampleblock}{Why?}
+		We ultimately would like to determine \textbf{how much adsorbent is required} to remove a given amount of adsorbate (e.g. impurity); particularly in batch processes.
+	\end{exampleblock}
+
+	\vspace{12pt}
+	For now, assume we are only limited by equilibrium (i.e diffusion resistance is negligible)	
+	\begin{itemize}
+		\item	Derive/Postulate a model relating bulk concentration to surface concentration of adsorbate
+		\item	We call these equations/models: ``isotherms''
+		\item	{\color{purple}{Isotherm}}: relates amount of adsorbate on adsorbent at different concentrations, but at a fixed temperature.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Equilibrium modelling: linear model}
+	\begin{exampleblock}{Linear isotherm (Henry's law)}
+		\[C_\text{A,s} = K C_\text{A}\]
+		\[C_\text{A,s} = \frac{K P_\text{A}}{RT} = K' P_\text{A}\]
+	\end{exampleblock}
+	\begin{columns}[t]
+		\column{1.1\textwidth}
+			\begin{itemize}
+				\item	{\small $C_\text{A,s} =$ concentration of adsorbate A on adsorbent surface \hfill $\left[\displaystyle \frac{\text{kg adsorbate}}{\text{kg adsorbent}}\right]$}
+				\item	{\small $C_\text{A} =$ concentration of adsorbate A in the bulk fluid phase \hfill $\left[\displaystyle \frac{\text{kg adsorbate}}{\text{m}^3~ \text{fluid}}\right]$}
+				\item	{\small $P_\text{A} =$ partial pressure of adsorbate A in the bulk fluid phase \hfill $\left[ \text{atm}\right]\,$}
+				\item	{\small $K$ and $K'$ are temperature dependent equilibrium constants {\tiny (should be clear why)}}
+				\item	{\small $R$ is the ideal gas constant}
+				\item	{\small $T$ is the system temperate}
+			\end{itemize}
+	\end{columns}
+	\vspace{12pt}
+	\begin{itemize}
+		\item	Few systems are this simple!
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Equilibrium modelling: Freundlich model}
+	\begin{exampleblock}{Freundlich}
+		\[C_\text{A,s} = K C_\text{A}^m\]
+	\end{exampleblock}
+
+	\vspace{12pt}
+	\begin{itemize}
+		\item	It is an empirical model, but it works well
+		\item	Constants determined from a log-log plot
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Langmuir isotherm derivation}
+	% Derivation from Fogler, p 422, Chapter 10
+	\begin{itemize}
+		\item	we have a uniform adsorbent surface available {\tiny (all sites equally attractive)}
+		\item	there are a total number of sites available for adsorbate A to adsorb to
+		\item	$C_\text{T}$ = total sites available \hfill {\scriptsize $\left[\displaystyle\frac{\text{mol sites}}{\text{kg adsorbate}} \right]$}
+		\pause
+		\item	$C_\text{V}$ = vacant sites available \hfill {\scriptsize $\left[\displaystyle\frac{\text{mol sites}}{\text{kg adsorbate}} \right]$}
+		\item	rate of adsorption = $k_\text{A} P_\text{A} C_\text{V}$ = proportional to number of collisions of A with site S
+		\pause
+		\item	$C_\text{A,S}$ = sites occupied by A \hfill {\scriptsize $\left[\displaystyle\frac{\text{mol sites}}{\text{kg adsorbate}} \right]$}
+		\item	assuming 1 site per molecule of A, and only a monolayer forms
+		\item	rate of desorption=  $k_{-\text{A}} C_\text{A,S}$ = proportional to number of occupied sites
+		\item	net rate = $k_\text{A} P_\text{A} C_\text{V} - k_{-\text{A}} C_\text{A,S}$  
+	\end{itemize}
+\end{frame}
+\begin{frame}\frametitle{Langmuir isotherm derivation}
+	\begin{itemize}
+		\item	Net rate = $k_\text{A} P_\text{A} C_\text{V} - k_{-\text{A}} C_\text{A,S}$  
+		\item	define $K_\text{A} = \displaystyle\frac{k_\text{A}}{k_{-\text{A}}}$
+		\item	essentially an equilibrium constant: $\text{A} + \text{S} \rightleftharpoons \text{A}\cdot \text{S}$		
+		\item	at equilibrium, the net rate is zero 
+		\pause
+		\item	implying $\displaystyle\frac{k_\text{A}C_\text{A,S}}{K_\text{A}} = k_\text{A} P_\text{A} C_\text{V}$  
+		\item	but total sites = $C_\text{T} = C_\text{V} + C_\text{A,S}$
+		\item	so $\displaystyle\frac{k_\text{A}C_\text{A,S}}{K_A} = k_\text{A} P_\text{A} \left(C_\text{T} -  C_\text{A,S}\right)$  
+		\item	simplifying: $C_\text{A,S} = K_\text{A} P_\text{A} \left(C_\text{T} -  C_\text{A,S}\right)$  
+		\item	then \fbox{$C_\text{A,S} = \displaystyle \frac{K_\text{A}C_\text{T} P_\text{A}}{1 + K_\text{A} P_\text{A}} = \displaystyle \frac{K_1 P_\text{A}}{1 + K_2 P_\text{A}}$}
+		\item	Fit data using \href{http://en.wikipedia.org/wiki/Eadie\%E2\%80\%93Hofstee\_plot}{Eadie-Hofstee diagram} or nonlinear regression
+		\item	Same structure as Michaelis-Menten model (bio people)
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Summary of isotherms}
+	We aren't always sure which isotherm fits a given adsorbate-adsorbent pair:
+	\begin{enumerate}
+		\item	Postulate a model (e.g. linear, or Langmuir)
+		\item	Fit the equation to the data
+		\item	Good fit? 
+	\end{enumerate}
+	
+	\vspace{24pt}
+	Other isotherms have been proposed:
+	\begin{itemize}
+		\item	BET (Brunauer, Emmett and Teller) isotherm
+		\item	Gibb's isotherm
+	\end{itemize}
+	
+	These are far more flexible models (more parameters); e.g. Langmuir isotherm is a special case of the BET isotherm.
+\end{frame}
 
 
 % \begin{frame}\frametitle{}
@@ -374,9 +541,6 @@
 % 	How are they found; calculated?
 % \end{frame}
 % 
-% \begin{frame}\frametitle{Isotherm models}
-% 	
-% \end{frame}
 % 
 % \begin{frame}\frametitle{Favourable vs unfavourable isotherms}
 % 	
@@ -421,6 +585,7 @@
 		\item	Perry's Chemical Engineers' Handbook, Chapter 22
 		\item	Uhlmann's Encyclopedia, ``Adsorption'',  \href{http://dx.doi.org/10.1002/14356007.b03\_09.pub2}{DOI:10.1002/14356007.b03\_09.pub2}
 		\item	Wankat, ``Separation Process Engineering'', Chapter 16
+		\item	Johnston, ``Designing Fixed-Bed Adsorption Columns'', \emph{Chemical Engineering}, p 87-92, 1972
 	\end{itemize}
 \end{frame}
 
