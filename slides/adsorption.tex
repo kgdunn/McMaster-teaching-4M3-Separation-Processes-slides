@@ -165,11 +165,12 @@
 			\hfill {\color{myOrange}{air separation [8\AA]}}
 			
 			
-			\vspace{24pt}
+			\vspace{18pt}
 			Very specific pore diameters.
 			\begin{itemize}
 				\item	40 naturally occurring
 				\item	$\sim$  150 synthesized % C+R v2, 5ed, p975
+				\item	$\sim$	650 $\text{m}^2$ per gram
 			\end{itemize}
 		
 	\end{columns}
@@ -191,10 +192,10 @@
 
 	\vspace{12pt}
 	% Rousseau "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
-	Rousseau, ``Handbook of Separation Technology'': {\scriptsize market sizes in 1983}
+	Rousseau, ``Handbook of Separation Technology''
 
 	\begin{tabular}{ll}\\
-		\textbf{Adsorbent}				&	\textbf{Market size} \vspace{6pt}\\ \hline 
+		\textbf{Adsorbent}				&	\textbf{Market size (1983)} \vspace{6pt}\\ \hline 
 			Activated carbon 			&	\$ 380 million $\longleftarrow$ 25\% for water treatment \\
 			Molecular-sieve zeolites 	&	\$ 100 million  \\
 			Silica gel					&	\$ 27 million  \\
@@ -208,6 +209,7 @@
 	\end{center}
 	\see{Seader, 3ed, p574}
 	{\scriptsize Determined using He and Hg porosimetry (see reference for details)}
+	% MSC = molecular-sieve carbon (specially processed activated carbon to obtain smaller pores)
 \end{frame}
 
 \begin{frame}\frametitle{Adsorption examples}
@@ -216,7 +218,7 @@
 		\begin{itemize}
 			\item	Volatile organics from a vent stream
 			\item	Sulphur compounds from gas stream
-			\item	Water vapour (we'll look at pressure swing adsorption)
+			\item	Water vapour
 			\item	Removal of $\text{CO}_2$ from natural gas [alternatives ?]
 		\end{itemize}
 		\item	{\color{purple}{Bulk separation}} in the gas phase:
@@ -262,7 +264,7 @@
 	\end{itemize}	
 \end{frame}
 
-\begin{frame}\frametitle{Gold leaching and adsorption}	
+\begin{frame}\frametitle{{\color{myOrange}{Example}}: Gold leaching and adsorption}	
 	\begin{columns}[c]
 		\column{1.08\textwidth}			
 			\begin{itemize}
@@ -382,21 +384,28 @@
 			\vspace{-18pt}
 			\see{Uhlmanns, p556}
 		\column{0.30\textwidth}
-			Materials of construction are important
+			Materials of construction are important: carbon on carbon steel has a galvanic effect: leads to corrosion. 
+			
+			Use stainless steel, or a lined vessel.
 			
 			\vspace{12pt}
-			Cyclones used to recover adbsorbent
-	\end{columns}
-	
+			Cyclones used to recover adsorbent.
+			
+			\begin{itemize}
+				\item	Adsorbent life: $\sim$ 100 cycles
+				\item	Bleed off old adsorbent and continuously replenish
+			\end{itemize}
+	\end{columns}	
 \end{frame}
 
 \begin{frame}\frametitle{Packed beds: adsorption and desorption steps}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Packed-bed-CR-v2-5ed-p1028-1.png}
 	\end{center}
+	\vspace{-6pt}
 	\see{Richardson and Harker, p 1028}
 	
-	Regeneration: puts the adsorbate in a new solvent or medium, usually at a higher concentration than it was at originally, or at least in a medium that is much easier to separate from.
+	{\color{purple}{Regeneration}}: puts the adsorbate in a new solvent or medium, usually at a higher concentration than it was at originally, or at least in a medium that is much easier to separate from.
 \end{frame}
 
 \begin{frame}\frametitle{Rotary devices}
@@ -416,6 +425,8 @@
 	
 	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
 	
+	% Over 100 commercial installations
+	
 	% From Rousseau:
 	
 	% The problems associated with moving-bed processes have been solved by the development of the simulated moving bed.
@@ -428,8 +439,6 @@
 	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
 	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
 	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
-	
-	
 \end{frame}
 
 \begin{frame}\frametitle{Modelling the adsorption process}
@@ -461,7 +470,7 @@
 	\begin{itemize}
 		\item	Derive/Postulate a model relating bulk concentration to surface concentration of adsorbate
 		\item	We call these equations/models: ``isotherms''
-		\item	{\color{purple}{Isotherm}}: relates amount of adsorbate on adsorbent at different concentrations, but at a fixed temperature.
+		\item	{\color{purple}{Isotherm}}: relates amount of adsorbate on adsorbent ($C_\text{A,S}$) at different concentrations of adsorbate in the bulk ($C_\text{A}$), but at a fixed temperature.
 	\end{itemize}
 \end{frame}
 
@@ -478,7 +487,7 @@
 				\item	{\small $P_\text{A} =$ partial pressure of adsorbate A in the bulk fluid phase \hfill $\left[ \text{atm}\right]\,$}
 				\item	{\small $K$ and $K'$ are temperature dependent equilibrium constants {\tiny (should be clear why)}}
 				\item	{\small $R$ is the ideal gas constant}
-				\item	{\small $T$ is the system temperate}
+				\item	{\small $T$ is the system temperature}
 			\end{itemize}
 	\end{columns}
 	\vspace{12pt}
@@ -488,7 +497,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Equilibrium modelling: Freundlich model}
-	\begin{exampleblock}{Freundlich}
+	\begin{exampleblock}{Freundlich isotherm}
 		\[C_\text{A,S} = K \left(C_\text{A}\right)^{1/m}\qquad \text{for $ 1 < m < 5$}\] 
 	\end{exampleblock}
 
@@ -525,6 +534,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Equilibrium modelling: Langmuir isotherm}
+	\vspace{-2cm}
 	\begin{itemize}
 		\item	Net rate = $k_\text{A} P_\text{A} C_\text{V} - k_{-\text{A}} C_\text{A,S}$  
 		\item	define $K_\text{A} = \displaystyle\frac{k_\text{A}}{k_{-\text{A}}}$
@@ -539,13 +549,24 @@
 		\item	Fit data using \href{http://en.wikipedia.org/wiki/Eadie\%E2\%80\%93Hofstee\_plot}{Eadie-Hofstee diagram} or nonlinear regression
 		\item	Same structure as Michaelis-Menten model (bio people)
 	\end{itemize}
+	\vspace{-6.5cm}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Langmuir-isotherm.png}
+			\end{center}
+	\end{columns}
 \end{frame}
+
+
 
 \begin{frame}\frametitle{Summary of isotherms}
 	We aren't always sure which isotherm fits a given adsorbate-adsorbent pair:
 	\begin{enumerate}
-		\item	Postulate a model (e.g. linear, or Langmuir)
 		\item	Perform a laboratory experiment to collect the data
+		\item	Postulate a model (e.g. linear, or Langmuir)
 		\item	Fit the model to the data
 		\item	Good fit? 
 	\end{enumerate}
@@ -579,10 +600,10 @@
 		\column{1.1\textwidth}
 			\begin{itemize}
 				\item	{\small $X$ = concentration in the bulk of the bed = $C_A$ in previous notation}
-				\item	{\small $X_e$ = concentration of adsorbate at equilibrium in the bulk= feed conc}
-				\item	{\small $X_0$ = concentration of adsorbate in the regenerated adsorbent at time 0}
+				\item	{\small $X_e$ = concentration of adsorbate at equilibrium in the bulk = feed conc}
+				\item	{\small $X_0$ = concentration of adsorbate in the \sout{regenerated adsorbent} at time 0}
 				\item	{\small $\theta_b$ = breakthrough time}
-				\item	{\small $\theta_e$ = the bed at equilibrium time; adsorbent is completely used}
+				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used}
 			\end{itemize}
 	\end{columns}	
 \end{frame}
