@@ -1,17 +1,6 @@
-% See Rousseau PDF's, "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
-
 \begin{comment}
 	Perry's section 22.5.8
 
-	Adsorption This is the most widely used of the physical-chemical treatment processes. It is used primarily for the removal of soluble organics with activated carbon serving as the adsorbent. Most liquid-phase-activated carbon adsorption reactions follow a Freundlich Isotherm [Eq. (22-25)].
-
-	y = kc ^\frac{1/m}
-
-	(22-25)
-
-	where:            y = adsorbent capacity, mass pollutant/mass carbon
-	                      c = concentration of pollutant in waste, mass/volume
-	             k and m = empirical constants
 	EPA has compiled significant data on values of k and n for environmentally significant pollutants with typical activated carbons. Assuming equilibrium is reached, the isotherm provides the dose of carbon required for treatment. In a concurrent contacting process, the capacity is set by the required effluent concentration. In a countercurrent process, the capacity of the carbon is set by the untreated waste pollutant concentration. Thus countercurrent contacting is preferred.
 
 	Activated carbon is available in powdered form (200–400 mesh) and granular form (10–40 mesh). The latter is more expensive but is easier to regenerate and easier to utilize in a countercurrent contactor. Powdered carbon is applied in well-mixed slurry-type contactors for detention times of several hours after which separation from the flow occurs by sedimentation. Often coagulation, flocculation, and filtration are required in addition to sedimentation. As it is difficult to regenerate, powdered carbon is usually discarded after use. Granular carbon is used in column contactors with EBCT of 30 minutes to 1 hour. Often several contactors are used in series, providing for full countercurrent contact. A single contactor will provide only partial countercurrent contact. When a contactor is exhausted, the carbon is regenerated either by a thermal method or by passing a solvent through the contactor. For waste-treatment applications where a large number of pollutants must be removed but the quantity of each pollutant is small, thermal regeneration is favored. In situations where a single pollutant in large quantity is removed by the carbon, solvent extraction regeneration can be used, especially where the pollutant can be recovered from the solvent and reused. Thermal regeneration is a complex operation. It requires removal of the carbon from the contactor, drainage of free water, transport to a furnace, heating under controlled conditions of temperature, oxygen, time, water vapor partial pressure, quenching, transport back to the reactor, and reloading of the column. Five to ten percent of the carbon is lost in this regeneration process due to burning and attrition during each regeneration cycle. Multiple hearth, rotary kiln, and fluidized bed furnaces have all been successfully used for carbon regeneration.
@@ -118,13 +107,13 @@
 
 \begin{frame}\frametitle{Adsorbents}
 	\begin{columns}[c]
-		\column{0.60\textwidth}
+		\column{0.50\textwidth}
 			\begin{center}
 				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/DOI-{10.1016}{j.saa.2011.10.012}1-s2.0-S1386142511009012-gr3.jpg}
 			\end{center}
 			\vspace{-12pt}
 			\see{\href{http://dx.doi.org/10.1016/j.saa.2011.10.012}{DOI:10.1016/j.saa.2011.10.012}}
-		\column{0.40\textwidth}
+		\column{0.50\textwidth}
 			{\color{myGreen}{Activated carbon}}
 			
 			\begin{itemize}
@@ -132,7 +121,7 @@
 				\item	difference hardnesses of adsorbent
 				\item	400 to 1200 $\text{m}^2$ per gram
 				\item	hydrophobic
-				\item	pore diameter:  10 to over 50 \AA 
+				\item	pore diameter:  10 to over 50\AA 
 			\end{itemize} 
 			e.g. bone char: decolourizing syrups % Article by Johnston, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
 	\end{columns}
@@ -182,6 +171,7 @@
 				\item	40 naturally occurring
 				\item	$\sim$  150 synthesized % C+R v2, 5ed, p975
 			\end{itemize}
+		
 	\end{columns}
 \end{frame}
 
@@ -198,6 +188,18 @@
 	\end{tabular}
 	\vspace{12pt}
 	\see{Johnston}%, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
+
+	\vspace{12pt}
+	% Rousseau "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
+	Rousseau, ``Handbook of Separation Technology'': {\scriptsize market sizes in 1983}
+
+	\begin{tabular}{ll}\\
+		\textbf{Adsorbent}				&	\textbf{Market size} \vspace{6pt}\\ \hline 
+			Activated carbon 			&	\$ 380 million $\longleftarrow$ 25\% for water treatment \\
+			Molecular-sieve zeolites 	&	\$ 100 million  \\
+			Silica gel					&	\$ 27 million  \\
+			Activated alumina			&	\$ 26 million
+	\end{tabular}
 \end{frame}
 
 \begin{frame}\frametitle{Pore diameter characterization}
@@ -261,22 +263,34 @@
 \end{frame}
 
 \begin{frame}\frametitle{Gold leaching and adsorption}	
-	\begin{itemize}
-		\item	Crushed rock has gold particles exposed
-		\item	Leaching: $4\text{Au} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \longrightarrow  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
-		\item	Adsorption: aurocyanide complex, $\text{Au(CN)}_2^{-}$, is adsorbed onto activated carbon
+	\begin{columns}[c]
+		\column{1.08\textwidth}			
 			\begin{itemize}
-				\item	drives the equilibrium in the leaching step forward
-				\item	separates the gold from the pulp (slurry)
-				\item	obtain $C_\text{A,s}$ = 8000 grams of Au per tonne of carbon
-			\end{itemize}
-		\item	Desorption: 
+				\item	Crushed rock has gold particles exposed
+				\item	Leaching: $4\text{Au} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \longrightarrow  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
+				\item	Adsorption: aurocyanide complex, $\text{Au(CN)}_2^{-}$, is adsorbed onto activated carbon
+					\begin{itemize}
+						\item	drives the equilibrium in the leaching step forward
+						\item	separates the gold from the pulp (slurry)
+						\item	obtain $C_\text{A,s}$ = 8000 grams of Au per tonne of carbon
+					\end{itemize}
+			\end{itemize}			
+	\end{columns}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
 			\begin{itemize}
-				\item	separate the highly concentrated gold-carbon pulp (screens/filter)
-				\item	desorb the gold off the carbon with caustic contact
-				\item	recycle the regenerated carbon
+				\item	Desorption: 
+					\begin{itemize}
+						\item	separate the highly concentrated gold-carbon pulp (screens/filter)
+						\item	desorb the gold off the carbon with caustic contact
+						\item	recycle the regenerated carbon
+					\end{itemize}
 			\end{itemize}
-	\end{itemize}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Batch-adsorption-Seader-3ed-p610.png}
+			\end{center}
+	\end{columns}		
 \end{frame}
 
 \begin{frame}\frametitle{When to consider adsorption}
@@ -297,6 +311,9 @@
 		\item	only the surface of the adsorbent used
 		\item	regeneration of MSA adsorbent required
 		\item	MSA will break down mechanically over time
+		\begin{itemize}
+			\item	{\color{myOrange}{we can pump it, filter it, and/or put it through cyclones}}
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
@@ -378,6 +395,8 @@
 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Packed-bed-CR-v2-5ed-p1028-1.png}
 	\end{center}
 	\see{Richardson and Harker, p 1028}
+	
+	Regeneration: puts the adsorbate in a new solvent or medium, usually at a higher concentration than it was at originally, or at least in a medium that is much easier to separate from.
 \end{frame}
 
 \begin{frame}\frametitle{Rotary devices}
@@ -396,10 +415,24 @@
 	\see{Uhlmanns, p 560}
 	
 	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
+	
+	% From Rousseau:
+	
+	% The problems associated with moving-bed processes have been solved by the development of the simulated moving bed.
+	% This process, the bed is maintained stationary, and the feed and the displacement-liquid inlets and the two product outlets are moved as a function of time. In addition, the displacement liquid is continuously circulated by a pump from the bottom to the top of the bed. The most widely used version of this scheme is the Sorbex process, developed by Universal Oil Products, Inc. (UOP). A schematic diagram is given in Fig. 12.5-10. The lines shown as open are 2, 5, 9, and 12. After a short period of time each of the first three streams is moved to the next-higher-number point by the rotary valve. The less-adsorbed product line is switched from 12 to 1. During subsequent time periods the four lines are moved in the same manner. A more detailed description is given in Ref. 26.
+	% Other versions of the simulated moving-bed process have been commercialized by Toray Industries,
+	% This process can also be thought of as a variation of a displacement-purge cycle. In this
+	% 27 28 29 Inc. ' and Mitsubishi Chemical Industries, Ltd.
+	% These processes vary from the Sorbex technology in
+	% details rather than in their basic concept.
+	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
+	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
+	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
+	
+	
 \end{frame}
 
 \begin{frame}\frametitle{TO INCLUDE}
-	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.19.51 .png
 	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.20.09 .png
 	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.19.36 .png
 	/Users/kevindunn/Sync/Figures/separations/adsorption/Screen Shot 2012-11-05 at 17.19.22 .png
@@ -465,17 +498,25 @@
 
 \begin{frame}\frametitle{Equilibrium modelling: Freundlich model}
 	\begin{exampleblock}{Freundlich}
-		\[C_\text{A,s} = K C_\text{A}^m\]
+		\[C_\text{A,S} = K \left(C_\text{A}\right)^{1/m}\qquad \text{for $ 1 < m < 5$}\] 
 	\end{exampleblock}
 
 	\vspace{12pt}
 	\begin{itemize}
 		\item	It is an empirical model, but it works well
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth]{\imagedir/separations/adsorption/Freundlich-isotherm.png}
+	\end{center}
+	
+	\begin{itemize}
 		\item	Constants determined from a log-log plot
+		\item	How would you go about setting up a lab experiment to collect data to calculate $K$?
+		\item	Which way will the isotherm shift if temperature is increased?
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Langmuir isotherm derivation}
+\begin{frame}\frametitle{Equilibrium modelling: Langmuir isotherm}
 	% Derivation from Fogler, p 422, Chapter 10
 	\begin{itemize}
 		\item	we have a uniform adsorbent surface available {\tiny (all sites equally attractive)}
@@ -491,7 +532,8 @@
 		\item	net rate = $k_\text{A} P_\text{A} C_\text{V} - k_{-\text{A}} C_\text{A,S}$  
 	\end{itemize}
 \end{frame}
-\begin{frame}\frametitle{Langmuir isotherm derivation}
+
+\begin{frame}\frametitle{Equilibrium modelling: Langmuir isotherm}
 	\begin{itemize}
 		\item	Net rate = $k_\text{A} P_\text{A} C_\text{V} - k_{-\text{A}} C_\text{A,S}$  
 		\item	define $K_\text{A} = \displaystyle\frac{k_\text{A}}{k_{-\text{A}}}$
@@ -502,7 +544,7 @@
 		\item	but total sites = $C_\text{T} = C_\text{V} + C_\text{A,S}$
 		\item	so $\displaystyle\frac{k_\text{A}C_\text{A,S}}{K_A} = k_\text{A} P_\text{A} \left(C_\text{T} -  C_\text{A,S}\right)$  
 		\item	simplifying: $C_\text{A,S} = K_\text{A} P_\text{A} \left(C_\text{T} -  C_\text{A,S}\right)$  
-		\item	then \fbox{$C_\text{A,S} = \displaystyle \frac{K_\text{A}C_\text{T} P_\text{A}}{1 + K_\text{A} P_\text{A}} = \displaystyle \frac{K_1 P_\text{A}}{1 + K_2 P_\text{A}}$}
+		\item	then \fbox{$C_\text{A,S} = \displaystyle \frac{K_\text{A}C_\text{T} P_\text{A}}{1 + K_\text{A} P_\text{A}} = \displaystyle \frac{K_1 P_\text{A}}{1 + K_2 P_\text{A}} = \displaystyle \frac{K_3 C_\text{A}}{1 + K_4 C_\text{A}}$}
 		\item	Fit data using \href{http://en.wikipedia.org/wiki/Eadie\%E2\%80\%93Hofstee\_plot}{Eadie-Hofstee diagram} or nonlinear regression
 		\item	Same structure as Michaelis-Menten model (bio people)
 	\end{itemize}
@@ -512,7 +554,8 @@
 	We aren't always sure which isotherm fits a given adsorbate-adsorbent pair:
 	\begin{enumerate}
 		\item	Postulate a model (e.g. linear, or Langmuir)
-		\item	Fit the equation to the data
+		\item	Perform a laboratory experiment to collect the data
+		\item	Fit the model to the data
 		\item	Good fit? 
 	\end{enumerate}
 	
@@ -526,66 +569,87 @@
 	These are far more flexible models (more parameters); e.g. Langmuir isotherm is a special case of the BET isotherm.
 \end{frame}
 
+\begin{frame}\frametitle{Understanding adsorption in packed beds}
+	\begin{center}
+		% Lukchis article
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Lukchis-MTZ-illustration-part-1.png}
+	\end{center}
+\end{frame}
 
-% \begin{frame}\frametitle{}
-% 	\begin{enumerate}
-% 		\item	Equilibrium
-% 		\item	Kinetics
-% 		\item	Diffusion
-% 	\end{enumerate}	
+\begin{frame}\frametitle{Understanding adsorption in packed beds}
+	\begin{center}
+		% Lukchis article
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Lukchis-MTZ-illustration-part-2.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Lukchis}
+	\vspace{-6pt}
+	\begin{columns}[t]
+		\column{1.1\textwidth}
+			\begin{itemize}
+				\item	{\small $X$ = concentration in the bulk of the bed = $C_A$ in previous notation}
+				\item	{\small $X_e$ = concentration of adsorbate at equilibrium in the bulk= feed conc}
+				\item	{\small $X_0$ = concentration of adsorbate in the regenerated adsorbent at time 0}
+				\item	{\small $\theta_b$ = breakthrough time}
+				\item	{\small $\theta_e$ = the bed at equilibrium time; adsorbent is completely used}
+			\end{itemize}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Bed concentration just prior to breakthrough}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Ghosh (adapted), p144}
+	\vspace{6pt}
+	\begin{itemize}
+		\item	{\color{purple}{MTZ}}: mass transfer zone is where adsorption takes place
+		\item	{\color{purple}{Equilibrium zone}}: this is where the isotherm applies!
+		\item	{\color{purple}{Breakthrough}}: arbitrarily defined as either (a)  the lower limit of adsorbate detection, or (b) the maximum allowable adsorbate in effluent. Around 1 to 5\% of $C_\text{A,feed}$.
+	\end{itemize}
+	
+\end{frame}
+
+% \begin{frame}\frametitle{Next steps}
+% 	What is the purpose of the MTZ curves to troubleshoot or operate a packed bad
+% 	Describe how Langmuir isotherms are favourable
+% 	WES
+% 	LUB
+% 	LES
+% 	Space velocity.
+%   Usable capacity
+%   Scale up from lab data (Geankoplis)
 % \end{frame}
-% 
-% \begin{frame}\frametitle{Isotherms}
-% 	Why required?
-% 	
-% 	How are they found; calculated?
+%
+% \begin{frame}\frametitle{Fitting a model to data}
+%	Batch system example in Ghosh's and/or Geankoplis
+% 	Example from UCT practical
+%   For a given isotherm,  and feed concentration, calculate the separation factor at equilibrium
 % \end{frame}
-% 
-% 
-% \begin{frame}\frametitle{Favourable vs unfavourable isotherms}
-% 	
-% \end{frame}
-% 
-% \begin{frame}\frametitle{Multicomponent isotherms}
-% 	
-% \end{frame}
-% 
-% \begin{frame}\frametitle{Modelling of diffusion, heat transfer and mass transfer}
-% 	
-% \end{frame}
-% 
-% \begin{frame}\frametitle{Batch system}
-% 	
-% \end{frame}
-% 
+
+ 
+% Topics to consider for future: 
+% Multicomponent isotherms
+% Describe pressure swing adsoprtion: see Seader, p 610 in their book for a good description
+% Schweitzer book: any missing topics
+% Modelling of diffusion, heat transfer AND mass transfer
 % \begin{frame}\frametitle{Potential theory}
 % 	/Users/kevindunn/Sync/Figures/separations/adsorption/CR-v2-5ed-p991.png
 % \end{frame}
 
-% \begin{frame}\frametitle{Some more terminology}
-% 	\begin{itemize}
-% 		\item	Breakpoint
-% 		\item	Isotherm
-% 		\item	Usable capacity
-% 		\item	Superficial velocity
-% 		\item	Regeneration: puts the adsorbate in a new solvent or medium, usually at a higher concentration than it was at originally, or at least in a medium that is much easier to separate from.
-% 			\begin{itemize}
-% 				\item	use high temperatures to ensure desorption is fast
-% 			\end{itemize}
-% 	\end{itemize}
-% \end{frame}
-
-\begin{frame}\frametitle{References}
+\begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 3.1
-		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 15
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 17
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 12
 		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 8
-		\item	Perry's Chemical Engineers' Handbook, Chapter 22
-		\item	Uhlmann's Encyclopedia, ``Adsorption'',  \href{http://dx.doi.org/10.1002/14356007.b03\_09.pub2}{DOI:10.1002/14356007.b03\_09.pub2}
-		\item	Wankat, ``Separation Process Engineering'', Chapter 16
 		\item	Johnston, ``Designing Fixed-Bed Adsorption Columns'', \emph{Chemical Engineering}, p 87-92, 1972
+		\item	Lukchis, ``Adsorption Systems: Design by Mass-Transfer-Zone Concept'', \emph{Chemical Engineering}, 1973.
+		\item	Perry's Chemical Engineers' Handbook, Chapter 22
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 17	
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 3.1
+		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 15
+		\item	Uhlmann's Encyclopedia, ``Adsorption'', {\tiny \href{http://dx.doi.org/10.1002/14356007.b03\_09.pub2}{DOI:10.1002/14356007.b03\_09.pub2}}
+		\item	Wankat, ``Separation Process Engineering'', Chapter 16
 	\end{itemize}
 \end{frame}
 
