@@ -274,7 +274,7 @@
 					\begin{itemize}
 						\item	drives the equilibrium in the leaching step forward
 						\item	separates the gold from the pulp (slurry)
-						\item	obtain $C_\text{A,s}$ = 8000 grams of Au per tonne of carbon
+						\item	obtain $C_\text{A,S}$ = 8000 grams of Au per tonne of carbon
 					\end{itemize}
 			\end{itemize}			
 	\end{columns}
@@ -367,14 +367,6 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Adsorption equipment}
-	Adsorption, Desorption and Recovery (ADR) plant in Burkina Faso
-	\begin{center}
-		\includegraphics[width=0.85\textwidth]{\imagedir/separations/adsorption/flickr-5043854546_4ff634cc5a_b.jpg}
-	\end{center}
-	\see{\href{http://www.flickr.com/photos/isurusen/5043854546/}{Flickr \#5043854546}}
-\end{frame}
-
 \begin{frame}\frametitle{Fluidized beds}
 	\begin{columns}[t]
 		\column{0.80\textwidth}
@@ -396,6 +388,16 @@
 				\item	Bleed off old adsorbent and continuously replenish
 			\end{itemize}
 	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{(Fluidized bed?) example}
+	Adsorption, Desorption and Recovery (ADR) plant in Burkina Faso
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/adsorption/flickr-5043854546_4ff634cc5a_b.jpg}
+	\end{center}
+	\vspace{-12pt}
+	\see{\href{http://www.flickr.com/photos/isurusen/5043854546/}{Flickr \#5043854546}}
+	\emph{Zoom in on the high resolution photo to see details.}
 \end{frame}
 
 \begin{frame}\frametitle{Packed beds: adsorption and desorption steps}
@@ -426,6 +428,7 @@
 	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
 	
 	% Over 100 commercial installations
+	% It simulates counter-current operation,since true counter-current operation is not possible without axial mixing and damage to the adsorbent, this approach works very well.
 	
 	% From Rousseau:
 	
@@ -476,13 +479,13 @@
 
 \begin{frame}\frametitle{Equilibrium modelling: linear model}
 	\begin{exampleblock}{Linear isotherm (Henry's law)}
-		\[C_\text{A,s} = K C_\text{A}\]
-		\[C_\text{A,s} = \frac{K P_\text{A}}{RT} = K' P_\text{A}\]
+		\[C_\text{A,S} = K C_\text{A}\]
+		\[C_\text{A,S} = \frac{K P_\text{A}}{RT} = K' P_\text{A}\]
 	\end{exampleblock}
 	\begin{columns}[t]
 		\column{1.1\textwidth}
 			\begin{itemize}
-				\item	{\small $C_\text{A,s} =$ concentration of adsorbate A on adsorbent surface \hfill $\left[\displaystyle \frac{\text{kg adsorbate}}{\text{kg adsorbent}}\right]$}
+				\item	{\small $C_\text{A,S} =$ concentration of adsorbate A on adsorbent surface \hfill $\left[\displaystyle \frac{\text{kg adsorbate}}{\text{kg adsorbent}}\right]$}
 				\item	{\small $C_\text{A} =$ concentration of adsorbate A in the bulk fluid phase \hfill $\left[\displaystyle \frac{\text{kg adsorbate}}{\text{m}^3~ \text{fluid}}\right]$}
 				\item	{\small $P_\text{A} =$ partial pressure of adsorbate A in the bulk fluid phase \hfill $\left[ \text{atm}\right]\,$}
 				\item	{\small $K$ and $K'$ are temperature dependent equilibrium constants {\tiny (should be clear why)}}
@@ -592,47 +595,189 @@
 		% Lukchis article
 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Lukchis-MTZ-illustration-part-2.png}
 	\end{center}
-	\vspace{-12pt}
+	\vspace{-16pt}
 	\see{Lukchis}
-	\vspace{-6pt}
+	\vspace{-18pt}
 	\begin{columns}[t]
 		\column{1.1\textwidth}
 			\begin{itemize}
-				\item	{\small $X$ = concentration in the bulk of the bed = $C_A$ in previous notation}
-				\item	{\small $X_e$ = concentration of adsorbate at equilibrium in the bulk = feed conc}
-				\item	{\small $X_0$ = concentration of adsorbate in the \sout{regenerated adsorbent} at time 0}
+				\item	{\small $C_\text{A,S}$ = concentration of adsorbate on adsorbent}
+				\item	{\small $C_\text{A,S}^e$ = concentration at equilibrium on the adsorbent}
+				\item	{\small $C_\text{A,S}^0$ = concentration on the regenerated adsorbent at time 0}
 				\item	{\small $\theta_b$ = breakthrough time}
 				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used}
+				\item	{\small $C_\text{A,S}$ values are not measurable; outlet concentration $C_\text{A}$ is easy}
 			\end{itemize}
 	\end{columns}	
 \end{frame}
 
 \begin{frame}\frametitle{Bed concentration just prior to breakthrough}
 	\begin{center}
-		\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
 	\end{center}
 	\vspace{-12pt}
 	\see{Ghosh (adapted), p144}
 	\vspace{6pt}
-	\begin{itemize}
-		\item	{\color{purple}{MTZ}}: mass transfer zone is where adsorption takes place
-		\item	{\color{purple}{Equilibrium zone}}: this is where the isotherm applies!
-		\item	{\color{purple}{Breakthrough}}: arbitrarily defined as either (a)  the lower limit of adsorbate detection, or (b) the maximum allowable adsorbate in effluent. Around 1 to 5\% of $C_\text{A,feed}$.
-	\end{itemize}
-	
+	{\small
+		\begin{itemize}
+			\item	{\color{purple}{MTZ}}: mass transfer zone is where adsorption takes place. Assumed to be from 5 to 95\% of the concentration range.
+			\item	It is S-shaped: indicates there is mass-transfer resistance.
+			\item	{\color{purple}{Equilibrium zone}}: this is where the isotherm applies!
+			\item	{\color{purple}{Breakthrough}}: arbitrarily \textbf{defined as time} when either (a)  the lower limit of adsorbate detection, or (b) the maximum allowable adsorbate in effluent leaves the bed. Usually around 1 to 5\% of $C_\text{A,F}$
+		\end{itemize}	
+	}
 \end{frame}
 
-% \begin{frame}\frametitle{Next steps}
-% 	What is the purpose of the MTZ curves to troubleshoot or operate a packed bad
-% 	Describe how Langmuir isotherms are favourable
-% 	WES
-% 	LUB
-% 	LES
-% 	Space velocity.
-%   Usable capacity
-%   Scale up from lab data (Geankoplis)
+\begin{frame}\frametitle{Regenerating the bed}
+	\begin{exampleblock}{Aim}
+		To remove adsorbate from the packed bed.
+	\end{exampleblock}
+	
+	1: Temperature swing adsorption (TSA)
+	\begin{itemize}
+		\item	heat the bed: usually steam is used (due to high latent heat)
+		\item	creates a thermal wave through the packed bed
+		\item	isotherm at higher temperature is shifted down
+		\item	causes the adsorbate to be diluted in the stripping fluid
+		\item	often leave residual solvent, since time to completely strip adsorbent would be excessive
+		\item	care must be taken with flammable adsorbates:
+		\begin{itemize}
+			\item	stripping temperature are high
+			\item	often near flammable limits
+			\item	carbon beds have been known to catch fire
+		\end{itemize}
+	\end{itemize}
+	\emph{See illustration on next page}
+\end{frame}
+
+\begin{frame}\frametitle{Regenerating the bed}
+	2.	Pressure swing adsorption (PSA)
+	\begin{itemize}
+		\item	used when the ``product'' is the cleaned (stripped) fluid
+		\item	add feed with adsorbate at high pressure (loads the adsorbate)
+		\item	drop the pressure and the adsorbate starts to desorb
+		\item	run two beds in parallel (one desorbing, the other adsorbing)
+		\item	widely used for portable oxygen generation, $\text{H}_2\text{S}$ capture in refineries		
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{\imagedir/separations/adsorption/pressure-and-temperature-swing-Seader-p610.png}
+	\end{center}
+	\see{Seader, 3ed, p610}
+\end{frame}
+
+\begin{frame}\frametitle{Example (and some theory)}
+	An adsorbate in vapour is adsorbed in an experimental packed bed. The inlet contains $C_\text{A,F} = 600$ ppm of adsorbate. Data measuring the outlet concentration over time from the bed are plotted below:
+	
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{\imagedir/separations/adsorption/example-Geankoplis-p768.png}
+	\end{center}
+	\vspace{-24pt}
+	\see{Geankoplis, 4ed, p 768}
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	\vspace{-12pt}
+	\begin{columns}[t]
+		\column{1.05\textwidth}			
+		\begin{enumerate}
+			\item	Determine the breakpoint time, $\theta_b$ \iftoggle{instructor}{[{\color{myOrange}{Ans:}} 3.65 hours]}{}		
+			\pause
+			\item	What is the usable capacity of the bed? \iftoggle{instructor}{[{\color{myOrange}{Ans:}} the area $A_1$, up to time $\theta_b = 3.65~\text{hours}$]}{}
+			\pause
+				\begin{itemize}
+					\item	Note total plot area = ``total time'', since ``height'' of y-axis = 1.0
+					\item	Note: (area up to $\theta_b$) $\approx \theta_b$  when using a normalized y-axis
+				\end{itemize}
+			\begin{center}
+				\includegraphics[width=0.45\textwidth]{\imagedir/separations/adsorption/example-Geankoplis-p768.png}
+			\end{center}
+
+			\item	How long does it take to reach this capacity? 3.65 \text{hours}, but if we want to be exact, it is $t_\text{used} = \displaystyle \int_0^{\theta_B}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt} \approx 3.65$
+		\end{enumerate}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	\vspace{-12pt}
+	\begin{columns}[t]
+		\column{1.1\textwidth}			
+		\begin{enumerate}
+			\setcounter{enumi}{3}
+			\item	But what actual fraction of the bed's capacity is used at $\theta_b$?		
+				\begin{center}
+					\includegraphics[width=0.7\textwidth]{\imagedir/separations/adsorption/various-times-from-bed.png}
+				\end{center}
+				\vspace{-12pt}
+				\begin{itemize}
+					\item	The actual capacity used is the total shaded area = $A_1 + A_2$
+					\item	This is called the {\color{purple}{stoichiometric capacity}} of the bed 
+					\item	Ideally, if there were no mass transfer resistance (i.e. spread in the breakthrough curve), then the
+					\item	{\color{purple}{stoichiometric time}}, $\theta_S$, is defined as \textbf{time taken} for this actual capacity to be used
+					\item	$\theta_S$ is the point that breaks the MTZ into equal areas: in this case, $A_2$ \emph{vs} the unshaded area
+					\item	{\scriptsize $\theta_S = \displaystyle \int_0^{\infty}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt}$ = shaded area = $A_1 + A_2 = 3.65 + 1.5 = 5.15$ hrs}
+					\item	So actual bed capacity used at $\theta_b = \displaystyle\frac{t_\text{used}}{\theta_S}$ = 3.65/5.15 hours {\color{myOrange}{$\sim71\%$}}  
+				\end{itemize}
+		\end{enumerate}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	\vspace{-12pt}
+	\begin{columns}[t]
+		\column{1.1\textwidth}			
+		\begin{enumerate}
+			\setcounter{enumi}{4}
+			\item	If the lab-scale bed were originally 14cm long, what length is unused at time $\theta_b$?
+				\begin{itemize}
+					\item	intuitively: $14 - 0.71 \times 14 = 4.1$ cm
+					\item	$L_\text{UNB} = \left(1 - \displaystyle\frac{t_\text{used}}{\theta_S} \right)L_\text{total} = \left(1 - \displaystyle\frac{3.65}{5.15} \right)14 = 4.1$ cm
+					\item	where $L_\text{UNB}$ is the length of the unused bed
+					\item	and $L_\text{total}$ is the total bed length
+				\end{itemize}
+			
+			\item	If we wanted a break-point time of 7.5 hours instead, how much longer should the bed be (keeping the diameter fixed)?
+			\begin{itemize}
+				\item	Ratio the bed lengths: $\displaystyle \frac{7.5}{3.65} \times 0.71(14) = 20.4$ cm
+				\item	But that's the length to get breakthrough in 7.5 hours
+				\item	We have to add on the length of the unused bed = 4.1 cm from before (same diameter!)
+				\item	So new bed length = 20.4 + 4.1  = 24.5 cm
+				\item	And fraction used = 20.4 / 24.5 = 0.83
+			\end{itemize}
+
+		\end{enumerate}
+	\end{columns}	
+\end{frame}
+
+% \begin{frame}\frametitle{More on the MTZ}
+% 	% Details on this slide are from Schweitzer, p 3-23
+% 	\begin{itemize}
+% 		\item	Adsorbent information from vendors is published in terms of the dynamic or breakthrough capacity of a bed, for a given feed concentration.
+% 		\item	It is clear from the MTZ concept, that the bed must at least exceed the length of the MTZ.
+% 	\end{itemize}
+% 
+% 	\vspace{12pt}
+% 	MTZ is affected by
+% 	\begin{itemize}
+% 		\item	type of adsorbent
+% 		\item	particle size distribution
+% 		\item	fluid velocity through bed
+% 		\item	operating temperature (adjusts isotherm, which affects MTZ shape)
+% 		\item	concentration of contaminants
+% 	\end{itemize}
+% 
+% 	$t_b = \frac{as}{C_0 Q}\left(L-h\right)$
+% 	\begin{itemize}
+% 		\item	$L$ = bed length [m]
+% 		\item	$h$ = half-length of the MTZ [m]
+% 		\item	$Q$ = volumetric flow rate [$m^3$/s]
+% 		\item	$t_b$ = breakthrough time [s]
+% 		\item	$s$ = cross section of the adsorbent bed [$m^2$]
+% 		\item	$a$ = volumetric adsorption capacity at $c_0$ [$m^3/m^3 ??????$] = $C_{A,S} [kg/kg]$
+% 		\item	$C_0$ = adsorbate volume fraction $[m^3/m^3]  C_{A,feed} = kg/m^3$
+% 		
+% 	\end{itemize}
 % \end{frame}
-%
+
 % \begin{frame}\frametitle{Fitting a model to data}
 %	Batch system example in Ghosh's and/or Geankoplis
 % 	Example from UCT practical
@@ -648,10 +793,12 @@
 % \end{frame}
 
  
-% Topics to consider for future: 
+% Topics to consider for future:
+% What is the purpose of the MTZ curves to troubleshoot or operate a packed bad
+% 	Describe how Langmuir isotherms are favourable
+% 	Space velocity. 
 % Multicomponent isotherms
 % Describe pressure swing adsoprtion: see Seader, p 610 in their book for a good description
-% Schweitzer book: any missing topics
 % Modelling of diffusion, heat transfer AND mass transfer
 % \begin{frame}\frametitle{Potential theory}
 % 	/Users/kevindunn/Sync/Figures/separations/adsorption/CR-v2-5ed-p991.png
