@@ -3,7 +3,7 @@
 
 	EPA has compiled significant data on values of k and n for environmentally significant pollutants with typical activated carbons. Assuming equilibrium is reached, the isotherm provides the dose of carbon required for treatment. In a concurrent contacting process, the capacity is set by the required effluent concentration. In a countercurrent process, the capacity of the carbon is set by the untreated waste pollutant concentration. Thus countercurrent contacting is preferred.
 
-	Activated carbon is available in powdered form (200–400 mesh) and granular form (10–40 mesh). The latter is more expensive but is easier to regenerate and easier to utilize in a countercurrent contactor. Powdered carbon is applied in well-mixed slurry-type contactors for detention times of several hours after which separation from the flow occurs by sedimentation. Often coagulation, flocculation, and filtration are required in addition to sedimentation. As it is difficult to regenerate, powdered carbon is usually discarded after use. Granular carbon is used in column contactors with EBCT of 30 minutes to 1 hour. Often several contactors are used in series, providing for full countercurrent contact. A single contactor will provide only partial countercurrent contact. When a contactor is exhausted, the carbon is regenerated either by a thermal method or by passing a solvent through the contactor. For waste-treatment applications where a large number of pollutants must be removed but the quantity of each pollutant is small, thermal regeneration is favored. In situations where a single pollutant in large quantity is removed by the carbon, solvent extraction regeneration can be used, especially where the pollutant can be recovered from the solvent and reused. Thermal regeneration is a complex operation. It requires removal of the carbon from the contactor, drainage of free water, transport to a furnace, heating under controlled conditions of temperature, oxygen, time, water vapor partial pressure, quenching, transport back to the reactor, and reloading of the column. Five to ten percent of the carbon is lost in this regeneration process due to burning and attrition during each regeneration cycle. Multiple hearth, rotary kiln, and fluidized bed furnaces have all been successfully used for carbon regeneration.
+	Activated carbon is available in powdered form (200-400 mesh) and granular form (10-40 mesh). The latter is more expensive but is easier to regenerate and easier to utilize in a countercurrent contactor. Powdered carbon is applied in well-mixed slurry-type contactors for detention times of several hours after which separation from the flow occurs by sedimentation. Often coagulation, flocculation, and filtration are required in addition to sedimentation. As it is difficult to regenerate, powdered carbon is usually discarded after use. Granular carbon is used in column contactors with EBCT of 30 minutes to 1 hour. Often several contactors are used in series, providing for full countercurrent contact. A single contactor will provide only partial countercurrent contact. When a contactor is exhausted, the carbon is regenerated either by a thermal method or by passing a solvent through the contactor. For waste-treatment applications where a large number of pollutants must be removed but the quantity of each pollutant is small, thermal regeneration is favored. In situations where a single pollutant in large quantity is removed by the carbon, solvent extraction regeneration can be used, especially where the pollutant can be recovered from the solvent and reused. Thermal regeneration is a complex operation. It requires removal of the carbon from the contactor, drainage of free water, transport to a furnace, heating under controlled conditions of temperature, oxygen, time, water vapor partial pressure, quenching, transport back to the reactor, and reloading of the column. Five to ten percent of the carbon is lost in this regeneration process due to burning and attrition during each regeneration cycle. Multiple hearth, rotary kiln, and fluidized bed furnaces have all been successfully used for carbon regeneration.
 
 	Pretreatment prior to carbon adsorption is usually for removal of suspended solids. Often this process is used as tertiary treatment after primary and biological treatment. In either situation, the carbon columns must be designed to provide for backwash. Some solids will escape pretreatment, and biological growth will occur on the carbon, even with extensive pretreatment. Originally carbon treatment was viewed only as applicable for removal of toxic organics or those that are difficult to degrade biologically. Present practice applies carbon adsorption as a procedure for removal of all types of organics. It is realized that some biological activity will occur in virtually any activated carbon unit, so the design must be adjusted accordingly.
 \end{comment}
@@ -577,7 +577,7 @@
 	Other isotherms have been proposed:
 	\begin{itemize}
 		\item	BET (Brunauer, Emmett and Teller) isotherm
-		\item	Gibb's isotherm
+		\item	Gibb's isotherm: allows for a multilayer of adsorbate forming
 	\end{itemize}
 	
 	These are far more flexible models (more parameters); e.g. Langmuir isotherm is a special case of the BET isotherm.
@@ -754,65 +754,130 @@
 	\end{columns}	
 \end{frame}
 
+\begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
+	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
+	
+	\begin{enumerate}
+		\item	How much adsorbent do you need? 
+		\item	At the end of the process what will be the concentration of the solution in the adsorber and concentration of A on the adsorbent? 
+	\end{enumerate}
+\end{frame}
 
-% Note that the equilibrium section is where the isotherm applies: C_{A,S} = fn (C_A). We measure C_A, so we can calculate C_{A,S} = (kg adsorbate)/(adsorbent)
-% Then if we know how much adsorbate I need to remove in a given time (theta_B) 
+\begin{frame}\frametitle{Modified from a previous exam}
+	
+	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream. A bench scale system indicates that an adsorbent follows a Langmuir adsorption isotherm as:	
+	\[
+		C_\text{A,S} = \frac{0.05C_\text{A}}{32.1 + C_\text{A}}
+	\]
+	where $C_\text{A,S}$ has units of mass over mass, and the constant has units of 32.1 ppm. In a batch tank we have an inlet flow of TME solution at 10L/min with density of 1000$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1ppm concentrations. The tank contains 15kg of initially fresh adsorbent which is retained in the tank. We wish to know:
+	
+	\begin{enumerate}
+		\item	How much TME is adsorbed when the breakthrough concentration reaches 1 ppm?
+		\item	Assuming the tank is large, allowing a long residence time, give a rough estimate of how long it will take to reach this detectable outlet concentration?
+	\end{enumerate}
+\end{frame}
 
-% \begin{frame}\frametitle{More on the MTZ}
-% 	% Details on this slide are from Schweitzer, p 3-23
-% 	\begin{itemize}
-% 		\item	Adsorbent information from vendors is published in terms of the dynamic or breakthrough capacity of a bed, for a given feed concentration.
-% 		\item	It is clear from the MTZ concept, that the bed must at least exceed the length of the MTZ.
-% 	\end{itemize}
-% 
-% 	\vspace{12pt}
-% 	MTZ is affected by
-% 	\begin{itemize}
-% 		\item	type of adsorbent
-% 		\item	particle size distribution
-% 		\item	fluid velocity through bed
-% 		\item	operating temperature (adjusts isotherm, which affects MTZ shape)
-% 		\item	concentration of contaminants
-% 	\end{itemize}
-% 
-% 	$t_b = \frac{as}{C_0 Q}\left(L-h\right)$
-% 	\begin{itemize}
-% 		\item	$L$ = bed length [m]
-% 		\item	$h$ = half-length of the MTZ [m]
-% 		\item	$Q$ = volumetric flow rate [$m^3$/s]
-% 		\item	$t_b$ = breakthrough time [s]
-% 		\item	$s$ = cross section of the adsorbent bed [$m^2$]
-% 		\item	$a$ = volumetric adsorption capacity at $c_0$ [$m^3/m^3 ??????$] = $C_{A,S} [kg/kg]$
-% 		\item	$C_0$ = adsorbate volume fraction $[m^3/m^3]  C_{A,feed} = kg/m^3$
-% 		
-% 	\end{itemize}
-% \end{frame}
 
-% \begin{frame}\frametitle{Fitting a model to data}
-%	Batch system example in Ghosh's and/or Geankoplis
-% 	Example from UCT practical
-%   For a given isotherm,  and feed concentration, calculate the separation factor at equilibrium
-% \end{frame}
+\begin{frame}\frametitle{Further questions to try}
+	\seefull{Adapted from Geankoplis question 12.2-1}
+	
+	2.5 $\text{m}^3$ of wastewater solution of 0.25 kg phenol/$\text{m}^3$ is mixed with 3.0 kg granular activated carbon until equilibrium is reached. Use the following isotherm, determined from lab values, to calculate the final equilibrium values of phenol extracted and percent recovery. Show the operating point on the isotherm. {\footnotesize Units of $C_\text{A}$ are [g per $\text{cm}^3$] and $C_\text{A,S}$ is in [grams solute per gram of activated carbon].} 
+	
+	\vspace{1pt}
+	
+	\iftoggle{instructor}{{\small [{\color{myOrange}{Ans: $C_\text{A} \approx 0.10$ g per $\text{cm}^3$, $C_\text{A,S} \approx 0.12$ g/g, recovery = 58\%}}]}}{}
+	\begin{columns}[t]
+		
+		\column{0.70\textwidth}
+			\vspace{-12pt}
+			\begin{center}
+				{\scriptsize\emph{~~~~~~~~~~Experimental isotherm data}}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/isotherm-Geankoplis-question-12-1-1.png}
+			\end{center}			
+		\column{0.30\textwidth}
+			\[C_\text{A,S} = \frac{0.145 C_\text{A}}{0.0174 + C_\text{A}}\]
+	\end{columns}	
+\end{frame}
 
-% \begin{frame}\frametitle{Laboratory testing}
-% 	As mentioned prior, diffusion and equilibrium considerations must be taken into account
-% 	\begin{itemize}
-% 		\item	Diffusion modelling is hard: partial differential equations. {\color{myOrange}{Messy!}}
-% 		\item	Just do a lab test and ``\emph{{\color{myGreen}{lump everything together}}}?''
-% 	\end{itemize}
-% \end{frame}
+\begin{comment}
+	\begin{frame}\frametitle{Representative example: solvent recovery}
+		% Uhlmanns article on "Activated carbon", vol 6, p 787
+	
+		Air velocity                       0.2-0.4 m/s
+		Air temperature                    20-40 C
+		Bed height                         0.8-1.5 m
+		Steam velocity                     0.1-0.2 m/s
+		                                   Time cycle per adsorber 
+		Adsorption                         2-6 h
+		Drying (hot air)                   0.2-0.5 h                                                   
+		Cooling (cold air)                 0.2-0.5 h
+		Solvent concentration              1-10 g/cm3
+		Solvent adsorbed per cycle         10-25 wt\%
+		Steam/solvent ratio                (2-5):1
+		Energy                             500-600 kWh/t solvent
+		Cooling water                      30-100 m3/t solvent 
+		Activated carbon                   0.5-1 kg/t solvent
+	\end{frame}
 
+	Note that the equilibrium section is where the isotherm applies: C_{A,S} = fn (C_A). We measure C_A, so we can calculate C_{A,S} = (kg adsorbate)/(adsorbent)
+	Then if we know how much adsorbate I need to remove in a given time (theta_B) 
+
+	\begin{frame}\frametitle{More on the MTZ}
+		% Details on this slide are from Schweitzer, p 3-23
+		\begin{itemize}
+			\item	Adsorbent information from vendors is published in terms of the dynamic or breakthrough capacity of a bed, for a given feed concentration.
+			\item	It is clear from the MTZ concept, that the bed must at least exceed the length of the MTZ.
+		\end{itemize}
+
+		\vspace{12pt}
+		MTZ is affected by
+		\begin{itemize}
+			\item	type of adsorbent
+			\item	particle size distribution
+			\item	fluid velocity through bed
+			\item	operating temperature (adjusts isotherm, which affects MTZ shape)
+			\item	concentration of contaminants
+		\end{itemize}
+
+		$t_b = \frac{as}{C_0 Q}\left(L-h\right)$
+		\begin{itemize}
+			\item	$L$ = bed length [m]
+			\item	$h$ = half-length of the MTZ [m]
+			\item	$Q$ = volumetric flow rate [$m^3$/s]
+			\item	$t_b$ = breakthrough time [s]
+			\item	$s$ = cross section of the adsorbent bed [$m^2$]
+			\item	$a$ = volumetric adsorption capacity at $c_0$ [$m^3/m^3 ??????$] = $C_{A,S} [kg/kg]$
+			\item	$C_0$ = adsorbate volume fraction $[m^3/m^3]  C_{A,feed} = kg/m^3$
+		
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}\frametitle{Fitting a model to data}
+		Batch system example in Ghosh's and/or Geankoplis
+		Example from UCT practical
+	  For a given isotherm,  and feed concentration, calculate the separation factor at equilibrium
+	\end{frame}
+
+	\begin{frame}\frametitle{Laboratory testing}
+		As mentioned prior, diffusion and equilibrium considerations must be taken into account
+		\begin{itemize}
+			\item	Diffusion modelling is hard: partial differential equations. {\color{myOrange}{Messy!}}
+			\item	Just do a lab test and ``\emph{{\color{myGreen}{lump everything together}}}?''
+		\end{itemize}
+	\end{frame}
  
-% Topics to consider for future:
-% What is the purpose of the MTZ curves to troubleshoot or operate a packed bad
-% 	Describe how Langmuir isotherms are favourable
-% 	Space velocity. 
-% Multicomponent isotherms
-% Describe pressure swing adsoprtion: see Seader, p 610 in their book for a good description
-% Modelling of diffusion, heat transfer AND mass transfer
-% \begin{frame}\frametitle{Potential theory}
-% 	/Users/kevindunn/Sync/Figures/separations/adsorption/CR-v2-5ed-p991.png
-% \end{frame}
+	Topics to consider for future:
+	What is the purpose of the MTZ curves to troubleshoot or operate a packed bad
+		Describe how Langmuir isotherms are favourable
+		Space velocity. 
+	Multicomponent isotherms
+	Describe pressure swing adsoprtion: see Seader, p 610 in their book for a good description
+	Modelling of diffusion, heat transfer AND mass transfer
+	\begin{frame}\frametitle{Potential theory}
+		/Users/kevindunn/Sync/Figures/separations/adsorption/CR-v2-5ed-p991.png
+	\end{frame}
+
+\end{comment}
 
 \begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}

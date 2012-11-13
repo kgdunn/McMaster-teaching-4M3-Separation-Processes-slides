@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>slides/adsorption.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -20,7 +22,7 @@
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-11-09T03:18:34Z</date>
+			<date>2012-11-12T19:39:48Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -44,10 +46,44 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>185</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>slides/adsorption.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>756</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>401</integer>
+		</dict>
+		<key>slides/ion-exchange.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>31</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>slides/ion-exchange.tex</string>
+		<string>slides/adsorption.tex</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1634, -181}, {1725, 1080}}</string>
+	<string>{{1634, -180}, {1725, 1080}}</string>
 </dict>
 </plist>
