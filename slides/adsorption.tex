@@ -682,19 +682,21 @@
 	\begin{columns}[t]
 		\column{1.05\textwidth}			
 		\begin{enumerate}
-			\item	Determine the {\color{purple}{breakpoint time}}, $\theta_b$. \pause \iftoggle{instructor}{[{\color{myOrange}{Ans: 3.65 hours}}]}{}		
-			\item	What is the {\color{purple}{usable capacity}} of the bed if we had an ideal (no mass transfer resistance) wavefront? \pause \iftoggle{instructor}{[{\color{myOrange}{Ans:}} the fractional area of $A_1$ = 3.65 / 6.9 = {\color{orange}{53\%}}]}{}
+			\item	Determine the {\color{red}{\sout{breakpoint}}} {\color{purple}{breakthrough time}}, $\theta_b$. \pause \iftoggle{instructor}{[{\color{myOrange}{\small Ans: 3.65 hours}}]}{}		
+			\item	What is the {\color{purple}{usable capacity}} of the bed \textbf{at time $\theta_b$} if we had an {\color{purple}{ideal wavefront}} (no mass transfer resistance)? \pause \iftoggle{instructor}{[{\color{myOrange}{Ans:}} the fractional area of $A_1$ = 3.65 / 6.9 = {\color{orange}{53\%}}]}{}
 			\pause
 				\begin{itemize}
 					\item	Note total plot area = ``total time'', since ``height'' of y-axis = 1.0
 					\item	Note: (area up to $\theta_b$) $\approx \theta_b$  when using a normalized y-axis
 				\end{itemize}
-			\vspace{-8pt}
 			\begin{center}
 				\includegraphics[width=0.45\textwidth]{\imagedir/separations/adsorption/example-Geankoplis-p768.png}
 			\end{center}
-			\vspace{-12pt}
-			\item	How long does it take to reach this capacity? 3.65 \text{hours}, but if we want to be exact, it is $t_\text{used} = \displaystyle \int_0^{\theta_B}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt} \approx 3.65$
+			\vspace{-6pt}
+			\item	How long does it take to reach this capacity? {\color{myOrange}{3.65 \text{hours}}}, but if we want to be exact, it is $t_\text{used} = \displaystyle \int_0^{\theta_B}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt} \approx 3.65$
+			
+			\vspace{-4pt}
+			{\tiny Ignore the tiny part missing from the integrated area.}
 		\end{enumerate}
 	\end{columns}	
 \end{frame}
@@ -707,7 +709,7 @@
 			\setcounter{enumi}{3}
 			\item	But what actual fraction of the bed's capacity is used at $\theta_b$?		
 				\begin{center}
-					\includegraphics[width=0.7\textwidth]{\imagedir/separations/adsorption/various-times-from-bed.png}
+					\includegraphics[width=0.67\textwidth]{\imagedir/separations/adsorption/various-times-from-bed.png}
 				\end{center}
 				\vspace{-12pt}
 				\begin{itemize}
@@ -715,7 +717,7 @@
 					\item	This is called the {\color{purple}{stoichiometric capacity}} of the bed 
 					\item	Ideally, if there were no mass transfer resistance (i.e. spread in the breakthrough curve), then the
 					\item	{\color{purple}{stoichiometric time}}, $\theta_S$, is defined as \textbf{time taken} for this \emph{actual capacity} to be used
-					\item	$\theta_S$ is the point that breaks the MTZ into equal areas: in this case, $A_2$ \emph{vs} the unshaded area
+					\item	$\theta_S$ is the point that breaks the MTZ into equal areas: in this case, $A_2$ \emph{vs} the unshaded area in previous diagram
 					\vspace{2pt}
 					\item	{\scriptsize $\theta_S = \displaystyle \int_0^{\infty}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt}$ = shaded area = $A_1 + A_2 = 3.65 + 1.5 = 5.15$ hrs}
 					\item	So actual bed capacity used at $\theta_b = \displaystyle\frac{t_\text{used}}{\theta_S}$ = 3.65/5.15 hours {\color{myOrange}{$\sim71\%$}}  
@@ -724,20 +726,28 @@
 	\end{columns}	
 \end{frame}
 
+\begin{frame}\frametitle{Figures to help with the example}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
+	\end{center}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/stoichiometric-time-Lukchis.png}
+	\end{center}
+\end{frame}
+
 \begin{frame}\frametitle{Example}
 	\vspace{-12pt}
 	\begin{columns}[t]
 		\column{1.1\textwidth}			
 		\begin{enumerate}
 			\setcounter{enumi}{4}
-			\item	If the lab-scale bed were originally 14cm long, what length is unused at time $\theta_b$?
+			\item	If the lab-scale bed were originally 14cm long, what ``length'' is totally unused at time $\theta_b$?
 				\begin{itemize}
 					\item	intuitively: $14 - 0.71 \times 14$ = {\color{myOrange}{4.1 cm}}
 					\item	equation: $L_\text{UNB} = \left(1 - \displaystyle\frac{t_\text{used}}{\theta_S} \right)L_\text{total} = \left(1 - \displaystyle\frac{3.65}{5.15} \right)14$ = {\color{myOrange}{4.1 cm}}
 					\item	where $L_\text{UNB}$ is the {\color{purple}{length of the unused bed}} (LUB)
 					\item	and $L_\text{total}$ is the total bed length
-					\item	LES = {\color{purple}{length of equilibrium section}} = the other part = 14.0 - 4.1 = 9.9cm
-					
+					\item	LES = {\color{purple}{length of equilibrium section}} = the other part = 14.0 - 4.1 = 9.9cm					
 				\end{itemize}
 			\vspace{6pt}
 			\pause
@@ -752,6 +762,25 @@
 			\end{itemize}
 		\end{enumerate}
 	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Bed mass balance}
+	
+	\begin{exampleblock}{Amount of material loaded into the bed up to $\theta_b$}
+		\[Q_F C_\text{A,F} \theta_b = C_\text{A,S} \rho_\text{S}  \left(1-\epsilon_b \right) A L_b \]
+	\end{exampleblock}
+
+	\begin{tabular}{llr}\vspace{6pt}
+		$Q_F $					& Feed flow rate			& $\left[ \displaystyle\frac{\text{m}^3}{\text{minute}}\right]$ \\ 	\vspace{6pt}
+		$C_\text{A,F} $			& Inlet concentration		& $\left[ \displaystyle\frac{\text{kg solute}}{\text{m}^3~\text{fluid}}\right]$ \\ 	\vspace{6pt}
+		$\theta_b$				& Breakthrough time			& $\left[ \text{minute}\right]$ \\ 	\vspace{6pt}
+		$C_\text{A,S}$			& Adsorbed solute conc		& $\left[ \displaystyle\frac{\text{kg solute}}{\text{kg adsorbent}}\right]$ \\ \vspace{6pt}		
+		$\rho_\text{S}$			& Adsorbent density			& $\left[ \displaystyle\frac{\text{kg adsorbent charged}}{\text{m}^3~\text{of packed bed}}\right]$ \\ 	\vspace{6pt}	
+		$\epsilon_b$			& Bed voidage				& $\left[ - \right]$ \\  		
+		$A L_b $				& Bed volume = area $\times$ length	& $\left[ \text{m}^3\right]$
+	\end{tabular}
+	\vspace{18pt}
+	{\color{myBlue}{Equate these to determine mass of adsorbent required.}}
 \end{frame}
 
 \begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
@@ -786,6 +815,8 @@
 	\vspace{1pt}
 	
 	\iftoggle{instructor}{{\small [{\color{myOrange}{Ans: $C_\text{A} \approx 0.10$ g per $\text{cm}^3$, $C_\text{A,S} \approx 0.12$ g/g, recovery = 58\%}}]}}{}
+	
+	
 	\begin{columns}[t]
 		
 		\column{0.70\textwidth}
