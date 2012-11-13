@@ -759,7 +759,7 @@
 	\begin{columns}[t]
 		\column{1.05\textwidth}			
 		\begin{enumerate}
-			\item	Determine the {\color{red}{\sout{breakpoint}}} {\color{purple}{breakthrough time}}, $\theta_b$. \pause \iftoggle{instructor}{[{\color{myOrange}{\small Ans: 3.65 hours}}]}{}		
+			\item	Determine the {\color{purple}{breakthrough time}}, $\theta_b$. \pause \iftoggle{instructor}{[{\color{myOrange}{\small Ans: 3.65 hours}}]}{}		
 			\item	What is the {\color{purple}{usable capacity}} of the bed \textbf{at time $\theta_b$} if we had an {\color{purple}{ideal wavefront}} (no mass transfer resistance)? \pause \iftoggle{instructor}{[{\color{myOrange}{Ans:}} the fractional area of $A_1$ = 3.65 / 6.9 = {\color{orange}{53\%}}]}{}
 			\pause
 				\begin{itemize}
@@ -844,7 +844,7 @@
 \begin{frame}\frametitle{Bed mass balance}
 	
 	\begin{exampleblock}{Amount of material loaded into the bed up to $\theta_b$}
-		\[Q_F C_\text{A,F} \theta_b = C_\text{A,S} \rho_\text{S}  \left(1-\epsilon_b \right) A L_b \]
+		\[Q_F C_\text{A,F} \theta_b = C_\text{A,S} \left(1-\epsilon_b \right) A L_b \]
 	\end{exampleblock}
 
 	\begin{tabular}{llr}\vspace{6pt}
@@ -852,7 +852,7 @@
 		$C_\text{A,F} $			& Inlet concentration				& $\left[ \displaystyle\frac{\text{kg solute}}{\text{m}^3~\text{fluid}}\right]$ \\ 	\vspace{6pt}
 		$\theta_b$				& Breakthrough time					& $\left[ \text{minute}\right]\,$ \\ 	\vspace{6pt}
 		$C_\text{A,S}$			& Adsorbed solute concentration		& $\left[ \displaystyle\frac{\text{kg solute}}{\text{kg adsorbent}}\right]$ \\ \vspace{6pt}		
-		$\rho_\text{S}$			& Adsorbent density					& $\left[ \displaystyle\frac{\text{kg adsorbent charged}}{\text{m}^3~\text{of packed bed}}\right]$ \\ 	\vspace{6pt}	
+		$\rho_\text{B}$			& Adsorbent bulk density			& $\left[ \displaystyle\frac{\text{kg adsorbent charged}}{\text{m}^3~\text{of occupied space}}\right]$ \\ 	\vspace{6pt}	
 		$\epsilon_b$			& Bed voidage						& $\left[ - \right]\,$ \\  		
 		$A L_\text{total}$		& Bed volume = area $\times$ total length	& $\left[ \text{m}^3\right]$
 	\end{tabular}
@@ -870,6 +870,7 @@
 	\end{enumerate}
 \end{frame}
 
+% 15 November 2012
 \begin{frame}\frametitle{Modified from a previous exam}
 	
 	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream. A bench scale system indicates that an adsorbent follows a Langmuir adsorption isotherm as:	
