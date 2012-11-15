@@ -2,27 +2,25 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>currentDocument</key>
-	<string>slides/adsorption.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>Makefile</string>
 			<key>lastUsed</key>
-			<date>2012-11-13T03:26:10Z</date>
+			<date>2012-11-14T00:20:12Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>4M3-course.tex</string>
 			<key>lastUsed</key>
-			<date>2012-11-13T12:46:02Z</date>
+			<date>2012-11-14T00:20:12Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>preamble.tex</string>
 			<key>lastUsed</key>
-			<date>2012-11-13T12:46:01Z</date>
+			<date>2012-11-14T00:20:12Z</date>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -46,26 +44,7 @@
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>185</integer>
 	<key>metaData</key>
-	<dict>
-		<key>slides/adsorption.tex</key>
-		<dict>
-			<key>caret</key>
-			<dict>
-				<key>column</key>
-				<integer>56</integer>
-				<key>line</key>
-				<integer>761</integer>
-			</dict>
-			<key>firstVisibleColumn</key>
-			<integer>0</integer>
-			<key>firstVisibleLine</key>
-			<integer>690</integer>
-		</dict>
-	</dict>
-	<key>openDocuments</key>
-	<array>
-		<string>slides/adsorption.tex</string>
-	</array>
+	<dict/>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>

@@ -1284,7 +1284,6 @@
 \end{frame}
 
 \begin{frame}\frametitle{Some old and new terminology}
-	
 	Recall from ultrafiltration:
 	\begin{itemize}
 		\item	$R = 1 - \displaystyle\frac{C_P}{C_F}$   
@@ -1305,7 +1304,6 @@
 	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.	
 \end{frame}
 
-% These slides were not covered: assigned as SDL
 \begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
 	\begin{enumerate}
 		\item	Usually we specify the desired cut, $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$
@@ -1324,7 +1322,22 @@
 		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
 		\item	Note then that equation 6 and 7 must be equal
 		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
-	\end{itemize}	
+	\end{itemize}
+\end{frame}
+
+% ---> Cover this new slide 2013
+\begin{frame}\frametitle{Alternative to the above}
+	\begin{itemize}\item	Specify $C_\text{F}$ and $\theta$
+		\item	Guess $C_\text{R}$ value [what's a reasonable value?]
+		\item	Calculate $C_\text{P}$ from equation 5
+		\item	If your calculated value of $C_\text{P}$ is negative or exceeds $C_\text{F}$, then repeat your guess for $C_\text{R}$, until you get a $C_\text{P}$ that lies between 0 and $C_\text{F}$ and double check also that the rejection coefficient from this $C_\text{P}$ is reasonable, around 90 to 99%.
+		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
+		\item	Note then that equation 6 and 7 must be equal
+		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
+		%Now carry on with the rest of the steps as described in the previous slide. It's interesting how simply flipping what you guess first leads to much faster convergence.
+		%If you iterate and get a negative value for CP or CR, it simply means that you must decrease your guess for that term, since you obviously can't have a negative concentration.
+		%And a final hint: this question is much better to solve on a computer, with goal seek, than by hand. There is tremendous sensitivity to initial guesses, so solving by hand will take too long.
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Nanofiltration (NF)}
