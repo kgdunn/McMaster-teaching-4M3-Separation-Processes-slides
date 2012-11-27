@@ -17,7 +17,7 @@
 \begin{frame}\frametitle{Administrative}
 	\begin{itemize}
 		\item	Assignment 5 is posted (3 questions so far); questions 4 and 5 posted by Tuesday afternoon
-		\item	Assignment 5 is due in the Chem Eng drop box by Monday at 16:00, or earlier.
+		\item	Assignment 5 is due in the Chem Eng drop box by Monday, 03 December, at 16:00, or earlier.
 		\item	Assignment 4 will be available for pick up on Thursday and Friday.
 		\item	Midterm will be available to pick up Tuesday, Thursday, Friday.
 		\item	Please fill in a course evaluation: \href{https://evals.mcmaster.ca}{https://evals.mcmaster.ca}
@@ -40,6 +40,7 @@
 		\begin{itemize}
 			\item	pharmaceuticals
 			\item	foods
+			\item	crops, grains and cereal products
 			\item	lumber, pulp and paper products
 			\item	catalysts, fine chemicals
 			\item	detergents
@@ -57,150 +58,305 @@
 \end{frame}
 
 \begin{frame}\frametitle{The nature of water in solid material}
-	p4-142 Schweitzer
-	
-\end{frame}
-
-\begin{frame}\frametitle{Equipment}
-	Multiple equipment types to dry material:
-	\begin{itemize}
-		\item	each have relative advantages and disadvantages
-		\item	our purpose is not to cover their details
-		\item	in practice: you would work in consultation with vendors
-		\item	in practice: plenty of trade literature on the topics {\color{myGreen}{(SDL\emph{!})}}
-	\end{itemize}
-	\vspace{12pt}
-	Some major distinctions though:
-	\begin{itemize}
-		\item	\textbf{{\color{myGreen}{mode of operation}}}: batch (low volume) \emph{vs} continuous
-		\item	how the \textbf{{\color{myGreen}{heat is provided}}}:
-		\begin{itemize}
-			\item	{\color{purple}{direct heat}}: convective or adiabatic; provides heat and sweeps away moisture
-			\item	{\color{purple}{indirect heat}}: non-adiabatic, i.e. by conduction or radiation; e.g microwave
-		\end{itemize}
-		\item	\textbf{{\color{myGreen}{degree of agitation}}}
-		\begin{itemize}
-			\item	stationary material
-			\item	fluidized or mixed in some way
-		\end{itemize}
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{How to choose the equipment*}
-	\begin{itemize}
-		\item	Strongly dependent of feed presentation
-		\begin{itemize}
-			\item	is it: solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
-		\end{itemize}
-		\item	Heating choice: temperature-sensitive if convective heat is directly applied
-		\item	Agitation: 
-		\begin{itemize}
-			\item	produce fines (dust hazard) or fragile material
-			\item	good mixing implies good heat distribution
-			\item	stationary product: can form hot-spots in the solid
-		\end{itemize}
-	\end{itemize}
-	
-	General choices are between:
-	\begin{enumerate}
-		\item	shelf/tray dryers
-		\item	continuous tunnels
-		\item	rotary dryers
-		\item	drums
-		\item	spray dryers
-		\item	fluidized beds
-	\end{enumerate}
-	\vspace{4pt}
-	\hrule
-	\vspace{4pt}
-	* See Schweitzer; See Perry's
-	%p4-168 Schwietzer, p4-161 and 4-162
-\end{frame}
-
-\begin{frame}\frametitle{Some equipment examples}
-	\textbf{Rotating dryer}
-	\begin{columns}[t]
+	% p4-142 Schweitzer
+	% C+R v2, Ch16, p902
+	\begin{columns}[c]
 		\column{0.60\textwidth}
+			
 			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-4-162.png}
-			\end{center}
-		\column{0.40\textwidth}
-			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-p4-161-detail.png}
-			\end{center}
-	\end{columns}
-	\see{Schweitzer, p 4-161 and 4-162}
-\end{frame}
-
-\begin{frame}\frametitle{Some equipment examples}
-	\textbf{Fluidized bed dryer}
-	\begin{columns}[t]
-		\column{0.60\textwidth}
-			\begin{center}
-				\includegraphics[height=0.75\textheight]{\imagedir/separations/drying/fluid-bed-dryer-flow-patter-Schweitzer-p4-179.png}
+				At 20$^\circ\text{C}$
+				
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/equilibrium-moisture-contents-of-solids-C+Rv2,5ed,p902.png}
 			\end{center}
 			\vspace{-12pt}
-			\see{Schweitzer, p 4-179}
-		\column{0.45\textwidth}
-			\begin{itemize}
-				\item	upward flowing air stream (elutriation)
-				\item	turbulent mixing: good heat and mass transfer
-				\item	uniform solid temperature
-				\item	solids are gently treated
-				\item	solids are retrieved via gravity and cyclones
-				\item	fluidizing air is scrubbed before being vented
-			\end{itemize}
+			\see{Richardson and Harker, p 902}
+		\column{0.50\textwidth}
+			Material, when exposed to air with a certain humidity, will reach equilibrium with that air.
+			
+			\vspace{12pt}
+			
+			\begin{enumerate}
+				\item	\textbf{Bound moisture}
+				\begin{itemize}
+					\item	adsorbed into material's capillaries and surfaces
+					\item	or in cell walls of material
+					\item	its vapour pressure is below water's partial pressure at this $T$
+				\end{itemize}
+				\item	\textbf{Free moisture}
+				\begin{itemize}
+					\item	water in excess of the above equilibrium water
+				\end{itemize}
+			\end{enumerate}
 	\end{columns}
 \end{frame}
+
+\begin{frame}\frametitle{Drying: the heat and mass transfer view points}
+	
+	\begin{exampleblock}{}
+		\begin{center}
+			{\color{myGreen}{Both heat and mass transfer occur simultaneously}}
+		\end{center}
+	\end{exampleblock}
+	
+	\vspace{12pt}
+	\begin{columns}[t]
+		\column{0.50\textwidth}
+			\textbf{Mass transfer}
+			\begin{itemize}
+				\item	Bring liquid from interior of product to surface
+				\item	Vapourization of liquid at/near the surface
+				\item	Transport of vapour into the bulk gas phase
+			\end{itemize}
+		\column{0.55\textwidth}
+			\textbf{Heat transfer} from bulk gas phase to solid phase: 
+			\begin{itemize}
+				\item	portion of it used to vapourize the liquid ({\color{purple}{latent heat}})
+				\item	portion remains in the solid as ({\color{purple}{sensible heat}})
+			\end{itemize}
+	\end{columns}
+	\vspace{24pt}
+	Key point: heat to vapourize the liquid is provided by the air stream
+	%\todo{Figure here}
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{center}
+		\includegraphics[width=0.85\textwidth]{\imagedir/separations/drying/Phase_diagram_of_water.svg.png}
+	\end{center}
+	\see{\href{http://en.wikipedia.org/wiki/File:Phase\_diagram\_of\_water.svg}{Wikipedia File:Phase\_diagram\_of\_water.svg}}
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{itemize}	
+		\item	{\color{purple}{Partial pressure}}, recall, is the pressure due to water vapour in the water-air mixture
+		\item	{\color{purple}{Vapour pressure}}, is the pressure exerted by (molecules of liquid water in the solid) on the gas phase in order to escape into the gas [a measure of volatility]
+	\end{itemize}
+	\begin{exampleblock}{}
+		Moisture evaporates from a wet solid only when its vapour pressure exceeds the partial pressure
+	\end{exampleblock}
+	\begin{itemize}
+		\item	Vapour pressure can be raised by heating the wet solid
+	\end{itemize}
+\end{frame}
+
+% \item	Absolute humidity
+% \item	Relative humidity (dimensionless?)
+% \item	Wet bulb temperature
+
+\begin{frame}\frametitle{Psychrometric chart}
+	\vfill
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis.png}
+	\end{center}
+	\see{Geankoplis, p568; multiple internet sources have this chart digitized}
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{itemize}
+		\item	{\color{purple}{Dry bulb temperature}}: or just $T$ = ``\emph{temperature}'' {\tiny (nothing new here)}
+		\begin{itemize}
+			\item	the horizontal axis on the psychrometric chart
+		\end{itemize}
+		\item	{\color{purple}{Humidity}} = $\psi$ = mass of water vapour per kilogram of dry air
+		\begin{itemize}
+			\item	units are $ \left[ \displaystyle \frac{\text{kg water vapour}}{\text{kg dry air}}\right]$ 
+			\item	called $H$ in many textbooks; always confused with enthalpy; so we will use $\psi$
+			\item	units do not cancel, i.e. not dimensionless
+			\item	the vertical axis on the psychrometric chart
+		\end{itemize}
+		\item	Maximum amount of water air can hold at a given $T$:
+			\begin{itemize}
+				\item	$\psi_S$ = {\color{purple}{saturation humidity}}
+				\item	move up vertically to 100\% humidity
+			\end{itemize}
+		\item	{\color{purple}{Percentage humidity}} = $\displaystyle \frac{\psi}{\psi_S}\times 100$	
+		\vspace{4pt}
+		\item	{\color{purple}{Partial pressure}} we said is the pressure due to water vapour in the water-air mixture
+		\vspace{4pt}
+		\begin{itemize}
+			\item	$\psi = \displaystyle \frac{\text{mass of water vapour}}{\text{mass of dry air}} = \displaystyle \frac{18.02}{28.97}\frac{p_A}{P-p_A}$
+			\item	$p_A$ = partial pressure of water in the air
+			\item	$P$ = total pressure = 101.325 kPa in this psychrometric chart
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{itemize}
+		\item	{\color{purple}{Dew point}}: the temperature to which you must cool the air/vapour mixture to just obtain saturation (100\% humidity), i.e. condensation just starts to occur.
+	\end{itemize}
+	
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis-dew-point.png}
+	\end{center}
+	
+	\textbf{Example:} Air at 65\degC$\,$ and 10\% humidity has a dew point temperature of 25\degC. This parcel of air contains 0.021 kg of water per kilogram of dry air.
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{itemize}
+		\item	 {\color{purple}{Humid heat}}: amount of energy to raise 1kg of air and the water vapour it contains by 1\degC
+		
+		\begin{exampleblock}{}
+			\[c_S = 1.005 + 1.88\psi\]
+		\end{exampleblock}
+		\begin{itemize}
+			\item	$c_S$ has units $\left[\displaystyle \frac{\text{kJ}}{\text{(kg dry air)(K)}} \right]$
+			\item	1.005 $\left[\displaystyle \frac{\text{kJ}}{\text{(kg dry air)(K)}} \right]$ is heat capacity of dry air
+			\item	1.88 $\left[\displaystyle \frac{\text{kJ}}{\text{(kg water vapour)(K)}} \right]$ is heat capacity of water
+			\item	$\psi$ is the humidity $ \left[ \displaystyle \frac{\text{kg water vapour}}{\text{kg dry air}}\right]$ 
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Terminology: adiabatic saturation}
+	Consider a stream of air at temperature $T$ and humidity $\psi$. It contacts fine water droplets long enough to reach equilibrium. The leaving gas has temperature $T_S$ and humidity $\psi_S$.
+		
+	\begin{center}
+		\includegraphics[width=.95\textwidth]{\imagedir/separations/drying/saturation-temperature-Geankoplis-p570.png}
+	\end{center}
+	
+	We expect outlet gas: $T_S < T$ and $\psi_S > \psi$
+	
+	\vspace{6pt}
+	The energy to evaporate liquid water into the leaving air stream comes from the air.
+\end{frame}
+
+\begin{frame}\frametitle{Terminology: adiabatic saturation}
+	Quantify it: do an enthalpy balance at $T_\text{ref} = T_S$ {\scriptsize (i.e. disregard water)}
+	\begin{center}
+		\includegraphics[width=0.4\textwidth]{\imagedir/separations/drying/saturation-temperature-Geankoplis-p570.png}
+	\end{center}
+	\vspace{-6pt}
+	\begin{exampleblock}{Enthalpy of vapour phase entering:}
+		\[c_S\left(T - T_S \right) + (\psi) (\Delta H_\text{vap})\]
+	\end{exampleblock}
+	\begin{exampleblock}{Enthalpy of vapour phase leaving:}
+		\[c_S\left(T_S - T_S \right) + (\psi_S) (\Delta H_\text{vap})\]
+	\end{exampleblock}
+	
+	\[	
+		\displaystyle \frac{y\text{-axis change}}{x\text{-axis change}} = \frac{\psi - \psi_S}{T - T_S} = - \frac{c_S}{\Delta H_\text{vap}} = \frac{1.005 + 1.88 \psi}{\Delta H_\text{vap}}
+	\]
+	These are the diagonal sloped lines on the psychrometric chart: {\color{purple}{adiabatic saturation curves}}.
+\end{frame}
+
+\begin{frame}\frametitle{Exercise}
+	An air stream at 70\degC$\,$ and carrying 0.055 kg water per kg dry air is adiabatically contacted with liquid water until it reaches equilibrium. The process is continuous and operating at steady-state.
+	
+	\begin{enumerate}
+		\item	What is the percentage humidity of the incoming air stream?
+		\item	What is the percentage humidity of the air stream leaving?
+		\item	What is the humidity [mass/mass] of the air stream leaving?
+		\item	What is the temperature of the air stream leaving?
+		\item	If the contacting takes place in a unit on the previous slide, what is the mass of inlet make-up water required at steady-state operation?
+	\end{enumerate}
+\end{frame}
+
+
+% \begin{frame}\frametitle{Drying profiles}
+% 	
+% \end{frame}
+
+% \begin{frame}\frametitle{Equipment}
+% 	Multiple equipment types to dry material:
+% 	\begin{itemize}
+% 		\item	each have relative advantages and disadvantages
+% 		\item	our purpose is not to cover their details
+% 		\item	in practice: you would work in consultation with vendors
+% 		\item	in practice: plenty of trade literature on the topics {\color{myGreen}{(SDL\emph{!})}}
+% 	\end{itemize}
+% 	\vspace{12pt}
+% 	Some major distinctions though:
+% 	\begin{itemize}
+% 		\item	\textbf{{\color{myGreen}{mode of operation}}}: batch (low volume) \emph{vs} continuous
+% 		\item	how the \textbf{{\color{myGreen}{heat is provided}}}:
+% 		\begin{itemize}
+% 			\item	{\color{purple}{direct heat}}: convective or adiabatic; provides heat and sweeps away moisture
+% 			\item	{\color{purple}{indirect heat}}: non-adiabatic, i.e. by conduction or radiation; e.g microwave
+% 		\end{itemize}
+% 		\item	\textbf{{\color{myGreen}{degree of agitation}}}
+% 		\begin{itemize}
+% 			\item	stationary material
+% 			\item	fluidized or mixed in some way
+% 		\end{itemize}
+% 	\end{itemize}
+% \end{frame}
+% 
+% \begin{frame}\frametitle{How to choose the equipment*}
+% 	\begin{itemize}
+% 		\item	Strongly dependent of feed presentation
+% 		\begin{itemize}
+% 			\item	is it: solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
+% 		\end{itemize}
+% 		\item	Heating choice: temperature-sensitive if convective heat is directly applied
+% 		\item	Agitation: 
+% 		\begin{itemize}
+% 			\item	produce fines (dust hazard) or fragile material
+% 			\item	good mixing implies good heat distribution
+% 			\item	stationary product: can form hot-spots in the solid
+% 		\end{itemize}
+% 	\end{itemize}
+% 	
+% 	General choices are between:
+% 	\begin{enumerate}
+% 		\item	shelf/tray dryers
+% 		\item	continuous tunnels
+% 		\item	rotary dryers
+% 		\item	drums
+% 		\item	spray dryers
+% 		\item	fluidized beds
+% 	\end{enumerate}
+% 	\vspace{4pt}
+% 	\hrule
+% 	\vspace{4pt}
+% 	* See Schweitzer; See Perry's
+% 	%p4-168 Schwietzer, p4-161 and 4-162
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Some equipment examples}
+% 	\textbf{Rotating dryer}
+% 	\begin{columns}[t]
+% 		\column{0.60\textwidth}
+% 			\begin{center}
+% 				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-4-162.png}
+% 			\end{center}
+% 		\column{0.40\textwidth}
+% 			\begin{center}
+% 				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-p4-161-detail.png}
+% 			\end{center}
+% 	\end{columns}
+% 	\see{Schweitzer, p 4-161 and 4-162}
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Some equipment examples}
+% 	% In 2013: add figure from p 768 Seader, Henly Roper,
+% 	\textbf{Fluidized bed dryer}
+% 	% From  p4-178 to 181 in Scweitzer
+% 	\begin{columns}[t]
+% 		\column{0.60\textwidth}
+% 			\begin{center}
+% 				\includegraphics[height=0.75\textheight]{\imagedir/separations/drying/fluid-bed-dryer-flow-patter-Schweitzer-p4-179.png}
+% 			\end{center}
+% 			\vspace{-12pt}
+% 			\see{Schweitzer, p 4-179}
+% 		\column{0.45\textwidth}
+% 			\begin{itemize}
+% 				\item	upward flowing air stream (elutriation)
+% 				\item	turbulent mixing: good heat and mass transfer
+% 				\item	uniform solid temperature
+% 				\item	solids are gently treated
+% 				\item	solids are retrieved via gravity and cyclones
+% 				\item	fluidizing air is scrubbed before being vented
+% 			\end{itemize}
+% 	\end{columns}
+% \end{frame}
 
 % Add in 2013
 % \begin{frame}\frametitle{Some equipment examples}
 % 	Atomizing drying
 % 	e.g. for milk powder
 % \end{frame}
-
-\begin{frame}\frametitle{Terminology}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{\imagedir/separations/drying/Water-phase-diagram-Drying-Wikipedia.png}
-	\end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Terminology}
-	Enthalpy, humidity, sensible 
-\end{frame}
-
-\begin{frame}\frametitle{Mass transfer concepts}
-	Bring liquid from interior of product to surface
-	Vapourization of liquid at/near the surface
-	Transport of vapour into the bulk gas phase
-
-\end{frame}
-
-\begin{frame}\frametitle{}%Psychrometric chart
-	\vfill
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis.png}
-	\end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Heat transfer concepts}
-	Heat transferred from bulk gas phase to solid phase: 
-	\begin{itemize}
-		\item	portion of it used to vapourize the liquid ({\color{purple}{latent heat}})
-		\item	portion remains in the solid as ({\color{purple}{sensible heat}})
-	\end{itemize}
-	
-	Santiago, slides S6: p 11 and 12 
-\end{frame}
-
-\begin{frame}\frametitle{Bringing mass and heat transfer together}
-	
-\end{frame}
-
-\begin{frame}\frametitle{Fluidized beds}
-	p 768 Seader, Henly Roper,
-	p4-178 to 181 in Scweitzer
-\end{frame}
 
 \begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}
