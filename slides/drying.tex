@@ -209,15 +209,36 @@
 	\end{itemize}
 \end{frame}
 
-% 2013: redo this figure
+\begin{frame}\frametitle{Administrative}
+	\textbf{Assignment 5}
+	\begin{itemize}
+		\item	Due on Monday, 03 December, at 16:00 in Chem Eng dropbox
+		\item	Or due electronically
+		\item	Update to question 3.3.3 (or question 3.3(c))
+			\begin{itemize}
+				\item	{\color{myRed}{Solvent flow, $S = 27.5$ kg/hr}}, not 15 kg/hr
+			\end{itemize}
+	\end{itemize}
+	\vspace{12pt}
+	Please fill in a \textbf{course evaluation}:
+	\begin{exampleblock}{}
+		\begin{center}
+			\href{https://evals.mcmaster.ca}{https://evals.mcmaster.ca}
+		\end{center}
+	\end{exampleblock}
+	\begin{itemize}
+		\item	Currently 32\% have filled it in
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.35\textwidth]{\imagedir/separations/admin/course-evals-qr-code.png}
+	\end{center}
+\end{frame}
+
 \begin{frame}\frametitle{Terminology: adiabatic saturation}
 	Consider a stream of air at temperature $T$ and humidity $\psi$. It contacts fine water droplets long enough to reach equilibrium. The leaving gas has temperature $T_S$ and humidity $\psi_S$.
-		
+
 	\begin{center}
-		\includegraphics[width=.95\textwidth]{\imagedir/separations/drying/saturation-temperature-Geankoplis-p570.png}
-		
-		\vspace{-12pt}
-		\hfill\see{Geankoplis, p 570}
+		\includegraphics[width=\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
 	\end{center}
 
 	We expect outlet gas: $T_S < T$ and $\psi_S > \psi$
@@ -229,7 +250,7 @@
 \begin{frame}\frametitle{Terminology: adiabatic saturation}
 	Quantify it: do an enthalpy balance at $T_\text{ref} = T_S$ {\scriptsize (i.e. disregard water)}
 	\begin{center}
-		\includegraphics[width=0.4\textwidth]{\imagedir/separations/drying/saturation-temperature-Geankoplis-p570.png}
+		\includegraphics[width=0.4\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
 	\end{center}
 	\vspace{-6pt}
 	\begin{exampleblock}{Enthalpy of vapour phase entering:}
@@ -240,7 +261,7 @@
 	\end{exampleblock}
 	
 	\[	
-		\displaystyle \frac{y\text{-axis change}}{x\text{-axis change}} = \frac{\psi - \psi_S}{T - T_S} = - \frac{c_S}{\Delta H_\text{vap}} = \frac{1.005 + 1.88 \psi}{\Delta H_\text{vap}}
+		\displaystyle \frac{y\text{-axis change}}{x\text{-axis change}} = \frac{\color{red}{\boldsymbol \psi} \color{black} - \color{myGreen}{\boldsymbol \psi_S}}{\color{red}T \color{black}- \color{myGreen}{\boldsymbol T_S}} = - \frac{c_S}{\Delta H_\text{vap}} = - \frac{1.005 + 1.88 \color{red}{\boldsymbol \psi}}{\Delta H_\text{vap}}
 	\]
 	These are the diagonal sloped lines on the psychrometric chart: {\color{purple}{adiabatic saturation curves}}.
 \end{frame}
@@ -254,117 +275,155 @@
 
 \begin{frame}\frametitle{Exercise}
 	An air stream at 70\degC$\,$ and carrying 0.055 kg water per kg dry air is adiabatically contacted with liquid water until it reaches equilibrium. The process is continuous and operating at steady-state. Air feed is 1 kg dry air per minute.
-	
+	\todo{Add answers}
 	\begin{enumerate}
 		\item	What is the percentage humidity of the incoming air stream?
 		\item	What is the percentage humidity of the air stream leaving?
 		\item	What is the humidity [mass/mass] of the air stream leaving?
 		\item	What is the temperature of the air stream leaving?
-		\item	If the contacting takes place in a unit on the previous slide, what is the mass of inlet make-up water required at steady-state operation?
+		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation?
 	\end{enumerate}
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
+	\end{center}
 \end{frame}
 
+\begin{frame}\frametitle{Wet-bulb temperature}
+	\todo{Relationship to Adiabatic temperature}
+\end{frame}
 
-% \begin{frame}\frametitle{Drying profiles}
-% 	
-% \end{frame}
+\begin{frame}\frametitle{Drying profiles}
+	Solids drying is phenomenally complex for different materials. Observe it experimentally:
+	\begin{columns}[b]
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/drying-profile-Seader-3ed-p751.png}
+			\end{center}
+		\column{0.55\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/drying-profile-rate-Seader-3ed-p751.png}
+			\end{center}
+			\vspace{-7pt}
+	\end{columns}
 
-% \begin{frame}\frametitle{Equipment}
-% 	Multiple equipment types to dry material:
-% 	\begin{itemize}
-% 		\item	each have relative advantages and disadvantages
-% 		\item	our purpose is not to cover their details
-% 		\item	in practice: you would work in consultation with vendors
-% 		\item	in practice: plenty of trade literature on the topics {\color{myGreen}{(SDL\emph{!})}}
-% 	\end{itemize}
-% 	\vspace{12pt}
-% 	Some major distinctions though:
-% 	\begin{itemize}
-% 		\item	\textbf{{\color{myGreen}{mode of operation}}}: batch (low volume) \emph{vs} continuous
-% 		\item	how the \textbf{{\color{myGreen}{heat is provided}}}:
-% 		\begin{itemize}
-% 			\item	{\color{purple}{direct heat}}: convective or adiabatic; provides heat and sweeps away moisture
-% 			\item	{\color{purple}{indirect heat}}: non-adiabatic, i.e. by conduction or radiation; e.g microwave
-% 		\end{itemize}
-% 		\item	\textbf{{\color{myGreen}{degree of agitation}}}
-% 		\begin{itemize}
-% 			\item	stationary material
-% 			\item	fluidized or mixed in some way
-% 		\end{itemize}
-% 	\end{itemize}
-% \end{frame}
-% 
-% \begin{frame}\frametitle{How to choose the equipment*}
-% 	\begin{itemize}
-% 		\item	Strongly dependent of feed presentation
-% 		\begin{itemize}
-% 			\item	is it: solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
-% 		\end{itemize}
-% 		\item	Heating choice: temperature-sensitive if convective heat is directly applied
-% 		\item	Agitation: 
-% 		\begin{itemize}
-% 			\item	produce fines (dust hazard) or fragile material
-% 			\item	good mixing implies good heat distribution
-% 			\item	stationary product: can form hot-spots in the solid
-% 		\end{itemize}
-% 	\end{itemize}
-% 	
-% 	General choices are between:
-% 	\begin{enumerate}
-% 		\item	shelf/tray dryers
-% 		\item	continuous tunnels
-% 		\item	rotary dryers
-% 		\item	drums
-% 		\item	spray dryers
-% 		\item	fluidized beds
-% 	\end{enumerate}
-% 	\vspace{4pt}
-% 	\hrule
-% 	\vspace{4pt}
-% 	* See Schweitzer; See Perry's
-% 	%p4-168 Schwietzer, p4-161 and 4-162
-% \end{frame}
-% 
-% \begin{frame}\frametitle{Some equipment examples}
-% 	\textbf{Rotating dryer}
-% 	\begin{columns}[t]
-% 		\column{0.60\textwidth}
-% 			\begin{center}
-% 				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-4-162.png}
-% 			\end{center}
-% 		\column{0.40\textwidth}
-% 			\begin{center}
-% 				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-p4-161-detail.png}
-% 			\end{center}
-% 	\end{columns}
-% 	\see{Schweitzer, p 4-161 and 4-162}
-% \end{frame}
-% 
-% \begin{frame}\frametitle{Some equipment examples}
-% 	% In 2013: add figure from p 768 Seader, Henly Roper,
-% 	\textbf{Fluidized bed dryer}
-% 	% From  p4-178 to 181 in Scweitzer
-% 	\begin{columns}[t]
-% 		\column{0.60\textwidth}
-% 			\begin{center}
-% 				\includegraphics[height=0.75\textheight]{\imagedir/separations/drying/fluid-bed-dryer-flow-patter-Schweitzer-p4-179.png}
-% 			\end{center}
-% 			\vspace{-12pt}
-% 			\see{Schweitzer, p 4-179}
-% 		\column{0.45\textwidth}
-% 			\begin{itemize}
-% 				\item	upward flowing air stream (elutriation)
-% 				\item	turbulent mixing: good heat and mass transfer
-% 				\item	uniform solid temperature
-% 				\item	solids are gently treated
-% 				\item	solids are retrieved via gravity and cyclones
-% 				\item	fluidizing air is scrubbed before being vented
-% 			\end{itemize}
-% 	\end{columns}
-% \end{frame}
+	\begin{itemize}
+		\item	A $\rightarrow$ B: initial phase as solid heats up
+		\item	B $\rightarrow$ C: constant-rate drying
+		\item	C $\rightarrow$ D: falling-rate drying
+	\end{itemize}
+\end{frame}
 
-% Add in 2013
-% \begin{frame}\frametitle{Some equipment examples}
+\begin{frame}\frametitle{Drying profiles}	
+	\begin{itemize}
+		\item	Drying flux = $\displaystyle \frac{\text{mass of water removed}}{\text{(time)(area)}} = \displaystyle \frac{m_s}{A} \frac{dX}{dt}$
+		\item	$X$ = mass of water
+		\item	$A$ = surface area of solid exposed
+		\item	$m_s$ = mass of dry solid
+	\end{itemize}
+	\vspace{12pt}
+	We are most interested in the {\color{purple}{constant drying-rate}} period:
+	\begin{itemize}
+		\item	\emph{rate-limiting step}: mass transfer through boundary layer on the solid surface
+		\item	the solid is able to provide water to the surface a fast rate
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Equipment}
+	Multiple equipment types to dry material:
+	\begin{itemize}
+		\item	each have relative advantages and disadvantages
+		\item	our purpose is not to cover their details
+		\item	in practice: you would work in consultation with vendors
+		\item	in practice: plenty of trade literature on the topics {\color{myGreen}{(SDL\emph{!})}}
+	\end{itemize}
+	\vspace{12pt}
+	Some major distinctions though:
+	\begin{itemize}
+		\item	\textbf{{\color{myGreen}{mode of operation}}}: batch (low volume) \emph{vs} continuous
+		\item	how the \textbf{{\color{myGreen}{heat is provided}}}:
+		\begin{itemize}
+			\item	{\color{purple}{direct heat}}: convective or adiabatic; provides heat and sweeps away moisture
+			\item	{\color{purple}{indirect heat}}: non-adiabatic, i.e. by conduction or radiation; e.g microwave
+		\end{itemize}
+		\item	\textbf{{\color{myGreen}{degree of agitation}}}
+		\begin{itemize}
+			\item	stationary material
+			\item	fluidized or mixed in some way
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{How to choose the equipment*}
+	\begin{itemize}
+		\item	Strongly dependent of feed presentation
+		\begin{itemize}
+			\item	is it: solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
+		\end{itemize}
+		\item	Heating choice: temperature-sensitive if convective heat is directly applied
+		\item	Agitation: 
+		\begin{itemize}
+			\item	produce fines (dust hazard) or fragile material
+			\item	good mixing implies good heat distribution
+			\item	stationary product: can form hot-spots in the solid
+		\end{itemize}
+	\end{itemize}
+	
+	General choices are between:
+	\begin{enumerate}
+		\item	shelf/tray dryers
+		\item	continuous tunnels
+		\item	rotary dryers
+		\item	drums
+		\item	spray dryers
+		\item	fluidized beds
+	\end{enumerate}
+	\vspace{4pt}
+	\hrule
+	\vspace{4pt}
+	* See Schweitzer; See Perry's
+	%p4-168 Schwietzer, p4-161 and 4-162
+\end{frame}
+
+\begin{frame}\frametitle{Some equipment examples}
+	\textbf{Rotating dryer}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-4-162.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/rotary-dryer-Schweitzer-p4-161-detail.png}
+			\end{center}
+	\end{columns}
+	\see{Schweitzer, p 4-161 and 4-162}
+\end{frame}
+
+\begin{frame}\frametitle{Some equipment examples}
+	% In 2013: add figure from p 768 Seader, Henly Roper,
+	\textbf{Fluidized bed dryer}
+	% From  p4-178 to 181 in Scweitzer
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[height=0.75\textheight]{\imagedir/separations/drying/fluid-bed-dryer-flow-patter-Schweitzer-p4-179.png}
+			\end{center}
+			\vspace{-12pt}
+			\see{Schweitzer, p 4-179}
+		\column{0.45\textwidth}
+			\begin{itemize}
+				\item	upward flowing air stream (elutriation)
+				\item	turbulent mixing: good heat and mass transfer
+				\item	uniform solid temperature
+				\item	solids are gently treated
+				\item	solids are retrieved via gravity and cyclones
+				\item	fluidizing air is scrubbed before being vented
+			\end{itemize}
+	\end{columns}
+\end{frame}
+
+%Add in 2013
+%\begin{frame}\frametitle{Some equipment examples}
 % 	Atomizing drying
 % 	e.g. for milk powder
 % \end{frame}
