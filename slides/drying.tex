@@ -227,7 +227,7 @@
 		\end{center}
 	\end{exampleblock}
 	\begin{itemize}
-		\item	Currently 36\% have filled it in
+		\item	Currently 36\% of the class have filled it in
 	\end{itemize}
 	\begin{center}
 		\includegraphics[width=0.35\textwidth]{\imagedir/separations/admin/course-evals-qr-code.png}
@@ -275,30 +275,37 @@
 
 \begin{frame}\frametitle{Exercise}
 	An air stream at 70\degC$\,$ and carrying 0.055 kg water per kg dry air is adiabatically contacted with liquid water until it reaches equilibrium. The process is continuous and operating at steady-state. Air feed is 1 kg dry air per minute.
-	\todo{Add answers}
+	{\small
 	\begin{enumerate}
-		\item	What is the percentage humidity of the incoming air stream?
-		\item	What is the percentage humidity of the air stream leaving?
-		\item	What is the humidity [mass/mass] of the air stream leaving?
-		\item	What is the temperature of the air stream leaving?
-		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation?
-	\end{enumerate}
-	\begin{center}
-		\includegraphics[width=0.6\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
-	\end{center}
-\end{frame}
+		\item	What is the percentage humidity of the incoming air stream? {\color{myOrange}{[20\%]}}
+		\item	What is the percentage humidity of the air stream leaving?  {\color{myOrange}{[100\%]}}
+		\item	What is the humidity [mass/mass] of the air stream leaving? {\scriptsize{\color{myOrange}{[66g/kg]}}}
+		\item	What is the temperature of the air stream leaving? {\color{myOrange}{[42.5\degC]}}
+		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? {\color{myOrange}{[(66-55) = 11 g per min]}}
+	\end{enumerate}}
 
-\begin{frame}\frametitle{Wet-bulb temperature}
-	\todo{Relationship to Adiabatic temperature}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/drying/Wikipedia-Sling_psychrometer.JPG}
-	\end{center}
-	\see{Wikipedia: \href{http://en.wikipedia.org/wiki/Wet-bulb\_temperature}{http://en.wikipedia.org/wiki/Wet-bulb\_temperature}}
-\end{frame}
-
-\begin{frame}\frametitle{Humid volume}
+	\vspace{-12pt}
+	\hfill\includegraphics[width=0.70\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
 	
-	Equivalent to the inverse density $1/\rho$ of moist air
+\end{frame}
+
+\begin{frame}\frametitle{{\color{purple}{Wet-bulb temperature}}}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/drying/Wikipedia-Sling_psychrometer.png}
+	\end{center}
+	\vspace{-6pt}
+	\see{Wikipedia: \href{http://en.wikipedia.org/wiki/Wet-bulb\_temperature}{http://en.wikipedia.org/wiki/Wet-bulb\_temperature}}
+	\vspace{6pt}
+	\begin{itemize}
+		\item	Calculated similar to adiabatic saturation temperature, except the gas temperature and humidity do not change
+		\item	Surprisingly, the slope coefficient is very close to adiabatic slope coefficient
+		\item	This is only true for water vapour
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{{\color{purple}{Humid volume}}}
+	
+	Equivalent to the inverse density $1/\rho$ of moist air.
 	
 	\vspace{12pt}
 	Derived from the ideal-gas law and simplified here:
@@ -316,7 +323,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Drying profiles}
-	Solids drying is phenomenally complex for different materials. Observe it experimentally:
+	Solids drying is phenomenally complex for different materials. Observe it experimentally and plot it:
 	\begin{columns}[b]
 		\column{0.50\textwidth}
 			\begin{center}
@@ -331,8 +338,8 @@
 
 	\begin{itemize}
 		\item	A $\rightarrow$ B: initial phase as solid heats up
-		\item	B $\rightarrow$ C: constant-rate drying
-		\item	C $\rightarrow$ D: first falling-rate drying
+		\item	B $\rightarrow$ C: {\color{purple}{constant-rate drying}}
+		\item	C $\rightarrow$ D: first {\color{purple}{falling-rate drying}}
 		\item	D $\rightarrow$ end: second falling-rate drying
 	\end{itemize}
 \end{frame}
@@ -357,32 +364,30 @@
 	\begin{itemize}
 		\item	In constant-rate drying region the wet surface continually supplies moisture.
 		\item	All the heat provided is taken up to evaporate liquid
-		\vspace{-6pt}
-		\begin{exampleblock}{}
-			\[
-				\begin{array}{rcl}
-					(\text{Water flux})(\Delta H_\text{vap})  							&=& \text{Heat flux}\\ \\
-					\displaystyle\frac{1}{A} \frac{d(m_w)}{dt} \times \Delta H_\text{vap} 	&=& \displaystyle\frac{\text{driving force}}{\text{resistance}} \\ \\
-
-					\displaystyle\frac{1}{A} \frac{d(m_w)}{dt} \times \Delta H_\text{vap}  	&=& \displaystyle\frac{h(T_\text{air} - T_\text{solid surface}) }{1} \\ \\
-					\displaystyle \frac{d(m_w)}{dt}   										&=& \displaystyle\frac{hA(T_\text{air} - T_\text{solid surface}) }{ \Delta H_\text{vap}}  \\
-					
-					\displaystyle \int_{m_{w,0}}^{m_{w,f}}{d(m_w)} = \Delta M_\text{water}	&=& \displaystyle \int_{t_0}^{t_f}{\frac{hA(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}\, dt} \\
-					\displaystyle  \frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} &=& \text{time to remove $\Delta M_\text{water}$}
-				\end{array}
-			\]
-		\end{exampleblock}
 	\end{itemize}
+	\vspace{12pt}
+	$\begin{array}{rcl}
+		(\text{Water flux})(\Delta H_\text{vap})  							&=& \text{Heat flux}\\ 
+		\\
+		\displaystyle\frac{1}{A} \frac{d(m_w)}{dt} \times \Delta H_\text{vap} 	&=& \displaystyle\frac{\text{driving force}}{\text{resistance}} = \displaystyle\frac{h(T_\text{air} - T_\text{solid surface}) }{1} \\
+		\\
+		\displaystyle \frac{d(m_w)}{dt}   										&=& \displaystyle\frac{hA(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}  \\
+		\\
+		\displaystyle \int_{m_{w,0}}^{m_{w,f}}{d(m_w)} = \Delta M_\text{water}	&=& \displaystyle \int_{t_0}^{t_f}{\frac{hA(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}\, dt} \\
+		\\
+		\displaystyle  \frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} &=& \text{time to remove $\Delta M_\text{water}$}
+	\end{array}
+	$
+	
 \end{frame}
 
 \begin{frame}\frametitle{Some heat-transfer correlations}
 	\begin{itemize}
-		\item	In constant-rate drying region the wet surface continually supplies moisture.
+		\item	In constant-rate drying region the wet surface continually supplies moisture
 		\item	{\small Heat-transfer coefficients derived that are independent of solid type! }
 	\end{itemize}
 	
 	\vspace{6pt}
-	{\color{myRed}{Alert: awkward units!}}
 	\begin{enumerate}
 		\item	Parallel flow to surface:
 		\begin{itemize}
@@ -391,7 +396,7 @@
 			\item	This corresponds to a velocity of $v$ = 0.61 to 7.6$\text{m.s}^{-1}$
 			\item	$G = 3\,600\,\rho v_\text{avg}$ where $v$ and $\rho$ are in SI units
 			\vspace{5pt}
-			\item	$\mathbf{h = 0.0204G^{0.8}}\,\,[\text{W.m}^{-2}\text{.K}^{-1}]$
+			\item	$\mathbf{h = 0.0204G^{0.8}}\,\,[\text{W.m}^{-2}\text{.K}^{-1}]$ \hfill {\color{myRed}{$\longleftarrow$ awkward units for $G$!}}
 		\end{itemize}
 		\vspace{12pt}
 		\item	Perpendicular flow (impingement)
@@ -420,8 +425,66 @@
 	\end{frame}
 }{}
 
+\begin{frame}\frametitle{Filter cake drying example}
+	\begin{columns}[b]
+		\column{0.50\textwidth}
+		\begin{center}
+			\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-press-6322210751_0d18836361_o.jpg}
+		\end{center}
+		\see{\href{http://www.flickr.com/photos/cdeimages/6322210751}{Flickr, CC BY 2.0}}			
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-cake-flickr-6322211031_8082d6ee3b_o.jpg}
+			\end{center}
+			\see{\href{http://www.flickr.com/photos/cdeimages/6322211031}{Flickr, CC BY 2.0}}
+	\end{columns}
+	\vspace{12pt}
+	Consider 100kg of cake, discharged at 30\% moisture (wet basis). Air to dry the cake at 75\degC$\,$ is used, 10\% relative humidity, with a velocity of 4 m/s parallel to the solids, which are $2\,\text{m}^2$. The aim is to achieve a 10\% (dry basis) cake which can be milled and packaged. 
+	
+	\vspace{12pt}
+	Estimate the drying time.
+\end{frame}
+
+\iftoggle{instructor}{
+	\begin{frame}\frametitle{Psychrometric chart}
+		\vfill
+		\begin{center}
+			\includegraphics[width=\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis.png}
+		\end{center}
+	\end{frame}
+}{
+	\begin{frame}\frametitle{Space for calculations}
+
+	\end{frame}
+}
+
+\begin{frame}\frametitle{Filter cake drying example}
+	\begin{enumerate}
+		\item	What is the humidity of the incoming air stream? {\scriptsize \color{myOrange}{[$\psi$ = 0.04 kg water/kg dry air]}}
+		\item	What is the wet-bulb temperature of this air stream? {\scriptsize \color{myOrange}{[$T_{wb} \approx 41.3$\degC]}}		
+		\item	What is the humid volume of the drying air stream? {\scriptsize \color{myOrange}{[$T=348$K, $v_H = 1.048 \text{m}^3\text{/kg}$]}}
+		\item	Estimate the heat transfer coefficient.
+		\begin{itemize}
+			\item	$G = 3600\, \rho v_\text{avg} = 3600 (1.048)^{-1} \times 4 =$  {\color{myOrange}{$13\,740\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}
+			\item	$h = 0.0204 (13740)^{0.8} =$ {\color{myOrange}{$h = 41.7\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}
+		\end{itemize}
+		\item	Substitute into the constant-drying rate expression to find:
+		\begin{itemize}
+			\item	drying time = $\displaystyle  \frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} =$ {\scriptsize $\displaystyle \frac{(29.3)(2401\times 1000)}{(41.7)(2)(75-41.3)} =$} {\tiny \color{myOrange}{$\mathbf{6.95\,\textbf{hrs}}$}}
+
+			\vspace{12pt}
+			\item	We need the $\Delta H_\text{vap}$ at $T_{wb}$ (why?) {\small \color{myOrange}{[2401 kJ/kg]}}
+			\begin{itemize}
+				\item	2501 kJ/kg at 0\degC
+				\item	2260 kJ/kg at 100\degC
+			\end{itemize}
+		\end{itemize}
+		
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}\frametitle{Equipment}
-	Multiple equipment types to dry material:
+	Multiple dryer types are commercially available:
 	\begin{itemize}
 		\item	each have relative advantages and disadvantages
 		\item	our purpose is not to cover their details
@@ -520,58 +583,6 @@
 % 	e.g. for milk powder
 % \end{frame}
 
-\begin{frame}\frametitle{Filter cake drying}
-	\begin{columns}[b]
-		\column{0.50\textwidth}
-		\begin{center}
-			\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-press-6322210751_0d18836361_o.jpg}
-		\end{center}
-		\see{\href{http://www.flickr.com/photos/cdeimages/6322210751}{Flickr, CC BY 2.0}}			
-		\column{0.50\textwidth}
-			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-cake-flickr-6322211031_8082d6ee3b_o.jpg}
-			\end{center}
-			\see{\href{http://www.flickr.com/photos/cdeimages/6322211031}{Flickr, CC BY 2.0}}
-	\end{columns}
-	\vspace{12pt}
-	Consider 100kg of cake, discharged at 30\% moisture (wet basis). Air to dry the cake at 75\degC$\,$ is used, 10\% relative humidity, with a velocity of 4 m/s parallel to the solids, which are $2\,\text{m}^2$. The aim is to achieve a 10\% (dry basis) cake which can be milled and packaged. Estimate the drying time.
-\end{frame}
-
-\iftoggle{instructor}{
-	\begin{frame}\frametitle{Psychrometric chart}
-		\vfill
-		\begin{center}
-			\includegraphics[width=\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis.png}
-		\end{center}
-	\end{frame}
-}{
-	\begin{frame}\frametitle{Space for calculations}
-
-	\end{frame}
-}
-
-\begin{frame}\frametitle{Example}
-	\begin{enumerate}
-		\item	What is the humidity of the incoming air stream? {\scriptsize \color{myOrange}{[$\psi$ = 0.04 kg water/kg dry air]}}
-		\item	What is the wet-bulb temperature of this air stream? {\scriptsize \color{myOrange}{[$T_{wb} \approx$41.3\degC]}}		
-		\item	What is the humid volume of the drying air stream? {\scriptsize \color{myOrange}{[$T=348$K, $v_H = 1.048 \text{m}^3\text{/kg}$]}}
-		\item	Estimate the heat transfer coefficient.
-		\begin{itemize}
-			\item	$G = 3600\, \rho v_\text{avg} = 3600 (1.048)^{-1} \times 4 =$  {\color{myOrange}{$13\,740 \text{kg.hr}^{-1}\text{.m}^{-2}$}}
-			\item	$h = 0.0204 (13740)^{0.8} =$ {\color{myOrange}{$h = 41.7\,\text{W.m}^{-2}\text{.K}^{-1}$}}
-		\end{itemize}
-		\item	Substitute into the constant-drying rate expression to solve for
-		\begin{itemize}
-			\item	drying time = $\displaystyle  \frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} =$ {\scriptsize $\displaystyle \frac{(29.3)(2401\times 1000)}{(41.7)(2)(75-41.3)} =$} {\tiny \color{myOrange}{$\mathbf{6.95\,\textbf{hrs}}$}}
-			\item	We need the $\Delta H_\text{vap}$ at $T_{wb}$ (why?) {\small \color{myOrange}{[2401 kJ/kg]}}
-			\begin{itemize}
-				\item	2501 kJ/kg at 0\degC
-				\item	2260 kJ/kg at 100\degC
-			\end{itemize}
-		\end{itemize}
-		
-	\end{enumerate}
-\end{frame}
 
 \begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}
