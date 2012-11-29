@@ -1,19 +1,3 @@
-% Outline: 30 minutes
-\begin{comment}
-	Why remove water
-	Terminology
-	Equilibrium curves (C+R, Santiago, p7)
-
-	Psychrometry: useful for determining humidity content (kg//kg) of air at a given temperature and given RH
-	Bound vs unbound moisture
-	Drying curve
-
-
-	% Next class:
-	Equipment for removing water
-	Fluidized bed system
-\end{comment}
-
 \begin{frame}\frametitle{Administrative}
 	\begin{itemize}
 		\item	Assignment 5 is posted (3 questions so far); questions 4 and 5 posted by Tuesday afternoon
@@ -62,7 +46,6 @@
 	% C+R v2, Ch16, p902
 	\begin{columns}[c]
 		\column{0.60\textwidth}
-			
 			\begin{center}
 				At 20$^\circ\text{C}$
 				
@@ -74,7 +57,6 @@
 			Material, when exposed to air with a certain humidity, will reach equilibrium with that air.
 			
 			\vspace{12pt}
-			
 			\begin{enumerate}
 				\item	\textbf{Bound moisture}
 				\begin{itemize}
@@ -91,13 +73,11 @@
 \end{frame}
 
 \begin{frame}\frametitle{Drying: the heat and mass transfer view points}
-	
 	\begin{exampleblock}{}
 		\begin{center}
 			{\color{myGreen}{Both heat and mass transfer occur simultaneously}}
 		\end{center}
-	\end{exampleblock}
-	
+	\end{exampleblock}	
 	\vspace{12pt}
 	\begin{columns}[t]
 		\column{0.50\textwidth}
@@ -114,9 +94,16 @@
 				\item	portion remains in the solid as ({\color{purple}{sensible heat}})
 			\end{itemize}
 	\end{columns}
-	\vspace{24pt}
-	Key point: heat to vapourize the liquid is provided by the air stream
-	%\todo{Figure here}
+	\vspace{12pt}
+	\begin{itemize}
+		\item	Key point: heat to vapourize the liquid is provided by the air stream
+		\item	The $\Delta H_\text{vap}$ at a function of the temperature at which it occurs
+		\begin{itemize}
+			\item	2501 kJ/kg at 0\degC
+			\item	2260 kJ/kg at 100\degC
+			\item	Linearly interpolate over this range (small error though)
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Terminology}
@@ -139,10 +126,6 @@
 	\end{itemize}
 \end{frame}
 
-% \item	Absolute humidity
-% \item	Relative humidity (dimensionless?)
-% \item	Wet bulb temperature
-
 \begin{frame}\frametitle{Psychrometric chart}
 	\vfill
 	\begin{center}
@@ -153,7 +136,7 @@
 
 \begin{frame}\frametitle{Terminology}
 	\begin{itemize}
-		\item	{\color{purple}{Dry bulb temperature}}: or just $T$ = ``\emph{temperature}'' {\tiny (nothing new here)}
+		\item	{\color{purple}{Dry bulb temperature}}: or just $T_\text{db}$ = ``\emph{temperature}'' {\tiny (nothing new here)}
 		\begin{itemize}
 			\item	the horizontal axis on the psychrometric chart
 		\end{itemize}
@@ -185,11 +168,10 @@
 	\begin{itemize}
 		\item	{\color{purple}{Dew point}}: the temperature to which you must cool the air/vapour mixture to just obtain saturation (100\% humidity), i.e. condensation just starts to occur.
 	\end{itemize}
-	
 	\begin{center}
 		\includegraphics[width=.8\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis-dew-point.png}
 	\end{center}
-	
+
 	\textbf{Example:} Air at 65\degC$\,$ and 10\% humidity has a dew point temperature of 25\degC. This parcel of air contains 0.021 kg of water per kilogram of dry air.
 \end{frame}
 
@@ -228,7 +210,7 @@
 		\end{center}
 	\end{exampleblock}
 	\begin{itemize}
-		\item	Currently 39\% of the class have filled it in
+		\item	Currently 42\% of the class have filled it in
 	\end{itemize}
 	\begin{center}
 		\includegraphics[width=0.30\textwidth]{\imagedir/separations/admin/course-evals-qr-code.png}
@@ -281,12 +263,12 @@
 		\item	What is the percentage humidity of the incoming air stream? {\color{myOrange}{[20\%]}}
 		\item	What is the percentage humidity of the air stream leaving?  {\color{myOrange}{[100\%]}}
 		\item	What is the humidity [mass/mass] of the air stream leaving? {\scriptsize{\color{myOrange}{[66g/kg]}}}
-		\item	What is the temperature of the air stream leaving? {\color{myOrange}{[42.5\degC]}}
-		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? {\color{myOrange}{[(66-55) = 11 g per min]}}
+		\item	What is the temperature of the air stream leaving? {\color{myOrange}{[45\degC]}}
+		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? {\color{myOrange}{[$(66-55) = 11$ g per min]}}
 	\end{enumerate}}
 
 	\vspace{-12pt}
-	\hfill\includegraphics[width=0.70\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
+	\hfill\includegraphics[width=0.68\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
 	
 \end{frame}
 
@@ -311,11 +293,11 @@
 	\vspace{12pt}
 	Derived from the ideal-gas law and simplified here:
 	\begin{exampleblock}{}
-		\[ v_H = \left[ 2.83 \times 10^{-3} + 4.56 \times 10^{-3} \psi \right] T \quad \frac{\text{m}^3}{\text{kg moist air}} \]
+		\[ v_H = \left[ 2.83 \times 10^{-3} + 4.56 \times 10^{-3} \psi \right] T_\text{db} \qquad\quad \left[\frac{\text{m}^3}{\text{kg moist air}}\right] \]
 	\end{exampleblock}
 	\begin{itemize}
-		\item	$\psi$ is humidity in kg water per kg dry air
-		\item	$T$ is the temperature in K
+		\item	$\psi$ is humidity in [kg water per kg dry air]
+		\item	$T_\text{db}$ is the recorded dry bulb temperature in [K]
 	\end{itemize}
 	
 	\vspace{12pt}
@@ -325,6 +307,9 @@
 
 \begin{frame}\frametitle{Drying profiles}
 	Solids drying is phenomenally complex for different materials. Observe it experimentally and plot it:
+	
+	\hfill\see{Seader, \emph{et al.}, p 751 and 752}
+	\vspace{-12pt}
 	\begin{columns}[b]
 		\column{0.50\textwidth}
 			\begin{center}
@@ -345,7 +330,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Drying profiles}	
+\begin{frame}\frametitle{Drying profiles}
 	\begin{itemize}
 		\item	Water flux = $\displaystyle \frac{\text{mass of water removed}}{\text{(time)(area)}} = - \displaystyle \frac{m_s}{A} \frac{dX}{dt} = \frac{1}{A} \frac{d(m_w)}{dt}$
 		\item	$X$ = mass of water remaining per mass dry solid
@@ -356,7 +341,7 @@
 	\vspace{12pt}
 	We are most interested in the {\color{purple}{constant drying-rate}} period:
 	\begin{itemize}
-		\item	\emph{rate-limiting step}: mass transfer through boundary layer on the solid surface
+		\item	\emph{rate-limiting step}: heat and mass transfer through boundary layer at the solid surface
 		\item	the solid is able to provide water to the surface a fast rate
 	\end{itemize}
 \end{frame}
@@ -370,19 +355,17 @@
 	$\begin{array}{rcl}
 		(\text{Water flux})(\Delta H_\text{vap})  							&=& \text{Heat flux}\\ 
 		\\
-		\displaystyle\frac{1}{A} \frac{d(m_w)}{dt} \times \Delta H_\text{vap} 	&=& \displaystyle\frac{\text{driving force}}{\text{resistance}} = \displaystyle\frac{h(T_\text{air} - T_\text{solid surface}) }{1} \\
+		\displaystyle\frac{1}{A} \frac{d(m_w)}{dt} \times \Delta H_\text{vap} 	&=& \displaystyle\frac{\text{driving force}}{\text{resistance}} = \displaystyle\frac{(T_\text{air} - T_\text{solid surface}) }{1/h} \\
 		\\
-		\displaystyle \frac{d(m_w)}{dt}   										&=& \displaystyle\frac{hA(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}  \\
+		\displaystyle \frac{d(m_w)}{dt}   										&=& \displaystyle\frac{(h)(A)(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}  \\
 		\\
-		\displaystyle \int_{m_{w,0}}^{m_{w,f}}{d(m_w)} = \Delta M_\text{water}	&=& \displaystyle \int_{t_0}^{t_f}{\frac{hA(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}\, dt} \\
+		\displaystyle \int_{m_{w,0}}^{m_{w,f}}{d(m_w)} = \Delta M_\text{water}	&=& \displaystyle \int_{t_0}^{t_f}{\frac{(h)(A)(T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}\, dt} \\
 		\\
-		\displaystyle  \frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} &=& \text{time to remove $\Delta M_\text{water}$}
-	\end{array}
-	$
-	
+		\displaystyle  \frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{(h)(A)(T_\text{db} - T_\text{wb})} &=& \text{time to remove $\Delta M_\text{water}$}
+	\end{array}$
 \end{frame}
 
-\begin{frame}\frametitle{Some heat-transfer correlations}
+\begin{frame}\frametitle{Some heat-transfer correlations for $h$}
 	\begin{itemize}
 		\item	In constant-rate drying region the wet surface continually supplies moisture
 		\item	{\small Heat-transfer coefficients derived that are independent of solid type! }
@@ -410,7 +393,7 @@
 		\end{itemize}
 	\end{enumerate}
 	\vspace{12pt}
-	See textbooks for $h$ when using pelletized solids (e.g packed bed)
+	See textbooks for $\mathbf h$ when using pelletized solids (e.g packed bed)
 \end{frame}
 
 \iftoggle{instructor}{
@@ -420,7 +403,7 @@
 			\includegraphics[width=\textwidth]{\imagedir/separations/drying/psychrometric-chart-Geankoplis.png}
 		\end{center}
 		\vspace{-6pt}
-		\[\frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} = \text{time to remove $\Delta M_\text{water}$}
+		\[\frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{(h)(A)(T_\text{db} - T_\text{wb})} = \text{time to remove $\Delta M_\text{water}$}
 		\]
 		\[h = a(G)^{b} = a(\rho v)^{b}\]
 	\end{frame}
@@ -446,7 +429,7 @@
 	Estimate the drying time.
 \end{frame}
 
-\begin{frame}\frametitle{Shelf/tray dryer}
+\begin{frame}\frametitle{Some equipment examples: Shelf/tray dryer}
 	We will see more equipment examples next.
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/drying/tray-dryer-Geankoplis-p560}
@@ -464,11 +447,11 @@
 	\begin{enumerate}
 		\item	What is the humidity of the incoming air stream? {\scriptsize \color{myOrange}{[$\psi$ = 0.04 kg water/kg dry air]}}
 		\item	What is the wet-bulb temperature of this air stream? {\scriptsize \color{myOrange}{[$T_\text{wb} \approx 41.3$\degC]}}		
-		\item	What is the humid volume of the drying air stream? {\scriptsize \color{myOrange}{[$T=348$K, $v_H = 1.048 \text{m}^3\text{/kg}$]}}
+		\item	What is the humid volume of the drying air stream? {\scriptsize \color{myOrange}{[$T_\text{db}=348$K, $v_H = 1.048 \text{m}^3\text{/kg}$]}}
 		\item	Estimate the heat transfer coefficient.
 		\begin{itemize}
-			\item	$G = 3600\, \rho v_\text{avg} = 3600 (1.048)^{-1} \times 4 =$  {\color{myOrange}{$13\,740\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}
-			\item	$h = 0.0204 (13740)^{0.8} =$ {\color{myOrange}{$h = 41.7\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}
+			\item	$G = 3\,600\, \rho v_\text{avg} = 3\,600 (1.048)^{-1} \times 4 =$  {\color{myOrange}{$13\,740\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}
+			\item	$h = 0.0204 (13\,740)^{0.8} =$ {\color{myOrange}{$h = 41.7\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}
 		\end{itemize}
 		\item	Substitute into the constant-drying rate expression to find:
 		\begin{itemize}
@@ -476,7 +459,7 @@
 
 			\vspace{12pt}
 			\item	Water initially = 30 kg; dry basis = $0.1 = \displaystyle \frac{30 - \Delta M_\text{water}}{70\,\text{kg dry solids}}$
-			\item	We need the $\Delta H_\text{vap}$ at $T_{wb}$ (why?) {\small \color{myOrange}{[2401 kJ/kg]}}
+			\item	We need the $\Delta H_\text{vap}$ at $T_\text{wb}$ (why?) {\small \color{myOrange}{[2401 kJ/kg]}}
 			\begin{itemize}
 				\item	2501 kJ/kg at 0\degC
 				\item	2260 kJ/kg at 100\degC
@@ -511,12 +494,11 @@
 	\end{itemize}
 \end{frame}
 
-% 2013: add pic of a drum dryer
 \begin{frame}\frametitle{How to choose the equipment*}
 	\begin{itemize}
 		\item	Strongly dependent of feed presentation
 		\begin{itemize}
-			\item	is it: solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
+			\item	solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
 		\end{itemize}
 		\item	Heating choice: temperature-sensitive if convective heat is directly applied
 		\item	Agitation: 
@@ -543,8 +525,7 @@
 	%p4-168 Schwietzer, p4-161 and 4-162
 \end{frame}
 
-\begin{frame}\frametitle{Some equipment examples}
-	\textbf{Continuous tunnel dryer}
+\begin{frame}\frametitle{Some equipment examples: Continuous tunnel dryer}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/drying/continuous-tunnel-dryer-Geankoplis-p561.png}
 	\end{center}
@@ -552,8 +533,7 @@
 	\see{Geankoplis, p 561}
 \end{frame}
 
-\begin{frame}\frametitle{Some equipment examples}
-	\textbf{Rotating dryer}
+\begin{frame}\frametitle{Some equipment examples: Rotating dryer}
 	\begin{columns}[t]
 		\column{0.60\textwidth}
 			\begin{center}
@@ -566,7 +546,6 @@
 	\end{columns}
 	\see{Schweitzer, p 4-161 and 4-162}
 	
-	
 	\begin{columns}[t]
 		\column{0.45\textwidth}
 			\begin{itemize}
@@ -575,41 +554,84 @@
 			\end{itemize}
 		\column{0.65\textwidth}
 			\begin{itemize}
-				\item	5 to 50 kg/hr/m$^3$ dryer volume evaporated
+				\item	5 to 50 kg water evaporated per hour per m$^3$ dryer volume
 				\item	Residence time: 5 minutes to 2 hours
 			\end{itemize}
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Some equipment examples}
-	% In 2013: add figure from p 768 Seader, Henly Roper,
-	\textbf{Fluidized bed dryer}
-	% From  p4-178 to 181 in Scweitzer
-	\begin{columns}[t]
+\begin{frame}\frametitle{Some equipment examples: Drum dryers}
+	% 2013: See scanned pictures from Seader on drum dryers
+	\begin{columns}[b]
 		\column{0.60\textwidth}
 			\begin{center}
-				\includegraphics[height=0.75\textheight]{\imagedir/separations/drying/fluid-bed-dryer-flow-patter-Schweitzer-p4-179.png}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/drum-dryer-CR-v2-5ed-p932-c.png}
+				
+				\vspace{12pt}
+				\emph{Splash feed}
+			\end{center}
+			
+			
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/drum-dryer-CR-v2-5ed-p932-e.png}
+				
+				\vspace{12pt}
+				\emph{Double drum, top feed}
+			\end{center}
+	\end{columns}
+	\see{Richardson and Harker, p 932}
+	\begin{itemize}
+		\item	Drums heated with condensing steam
+		\item	Dried material is scraped off in chips, flakes or powder
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Some equipment examples: Spray dryers}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/drying/spray-dryer-Seader-3ed-p737.png}
+	\end{center}
+	\vspace{-92pt}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/centrifugal-atomizer-Seader-p737.png}
 			\end{center}
 			\vspace{-12pt}
-			\see{Schweitzer, p 4-179}
-		\column{0.45\textwidth}
+			\hfill\see{Seader \emph{et al.}, p 373}
+	\end{columns}
+	\begin{itemize}
+		\item	Also called atomizers
+		\item	Produce uniformly shaped, spherical particles
+		\item	e.g. milk powder, detergents, fertilizer pellets
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Some equipment examples: Fluidized bed dryer}
+	
+	\see{Richardson and Harker \emph{et al.}, p 972}
+	\vspace{-18pt}
+	\begin{center}
+		\includegraphics[width=.95\textwidth]{\imagedir/separations/drying/fluidized-bed-CR-v2-5ed-p972}
+	\end{center}
+	\vspace{-28pt}
+	\begin{columns}[t]
+		\small
+		\column{0.60\textwidth}
 			\begin{itemize}
 				\item	upward flowing air stream (elutriation)
 				\item	turbulent mixing: good heat and mass transfer
 				\item	uniform solid temperature
+			\end{itemize}
+		\column{0.55\textwidth}
+			\begin{itemize}
 				\item	solids are gently treated
 				\item	solids are retrieved via gravity and cyclones
-				\item	fluidizing air is scrubbed before being vented
+				\item	fluidizing air scrubbed before vented
 			\end{itemize}
 	\end{columns}
 \end{frame}
-
-%Add in 2013
-%\begin{frame}\frametitle{Some equipment examples}
-% 	Atomizing drying
-% 	e.g. for milk powder
-% \end{frame}
-
 
 \begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}
