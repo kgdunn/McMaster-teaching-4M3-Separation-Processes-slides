@@ -290,6 +290,29 @@
 
 \begin{frame}\frametitle{Wet-bulb temperature}
 	\todo{Relationship to Adiabatic temperature}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/drying/Wikipedia-Sling_psychrometer.JPG}
+	\end{center}
+	\see{Wikipedia: \href{http://en.wikipedia.org/wiki/Wet-bulb\_temperature}{http://en.wikipedia.org/wiki/Wet-bulb\_temperature}}
+\end{frame}
+
+\begin{frame}\frametitle{Humid volume}
+	
+	Equivalent to the inverse density $1/\rho$ of moist air
+	
+	\vspace{12pt}
+	Derived from the ideal-gas law and simplified here:
+	\begin{exampleblock}{}
+		\[ v_H = \left[ 2.83 \times 10^{-3} + 4.56 \times 10^{-3} \psi \right] T \quad \frac{\text{m}^3}{\text{kg moist air}} \]
+	\end{exampleblock}
+	\begin{itemize}
+		\item	$\psi$ is humidity in kg water per kg dry air
+		\item	$T$ is the temperature in K
+	\end{itemize}
+	
+	\vspace{12pt}
+	For example, 350K and $\psi = 0.026$ kg/kg, then 
+	\[v_H = \left[2.83 \times 10^{-3} + 4.56 \times 10^{-3}(0.026)\right](350)  = 1.03\, \frac{\text{m}^3}{\text{kg moist air}}\]  
 \end{frame}
 
 \begin{frame}\frametitle{Drying profiles}
@@ -326,6 +349,48 @@
 		\item	\emph{rate-limiting step}: mass transfer through boundary layer on the solid surface
 		\item	the solid is able to provide water to the surface a fast rate
 	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Heat transfer coefficient estimation}
+	\begin{itemize}
+		\item	In constant-rate drying region the wet surface supplies adequate moisture.
+		\item	So heat-transfer coefficients may be derived that are independent of solid type!
+		\item	Derived from heat transfer convection equations (e.g. we ignore radiation)
+		
+		\begin{exampleblock}{}
+			\[
+				\displaystyle \frac{\text{heat transfer rate}}{\text{transfer surface area}}  = \text{flux} = \displaystyle \frac{\text{driving force}}{\text{resistance}} = \frac{h (T_\text{db} - T_\text{wb})}{\Delta H_\text{vap}}
+			\]
+		\end{exampleblock}
+		\begin{itemize}
+			\item	What is the driving force? $(T_\text{air} - T_\text{solid surface}) = (T_\text{db} - T_\text{wb})$
+			\item	What is the resistance? $\Delta H_\text{vap} / h$
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Some heat-transfer correlations}
+	{\color{myRed}{Alert: awkward units!}}
+	\begin{enumerate}
+		\item	Parallel flow to surface:
+		\begin{itemize}
+			\item	Air between 45 to 150\degC
+			\item	$G = 2\,450\text{~to~}29\,300\, \text{kg.hr}^{-1}\text{.m}^{-2}$
+			\item	This corresponds to a velocity of $v$ = 0.61 to 7.6$\text{m.s}^{-1}$
+			\item	$G = 3\,600\,\rho v_\text{avg}$ where $v$ and $\rho$ are in SI units
+			\vspace{5pt}
+			\item	$\mathbf{h = 0.0204G^{0.8}}\,\,[\text{W.m}^{-2}\text{.K}^{-1}]$
+		\end{itemize}
+		\vspace{24pt}
+		\item	Perpendicular flow (impingement)
+		\begin{itemize}
+			\item	Air between 45 to 150\degC
+			\item	$G = 3\,900\text{~to~}19\,500\, \text{kg.hr}^{-1}\text{.m}^{-2}$
+			\item	This corresponds to a velocity of $v$ = 0.9 to 4.6$\text{m.s}^{-1}$
+			\vspace{5pt}
+			\item	$\mathbf{h = 1.17G^{0.37}}\,\,[\text{W.m}^{-2}\text{.K}^{-1}]$
+		\end{itemize}
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Equipment}
@@ -427,6 +492,38 @@
 % 	Atomizing drying
 % 	e.g. for milk powder
 % \end{frame}
+
+\begin{frame}\frametitle{Filter cake drying}
+	\begin{columns}[b]
+		\column{0.50\textwidth}
+		\begin{center}
+			\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-press-6322210751_0d18836361_o.jpg}
+		\end{center}
+		\see{\href{http://www.flickr.com/photos/cdeimages/6322210751}{Flickr, CC BY 2.0}}			
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-cake-flickr-6322211031_8082d6ee3b_o.jpg}
+			\end{center}
+			\see{\href{http://www.flickr.com/photos/cdeimages/6322211031}{Flickr, CC BY 2.0}}
+	\end{columns}
+	\vspace{12pt}
+	Consider 100kg of cake, discharged at 30\% moisture (wet basis). Air to dry the cake at 75\degC$\,$ is used, 10\% relative humidity, with a velocity of 4 m/s. The aim is to achieve a 10\% (dry basis) cake which can be milled and packaged. Estimate the drying time.
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	\begin{enumerate}
+		\item	What is the humidity of the incoming air stream? {\scriptsize \color{myOrange}{[0.04 kg water/kg dry air]}}
+		\item	What is the wet-bulb temperature of this air stream? {\scriptsize \color{myOrange}{[$\sim$41.3\degC]}}
+		\item	What is the heat of vapourization of water at this temperature? {\scriptsize \color{myOrange}{[2401 kJ/kg]}}
+		\begin{itemize}
+			\item	2501 kJ/kg at 0\degC
+			\item	2260 kJ/kg at 100\degC
+		\end{itemize}
+		\item	What is the humid volume of the drying air stream? {\scriptsize \color{myOrange}{[$T=348$K, $v_H = 1.048 \text{m}^3\text{/kg}$]}}
+		\item	Estimate the heat transfer coefficient.
+		\item	Substitute into the constant-drying rate expression to solve for drying time.
+	\end{enumerate}
+\end{frame}
 
 \begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}
