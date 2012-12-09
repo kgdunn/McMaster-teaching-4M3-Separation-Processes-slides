@@ -1,21 +1,3 @@
-\begin{frame}\frametitle{Administrative}
-	\begin{itemize}
-		\item	Assignment 5 is posted (3 questions so far); questions 4 and 5 posted by Tuesday afternoon
-		\item	Assignment 5 is due in the Chem Eng drop box by Monday, 03 December, at 16:00, or earlier.
-		\item	Assignment 4 will be available for pick up on Thursday and Friday.
-		\item	Midterm will be available to pick up Tuesday, Thursday, Friday.
-		\item	Please fill in a course evaluation: \href{https://evals.mcmaster.ca}{https://evals.mcmaster.ca}
-		\item	Confused about grades? There's a grading spreadsheet online
-		\begin{itemize}
-			\item	Please do not use averages and symbols calculated by Avenue
-		\end{itemize}
-	\end{itemize}
-	\vspace{12pt}
-	\begin{itemize}
-		\item	Course review on Friday, 30 November. {\color{myOrange} \hfill $\longleftarrow$ {\textbf{Final class}}}
-	\end{itemize}
-\end{frame}
-
 \begin{frame}\frametitle{Background}
 	We consider \textbf{drying of solid products} here.
 	\begin{itemize}
@@ -41,6 +23,7 @@
 	\end{itemize}
 \end{frame}
 
+% 2013: Update this with the diagram from Seader: more informative labelling on theirs
 \begin{frame}\frametitle{The nature of water in solid material}
 	% p4-142 Schweitzer
 	% C+R v2, Ch16, p902
@@ -72,6 +55,8 @@
 	\end{columns}
 \end{frame}
 
+% 2013: put the linear interpolated equation for H_vap here, and also check a reference for the non-linear version
+% 2013: plot the two plots superimposed to check the level of error
 \begin{frame}\frametitle{Drying: the heat and mass transfer view points}
 	\begin{exampleblock}{}
 		\begin{center}
@@ -96,8 +81,8 @@
 	\end{columns}
 	\vspace{12pt}
 	\begin{itemize}
-		\item	Key point: heat to vapourize the liquid is provided by the air stream
-		\item	The $\Delta H_\text{vap}$ at a function of the temperature at which it occurs
+		\item	Key point: heat to vapourize the liquid is adiabatically provided by the air stream. Air is cooled as a result of this evaporation
+		\item	The $\Delta H_\text{vap}$ is a function of the temperature at which it occurs:
 		\begin{itemize}
 			\item	2501 kJ/kg at 0\degC
 			\item	2260 kJ/kg at 100\degC
@@ -164,6 +149,7 @@
 	\end{itemize}
 \end{frame}
 
+% 2013: update the figure with larger red arrows
 \begin{frame}\frametitle{Terminology}
 	\begin{itemize}
 		\item	{\color{purple}{Dew point}}: the temperature to which you must cool the air/vapour mixture to just obtain saturation (100\% humidity), i.e. condensation just starts to occur.
@@ -175,6 +161,7 @@
 	\textbf{Example:} Air at 65\degC$\,$ and 10\% humidity has a dew point temperature of 25\degC. This parcel of air contains 0.021 kg of water per kilogram of dry air.
 \end{frame}
 
+% 2013: Verify iff heat capacity of water vapour is 1.88 kJ/(kg water vapour)/K
 \begin{frame}\frametitle{Terminology}
 	\begin{itemize}
 		\item	 {\color{purple}{Humid heat}}: amount of energy to raise 1kg of air and the water vapour it contains by 1\degC
@@ -185,40 +172,15 @@
 		\begin{itemize}
 			\item	$c_S$ has units $\left[\displaystyle \frac{\text{kJ}}{\text{(kg dry air)(K)}} \right]$
 			\item	1.005 $\left[\displaystyle \frac{\text{kJ}}{\text{(kg dry air)(K)}} \right]$ is heat capacity of dry air
-			\item	1.88 $\left[\displaystyle \frac{\text{kJ}}{\text{(kg water vapour)(K)}} \right]$ is heat capacity of water {\color{myRed}{\textbf{vapour}}}  % Verify this still
+			\item	1.88 $\left[\displaystyle \frac{\text{kJ}}{\text{(kg water vapour)(K)}} \right]$ is heat capacity of water \textbf{vapour}  
 			\item	$\psi$ is the humidity $ \left[ \displaystyle \frac{\text{kg water vapour}}{\text{kg dry air}}\right]$ 
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Administrative}
-	\textbf{Assignment 5}
-	\begin{itemize}
-		\item	Due on Monday, 03 December, at 16:00 in Chem Eng dropbox
-		\item	Or due electronically
-		\item	Update to question 3.3.3 (or question 3.3(c))
-			\begin{itemize}
-				\item	{\color{myRed}{Solvent flow, $S = 27.5$ kg/hr}}, not 15 kg/hr
-			\end{itemize}
-		\item	Assignment 4 available for pick up
-	\end{itemize}
-	\vspace{12pt}
-	Please fill in a \textbf{course evaluation}:
-	\begin{exampleblock}{}
-		\begin{center}
-			\href{https://evals.mcmaster.ca}{https://evals.mcmaster.ca}
-		\end{center}
-	\end{exampleblock}
-	\begin{itemize}
-		\item	Currently 42\% of the class have filled it in
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=0.30\textwidth]{\imagedir/separations/admin/course-evals-qr-code.png}
-	\end{center}
-\end{frame}
-
+% 2013: add label on plot: adiabatic container
 \begin{frame}\frametitle{Terminology: adiabatic saturation}
-	Consider a stream of air at temperature $T$ and humidity $\psi$. It contacts fine water droplets long enough to reach equilibrium. The leaving gas has temperature $T_S$ and humidity $\psi_S$.
+	Consider a stream of air at temperature $T$ and humidity $\psi$. It adiabatically contacts fine water droplets long enough to reach equilibrium. The leaving gas has temperature $T_S$ and humidity $\psi_S$.
 
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
@@ -380,7 +342,7 @@
 			\item	This corresponds to a velocity of $v$ = 0.61 to 7.6$\text{m.s}^{-1}$
 			\item	$G = 3\,600\,\rho v_\text{avg}$ where $v$ and $\rho$ are in SI units
 			\vspace{5pt}
-			\item	$\mathbf{h = 0.0204G^{0.8}}\,\,[\text{W.m}^{-2}\text{.K}^{-1}]$ \hfill {\color{myRed}{$\longleftarrow$ awkward units for $G$!}}
+			\item	$\mathbf{h = 0.0204G^{0.8}}\,\,[\text{W.m}^{-2}\text{.K}^{-1}]$ \hfill {\color{myRed}{$\longleftarrow$ \textbf{non-SI units for $G$ here!}}}
 		\end{itemize}
 		\vspace{12pt}
 		\item	Perpendicular flow (impingement)
@@ -415,7 +377,7 @@
 		\begin{center}
 			\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-press-6322210751_0d18836361_o.jpg}
 		\end{center}
-		\see{\href{http://www.flickr.com/photos/cdeimages/6322210751}{Flickr, CC BY 2.0}}			
+		\see{\href{http://www.flickr.com/photos/cdeimages/6322210751}{Flickr, CC BY 2.0}}
 		\column{0.50\textwidth}
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/drying/filter-cake-flickr-6322211031_8082d6ee3b_o.jpg}
@@ -429,6 +391,7 @@
 	Estimate the drying time.
 \end{frame}
 
+% 2013: use a better figure here: it looks like the hot air leaves right after the fan
 \begin{frame}\frametitle{Some equipment examples: Shelf/tray dryer}
 	We will see more equipment examples next.
 	\begin{center}
@@ -635,11 +598,11 @@
 
 \begin{frame}\frametitle{References used (in alphabetical order)}
 	\begin{itemize}
-		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 09
-		\item	Perry's Chemical Engineers' Handbook, Chapter 12
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 16	
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', Chapter 4.10
-		\item	Seader, Henly and Roper, ``Separation Process Principles'', 3rd edition, chapter 18
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 9.
+		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 12.
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 16.
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4.10.
+		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 18.
 		\item	Uhlmann's Encyclopedia, ``Drying'', {\tiny \href{http://dx.doi.org/10.1002/14356007.b02\_04.pub2}{DOI:10.1002/14356007.b02\_04.pub2}}
 	\end{itemize}
 \end{frame}
