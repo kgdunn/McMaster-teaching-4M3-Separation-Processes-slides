@@ -24,7 +24,7 @@
 	\newcommand{\hgversion}{Unknown version}
 \else
     % Windows users: download http://en.wikipedia.org/wiki/UnxUtils to get "grep" and "cut"
-	\immediate\write18{hg log -l1|grep changeset| cut -b 11-16 | tr -d ' ' > hg_version.txt}
+	\immediate\write18{hg log -l1|grep changeset| awk '{print $2}' | cut -f1 -d":" > hg_version.txt}
 	\immediate\openin 10=hg_version.txt
 	\immediate\read 10 to \localline
 	\global\let\hgversion\localline

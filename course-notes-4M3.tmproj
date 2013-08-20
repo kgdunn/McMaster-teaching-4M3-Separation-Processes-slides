@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>slides/adsorption.tex</string>
+	<string>slides/sieving.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -52,23 +52,114 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>319</integer>
+				<integer>145</integer>
 				<key>line</key>
-				<integer>867</integer>
+				<integer>351</integer>
+			</dict>
+			<key>columnSelection</key>
+			<false/>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>332</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>4</integer>
+				<key>line</key>
+				<integer>350</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>145</integer>
+				<key>line</key>
+				<integer>351</integer>
+			</dict>
+		</dict>
+		<key>slides/drying.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>127</integer>
+				<key>line</key>
+				<integer>374</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>851</integer>
+			<integer>344</integer>
+		</dict>
+		<key>slides/filters.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>136</integer>
+				<key>line</key>
+				<integer>33</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>slides/ion-exchange.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>41</integer>
+				<key>line</key>
+				<integer>2</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>slides/mechanical-separations.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>95</integer>
+				<key>line</key>
+				<integer>24</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>3</integer>
+		</dict>
+		<key>slides/sieving.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>13</integer>
+				<key>line</key>
+				<integer>245</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>237</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
 	<array>
+		<string>slides/ion-exchange.tex</string>
+		<string>slides/filters.tex</string>
+		<string>slides/drying.tex</string>
 		<string>slides/adsorption.tex</string>
+		<string>slides/mechanical-separations.tex</string>
+		<string>slides/sieving.tex</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{1635, -180}, {1725, 1080}}</string>
+	<string>{{189, 66}, {1242, 812}}</string>
 </dict>
 </plist>
