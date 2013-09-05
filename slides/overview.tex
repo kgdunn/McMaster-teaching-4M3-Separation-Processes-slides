@@ -77,7 +77,7 @@
 
 \begin{frame}\frametitle{World population: UN projections}
 	\begin{center}
-		\includegraphics[height=0.95\textheight]{\imagedir/teaching/{World-Population-1800-2100.png}}
+		\includegraphics[height=0.93\textheight]{\imagedir/teaching/{World-Population-1800-2100.png}}
 	\end{center}
 \end{frame}
 
@@ -213,4 +213,50 @@
 	\end{center}
 \end{frame}
 
+% 2013: specify the units in the equation: any units, as long as consistent, but emphasize this
+\begin{frame}\frametitle{Separation factor}
+	As mentioned, we will introduce a number of important principles we will re-use later.
+	
+	\begin{exampleblock}{Separation factor}
+		\begin{columns}[c]
+			\column{0.40\textwidth}
+				$S_{ij} = \displaystyle \frac{x_{i,1} / x_{j,1}}{x_{i,2} / x_{j,2}}$
+			\column{0.40\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{\imagedir/separations/overview-class/separation-factor.png}
+				\end{center}
+		\end{columns} 
+	\end{exampleblock}
+	
+	\begin{itemize}
+		\item	select $i$ and $j$ so that $S_{ij} \geq 1$
+		\item	units of $x$ terms in the above equation can be mass or mole fractions (or flows) 		
+	\end{itemize}
+	
+	Based on this definition: we can see why solid-fluid separations often have high separation factors
+\end{frame}
+
+\begin{frame}\frametitle{Separating agents: MSA and ESA}
+	\begin{exampleblock}
+		{\small A material, force, or energy source applied to the feed for separation }
+	\end{exampleblock}
+	\vspace{6pt}
+	i.e. what you add to get a separation. MSA = mass separating agent and ESA = energy separating agent
+	\vspace{6pt}	
+	\begin{itemize}
+		\item	heat (ESA)
+		\item	liquid solvent (MSA)
+		\item	pressure (ESA)
+		\item	\pause\iftoggle{instructor}{vacuum}{}
+		\item	\iftoggle{instructor}{membrane}{}
+		\item	\iftoggle{instructor}{filter media}{}
+		\item	\iftoggle{instructor}{electric field}{}
+		\item	\iftoggle{instructor}{flow}{}
+		\item	\iftoggle{instructor}{temperature gradient}{}
+		\item	\iftoggle{instructor}{concentration gradient}{}
+		\item	\iftoggle{instructor}{gravitational field (natural, or artificially created)}{}
+		\item	\iftoggle{instructor}{adsorbent}{}
+		\item	\iftoggle{instructor}{absorbent}{}
+	\end{itemize}
+\end{frame}
 
