@@ -20,7 +20,7 @@
 
 	\begin{itemize}
 		\item	select $i$ and $j$ so that $S_{ij} \geq 1$
-		\item	units of $x$ terms in the above equation can be mass or mole fractions (or flows)
+		\item	units of the $x$ terms in the above equation can be mass or mole fractions (or flows)
 		\item	any units can be used, as long as you are consistent
 	\end{itemize}
 
@@ -90,7 +90,6 @@
 	\end{center}
 \end{frame}
 
-% 11 September 2012
 \begin{frame}\frametitle{What is sedimentation?}
 
 	Sugar video, \href{http://www.youtube.com/watch?v=ZBOou6cahtw}{http://www.youtube.com/watch?v=ZBOou6cahtw} at \texttt{04:35 to 05:02}
@@ -106,7 +105,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Definitions}
-	\textbf{Sedimentation}
+	{\color{purple}{\textbf{Sedimentation}}}
 	\begin{quote}
 		Removal of suspended solid particles from a fluid (\textbf{liquid} or gas) stream by gravitational settling.
 	\end{quote}
@@ -114,13 +113,12 @@
 
 	\vspace{12pt}
 	Some semantics:
-
-	\vspace{12pt}
-	{\color{purple}{Thickening}}: generally aims to increase the solids to higher concentration; higher throughput processes
-
-	\vspace{12pt}
-	{\color{purple}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for {\color{purple}{coagulation}} of feed.
-
+	\begin{itemize}
+		\item	{\color{purple}{Thickening}}: generally aims to increase the solids to higher concentration; higher throughput processes
+		
+		\vspace{12pt}
+		\item	{\color{purple}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for {\color{purple}{coagulation}} of feed.
+	\end{itemize}
 	\seefull{Perry, 8ed, Ch 18.5}
 \end{frame}
 
@@ -154,13 +152,13 @@
 		\item	\iftoggle{instructor}{density of fluid}{}
 		\item	\iftoggle{instructor}{viscosity of fluid}{}
 		\item	\iftoggle{instructor}{particle concentration (hindered)}{}
-		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: \textbf{diameter of the vessel} (or area)}{} ... to a point
+		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: \textbf{diameter of the vessel} (or area)... to a point}{}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}
 	Forces acting on a spherical particle in a fluid:
-	
+
 	\vspace{7.5cm}
 	Assuming the fluid is stagnant.
 \end{frame}
@@ -169,7 +167,7 @@
 	Forces acting on a spherical particle in a fluid:
 	\begin{enumerate}
 		\item	\textbf{Gravity}: a constant downward force = $mg = V_p \rho_p g$
-		\item	\textbf{Buoyancy}: proportional to volume displaced = $V_p \rho_f g$
+		\item	\textbf{Buoyancy}: proportional to volume fluid displaced = $V_p \rho_f g$
 		\item	\textbf{Drag}: opposes the particle's motion (next slide)
 		\item	\textbf{Particle-particle interactions} and Brownian motion: assumed zero for now
 	\end{enumerate}
@@ -192,7 +190,7 @@
 	where
 	\[
 		\begin{array}{rcll}
-			v	    &=& \text{relative velocity between the particle and the fluid} &[\text{m.s}^{-1}] \\
+			v	    &=& \text{{\color{myOrange}relative} velocity between the particle and the fluid} &[\text{m.s}^{-1}] \\
 			A_p     &=& \text{projected area of particle in direction of travel} &[\text{m}^2] \\
 			C_D	    &=& \text{drag coefficient (it's assumed constant!)} &[-] \\
 			\rho_f  &=& \text{density of fluid (not the particle)}  &[\text{kg.m}^{-3}]
@@ -662,8 +660,7 @@
 
 \end{comment}
 
-
-% 2013: fix chapter reference for Schweitzer
+% 2013: add reference for Sinnot
 \begin{frame}\frametitle{References for this section}
 	\begin{itemize}
 		%\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers''%, chapter XXXX
