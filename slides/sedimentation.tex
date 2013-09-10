@@ -203,7 +203,7 @@
 \begin{frame}\frametitle{Estimating the drag coefficient, $C_D$}
 	It's a function of Reynolds number = Re $= \displaystyle \frac{D_p v \rho_f}{\mu_f}$ \\
 	\see{Richardson and Barker, p 150-153}
-	\begin{enumerate}
+	\begin{enumerate} \label{CD-rules}
 		\item	If Re $< 1$
 				\[
 					C_D = \frac{24}{\text{Re}}
@@ -243,7 +243,7 @@
 
 	\begin{exampleblock}{Terminal velocity of an unhindered particle}
 		\[
-			v = \sqrt{\frac{4\left(\rho_p - \rho_f \right)g D_p}{3 C_D \rho_f}}
+			v = \sqrt{\frac{4\left(\rho_p - \rho_f \right)g D_p}{3 C_D \rho_f}} \tag{TSV}
 		\]
 	\end{exampleblock}
 \end{frame}
@@ -257,7 +257,7 @@
 	Simplification of the above equation when Re $< 1$:
 
 	\[
-		v = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
+		v = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f} \label{TSV-low-Re}
 	\]
 
 	\vspace{12pt}
@@ -270,15 +270,15 @@
 
 	\begin{enumerate}
 		\item	Assume Re $< 1$ (Stokes' region)
-		\item	Solve for $v$
-		\item	Calculate Reynolds number, Re
+		\item	Solve for $v$ using equation on slide \ref{TSV-low-Re}
+		\item	Calculate Reynolds number, Re $= \displaystyle \frac{D_p v \rho_f}{\mu_f}$
 		\item	Was Reynolds number region assumption true? If so: stop.
-		\item	If not, use new Re and recalculate $C_D$
+		\item	If not, use new Re and recalculate $C_D$ (see slide \ref{CD-rules})
 		\item	Repeat from step 2 to 5 until convergence
 	\end{enumerate}
 
 	\vspace{12pt}
-	%Alternative approach shown in Geankoplis.
+	\textbf{Example}: A particle 1mm in diameter, with density of 5000~$\displaystyle \frac{\text{kg}}{\text{m}^3}$ is settling in an unhindered environment of water. Calculate an estimate of its terminal velocity. [\emph{ans}: 27 cm/second]
 \end{frame}
 
 \begin{frame}\frametitle{Why is the terminal velocity so important?}
@@ -309,6 +309,7 @@
 	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
 \end{frame}
 
+\begin{comment}
 % 13 and 14 September 2012
 %
 % Note: the class on 13 September 2012 did not go well. Please watch the video again.
@@ -659,10 +660,13 @@
 	\end{enumerate}
 \end{frame}
 
+\end{comment}
+
+
 % 2013: fix chapter reference for Schweitzer
 \begin{frame}\frametitle{References for this section}
 	\begin{itemize}
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers''%, chapter XXXX
+		%\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers''%, chapter XXXX
 		%\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 8
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 3rd or 4th edition, chapter 14
 		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 18
@@ -674,3 +678,4 @@
 	%* Ind Eng Chem, v46, 1164-1172, 1954
 	%* Review of sedimentation theory, Chem Eng, v66, p 75-80, 1959
 \end{frame}
+
