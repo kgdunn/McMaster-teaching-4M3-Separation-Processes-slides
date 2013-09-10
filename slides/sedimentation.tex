@@ -1,7 +1,31 @@
 % /Users/kevindunn/Sync/Figures/examples/waste-water-treatment/flickr-4578619015_895f8dabbb_o-CC-BY-NC-SA-2.jpg
-%	See: http://www.flickr.com/photos/sawater/6434889743/  
+%	See: http://www.flickr.com/photos/sawater/6434889743/
 %	Watch video: http://www.youtube.com/watch?v=gVeW1rr8GEI&feature=related
 %	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
+
+
+\begin{frame}\frametitle{Last class: Separation factor}
+	As mentioned, we will introduce a number of important principles we will re-use later.
+
+	\begin{exampleblock}{{\color{purple} Separation factor}}
+		\begin{columns}[c]
+			\column{0.40\textwidth}
+				$S_{ij} = \displaystyle \frac{x_{i,1} / x_{j,1}}{x_{i,2} / x_{j,2}}$
+			\column{0.40\textwidth}
+				\begin{center}
+					\includegraphics[width=\textwidth]{\imagedir/separations/overview-class/separation-factor.png}
+				\end{center}
+		\end{columns}
+	\end{exampleblock}
+
+	\begin{itemize}
+		\item	select $i$ and $j$ so that $S_{ij} \geq 1$
+		\item	units of $x$ terms in the above equation can be mass or mole fractions (or flows)
+		\item	any units can be used, as long as you are consistent
+	\end{itemize}
+
+	Based on this definition: we can see why solid-fluid separations often have high separation factors
+\end{frame}
 
 \begin{frame}\frametitle{Mechanical separations}
 	We will start with this topic
@@ -22,12 +46,12 @@
 	Under the title of ``Mechanical Separations'' we will consider:
 	\begin{itemize}
 		\item	free settling (sedimentation)
-		\item	screening of particles 
+		\item	screening of particles
 		\item	centrifuges
 		\item	cyclones
 		\item	filtration
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	There are also others that go in this category. Deserving a quick mention are:
 	\begin{itemize}
@@ -41,9 +65,9 @@
 		\item	used mainly in the mineral processing industries
 		\item	high throughputs: up to 3000 kg/hour per meter of rotating drum
 		\item	e.g. remove iron from feed
-		\item	Also used in food and drug industries at multiple stages to ensure product integrity		
+		\item	Also used in food and drug industries at multiple stages to ensure product integrity
 	\end{itemize}
-	
+
 	\see{Sinnott, 4ed, v6, Ch10}
 	\begin{center}
 		\includegraphics[width=0.68\textwidth]{\imagedir/separations/overview-class/magnetic-separation.png}
@@ -51,7 +75,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{{\color{myGreen}{Quick mention:}} Electrostatic separators}
-	
+
 	\begin{itemize}
 		\item	depends on differences in conductivity of the material
 		\item	materials passes through a high-voltage field while on a rotating drum
@@ -59,7 +83,7 @@
 		\item	some of the particles acquire a charge and adhere stronger to the drum surface
 		\item	they are carried further than the other particles, creating a split
 	\end{itemize}
-	
+
 	\see{Sinnott, 4ed, v6, Ch10}
 	\begin{center}
 		\includegraphics[width=0.50\textwidth]{\imagedir/separations/overview-class/electrostatic-separation.png}
@@ -67,45 +91,48 @@
 \end{frame}
 
 % 11 September 2012
-\begin{frame}\frametitle{What is sedimentation}
-	Class demonstration with
-	\begin{itemize}
-		\item	concrete powder in water
-		\item	drywall compound (calcium carbonate and other particles)
-	\end{itemize}
+\begin{frame}\frametitle{What is sedimentation?}
+
+	Sugar video, \href{http://www.youtube.com/watch?v=ZBOou6cahtw}{http://www.youtube.com/watch?v=ZBOou6cahtw} at \texttt{04:35 to 05:02}
 
 	\vspace{12pt}
-	DIY: add 2 to 3 tablespoons of vinegar to a glass of milk and stir	
+	DIY:
+	\begin{itemize}
+		\item	concrete powder in water
+		\item	drywall compound (calcium carbonate and other particles) in water
+		\item	add vinegar to milk to make it curdle, stir, then settle
+	\end{itemize}
+
 \end{frame}
 
-\begin{frame}\frametitle{Definitions}	
+\begin{frame}\frametitle{Definitions}
 	\textbf{Sedimentation}
-	\begin{quote}	
+	\begin{quote}
 		Removal of suspended solid particles from a fluid (\textbf{liquid} or gas) stream by gravitational settling.
 	\end{quote}
 	Most common to use a \textbf{liquid} rather than gas phase.
 
 	\vspace{12pt}
 	Some semantics:
-	
-	\vspace{12pt}	
-	{\color{myGreen}{Thickening}}: generally aims to increase the solids to higher concentration; higher throughput processes
 
 	\vspace{12pt}
-	{\color{myGreen}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for coagulation of feed.
-	
-	\seefull{Perry, 8ed, Ch18.5}	
+	{\color{purple}{Thickening}}: generally aims to increase the solids to higher concentration; higher throughput processes
+
+	\vspace{12pt}
+	{\color{purple}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for {\color{purple}{coagulation}} of feed.
+
+	\seefull{Perry, 8ed, Ch 18.5}
 \end{frame}
 
-\begin{frame}\frametitle{Where is it applied?}	
+\begin{frame}\frametitle{Where is it applied?}
 	Most commonly:
 	\begin{itemize}
 		\item	water treatment
 		\item	and mineral processing applications
 	\end{itemize}
-	
+
 	\vspace{12pt}
-	But also chemical, pharmaceutical, nuclear, petrochemical processes use gravity settling to resolve emulsions or other liquid-liquid dispersions. \see{Svarovsky}	
+	But also chemical, pharmaceutical, nuclear, petrochemical processes use gravity settling to resolve emulsions or other liquid-liquid dispersions. \see{Svarovsky}
 \end{frame}
 
 \begin{frame}\frametitle{Topics we will cover}
@@ -127,26 +154,33 @@
 		\item	\iftoggle{instructor}{density of fluid}{}
 		\item	\iftoggle{instructor}{viscosity of fluid}{}
 		\item	\iftoggle{instructor}{particle concentration (hindered)}{}
-		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: diameter of the vessel}{}
+		\item	\iftoggle{instructor}{{\color{myRed}{no effect}}: \textbf{diameter of the vessel} (or area)}{} ... to a point
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}	
+\begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}
+	Forces acting on a spherical particle in a fluid:
+	
+	\vspace{7.5cm}
+	Assuming the fluid is stagnant.
+\end{frame}
+
+\begin{frame}\frametitle{Ideal case: momentum balance on an unhindered particle}
 	Forces acting on a spherical particle in a fluid:
 	\begin{enumerate}
-		\item	\textbf{Gravity}: a constant downward force = $mg = V_p \rho_p g$		
+		\item	\textbf{Gravity}: a constant downward force = $mg = V_p \rho_p g$
 		\item	\textbf{Buoyancy}: proportional to volume displaced = $V_p \rho_f g$
 		\item	\textbf{Drag}: opposes the particle's motion (next slide)
 		\item	\textbf{Particle-particle interactions} and Brownian motion: assumed zero for now
-	\end{enumerate}	
+	\end{enumerate}
 	\[
-		\begin{array}{rcl}
-			V_p		&=& \text{particle's volume} = \displaystyle \frac{\pi D_p^3}{6} ~[\text{m}^3]\\
-			\rho_p 	&=& \text{particle density}~[\text{kg.m}^{-3}]\\
-			\rho_f  &=& \text{density of fluid}~[\text{kg.m}^{-3}]\\
-			\mu_f   &=& \text{fluid's viscosity}~[\text{Pa.s}]\\
-			g		&=& \text{gravitational constant} = 9.81~[\text{m.s}^{-2}] \\
-			D_p 	&=& \text{particle's diameter}~[\text{m}]
+		\begin{array}{rcll}
+			V_p		&=& \text{particle's volume} = \displaystyle \frac{\pi D_p^3}{6} &[\text{m}^3]\\
+			\rho_p 	&=& \text{particle density} &[\text{kg.m}^{-3}]\\
+			\rho_f  &=& \text{density of fluid} &[\text{kg.m}^{-3}]\\
+			\mu_f   &=& \text{fluid's viscosity} &[\text{Pa.s}]\\
+			g		&=& \text{gravitational constant} = 9.81 &[\text{m.s}^{-2}] \\
+			D_p 	&=& \text{particle's diameter} &[\text{m}]
 		\end{array}
 	\]
 \end{frame}
@@ -157,15 +191,16 @@
 	\]
 	where
 	\[
-		\begin{array}{rcl}
-			v	&=& \text{relative velocity between the particle and the fluid}~[\text{m.s}^{-1}] \\
-			A_p &=& \text{projected area of particle in direction of travel}~[\text{m}^2] \\
-			C_D	&=& \text{drag coefficient (it's assumed constant!)}~[-]
+		\begin{array}{rcll}
+			v	    &=& \text{relative velocity between the particle and the fluid} &[\text{m.s}^{-1}] \\
+			A_p     &=& \text{projected area of particle in direction of travel} &[\text{m}^2] \\
+			C_D	    &=& \text{drag coefficient (it's assumed constant!)} &[-] \\
+			\rho_f  &=& \text{density of fluid (not the particle)}  &[\text{kg.m}^{-3}]
 		\end{array}
 	\]
 \end{frame}
 
-\begin{frame}\frametitle{Estimating the drag coefficient}
+\begin{frame}\frametitle{Estimating the drag coefficient, $C_D$}
 	It's a function of Reynolds number = Re $= \displaystyle \frac{D_p v \rho_f}{\mu_f}$ \\
 	\see{Richardson and Barker, p 150-153}
 	\begin{enumerate}
@@ -173,7 +208,7 @@
 				\[
 					C_D = \frac{24}{\text{Re}}
 				\]
-				
+
 		\item	If $1 < \text{Re} < \text{1000}$
 				\[
 					C_D = \frac{24}{\text{Re}}\left(1 + 0.15 \text{Re}^{0.687} \right)
@@ -185,8 +220,8 @@
 		\item	If $\text{Re} > 2\times10^5 $
 				\[
 					C_D = 0.10
-				\]			
-	\end{enumerate}	
+				\]
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Drag coefficient as a function of Re}
@@ -196,16 +231,16 @@
 	\seefull{Geankoplis, 3rd p818, 4th p921}
 \end{frame}
 
-\begin{frame}\frametitle{Momentum balance (Newton's second law)}	
+\begin{frame}\frametitle{Momentum balance (Newton's second law)}
 	\[
 	\begin{array}{rcccccl}
-		\displaystyle m\frac{dv}{dt} &=&  F_\text{gravity} &-& F_\text{buoyancy} &-& F_\text{drag} = 0 \qquad \text{\color{myOrange}{at steady state}} \\		
+		\displaystyle m\frac{dv}{dt} &=&  F_\text{gravity} &-& F_\text{buoyancy} &-& F_\text{drag} = 0 \qquad \text{\color{myOrange}{at steady state}} \\
 		\\
-		0 &=&  V_p \rho_p g &-& V_p \rho_f g &-& C_D A_p \displaystyle \frac{\rho_f v^2}{2} 
+		0 &=&  V_p \rho_p g &-& V_p \rho_f g &-& C_D A_p \displaystyle \frac{\rho_f v^2}{2}
 	\end{array}
 	\]
-	Substitute $V_p = \displaystyle \frac{\pi D_p^3}{6}$ and $A_p = \displaystyle \frac{\pi D_p^2}{4}$ for spherical particles and solve for $v$:
-	
+	Substitute $V_p = \displaystyle \frac{\pi D_p^3}{6}$ and $A_p = \displaystyle \frac{\pi D_p^2}{4}$ for spherical particles ($A_p$ is the 2-D cross-sectional area) and solve for $v$:
+
 	\begin{exampleblock}{Terminal velocity of an unhindered particle}
 		\[
 			v = \sqrt{\frac{4\left(\rho_p - \rho_f \right)g D_p}{3 C_D \rho_f}}
@@ -218,32 +253,32 @@
 % See: Lyons, William and Gary Spliga. Standard Handbook of Petroleum and Natural Gas Engineering. Gulf Professional Publishing, 2004. Section 6, p.250
 % See the sequence of screenshots from the book under "/Users/kevindunn/Courses/4M3/References/Sedimentation", as stokes-1.png  to stokes-5.png
 \begin{frame}\frametitle{Stokes' law}
-	
+
 	Simplification of the above equation when Re $< 1$:
-	
+
 	\[
 		v = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
-	\]	
-	
+	\]
+
 	\vspace{12pt}
 	\textbf{Confirm it for yourself}: \emph{hint}: use the solution for a quadratic equation $ax^2 + bx + c = 0$
 \end{frame}
 
 \begin{frame}\frametitle{Solving the general equation for $v$}
-	
+
 	$v = fn(C_D)$, but $C_D = fn(\text{Re}) = fn(v)$
-	
+
 	\begin{enumerate}
 		\item	Assume Re $< 1$ (Stokes' region)
 		\item	Solve for $v$
 		\item	Calculate Reynolds number, Re
-		\item	Was Reynolds number region assumption true? If so: stop. 
+		\item	Was Reynolds number region assumption true? If so: stop.
 		\item	If not, use new Re and recalculate $C_D$
-		\item	Repeat from step 2 to 5 until convergence		
+		\item	Repeat from step 2 to 5 until convergence
 	\end{enumerate}
-	
+
 	\vspace{12pt}
-	Alternative approach shown in Geankoplis.	
+	%Alternative approach shown in Geankoplis.
 \end{frame}
 
 \begin{frame}\frametitle{Why is the terminal velocity so important?}
@@ -263,10 +298,10 @@
 		\item	small particles are dragged in the wake of larger particles
 		\item	ionized conditions can cause particle coagulation $\rightarrow$ larger diameters $\rightarrow$ faster settling
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	Video: \href{http://www.youtube.com/watch?v=h8n3Nt4tPXU}{http://www.youtube.com/watch?v=h8n3Nt4tPXU}
-	
+
 	How to deal with this issue?
 \end{frame}
 
@@ -284,25 +319,25 @@
 
 \begin{frame}\frametitle{Settler terminology}
 	A standard gravitational thickener:
-	
+
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Svarovsky.png}
 	\end{center}
-	\see{Svarovsky, 3ed, p141}	
+	\see{Svarovsky, 3ed, p141}
 \end{frame}
 
 \begin{frame}\frametitle{Gravitational thickener terminology}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-CRv2.png}
 	\end{center}
-	\see{Richardson and Harker, 5ed, v2, p256}	
+	\see{Richardson and Harker, 5ed, v2, p256}
 \end{frame}
 
 \begin{frame}\frametitle{Gravitational thickener top and side view}
 	\begin{center}
 		\includegraphics[width=0.69\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Perry.png}
 	\end{center}
-	\see{Perry's, 8ed, 18-71}	
+	\see{Perry's, 8ed, 18-71}
 \end{frame}
 
 \begin{frame}\frametitle{Unhindered settling}
@@ -323,17 +358,17 @@
 	\[
 		A = \displaystyle \frac{Q C_0}{\psi} = \displaystyle \frac{Q C_0}{C_0 v} = \displaystyle \frac{Q}{v}
 	\]
-	where 
+	where
 	\begin{itemize}
 		\item	$Q$ = volumetric feed rate~ [$\text{m}^3$ of feed per unit time]
 		\item	$C_0$ = concentration of solids in feed [$\text{kg of solids per~}\text{m}^{3}~\text{feed}$]
 		\item	$v$ = settling velocity [meters per unit time]
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Example}
- 	A sample of material was settled in a graduated lab cylinder 300mm tall. The interface dropped from 500mL to 215mL on the graduations during a 4 minute period. 
-	
+ 	A sample of material was settled in a graduated lab cylinder 300mm tall. The interface dropped from 500mL to 215mL on the graduations during a 4 minute period.
+
 	\begin{enumerate}
 		\item	Give a preliminary estimate of the clarifier diameter required to treat a waste stream of 2100 L per minute. Over-design by a factor of 2, based on the settling rate, and account for about 7 $\text{m}^2$ of entry area used to eliminate turbulence in the entering stream.
 		\item	If the feed concentration is {\color{myRed}{\xout{200}}}~3.5 kg per $\text{m}^3$ feed, what is the loading rate? Is it within the typical thickener range of 50 to 120 kg per day per square meter? \see{Perry, 8ed, p22-79}
@@ -342,9 +377,9 @@
 	\begin{enumerate}
 		\item	Settling rate = 171 mm per 4 minutes = 42.8 mm/min.\\Area = $\displaystyle \frac{2.1~\text{m}^3.\text{min}^{-1}}{\left(0.5\right)\left(42.8 \times 10^{-3} \text{m}.\text{min}^{-1}\right)} = 98 + 7 \text{m}^2$
 		\item	$\psi = C_0 v = 3.5 \displaystyle\frac{\text{kg}}{\text{m}^3} \cdot 0.022 \displaystyle \frac{\text{m}}{\text{min}} \cdot \displaystyle\frac{60 \times 24 \text{min}}{\text{day}} = 106 \displaystyle \frac{\text{kg}}{\text{day}.\text{m}^2}$
-	\end{enumerate}	
+	\end{enumerate}
 \end{frame}
-	
+
 \begin{frame}\frametitle{Setting zones during sedimentation}
 	\begin{center}
 		\includegraphics[width=0.75\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
@@ -360,7 +395,7 @@
 		\item	apparent density and viscosity of the fluid phase is increased
 		\item	drag force increased due to other particles
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	Approaches to dealing with this:
 	\begin{enumerate}
@@ -376,14 +411,14 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-rate-conc-vs-time.png}
 	\end{center}
-	
+
 	More concentrated solutions take longer to settle; sometimes see clearer supernatants with concentrated solutions: small particles are pulled down in wake of larger particles.
 \end{frame}
 
 \begin{frame}\frametitle{How can we accelerate settling?}
 	\begin{itemize}
 		\item	modify the particle shape: spherical vs needle shape (usually not possible)
-		\item	modify the fluid viscosity and density 
+		\item	modify the fluid viscosity and density
 		\begin{itemize}
 			\item	not practical in most cases
 			\item	e.g. used to separate diamonds in a process called ``dense medium separation''
@@ -395,14 +430,14 @@
 
 \begin{frame}\frametitle{Flocculation}
 	MIT video on water cleaning: \href{http://www.youtube.com/watch?v=5uuQ77vAV\_U}{http://www.youtube.com/watch?v=5uuQ77vAV\_U}
-	
+
 	\vspace{7cm}
 	{\tiny Please take notes from the video}
 \end{frame}
 
 \begin{frame}\frametitle{Flocculation}
 	Small particles (around $< 40 \mu m$) and some biologically active particles will take unreasonably long times to settle, if at all.
-	\vspace{12pt}	
+	\vspace{12pt}
 	Flocculated particles cluster together and settle at higher rates
 	\begin{itemize}
 		\item	impossible to predict shape and hence settling rate
@@ -431,7 +466,7 @@
 	\begin{exampleblock}{Interesting point}
 		For a given feed, if you have the settling curve for one height, you have it for other heights also. Ratio 0A' : 0A'' is constant everywhere.
 	\end{exampleblock}
-	
+
 	\begin{center}
 		\includegraphics[width=0.6\textwidth]{\imagedir/separations/sedimentation/settling-rates-different-heights.png}
 	\end{center}
@@ -448,11 +483,11 @@
 	At least 2 procedures in the literature to design settlers from settling curves:
 	\begin{itemize}
 		\item	Talmage and Fitch: tends to overdesign the area
-		\item	Coe and Clevenger: underdesign of the thickener area 
+		\item	Coe and Clevenger: underdesign of the thickener area
 	\end{itemize}
 	\see{Svarovsky, 4ed, p 180}
 
-	\vspace{12pt}	
+	\vspace{12pt}
 	{\color{myGreen}{In practice: we will rely on outside consultants and civil engineers, most likely, to size and design the unit. Else see the references at end for more details.}}
 \end{frame}
 
@@ -461,15 +496,15 @@
 		\item	What width and depth should the settler be?
 		\item	How long should the particles be in the settler? Does residence time matter?
 	\end{enumerate}
-	
+
 	Perry's, section 22.5.6:
 	\begin{itemize}
 		\item	sedimentation tank can be rectangular or circular
 		\begin{itemize}
-			\item	rectangular: effluent weirs at the end 
-			\item	circular: around the periphery 
+			\item	rectangular: effluent weirs at the end
+			\item	circular: around the periphery
 		\end{itemize}
-		\item	main concern: uniform flow in the tank (no short-circuits)		
+		\item	main concern: uniform flow in the tank (no short-circuits)
 		\item	removal efficiency = f(hydraulic flow pattern in tank)
 		\begin{itemize}
 			\item	incoming flow must be dissipated before solids can settle
@@ -504,7 +539,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Concept: the ideal circular settling basin}
-	
+
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/circular-tank-sedimentation.png}
 	\end{center}
@@ -516,16 +551,16 @@
 \end{frame}
 
 \begin{frame}\frametitle{Settler design rules of thumb: size}
-	
+
 	For wastewater treatment the \textbf{main design criterion}: solids percentage in underflow
 	\begin{itemize}
 		\item	A volume and mass balance on solids and liquids is then used to find the liquid overflow rate
 		\item	surface overflow rate (SOR) $\sim 40 \text{m}^3$ per day per $\text{m}^2$ for primary units
 		\item	secondary units as low as 12 up to $30 \text{m}^3$ per day per $\text{m}^2$
-		\item	minimum depth of sedimentation tanks is around 3.0 m 
-		\item	circular sedimentation: minimum diameter of 6.0 m 
+		\item	minimum depth of sedimentation tanks is around 3.0 m
+		\item	circular sedimentation: minimum diameter of 6.0 m
 		\item	length to width ratio of 5:1
-	\end{itemize} 
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Settler design rules of thumb: residence time}
@@ -534,7 +569,7 @@
 		\item	longer times for light solids, or in winter times
 		\item	organic solids generally will not compact to more than 5 to 10\%
 		\item	inorganic solids will compact up to 20 or 30\%
-		\item	why important: we have to design sludge pumps to remove the solids: high concentration solids require diaphragm pumps		
+		\item	why important: we have to design sludge pumps to remove the solids: high concentration solids require diaphragm pumps
 	\end{itemize}
 \end{frame}
 
@@ -543,7 +578,7 @@
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/thickener-design-Svarovsky.png}
 	\end{center}
 	\see{Svarovsky, 3ed, p172}
-	
+
 	\vspace{12pt}
 	Can replace the steel with a sloped concrete slab.
 \end{frame}
@@ -561,7 +596,7 @@
 		\item	avoid breaking up existing flocs
 		\item	must not get clogged
 	\end{itemize}
-	
+
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{\imagedir/separations/sedimentation/Fitch-feedwell-Svarovsky.png}
 	\end{center}
@@ -574,7 +609,7 @@
 		\item	$x$ = tank diameter between 10 and 225 ft
 		\item	$a=147$ and $b=1.38$ for thickeners
 	\end{itemize}
-	
+
 	\seefull{Perry, 8ed, section 18.6}
 	\begin{itemize}
 		\item	Installation costs will be at least 3 to 4 times the actual equipment costs.
@@ -583,23 +618,23 @@
 			\item	rakes, drivehead and motors
 			\item	walkways and bridge (center pier) and railings
 			\item	pumps, piping, instrumentation and lift mechanisms
-			\item	overflow launder and feed 
+			\item	overflow launder and feed
 		\end{itemize}
 		Installation is affected by:
-		\begin{itemize}			
+		\begin{itemize}
 			\item	site surveying
-			\item	site preparation and excavation 
-			\item	reinforcing bar placement 
-			\item	backfill			
-		\end{itemize}		
-	\end{itemize}	
+			\item	site preparation and excavation
+			\item	reinforcing bar placement
+			\item	backfill
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Operating costs}
 	These are mostly insignificant
 	\begin{itemize}
 		\item	e.g. 60 m (200 ft) diameter thickener, torque rating = 1.0 MN.m: requires $\sim$ 12 kW
-		\item	due to slow rotating speed: peripheral speed is about 9 m/min 
+		\item	due to slow rotating speed: peripheral speed is about 9 m/min
 		\item	implies low maintenance costs
 		\item	little attention from operators after start-up
 		\item	chemicals for flocculation (if required), frequently dwarfs all other operating costs \see{Perry, 8ed, Ch18.6}
@@ -610,7 +645,7 @@
 	\begin{itemize}
 		\item	Designs with peripheral inlets (submerged-orifice flow control) and either center-weir outlets or peripheral-weir outlets adjacent to the peripheral-inlet channel.
 		\item	Deep cone thickener
-		\item	Lamella (inclined plate or tubes): often for gas-solid applications 
+		\item	Lamella (inclined plate or tubes): often for gas-solid applications
 				%\vspace{12pt}
 				%\todo{Link in YouTube video} %AzGH6ObX_Uk or FLmzCkFa9VA
 	\end{itemize}
@@ -620,8 +655,8 @@
 	\begin{enumerate}
 		\item	Calculate the minimum area and diameter of a circular thickener to treat 720 $\text{m}^3$ per hour of slurry containing 20\micron~particles of silica, whose density is about 2600 kg.$\text{m}^{-3}$. The particles are suspended in water at a concentration of 650~kg.$\text{m}^{-3}$. The slurry cannot be tested in a lab. Use an over-design factor of 1.5 on the settling velocity.
 		\item	If it is desired to have an underflow of 1560 kg solids per $\text{m}^{3}$ underflow; what is the underflow volumetric flow rate if total separation of solids occurs?
-		\item	Calculate the separation factor.		
-	\end{enumerate}	
+		\item	Calculate the separation factor.
+	\end{enumerate}
 \end{frame}
 
 % 2013: fix chapter reference for Schweitzer
