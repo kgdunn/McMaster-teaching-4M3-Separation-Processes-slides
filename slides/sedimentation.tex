@@ -234,7 +234,7 @@
 	\begin{array}{rcccccl}
 		\displaystyle m\frac{dv}{dt} &=&  F_\text{gravity} &-& F_\text{buoyancy} &-& F_\text{drag} = 0 \qquad \text{\color{myOrange}{at steady state}} \\
 		\\
-		0 &=&  V_p \rho_p g &-& V_p \rho_f g &-& C_D A_p \displaystyle \frac{\rho_f v^2}{2}
+		0 &=&  V_p \rho_p g &-& V_p \rho_f g &-& C_D A_p \displaystyle \frac{\rho_f v^2}{2} \label{MB}
 	\end{array}
 	\]
 	Substitute $V_p = \displaystyle \frac{\pi D_p^3}{6}$ and $A_p = \displaystyle \frac{\pi D_p^2}{4}$ for spherical particles ($A_p$ is the 2-D cross-sectional area) and solve for $v$:
@@ -293,7 +293,21 @@
 	We are designing the unit for the smaller particles.
 \end{frame}
 
-\begin{frame}\frametitle{Hindered settling}
+\begin{frame}\frametitle{Introducing ``hindered settling''}
+	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
+	
+	\vspace{12pt}
+	Most important points:
+	\begin{itemize}
+		\item	large particles settle faster in low concentration (free settling)
+		\item	settling interface forms (independent of particle size)
+		\item	Stokes law (free settling) doesn't apply
+		\item	interface's height \emph{vs} time plots are formed
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}\frametitle{{\color{purple}Hindered settling}}
 	Particles will not settle as perfect spheres at their terminal velocity under a variety of conditions:
 	\begin{itemize}
 		\item	if they are hindered by other particles
@@ -306,53 +320,58 @@
 	\end{itemize}
 
 	\vspace{12pt}
-	Video: \href{http://www.youtube.com/watch?v=h8n3Nt4tPXU}{http://www.youtube.com/watch?v=h8n3Nt4tPXU}
+	Video: \href{http://www.youtube.com/watch?v=h8n3Nt4tPXU}{http://www.youtube.com/watch?v=h8n3Nt4tPXU} shows some of these issues
 
-	How to deal with this issue?
 \end{frame}
 
-\begin{frame}\frametitle{Video of sedimentation experiments}
-	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
+\begin{frame}\frametitle{Hindered settling}
+	For a high concentration of particles we have hindered settling. Stokes law doesn't apply in these cases.
 	
-	Most important points:
-	\begin{itemize}
-		\item	large particles settle faster in low concentration (free settling)
-		\item	settling interface forms (independent of particle size)
-		\item	height \emph{vs} time plots are formed
-	\end{itemize}
+	\vspace{12pt}
+	How to deal with this:
+	\begin{enumerate}
+		\item	Modify the density, viscosity and other terms in the momentum balance (slide \ref{MB}): use correction factors
+		\item	Resort to lab tests on samples that closely match the actual feed material
+		\begin{itemize}
+			\item	use lab results to design the settler
+		\end{itemize}
+	\end{enumerate}
+	
+	\vspace{12pt}
+	Let's see what these large-scale units look like.
 \end{frame}
 
-\begin{frame}\frametitle{Settler terminology}
+\begin{frame}\frametitle{Large scale settlers}
+	This unit operates on a continuous basis (at/close to {\color{myOrange}steady-state})
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-vessel-Brown-and-Associates-p113.png}
 	\end{center}
 \end{frame}
 
 \begin{frame}\frametitle{Settling zones during sedimentation}
+	We can run a batch experiment and observe settling rates
 	\begin{center}
-		\includegraphics[width=0.75\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
+		\includegraphics[width=0.70\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
 	\end{center}
 	\see{Svarovsky, 3rd ed, p 135}
 \end{frame}
 
-\begin{frame}\frametitle{Hindered settling}
-	For a high concentration of particles we have hindered settling:
+\begin{frame}\frametitle{Settling zones during sedimentation}
 	\begin{itemize}
-		\item	form clusters that settle faster
-		\item	however, there is upward flow from displaced fluids
-		\item	apparent density and viscosity of the fluid phase is increased
-		\item	drag force increased due to other particles
+		\item	initial constant rate of settling is observed
+		\item	a critical point is reached: point of inflection
+		\item	slow compression of the solids after this point
 	\end{itemize}
+	\vspace{12pt}
+	At least 2 procedures in the literature to design settlers from settling curves:
+	\begin{itemize}
+		\item	Talmage and Fitch: tends to overdesign the area
+		\item	Coe and Clevenger: underdesign of the thickener area
+	\end{itemize}
+	\see{Svarovsky, 4ed, p 180}
 
 	\vspace{12pt}
-	Approaches to dealing with this:
-	\begin{enumerate}
-		\item	Modify the density, viscosity and other terms in the momentum balance: use correction factors
-		\item	Resort to lab tests on samples that closely match the actual feed material
-		\begin{itemize}
-			\item	use lab results to design the settler
-		\end{itemize}
-	\end{enumerate}
+	{\color{myGreen}{In practice: we will rely on outside consultants and civil engineers, most likely, to size and design the unit. Else see the references at end for more details.}}
 \end{frame}
 
 \begin{frame}\frametitle{The effect of particle concentration}
@@ -423,67 +442,38 @@
 	\end{center}
 \end{frame}
 
-% 2013: explain why this is useful ... had several questions on what this slide is trying to say
-\begin{frame}\frametitle{Sludge interface experiments}
-	\begin{exampleblock}{Interesting point}
-		For a given feed, if you have the settling curve for one height, you have it for other heights also. Ratio 0A' : 0A'' is constant everywhere.
-	\end{exampleblock}
-
-	\begin{center}
-		\includegraphics[width=0.6\textwidth]{\imagedir/separations/sedimentation/settling-rates-different-heights.png}
-	\end{center}
-	\see{Richardson and Harker, 5ed, v2}
-\end{frame}
-
-\begin{frame}\frametitle{Sludge interface experiments}
-	\begin{itemize}
-		\item	initial constant rate of settling is observed
-		\item	a critical point is reached: point of inflection
-		\item	slow compression of the solids after this point
-	\end{itemize}
-	\vspace{12pt}
-	At least 2 procedures in the literature to design settlers from settling curves:
-	\begin{itemize}
-		\item	Talmage and Fitch: tends to overdesign the area
-		\item	Coe and Clevenger: underdesign of the thickener area
-	\end{itemize}
-	\see{Svarovsky, 4ed, p 180}
-
-	\vspace{12pt}
-	{\color{myGreen}{In practice: we will rely on outside consultants and civil engineers, most likely, to size and design the unit. Else see the references at end for more details.}}
-\end{frame}
-
 \begin{frame}\frametitle{Further settler terminology}
 	A standard gravitational thickener:
 
+	\vspace{12pt}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Svarovsky.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Svarovsky-flux-line.png}
 	\end{center}
 	\see{Svarovsky, 3ed, p141}
 \end{frame}
 
-\begin{frame}\frametitle{Gravitational thickener terminology}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-CRv2.png}
-	\end{center}
-	\see{Richardson and Harker, 5ed, v2, p256}
-\end{frame}
+% \begin{frame}\frametitle{Gravitational thickener terminology}
+% 	\begin{center}
+% 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-CRv2.png}
+% 	\end{center}
+% 	\see{Richardson and Harker, 5ed, v2, p256}
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Gravitational thickener top and side view}
+% 	\begin{center}
+% 		\includegraphics[width=0.69\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Perry.png}
+% 	\end{center}
+% 	\see{Perry's, 8ed, 18-71}
+% \end{frame}
 
-\begin{frame}\frametitle{Gravitational thickener top and side view}
-	\begin{center}
-		\includegraphics[width=0.69\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Perry.png}
-	\end{center}
-	\see{Perry's, 8ed, 18-71}
-\end{frame}
-
-\begin{frame}\frametitle{Unhindered settling}
+\begin{frame}\frametitle{Unhindered settling: design principle}
 	\begin{itemize}
 		\item	Takes place when settling occurs at a constant rate, independent of other particles.
 		\item	Use the equations derived in last class to estimate settling velocity = $v$.
-		\item	Draw an imaginary horizontal layer through the settler and observe the mass of solids passing across it per unit time, per unit area = {\color{myOrange}{mass flux}}.
+		\item	Draw an imaginary horizontal layer through the settler and observe the mass of solids passing across it per unit time, per unit area = {\color{purple}{mass flux}}.
 		\item	The flux of solids is $\psi = C_0 v$, with units of $\displaystyle \frac{\text{kg solids}}{\text{m}^3~\text{feed}} \cdot \frac{\text{meters}}{\text{second}}$
 		\item	$ \psi = C_0 v \quad \displaystyle \frac{\text{kg solids}}{\text{second}} \cdot \frac{1}{\text{meters}^2}$
-		\item	$\psi$ = mass feed rate per unit area = loading rate
+		\item	$\psi$ = mass feed rate per unit area = {\color{purple}loading rate} = flux
 		\item	$\displaystyle \frac{1}{\psi}$ = unit area required per given amount of mass feed rate
 	\end{itemize}
 	\textbf{Note}: assuming no solids leave the overflow
@@ -495,11 +485,17 @@
 		A = \displaystyle \frac{Q C_0}{\psi} = \displaystyle \frac{Q C_0}{C_0 v} = \displaystyle \frac{Q}{v}
 	\]
 	where
-	\begin{itemize}
-		\item	$Q$ = volumetric feed rate~ [$\text{m}^3$ of feed per unit time]
-		\item	$C_0$ = concentration of solids in feed [$\text{kg of solids per~}\text{m}^{3}~\text{feed}$]
-		\item	$v$ = settling velocity [meters per unit time]
-	\end{itemize}
+	\[
+	\begin{array}{rcll}
+		Q		&=& \text{volumetric feed rate}              &\left[\displaystyle \frac{\text{m}^3~\text{feed}}{\text{s}}\right]\\
+		\\
+		C_0 	&=& \text{concentration of solids in feed}   &\left[\displaystyle\frac{\text{kg solids}}{\text{m}^{3}~\text{feed}}\right]\\
+		\\
+		v  		&=& \text{settling velocity} 				 &\left[ \text{m.s}^{-1}\right] \\
+		\\
+		\psi    &=& \text{mass feed rate per unit area}		 &\left[\displaystyle \frac{\text{kg solids}}{\text{s}} \cdot \frac{1}{\text{m}^2~\text{area}}\right]
+	\end{array}
+	\]
 \end{frame}
 
 \begin{frame}\frametitle{Example}
@@ -507,12 +503,12 @@
 
 	\begin{enumerate}
 		\item	Give a preliminary estimate of the clarifier diameter required to treat a waste stream of 2100 L per minute. Over-design by a factor of 2, based on the settling rate, and account for about 7 $\text{m}^2$ of entry area used to eliminate turbulence in the entering stream.
-		\item	If the feed concentration is {\color{myRed}{\xout{200}}}~3.5 kg per $\text{m}^3$ feed, what is the loading rate? Is it within the typical thickener range of 50 to 120 kg per day per square meter? \see{Perry, 8ed, p22-79}
+		\item	If the feed concentration is 1.2 kg per $\text{m}^3$ feed, what is the loading rate? Is it within the typical thickener range of 50 to 120 kg per day per square meter? \see{Perry, 8ed, p22-79}
 	\end{enumerate}
 	{\color{myGreen}{Answers}}:
 	\begin{enumerate}
-		\item	Settling rate = 171 mm per 4 minutes = 42.8 mm/min.\\Area = $\displaystyle \frac{2.1~\text{m}^3.\text{min}^{-1}}{\left(0.5\right)\left(42.8 \times 10^{-3} \text{m}.\text{min}^{-1}\right)} = 98 + 7 \text{m}^2$
-		\item	$\psi = C_0 v = 3.5 \displaystyle\frac{\text{kg}}{\text{m}^3} \cdot 0.022 \displaystyle \frac{\text{m}}{\text{min}} \cdot \displaystyle\frac{60 \times 24 \text{min}}{\text{day}} = 106 \displaystyle \frac{\text{kg}}{\text{day}.\text{m}^2}$
+		\item	Settling rate = 171 mm per 4 minutes = 42.8 mm/min.\\Area = $\displaystyle \frac{2.1~\text{m}^3.\text{min}^{-1}}{\left(\frac{1}{2}\right)\left(42.8 \times 10^{-3} \text{m}.\text{min}^{-1}\right)} = 98 + 7 \text{m}^2$
+		\item	$\psi = C_0 v = 1.2 \displaystyle\frac{\text{kg}}{\text{m}^3} \cdot 0.0428 \displaystyle \frac{\text{m}}{\text{min}} \cdot \displaystyle\frac{60 \times 24 \text{min}}{\text{day}} = 74 \displaystyle \frac{\text{kg}}{\text{day}.\text{m}^2}$
 	\end{enumerate}
 \end{frame}
 
@@ -562,6 +558,18 @@
 	\end{center}
 	Changing depth has no effect in a rectangular basin \see{Svarovsky, 4ed, p170}
 \end{frame}
+
+% Explain why this is useful ... had several questions on what this slide is trying to say
+% \begin{frame}\frametitle{Sludge interface experiments}
+% 	\begin{exampleblock}{Interesting point}
+% 		For a given feed, if you have the settling curve for one height, you have it for other heights also. Ratio 0A' : 0A'' is constant everywhere.
+% 	\end{exampleblock}
+% 
+% 	\begin{center}
+% 		\includegraphics[width=0.6\textwidth]{\imagedir/separations/sedimentation/settling-rates-different-heights.png}
+% 	\end{center}
+% 	\see{Richardson and Harker, 5ed, v2}
+% \end{frame}
 
 \begin{frame}\frametitle{Concept: the ideal circular settling basin}
 
@@ -656,13 +664,13 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Practice questions}
-	\begin{enumerate}
-		\item	Calculate the minimum area and diameter of a circular thickener to treat 720 $\text{m}^3$ per hour of slurry containing 20\micron~particles of silica, whose density is about 2600 kg.$\text{m}^{-3}$. The particles are suspended in water at a concentration of 650~kg.$\text{m}^{-3}$. The slurry cannot be tested in a lab. Use an over-design factor of 1.5 on the settling velocity.
-		\item	If it is desired to have an underflow of 1560 kg solids per $\text{m}^{3}$ underflow; what is the underflow volumetric flow rate if total separation of solids occurs?
-		\item	Calculate the separation factor.
-	\end{enumerate}
-\end{frame}
+% \begin{frame}\frametitle{Practice questions}
+% 	\begin{enumerate}
+% 		\item	Calculate the minimum area and diameter of a circular thickener to treat 720 $\text{m}^3$ per hour of slurry containing 20\micron~particles of silica, whose density is about 2600 kg.$\text{m}^{-3}$. The particles are suspended in water at a concentration of 650~kg.$\text{m}^{-3}$. Use an over-design factor of 1.5 on the settling velocity.
+% 		\item	If it is desired to have an underflow of 1560 kg solids per $\text{m}^{3}$ underflow; what is the underflow volumetric flow rate if total separation of solids occurs?
+% 		\item	Calculate the separation factor.
+% 	\end{enumerate}
+% \end{frame}
 
 % 2013: add reference for Sinnot
 \begin{frame}\frametitle{References for this section}
