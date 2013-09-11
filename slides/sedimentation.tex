@@ -3,7 +3,7 @@
 %	Watch video: http://www.youtube.com/watch?v=gVeW1rr8GEI&feature=related
 %	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
 
-
+% 10 September 2013
 \begin{frame}\frametitle{Last class: Separation factor}
 	As mentioned, we will introduce a number of important principles we will re-use later.
 
@@ -246,10 +246,6 @@
 	\end{exampleblock}
 \end{frame}
 
-%2013: Look into idea from Omid Rashid's 2012 project, "Values of the drag coefficient are presented in figure 1 in Appendix A, as a function of the product of drag coefficient (C’) times the Reynolds number squared, where this technique eliminates the velocity from the expression, avoiding trial and error, and iterative solutions."
-% Plot C' vs C' \times Re^2   <--- don't you still need to know the velocity to calculate Re and C'. Not sure how to use this figure.
-% See: Lyons, William and Gary Spliga. Standard Handbook of Petroleum and Natural Gas Engineering. Gulf Professional Publishing, 2004. Section 6, p.250
-% See the sequence of screenshots from the book under "/Users/kevindunn/Courses/4M3/References/Sedimentation", as stokes-1.png  to stokes-5.png
 \begin{frame}\frametitle{Stokes' law}
 
 	Simplification of the above equation when Re $< 1$:
@@ -260,6 +256,11 @@
 
 	\vspace{12pt}
 	\textbf{Confirm it for yourself}: \emph{hint}: use the solution for a quadratic equation $ax^2 + bx + c = 0$
+	
+	%2013: Look into idea from Omid Rashid's 2012 project, "Values of the drag coefficient are presented in figure 1 in Appendix A, as a function of the product of drag coefficient (C’) times the Reynolds number squared, where this technique eliminates the velocity from the expression, avoiding trial and error, and iterative solutions."
+	% Plot C' vs C' \times Re^2   <--- don't you still need to know the velocity to calculate Re and C'. Not sure how to use this figure.
+	% See: Lyons, William and Gary Spliga. Standard Handbook of Petroleum and Natural Gas Engineering. Gulf Professional Publishing, 2004. Section 6, p.250
+	% See the sequence of screenshots from the book under "/Users/kevindunn/Courses/4M3/References/Sedimentation", as stokes-1.png  to stokes-5.png
 \end{frame}
 
 \begin{frame}\frametitle{Solving the general equation for $v$}
@@ -279,10 +280,17 @@
 	\textbf{Example}: A particle 1mm in diameter, with density of 5000~$\displaystyle \frac{\text{kg}}{\text{m}^3}$ is settling in an unhindered environment of water. Calculate an estimate of its terminal velocity. [\emph{ans}: 27 cm/second]
 \end{frame}
 
+% 12 September 2013
 \begin{frame}\frametitle{Why is the terminal velocity so important?}
 	\begin{exampleblock}{Design criterion}
-		Terminal velocity of the slowest particle is our limiting design criterion
+		Terminal velocity of the \emph{slowest particle} is our limiting design criterion
 	\end{exampleblock}
+	
+	\vspace{12pt}
+	We will describe particle sizes soon. But for now, it is apparent that the feed material will have small and large particles.
+	
+	\vspace{12pt}
+	We are designing the unit for the smaller particles.
 \end{frame}
 
 \begin{frame}\frametitle{Hindered settling}
@@ -305,81 +313,22 @@
 
 \begin{frame}\frametitle{Video of sedimentation experiments}
 	\href{http://www.youtube.com/watch?v=E9rHSLUr3PU}{http://www.youtube.com/watch?v=E9rHSLUr3PU}
+	
+	Most important points:
+	\begin{itemize}
+		\item	large particles settle faster in low concentration (free settling)
+		\item	settling interface forms (independent of particle size)
+		\item	height \emph{vs} time plots are formed
+	\end{itemize}
 \end{frame}
-
-\begin{comment}
-% 13 and 14 September 2012
-%
-% Note: the class on 13 September 2012 did not go well. Please watch the video again.
-% I felt the slides were poorly ordered; for example, I had to jump forward to the slide
-% on sludge interface experiments to show what they were.
-% I feel that I should have covered the 4 settling zones earlier. Other reordering would
-% help improve this section.
 
 \begin{frame}\frametitle{Settler terminology}
-	A standard gravitational thickener:
-
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Svarovsky.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-vessel-Brown-and-Associates-p113.png}
 	\end{center}
-	\see{Svarovsky, 3ed, p141}
 \end{frame}
 
-\begin{frame}\frametitle{Gravitational thickener terminology}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-CRv2.png}
-	\end{center}
-	\see{Richardson and Harker, 5ed, v2, p256}
-\end{frame}
-
-\begin{frame}\frametitle{Gravitational thickener top and side view}
-	\begin{center}
-		\includegraphics[width=0.69\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Perry.png}
-	\end{center}
-	\see{Perry's, 8ed, 18-71}
-\end{frame}
-
-\begin{frame}\frametitle{Unhindered settling}
-	\begin{itemize}
-		\item	Takes place when settling occurs at a constant rate, independent of other particles.
-		\item	Use the equations derived in last class to estimate settling velocity = $v$.
-		\item	Draw an imaginary horizontal layer through the settler and observe the mass of solids passing across it per unit time, per unit area = {\color{myOrange}{mass flux}}.
-		\item	The flux of solids is $\psi = C_0 v$, with units of $\displaystyle \frac{\text{kg solids}}{\text{m}^3~\text{feed}} \cdot \frac{\text{meters}}{\text{second}}$
-		\item	$ \psi = C_0 v \quad \displaystyle \frac{\text{kg solids}}{\text{second}} \cdot \frac{1}{\text{meters}^2}$
-		\item	$\psi$ = mass feed rate per unit area = loading rate
-		\item	$\displaystyle \frac{1}{\psi}$ = unit area required per given amount of mass feed rate
-	\end{itemize}
-	\textbf{Note}: assuming no solids leave the overflow
-\end{frame}
-
-\begin{frame}\frametitle{Preliminary settler area estimate}
-	The area required under these ideal conditions:
-	\[
-		A = \displaystyle \frac{Q C_0}{\psi} = \displaystyle \frac{Q C_0}{C_0 v} = \displaystyle \frac{Q}{v}
-	\]
-	where
-	\begin{itemize}
-		\item	$Q$ = volumetric feed rate~ [$\text{m}^3$ of feed per unit time]
-		\item	$C_0$ = concentration of solids in feed [$\text{kg of solids per~}\text{m}^{3}~\text{feed}$]
-		\item	$v$ = settling velocity [meters per unit time]
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Example}
- 	A sample of material was settled in a graduated lab cylinder 300mm tall. The interface dropped from 500mL to 215mL on the graduations during a 4 minute period.
-
-	\begin{enumerate}
-		\item	Give a preliminary estimate of the clarifier diameter required to treat a waste stream of 2100 L per minute. Over-design by a factor of 2, based on the settling rate, and account for about 7 $\text{m}^2$ of entry area used to eliminate turbulence in the entering stream.
-		\item	If the feed concentration is {\color{myRed}{\xout{200}}}~3.5 kg per $\text{m}^3$ feed, what is the loading rate? Is it within the typical thickener range of 50 to 120 kg per day per square meter? \see{Perry, 8ed, p22-79}
-	\end{enumerate}
-	{\color{myGreen}{Answers}}:
-	\begin{enumerate}
-		\item	Settling rate = 171 mm per 4 minutes = 42.8 mm/min.\\Area = $\displaystyle \frac{2.1~\text{m}^3.\text{min}^{-1}}{\left(0.5\right)\left(42.8 \times 10^{-3} \text{m}.\text{min}^{-1}\right)} = 98 + 7 \text{m}^2$
-		\item	$\psi = C_0 v = 3.5 \displaystyle\frac{\text{kg}}{\text{m}^3} \cdot 0.022 \displaystyle \frac{\text{m}}{\text{min}} \cdot \displaystyle\frac{60 \times 24 \text{min}}{\text{day}} = 106 \displaystyle \frac{\text{kg}}{\text{day}.\text{m}^2}$
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{Setting zones during sedimentation}
+\begin{frame}\frametitle{Settling zones during sedimentation}
 	\begin{center}
 		\includegraphics[width=0.75\textwidth]{\imagedir/separations/sedimentation/sedimentation-over-time.png}
 	\end{center}
@@ -453,6 +402,20 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Feed area: feedwell}
+	\begin{itemize}
+		\item	aim to minimize turbulence from entry velocity
+		\item	avoid disruption to existing settling
+		\item	avoid breaking up existing flocs
+		\item	must not get clogged
+	\end{itemize}
+
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/sedimentation/Fitch-feedwell-Svarovsky.png}
+	\end{center}
+	\see{Svarovsky, 3ed, p174}
+\end{frame}
+
 \begin{frame}\frametitle{Sludge interface experiments}
 	Since flocculant and concentration effects cannot be derived from theory, resort to lab settling tests.
 	\begin{center}
@@ -488,6 +451,69 @@
 
 	\vspace{12pt}
 	{\color{myGreen}{In practice: we will rely on outside consultants and civil engineers, most likely, to size and design the unit. Else see the references at end for more details.}}
+\end{frame}
+
+\begin{frame}\frametitle{Further settler terminology}
+	A standard gravitational thickener:
+
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Svarovsky.png}
+	\end{center}
+	\see{Svarovsky, 3ed, p141}
+\end{frame}
+
+\begin{frame}\frametitle{Gravitational thickener terminology}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-CRv2.png}
+	\end{center}
+	\see{Richardson and Harker, 5ed, v2, p256}
+\end{frame}
+
+\begin{frame}\frametitle{Gravitational thickener top and side view}
+	\begin{center}
+		\includegraphics[width=0.69\textwidth]{\imagedir/separations/sedimentation/gravity-thickener-Perry.png}
+	\end{center}
+	\see{Perry's, 8ed, 18-71}
+\end{frame}
+
+\begin{frame}\frametitle{Unhindered settling}
+	\begin{itemize}
+		\item	Takes place when settling occurs at a constant rate, independent of other particles.
+		\item	Use the equations derived in last class to estimate settling velocity = $v$.
+		\item	Draw an imaginary horizontal layer through the settler and observe the mass of solids passing across it per unit time, per unit area = {\color{myOrange}{mass flux}}.
+		\item	The flux of solids is $\psi = C_0 v$, with units of $\displaystyle \frac{\text{kg solids}}{\text{m}^3~\text{feed}} \cdot \frac{\text{meters}}{\text{second}}$
+		\item	$ \psi = C_0 v \quad \displaystyle \frac{\text{kg solids}}{\text{second}} \cdot \frac{1}{\text{meters}^2}$
+		\item	$\psi$ = mass feed rate per unit area = loading rate
+		\item	$\displaystyle \frac{1}{\psi}$ = unit area required per given amount of mass feed rate
+	\end{itemize}
+	\textbf{Note}: assuming no solids leave the overflow
+\end{frame}
+
+\begin{frame}\frametitle{Preliminary settler area estimate}
+	The area required under these ideal conditions:
+	\[
+		A = \displaystyle \frac{Q C_0}{\psi} = \displaystyle \frac{Q C_0}{C_0 v} = \displaystyle \frac{Q}{v}
+	\]
+	where
+	\begin{itemize}
+		\item	$Q$ = volumetric feed rate~ [$\text{m}^3$ of feed per unit time]
+		\item	$C_0$ = concentration of solids in feed [$\text{kg of solids per~}\text{m}^{3}~\text{feed}$]
+		\item	$v$ = settling velocity [meters per unit time]
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+ 	A sample of material was settled in a graduated lab cylinder 300mm tall. The interface dropped from 500mL to 215mL on the graduations during a 4 minute period.
+
+	\begin{enumerate}
+		\item	Give a preliminary estimate of the clarifier diameter required to treat a waste stream of 2100 L per minute. Over-design by a factor of 2, based on the settling rate, and account for about 7 $\text{m}^2$ of entry area used to eliminate turbulence in the entering stream.
+		\item	If the feed concentration is {\color{myRed}{\xout{200}}}~3.5 kg per $\text{m}^3$ feed, what is the loading rate? Is it within the typical thickener range of 50 to 120 kg per day per square meter? \see{Perry, 8ed, p22-79}
+	\end{enumerate}
+	{\color{myGreen}{Answers}}:
+	\begin{enumerate}
+		\item	Settling rate = 171 mm per 4 minutes = 42.8 mm/min.\\Area = $\displaystyle \frac{2.1~\text{m}^3.\text{min}^{-1}}{\left(0.5\right)\left(42.8 \times 10^{-3} \text{m}.\text{min}^{-1}\right)} = 98 + 7 \text{m}^2$
+		\item	$\psi = C_0 v = 3.5 \displaystyle\frac{\text{kg}}{\text{m}^3} \cdot 0.022 \displaystyle \frac{\text{m}}{\text{min}} \cdot \displaystyle\frac{60 \times 24 \text{min}}{\text{day}} = 106 \displaystyle \frac{\text{kg}}{\text{day}.\text{m}^2}$
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Settler design: shape, length, width}
@@ -572,35 +598,15 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Some thickener designs}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/thickener-design-Svarovsky.png}
-	\end{center}
-	\see{Svarovsky, 3ed, p172}
-
-	\vspace{12pt}
-	Can replace the steel with a sloped concrete slab.
-\end{frame}
-
-\begin{frame}\frametitle{Another picture: use in 2013}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-vessel-Brown-and-Associates-p113.png}
-	\end{center}
-\end{frame}
-
-\begin{frame}\frametitle{Feed area: feedwell}
-	\begin{itemize}
-		\item	aim to minimize turbulence from entry velocity
-		\item	avoid disruption to existing settling
-		\item	avoid breaking up existing flocs
-		\item	must not get clogged
-	\end{itemize}
-
-	\begin{center}
-		\includegraphics[width=0.9\textwidth]{\imagedir/separations/sedimentation/Fitch-feedwell-Svarovsky.png}
-	\end{center}
-	\see{Svarovsky, 3ed, p174}
-\end{frame}
+% \begin{frame}\frametitle{Some thickener designs}
+% 	\begin{center}
+% 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/thickener-design-Svarovsky.png}
+% 	\end{center}
+% 	\see{Svarovsky, 3ed, p172}
+% 
+% 	\vspace{12pt}
+% 	Can replace the steel with a sloped concrete slab.
+% \end{frame}
 
 \begin{frame}\frametitle{Capital costs considerations}
 	Svarovsky 3rd, p179: cost = $a x^b$
@@ -658,8 +664,6 @@
 	\end{enumerate}
 \end{frame}
 
-\end{comment}
-
 % 2013: add reference for Sinnot
 \begin{frame}\frametitle{References for this section}
 	\begin{itemize}
@@ -668,6 +672,7 @@
 		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 3rd or 4th edition, chapter 14
 		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 18
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 3 and 5
+		\item	Sinnott, ``Chemical Engineering Design'', Volume 6, 4th edition.
 		\item	Talmage and Fitch, 1955, ``Determining Thickener Unit Areas'', \emph{Ind. Eng. Chem.},\textbf{47}, 38-41, \href{http://dx.doi.org/10.1021/ie50541a022}{\small DOI:10.1021/ie50541a022}
 		\item	Fitch, 1965, ``Current theory and thickener design'', \emph{Ind. Eng. Chem.}, \textbf{57}, p 18-28, \href{http://dx.doi.org/10.1021/ie50682a006}{\small DOI:10.1021/ie50682a006}
 		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition. Particularly thorough regarding the settler's mechanical accessories: pumps, scrapers, \emph{etc}.
