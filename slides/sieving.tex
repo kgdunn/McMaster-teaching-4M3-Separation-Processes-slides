@@ -1,5 +1,5 @@
 \begin{comment}
-	
+
 References: C+R, UCT notes, Perry's
 
 See UCT notes for ChE337Z
@@ -26,40 +26,34 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 % In 2013: make sure your definition of cut size is correct
 % For 2013: See "/Users/kevindunn/Courses/4M3/References/Uhlmann - Classifying separations.pdf" for extra notes on cut-size, etc
 
-\begin{frame}\frametitle{Administrative}
-	Assignment 2 is posted
-	
-	\vspace{12pt}
-	If handing in with Google Docs, please:
-	\begin{itemize}
-		\item	Add the TA's address: {\color{myGreen}{\href{mcmasterche4mta@gmail.com}{mcmasterche4mta@gmail.com}}}
-		\item	Make sure ``4M3'' is in the title
-		\item	Please put your group members' last names in the title also
-		\item	e.g. \texttt{4M3-Sivakumaran-Dunn-Assignment-2}
-	\end{itemize}
-\end{frame}
-
 \begin{frame}\frametitle{Some context}
 	\begin{exampleblock}{}
-		The three most important characteristics of an individual solid particle are its composition, its size and its shape. 
+		Three important characteristics of an individual solid particle are its composition, its size and its shape.
 	\end{exampleblock}
-		
+
 	\vspace{12pt}
-	{\color{myGreen}{Composition}}: affects density, conductivity, \emph{etc}, if the particle is uniform	
+	{\color{myGreen}{Composition}}: affects density, conductivity, and other physical properties important to separating it.
+	
+	\vspace{24pt}
+	We will consider shape and size characterization now.
+	
 \end{frame}
 
 \begin{frame}\frametitle{Particle shape characterization}
-	
-	A particle may be regular shaped: \emph{spherical} or \emph{cubic}
+
+	A particle may be regular shaped, e.g.
 	\begin{itemize}
-		\item	capable of precise definition using equations
+		\item	\emph{spherical} or \emph{cubic} objects are capable of precise definition using equations
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	Irregular shaped: e.g. broken glass, sand, rock, most solids
 	\begin{itemize}
 		\item	properties of irregular shapes are expressed ito a regular shaped particle's characteristics
 	\end{itemize}
+	
+	\vspace{12pt}
+	So we will spend time characterizing spherical particles, then expressing other particles in terms of an\emph{equivalent spherical particle}
 \end{frame}
 
 \begin{frame}\frametitle{Particle shape: Sphericity}
@@ -68,28 +62,28 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 		\item	it has the same shape from all angles
 		\item	behaves the same way from all angles
 	\end{itemize}
-	
+
 	Other particles behave less ideally; we define sphericity as one metric of a particle's shape:
-	
-	
+
+
 	\[
 		\psi = \frac{\text{surface area of sphere with same volume as particle}}{\text{surface area of particle}}
 	\]
-	
+
 	\vspace{12pt}
 	For all particles: \( 0 < \psi \leq 1 \)
-	
+
 	\vspace{12pt}
-	To try: calculate the sphericity of a cube with side length = $c$ \\ {\scriptsize {\color{myGreen}{Answer: $\psi = 0.806$}}}	
+	To try: calculate the sphericity of a cube with side length = $c$ \\ {\scriptsize {\color{myGreen}{Answer: $\psi = 0.806$}}}
 \end{frame}
 
 \begin{frame}\frametitle{Other shape metrics}
-	Find the diameter of a sphere that has the same \_\_\_\_\_\_ as the particle
+	Find the diameter of a sphere that has the same \_\_\_\_\_\_ as the irregularly-shaped particle
 	\begin{itemize}
 		\item	volume
 		\item	surface area
 		\item	surface area per unit volume
-		\item	area in the direction of travel [drag diameter]
+		\item	area in the projected direction of travel [drag diameter]
 		\item	projected area, but in a position of maximum stability
 		\item	settling velocity [Stokes' diameter]
 		\item	will fit through the same size square aperture  [sieve diameter]
@@ -97,42 +91,69 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Particle size characterization}
-	So far we have assumed particles to be separated are of a single size. This is never true: there is always a size distribution.
+\begin{frame}\frametitle{Shape metrics example}
+	
+	For example, how would you quantify yourself if measured by:
+	\begin{enumerate}
+		\item	Circumference around your waist?
+		\item	Diameter of a sphere of the same surface area as your body?
+		\item	Length of your longest chord (height)?
+		
+	\end{enumerate}
 	
 	\vspace{12pt}
-	{\color{myGreen}{Particle size}}: affects surface per unit volume, rate of settling in a fluid, \emph{etc}
+	The measured values will have different meanings. e.g.
+	\begin{enumerate}
+		\item	used to size a life jacket 
+		\item	(perhaps?) used to estimate heat losses through your skin
+		\item	if you are buying a sleeping bag I suggest the last one.
+	\end{enumerate}
 	
-	\vspace{12pt}	
+	\see{Adapted from: George G. Chase, The University of Akron}	
+\end{frame}
+
+\begin{frame}\frametitle{Particle size characterization}
+	So far we have assumed particles to be separated are of a single size. This is never true: there is always a size distribution.
+
+	\vspace{12pt}
+	{\color{myGreen}{Particle size}}: affects surface per unit volume (mass transfer), rate of settling in a fluid (separation), \emph{etc}
+
+	\vspace{12pt}
 	\begin{exampleblock}{{\color{myRed}{Aims}}}
 		\vspace{12pt}
 		How do we measure this distribution?
+
+		\vspace{12pt}
+		How do we describe (characterize) a size distribution?
 		
 		\vspace{12pt}
-		How do we describe (characterize) a size distribution? 
-	\end{exampleblock}
-	\begin{itemize}
-		\item	what is the ``\textbf{{\color{Brown}{average}}}'' particle size?
-	\end{itemize}
+		What is the ``\textbf{{\color{Brown}{average}}}'' particle size?
+	\end{exampleblock}	
 \end{frame}
 
 \begin{frame}\frametitle{Other reasons to consider particle size distributions?}
 	\begin{itemize}
 		\item	Understand your colleagues: ``After crushing, the feed may be ground in several stages from a size of 5 to 6 cm to a powder of 75 to 90 percent passing a 200-mesh sieve.''
-		\item	Solid material handling industry (foods, grains, pulp, sand, cement, coal, \emph{etc}): we must deal with distributions 
-		\item	e.g. activity of a powdered drug = $f$(particle size)
-		\item	e.g. ``hiding power'' of a paint/pigment = $f$(particle size)
+		\item	Solid material handling industry: we must deal with distributions
+		\begin{itemize}
+			\item	What kind of industries are we referring to here?
+			% foods, grains, pulp, sand, cement, coal, solid waste water treatment,
+			% pretty much any industry that handles solids
+			\item	e.g. activity of a powdered drug = $f$(particle size)
+			\item	e.g. ``hiding power'' of a paint/pigment = $f$(particle size)
+		\end{itemize}
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	\begin{exampleblock}{}
-		We will require this understanding for future sections: filtration, flow of fluids through packed beds, membranes, and so on.
+		We will require this understanding for future sections: filtration, flow of fluids through packed beds, cyclones, centrifuges, membranes, and so on.
 	\end{exampleblock}
 \end{frame}
 
 \begin{frame}\frametitle{Some typical particle sizes}
+	We typically work in {\color{purple}microns}. 1 micron = 1 $\mu\text{m}$
 	\begin{center}
-		\includegraphics[height=0.85\textheight]{\imagedir/separations/screens/typical-powder-sizes-CRv2-5ed-p4.png}
+		\includegraphics[height=0.80\textheight]{\imagedir/separations/screens/typical-powder-sizes-CRv2-5ed-p4.png}
 	\end{center}
 	\see{Richardson and Harker, 5ed, p4}
 \end{frame}
@@ -145,8 +166,8 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 \end{frame}
 
 \begin{frame}\frametitle{Standard screen sizes}
-	The US standard (Tyler series). Selected examples are:	
-	\vspace{8pt}
+	{\small The US standard (Tyler series). Selected screens from Tyler sequence:}
+	\vspace{4pt}
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\begin{tabular}{c|c}
@@ -162,14 +183,14 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 				140 	& 	106		\\
 				170		& 	90		\\
 				200		&	75		\\
-				230 	&	63		\\ 
+				230 	&	63		\\
 				$\vdots$& 	$\vdots$\\
-				450 	& 	32
+				450 	& 	32 \\ \hline
 			\end{tabular}
 		\column{0.40\textwidth}
 			\small
 			Tyler standard:
-			\begin{itemize}				
+			\begin{itemize}
 				\item	e.g. 75\micron ~opening: called 200 mesh screen
 				\item	i.e. apertures per inch = 200 mesh screen
 				\vspace{12pt}
@@ -179,9 +200,9 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 				\vspace{12pt}
 				\hrule
 				\vspace{12pt}
-				\item	Other standards: British I.M.M. and \\ U.S. A.S.T.M.				
+				\item	Other standards: British I.M.M. and \\ U.S. A.S.T.M.
 			\end{itemize}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Screens}
@@ -194,39 +215,13 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 
 \begin{frame}\frametitle{Screens}
 	\begin{itemize}
-		\item	Top screen usually has 100\% material passing through
+		\item	Select top screen to (usually) have 100\% material passing through
 		\item	Shaken for a predetermined time; or rate of screening levels out
-		\item	Shake intensity balanced: not too aggressive to break particles apart
+		\item	Shake intensity must be balanced: not too aggressive to break particles apart
 		\item	Smaller particles tend to stick to each other, so small size fractions inaccurate
-		\item	Done on wet or dry material
+		\item	One can have wet or dry screen systems
 		\item	Wet screening: washes smaller particles off larger ones
 	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Other particle size methods}
-	\begin{itemize}		
-		\item	Sedimentation: pipette or an immersed scale 
-		\item	Elutriation: reverse sedimentation
-				\[
-					v_\text{TSV} = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f} 
-				\]
-				\[
-					D_p = \sqrt{\frac{ 18 \mu_f v_\text{upward}}{\left( \rho_p - \rho_f \right) g} }					
-				\]
-		\item	Permeability methods
-			\begin{itemize}
-				\item	$\text{flow} = k \Delta P$; where $k \propto \displaystyle \frac{\text{surface area}}{\text{volume}}$ 
-				\item	from which we can calculate equivalent spherical diameter
-			\end{itemize}
-		\item	Laser diffraction
-			\begin{itemize}
-				\item	uses principle of radial laser beam scattering
-				\item	handles ranges from 0.1 to 600 \micron
-				\item	can be applied online for real-time monitoring
-			\end{itemize}
-			%\todo{illustration http://www.malvern.com/labeng/technology/laser_diffraction/laser_diffraction.htm or http://www.malvern.com/labeng/technology/laser_diffraction/particle_sizing.htm}
-	\end{itemize}
-	\seefull{Many others: see Perry's chapter 21}
 \end{frame}
 
 % \begin{frame}\frametitle{Differential screen analysis}
@@ -234,16 +229,16 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 % 	* Mass fractions
 % 	* Cumulative plot
 % 	* Take the derivative of it
-% 	* Show an actual example: Seader, p 678 
+% 	* Show an actual example: Seader, p 678
 % 	* Plot the example
-% 	* Show the derivative of it: 
+% 	* Show the derivative of it:
 % 	* What is a suitable ``Average'' particle size ?
 % 	** The most commonly occurring frequency
 % 	** Weighted mean?
 % 	* Might want to use a log scale over a wide size range
 % \end{frame}
 
-\begin{frame}\frametitle{Example}
+\begin{frame}\frametitle{Data analysis from a screen sample}
 	\begin{tabular}{ccc|c|c}
 		Mesh&Aperture [\micron]	& Mass retained [g]	& Avg size* & {\scriptsize Cuml. \% passing} \\ \hline
 		14	& 1400		& 0		& -      &  100           \\
@@ -256,14 +251,14 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 		70	& 212		& 22.0	& 256    &  1.8           \\
 		100	& 150		& 7.2	& 181    &  0.4           \\
 		140	& 106		& 1.2	& 128    &  0.1           \\
-		Pan	& 0			& 0.5	& 53     &  0.0           \\ \hline 
+		Pan	& 0			& 0.5	& 53     &  0.0           \\ \hline
 		Sum	&  			& \textbf{491}   &     			  \\ \hline
 	\end{tabular}
-	
+
 	\vspace{12pt}
 	$\ast$ \emph{\scriptsize average screen size used for differential plots}
 \end{frame}
- 
+
 \begin{frame}\frametitle{Differential and Cumulative analysis}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/screens/screen-result-analysis.png}
@@ -274,8 +269,13 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 	\begin{columns}[t]
 		\column{0.50\textwidth}
 			{\color{myBlue}{\[f(x) = \displaystyle\frac{dF(x)}{dx}\]}}
+			\vspace{-12pt}
+			{\color{myBlue}{$x$} is the avg particle size (bin)}
+			
 		\column{0.50\textwidth}
 			{\color{myGreen}{\[F(x) = \text{percent passing curve}\]}}
+			\vspace{-12pt}
+			{\color{myGreen}{\[1-F(x) = \text{percent retained curve}\]}}
 	\end{columns}
 	\vspace{18pt}
 	\seefull{Seader, 3ed, p 676-677}; sometimes use a log scale on $x$-axis
@@ -304,13 +304,17 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 				\item	Surface mean diameter (Sauter mean diameter) = 565 \micron
 				\item	Weight or mass-mean diameter = 666 \micron
 			\end{itemize}
+			
+			\vspace{12pt}
+			\footnotesize
+			Our aim is not to calculate all these (the formulae are messy, and error prone). Your lab will have these already set up in their analysis software.
 	\end{columns}
-	
-	\vspace{12pt}
+
+	\vspace{5pt}
 	\tiny
 	\begin{itemize}
-		\item	Seader, 3ed, p 678 - 679
-		\item	Svarovsky, 4ed, p37 - 43
+		\item	Seader, 3ed, p 678 - 679 [for worked example]
+		\item	Svarovsky, 4ed, p37 - 43 [for descriptions of many means]
 	\end{itemize}
 \end{frame}
 
@@ -322,7 +326,7 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 			\item	volume mean diameter: used for packing estimation
 			\item	surface mean diameter: used for skin friction, and mass transfer calculations
 		\end{itemize}
-		
+
 		\item	The idea is that if two materials had the same ``mean diameter'', that they would behave the same way in the application being considered.
 	\end{itemize}
 \end{frame}
@@ -334,48 +338,31 @@ coarsest sieve, and the sieve column is vibrated either mechanically or electro-
 	\see{Svarovsky, 4ed, p59}
 \end{frame}
 
-\begin{comment}
-\begin{frame}\frametitle{Arithmetic means}	
-	\vspace{12pt}
-	\[
-		\overline{x} = \int_{0}^{\infty}{x f(x) dx}
-	\]
-	\begin{enumerate}
-		\item	take the size 
-	\end{enumerate}
-	\begin{itemize}
-		\item	Arithmetic mean
-		\item	Weight or mass-mean diameter		
-		\item	Volume mean diameter
-		\item	Surface mean diameter (Sauter mean diameter)
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Percent passing: cut size}
-	\begin{exampleblock}{Now it should be clearer}
-		``powder of 75 to 90 percent passing a 200-mesh sieve''
-	\end{exampleblock}
-	
-	\todo{show a cumulative histogram; draw a vertical line}	
-\end{frame}
-\end{comment}
+% \begin{frame}\frametitle{Percent passing: cut size}
+% 	\begin{exampleblock}{Now it should be clearer}
+% 		``powder of 75 to 90 percent passing a 200-mesh sieve''
+% 	\end{exampleblock}
+% 
+% 	\todo{show a cumulative histogram; draw a vertical line}
+% \end{frame}
 
 \begin{frame}\frametitle{Sampling a stream}
 	Particle size measurements are strongly dependent on the sample taken. The ``golden'' rules of sampling:
-	
+
 	\begin{enumerate}
 		\item	take sample from a moving stream: dry powders and slurry
 		\item	sample \emph{whole} stream for many short periods (not part of stream for whole time)
 	\end{enumerate}
-	
+
 	\vspace{12pt}
-	There are books written on the topic of sampling. Consult an experienced person if important decisions rest on the sample taken.	
+	There are books written on the topic of sampling. Consult an experienced person if important decisions rest on the sample taken.
 \end{frame}
 
 \begin{frame}\frametitle{References}
 	\begin{enumerate}
 		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 1
 		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 21.1
-		\item	Seader, Henley and Roper, ``Separation Process Principles'', page 675 to 679 in 3rd edition 
+		\item	Seader, Henley and Roper, ``Separation Process Principles'', page 675 to 679 in 3rd edition
+		\item	Svarovsky, ``Solid-Liquid Separation'', 4th edition.
 	\end{enumerate}
 \end{frame}
