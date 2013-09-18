@@ -1,9 +1,9 @@
 % 20 September 2012
 
-% Changes to make for 2013: 
+% Changes to make for 2013:
 % * Q_cut vs Q_max notation: in fact, Q_cut > Q_max, so Q_max is bad notation
 % * Also, call it \Sigma_cut and \Sigma_max (but don't use max anymore). These correspond to their flowrates. Add this on the page "Cut-size diameter"
-% * See red notebook for \Sigma_cut and \Sigma_max 
+% * See red notebook for \Sigma_cut and \Sigma_max
 % * Add an example (e.g. the last example)
 %
 % For reference: Q_max: integrating from r_1 to r_2 within length 0 to h to find the t_T time
@@ -28,7 +28,7 @@
 	\begin{itemize}
 		\item	When gravity (freely available) is not fast enough
 		\item	Decrease the separation time and increase {\color{myGreen}{\emph{separation factor}}}
-		\item	Much smaller piece of equipment 
+		\item	Much smaller piece of equipment
 		\item	Achieve separations not possible by gravity:
 			\begin{itemize}
 				\item	overcome Brownian limits
@@ -38,7 +38,7 @@
 	\end{itemize}
 	\vspace{12pt}
 	\begin{exampleblock}{}
-		{\color{myGreen}{Why not just apply flocculation?}}		
+		{\color{myGreen}{Why not just apply flocculation?}}
 	\end{exampleblock}
 \end{frame}
 
@@ -60,16 +60,16 @@
 				\item	\textbf{Supernatant}: clarified liquid above the precipitate
 			\end{itemize}
 	\end{columns}
-		
+
 	% RPM: Revolutions Per Minute (Speed).
 	% 	Rmax: Maximum radius from the axis of rotation in centimeters.
 	% 	Rmin: Minimum radius from the axis of rotation in centimeters.
 	% 	RCF: Relative centrifugal Force. RCF = 11.17 x Rmax (RPM/1000)2
 	% 	K-factor: Pelleting efficiency of a rotor. Smaller the K-factor, better the pelleting efficiency.
-	% 
+	%
 	% 	S-value: the sedimentation coefficient is a number that gives information about the molecular weight and shape of the particle. S-value is expressed in Svedberg units. The larger the S-value, the faster the particle separates.
 	% 	For more information about sedimentation coefficients, please refer to the section on references and suggested readings in this article.
-	% 
+	%
 	% 	Pelleting time: time taken to pellet a given particle. T = K/S where T= pellet time in hours. K = K-factor of the rotor, and S = sedimentation coefficient (see Ghosh book for $S$)
 \end{frame}
 
@@ -81,7 +81,7 @@
 		\item	to enhance drainage of fluid from particles for drying
 		\item	enhance mass transfer {\scriptsize (look at centrifugal packed bed contactors in your own time)}
 	\end{enumerate}
-	
+
 	\vspace{12pt}
 	Examples:
 	\begin{itemize}
@@ -104,7 +104,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Principle of operation}
-	
+
 	\begin{itemize}
 		\item	items being separated must have a density difference
 			\begin{itemize}
@@ -114,28 +114,28 @@
 		\begin{itemize}
 			\item	$m$ = particle's mass [kg]
 			\item	$r$ = radial distance [m]
-			\item	$\omega$ = angular velocity  [$\text{rad.s}^{-1}$] 			
+			\item	$\omega$ = angular velocity  [$\text{rad.s}^{-1}$]
 			\item	recall $2\pi~\text{rad.s}^{-1}$ = 1Hz
 			\item	and $1~\text{rad.s}^{-1} \approx 9.55$ revolutions per minute
 			\item	$G = \displaystyle \frac{m r\omega^2}{mg} = \displaystyle \frac{r\omega^2}{g}$
 		\end{itemize}
-	\end{itemize}	
+	\end{itemize}
 	\vspace{12pt}
 	\small
 	\begin{tabular}{l|l|l}
-		
+
 		\textbf{Example}							& \textbf{Revolutions per minute}  & \textbf{G's}\\		 \hline
 		Car going round and round 	    			& 10 to 15   			  & 1 to 2	\\
 		Washing machine at home 					& 1500       			  & 625 (r=0.25m)	\\
 		Industrial centrifuge						& $<15 000$ 			  & 25000 (r=0.1m)	\\
 		Laboratory centrifuge 						& 30,000 to 100,000       & 100,000 to 800,000\\
 		Zippe-type centrifuge*						& 90,000                  & $\sim 1 \times 10^6$ \\ \hline
-	\end{tabular}		
+	\end{tabular}
 	* tangential velocity $> \text{Mach 2} \sim 700 \text{m.s}^{-1}$
 \end{frame}
 
 \begin{frame}\frametitle{Laboratory centrifuges}
-	
+
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{\imagedir/separations/centrifuge/lab-centrifuge-Ghosh.png}
 	\end{center}
@@ -151,16 +151,16 @@
 			\[
 				t = \displaystyle \frac{k}{S}
 			\]
-			
+
 			\vspace{24pt}
 			{\small e.g. $S_{20} = 6.43$ for collagen}
 		\column{0.60\textwidth}
 			\begin{itemize}
-				\item	$S$ = \href{http://en.wikipedia.org/wiki/Svedberg}{Svedberg coefficient} of the material (from tables, experiments) 
+				\item	$S$ = \href{http://en.wikipedia.org/wiki/Svedberg}{Svedberg coefficient} of the material (from tables, experiments)
 				\item	$r_\text{max}$ and $r_\text{min}$ as shown above [cm]
 				\item	$k = 2.53 \times 10^{11} \left(\displaystyle \frac{\ln\left( r_\text{max} -r_\text{min} \right)}{\text{RPM}_\text{max}^2} \right)$
 			\end{itemize}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 % 2013: clearly explain several things here (improve the drawing; also SHOW A VIDEO <--- important of the tubular bowl centrifuge)
@@ -173,11 +173,11 @@
 		\item	Most commonly used for small particle separation
 		\item	Stokes' law applies
 			\begin{exampleblock}{}
-				\[	
+				\[
 					v = \frac{dr}{dt} = \frac{D_p^2\left(\rho_p - \rho_f\right)r\omega^2}{18 \mu_f}
-				\]				
+				\]
 			\end{exampleblock}
-			
+
 		\item	The particle is also forced in the direction of fluid flow, so its net trajectory:
 		\begin{center}
 			\includegraphics[width=0.65\textwidth]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
@@ -197,10 +197,10 @@
 
 \begin{frame}\frametitle{Theoretical trajectories: tubular bowl centrifuge}
 	So $t=t_T$ represents the minimum time the particle should spend in the centrifuge: minimal residence time.
-	
+
 	\vspace{12pt}
-	The volume of fluid in the centrifuge is $V = \pi \left(r_2^2 - r_1^2\right) h$. 
-	
+	The volume of fluid in the centrifuge is $V = \pi \left(r_2^2 - r_1^2\right) h$.
+
 	\vspace{6pt}
 	Calculate the maximum volumetric flow rate, $Q_\text{max}$ [$\text{m}^3.\text{s}^{-1}$]
 	\[
@@ -211,7 +211,7 @@
 		\item	Assume particles with smaller $D_p$ leave in supernatant
 		\item	Obviously this is excessive: we have a discharge weir to \emph{retain particles} that might not have reached $r_2$ at height $h$
 		\item	$r_2$ remains fixed for an purchased and installed centrifuge (design parameter)
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Cut-size diameter}
@@ -236,9 +236,9 @@
 		Q_\text{cut} =  2\left( \frac{\left( \rho_p - \rho_f \right) g D_{p,\text{cut}}^2}{18 \mu_f}  \right) \cdot ( \Sigma ) = 2 v_\text{TSV} \cdot \Sigma
 	\]
 	\[
-		\Sigma = \frac{\omega^2 \left[\pi h \left(r_2^2 - r_1^2\right)\right]}{2g \ln \left[2r_2/(r_1+r_2) \right]} 
+		\Sigma = \frac{\omega^2 \left[\pi h \left(r_2^2 - r_1^2\right)\right]}{2g \ln \left[2r_2/(r_1+r_2) \right]}
 	\]
-	
+
 	\vspace{12pt}
 	$\Sigma = f(r_1, r_2, h, \omega)$
 	%\[
@@ -259,24 +259,24 @@
 				\]
 		\item	Used for scale-up \textbf{of the same feed}, i.e. the same $v_\text{TSV}$
 		\item	Used for scale-up \textbf{within the same types of equipment}
-		\item	$\Sigma$ equation is different for other centrifuge types				
-	\end{itemize}	
+		\item	$\Sigma$ equation is different for other centrifuge types
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{More on the tubular bowl centrifuge}
-	\begin{itemize}	
+	\begin{itemize}
 		\item	Batch operation: stop to clean out solids; restart again; use paper on wall to assist solids removal [$\sim$ 15 min turnaround]
 		\item	Contamination possible, \emph{not always} suitable for bioseparations
 		\item	A high L/D aspect ratio: stable to operate
 		\item	Can be used for fluid-fluid separation
-	\end{itemize}	
+	\end{itemize}
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\begin{center}
 				\includegraphics[width=0.7\textwidth]{\imagedir/separations/centrifuge/liquid-liquid-Geankoplis-fig14-4-3.jpg}
 			\end{center}
 		\column{0.40\textwidth}
-				$\displaystyle \frac{\rho_H}{\rho_L} = \displaystyle \frac{r_2^2 - r_1^2}{r_2^2 - r_4^2}$				
+				$\displaystyle \frac{\rho_H}{\rho_L} = \displaystyle \frac{r_2^2 - r_1^2}{r_2^2 - r_4^2}$
 	\end{columns}
 \end{frame}
 
@@ -285,7 +285,7 @@
 		\includegraphics[width=\textwidth]{\imagedir/separations/centrifuge/tubular-bowl-centrifuge-Ghosh.jpg}
 	\end{center}
 	A diagonal solids layer is built up
-	
+
 	\see{Ghosh, p 84}
 \end{frame}
 
@@ -293,27 +293,27 @@
 	\begin{center}
 		\includegraphics[width=.75\textwidth]{\imagedir/separations/centrifuge/disk-bowl-centrifuge-Geankoplis-fig14-4-4.jpg}
 	\end{center}
-	
+
 	\vspace{12pt}
 	Video to illustrate operation: \href{http://www.youtube.com/watch?v=YMbaBLpInrc}{http://www.youtube.com/watch?v=YMbaBLpInrc}
-	
+
 	\vspace{2pt}
 	{\tiny Another video: \href{http://www.youtube.com/watch?v=bzXUiLajVlg}{http://www.youtube.com/watch?v=bzXUiLajVlg}}
 
 \end{frame}
 
 \begin{frame}\frametitle{Disk-bowl centrifuges}
-	\begin{itemize}		
+	\begin{itemize}
 		\item	Recall: $Q = V / t_T$ ($t_T$ will be different for a disk-bowl)
 		\item	If we increase volume of fluid, we get higher throughput, $Q$
 		\item	Adding angled disks gives a greater surface area, hence volume, without increasing bowl diameter
-		\item	Widely used in bioseparations: no contamination (aseptic) 
+		\item	Widely used in bioseparations: no contamination (aseptic)
 		\item	Also for: fish oil, fruit juice, beverage clarification
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Disk-bowl centrifuges}
-	\begin{itemize}		
+	\begin{itemize}
 		\item	Disks angled at 35 to 50$^\circ$; $\sim$~50 to 150 disks per unit
 		\item	Typically between 0.15 to 1.0m in diameter; with rotational speeds of 0 to 12,000 rpm
 		\item	Typically used to treat up to 15\% solids in feed stream
@@ -334,18 +334,18 @@
 			\begin{center}
 				\includegraphics[width=.7\textwidth]{\imagedir/separations/centrifuge/disk-bowl-notation-Svarovsky.jpg}
 			\end{center}
-	\end{columns}			
+	\end{columns}
 \end{frame}
 
 \begin{comment}
-	
+
 \begin{frame}\frametitle{Capital costs}
 	COSTS: also see chapter 18.8 in Perry's
 \end{frame}
 
 \begin{frame}\frametitle{Performance}
 	\see{Perry, 8ed, section 18.8.3}
-	
+
 	In order to have good separation or high settling velocity, a combination of the following conditions is generally sufficient:
 
 	1. High centrifuge speed
@@ -357,9 +357,9 @@
 	4. Large separation radius
 
 	5. Low liquor viscosity
-	
+
 	% Among the five parameters, the settling velocity is very sensitive to change in speed and particle size. It varies as the square of both parameters. The maximum achievable rotational speed of a centrifuge is normally dictated by the stresses exerted by the processing medium on the bowl and the stresses of the bowl on periphery equipment, most notably the drive system, which consists of a gear unit or hydraulic pump. If the particles in the feed slurry are too small to be separated in the existing G-field, coagulation and flocculation by polymers are effective ways to create larger agglomerated particles for settling. Unlike separation under a constant gravitational field, the settling velocity under a centrifugal field increases linearly with the radius. The greater the radius at which the separation takes place in a given centrifuge at a given rotational speed, the better the separation. Sedimentation of particles is favorable in a less viscous liquid. Some processes are run under elevated temperature where liquid viscosity drops to a fraction of its original value at room temperature.
-	
+
 \end{frame}
 
 \begin{frame}\frametitle{Flowsheet layout}
@@ -399,11 +399,11 @@
 		\item	rotational equipment requires careful balance
 		\item	digital control is critical
 		\begin{itemize}
-			\item	\href{http://en.wikipedia.org/wiki/Programmable_logic_controller}{PLC}: programmable logical controllers 
+			\item	\href{http://en.wikipedia.org/wiki/Programmable_logic_controller}{PLC}: programmable logical controllers
 			\item	\href{http://en.wikipedia.org/wiki/SCADA}{SCADA}: supervisory control and data acquisition
 			\item	safety interlocks
 			\item	cameras are increasingly used to monitor sediment buildup: auto-stop and clean
-		\end{itemize} 
+		\end{itemize}
 		\item	flammable fluids (e.g. solvents): nitrogen blanket
 	\end{itemize}
 \end{frame}
@@ -424,10 +424,10 @@
 
 \begin{frame}\frametitle{Design a centrifuge for beer clarification}
 	Design a separation plant to remove suspended yeast cells from beer.
-	
+
 	\vspace{12pt}
 	Beer is produced in batches of 100 $\text{m}^3$, with 4 batches per day.
-	
+
 	\vspace{12pt}
 	Some data:
 	\begin{itemize}
@@ -435,21 +435,21 @@
 		\item	Density of yeast cells: 1075 $\text{kg.m}^{-3}$
 		\item	Yeast cell diameters: 4 to 6 \micron
 		\item	11.5 metric tonnes of yeast are suspended in each 100 $\text{m}^3$ fermenter
-		\item	Asceptic operation is vital		
-	\end{itemize} 
+		\item	Asceptic operation is vital
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Example}
-	A lab scale tubular bowl centrifuge has the following characteristics:	
+	A lab scale tubular bowl centrifuge has the following characteristics:
 	\begin{itemize}
 		\item	$r_1 = 16.5$ mm
 		\item	$r_2 = 22.2$ mm
 		\item	bowl height of 115 mm
 		\item	800 revolutions per second
 	\end{itemize}
-	
+
 	It is being used to separate bacteria from a fermentation broth:
-	\begin{enumerate}		
+	\begin{enumerate}
 		\item	If the broth has the following properties:
 			\begin{itemize}
 				\item	$\rho_f = 1010~\text{kg.m}^{-3}$
