@@ -40,6 +40,11 @@
 	\begin{exampleblock}{}
 		{\color{myGreen}{Why not just apply flocculation?}}
 	\end{exampleblock}
+	% If we flocculated, we would create large solid flocs, they settle out faster, smaller area required
+	% Disadvantages: operating cost of the flocculant, adding an MSA that you cannot remove easily afterwards
+	% The flocculant is going to be present in the overflow and/or overflow
+	% e.g. would not separate cream from milk with a flocculant; you are interested in both cream and milk
+	%      similar idea for bioprocess separations
 \end{frame}
 
 \begin{frame}\frametitle{Terminology}
@@ -77,7 +82,7 @@
 	Used since 1700's:
 	\begin{enumerate}
 		\item	separate particles from fluid based on density
-		\item	separate immiscible fluids (liquid and gas!) of different densities
+		\item	separates immiscible fluids (liquid and even gases) of different densities
 		\item	to enhance drainage of fluid from particles for drying
 		\item	enhance mass transfer {\scriptsize (look at centrifugal packed bed contactors in your own time)}
 	\end{enumerate}
@@ -106,7 +111,8 @@
 \begin{frame}\frametitle{Principle of operation}
 
 	\begin{itemize}
-		\item	items being separated must have a density difference
+		\item	items being separated must have a \textbf{{\color{purple}density difference}}
+		\item	it is not a difference in the mass, only density
 			\begin{itemize}
 				\item	\href{http://www.youtube.com/watch?v=M1vWI0t-XD8}{Video}
 			\end{itemize}
@@ -114,9 +120,9 @@
 		\begin{itemize}
 			\item	$m$ = particle's mass [kg]
 			\item	$r$ = radial distance [m]
-			\item	$\omega$ = angular velocity  [$\text{rad.s}^{-1}$]
+			\item	$\omega$ = angular velocity = $\dfrac{d\theta}{dt}$  [$\text{rad.s}^{-1}$]
 			\item	recall $2\pi~\text{rad.s}^{-1}$ = 1Hz
-			\item	and $1~\text{rad.s}^{-1} \approx 9.55$ revolutions per minute
+			\item	and $1~\text{rad.s}^{-1} \approx 9.55$ revolutions per minute [rpm]
 			\item	$G = \displaystyle \frac{m r\omega^2}{mg} = \displaystyle \frac{r\omega^2}{g}$
 		\end{itemize}
 	\end{itemize}
@@ -128,7 +134,7 @@
 		Car going round and round 	    			& 10 to 15   			  & 1 to 2	\\
 		Washing machine at home 					& 1500       			  & 625 (r=0.25m)	\\
 		Industrial centrifuge						& $<15 000$ 			  & 25000 (r=0.1m)	\\
-		Laboratory centrifuge 						& 30,000 to 100,000       & 100,000 to 800,000\\
+		Laboratory centrifuge 						& 30,000 to 100,000       & 100,000 to 800,000\\   % called ultracentrifugation
 		Zippe-type centrifuge*						& 90,000                  & $\sim 1 \times 10^6$ \\ \hline
 	\end{tabular}
 	* tangential velocity $> \text{Mach 2} \sim 700 \text{m.s}^{-1}$
@@ -143,7 +149,8 @@
 	Main selection factors:
 	\begin{enumerate}
 		\item	duration = $t$ [use minutes in the equation below]
-		\item	maximum rotational speed = $\text{RPM}_\text{max}$
+		\item	maximum rotational speed = $\text{RPM}_\text{max}$ 	% there is a "warm-up" period to reach RPM_max, so the time
+		 															% calculated below is an estimate when operating at RPM_max
 	\end{enumerate}
 	\vspace{-12pt}
 	\begin{columns}[t]
