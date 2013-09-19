@@ -23,6 +23,16 @@
 
 % 2013: See if anything useful in http://cpe.njit.edu/dlnotes/CHE685/Cls10-1.pdf  downloaded as "njit-edu - CHE685 - notes - Cls10-1.pdf" on your computer
 
+\begin{frame}\frametitle{References}
+	\begin{itemize}
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 3rd or 4th edition, chapter 14.
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 9.
+		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 18.8.
+		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition. %Well written and straightforward to understand.
+		\item	Seader et al. ``Separation Process Principles", page 800 to 802 in 3rd edition.
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4.5.
+	\end{itemize}
+\end{frame}
 
 \begin{frame}\frametitle{Why consider centrifuges?}
 	\begin{itemize}
@@ -114,12 +124,12 @@
 		\item	items being separated must have a \textbf{{\color{purple}density difference}}
 		\item	it is not a difference in the mass, only density
 			\begin{itemize}
-				\item	\href{http://www.youtube.com/watch?v=M1vWI0t-XD8}{Video}
+				\item	\href{http://www.youtube.com/watch?v=M1vWI0t-XD8}{Video of emulsion separation} at high G's
 			\end{itemize}
 		\item	centrifugal force acts outward direction = $ma = m (r\omega^2)$
 		\begin{itemize}
 			\item	$m$ = particle's mass [kg]
-			\item	$r$ = radial distance [m]
+			\item	$r$ = radial distance from center point [m]
 			\item	$\omega$ = angular velocity = $\dfrac{d\theta}{dt}$  [$\text{rad.s}^{-1}$]
 			\item	recall $2\pi~\text{rad.s}^{-1}$ = 1Hz
 			\item	and $1~\text{rad.s}^{-1} \approx 9.55$ revolutions per minute [rpm]
@@ -170,73 +180,137 @@
 	\end{columns}
 \end{frame}
 
-% 2013: clearly explain several things here (improve the drawing; also SHOW A VIDEO <--- important of the tubular bowl centrifuge)
-% 1. the wall of water is vertical
-% 2. diagram should show top view of two concentration rings with the open air gap
-% 3. video should show wall of water collapsing as the centrifuge spins down
-% 4. illustration should show the solids entering at the bottom and being immediately spun into the r_1 wall
-\begin{frame}\frametitle{Theoretical trajectories: tubular bowl centrifuge}
+\begin{frame}\frametitle{Tubular bowl centrifuge}
 	\begin{itemize}
 		\item	Most commonly used for small particle separation
-		\item	Stokes' law applies
-			\begin{exampleblock}{}
-				\[
-					v = \frac{dr}{dt} = \frac{D_p^2\left(\rho_p - \rho_f\right)r\omega^2}{18 \mu_f}
-				\]
-			\end{exampleblock}
+		\item	Fluid and suspended solids are fed at the center
+		\item	A vertical wall of fluid is formed. \href{http://composite-video-cUhgKFV5Ri4}{Useful video to see this}.
+		\item	Feed is continually added, forcing fluid out the top, over the retaining wall. Solids accumulate inside the bowl.
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
+	\end{center}
+	\vspace{-24pt}	
+	\see{Geankoplis, Fig 14.4-2; \emph{draw top view}}
+\end{frame}
 
-		\item	The particle is also forced in the direction of fluid flow, so its net trajectory:
-		\begin{center}
-			\includegraphics[width=0.65\textwidth]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
-		\end{center}
+\begin{frame}\frametitle{Recall particles in a fluid: Stokes' law}
+	Let's understand how the solid particles move:
+	\begin{exampleblock}{Recall  if Re $< 1$}
+		\[
+			v_\text{TSV} = \frac{D_p^2 \left( \rho_p - \rho_f \right) g }{18 \mu_f} \label{TSV-low-Re}
+		\]
+	\end{exampleblock}
+	In a centrifuge, we have simply replaced $g$ with centrifugal force, $r \omega^2$ (gravity is negligible)
+	\begin{exampleblock}{}
+		\[
+			v_\text{horiz} = \frac{dr}{dt} = \frac{D_p^2\left(\rho_p - \rho_f\right)r\omega^2}{18 \mu_f}
+		\]
+	\end{exampleblock}
+	\begin{itemize}
+		\item	The particle is also forced in the \emph{vertical} direction of fluid flow at a constant upward velocity, so its net trajectory is curved.
+		\item	In centrifuges: particles are likely to have Re $< 1$ (why?)
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Theoretical trajectories: tubular bowl centrifuge}
 	\begin{center}
-		\includegraphics[width=0.83\textwidth]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
+		\includegraphics[width=1\textwidth]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
 	\end{center}
-	Integrate from $t=0$ where $r=r_1$ to the outlet, where we require the particle to be exactly at $r=r_2$ within a time of $t=t_T$ seconds:
+	Integrate from $t=0$ where $r=r_1$ to the outlet, where we require the particle to be exactly at $r=r_2$ within a time of $t=t_*$ seconds:
 	\[
-		t_T = \frac{18 \mu_f}{D_p^2\left(\rho_p - \rho_f\right)\omega^2} \ln \frac{r_2}{r_1}
+		t_* = \frac{18 \mu_f}{D_p^2\left(\rho_p - \rho_f\right)\omega^2} \ln \frac{r_2}{r_1}
 	\]
 \end{frame}
 
 \begin{frame}\frametitle{Theoretical trajectories: tubular bowl centrifuge}
-	So $t=t_T$ represents the minimum time the particle should spend in the centrifuge: minimal residence time.
+	Consider a particle moving with too slow a horizontal velocity (e.g. centrifuge is too slow).
+	\begin{itemize}
+		\item	Within the time from $t=0$ to $t=t_*$, this particle is moving too slowly, and will not reach the wall at $r_2$ 
+		\item	This particle is then assumed to have left in the supernatant (liquid discharge)
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.5\textwidth, trim=0cm 0cm 20cm 4.7cm, clip=true]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
+	\end{center}
+	$t=t_*$ gives a \textbf{bound} on the time it should take a particle to reach the wall at $r_2$.
+\end{frame}
 
-	\vspace{12pt}
-	The volume of fluid in the centrifuge is $V = \pi \left(r_2^2 - r_1^2\right) h$.
-
-	\vspace{6pt}
-	Calculate the maximum volumetric flow rate, $Q_\text{max}$ [$\text{m}^3.\text{s}^{-1}$]
+\begin{frame}\frametitle{Calculating the centrifuge's throughput, $Q$}
+	Once we know how long a particle should be in the centrifuge, we can calculate a feed flowrate, $Q$.
+	The volume of fluid in the centrifuge is $V = \pi \left(r_2^2 - r_1^2\right) h$. Calculate the volumetric flow rate
 	\[
-		Q_\text{max} = \frac{V}{t_T} = \frac{D_p^2\left(\rho_p - \rho_f\right)\omega^2}{18 \mu_f \ln (r_2/r_1)} \pi \left(r_2^2 - r_1^2\right) h
+		Q_* = \frac{V}{t_*} = \frac{D_p^2\left(\rho_p - \rho_f\right)\omega^2}{18 \mu_f \ln (r_2/r_1)} \pi \left(r_2^2 - r_1^2\right) h \qquad[\text{m}^3.\text{s}^{-1}]
 	\]
 	\begin{itemize}
-		\item	Alternative interpretation: for a given flow $Q$, find the largest particle diameter that will arrive exactly at $r_2$ at height $h$
-		\item	Assume particles with smaller $D_p$ leave in supernatant
-		\item	Obviously this is excessive: we have a discharge weir to \emph{retain particles} that might not have reached $r_2$ at height $h$
+		\item	What happens if we operate a flow rate slower/faster than this $Q_*$?
+		\item	\emph{Alternative interpretation}: for a given flow $Q_*$, find the largest particle diameter that will arrive exactly at $r_2$ at height $h$. Particles with smaller $D_p$ are expected to leave in supernatant.
+		\item	Obviously this is excessive: we have the horizontal discharge weir to \emph{retain particles} that might not have reached $r_2$ at height $h$
 		\item	$r_2$ remains fixed for an purchased and installed centrifuge (design parameter)
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Cut-size diameter}
-	So to prevent excessive over design, we rather find the halfway mark between $r_1$ and $r_2$, and solve the equations for the diameter of the particle that reaches this \emph{cut point}:
+	So to prevent excessive over design, we rather find the halfway mark between $r_1$ and $r_2$, and solve the same equations to find the time, called $t_\text{cut}$, for a particle to reaches this {\color{purple}cut point}:
 	\[
-		Q_\text{cut} = \frac{V}{t_{T,\text{cut}}} = \frac{D_{p,\text{cut}}^2\left(\rho_p - \rho_f\right)\omega^2}{18 \mu_f \ln \left[2r_2/(r_1+r_2)\right]} \pi \left(r_2^2 - r_1^2\right) h
+		Q_\text{cut} = \frac{V}{t_\text{cut}} = \frac{D_{p,\text{cut}}^2\left(\rho_p - \rho_f\right)\omega^2}{18 \mu_f \ln \left[2r_2/(r_1+r_2)\right]} \pi \left(r_2^2 - r_1^2\right) h
 	\]
 	\begin{itemize}
 		\item	we design for the cut-point volumetric flow rate $Q_\text{cut}$
-		\item	and solve for the cut point diameter, $D_{p,\text{cut}}$
-		\item	all other terms in the equation are known
+		\item	and can then solve for the cut point diameter, $D_{p,\text{cut}}$
+		\item	all other terms in the equation are known/set
+		\item	We can also design for a given diameter, and solve for the $Q_\text{cut}$.
 	\end{itemize}
+	\vspace{6pt}
+	\hrule
+	\vspace{6pt}
+	{\small \textbf{Note}: We could use any reasonable point between $r_1$ and $r_2$. The 50\% point is convention. It accounts for uncertainties in our flows, physical properties and idealities assumed with Stokes' law.}
 \end{frame}
 
+\begin{frame}\frametitle{Example}
+	A lab scale tubular bowl centrifuge has the following characteristics:
+	\begin{itemize}
+		\item	$r_1 = 16.5$ mm
+		\item	$r_2 = 22.2$ mm
+		\item	bowl height of 115 mm
+		\item	800 revolutions per second
+	\end{itemize}
+
+	It is being used to separate bacteria from a fermentation broth experiment.
+	
+	
+	\vspace{12pt}
+	If the broth has the following properties:
+	\begin{itemize}
+		\item	$\rho_f = 1010~\text{kg.m}^{-3}$   \hfill {\color{myOrange}{$\leftarrow$ note how close these are}}
+		\item	$\rho_p = 1040~\text{kg.m}^{-3}$
+		\item	$\mu_f = 0.001~\text{kg.m}^{-1}\text{.s}^{-1}$
+		\item	$D_{p,\text{min}} = 0.7$ \micron   \hfill {\color{myOrange}{$\leftarrow$ note how small}}
+	\end{itemize}
+	\begin{enumerate}
+		\item	Calculate both $Q_*$ and the more realistic $Q_\text{cut}$.
+		\item	Verify whether Stokes' law applies
+	\end{enumerate}
+		
+		%\item	What would be the area of the sedimentation vessel that would operate at this $Q_\text{cut}$?
+		%\item	\emph{Hint}: recall that $A = \dfrac{Q}{v_{TSV}}$
+		%\item	\emph{Later}: calculate the $\Sigma$ factor for this centrifuge based on the cut-size flowrate.
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	\begin{enumerate}
+		\item	Illustrate the trajectory taken by a particle reaching the cut-point within time $t_\text{cut}$
+		\item	\emph{In the same duration of time}, what trajectory will a smaller particle have taken?
+	\end{enumerate}
+	%\vfill
+	\vspace{10cm}
+	%s
+\end{frame}
+
+\begin{comment}
 \begin{frame}\frametitle{Sigma theory for centrifuges}
 	Take the previous equation for $Q_\text{cut}$, multiply numerator and denominator by $2g$, then substitute Stokes' law for particles settling under gravity:
 	\[
-		v = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
+		v_\text{TSV} = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
 	\]
 	we obtain:
 	\[
@@ -344,60 +418,55 @@
 	\end{columns}
 \end{frame}
 
-\begin{comment}
+% 
+% 
+% \begin{frame}\frametitle{Capital costs}
+% 	COSTS: also see chapter 18.8 in Perry's
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Performance}
+% 	\see{Perry, 8ed, section 18.8.3}
+% 
+% 	In order to have good separation or high settling velocity, a combination of the following conditions is generally sufficient:
+% 
+% 	1. High centrifuge speed
+% 
+% 	2. Large particle size
+% 
+% 	3. Large density difference between solid and liquid
+% 
+% 	4. Large separation radius
+% 
+% 	5. Low liquor viscosity
+% 
+% 	% Among the five parameters, the settling velocity is very sensitive to change in speed and particle size. It varies as the square of both parameters. The maximum achievable rotational speed of a centrifuge is normally dictated by the stresses exerted by the processing medium on the bowl and the stresses of the bowl on periphery equipment, most notably the drive system, which consists of a gear unit or hydraulic pump. If the particles in the feed slurry are too small to be separated in the existing G-field, coagulation and flocculation by polymers are effective ways to create larger agglomerated particles for settling. Unlike separation under a constant gravitational field, the settling velocity under a centrifugal field increases linearly with the radius. The greater the radius at which the separation takes place in a given centrifuge at a given rotational speed, the better the separation. Sedimentation of particles is favorable in a less viscous liquid. Some processes are run under elevated temperature where liquid viscosity drops to a fraction of its original value at room temperature.
+% 
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Flowsheet layout}
+% 	Series or parallel? Svarovsky, p 274
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Example}
+% 	See UCT notes:
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Design}
+% 	Fixed vs swing out: different energy use profiles
+% 	Fixed: heavy???
+% 	Swing out rotors: cells, course particles
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Ultracentrifuges}
+% 	* Biological cell constituents, macromolecules
+% 	* Instrumented to measure progress of the separation: sedFIT software
+% \end{frame}
+% 
+% \begin{frame}\frametitle{Differential centrifugation}
+% 	http://www.coleparmer.com/TechLibraryArticle/30
+% \end{frame}
 
-\begin{frame}\frametitle{Capital costs}
-	COSTS: also see chapter 18.8 in Perry's
-\end{frame}
 
-\begin{frame}\frametitle{Performance}
-	\see{Perry, 8ed, section 18.8.3}
-
-	In order to have good separation or high settling velocity, a combination of the following conditions is generally sufficient:
-
-	1. High centrifuge speed
-
-	2. Large particle size
-
-	3. Large density difference between solid and liquid
-
-	4. Large separation radius
-
-	5. Low liquor viscosity
-
-	% Among the five parameters, the settling velocity is very sensitive to change in speed and particle size. It varies as the square of both parameters. The maximum achievable rotational speed of a centrifuge is normally dictated by the stresses exerted by the processing medium on the bowl and the stresses of the bowl on periphery equipment, most notably the drive system, which consists of a gear unit or hydraulic pump. If the particles in the feed slurry are too small to be separated in the existing G-field, coagulation and flocculation by polymers are effective ways to create larger agglomerated particles for settling. Unlike separation under a constant gravitational field, the settling velocity under a centrifugal field increases linearly with the radius. The greater the radius at which the separation takes place in a given centrifuge at a given rotational speed, the better the separation. Sedimentation of particles is favorable in a less viscous liquid. Some processes are run under elevated temperature where liquid viscosity drops to a fraction of its original value at room temperature.
-
-\end{frame}
-
-\begin{frame}\frametitle{Flowsheet layout}
-	Series or parallel? Svarovsky, p 274
-\end{frame}
-
-\begin{frame}\frametitle{Example}
-	See UCT notes:
-\end{frame}
-
-\begin{frame}\frametitle{Design}
-	Fixed vs swing out: different energy use profiles
-	Fixed: heavy???
-	Swing out rotors: cells, course particles
-\end{frame}
-
-\begin{frame}\frametitle{Svedberg S-value?}
-	What is it;
-	how is it calculated?
-\end{frame}
-
-\begin{frame}\frametitle{Ultracentrifuges}
-	* Biological cell constituents, macromolecules
-	* Instrumented to measure progress of the separation: sedFIT software
-\end{frame}
-
-\begin{frame}\frametitle{Differential centrifugation}
-	http://www.coleparmer.com/TechLibraryArticle/30
-\end{frame}
-
-\end{comment}
 
 \begin{frame}\frametitle{Safety}
 	\begin{itemize}
@@ -446,36 +515,4 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Example}
-	A lab scale tubular bowl centrifuge has the following characteristics:
-	\begin{itemize}
-		\item	$r_1 = 16.5$ mm
-		\item	$r_2 = 22.2$ mm
-		\item	bowl height of 115 mm
-		\item	800 revolutions per second
-	\end{itemize}
-
-	It is being used to separate bacteria from a fermentation broth:
-	\begin{enumerate}
-		\item	If the broth has the following properties:
-			\begin{itemize}
-				\item	$\rho_f = 1010~\text{kg.m}^{-3}$
-				\item	$\mu_f = 0.001~\text{kg.m}^{-1}\text{.s}^{-1}$
-				\item	$D_{p,\text{min}} = 0.7$ \micron
-				\item	$\rho_p = 1040~\text{kg.m}^{-3}$
-			\end{itemize}
-			calculate both $Q_\text{max}$ and the more realistic $Q_\text{cut}$.
-		\item	Calculate the $\Sigma$ factor for this centrifuge based on the cut-size flowrate.
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{References}
-	\begin{itemize}
-		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 3rd or 4th edition, chapter 14.
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 9.
-		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 18.8.
-		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition. %Well written and straightforward to understand.
-		\item	Seader et al. ``Separation Process Principles", page 800 to 802 in 3rd edition.
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4.5.
-	\end{itemize}
-\end{frame}
+\end{comment}
