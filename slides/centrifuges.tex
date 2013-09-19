@@ -232,7 +232,8 @@
 	\begin{center}
 		\includegraphics[width=0.5\textwidth, trim=0cm 0cm 20cm 4.7cm, clip=true]{\imagedir/separations/centrifuge/trajectory-Geankoplis-fig14-4-2-coloured.jpg}
 	\end{center}
-	$t=t_*$ gives a \textbf{bound} on the time it should take a particle to reach the wall at $r_2$.
+	\vspace{-6pt}
+	$t=t_*$ gives a \textbf{bound} on the time it should take a particle to reach the wall at $r_2$, starting at $r_1$.
 \end{frame}
 
 \begin{frame}\frametitle{Calculating the centrifuge's throughput, $Q$}
@@ -269,8 +270,7 @@
 \begin{frame}\frametitle{Example}
 	A lab scale tubular bowl centrifuge has the following characteristics:
 	\begin{itemize}
-		\item	$r_1 = 16.5$ mm
-		\item	$r_2 = 22.2$ mm
+		\item	$r_1 = 16.5$ mm and $r_2 = 22.2$ mm
 		\item	bowl height of 115 mm
 		\item	800 revolutions per second
 	\end{itemize}
@@ -289,10 +289,11 @@
 	\begin{enumerate}
 		\item	Calculate both $Q_*$ and the more realistic $Q_\text{cut}$.
 		\item	Verify whether Stokes' law applies
+		\item	What would be the area of the sedimentation vessel that would operate at this $Q_\text{cut}$? \emph{Hint}: recall that $A = \dfrac{Q}{v_{TSV}}$
 	\end{enumerate}
 		
-		%\item	What would be the area of the sedimentation vessel that would operate at this $Q_\text{cut}$?
-		%\item	\emph{Hint}: recall that $A = \dfrac{Q}{v_{TSV}}$
+		%
+		%\item	
 		%\item	\emph{Later}: calculate the $\Sigma$ factor for this centrifuge based on the cut-size flowrate.
 \end{frame}
 
@@ -314,10 +315,10 @@
 	\]
 	we obtain:
 	\[
-		Q_\text{cut} =  2\left( \frac{\left( \rho_p - \rho_f \right) g D_{p,\text{cut}}^2}{18 \mu_f}  \right) \cdot ( \Sigma ) = 2 v_\text{TSV} \cdot \Sigma
+		Q_\text{cut} =  \left( \frac{\left( \rho_p - \rho_f \right) g D_{p,\text{cut}}^2}{18 \mu_f}  \right) \cdot ( \Sigma ) =  v_\text{TSV} \cdot \Sigma
 	\]
 	\[
-		\Sigma = \frac{\omega^2 \left[\pi h \left(r_2^2 - r_1^2\right)\right]}{2g \ln \left[2r_2/(r_1+r_2) \right]}
+		\Sigma = \frac{\omega^2 \left[\pi h \left(r_2^2 - r_1^2\right)\right]}{g \ln \left[2r_2/(r_1+r_2) \right]}
 	\]
 
 	\vspace{12pt}
@@ -333,8 +334,8 @@
 		\item	$\Sigma = f(r_1, r_2, h, \omega)$
 		\item	it is only a function of the centrifuge's characteristics; not the particle or fluid
 		\item	$\Sigma$ has units of $\text{m}^2$: it is the equivalent surface area required for a gravity sedimentation basin
-		\item	Centrifuge A: $Q_{\text{cut},A} = 2 v_\text{TSV} \cdot \Sigma_A$
-		\item	Centrifuge B: $Q_{\text{cut},B} = 2 v_\text{TSV} \cdot \Sigma_B$
+		\item	Centrifuge A: $Q_{\text{cut},A} = v_\text{TSV} \cdot \Sigma_A$
+		\item	Centrifuge B: $Q_{\text{cut},B} = v_\text{TSV} \cdot \Sigma_B$
 		\item	\[
 					\frac{Q_{\text{cut},A}}{Q_{\text{cut},B}}  = \frac{\Sigma_A}{\Sigma_B}
 				\]
@@ -418,8 +419,6 @@
 	\end{columns}
 \end{frame}
 
-% 
-% 
 % \begin{frame}\frametitle{Capital costs}
 % 	COSTS: also see chapter 18.8 in Perry's
 % \end{frame}
@@ -465,8 +464,6 @@
 % \begin{frame}\frametitle{Differential centrifugation}
 % 	http://www.coleparmer.com/TechLibraryArticle/30
 % \end{frame}
-
-
 
 \begin{frame}\frametitle{Safety}
 	\begin{itemize}
@@ -514,5 +511,4 @@
 		\item	Asceptic operation is vital
 	\end{itemize}
 \end{frame}
-
 \end{comment}
