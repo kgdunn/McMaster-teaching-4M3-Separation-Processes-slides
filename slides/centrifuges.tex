@@ -1,21 +1,6 @@
 % 20 September 2012
 
-% Changes to make for 2013:
-% * Q_cut vs Q_max notation: in fact, Q_cut > Q_max, so Q_max is bad notation
-% * Also, call it \Sigma_cut and \Sigma_max (but don't use max anymore). These correspond to their flowrates. Add this on the page "Cut-size diameter"
-% * See red notebook for \Sigma_cut and \Sigma_max
-% * Add an example (e.g. the last example)
-%
-% For reference: Q_max: integrating from r_1 to r_2 within length 0 to h to find the t_T time
-%                Q_cut: integrating from r_1 to midpoint, within length 0 to h, to find the t_T time
-% Make this point clear
-% Emphasize that we could have used any other point, e.g. 0.8(r_2 - r_1): just that 50% is used by convention, everything beyond 50% is presumed to slip out in the overflow
-% Accounts for uncertainties in our flows, physical properties and idealities assumed with Stokes' law
-
 % 2013: do a 2-phase system example; e.g. biodiesel project of Sguigna and Shawn Thompson, project 2012.
-
-% For 2013: include section on costing: See Don Woods book: what is the cost basis, what are electrical costs (how to estimate electrical requirements) and maintenance costs (typically 5 to 10% of capital)
-% Also see Perry's: have a table of costs related to Sigma value
 
 % 2013: make this clear: Centrifuges can be divided into two categories that depends on whether the desired product is the solid or the liquid. If the interest is in recovering the solids, a filtering centrifuge would be an ideal choice of use. Since this application required the separation of pulp from the liquid juice where the desired product is the juice, a sedimentation centrifuge is the optimal selection for the separation mechanism to provide a clear supernatant. From Orange Juice project report, 2012, Kasim and Najib.
 
@@ -198,13 +183,13 @@
 	Let's understand how the solid particles move:
 	\begin{exampleblock}{Recall  if Re $< 1$}
 		\[
-			v_\text{TSV} = \frac{D_p^2 \left( \rho_p - \rho_f \right) g }{18 \mu_f} \label{TSV-low-Re}
+			v_\text{TSV}^\text{grav} = \frac{D_p^2 \left( \rho_p - \rho_f \right) g }{18 \mu_f} \label{TSV-low-Re}
 		\]
 	\end{exampleblock}
 	In a centrifuge, we have simply replaced $g$ with centrifugal force, $r \omega^2$ (gravity is negligible)
 	\begin{exampleblock}{}
 		\[
-			v_\text{horiz} = \frac{dr}{dt} = \frac{D_p^2\left(\rho_p - \rho_f\right)r\omega^2}{18 \mu_f}
+			v_\text{horiz}^\text{cent} = \frac{dr}{dt} = \frac{D_p^2\left(\rho_p - \rho_f\right)r\omega^2}{18 \mu_f}
 		\]
 	\end{exampleblock}
 	\begin{itemize}
@@ -212,6 +197,20 @@
 		\item	In centrifuges: particles are likely to have Re $< 1$ (why?)
 	\end{itemize}
 \end{frame}
+
+% Changes to make for 2013: IMPLEMENTED
+%
+% * Q_cut vs Q_max notation: in fact, Q_cut > Q_max, so Q_max is bad notation
+% * Also, call it \Sigma_cut and \Sigma_max (but don't use max anymore). These correspond to their flowrates. Add this on the page "Cut-size diameter"
+% * See red notebook for \Sigma_cut and \Sigma_max
+% * Add an example (e.g. the last example)
+%
+% For reference: Q_max: integrating from r_1 to r_2 within length 0 to h to find the t_T time
+%                Q_cut: integrating from r_1 to midpoint, within length 0 to h, to find the t_T time
+% Make this point clear
+% Emphasize that we could have used any other point, e.g. 0.8(r_2 - r_1): just that 50% is used by convention, everything beyond 50% is presumed to slip out in the overflow
+% Accounts for uncertainties in our flows, physical properties and idealities assumed with Stokes' law
+
 
 \begin{frame}\frametitle{Theoretical trajectories: tubular bowl centrifuge}
 	\begin{center}
@@ -288,8 +287,8 @@
 	\end{itemize}
 	\begin{enumerate}
 		\item	Calculate both $Q_*$ and the more realistic $Q_\text{cut}$.
-		\item	Verify whether Stokes' law applies
-		\item	What would be the area of the sedimentation vessel that would operate at this $Q_\text{cut}$? \emph{Hint}: recall that $A = \dfrac{Q}{v_{TSV}}$
+		\item	Verify whether Stokes' law applies.
+		\item	What would be the area of the sedimentation vessel that would operate at this $Q_\text{cut}$? \emph{Hint}: recall that $A = \dfrac{Q}{v_{TSV}}$.
 	\end{enumerate}
 		
 		%
@@ -307,15 +306,14 @@
 	%s
 \end{frame}
 
-\begin{comment}
 \begin{frame}\frametitle{Sigma theory for centrifuges}
 	Take the previous equation for $Q_\text{cut}$, multiply numerator and denominator by $2g$, then substitute Stokes' law for particles settling under gravity:
 	\[
-		v_\text{TSV} = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
+		v_\text{TSV}^\text{grav} = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
 	\]
 	we obtain:
 	\[
-		Q_\text{cut} =  \left( \frac{\left( \rho_p - \rho_f \right) g D_{p,\text{cut}}^2}{18 \mu_f}  \right) \cdot ( \Sigma ) =  v_\text{TSV} \cdot \Sigma
+		Q_\text{cut} =  \left( \frac{\left( \rho_p - \rho_f \right) g D_{p,\text{cut}}^2}{18 \mu_f}  \right) \cdot ( \Sigma ) =  v_\text{TSV}^\text{grav} \cdot \Sigma
 	\]
 	\[
 		\Sigma = \frac{\omega^2 \left[\pi h \left(r_2^2 - r_1^2\right)\right]}{g \ln \left[2r_2/(r_1+r_2) \right]}
@@ -333,15 +331,16 @@
 	\begin{itemize}
 		\item	$\Sigma = f(r_1, r_2, h, \omega)$
 		\item	it is only a function of the centrifuge's characteristics; not the particle or fluid
-		\item	$\Sigma$ has units of $\text{m}^2$: it is the equivalent surface area required for a gravity sedimentation basin
-		\item	Centrifuge A: $Q_{\text{cut},A} = v_\text{TSV} \cdot \Sigma_A$
-		\item	Centrifuge B: $Q_{\text{cut},B} = v_\text{TSV} \cdot \Sigma_B$
+		\item	$\Sigma$ has units of $\text{m}^2$: {\color{purple}$\Sigma$ is the equivalent surface area} required for sedimentation by \emph{gravity}
+		\item	Centrifuge A: $Q_{\text{cut},A} = v_\text{TSV}^\text{grav} \cdot \Sigma_A$
+		\item	Centrifuge B: $Q_{\text{cut},B} = v_\text{TSV}^\text{grav} \cdot \Sigma_B$
 		\item	\[
 					\frac{Q_{\text{cut},A}}{Q_{\text{cut},B}}  = \frac{\Sigma_A}{\Sigma_B}
 				\]
-		\item	Used for scale-up \textbf{of the same feed}, i.e. the same $v_\text{TSV}$
+		\item	Used for scale-up \textbf{of the same feed}, i.e. the same $v_\text{TSV}^\text{grav}$
 		\item	Used for scale-up \textbf{within the same types of equipment}
 		\item	$\Sigma$ equation is different for other centrifuge types
+		\item	\emph{Question}: if I know $\Sigma$ for a given centrifuge and for a given feed; can I calculate the performance for a different feed stream?
 	\end{itemize}
 \end{frame}
 
@@ -362,15 +361,6 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{More on the tubular bowl centrifuge}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/centrifuge/tubular-bowl-centrifuge-Ghosh.jpg}
-	\end{center}
-	A diagonal solids layer is built up
-
-	\see{Ghosh, p 84}
-\end{frame}
-
 \begin{frame}\frametitle{Disk-bowl centrifuges}
 	\begin{center}
 		\includegraphics[width=.75\textwidth]{\imagedir/separations/centrifuge/disk-bowl-centrifuge-Geankoplis-fig14-4-4.jpg}
@@ -386,9 +376,9 @@
 
 \begin{frame}\frametitle{Disk-bowl centrifuges}
 	\begin{itemize}
-		\item	Recall: $Q = V / t_T$ ($t_T$ will be different for a disk-bowl)
-		\item	If we increase volume of fluid, we get higher throughput, $Q$
-		\item	Adding angled disks gives a greater surface area, hence volume, without increasing bowl diameter
+		\item	Recall: $Q = V / t_*$ (the $t_*$ will be different for disk-bowl compared to tubular bowl)
+		\item	If we increase rate of fluid feed, we get higher throughput, $Q$
+		\item	Adding angled disks gives a greater surface area, hence greater volume treated, without increasing bowl diameter
 		\item	Widely used in bioseparations: no contamination (aseptic)
 		\item	Also for: fish oil, fruit juice, beverage clarification
 	\end{itemize}
@@ -403,7 +393,7 @@
 	\end{itemize}
 	\vspace{-12pt}
 	\begin{columns}[c]
-		\column{0.45\textwidth}
+		\column{0.50\textwidth}
 			$\Sigma = \displaystyle \frac{2\pi\omega^2 N(r_1^3 - r_2^3)}{3g \tan \theta}$
 			\vspace{24pt}
 			\begin{itemize}
@@ -468,7 +458,7 @@
 \begin{frame}\frametitle{Safety}
 	\begin{itemize}
 		\item	careful selection of materials of construction: corrosion and withstand high forces
-		\item	heat removal might be required
+		\item	heat removal might be required (some units come with integrated refrigeration)
 		\item	rotational equipment requires careful balance
 		\item	digital control is critical
 		\begin{itemize}
@@ -511,4 +501,16 @@
 		\item	Asceptic operation is vital
 	\end{itemize}
 \end{frame}
-\end{comment}
+
+\begin{frame}\frametitle{Further practice questions}
+	\begin{enumerate}
+		\item	In a test particles of density $2800~\text{kg.m}^{-3}$ and of size 5 \micron, equivalent spherical diameter, were separated from suspension in water fed at a volumetric throughput rate of $0.25~\text{m}^{3}\text{.s}^{-1}$. Calculate the value of the capacity factor, $\Sigma$. {\color{myOrange}\tiny{[\emph{Ans}: $\Sigma = 1.02 \times 10^4~\text{m}^2$]}}
+		
+		\vspace{12pt}
+		\item	What will be the corresponding size cut for a suspension of coal particles in oil fed at the rate of $0.04~\text{kg.s}^{-3}$? The density of coal is $1300~\text{kg.m}^{-3}$ and the density of the oil is $850~\text{kg.m}^{-3}$ and its viscosity is $0.01~\text{N.s.m}^{-2}$. {\color{myOrange}\tiny{[\emph{Ans}: $D_\text{p,cut} = 4$\micron]}}
+		
+		\vspace{12pt}
+		\item	Is Stokes' law applicable?  {\color{myOrange}\tiny{[\emph{Ans}: Calculate the $v_\text{TSV}^\text{cent}$ and confirm if Re<1]}}
+	\end{enumerate}
+	\see{Richardson and Harker, v2, 5th ed, p482-483}
+\end{frame}
