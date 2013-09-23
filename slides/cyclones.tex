@@ -1,12 +1,25 @@
-% Was supposed to be 21 September 2012; realistically, only 24 September
+% \begin{frame}\frametitle{Administrative}
+% 	\begin{itemize}
+% 		\item	Assignment 1 is returned
+% 		\item	Assignment 2 solutions posted yesterday
+% 		\item	Project selection is going well. Please fill out form by {\color{myRed}{\sout{end of today}}} noon.
+% 	\end{itemize}
+% \end{frame}
 
-\begin{frame}\frametitle{Administrative}
+% For 2013
+% \begin{frame}\frametitle{Venturi systems}
+% 	\todo{Add this topic in 2013: does it fit here?}
+% \end{frame}
+
+\begin{frame}\frametitle{References}
 	\begin{itemize}
-		\item	Assignment 1 is returned
-		\item	Assignment 2 solutions posted yesterday
-		\item	Project selection is going well. Please fill out form by {\color{myRed}{\sout{end of today}}} noon.
+		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition, chapter 6.% Clearly written.
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 1.
+		\item	Sinnot, ``Chemical Engineering, Volume 6'', 4th edition, chapter 10.
+		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 17.2, ``Gas-Solid Separations''
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4-135.
 	\end{itemize}
-\end{frame} 
+\end{frame}
 
 \begin{frame}\frametitle{The cyclone}
 	\vspace{-24pt}
@@ -20,7 +33,7 @@
 			\begin{center}
 				Cyclone
 				\vspace{12pt}
-				
+
 				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-separator-CRv2-5ed-p74.png}
 			\end{center}
 	\end{columns}
@@ -40,17 +53,26 @@
 		\item	separating immiscible liquids (different densities)
 		\item	dewater suspensions: concentrate the product
 		\item	remove dissolved gases from liquid stream
-		\item	solids-solids separation
+		\item	solids-solids separation: very common in mining
 	\end{itemize}
+
+	\vspace{12pt}
+	\begin{exampleblock}{}
+		Where possible, consider a cyclone before a centrifuge for solid-fluid separations.
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}\frametitle{Alternatives}
-	A number of alternatives exist; based on the principle that particle's momentum $>$ air momentum. {\color{myBlue}{Other options?}}
-	
+	A number of alternatives exist; based on the principle of removing the particle's momentum relative to the fluid's momentum. {\color{myBlue}{Other options?}}
+
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{\imagedir/separations/cyclones/cyclone-alternative-CRv2-5ed-p81.png}
-	\end{center}	
+		\includegraphics[width=0.75\textwidth]{\imagedir/separations/cyclones/cyclone-alternative-CRv2-5ed-p81.png}
+	\end{center}
 	\see{Richardson and Harker, 5ed, p81}
+	% Fabric filters
+	% Electrostatic precipitator
+	% Bag house
+	% Spray washer and scrubbers
 \end{frame}
 
 \begin{frame}\frametitle{Cyclone operation}
@@ -67,11 +89,11 @@
 				\includegraphics[height=.9\textheight]{\imagedir/separations/cyclones/flow-pattern-CRv6-p451.png}
 			\end{center}
 		\column{0.40\textwidth}
-			Generally, flow pattern is more complex than this. 
-			
-			\vspace{12pt}			
+			Generally, flow pattern is more complex than this.
+
+			\vspace{12pt}
 			See, for example, \href{http://www.youtube.com/watch?v=CWLARs\_dJO0}{this video of a PET scan} of a radioactive isotope labelled particle $^{18}F$
-			
+
 			\vspace{12pt}
 			\begin{itemize}
 				\item	Vortex and tangential forces formed by the fluid
@@ -84,22 +106,25 @@
 		\item	Same principle as a centrifuge: \textbf{{\color{myGreen}{density difference required}}}
 		\item	{\color{myOrange}{No moving parts!}}
 		\item	Very low operating costs: essentially only pay for $\Delta P$
+		\item	Operated at many temperatures and pressures  % Perry's
+		\item	As small as 1 to 2cm to 10m in diameter % Perry's
 		\item	Very low capital costs: can be made from many materials
-		\item	Particle sizes 5\micron\, and higher are effectively removed
+		\item	Particle sizes 5\micron\, and higher are effectively removed  % Perry's
 		\item	Even different particle shapes (due to different settling velocities) can be separated
-		\item	Forces acting on particles: between 5 (large cyclones) and 2500 G (small cyclones)
-	\end{itemize}	
-	\vspace{12pt}
+		\item	Forces acting on particles: between 5 (large cyclones) and 2500 G (small cyclones)  % Perry's
+	\end{itemize}
+	\vspace{8pt}
 	Videos:
 	\begin{itemize}
 		\item	\href{http://www.youtube.com/watch?v=2bUlytvimy4}{http://www.youtube.com/watch?v=2bUlytvimy4}
 		\item	\href{http://www.youtube.com/watch?v=GxA49uVP2Ns}{http://www.youtube.com/watch?v=GxA49uVP2Ns}
 		\item	\href{http://www.youtube.com/watch?v=BicR3JGlE5M}{http://www.youtube.com/watch?v=BicR3JGlE5M}
+		\item	\href{http://www.youtube.com/watch?v=QfTZUMq-LGI}{http://www.youtube.com/watch?v=QfTZUMq-LGI}
 		\item	and many other videos of people making their own cyclones.
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Velocity profile}
+\begin{frame}\frametitle{Velocity profile: \emph{very complex}}
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\begin{center}
@@ -108,12 +133,12 @@
 		\column{0.5\textwidth}
 			{\color{myOrange}{\textbf{3 directions of travel:}}}
 			\begin{enumerate}
-				\item	LZVV = locus of zero \textbf{vertical} velocity (axial)
-				\item	\textbf{radial} velocity (small)
+				\item	LZVV = locus of zero \textbf{vertical} velocity (axial~$\updownarrow$)
+				\item	\textbf{radial} velocity is small ($\longleftrightarrow$)
 				\item	\textbf{tangential} velocity
 					\begin{itemize}
 						\item	$v_t r^n$ = constant
-						\item	true at all heights inside cyclone 
+						\item	true at all heights inside cyclone
 					\end{itemize}
 			\end{enumerate}
 			\hrule
@@ -123,14 +148,14 @@
 				\item	if $F_\text{centrifugal} > F_\text{drag}$\\ particle moves towards wall
 				\item	then pulled down in axial stream and exits in underflow
 			\end{itemize}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Velocity profiles}
 	\begin{exampleblock}{}
 		The above description is extremely simplistic; velocity profiles cannot be theoretically derived for most practical cases.
 	\end{exampleblock}
-	
+
 	\begin{itemize}
 		\item	it is \textbf{not} \emph{gravity} that removes the heavier particles in underflow
 		\item	it is the slower, boundary layer flow at the walls and air flow out of the spigot
@@ -141,7 +166,7 @@
 		\item	velocities: these are our degrees of freedom to adjust the cyclone's performance
 		%\item	models use Stokes' law: does this seem right?
 		%\item	entry velocities: 5 m.s$^{-1}$ or often greater for solid-gas separation
-	\end{itemize}	
+	\end{itemize}
 	% Good description: Svarovsky, 3rd ed, p 207.
 \end{frame}
 
@@ -149,9 +174,14 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/cyclone-psd-Svarovsky.png}
 	\end{center}
+
+	\vspace{-64pt}
+	Mass balance: $\text{M} = \text{M}_\text{f} + \text{M}_\text{c}$
+	\begin{itemize}
+		\item	both overall balance
+		\item	and within each size fraction
+	\end{itemize}
 	
-	\vspace{-48pt}
-	Mass balance: $\text{M} = \text{M}_\text{f} + \text{M}_\text{c}$	
 	\vfill
 	\see{Svarovsky, 3ed, p210}	% We never have pure streams leaving a cyclone
 \end{frame}
@@ -159,7 +189,7 @@
 \begin{frame}\frametitle{{\color{myOrange}{Concept}}: Grade efficiency}
 	\begin{exampleblock}{Total efficiency defined}
 		$E_T = \displaystyle \frac{\text{M}_\text{c}}{\text{M}} = 1 - \displaystyle \frac{\text{M}_\text{f}}{\text{M}}$
-	\end{exampleblock}	
+	\end{exampleblock}
 	\begin{itemize}
 		\item	not too much to interpret here: it is just a definition
 		\item	0\% efficiency: all mass is being sent to overflow (fines) stream
@@ -171,15 +201,15 @@
 		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
 	\end{exampleblock}
 	\begin{itemize}
-		\item	calculated at a particle size fraction $x$
-	\end{itemize}	
+		\item	calculated at a given particle size fraction $x$
+	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{``What is fraction of size $x$?''}	
+\begin{frame}\frametitle{``What is particle size fraction $x$?''}
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{\imagedir/separations/screens/particle-size-distribution.png}
 	\end{center}
-	Percentage area under the curve at size fraction $x$.
+	Percentage area under the (differential) curve, at size fraction $x$.
 \end{frame}
 
 \begin{frame}\frametitle{Back to grade efficiency}
@@ -187,12 +217,12 @@
 		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
 	\end{exampleblock}
 	\begin{itemize}
-		\item	$G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow
+		\item	If $G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow
 		\item	and the other half in the overflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{purple}{cut size}}''.
-		\item	$G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
+		\item	If $G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
 		\item	$G(x) = 1.0$: also means the $x=$ \emph{largest particle size} we expect to ever see in overflow
 		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [$G(x)$ curves don't always reach 0\%]}
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Grade efficiency curve}
@@ -226,17 +256,17 @@
 		\item	mounted in any orientation (except for very large units)
 		\item	versatile: multiple uses
 	\end{itemize}
-	
+
 	Balanced by some {\color{myOrange}{disadvantages}}:
 	\begin{itemize}
 		\item	subject to abrasion
-		\item	cannot use flocculation: high shear forces
+		\item	cannot use a flocculated feed: high shear forces break flocs up
 		\item	limits on their efficiency curves
-		\item	requires consistent feed rate and concentration to maintain efficiency i.e. not suitable for variable feeds
+		\item	requires consistent feed rate and concentration to maintain efficiency i.e. not suitable for variable (volumetric) feeds
 		\begin{itemize}
 			\item	{\color{myBlue}{counteract}}: use many small cyclones in parallel; bring them online as needed
 		\end{itemize}
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Selection of cyclones, sedimentation or centrifuges}
@@ -246,6 +276,24 @@
 \end{frame}
 
 \begin{comment}
+\begin{frame}\frametitle{Example}
+
+	feed A -> underflowA -> feedB -> underflowB leaves circuit
+	feed B -> overflowB joins underflow from C
+	overflowA -> feedC
+	underflowC + overflowB added to feed of A in a recycle stream
+	overflowC -> leaves circuit as a mainly air stream
+	underflowB -> leaves circuit as a high percent solids stream
+
+	unit A = ``rougher''
+	unit B = ``cleaner''
+	unit C = ``scavenger''
+
+	Question: purpose of units A, B, and C
+
+\end{frame}
+
+
 
 \begin{frame}\frametitle{Design considerations: HYDROcyclone}
 	C+R v2, 5ed, p54
@@ -282,9 +330,9 @@
 
 \begin{frame}\frametitle{Operational}
 	C+R v2: p 77
-	
+
 	A small inlet and outlet therefore result in the separation of smaller particles but, as the pressure drop over the separator varies with the square of the inlet velocity and the square of the outlet velocity(56), the practical limit is set by the permissible drop in pressure. The depth and diameter of the body should be as large as possible because the former determines the radial component of the gas velocity and the latter controls the tangential component at any radius. In general, the larger the particles, the larger should be the diameter of the separator because the greater is the radius at which they rotate. The larger the diameter, the greater too is the inlet velocity which can be used without causing turbulence within the separator. The factor which ultimately settles the maximum size is, of course, the cost. Because the separating power is directly related to the throughput of gas, the cyclone separator is not very flexible though its efficiency can be improved at low throughputs by restricting the area of the inlet with a damper and thereby increasing the velocity. Generally, however, it is better to use a number of cyclones in parallel and to keep the load on each approximately the same whatever the total throughput.
-	
+
 \end{frame}
 
 \begin{frame}\frametitle{how is it designed: simple nomographs, equations, etc}
@@ -302,7 +350,7 @@
 	Use: to clean dust from air; generally 5 \micron and larger
 	Use: mists separated from gas
 	U
-	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.	
+	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.
 \end{frame}
 
 \begin{frame}\frametitle{Circuits of cyclones}
@@ -311,14 +359,14 @@
 	Fig 6.18
 	\item Figre 6.19
 \end{frame}
-\end{comment}
+
 
 \begin{frame}\frametitle{Circuits of separators}
 	{\scriptsize \textbf{The remaining slides can be applied to any separation system, though most commonly used for cyclones and other solid-fluid separations.}}
 	\vspace{12pt}
 	\hrule
 	\vspace{6pt}
-	When one unit is not enough... 
+	When one unit is not enough...
 	\begin{columns}[t]
 		\column{0.60\textwidth}
 			\begin{itemize}
@@ -331,26 +379,9 @@
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/cyclones/grade-efficiency-curve.png}
 			\end{center}
-	\end{columns}	
+	\end{columns}
 	\vspace{24pt}
 	\seefull{The rest of this section is from Svarovsky, 4ed, chapter 16}
-\end{frame}
-
-\begin{frame}\frametitle{Example}
-	
-	feed A -> underflowA -> feedB -> underflowB leaves circuit
-	feed B -> overflowB joins underflow from C
-	overflowA -> feedC
-	underflowC + overflowB added to feed of A in a recycle stream
-	overflowC -> leaves circuit as a mainly air stream
-	underflowB -> leaves circuit as a high percent solids stream
-	
-	unit A = ``rougher''
-	unit B = ``cleaner''
-	unit C = ``scavenger''
-	
-	Question: purpose of units A, B, and C
-	
 \end{frame}
 
 \begin{frame}\frametitle{Units in series: overflow}
@@ -410,20 +441,8 @@
 		\begin{itemize}
 			\item	Best of both worlds?
 		\end{itemize}
-	\end{columns}	
+	\end{columns}
 \end{frame}
+\end{comment}
 
-% For 2013
-% \begin{frame}\frametitle{Venturi systems}
-% 	\todo{Add this topic in 2013: does it fit here?}
-% \end{frame}
 
-\begin{frame}\frametitle{References}
-	\begin{itemize}
-		\item	Svarovsky, ``Solid Liquid Separation'', 3rd or 4th edition, chapter 6.% Clearly written.
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 1.
-		\item	Sinnot, ``Chemical Engineering, Volume 6'', 4th edition, chapter 10.
-		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 17.2.
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4-135.
-	\end{itemize}
-\end{frame}
