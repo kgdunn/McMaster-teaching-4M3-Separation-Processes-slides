@@ -104,7 +104,7 @@
 \begin{frame}\frametitle{Principle of operation}
 	\begin{itemize}
 		\item	Same principle as a centrifuge: \textbf{{\color{myGreen}{density difference required}}}
-		\item	{\color{myOrange}{No moving parts!}}
+		\item	{\color{myOrange}{No moving parts!}} and {\color{myOrange}{no consumable components!}}
 		\item	Very low operating costs: essentially only pay for $\Delta P$
 		\item	Operated at many temperatures and pressures  % Perry's
 		\item	As small as 1 to 2cm to 10m in diameter % Perry's
@@ -217,7 +217,7 @@
 		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
 	\end{exampleblock}
 	\begin{itemize}
-		\item	If $G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow
+		\item	If $G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow (coarse)
 		\item	and the other half in the overflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{purple}{cut size}}''.
 		\item	If $G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
 		\item	$G(x) = 1.0$: also means the $x=$ \emph{largest particle size} we expect to ever see in overflow
@@ -236,10 +236,10 @@
 \begin{frame}\frametitle{Day-to-day operation}
 	% C+R v6, p 453
 	\begin{itemize}
-		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} pressures
+		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} (fines) pressures
 		\item	increase $\Delta P$, increases efficiency
-		\item	$\Delta P \propto \rho_f \qquad  \Delta P \propto u_\text{in}^2~\text{and}~u_\text{overflow}^2 \qquad  \Delta P \propto \displaystyle\frac{1}{d_\text{under}}$
-		\item	$u_\text{in}$ = entry velocity and $d_\text{under}$ = diameter of underflow
+		\item	$\Delta P \propto \rho_f \qquad  \Delta P \propto v_\text{in}^2~\text{and}~v_\text{overflow}^2 \qquad  \Delta P \propto \displaystyle\frac{1}{d_\text{under}}$
+		\item	$v_\text{in}$ = entry velocity and $d_\text{under}$ = diameter of underflow
 		\item	efficiency drops off at high solids concentration: try to operate as dilutely as possible if requiring high solids recovery
 		\item	leave the underflow opening diameter as an physically adjustable variable: it is hard to predict its size from theory
 		\item	air leaks at this point are disastrous for efficiency \see{Perry, Ch 17.2, 8ed}
