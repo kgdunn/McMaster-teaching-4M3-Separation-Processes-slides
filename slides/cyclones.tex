@@ -1,11 +1,3 @@
-% \begin{frame}\frametitle{Administrative}
-% 	\begin{itemize}
-% 		\item	Assignment 1 is returned
-% 		\item	Assignment 2 solutions posted yesterday
-% 		\item	Project selection is going well. Please fill out form by {\color{myRed}{\sout{end of today}}} noon.
-% 	\end{itemize}
-% \end{frame}
-
 % For 2013
 % \begin{frame}\frametitle{Venturi systems}
 % 	\todo{Add this topic in 2013: does it fit here?}
@@ -159,7 +151,7 @@
 	\begin{itemize}
 		\item	it is \textbf{not} \emph{gravity} that removes the heavier particles in underflow
 		\item	it is the slower, boundary layer flow at the walls and air flow out of the spigot
-		\item	particles rotate at a radius where centrifugal force is balanced by drag force
+		\item	particles rotate at a radius where centrifugal force is balanced by drag force (recall {\color{purple}elutriation} concept)
 		\item	larger, denser particles move selectively towards the wall
 		\item	residence time must be long enough to achieve equilibrium orbits; spiral patterns help
 		\item	all of this comes down to a careful balance of radial and tangential velocities
@@ -198,7 +190,7 @@
 	\vspace{12pt}
 	More useful though:
 	\begin{exampleblock}{Grade efficiency defined}
-		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
+		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C, coarse stream})}{(\text{M})(\text{fraction of size $x$ in feed})}$
 	\end{exampleblock}
 	\begin{itemize}
 		\item	calculated at a given particle size fraction $x$
@@ -214,30 +206,30 @@
 
 \begin{frame}\frametitle{Back to grade efficiency}
 	\begin{exampleblock}{Grade efficiency}
-		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C})}{(\text{M})(\text{fraction of size $x$ in feed})}$
+		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C, coarse stream})}{(\text{M})(\text{fraction of size $x$ in feed})}$
 	\end{exampleblock}
 	\begin{itemize}
 		\item	If $G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow (coarse)
 		\item	and the other half in the overflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{purple}{cut size}}''.
 		\item	If $G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
 		\item	$G(x) = 1.0$: also means the $x=$ \emph{largest particle size} we expect to ever see in overflow
-		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [$G(x)$ curves don't always reach 0\%]}
+		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [i.e. the $G(x)$ curves don't always reach 0\%]}
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Grade efficiency curve}
-	Calculate efficiency at each size fraction and plot it:
+	Calculate efficiency at each size fraction, $x$, and plot it:
 	\begin{center}
 		\includegraphics[width=0.85\textwidth]{\imagedir/separations/cyclones/grade-efficiency-curve-CRv2-5ed-p78.png}
 	\end{center}
-	Which is a better cyclone?
+	{\color{myOrange}\textbf{Which} is a more desirable cyclone} from a separation efficiency perspective? In general, {\color{myOrange}\textbf{what shape}} would be the most desirable?
 \end{frame}
 
 \begin{frame}\frametitle{Day-to-day operation}
 	% C+R v6, p 453
 	\begin{itemize}
-		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} (fines) pressures
-		\item	increase $\Delta P$, increases efficiency
+		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} (fines) pressures and $\sim 500$ to $1500$~Pa
+		\item	increase $\Delta P$, increases efficiency % and recovery into the coarse stream (Svarovsky)
 		\item	$\Delta P \propto \rho_f \qquad  \Delta P \propto v_\text{in}^2~\text{and}~v_\text{overflow}^2 \qquad  \Delta P \propto \displaystyle\frac{1}{d_\text{under}}$
 		\item	$v_\text{in}$ = entry velocity and $d_\text{under}$ = diameter of underflow
 		\item	efficiency drops off at high solids concentration: try to operate as dilutely as possible if requiring high solids recovery
@@ -275,90 +267,109 @@
 	\end{center}
 \end{frame}
 
-\begin{comment}
-\begin{frame}\frametitle{Example}
+\begin{frame}\frametitle{How to select/model cyclones}
+	{\color{myOrange}Given the complex fluid patterns, cyclone selection is best done with the vendor.}
+	
+	\vspace{12pt}
+	There are some guiding equations though.
+	\begin{exampleblock}{}
+		$\text{{\color{myOrange}Eu}} = \dfrac{\text{pressure forces}}{\text{inertial forces}} = \dfrac{\Delta P}{\rho_f v^2 / 2}$
+	\end{exampleblock}
+	
+	\vspace{12pt}
+	For a cyclone, the characteristic velocity, $v = \dfrac{4Q}{\pi D_\text{cyc}^2}$
+	\[
+		\begin{array}{rcll}
+			\Delta P&=& \text{pressure drop from inlet to \emph{overflow}} 	&[\text{Pa}]\\
+			v 	    &=& \text{characteristic velocity}                     	&[\text{m.s}^{-1}]\\
+			\rho_f  &=& \text{density of fluid}  							&[\text{kg.m}^{-3}]\\
+			Q   	&=& \text{volumetric feed flow rate}					&[\text{m}^{3}\text{.s}^{-1}]\\
+			D_\text{cyc}&=& \text{cylindrical section diameter of cyclone}	&[\text{m}] \\
+			D_p 	&=& \text{particle's diameter} &[\text{m}]
+		\end{array}
+	\]
+	\begin{itemize}
+		\item	$0.02 < D_\text{cyc} <  0.5$ are typical values
+	\end{itemize}
+\end{frame}
 
-	feed A -> underflowA -> feedB -> underflowB leaves circuit
-	feed B -> overflowB joins underflow from C
-	overflowA -> feedC
-	underflowC + overflowB added to feed of A in a recycle stream
-	overflowC -> leaves circuit as a mainly air stream
-	underflowB -> leaves circuit as a high percent solids stream
+\begin{frame}\frametitle{{\color{myOrange}Eu}ler number for cyclones}
+	\begin{itemize}
+		\item	It is relatively constant, under different flow conditions, for a given cyclone
+		\item	e.g. ``this cyclone has an Euler number of 540''
 
-	unit A = ``rougher''
-	unit B = ``cleaner''
-	unit C = ``scavenger''
-
-	Question: purpose of units A, B, and C
-
+		\item	provided solids concentration remains around or below 1 $\text{g.m}^{-3}$  % Svarovsky paper
+		\item	{\color{myOrange}Eu} can be easily calculated found from clean air at ambient conditions 
+	\end{itemize}
+	\see{Svarovsky}
 \end{frame}
 
 
+% \begin{frame}\frametitle{Design considerations: HYDROcyclone}
+% 	C+R v2, 5ed, p54
+% 	Design Considerations
+% 	Hydrocyclones are 20 to500 mm in diameter, with the smaller units giving a much better separation. Typical values of length to diameter ratios range from about 5 to 20. Because of the very high shearing stresses which are set up, flocs will be broken down and the suspension in the secondary vortex will be completely deflocculated, irrespective of its condition on entry. Generally, hydrocylones are not effective in removing particles smaller than about 2to 3 \micron.
+% %	Because separating power is greatest in hydrocyclones of small diameter, the cut size being approximately proportional to the diameter of the cylindrical shell raised to the power of 1.5, it is common practice to operate banks of small hydrocyclones in parallel inside a large containing vessel. Furthermore, this procedure also makes scale-up easier to carry out. With units connected only in parallel (or as single units), however, it is not possible to control the compositions of the overflow and underflow independently, and therefore some form of series-parallel operation is often employed. This is an important consideration when the hydrocyclone is used for thickening a suspension. In this case, there is the requirement to produce an underflow of the appropriate solids concentration and for the overflow to be particle-free, and these two conditions cannot usually be satisfied in a single unit. In thickening, the particle concentrations are high and little classification by size occurs.
+% %	In general, the performance of the hydrocyclone is improved by increasing the operating pressure, and the principal control variable is the size of the orifice on the underflow discharge. Several theoretical and practical studies have been made in an attempt to present a sound basis for design, and these have been described BRADLEY(29) and SAVROVSKY(30,35) among others, although they are generally not entirely satisfactory, and some design charts and formulae have been given by ZANKER(40). In practice, tests with the actual materials to be used are desirable for the evaluation for the various parameters. Since systems are usually scaled-up by increasing the number of units in parallel, it is seldom necessary to carry out tests on large units.
+% %	The optimum design of a hydrocyclone for a given function depends upon reconciling a number of conflicting factors and reference should be made to specialist publications. Because it is simple in construction and has no moving parts, maintenance costs are low. The chief problem arises from the abrasive effect of the solids; materials of construction, such as polyurethane, show less wear than metals and ceramics.
+% \end{frame}
 
-\begin{frame}\frametitle{Design considerations: HYDROcyclone}
-	C+R v2, 5ed, p54
-	Design Considerations
-	Hydrocyclones are 20 to500 mm in diameter, with the smaller units giving a much better separation. Typical values of length to diameter ratios range from about 5 to 20. Because of the very high shearing stresses which are set up, flocs will be broken down and the suspension in the secondary vortex will be completely deflocculated, irrespective of its condition on entry. Generally, hydrocylones are not effective in removing particles smaller than about 2to 3 \micron.
-%	Because separating power is greatest in hydrocyclones of small diameter, the cut size being approximately proportional to the diameter of the cylindrical shell raised to the power of 1.5, it is common practice to operate banks of small hydrocyclones in parallel inside a large containing vessel. Furthermore, this procedure also makes scale-up easier to carry out. With units connected only in parallel (or as single units), however, it is not possible to control the compositions of the overflow and underflow independently, and therefore some form of series-parallel operation is often employed. This is an important consideration when the hydrocyclone is used for thickening a suspension. In this case, there is the requirement to produce an underflow of the appropriate solids concentration and for the overflow to be particle-free, and these two conditions cannot usually be satisfied in a single unit. In thickening, the particle concentrations are high and little classification by size occurs.
-%	In general, the performance of the hydrocyclone is improved by increasing the operating pressure, and the principal control variable is the size of the orifice on the underflow discharge. Several theoretical and practical studies have been made in an attempt to present a sound basis for design, and these have been described BRADLEY(29) and SAVROVSKY(30,35) among others, although they are generally not entirely satisfactory, and some design charts and formulae have been given by ZANKER(40). In practice, tests with the actual materials to be used are desirable for the evaluation for the various parameters. Since systems are usually scaled-up by increasing the number of units in parallel, it is seldom necessary to carry out tests on large units.
-%	The optimum design of a hydrocyclone for a given function depends upon reconciling a number of conflicting factors and reference should be made to specialist publications. Because it is simple in construction and has no moving parts, maintenance costs are low. The chief problem arises from the abrasive effect of the solids; materials of construction, such as polyurethane, show less wear than metals and ceramics.
-\end{frame}
+% \begin{frame}\frametitle{Design}
+% 	p 455 C+R v6
+% 	General design procedure
+% 	1. Select either the high-efficiency or high-throughput design, depending on the performance required.
+% 	2. Obtain an estimate of the particle size distribution of the solids in the stream to be treated.
+% 	3. Estimate the number of cyclones needed in parallel.
+% 	4. Calculate the cyclone diameter for an inlet velocity of 15 m/s (50 ft/s). Scale the
+% 	other cyclone dimensions from Figures 10.44a or 10.44b.
+% 	5. Calculate the scale-up factor for the transposition of Figures 10.45a or 10.45b.
+% 	6. Calculate the cyclone performance and overall efficiency (recovery of solids). If
+% 	unsatisfactory try a smaller diameter.
+% 	7. Calculate the cyclone pressure drop and, if required, select a suitable blower.
+% 	8. Cost the system and optimise to make the best use of the pressure drop available,
+% 	or, if a blower is required, to give the lowest operating cost.
+% \end{frame}
 
-\begin{frame}\frametitle{Design}
-	p 455 C+R v6
-	General design procedure
-	1. Select either the high-efficiency or high-throughput design, depending on the perfor- mance required.
-	2. Obtain an estimate of the particle size distribution of the solids in the stream to be treated.
-	3. Estimate the number of cyclones needed in parallel.
-	4. Calculate the cyclone diameter for an inlet velocity of 15 m/s (50 ft/s). Scale the
-	other cyclone dimensions from Figures 10.44a or 10.44b.
-	5. Calculate the scale-up factor for the transposition of Figures 10.45a or 10.45b.
-	6. Calculate the cyclone performance and overall efficiency (recovery of solids). If
-	unsatisfactory try a smaller diameter.
-	7. Calculate the cyclone pressure drop and, if required, select a suitable blower.
-	8. Cost the system and optimise to make the best use of the pressure drop available,
-	or, if a blower is required, to give the lowest operating cost.
-\end{frame}
+% \begin{frame}\frametitle{Design: typical dimensions and options}
+% 	C+R v6, p404
+% 	Liquid cyclones can be used for the classification of solid particles over a size range from 5 to 100\micron. Commercial units are available in a wide range of materials of
+% 	￼
+% 	￼￼￼￼EQUIPMENT SELECTION, SPECIFICATION AND DESIGN 405
+% 	construction and sizes; from as small as 10 mm to up to 30 m diameter. The separating efficiency of liquid cyclones depends on the particle size and density, and the density and viscosity of the liquid medium.
+% \end{frame}
 
-\begin{frame}\frametitle{Design: typical dimensions and options}
-	C+R v6, p404
-	Liquid cyclones can be used for the classification of solid particles over a size range from 5 to 100\micron. Commercial units are available in a wide range of materials of
-	￼
-	￼￼￼￼EQUIPMENT SELECTION, SPECIFICATION AND DESIGN 405
-	construction and sizes; from as small as 10 mm to up to 30 m diameter. The separating efficiency of liquid cyclones depends on the particle size and density, and the density and viscosity of the liquid medium.
-\end{frame}
+% \begin{frame}\frametitle{Operational}
+% 	C+R v2: p 77
+% 
+% 	A small inlet and outlet therefore result in the separation of smaller particles but, as the pressure drop over the separator varies with the square of the inlet velocity and the square of the outlet velocity(56), the practical limit is set by the permissible drop in pressure. The depth and diameter of the body should be as large as possible because the former determines the radial component of the gas velocity and the latter controls the tangential component at any radius. In general, the larger the particles, the larger should be the diameter of the separator because the greater is the radius at which they rotate. The larger the diameter, the greater too is the inlet velocity which can be used without causing turbulence within the separator. The factor which ultimately settles the maximum size is, of course, the cost. Because the separating power is directly related to the throughput of gas, the cyclone separator is not very flexible though its efficiency can be improved at low throughputs by restricting the area of the inlet with a damper and thereby increasing the velocity. Generally, however, it is better to use a number of cyclones in parallel and to keep the load on each approximately the same whatever the total throughput.
+% 
+% \end{frame}
 
-\begin{frame}\frametitle{Operational}
-	C+R v2: p 77
+% \begin{frame}\frametitle{how is it designed: simple nomographs, equations, etc}
+% 	For Hydrocyclones only:
+% 	d50 design: C+R v6, p 423 and p 426 and 	p 450 C+R v6
+% \end{frame}
 
-	A small inlet and outlet therefore result in the separation of smaller particles but, as the pressure drop over the separator varies with the square of the inlet velocity and the square of the outlet velocity(56), the practical limit is set by the permissible drop in pressure. The depth and diameter of the body should be as large as possible because the former determines the radial component of the gas velocity and the latter controls the tangential component at any radius. In general, the larger the particles, the larger should be the diameter of the separator because the greater is the radius at which they rotate. The larger the diameter, the greater too is the inlet velocity which can be used without causing turbulence within the separator. The factor which ultimately settles the maximum size is, of course, the cost. Because the separating power is directly related to the throughput of gas, the cyclone separator is not very flexible though its efficiency can be improved at low throughputs by restricting the area of the inlet with a damper and thereby increasing the velocity. Generally, however, it is better to use a number of cyclones in parallel and to keep the load on each approximately the same whatever the total throughput.
+% \begin{frame}\frametitle{Effect of solids flow rate}
+% 	http://www.youtube.com/watch?v=BicR3JGlE5M
+% \end{frame}
 
-\end{frame}
+% \begin{frame}\frametitle{Circuit selection}
+% 	Crushing circuit: to separate fines from coarse: recycle coarse material for recrushing. Could also use a screen. Why use a cyclone instead?
+% 	Also: could use elutriation with air rather than screens or cyclones. Why would you use elutriation?
+% 
+% 	Use: to clean dust from air; generally 5 \micron and larger
+% 	Use: mists separated from gas
+% 	U
+% 	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.
+% \end{frame}
 
-\begin{frame}\frametitle{how is it designed: simple nomographs, equations, etc}
-	d50 design: C+R v6, p 423 and p 426 and 	p 450 C+R v6
-\end{frame}
-
-\begin{frame}\frametitle{Effect of solids flow rate}
-	http://www.youtube.com/watch?v=BicR3JGlE5M
-\end{frame}
-
-\begin{frame}\frametitle{Circuit selection}
-	Crushing circuit: to separate fines from coarse: recycle coarse material for recrushing. Could also use a screen. Why use a cyclone instead?
-	Also: could use elutriation with air rather than screens or cyclones. Why would you use elutriation?
-
-	Use: to clean dust from air; generally 5 \micron and larger
-	Use: mists separated from gas
-	U
-	A cyclone is a centrifugal elutriator, although it is not usually so regarded. The cyclosizer is a series of inverted cyclones with added apex chambers through which water flows. Suspension is fed into the largest cyclone, and particles are separated into different size ranges.
-\end{frame}
-
-\begin{frame}\frametitle{Circuits of cyclones}
-	How is the flowsheet designed?
-	Fig 6.15
-	Fig 6.18
-	\item Figre 6.19
-\end{frame}
+% \begin{frame}\frametitle{Circuits of cyclones}
+% 	How is the flowsheet designed?
+% 	Fig 6.15
+% 	Fig 6.18
+% 	Figre 6.19
+% \end{frame}
 
 
 \begin{frame}\frametitle{Circuits of separators}
@@ -399,7 +410,7 @@
 		\end{itemize}
 	\end{columns}
 	\vspace{12pt}
-	e.g. $G(x\rightarrow 0)=10\%$: implies that 10\% of the smallest size fractions are always found in the coarse underflow: we cannot remove these fines
+	$G(x\rightarrow 0)=10\%$: implies that 10\% of the smallest size fractions are always found in the coarse underflow: we cannot remove these fines
 \end{frame}
 
 \begin{frame}\frametitle{Recycle around a unit}
@@ -443,6 +454,20 @@
 		\end{itemize}
 	\end{columns}
 \end{frame}
-\end{comment}
 
-
+% \begin{frame}\frametitle{Example}
+% 
+% 	feed A -> underflowA -> feedB -> underflowB leaves circuit
+% 	feed B -> overflowB joins underflow from C
+% 	overflowA -> feedC
+% 	underflowC + overflowB added to feed of A in a recycle stream
+% 	overflowC -> leaves circuit as a mainly air stream
+% 	underflowB -> leaves circuit as a high percent solids stream
+% 
+% 	unit A = ``rougher''
+% 	unit B = ``cleaner''
+% 	unit C = ``scavenger''
+% 
+% 	Question: purpose of units A, B, and C
+% 
+% \end{frame}
