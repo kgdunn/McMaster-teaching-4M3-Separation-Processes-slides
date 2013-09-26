@@ -210,7 +210,7 @@
 	\end{exampleblock}
 	\begin{itemize}
 		\item	If $G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow (coarse)
-		\item	and the other half in the overflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{purple}{cut size}}''.
+		\item	and the other half in the overflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{purple}{cut size}}'', $x_{50}$
 		\item	If $G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
 		\item	$G(x) = 1.0$: also means the $x=$ \emph{largest particle size} we expect to ever see in overflow
 		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [i.e. the $G(x)$ curves don't always reach 0\%]}
@@ -273,11 +273,11 @@
 	\vspace{12pt}
 	There are some guiding equations though.
 	\begin{exampleblock}{}
-		$\text{{\color{myOrange}Eu}} = \dfrac{\text{pressure forces}}{\text{inertial forces}} = \dfrac{\Delta P}{\rho_f v^2 / 2}$
+		\[\text{{\color{myOrange}Eu}} = \dfrac{\text{pressure forces}}{\text{inertial forces}} = \dfrac{\Delta P}{\rho_f v^2 / 2}\]
 	\end{exampleblock}
 	
 	\vspace{12pt}
-	For a cyclone, the characteristic velocity, $v = \dfrac{4Q}{\pi D_\text{cyc}^2}$
+	For a cyclone, the characteristic velocity, $v = \dfrac{4Q}{\pi D_\text{cyc}^2}$ % 
 	\[
 		\begin{array}{rcll}
 			\Delta P&=& \text{pressure drop from inlet to \emph{overflow}} 	&[\text{Pa}]\\
@@ -298,10 +298,68 @@
 		\item	It is relatively constant, under different flow conditions, for a given cyclone
 		\item	e.g. ``this cyclone has an Euler number of 540''
 
-		\item	provided solids concentration remains around or below 1 $\text{g.m}^{-3}$  % Svarovsky paper
+		\item	provided solids concentration remains around or below 1 $\text{g.m}^{-3}$  % Svarovsky paper, http://www.svarovsky.org/fps2/GASCYC.pdf
 		\item	{\color{myOrange}Eu} can be easily calculated found from clean air at ambient conditions 
 	\end{itemize}
-	\see{Svarovsky}
+	\see{Svarovsky}  % http://www.svarovsky.org/fps2/GASCYC.pdf
+	
+	\vspace{12pt}
+	If you can't get/calculate it, then use this:
+	\begin{exampleblock}{}
+		\[\text{{\color{myOrange}Eu}} = \pi^2\left(\dfrac{D_\text{cyc}}{L}\right)\left(\dfrac{D_\text{cyc}}{K}\right)\left(\dfrac{D_\text{cyc}}{M}\right)^2\]
+	\end{exampleblock}
+	\[
+		\begin{array}{rcll}
+			L 			&=& \text{width of rectangular inlet} 				&[\text{m}]\\
+			K 			&=& \text{height of rectangular inlet} 				&[\text{m}]\\
+			M			&=& \text{diameter of overflow (gas) outlet}		& [\text{m}]
+		\end{array}
+	\]
+\end{frame}
+
+\begin{frame}\frametitle{Predicting cut size}
+	The cyclone's cut size, $x_{50}$, can be predicted from the Stokes number. This is a great way to scale-up through geometrically similar cyclones:
+	\begin{exampleblock}{}
+		\[{\color{myOrange}\text{Stk}_{50}} = \dfrac{x_{50}^2 \,\,\rho_S \,\,v}{18\,\, \mu_f \,\,D_\text{cyc}}\]
+	\end{exampleblock}
+	\[
+		\begin{array}{rcll}
+			x_{50}		&=& \text{cut size} 				&[\text{m}]\\
+			\rho_S		&=& \text{solids density} 			&[\text{kg.m}^{-3}]\\
+			v 			&=& \text{characteristic velocity} 	&[\text{m.s}^{-1}]\\
+			\mu_f	    &=& \text{fluid viscosity}        	&[\text{Pa.s}]\\
+			{\color{myOrange}\text{Stk}_{50}} &=& \text{Stokes number}  & [-]
+		\end{array}
+	\]
+	\textbf{Note}: 
+	\begin{itemize}
+		\item	this only predicts the cut-size, not the shape of the grade efficiency curve
+		\item	as with Eu, the ${\color{myOrange}\text{Stk}_{50}}$ must be calculated on an actual feed
+		\item	it is relatively constant for changing conditions
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	% Svarovsky paper, http://www.svarovsky.org/fps2/GASCYC.pdf
+	
+	Outline the process (plan) to solve this problem (do calculations at home!)
+	
+	\vspace{12pt}
+	\textbf{What diameter of cyclone} do we need to treat $0.177~\text{m}^3\text{.s}^{-1}$ of feed, given:
+	\begin{itemize}
+		\item	$\mu_f = 1.8~\times 10^{-5}$ Pa.s
+		\item	$\rho_f = 1.2~\text{kg.m}^{-3}$
+		\item	$\rho_S	= 2500~\text{kg.m}^{-3}$
+		\item	$\Delta P = 1650$ Pa
+		\item	$x_{50}$ desired is 0.8 \micron
+		\item	Eu = 700
+		\item	$\text{Stk}_{50} = 6.5 \times 10^{-5}$
+	\end{itemize}
+	\emph{Hint}: if we use 1 cyclone, the pressure drop will be too high; so we must split the feed into multiple, \emph{parallel} cyclones. So then,
+	\textbf{how many cyclones}, and of \textbf{what diameter} should we use?
+	
+	\vspace{8pt}
+	{\scriptsize {\color{myOrange}[\emph{Ans}: 5 cyclones, $D_\text{cyc}=0.15$m]}}
 \end{frame}
 
 
