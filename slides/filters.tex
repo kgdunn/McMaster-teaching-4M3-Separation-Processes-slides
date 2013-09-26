@@ -40,18 +40,20 @@
 	\end{center}
 	\vspace{-6pt}
 	\see{Seader, modified from fig 19-13}
-\end{frame}
-
-\begin{frame}\frametitle{Commercial units: plate and frame}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/alternating-plates-frame-press-flickr-6322212861_3281570406_b.jpg}
-	\end{center}
+	\see{\href{http://www.youtube.com/watch?v=5Aj5owWp7WQ}{YouTube video}}
 \end{frame}
 
 \begin{frame}\frametitle{Commercial units: plate and frame}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/plate-frame-press-pushed-flickr-6322212987_ef5fb8a362_b.jpg}
 	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Commercial units: plate and frame}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/alternating-plates-frame-press-flickr-6322212861_3281570406_b.jpg}
+	\end{center}
+	\see{Also see \href{http://www.youtube.com/watch?feature=player_detailpage&v=btsXMiVtjcw}{YouTube video}}
 \end{frame}
 
 \begin{frame}\frametitle{Commercial units: plate and frame (beer clarification)}
@@ -149,20 +151,133 @@
 	\[ C_S = \dfrac{\text{mass of dry solids}}{\text{volume of filtrate}} = \dfrac{A L_c \left(1-\epsilon\right)\rho_p}{V} \]
 \end{frame}
 
+\begin{frame}\frametitle{Exercise}
+	\begin{enumerate}
+		\item	Calculate the mass of solids in the cake for the case when
+		\begin{itemize}
+			\item	$\rho_p = 3000 \text{kg.m}^{-3}$
+			\item	$A = 8 \text{m}^2$ 
+			\item	$L_c = 10 \text{cm}$ 
+		\end{itemize}
+
+		\item	Also calculate the mass of water in the cake.
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}\frametitle{Deriving the flow through the filter}
 	Our standard equation for fluid flow:
-	\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v = \dfrac{Q}{A}\]
+	\begin{exampleblock}{}
+		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v = \dfrac{Q}{A}\]
+	\end{exampleblock}	
 	for a given velocity $v$, and volumetric feed flow rate, $Q$.
 	
 	\vspace{12pt}
 	But, from the Carmen-Kozeny equation:
 	\[
 		\begin{array}{rcl}
-			\dfrac{-\Delta P_c}{L_c} &=& k_1 \cdot \mu \cdot \dfrac{v}{\epsilon} \cdot \left( \dfrac{(1-\epsilon)S_0}{\epsilon} \right)^2\\
-			v &=& \dfrac{\left(-\Delta P_c\right) (\epsilon)^3}{(k_1) (L_c) (\mu) (1-\epsilon)^2 (S_0^2)}\\
-			L_c &=&  \dfrac{C_S V}{A \left(1-\epsilon\right)\rho_p}\qquad\text{so sub this in} \\
-			v &=& \dfrac{\left(-\Delta P_c\right) (\epsilon)^3 (A) \left(1-\epsilon\right)(\rho_p)}{(k_1) (C_S) (V) (\mu) (1-\epsilon)^2 (S_0^2)}\\
+			\dfrac{-\Delta P_c}{L_c} &=& \dfrac{k_1  \mu  v \left(1-\epsilon\right)^2 S_0^2}{\epsilon^3}\\
+			\vspace{6pt}
+			v &=& \dfrac{\left(-\Delta P_c\right) (\epsilon)^3}{(\mu) (k_1) (L_c)  (1-\epsilon)^2 (S_0^2)}\\
+			
+			\vspace{6pt}
+			&&\text{from our definition for $C_S$ we can solve for $L_c$} \\
+			L_c &=&  \dfrac{C_S V}{A \left(1-\epsilon\right)\rho_p}\\
+			\vspace{6pt}
+			\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v &=& \dfrac{\left(-\Delta P_c\right) (A) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(\epsilon)^3 (\rho_p)}}{(\mu) (C_S) (V) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(k_1) \left(1-\epsilon\right) (S_0^2)}} 
+			= \dfrac{-\Delta P_c}{\mu C_S V \,\, {\color{myOrange}\mathbf{ \alpha}}\,\,/ A} 
 		\end{array}
 	\]
-	
 \end{frame}
+
+\begin{frame}\frametitle{The general filtration equation}
+	\begin{exampleblock}{}
+		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{-\Delta P_c}{\mu C_S V  \, \mathbf{ \alpha}\, / A} 
+			\]
+	\end{exampleblock}
+	\[
+		\begin{array}{rcll}
+			C_S  	&=& \text{slurry concentration}				&[\text{(kg dry solids)/(m}^{3}\text{ filtrate)}]\\
+			\alpha	&=& \text{specific cake resistance} 		&[\text{m.kg}^{-1}]
+		\end{array}
+	\]
+	All aspects of engineering obey this general law:
+	\begin{exampleblock}{}
+		\[
+		\begin{array}{rcl}
+			{\color{red}J = \text{flux} = \dfrac{\text{transfer rate}}{\text{transfer area}}} &{\color{red}=}& {\color{red}\dfrac{\text{driving force}}{\text{resistance}}}\\
+			\vspace{6pt}
+			\text{including the filtration equation:}\\
+			\vspace{6pt}
+			\dfrac{1}{A} \cdot \dfrac{dV}{dt} &=& \dfrac{-\Delta P_c}{\mu  C_S V \, \mathbf{ \alpha}\, / A} \\
+			\dfrac{1}{A} \cdot \dfrac{dV}{dt} &=& {\color{myBlue}\dfrac{-\Delta P_c}{\mu R_c}} 
+		\end{array}
+		\]
+	\end{exampleblock}
+	\vspace{-12pt}
+	\[
+		\begin{array}{rcll}
+			R_c  &=& \text{resistance due to the cake = $\dfrac{C_S V \, \mathbf{ \alpha}}{A}$}				&[\text{m}^{-1}]\\
+		\end{array}
+	\]
+\end{frame}
+
+\begin{frame}\frametitle{Resistance due to the filter medium}
+	
+	
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			In a similar way, we can define the filter {\color{myGreen}medium}'s resistance:
+			\begin{exampleblock}{}
+				\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = {\color{myGreen}\dfrac{-\Delta P_m}{\mu R_m}} \]
+			\end{exampleblock}
+		\column{0.40\textwidth}
+			\vspace{-24pt}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/filtration/filtration-pressures-resistances.png}
+			\end{center}
+	\end{columns}
+	\[
+		\begin{array}{rcll}
+			-\Delta P_m		&=& \text{pressure drop across the medium}			&[\text{Pa}]\\
+			R_m  			&=& \text{resistance due to the filter medium}		&[\text{m}^{-1}]\\
+		\end{array}
+	\]
+	\textbf{Notes}:
+	\begin{itemize}
+		\item	From a practical standpoint, $R_m$ is empirical for the given filter
+		\item	We wrap up all other minor resistances into $R_m$ also (e.g. pipe flow into/out of filter)
+		\item	The flux through the {\color{myBlue}filter cake} is exactly the same as through the {\color{myGreen} medium} 
+		\item	After filtration gets started, we very often have ${\color{myGreen}R_m} \ll {\color{myBlue}R_c}$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Bringing it all together}
+	As with resistances in series (you learned in Physics I), we have:
+	\begin{exampleblock}{}
+		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = {\color{myGreen}\dfrac{-\Delta P_m}{\mu R_m}} + {\color{myBlue}\dfrac{-\Delta P_c}{\mu R_c}} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}R_c} \right)}\]
+	\end{exampleblock}
+	this is called the {\color{purple} general filtration equation}.
+	\[
+		\begin{array}{rcll}
+			R_c  &=& \text{resistance due to the cake}				&[\text{m}^{-1}]\\
+			R_m  &=& \text{resistance due to the medium}			&[\text{m}^{-1}]\\
+			-\Delta P_\text{tot}	&=& \text{total pressure drop} = -(\Delta P_c + P_m)	&[\text{Pa}]
+		\end{array}
+	\]
+\end{frame}
+
+\begin{frame}\frametitle{Questions}
+	How would you use this equation?
+	\begin{exampleblock}{}
+		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}R_c} \right)}\]
+	\end{exampleblock}
+	
+	\begin{enumerate}
+		\item	to determine the medium resistance?
+		\item	to determine the cake resistance?
+		\item	to find the utility cost of operating the filter?
+		\item	to predict the flow for a given filter when your boss wants a higher throughput?
+	\end{enumerate}
+\end{frame}
+
+
