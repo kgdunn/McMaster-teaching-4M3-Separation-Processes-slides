@@ -97,7 +97,7 @@
 	\begin{itemize}
 		\item	Same principle as a centrifuge: \textbf{{\color{myGreen}{density difference required}}}
 		\item	{\color{myOrange}{No moving parts!}} and {\color{myOrange}{no consumable components!}}
-		\item	Very low operating costs: essentially only pay for $\Delta P$
+		\item	Low operating costs: essentially only pay for $\Delta P$
 		\item	Operated at many temperatures and pressures  % Perry's
 		\item	As small as 1 to 2cm to 10m in diameter % Perry's
 		\item	Very low capital costs: can be made from many materials
@@ -179,8 +179,8 @@
 \end{frame}
 
 \begin{frame}\frametitle{{\color{myOrange}{Concept}}: Grade efficiency}
-	\begin{exampleblock}{Total efficiency defined}
-		$E_T = \displaystyle \frac{\text{M}_\text{c}}{\text{M}} = 1 - \displaystyle \frac{\text{M}_\text{f}}{\text{M}}$
+	\begin{exampleblock}{Total efficiency}
+		\[E_T = \displaystyle \frac{\text{M}_\text{c}}{\text{M}} = 1 - \displaystyle \frac{\text{M}_\text{f}}{\text{M}}\]
 	\end{exampleblock}
 	\begin{itemize}
 		\item	not too much to interpret here: it is just a definition
@@ -188,16 +188,16 @@
 		\item	100\% efficiency: all mass to underflow (coarse) stream
 	\end{itemize}
 	\vspace{12pt}
-	More useful though:
-	\begin{exampleblock}{Grade efficiency defined}
-		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C, coarse stream})}{(\text{M})(\text{fraction of size $x$ in feed})}$
+	More useful though is
+	\begin{exampleblock}{Grade efficiency}
+		\[G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C, coarse stream})}{(\text{M})(\text{fraction of size $x$ in feed})}\]
 	\end{exampleblock}
 	\begin{itemize}
-		\item	calculated at a given particle size fraction $x$
+		\item	calculated for a given particle size fraction $x$; repeat at all $x$'s
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{``What is particle size fraction $x$?''}
+\begin{frame}\frametitle{What is ``fraction of size $x$'' again?}
 	\begin{center}
 		\includegraphics[width=0.7\textwidth]{\imagedir/separations/screens/particle-size-distribution.png}
 	\end{center}
@@ -205,14 +205,14 @@
 \end{frame}
 
 \begin{frame}\frametitle{Back to grade efficiency}
-	\begin{exampleblock}{Grade efficiency}
+	\begin{exampleblock}{Grade efficiency equation}
 		$G(x) = \displaystyle \frac{(\text{M}_\text{c})(\text{fraction of size $x$ in stream C, coarse stream})}{(\text{M})(\text{fraction of size $x$ in feed})}$
 	\end{exampleblock}
 	\begin{itemize}
 		\item	If $G(x) = 0.5$ (50\%): implies half the material (by mass) in size fraction $x$ is leaving in the underflow (coarse)
 		\item	and the other half in the overflow; 50-50 (mass) split in the two outlets for particles of size $x$. Called the ``{\color{purple}{cut size}}'', $x_{50}$
 		\item	If $G(x) = 1.0$: implies the particle size that gets captured 100\%  in the coarse (underflow) stream
-		\item	$G(x) = 1.0$: also means the $x=$ \emph{largest particle size} we expect to ever see in overflow
+		\item	Where $G(x)$ reaches 1.0 means the $x=$ \emph{largest particle size} we expect to ever see in {\color{myOrange}overflow} {\small (see next slide)}
 		\item	\adv What would $G(x \rightarrow 0)$ = 10\% mean? \\{\scriptsize [i.e. the $G(x)$ curves don't always reach 0\%]}
 	\end{itemize}
 \end{frame}
@@ -228,12 +228,12 @@
 \begin{frame}\frametitle{Day-to-day operation}
 	% C+R v6, p 453
 	\begin{itemize}
-		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} (fines) pressures and $\sim 500$ to $1500$~Pa
-		\item	increase $\Delta P$, increases efficiency % and recovery into the coarse stream (Svarovsky)
+		\item	most important factor: pressure drop = $\Delta P$ = difference between inlet and \emph{overflow} (fines) pressures and typically we have $\Delta P \sim 500$ to $1500$~Pa
+		\item	increase $\Delta P$, increases efficiency, $E_T$,  and recovery into the coarse stream %(Svarovsky)
 		\item	$\Delta P \propto \rho_f \qquad  \Delta P \propto v_\text{in}^2~\text{and}~v_\text{overflow}^2 \qquad  \Delta P \propto \displaystyle\frac{1}{d_\text{under}}$
 		\item	$v_\text{in}$ = entry velocity and $d_\text{under}$ = diameter of underflow
 		\item	efficiency drops off at high solids concentration: try to operate as dilutely as possible if requiring high solids recovery
-		\item	leave the underflow opening diameter as an physically adjustable variable: it is hard to predict its size from theory
+		\item	leave the underflow opening diameter, $d_\text{under}$, as an physically adjustable variable: it is hard to predict its size from theory
 		\item	air leaks at this point are disastrous for efficiency \see{Perry, Ch 17.2, 8ed}
 	\end{itemize}
 	% Perry 17.2: A cyclone will operate equally well on the suction or pressure side of a fan if the dust receiver is airtight. Probably the greatest single cause of poor cyclone performance, however, is the leakage of air into the dust outlet of the cyclone. A slight air leak at this point can result in a tremendous drop in collection efficiency, particularly with fine dusts.
@@ -243,7 +243,7 @@
 	{\color{myGreen}{Advantages}}
 	\begin{itemize}
 		\item	cost of operation: related to $\Delta P$ (i.e. electrical cost only)
-		\item	cheap capital cost
+		\item	cheap capital cost to build cyclones
 		\item	small size
 		\item	mounted in any orientation (except for very large units)
 		\item	versatile: multiple uses
@@ -277,20 +277,20 @@
 	\end{exampleblock}
 	
 	\vspace{12pt}
-	For a cyclone, the characteristic velocity, $v = \dfrac{4Q}{\pi D_\text{cyc}^2}$ % 
+	For a cyclone, the characteristic velocity, {\color{blue}$v = \dfrac{4Q}{\pi D_\text{cyc}^2}$ }
 	\[
 		\begin{array}{rcll}
-			\Delta P&=& \text{pressure drop from inlet to \emph{overflow}} 	&[\text{Pa}]\\
-			v 	    &=& \text{characteristic velocity}                     	&[\text{m.s}^{-1}]\\
-			\rho_f  &=& \text{density of fluid}  							&[\text{kg.m}^{-3}]\\
-			Q   	&=& \text{volumetric feed flow rate}					&[\text{m}^{3}\text{.s}^{-1}]\\
-			D_\text{cyc}&=& \text{cylindrical section diameter of cyclone}	&[\text{m}] \\
-			D_p 	&=& \text{particle's diameter} &[\text{m}]
+			\Delta P&=& \text{pressure drop from inlet to \emph{overflow}} 				&[\text{Pa}]\\
+			v 	    &=& \text{characteristic velocity (\textbf{not} inlet velocity)}  	&[\text{m.s}^{-1}]\\
+			\rho_f  &=& \text{density of fluid}  										&[\text{kg.m}^{-3}]\\
+			Q   	&=& \text{volumetric feed flow rate}								&[\text{m}^{3}\text{.s}^{-1}]\\
+			D_\text{cyc}&=& \text{cylindrical section diameter of cyclone}				&[\text{m}] \\
 		\end{array}
 	\]
-	\begin{itemize}
-		\item	$0.02 < D_\text{cyc} <  0.5$ are typical values
-	\end{itemize}
+	
+	\vspace{12pt}
+	$0.02 < D_\text{cyc} < 5.0~\text{m}$ are typical values
+	
 \end{frame}
 
 \begin{frame}\frametitle{{\color{myOrange}Eu}ler number for cyclones}
@@ -298,7 +298,7 @@
 		\item	It is relatively constant, under different flow conditions, for a given cyclone
 		\item	e.g. ``this cyclone has an Euler number of 540''
 
-		\item	provided solids concentration remains around or below 1 $\text{g.m}^{-3}$  % Svarovsky paper, http://www.svarovsky.org/fps2/GASCYC.pdf
+		\item	provided solids concentration remains around or below $1~\text{g.m}^{-3}$  % Svarovsky paper, http://www.svarovsky.org/fps2/GASCYC.pdf
 		\item	{\color{myOrange}Eu} can be easily calculated found from clean air at ambient conditions 
 	\end{itemize}
 	\see{Svarovsky}  % http://www.svarovsky.org/fps2/GASCYC.pdf
@@ -342,7 +342,7 @@
 \begin{frame}\frametitle{Example}
 	% Svarovsky paper, http://www.svarovsky.org/fps2/GASCYC.pdf
 	
-	Outline the process (plan) to solve this problem (do calculations at home!)
+	Outline the process/plan to solve this problem (do calculations at home!)
 	
 	\vspace{12pt}
 	\textbf{What diameter of cyclone} do we need to treat $0.177~\text{m}^3\text{.s}^{-1}$ of feed, given:
