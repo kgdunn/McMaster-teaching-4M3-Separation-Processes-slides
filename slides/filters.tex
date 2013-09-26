@@ -2,6 +2,12 @@
 % Selection between filters, centrifuges, sedimentation, etc     C+R v6, p 409, Fig 10.10
 % Filter media       Table 10.2: C+R v6, p 411
 
+\begin{frame}\frametitle{Filtration}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/lab-filtration-flickr-518510770_9c52170842_b.png}
+	\end{center}
+\end{frame}
+
 \begin{frame}\frametitle{Filtration section}
 	{\color{purple}{Filtration}}: a pressure difference that causes separation of solids from {\color{purple}{slurry}} by means of a {\color{purple}{porous medium}} (e.g. filter paper or cloth), which retains the solids and allows the {\color{purple}{filtrate}} to pass
 	
@@ -55,3 +61,55 @@
 	% After a looser filtration (which removes yeast and other relatively large particulates, all the beers at Peabody Heights —Baltimore, Maryland's newest production brewery— are sterile-filtered through a Schenk plate-and-frame filter at 0.5 microns ... small enough to remove bacteria! (A micron is one-millionth of a meter.)	
 \end{frame}
 
+\begin{frame}\frametitle{Questions to discuss}
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{enumerate}
+				\item	What characteristics of a filtration system will you use to {\color{myOrange}{\textbf{judge} the unit's performance}}?
+
+				\vspace{36pt}
+				\item	What factors can be used to {\color{myOrange}{\textbf{adjust}}} the units's performance?
+			\end{enumerate}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/filtration/flickr-4857096113_96e8686f7e_b.jpg}
+			\end{center}
+			Example: a rotary drum filter
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Poiseuille's law}
+	Recall from your fluid flow course that \textbf{laminar flow} in a pipe (no resistance):
+	\begin{exampleblock}{}
+		\[\dfrac{-\Delta P}{L_c} = \dfrac{32\,\, \mu\,\, v}{D^2} \label{P}
+		\]
+	\end{exampleblock}
+	\[
+		\begin{array}{rcll}
+			-\Delta P&=& \text{pressure drop from start (high P) to end of tube}&[\text{Pa}]\\
+			L_c	    &=& \text{length being considered}                     	&[\text{m}]\\
+			\mu 	&=& \text{fluid viscosity}  							&[\text{Pa.s}]\\
+			v   	&=& \text{fluid's velocity in the pipe}					&[\text{m.s}^{-1}]\\
+			D 		&=& \text{pipe diameter} 								&[\text{m}]
+		\end{array}
+	\]	
+\end{frame}
+
+\begin{frame}\frametitle{Carmen-Kozeny equation through a bed of solids (cake)}
+	$\dfrac{-\Delta P}{L_c} = \dfrac{32\,\, \mu\,\, v}{D^2} \label{P}$ {\small from which we get the Carmen-Kozeny equation:}
+	\begin{exampleblock}{}
+		$\dfrac{-\Delta P_C}{L_c} = k_1 \cdot \mu \cdot \dfrac{v}{\epsilon} \cdot \left( \dfrac{(1-\epsilon)S_0}{\epsilon} \right)^2$
+	\end{exampleblock}
+	\[
+		\begin{array}{rcll}
+			-\Delta P_C&=& \text{pressure drop through the cake}&[\text{Pa}]\\
+			k_1	    &=& 4.17, \text{a constant}                     	&[-]\\
+			\epsilon&=& \text{void fraction, or porosity {\color{myOrange}{typical values?}}}				&[-]\\
+			S_0   	&=& \text{specific area per unit volume}			&[\text{m}^2\text{.m}^{-3} = \text{m}^{-1}]
+		\end{array}
+	\]
+	\begin{itemize}
+		\item	$S_0$ = specific surface area per unit volume is a property of the solids
+		\item	Prove in the next assignment, for spheres, $S_0 = \dfrac{6}{d} = f(d)$
+	\end{itemize}
+\end{frame}
