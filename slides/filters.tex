@@ -179,11 +179,11 @@
 		\begin{array}{rcl}
 			\dfrac{-\Delta P_c}{L_c} &=& \dfrac{k_1  \mu  v \left(1-\epsilon\right)^2 S_0^2}{\epsilon^3}\\
 			\vspace{6pt}
-			v &=& \dfrac{\left(-\Delta P_c\right) (\epsilon)^3}{(\mu) (k_1) (L_c)  (1-\epsilon)^2 (S_0^2)}\\
+			v &=& \dfrac{\left(-\Delta P_c\right) (\epsilon)^3}{(\mu) (k_1) ({\color{blue}L_c})  (1-\epsilon)^2 (S_0^2)}\\
 
 			\vspace{6pt}
-			&&\text{from our definition for $C_S$ we can solve for $L_c$} \\
-			L_c &=&  \dfrac{C_S V}{A \left(1-\epsilon\right)\rho_p}\\
+			&&\text{from our definition for $C_S$ we can solve for {\color{blue}$L_c$}} \\
+			{\color{blue}L_c} &=&  \dfrac{C_S V}{A \left(1-\epsilon\right)\rho_p}\\
 			\vspace{6pt}
 			\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v &=& \dfrac{\left(-\Delta P_c\right) (A) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(\epsilon)^3 (\rho_p)}}{(\mu) (C_S) (V) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(k_1) \left(1-\epsilon\right) (S_0^2)}}
 			= \dfrac{-\Delta P_c}{\mu C_S V \,\, {\color{myOrange}\mathbf{ \alpha}}\,\,/ A}
@@ -334,10 +334,11 @@
 			A		&=& \text{cross sectional area for filtration}  &[\text{m}^2]\\
 			-\Delta P_\text{tot}	&=& \text{total pressure drop} = -(\Delta P_c + P_m)	&[\text{Pa}]\\
 			\mu 	&=& \text{fluid viscosity}  					&[\text{Pa.s}]\\
-			C_S  	&=& \text{slurry concentration}					&[{\tiny \text{(kg dry solids)/(m}^{3}\text{ filtrate)}}]\\
-			\alpha	&=& \text{specific cake resistance} 			&[\text{m.kg}^{-1}]\\
+			C_S  	&=& \text{slurry concentration}					&[{\tiny \text{(kg dry solids)/(m}^{3}\text{ filtrate)}}]\\			
 			R_m  &=& \text{resistance due to the medium}			&[\text{m}^{-1}]\\
-			R_c  &=& \text{resistance due to the cake}				&[\text{m}^{-1}]
+			R_c  &=& \text{resistance due to the cake}				&[\text{m}^{-1}]\\
+			\alpha	&=& \text{specific cake resistance} 			&[\text{m.kg}^{-1}]\\
+			\alpha  &=& \dfrac{(k_1) \left(1-\epsilon\right) (S_0^2)}{(\epsilon)^3 (\rho_p)}
 		\end{array}
 	\]
 	\begin{itemize}
