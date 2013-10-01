@@ -1,6 +1,7 @@
 % Sedimentation vs Filtration: Svarovsky book
 % Selection between filters, centrifuges, sedimentation, etc     C+R v6, p 409, Fig 10.10
-% Filter media       Table 10.2: C+R v6, p 411
+% Filter media Table 10.2: C+R v6, p 411
+% MInimize costs: reduce Delta P and reduce A??
 
 % 27 September 2013: Guest lecture, Claudia Chan
 \begin{frame}\frametitle{Filtration}
@@ -299,15 +300,15 @@
 
 \end{frame}
 
-\begin{frame}\frametitle{Deep bed filtration}
-	\todo{PICTURE}
-	\begin{itemize}
-		\item	bed is provided, and is typically batch process
-		\item	used for dilute suspensions, solids to be removed is small and particles are significantly smaller than pores
-		\item	particles flow through long and tortuous pores where they are collected by mechanisms such as gravity, diffusion, inertia and attach to the filter medium by molecular and electrostatic forces - ex. sand swimming pool filter, clarifier for secondary effluent in wastewater treatment plant to remove TSS
-		\item	??? cleaned by backwashing
-	\end{itemize}
-\end{frame}
+% \begin{frame}\frametitle{Deep bed filtration}
+% 	\todo{PICTURE}
+% 	\begin{itemize}
+% 		\item	bed is provided, and is typically batch process
+% 		\item	used for dilute suspensions, solids to be removed is small and particles are significantly smaller than pores
+% 		\item	particles flow through long and tortuous pores where they are collected by mechanisms such as gravity, diffusion, inertia and attach to the filter medium by molecular and electrostatic forces - ex. sand swimming pool filter, clarifier for secondary effluent in wastewater treatment plant to remove TSS
+% 		\item	??? cleaned by backwashing
+% 	\end{itemize}
+% \end{frame}
 
 \begin{frame}\frametitle{Cross-Flow Filtration (TFF)}
 	\begin{center}
@@ -353,7 +354,7 @@
 		\item	$\epsilon$ changes depending on many factors (surface chemistry, upstream processing)
 		\item	Is $\epsilon$ constant over time? What does it change with?
 		\item	$\alpha$ will also change as a function of $\Delta P$
-		\item	So we let $\alpha = \alpha_\text{base} \left(-\Delta P\right)^f$
+		\item	So we let $\alpha = \alpha_\text{0} \left(-\Delta P\right)^f$
 	\end{itemize}
 
 \end{frame}
@@ -415,7 +416,63 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Other}
-	MInimize costs: reduce Delta P and reduce A??
+\begin{frame}\frametitle{Pressure dependence of $\alpha$}
+	Recall: $\alpha = \alpha_\text{0} \left(-\Delta P\right)^f$
+	\begin{itemize}
+		\item	We can find tables of $\alpha_\text{0}$ and $f$
+		\item	But they almost will never match our situation
+	\end{itemize}
+	
+	
+	\vspace{12pt}
+	Finding the $\alpha$ value as a function of pressure drop:
+	\begin{enumerate}
+		\item	Repeat the example above at several different $-\Delta P$
+		\item	Calculate $\alpha$ at each $-\Delta P$ \hfill {\color{myOrange}(see example above)}
+		\item	Plot $x=(-\Delta P)$ against $y = \alpha$ \hfill {\color{myOrange}(expected shape?)}
+		\item	Take logs on both sides of equation:
+		\[
+			\ln{\left(\alpha\right)} = \ln{\left(\alpha_\text{0}\right)} + f \ln{\left(-\Delta P\right)}
+		\]
+	\end{enumerate}
 \end{frame}
+
+\begin{frame}\frametitle{Constant rate filtration}
+	At a \textbf{constant rate}, i.e. $\frac{dV}{dt} = 0$
+	\[ \dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{V}{t} = {\color{myOrange}Q} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}C_S V  \, \mathbf{ \alpha}\, / A} \right)}	
+	\]
+	We can solve the equations for $-\Delta P$
+	\begin{align*}
+		-\Delta P &= \dfrac{\mu R_m V}{A t} + \dfrac{\mu C_s \alpha V^2}{t \cdot A^2}\\
+		-\Delta P &= \dfrac{\mu R_m {\color{myOrange}Q}}{A} + \dfrac{\mu C_s \alpha {\color{myOrange}Q^2}}{A^2}t
+	\end{align*}
+	\begin{itemize}
+		\item	For many processes, the constant rate portion is fairly short
+		\item	Occurs at the start of filtration, where a plot of $x = (t)$ against $y = (-\Delta P)$ is linear
+		\item	Then we settle into constant pressure mode
+		\item	That's the part we have focused on earlier
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Example continued}
+	\[ t = BV +  \dfrac{K_pV^2}{2} 	\qquad {\color{myOrange}B = \dfrac{\mu}{A\left(-\Delta P_\text{tot}\right)} R_m } \quad \text{and} \quad {\color{myBlue}K_p = \dfrac{\mu C_S \alpha  }{A^2 \left(-\Delta P_\text{tot}\right)} } \]
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/alternating-plates-frame-press-flickr-6322212861_3281570406_b.jpg}
+	\end{center}
+	
+\end{frame}
+
+\begin{frame}\frametitle{Example continued}
+	Suppose our prior lab experiments determined that $\alpha = 4.37\times 10^{9}\left(-\Delta P \right)^{0.3}$, with $-\Delta P$ in Pa and $\alpha$ in SI units.
+	\vspace{12pt}
+	Now we operate a plate and frame filter press at $-\Delta P$ of 67 kPa, with solids slurry content of $C_s = 300~\dfrac{\text{kg dry solids}}{\text{m}^3~\text{filtrate}}$. The cycle time that the filter actually operates is 45 minutes (followed by 15 minutes for cleaning). Based on simple mass-balance, the company can calculate that $8.5~\text{m}^3$ of filtrate will be produced.
+	
+	\vspace{12pt}
+	\begin{enumerate}
+		\item	Calculate the area required.
+		\item	If the slurry concentration had to double (still the same volume of filtrate), what would the required pressure drop have to be to maintain the same cycle time?
+	\end{enumerate}
+	
+\end{frame}
+
 
