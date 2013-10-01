@@ -2,6 +2,7 @@
 % Selection between filters, centrifuges, sedimentation, etc     C+R v6, p 409, Fig 10.10
 % Filter media       Table 10.2: C+R v6, p 411
 
+% 27 September 2013: Guest lecture, Claudia Chan
 \begin{frame}\frametitle{Filtration}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/lab-filtration-flickr-518510770_9c52170842_b.png}
@@ -10,7 +11,7 @@
 
 \begin{frame}\frametitle{Filtration section}
 	{\color{purple}{Filtration}}: a pressure difference that causes separation of solids from {\color{purple}{slurry}} by means of a {\color{purple}{porous medium}} (e.g. filter paper or cloth), which retains the solids and allows the {\color{purple}{filtrate}} to pass
-	
+
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/terminology-Geakoplis-p905.png}
 	\end{center}
@@ -60,7 +61,7 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/plate-and-frame-filter-press-flickr-8457498256_979ab6c31d.jpg}
 	\end{center}
-	% After a looser filtration (which removes yeast and other relatively large particulates, all the beers at Peabody Heights —Baltimore, Maryland's newest production brewery— are sterile-filtered through a Schenk plate-and-frame filter at 0.5 microns ... small enough to remove bacteria! (A micron is one-millionth of a meter.)	
+	% After a looser filtration (which removes yeast and other relatively large particulates, all the beers at Peabody Heights —Baltimore, Maryland's newest production brewery— are sterile-filtered through a Schenk plate-and-frame filter at 0.5 microns ... small enough to remove bacteria! (A micron is one-millionth of a meter.)
 \end{frame}
 
 \begin{frame}\frametitle{Questions to discuss}
@@ -94,7 +95,7 @@
 			v   	&=& \text{fluid's velocity in the pipe}					&[\text{m.s}^{-1}]\\
 			D 		&=& \text{pipe diameter} 								&[\text{m}]
 		\end{array}
-	\]	
+	\]
 \end{frame}
 
 \begin{frame}\frametitle{Carmen-Kozeny equation through a bed of solids (cake)}
@@ -120,22 +121,22 @@
 	\begin{columns}[t]
 		\column{0.65\textwidth}
 			Mass of solids in the filter cake = {\color{brown}$A \,\,L_c\left(1-\epsilon\right)\rho_p$}
-			
+
 			\vspace{5pt}
 			Mass of fluid trapped in the filter cake = {\color{myOrange}$A \,\,L_c\,\, \epsilon \,\,\rho_f \approx \text{small}$}
-			
+
 			\vspace{5pt}
 			Mass of fluid in the filtrate = {\color{blue}$V \rho_f$}
-			
+
 			\vspace{5pt}
 			{\scriptsize \color{red}What key assumptions are being made here?}
-			
+
 		\column{0.40\textwidth}
 			\vspace{-48pt}
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/filtration/mass-balance-filtration.png}
 			\end{center}
-			
+
 	\end{columns}
 	\vspace{1pt}
 	\[
@@ -156,8 +157,8 @@
 		\item	Calculate the mass of solids in the cake for the case when
 		\begin{itemize}
 			\item	$\rho_p = 3000 \text{kg.m}^{-3}$
-			\item	$A = 8 \text{m}^2$ 
-			\item	$L_c = 10 \text{cm}$ 
+			\item	$A = 8 \text{m}^2$
+			\item	$L_c = 10 \text{cm}$
 		\end{itemize}
 
 		\item	Also calculate the mass of water in the cake.
@@ -168,9 +169,9 @@
 	Our standard equation for fluid flow:
 	\begin{exampleblock}{}
 		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v = \dfrac{Q}{A}\]
-	\end{exampleblock}	
+	\end{exampleblock}
 	for a given velocity $v$, and volumetric feed flow rate, $Q$.
-	
+
 	\vspace{12pt}
 	But, from the Carmen-Kozeny equation:
 	\[
@@ -178,20 +179,20 @@
 			\dfrac{-\Delta P_c}{L_c} &=& \dfrac{k_1  \mu  v \left(1-\epsilon\right)^2 S_0^2}{\epsilon^3}\\
 			\vspace{6pt}
 			v &=& \dfrac{\left(-\Delta P_c\right) (\epsilon)^3}{(\mu) (k_1) (L_c)  (1-\epsilon)^2 (S_0^2)}\\
-			
+
 			\vspace{6pt}
 			&&\text{from our definition for $C_S$ we can solve for $L_c$} \\
 			L_c &=&  \dfrac{C_S V}{A \left(1-\epsilon\right)\rho_p}\\
 			\vspace{6pt}
-			\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v &=& \dfrac{\left(-\Delta P_c\right) (A) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(\epsilon)^3 (\rho_p)}}{(\mu) (C_S) (V) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(k_1) \left(1-\epsilon\right) (S_0^2)}} 
-			= \dfrac{-\Delta P_c}{\mu C_S V \,\, {\color{myOrange}\mathbf{ \alpha}}\,\,/ A} 
+			\dfrac{1}{A} \cdot \dfrac{dV}{dt} = v &=& \dfrac{\left(-\Delta P_c\right) (A) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(\epsilon)^3 (\rho_p)}}{(\mu) (C_S) (V) \cancel{\left(1-\epsilon\right)} {\color{myOrange}(k_1) \left(1-\epsilon\right) (S_0^2)}}
+			= \dfrac{-\Delta P_c}{\mu C_S V \,\, {\color{myOrange}\mathbf{ \alpha}}\,\,/ A}
 		\end{array}
 	\]
 \end{frame}
 
 \begin{frame}\frametitle{The general filtration equation}
 	\begin{exampleblock}{}
-		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{-\Delta P_c}{\mu C_S V  \, \mathbf{ \alpha}\, / A} 
+		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{-\Delta P_c}{\mu C_S V  \, \mathbf{ \alpha}\, / A}
 			\]
 	\end{exampleblock}
 	\[
@@ -209,7 +210,7 @@
 			\text{including the filtration equation:}\\
 			\vspace{6pt}
 			\dfrac{1}{A} \cdot \dfrac{dV}{dt} &=& \dfrac{-\Delta P_c}{\mu  C_S V \, \mathbf{ \alpha}\, / A} \\
-			\dfrac{1}{A} \cdot \dfrac{dV}{dt} &=& {\color{myBlue}\dfrac{-\Delta P_c}{\mu R_c}} 
+			\dfrac{1}{A} \cdot \dfrac{dV}{dt} &=& {\color{myBlue}\dfrac{-\Delta P_c}{\mu R_c}}
 		\end{array}
 		\]
 	\end{exampleblock}
@@ -244,7 +245,7 @@
 	\begin{itemize}
 		\item	From a practical standpoint, $R_m$ is empirical for the given filter
 		\item	We wrap up all other minor resistances into $R_m$ also (e.g. pipe flow into/out of filter)
-		\item	The flux through the {\color{myBlue}filter cake} is exactly the same as through the {\color{myGreen} medium} 
+		\item	The flux through the {\color{myBlue}filter cake} is exactly the same as through the {\color{myGreen} medium}
 		\item	After filtration gets started, we very often have ${\color{myGreen}R_m} \ll {\color{myBlue}R_c}$
 	\end{itemize}
 \end{frame}
@@ -252,7 +253,7 @@
 \begin{frame}\frametitle{Bringing it all together}
 	As with resistances in series (you learned in Physics I), we have:
 	\begin{exampleblock}{}
-		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = {\color{myGreen}\dfrac{-\Delta P_m}{\mu R_m}} + {\color{myBlue}\dfrac{-\Delta P_c}{\mu R_c}} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}R_c} \right)}\]
+		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \left({\color{myGreen}\dfrac{-\Delta P_m}{\mu R_m}} \,\,\text{add with}\,\, {\color{myBlue}\dfrac{-\Delta P_c}{\mu R_c}}\right) = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}R_c} \right)}\]
 	\end{exampleblock}
 	this is called the {\color{purple} general filtration equation}.
 	\[
@@ -269,7 +270,7 @@
 	\begin{exampleblock}{}
 		\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}R_c} \right)}\]
 	\end{exampleblock}
-	
+
 	\begin{enumerate}
 		\item	to determine the medium resistance?
 		\item	to determine the cake resistance?
@@ -277,3 +278,144 @@
 		\item	to predict the flow for a given filter when your boss wants a higher throughput?
 	\end{enumerate}
 \end{frame}
+
+% 01 October 2013
+\begin{frame}\frametitle{Cake filtration}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/filtration/cake-filtration.png}
+			\end{center}
+
+		\column{0.45\textwidth}
+			\begin{itemize}
+				\item	most widely applied
+				\item	functions only when particles have been trapped on the medium, forming a bed/cake
+				\item	the cake is the filtering element, not the medium
+				\item	medium's pores are larger than particles often
+				\item	e.g. filter press, rotary vacuum drum filter
+			\end{itemize}
+	\end{columns}
+
+\end{frame}
+
+\begin{frame}\frametitle{Deep bed filtration}
+	\todo{PICTURE}
+	\begin{itemize}
+		\item	bed is provided, and is typically batch process
+		\item	used for dilute suspensions, solids to be removed is small and particles are significantly smaller than pores
+		\item	particles flow through long and tortuous pores where they are collected by mechanisms such as gravity, diffusion, inertia and attach to the filter medium by molecular and electrostatic forces - ex. sand swimming pool filter, clarifier for secondary effluent in wastewater treatment plant to remove TSS
+		\item	??? cleaned by backwashing
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Cross-Flow Filtration (TFF)}
+	\begin{center}
+		\includegraphics[width=1.1\textwidth]{\imagedir/separations/membranes/cross-flow-wikipedia.png}
+	\end{center}
+	\begin{itemize}
+		\item	{\color{purple}{TFF}} = tangential flow filtration (parallel to medium)
+		\item	used with gel-like or compressible substances
+		\item	pores are smaller than particles
+		\item	used when absolute exclusion is essential
+		\item	inlet flow of suspension provides shear to limit cake build-up
+		\item	reduces cake resistance, $R_c$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Basic filtration equation recap}
+	\[\dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}C_S V  \, \mathbf{ \alpha}\, / A} \right)} =  \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}R_c} \right)}
+	\]
+	\vspace{12pt}
+	\[
+		\begin{array}{rcll}
+			V		&=& \text{volume of filtrate collected} 		&[\text{m}^3]\\
+			A		&=& \text{cross sectional area for filtration}  &[\text{m}^2]\\
+			-\Delta P_\text{tot}	&=& \text{total pressure drop} = -(\Delta P_c + P_m)	&[\text{Pa}]\\
+			\mu 	&=& \text{fluid viscosity}  					&[\text{Pa.s}]\\
+			C_S  	&=& \text{slurry concentration}					&[{\tiny \text{(kg dry solids)/(m}^{3}\text{ filtrate)}}]\\
+			\alpha	&=& \text{specific cake resistance} 			&[\text{m.kg}^{-1}]\\
+			R_m  &=& \text{resistance due to the medium}			&[\text{m}^{-1}]\\
+			R_c  &=& \text{resistance due to the cake}				&[\text{m}^{-1}]
+		\end{array}
+	\]
+	\begin{itemize}
+		\item	which entries in the equation are a function of $t$?
+		\item	which entries in the equation are a function of $V$?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{How do we determine cake resistance $\alpha$?}
+	Recall:
+	\[ \alpha = \dfrac{(k_1) \left(1-\epsilon\right)(S_0^2)}{(\epsilon)^3 (\rho_p)} \]
+	\begin{itemize}
+		\item	Measuring $S_0$ is difficult for irregular solids
+		\item	$\epsilon$ changes depending on many factors (surface chemistry, upstream processing)
+		\item	Is $\epsilon$ constant over time? What does it change with?
+		\item	$\alpha$ will also change as a function of $\Delta P$
+		\item	So we let $\alpha = \alpha_\text{base} \left(-\Delta P\right)^f$
+	\end{itemize}
+
+\end{frame}
+
+\begin{frame}\frametitle{Constant pressure (batch) filtration}
+	\begin{align*}
+	   \dfrac{1}{A} \cdot \dfrac{d{\color{red}V}}{dt} &= \dfrac{-\Delta P_\text{tot}}{\mu \left(R_m + {\color{red}V} C_S \, \mathbf{ \alpha}\, / A \right)} =  \dfrac{-\Delta P_\text{tot}}{\mu \left(R_m + R_c \right)}\\
+	   \intertext{Invert both sides, separate, divide by $A$}
+	   A \cdot \dfrac{dt}{d{\color{red}V}} &= \dfrac{\mu \left(R_m + {\color{red}V}  C_S \, \mathbf{ \alpha}\, / A \right)}{-\Delta P_\text{tot}}\\
+	   \dfrac{dt}{d{\color{red}V}} &= {\color{myOrange}\dfrac{\mu}{A\left(-\Delta P_\text{tot}\right)} R_m} + {\color{myBlue}\dfrac{\mu C_S \alpha  }{A^2 \left(-\Delta P_\text{tot}\right)}}{\color{red}V}\\
+	   \dfrac{dt}{d{\color{red}V}} &= {\color{myOrange}B} + {\color{myBlue}K_p}{\color{red}V}\\
+	   \int_{0}^{t}{dt} &= \int_{0}^{V}{B + K_pV}\\
+	   t &= BV +  \dfrac{K_pV^2}{2}
+	\end{align*}
+	${\color{myOrange}B = \dfrac{\mu}{A\left(-\Delta P_\text{tot}\right)} R_m \quad [\text{s.m}^{-3}]} \qquad \text{and} \qquad {\color{myBlue}K_p = \dfrac{\mu C_S \alpha  }{A^2 \left(-\Delta P_\text{tot}\right)} \quad [\text{s.m}^{-6}]}$
+\end{frame}
+
+\begin{frame}\frametitle{Constant pressure (batch) filtration}
+	\[ t = BV +  \dfrac{K_pV^2}{2} \]
+	\vspace{12pt}
+
+	\emph{Practical matters}:
+	\begin{itemize}
+		\item	how do we get constant $-\Delta P$?
+		\item	which type of equipment has a constant pressure drop?
+		\item	what is the expected relationship between $t$ and $V$?
+		\item	Plot it for a given batch of slurry.
+		\item	If $-\Delta P$ is constant, then $\epsilon$ is likely constant, and so is $\alpha$ and therefore $R_c$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Example}
+	A water-based slurry of mineral is being filtered under vacuum, with a controlled pressure drop of 38 kPa, through a filter paper of $0.07~\text{m}^2$. The slurry is at 24 kg solids per $\text{m}^3$ fluid. Use $\mu = 8.9 \times 10^{-4}~$ Pa.s and the following data:
+
+	\begin{columns}[t]
+		\column{0.8\textwidth}
+			\vspace{-12pt}
+			\begin{center}
+				\begin{tabular}{c|c}
+					$V~\text{[L]}$		&	$t~\text{[s]}$\\ \hline
+					0.5				 	& 	19\\
+					1					& 	38\\
+					2					& 	95\\
+					3					& 	178\\
+					4					&	280\\ \hline
+				\end{tabular}
+			\end{center}
+			\begin{enumerate}
+				\item	plot a rough sketch of $V$ against $t/V$
+				\item	read off the intercept and slope
+				\item	calculate the medium resistance, $R_m$ [units?]
+				\item	calculate the specific cake resistance, $\alpha$ [units?]
+				\item	calculate the cake resistance $R_c$ [units?]
+			\end{enumerate}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/filtration/lab-filtration-flickr-518510770_9c52170842_b-portion.png}
+			\end{center}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Other}
+	MInimize costs: reduce Delta P and reduce A??
+\end{frame}
+
