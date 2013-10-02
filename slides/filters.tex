@@ -383,7 +383,7 @@
 		\item	which type of equipment has a constant pressure drop?
 		\item	what is the expected relationship between $t$ and $V$?
 		\item	Plot it for a given batch of slurry.
-		\item	If $-\Delta P$ is constant, then $\epsilon$ is likely constant, and so is $\alpha$ and therefore $R_c$
+		\item	If $-\Delta P$ is constant, then $\epsilon$ is likely constant, and so is $\alpha$
 	\end{itemize}
 \end{frame}
 
@@ -391,7 +391,7 @@
 	A water-based slurry of mineral is being filtered under vacuum, with a controlled pressure drop of 38 kPa, through a filter paper of $0.07~\text{m}^2$. The slurry is at 24 kg solids per $\text{m}^3$ fluid. Use $\mu = 8.9 \times 10^{-4}~$ Pa.s and the following data:
 
 	\begin{columns}[t]
-		\column{0.8\textwidth}
+		\column{0.9\textwidth}
 			\vspace{-12pt}
 			\begin{center}
 				\begin{tabular}{c|c||c}
@@ -406,9 +406,9 @@
 			\begin{enumerate}
 				\item	plot a rough sketch of $x=V$ against $y=t/V$
 				\item	read off the intercept and slope
-				\item	calculate the medium resistance, $R_m$ [units?]
-				\item	calculate the specific cake resistance, $\alpha$ [units?]
-				\item	calculate the cake resistance $R_c$ at $t=280$ s
+				\item	calculate medium resistance, $R_m$ \quad {\scriptsize \color{orange}[\emph{Ans}: $8.11 \times 10^{10} \text{m}^{-1}$]}
+				\item	calculate specific cake resistance, $\alpha$ {\scriptsize \color{orange}[\emph{Ans}: $1.87 \times 10^{11} \text{m.kg}^{-1}$]}
+				\item	cake resistance $R_c$ at $t=280$ s \qquad {\scriptsize \color{orange}[\emph{Ans}: $2.56 \times 10^{11} \text{m}^{-1}$]}
 			\end{enumerate}
 		\column{0.40\textwidth}
 			\begin{center}
@@ -420,7 +420,7 @@
 \begin{frame}\frametitle{Pressure dependence of $\alpha$}
 	Recall: $\alpha = \alpha_\text{0} \left(-\Delta P\right)^f$
 	\begin{itemize}
-		\item	We can find tables of $\alpha_\text{0}$ and $f$
+		\item	We can find tables of $\alpha_\text{0}$ and $f$ for various solids
 		\item	But they almost will never match our situation
 	\end{itemize}
 	
@@ -428,7 +428,7 @@
 	\vspace{12pt}
 	Finding the $\alpha$ value as a function of pressure drop:
 	\begin{enumerate}
-		\item	Repeat the example above at several different $-\Delta P$
+		\item	Repeat the example above at several different $-\Delta P$ levels
 		\item	Calculate $\alpha$ at each $-\Delta P$ \hfill {\color{myOrange}(see example above)}
 		\item	Plot $x=(-\Delta P)$ against $y = \alpha$ \hfill {\color{myOrange}(expected shape?)}
 		\item	Take logs on both sides of equation:
@@ -443,7 +443,7 @@
 	\[ \dfrac{1}{A} \cdot \dfrac{dV}{dt} = \dfrac{V}{t} = {\color{myOrange}Q} = \dfrac{-\Delta P_\text{tot}}{\mu \left({\color{myGreen}R_m} + {\color{myBlue}C_S V  \, \mathbf{ \alpha}\, / A} \right)}	
 	\]
 	We can solve the equations for $-\Delta P$
-	\begin{align*}
+	\begin{align*}x
 		-\Delta P &= \dfrac{\mu R_m V}{A t} + \dfrac{\mu C_s \alpha V^2}{t \cdot A^2}\\
 		-\Delta P &= \dfrac{\mu R_m {\color{myOrange}Q}}{A} + \dfrac{\mu C_s \alpha {\color{myOrange}Q^2}}{A^2}t
 	\end{align*}
@@ -466,14 +466,42 @@
 \begin{frame}\frametitle{Example continued}
 	Suppose our prior lab experiments determined that $\alpha = 4.37\times 10^{9}\left(-\Delta P \right)^{0.3}$, with $-\Delta P$ in Pa and $\alpha$ in SI units.
 	\vspace{12pt}
-	Now we operate a plate and frame filter press at $-\Delta P$ of 67 kPa, with solids slurry content of $C_s = 300~\dfrac{\text{kg dry solids}}{\text{m}^3~\text{filtrate}}$. The cycle time that the filter actually operates is 45 minutes (followed by 15 minutes for cleaning). Based on simple mass-balance, the company can calculate that $8.5~\text{m}^3$ of filtrate will be produced.
+	Now we operate a plate and frame filter press at $-\Delta P$ of 67 kPa, with solids slurry content of $C_s = 300~\dfrac{\text{kg dry solids}}{\text{m}^3~\text{filtrate}}$. The cycle time that the filter actually operates is 45 minutes (followed by 15 minutes for cleaning). Based on a simple mass-balance, the company can calculate that $8.5~\text{m}^3$ of filtrate will be produced.
 	
 	\vspace{12pt}
 	\begin{enumerate}
 		\item	Calculate the area required.
 		\item	If the slurry concentration had to double (still the same volume of filtrate), what would the required pressure drop have to be to maintain the same cycle time?
-	\end{enumerate}
-	
+		\item	Create a plot of the volume of filtrate leaving the press as a function of time, $t$.
+	\end{enumerate}	
 \end{frame}
 
+\begin{frame}\frametitle{Pressure requirements change with concentration of slurry}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/example-pressure-increased-concentration.png}
+	\end{center}
+	\begin{itemize}
+		\item	$A = 81~\text{m}^2$ stays fixed
+		\item	$t = 2700~\text{s}$ stays fixed
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Volume of filtrate produced against time}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/filtration/example-filtrate-volume-time.png}
+	\end{center}
+	\begin{itemize}
+		\item	$A = 81~\text{m}^2$ stays fixed
+	\end{itemize}	
+\end{frame}
+
+
+
+\begin{frame}\frametitle{Extend your knowledge}
+	Research the following topics:
+	\begin{itemize}
+		\item	Variable rate filtration: pressure and flow rate both vary along the characteristic centrifugal pump curve
+		\item	Filtering centrifuge (combine the topics from the last 2 weeks)
+	\end{itemize}
+\end{frame}
 
