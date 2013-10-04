@@ -2,35 +2,12 @@
 
 % Nice bio application: Nicole Rich-Portelli and Derek Seguin 2012 project
 
-%Investigate http://arstechnica.com/science/2013/09/microbial-battery-could-turn-wastewater-into-electricity/
-%	David Latulippe's patent: 7989615	
+% Investigate http://arstechnica.com/science/2013/09/microbial-battery-could-turn-wastewater-into-electricity/
 
-% 02 October 2012: including a brain storming session
-\begin{frame}\frametitle{Membranes}
-	On a loose sheet of paper
-	\begin{itemize}
-		\item	write bullet points 
-		\item	\emph{or} draw a diagram
-		\item	\emph{or} describe 
-	\end{itemize}
-	``what you know about membranes''
-\end{frame}
-
-\begin{frame}\frametitle{How they are made?}
-	
-\end{frame}
-
-\begin{frame}\frametitle{What they look like}
-	
-\end{frame}
-
-\begin{frame}\frametitle{Application areas}
-	
-\end{frame}
-
-% \begin{frame}\frametitle{Introduction to membranes}
-% 	Please refer to Henk Koops' slides/video from 28 September 2012 on \href{http://learnche.mcmaster.ca/4M3/Membranes,_dialysis,_reverse_osmosis,_filters_and_bioseparations_-_2012}{the course website}
-% \end{frame}
+% How they are made?
+% What do they look like
+% Application areas
+% Brain storming session: on a loose sheet of paper write bullet points \emph{or} draw a diagram \emph{or} describe ``what you know about membranes''
 
 \begin{frame}\frametitle{Why use membranes?}
 	Some really difficult separations:
@@ -40,11 +17,11 @@
 		\item	non-volatile organics (e.g. \href{http://en.wikipedia.org/wiki/Humic_acid}{humic substances})
 		\item	biological materials: sensitive to the environment
 			\begin{itemize}
-				\item	cannot centrifuge 
+				\item	cannot centrifuge
 				\item	cannot sediment
 			\end{itemize}
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	\begin{exampleblock}{It is usually worth asking:}
 		\begin{center}
@@ -56,7 +33,7 @@
 			\item	effective
 			\item	maybe slow?
 		\end{itemize}
-	\end{exampleblock}		
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}\frametitle{Why use membranes?}
@@ -68,8 +45,7 @@
 		\end{itemize}
 		\item	often easier to operate and control
 	\end{itemize}
-	
-	
+
 	\begin{columns}[c]
 		\column{0.40\textwidth}
 			\begin{center}
@@ -82,7 +58,7 @@
 				\item	feed stream split into parallel units
 				\item	easier to maintain and replace parts
 				\item	can be expanded as needs grow
-			\end{itemize}			
+			\end{itemize}
 	\end{columns}
 \end{frame}
 
@@ -105,7 +81,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Let's formalize some terminology}
-	
+
 	%\todo{Mindmap of terms}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/some-terminology-Seader-based.png}
@@ -114,17 +90,17 @@
 \end{frame}
 
 \begin{frame}\frametitle{More terminology}
-	
+
 	{\color{purple}{semipermeable}}: partially permeable, e.g. your skin allows certain size particles in, but not others
 
 	\vspace{12pt}
 	{\color{purple}{mass separating agent}}: the membrane itself
-	
-	\vspace{12pt}	
-	{\color{purple}{energy separating agent}}: the applied pressure (pressure drop)
-	
+
 	\vspace{12pt}
-	{\color{purple}{porosity}} = $\displaystyle \frac{\text{area of open pores}}{\text{total surface area}}$ 
+	{\color{purple}{energy separating agent}}: the applied pressure (pressure drop)
+
+	\vspace{12pt}
+	{\color{purple}{porosity}} = $\displaystyle \frac{\text{area of open pores}}{\text{total surface area}}$
 		%\item	permeate: the material passing through the membrane from feed to outlet side
 		%\item	retentate: the material retained on the feed-side of the membrane
 		%\item	solute: most often retained on the inside (feed side) of the membrane and deposited on the membrane wall
@@ -157,15 +133,15 @@
 	\end{columns}
 	\begin{exampleblock}{General principle}
 		For a given unit area, we want the highest flux possible (at the lowest possible cost)
-	\end{exampleblock}	
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}\frametitle{Membrane classification}
-	
+
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-application-areas-CRv2-5ed-p438.png}
 	\end{center}
-	
+
 	\see{Richardson and Harker, p 438}
 \end{frame}
 
@@ -175,7 +151,7 @@
 	\end{exampleblock}
 
 	\vspace{12pt}
-	
+
 	Will allow us to:
 	\begin{itemize}
 		\item	troubleshoot problems with the process
@@ -202,20 +178,20 @@
 		\]
 	\end{exampleblock}
 
-	
+
 	\vfill
 	{\color{myOrange}{Symbolically:}}
 	\[
-		\displaystyle \rho_f\frac{Q_p}{A} = \displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \displaystyle \frac{(\text{permeability})(\text{driving force})}{L} = \displaystyle \frac{\text{driving force}}{R} 
+		\displaystyle \rho_f\frac{Q_p}{A} = \displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \displaystyle \frac{(\text{permeability})(\text{driving force})}{L} = \displaystyle \frac{\text{driving force}}{R}
 	\]
 	\begin{itemize}
 		\item	 $\text{\color{purple}{permeance}} = \displaystyle \frac{\text{\color{purple}{permeability}}}{L} = \displaystyle \frac{1}{\text{\color{purple}{resistance}}} = \displaystyle \frac{1}{R} = \text{{\color{purple}{\tiny ``mass transfer coeff''}}}$
 		\item	permeance: easier to measure
 		\item	permeance units: depend on choice of (driving force) and $J$
 		\item	resistance = $f(\text{thickness, viscosity, porosity, pore size})$
-		\item	we will specifically define resistance in each case				
+		\item	we will specifically define resistance in each case
 	\end{itemize}
-	
+
 \end{frame}
 
 \begin{frame}\frametitle{Microfiltration}
@@ -245,18 +221,18 @@
 				\includegraphics[width=0.95\textwidth]{\imagedir/separations/membranes/symmetric-pore-structure-Henk-Koops-talk.png}
 			\end{center}
 			\see{Henk Koops' slide}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{General modelling equation applied}
-	
+
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\[
 				\begin{array}{rl}
 					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_M + R_c L_c \right)} \\
-					\\					
-					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R'_c \right)} 
+					\\
+					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R'_c \right)}
 				\end{array}
 			\]
 		\column{0.40\textwidth}
@@ -268,7 +244,7 @@
 	\begin{tabular}{cll}
 		$J$			&	[$\text{kg}.\text{s}^{-1}\text{.m}^{-2}$] 				& permeate flux \\
 		$\mu$ 		&  	$[\text{kg}.\text{m}^{-1}\text{.s}^{-1}]$				& permeate viscosity\\
-		$\Delta P$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & TMP varies for different applications\\		
+		$\Delta P$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & TMP varies for different applications\\
 		$R_m$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through membrane (small)\\
 		$R_c$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through cake (large)\\
 		$\ell_m$ 	&   $[\text{m}]$											& membrane thickness\\
@@ -292,10 +268,10 @@
 			\end{itemize}
 			\begin{exampleblock}{}
 					\[
-						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)} 
+						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)}
 					\]
 			\end{exampleblock}
-			
+
 		\column{0.60\textwidth}
 			{\color{myBlue}{Cross-flow (TFF)}}
 			\begin{center}
@@ -312,7 +288,7 @@
 						\item	\iftoggle{instructor}{$\Delta P = \displaystyle \frac{P_\text{in} + P_\text{out}}{2} - P_\text{P}$}{}
 					\end{itemize}
 			\end{itemize}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Dead-end flow vs cross-flow geometries}
@@ -327,9 +303,9 @@
 			\vspace{12pt}
 			\begin{exampleblock}{}
 					\[
-						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)} 
+						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)}
 					\]
-			\end{exampleblock}			
+			\end{exampleblock}
 		\column{0.60\textwidth}
 			{\color{myBlue}{Cross-flow (TFF)}}
 			\begin{center}
@@ -349,9 +325,9 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/flowsheet-for-microfiltration-CRv2-5ed-p444.png}
 	\end{center}
-	
+
 	\vspace{-12pt}
-	How to pressurize the unit?	
+	How to pressurize the unit?
 	\begin{enumerate}
 		\item	\small Supply feed at pressure; valve at retentate to adjust/control $\Delta P$
 		\item	Draw a vacuum at permeate and pull material through membrane
@@ -363,26 +339,26 @@
 \begin{frame}\frametitle{Dealing with fouling}
 	\begin{center}
 		\includegraphics[width=0.85\textwidth]{\imagedir/separations/membranes/cross-flow-patters-CRv2-5ed-p444.png}
-	\end{center}	
+	\end{center}
 	\vspace{-12pt}
 	\see{Richardson and Harker, Ch8}
 \end{frame}
 
-\begin{frame}\frametitle{A preliminary design}	
+\begin{frame}\frametitle{A preliminary design}
 	\begin{exampleblock}{Main aim}
 		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of permeate.
 	\end{exampleblock}
 	We have a reasonable budget to purchase equipment, and membrane samples from suppliers.
-	
+
 	\vspace{12pt}
 	How would you set up your lab experiment(s) to get the information required?
 	\pause
 	\begin{itemize}
 		\item	\iftoggle{instructor}{$J = \displaystyle \rho_f	 \frac{Q_p}{A} = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
-		
+
 		\vspace{6pt}
 		\item	\iftoggle{instructor}{$R'_m$: estimated using pure solvent through membrane at $\Delta P$}{}
-		
+
 		\vspace{6pt}
 		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtained from a plot of $J_i$ vs $\Delta P_i$}{}
 			\iftoggle{instructor}{\begin{itemize}
@@ -407,7 +383,7 @@
 % 05 October 2012: course evaluation; in-class pop-quiz and the example to end microfiltration
 \begin{frame}\frametitle{Pop-quiz question}
 	A microfiltration membrane operating with pure feed of water produces a flux of 0.06 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ when operated with a TMP of 30 kPa.
-	
+
 	\begin{enumerate}
 		\item	What is the resistance due to the membrane? Specify the units.
 		\item	If operated with a protein-water mixture at a 20 kPa pressure difference, a flux of $216 \times 10^{-6}$ $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ is measured at steady state. What is the resistance due to cake build-up? Specify the units.
@@ -415,11 +391,11 @@
 \end{frame}
 
 \begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
-	\begin{itemize}		
+	\begin{itemize}
 		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
 		\item	$R_{c,v} = R_{c} \cdot \rho_f$ and similarly $R_{m,v} = R_{m} \cdot \rho_f$
 		\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $\left[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}\right]$
-		\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$ 
+		\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$
 		\item	$\epsilon$ = porosity of the cake
 		\item	$D_p$ = \href{http://en.wikipedia.org/wiki/Sauter_mean_diameter}{Sauter mean particle diameter} [m]
 		\item	$L_c$ = estimated cake thickness [m]
@@ -429,7 +405,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Microfiltration example}
-	The previous lab experiment to determine mass-transfer resistance is preferred. But we can estimate it. 
+	The previous lab experiment to determine mass-transfer resistance is preferred. But we can estimate it.
 	\vspace{12pt}
 	\begin{exampleblock}{Water microfiltration}
 		\begin{itemize}
@@ -447,7 +423,7 @@
 
 % 09 October 2012: UF and nano-filtration
 % Delayed: covered assignment 3 solutions and course evaluation feedback in the class
-\begin{frame}\frametitle{Ultrafiltration (UF)}	
+\begin{frame}\frametitle{Ultrafiltration (UF)}
 	\begin{columns}[c]
 		\column{0.65\textwidth}
 			\vspace{-20pt}
@@ -474,12 +450,12 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Ultrafiltration applications} 
+\begin{frame}\frametitle{Ultrafiltration applications}
 	UF: loosely considered: {\color{myGreen}{``cross-flow filtration at molecular level''}}
 	\begin{itemize}
 		\item	Recovery of proteins and high molecular weight materials ({\color{purple}{solute}})
 		\item	Permanent emulsions: e.g. oil phase will not pass
-		\item	Fine colloidal particles: e.g. paint/dyes 
+		\item	Fine colloidal particles: e.g. paint/dyes
 		\item	Large molecules of interest might remain in retentate; permeate discarded
 		\item	e.g. albumin (egg white) concentration
 		\item	e.g whey processing: %Green book chapter
@@ -493,14 +469,14 @@
 \end{frame}
 
 \begin{frame}\frametitle{Ultrafiltration (UF)}
-	
-	\begin{itemize}		
+
+	\begin{itemize}
 		\item	driving force = $\Delta P$ of 0.1 to 1.0 MPa % Perry and C+Rv2
 		\item	``tight'', low-permeability side faces the TFF to retain particles
-		\item	this skin layer is about 10\micron~ thick; provides selectivity 
-		\item	open, high-permeability side mainly for mechanical strength % Perrys		
+		\item	this skin layer is about 10\micron~ thick; provides selectivity
+		\item	open, high-permeability side mainly for mechanical strength % Perrys
 	\end{itemize}
-	
+
 	%\todo{Sieving curve terminology}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
@@ -511,24 +487,24 @@
 			\vspace{-12pt}
 			\see{Richardson and Harker, Ch8}
 		\column{0.30\textwidth}
-		
+
 			$R = 1 -\displaystyle \frac{C_\text{permeate}}{C_\text{feed}}$
-			
+
 			$R = 1- \displaystyle \frac{C_p}{C_f} = 1 -S$
-			
+
 			\vspace{12pt}
 			{\color{purple}{MWCO}}: molecular weight where $R=0.9$
-			
+
 			\vspace{12pt}
 			i.e. 10\% of that molecular weight passes through to the permeate
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Transport phenomena in UF}
-	\begin{itemize}		
+	\begin{itemize}
 		\item	solute (i.e. particles) carried towards membrane by solvent
 		\item	$J = \displaystyle\frac{\Delta P}{R_m + R_{cp}}$
-		\item	$R_m$ = membrane resistance [$\text{m.s}^{-1}$ if $J$ is mass flux] 
+		\item	$R_m$ = membrane resistance [$\text{m.s}^{-1}$ if $J$ is mass flux]
 		\item	$R_{cp}$ = resistance due to ``concentration polarization''
 		\item	$R_{cp}$ effectively is the resistance due to solute boundary layer
 		\item	Mass concentration $C_f$ (in retentate), steadily increasing to $C_w$ (wall)
@@ -546,7 +522,7 @@
 		\item	Increasing $\Delta P$ leads to compacting this layer, increasing $C_w$
 		\item	So diminishing returns from increasing $\Delta P$
 		\item	Also, there is a strong concentration gradient
-		\item	Diffusion \emph{away} from membrane due to concentration gradients		
+		\item	Diffusion \emph{away} from membrane due to concentration gradients
 		\item	Eventually solute forms a colloidal gel on the membrane, $C_g$
 		\item	Adjusting pressure has little/no effect anymore
 	\end{itemize}
@@ -561,13 +537,13 @@
 \begin{frame}\frametitle{Transport phenomena in UF}
 	\begin{itemize}
 		\item	Solute flux towards membrane: $\displaystyle \frac{J\cdot C}{\rho_f} = J_v C$
-		\\		
+		\\
 		\item	Solute flux out of membrane: $J_v C_\text{permeate} \approx 0$  {\tiny if membrane retains solute}
 	\end{itemize}
 	\begin{exampleblock}{}
 		Net transport of solute = $J(C - C_p)$
 	\end{exampleblock}
-	
+
 	\begin{tabular}{cll}
 		$J_v$		&	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& permeate volumetric flux \\
 		$C$ 		&  	$\left[\displaystyle\frac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration in bulk\\
@@ -581,12 +557,12 @@
 	\begin{itemize}
 		\item	Solute {\color{purple}{diffusion}} away from membrane
 		\begin{exampleblock}{}
-			\[	
+			\[
 				J_\text{v,diffusion} = -D_{AB} \displaystyle \frac{1}{\rho_f}\frac{dC}{dy}
 			\]
-		\end{exampleblock}		
+		\end{exampleblock}
 	\end{itemize}
-	
+
 	\begin{tabular}{cll}
 		$D_{AB}$				&	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m.s}}\right] = \left[\text{m}^2\text{.s}^{-1}\right]$	& diffusion of solute in solvent \\
 		$J_\text{v,diffusion}$ 	&  	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& solvent volumetric flux\\
@@ -602,7 +578,7 @@
 
 \begin{frame}\frametitle{Transport at steady state}
 	At steady state: diffusion back equals transfer through membrane
-	\[ 
+	\[
 		\begin{array}{rl}
 		 	\displaystyle  \frac{J(C - C_p)}{\rho_f}  &= -D_{AB} \displaystyle \frac{1}{\rho_f}\frac{dC}{dy} \\
 			\displaystyle -\frac{J}{D_{AB}} \int_{0}^{L_c}{dy} &= \displaystyle \int_{C_w}^{C_f}{\frac{dC}{C-C_p}} \\ \\
@@ -612,7 +588,7 @@
 	\vspace{6pt}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
-	\end{center}	
+	\end{center}
 	% Perry: Component Transport Transport through membranes can be considered as mass transfer in series: (1) transport through a polarization layer above the membrane that may include static or dynamic cake layers, (2) partitioning between the upstream polarization layer and membrane phases at the membrane surface, (3) transport through the membrane, and (4) partitioning between the membrane and downstream fluid.
 \end{frame}
 
@@ -620,14 +596,14 @@
 	Assuming $C_p \approx 0$
 	\begin{exampleblock}{}
 		\[
-			\displaystyle\frac{J L_c}{D_{AB}} =  \displaystyle \frac{J}{h_w} = \displaystyle \ln\left(\frac{C_w }{C_f }\right) 
+			\displaystyle\frac{J L_c}{D_{AB}} =  \displaystyle \frac{J}{h_w} = \displaystyle \ln\left(\frac{C_w }{C_f }\right)
 		\]
 	\end{exampleblock}
 	where $h_w$ is a  mass-transfer coefficient, with units of $\text{m.s}^{-1}$
 	\begin{itemize}
 		\item	there are correlations for $h_w= f(\text{velocity, temperature, channel diameter, viscosity})$
 		\item	when gelling occurs, $C_w = C_g$ at the wall
-		\item	the effect of increasing $\Delta P$ is 
+		\item	the effect of increasing $\Delta P$ is
 		\begin{itemize}
 			\item	increase in solute flux towards boundary layer
 			\item	diffusion increases to oppose it
@@ -636,20 +612,20 @@
 		\end{itemize}
 		\item	there is a limiting flux $J_\text{lim} = f(C_w, C_f, h_w)$
 		\item	at higher feed concentrations, lower fluxes if we are at/near the gel polarization state (gelling)
-		\item	typical diffusivities: $1 \times 10^{-9}$ (fast!) to $1 \times 10^{-11} \text{~m}^2\text{.s}^{-1}$ 
+		\item	typical diffusivities: $1 \times 10^{-9}$ (fast!) to $1 \times 10^{-11} \text{~m}^2\text{.s}^{-1}$
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Example question}
 	An ultrafiltration application is required to treat a waste stream that has 0.5~$\text{kg}\text{.m}^{-3}$ waste in the feed. The desired solute concentrate must be 20~$\text{kg}^3\text{.m}^{-3}$.
-	
+
 	\vspace{12pt}
-	Pilot plant studies show the flux can be expressed as 
+	Pilot plant studies show the flux can be expressed as
 	\[
 		J = 0.02 \ln \left(\frac{25}{C_f} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$. Due to fouling the flux from this membrane system never exceeds 0.05 $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
-	
+
 	\vspace{12pt}
 	What is the limiting final concentration, $C_f$? What is the interpretation of it?
 \end{frame}
@@ -677,7 +653,7 @@
 	\begin{itemize}
 		\item	All these units bought as complete module from supplier
 		\item	In fixed sizes; so need to be combined (next section)
-		\item	Also as cassettes, tubes and flat sheets run in TFF to increase flux. % Perry: 
+		\item	Also as cassettes, tubes and flat sheets run in TFF to increase flux. % Perry:
 	\end{itemize}
 	\see{Illustrations from Wankat, 2ed, Ch 16}
 	%figure for future use: /Users/kevindunn/Sync/Figures/separations/membranes/application-area-geometry-Perrys-8ed-Table-20-25.png
@@ -687,11 +663,11 @@
 	\begin{columns}[t]
 		\column{0.60\textwidth}
 			\textbf{Spiral wound}
-			
+
 				\begin{itemize}
 					\item	\iftoggle{instructor}{high surface area per unit volume}{}
 					\item	\iftoggle{instructor}{high turbulence, reducing mass transfer resistance}{}
-				\end{itemize} 
+				\end{itemize}
 			\vfill
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/geometry-4-Wankat-2ed-p540.png}
@@ -702,12 +678,12 @@
 			\begin{itemize}
 				\item	largest area to volume ratio
 				\item	fibre inside diameter = 500 to 1100 \micron~ for UF
-				\item	UF: feed inside tube, with thin membrane skin on the inside 
+				\item	UF: feed inside tube, with thin membrane skin on the inside
 			\end{itemize}
 			\begin{center}
 				\includegraphics[width=.8\textwidth]{\imagedir/separations/membranes/geometry-6-Wankat-2ed-p540.png}
 			\end{center}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{}
@@ -725,13 +701,13 @@
 				\item	most common configuration
 				\item	allows increase in throughput
 			\end{itemize}
-		\column{0.50\textwidth}			
+		\column{0.50\textwidth}
 			\textbf{Series}
 			\begin{itemize}
 				\item	used to achieve a desired separation factor (concentration)
 				\item	high pressure drop across series circuit
 				\item	cannot recover pressure (energy separating agent)
-			\end{itemize}			
+			\end{itemize}
 	\end{columns}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/geometry-1-Wankat-2ed-p540.png}
@@ -746,12 +722,12 @@
 		\item	SWRO membrane, i.e. desalination
 		\item	21.5 million $\text{m}^3$ per year
 		\item	parallel and series
-	\end{itemize}	
+	\end{itemize}
 	\see{ide-tech.com}
 \end{frame}
 
 \begin{frame}\frametitle{Operating UF units}
-	% Perry: 
+	% Perry:
 	\begin{itemize}
 		\item	Continuous operation provides lower-cost operation
 		\item	Batch operation: seldom used, except for start up (see next)
@@ -777,16 +753,16 @@
 % 16 October 2012
 \begin{frame}\frametitle{Class example}
 	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
-	
+
 	\vspace{12pt}
-	At steady-state the feed-plus-bleed circuit operates with a flux 
+	At steady-state the feed-plus-bleed circuit operates with a flux
 	\[
 		J = 0.02 \ln \left(\frac{25}{C_f} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
-	
+
 	\vspace{12pt}
-	If each membrane module is 30 m$^2$:	
+	If each membrane module is 30 m$^2$:
 	\begin{itemize}
 		\item	how many membrane modules are required?
 		\item	series or parallel?
@@ -804,16 +780,16 @@
 % 16 October 2012
 \begin{frame}\frametitle{Class example (11 Oct)}
 	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
-	
+
 	\vspace{12pt}
-	At steady-state the feed-plus-bleed circuit operates with a flux 
+	At steady-state the feed-plus-bleed circuit operates with a flux
 	\[
 		J = 0.02 \ln \left(\frac{25}{C_f} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
-	
+
 	\vspace{12pt}
-	If each membrane module is 30 m$^2$:	
+	If each membrane module is 30 m$^2$:
 	\begin{itemize}
 		\item	how many membrane modules are required?
 		\item	series or parallel?
@@ -824,8 +800,8 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/feed-and-bleed-in-series.png}
 	\end{center}
-	
-	Now consider the previous example. Find the optimal areas, $A_1$ and $A_2$ for the membranes.	
+
+	Now consider the previous example. Find the optimal areas, $A_1$ and $A_2$ for the membranes.
 \end{frame}
 
 \begin{frame}\frametitle{Reverse osmosis}
@@ -840,7 +816,7 @@
 		\item	Then we look at reverse osmosis (RO)
 		\item	Applications of RO
 		\item	Modelling RO
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Reverse osmosis principle}
@@ -868,7 +844,7 @@
 	\begin{itemize}
 		\item	Assume solute barely passes through membrane ($C_p \approx 0$)
 		\item	Solvent passes freely
-		\item	Chemical potential drives pure solvent (water) to dilute the solute/solvent (mixture). 
+		\item	Chemical potential drives pure solvent (water) to dilute the solute/solvent (mixture).
 		\item	This \emph{solvent flux} continues until equilibrium is reached
 			\begin{itemize}
 				\item	solvent flow to the left equals solvent flow to the right
@@ -877,7 +853,7 @@
 				\item	a thermodynamic property $\neq f(\text{membrane})$
 				\item	a thermodynamic property $= f(\text{fluid and solute properties})$
 			\end{itemize}
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{(Reverse) Osmosis principle}
@@ -903,7 +879,7 @@
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/reverse-osmosis-developed.png}
 			\end{center}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Typical values of osmotic press}
@@ -920,10 +896,10 @@
 		$T$ 		&  	[K]														& temperature\\
 		$C$ 		&  	[mol of ions per m$^{3}$]								& generic concentration
 	\end{tabular}
-	
+
 	\vspace{12pt}
 	\textbf{Example}
-	
+
 	\vspace{6pt}
 	Prove to yourself: 0.1 mol of NaCl dissolved in 1 L of water at 25$^\circ$C is \textbf{4.9 atm}!
 	\begin{itemize}
@@ -933,8 +909,8 @@
 \end{frame}
 
 \begin{frame}\frametitle{Other osmotic values}
-	The previous equation is an approximation. 
-	
+	The previous equation is an approximation.
+
 	\vspace{12pt}
 	Some actual values:
 	\begin{tabular}{ll}\\ \hline
@@ -944,7 +920,7 @@
 		2.0 mol NaCl in 1 L water	& 96.2\\
 		Seawater [3.5 wt\% salts]	& 25.2\\
 	\end{tabular}
-	
+
 	\begin{itemize}
 		\item	Driving force in membrane separation is pressure difference
 		\item	$\Delta P = \pi$ implies we only counteract the osmotic pressure
@@ -952,7 +928,7 @@
 		\item	So the net useful driving force applied: $\Delta P - \pi$
 		\item	Ultrafiltration $\Delta P$ was 0.1 to 1.0 MPa typically
 		\item	RO: typical $\Delta P$ values: 2.0 MPa to 8.0 MPa, even 10.5 MPa  % 7.0 in Seader, p 532; 8.0 in C+Rv2;5ed;p454; 10.5 from Perry's 8ed; p20-45
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Let's be a little more accurate}
@@ -963,9 +939,9 @@
 		\item	Correct, net driving force = $\Delta P - \Delta \pi$
 		\begin{itemize}
 			\item	$\Delta P$ is the usual TMP we measure
-			\item	$\Delta \pi = \pi_\text{feed} - \pi_\text{perm}$ 
-			\item	$\Delta \pi = C_\text{ions,feed}RT_\text{feed} - C_\text{ions,perm}RT_\text{perm}$ 
-			\item	Even more correctly: $\Delta \pi = C_\text{ions,wall}RT_\text{wall} - C_\text{ions,perm}RT_\text{perm}$ 
+			\item	$\Delta \pi = \pi_\text{feed} - \pi_\text{perm}$
+			\item	$\Delta \pi = C_\text{ions,feed}RT_\text{feed} - C_\text{ions,perm}RT_\text{perm}$
+			\item	Even more correctly: $\Delta \pi = C_\text{ions,wall}RT_\text{wall} - C_\text{ions,perm}RT_\text{perm}$
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -975,7 +951,7 @@
 	\begin{itemize}
 		\item	``\emph{McIlvaine forecasts that world RO equipment and membrane sales will reach \$5.6 billion (USD) in 2012, compared to \$3.8 billion in 2008 (actual).}''
 		\item	``\emph{Depleting water supplies, coupled with increasing water demand, are driving the global market for desalination technology, which is expected to reach \$52.4 billion by 2020, up 320.3\% from \textbf{\$12.5 billion in 2010}. According to a recent report from energy research publisher SBI Energy, membrane technology reverse osmosis will see the largest growth, reaching \$39.46 billion by 2020.}''
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Industrial applications of RO}
@@ -997,7 +973,7 @@
 
 \begin{frame}\frametitle{Videos to watch}
 	In your own time, please watch:
-	
+
 	\begin{itemize}
 		\item	\href{http://www.youtube.com/watch?v=YlMGZWmh\_Mw}{http://www.youtube.com/watch?v=YlMGZWmh\_Mw}: how spiral membranes are made
 		\item	\href{http://www.youtube.com/watch?v=M3mpJysa6zQ}{http://www.youtube.com/watch?v=M3mpJysa6zQ}: novel way of recovering pressure energy
@@ -1014,7 +990,7 @@
 		\item	Energy recovery of $\Delta P$ {\tiny (see YouTube video mentioned earlier)}
 		% Chemical dosing: neutralize scale-forming salts
 		% Chlorination: kill bacteria
-	\end{itemize}	
+	\end{itemize}
 	\see{ide-tech.com}
 \end{frame}
 
@@ -1026,11 +1002,11 @@
 			\end{center}
 		\column{0.30\textwidth}
 			Household RO\\
-			cost:			
+			cost:
 			\begin{itemize}
 				\item	\$ 0.015 to \$0.07/L % Perrys 8ed; p 20-45
 			\end{itemize}
-	\end{columns}	
+	\end{columns}
 \end{frame}
 
 % Still review Ghosh and Dickson's notes
@@ -1038,7 +1014,7 @@
 	{\color{myOrange}{Symbolically:}}
 	{ \small
 	\[
-		J = \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle (\text{permeance})(\text{driving force}) = \displaystyle \frac{\text{driving force}}{\text{resistance}} 
+		J = \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle (\text{permeance})(\text{driving force}) = \displaystyle \frac{\text{driving force}}{\text{resistance}}
 	\]
 	}
 	\begin{itemize}
@@ -1075,7 +1051,7 @@
 				\item	$P_\text{solv}$ = permeability of the solvent [notation: $P_\text{solv} \equiv P_\text{w}$]
 				\item	$C_p$ = concentration of solute in the permeate
 				\item	$P_\text{salt}$ = permeability of the salt
-			\end{itemize}			
+			\end{itemize}
 	\end{enumerate}
 	%\textbf{Note}: all units must be checked for consistency
 \end{frame}
@@ -1083,13 +1059,13 @@
 % 19 October 2012: Friday tutorial-style lecture
 \begin{frame}\frametitle{Example to try at home}
 	Brackish water of 1.8wt\% NaCl at 25$^{\circ}\text{C}$ and 1000 psia is fed to a spiral wound membrane.
-	
+
 	\vspace{6pt}
 	Conditions on the permeate side are 0.05 wt\% NaCl, at same temperature, but 50 psia.
-	
+
 	\vspace{6pt}
 	The permeance of water has been established as $1.1 \times 10^{-4} \text{~kg.s}^{-1}\text{.m}^{-2}\text{.atm}^{-1}$ [how would you get this number?] and $16 \times 10^{-8} \text{m.s}^{-1}$ for salt is determined experimentally.
-	
+
 	\begin{enumerate}
 		\item	Calculate the flux of water in LMH.
 		\item	What is the flux of salt through the membrane?
@@ -1112,22 +1088,22 @@
 \begin{frame}\frametitle{Some old and new terminology}
 	Recall from ultrafiltration:
 	\begin{itemize}
-		\item	$R = 1 - \displaystyle\frac{C_P}{C_F}$   
-		
+		\item	$R = 1 - \displaystyle\frac{C_P}{C_F}$
+
 		\item	This {\color{purple}{rejection coefficient}} also applies to reverse osmosis.
-		
+
 		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
-	\end{itemize}	
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Another example: calculating permeances}
 	At 25 $^\circ$C in a lab membrane with area $A = 2 \times 10^{-3}$ $\text{m}^{2}$ we feed a solution of 10 kg NaCl per m$^3$ solution so well mixed that essentially it has the same strength leaving.
-	
+
 	\vspace{12pt}
 	The permeate is measured as 0.39 kg NaCl per $\text{m}^{3}$ solution at a rate of $1.92 \times 10^{-8}~\text{m}^3\text{.s}^{-1}$ when applying a constant pressure difference of 54.42 atm.
-	
+
 	\vspace{12pt}
-	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.	
+	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.
 \end{frame}
 
 \begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
@@ -1167,15 +1143,15 @@
 \end{frame}
 
 \begin{frame}\frametitle{Nanofiltration (NF)}
-	
+
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-application-areas-CRv2-5ed-p438.png}
-	\end{center}	
+	\end{center}
 	\see{Richardson and Harker, p 438}
-	
+
 	\vspace{24pt}
-	
-	Nanofiltration removes particles intermediate to UF and RO. 
+
+	Nanofiltration removes particles intermediate to UF and RO.
 	\begin{itemize}
 		\item	only difference:  $\Delta P$ is 0.3 to 3 MPa for NF
 		\item	same particle sizes removed as RO: 8 to 50 \AA
@@ -1183,16 +1159,16 @@
 \end{frame}
 
 \begin{frame}\frametitle{Wastewater applications: membrane bioreactor}
-	
+
 	%Membrane Processes These processes use a selectively permeable membrane to separate pollutants from water. Most of the membranes are formulated from complex organics that polymerize during membrane preparation. This allows the membrane to be tailored to discriminate by molecular size or by degree of hydrogen bonding potential. Ultrafiltration membranes discriminate by molecular size or weight, while reverse osmosis membranes discriminate by hydrogen bonding characteristics. The permeability of these membranes is low: from 0.38-3.8 m/day (10-100 gal/d/ft 2). The apparatus in which they are used must provide a high surface area per unit volume.
 
 	%Membrane Bioreactors (MBRs): Membrane bioreactors are a technology that combines biological degradation of waste products with membrane filtratio
-	
+
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/MBRvsASP-Schematic-Wikipedia.png}
 	\end{center}
 	\see{\href{http://en.wikipedia.org/wiki/File:MBRvsASP\_Schematic.jpg}{http://en.wikipedia.org/wiki/File:MBRvsASP\_Schematic.jpg}}
-	
+
 	% Perry's chapter 22.5.8
 	\begin{itemize}
 		\item	Use a membrane instead of a traditional settler to remove impurities and solids
@@ -1206,7 +1182,7 @@
 		\begin{itemize}
 			\item	carbon nanotubes to improve flux %  (Shol and Johnson)
 		\end{itemize}
-		
+
 		\item	Energy recovery (ongoing)
 	\end{itemize}
 \end{frame}
@@ -1225,130 +1201,129 @@
 	\end{itemize}
 \end{frame}
 
-\begin{comment}
-	% \begin{frame}\frametitle{UF: continuous operation}
-	% 	% eqn 20-84 Perry
-	% \end{frame}
-	\begin{frame}\frametitle{Introduction to dialysis}
-		Picture from Seader
-		Log-mean concentration difference
-		Sized like a heat-exchanger in counter-current mode
-	\end{frame}
 
-	\begin{frame}\frametitle{Gas Separation Membranes}
-		\begin{itemize}
-			\item	
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}\frametitle{Dialysis}
-		Uhlmanns2-pdf, p 467
-	\end{frame}
+% \begin{frame}\frametitle{UF: continuous operation}
+% 	% eqn 20-84 Perry
+% \end{frame}
+\begin{frame}\frametitle{Introduction to dialysis}
+	Picture from Seader
+	Log-mean concentration difference
+	Sized like a heat-exchanger in counter-current mode
+\end{frame}
 
-	\begin{frame}\frametitle{Economics and operating costs}
-		Schweitzer, p 2-69
-	\end{frame}
+\begin{frame}\frametitle{Gas Separation Membranes}
+	\begin{itemize}
+		\item
+	\end{itemize}
+\end{frame}
 
-	\begin{frame}\frametitle{Waste water flowsheet options}
-		Schweitzer, p 2-77
-	\end{frame}
-	
-	\begin{frame}\frametitle{Other factors influencing UF flux}
-		Ghosh book:
-		\begin{itemize}			
-			\item	p 219
-			\item	p 226
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}\frametitle{UF example}
-		Batch equation:
-		Ghosh book p. 231
-	\end{frame}		
-		
-	\begin{frame}\frametitle{UF: material of construction: ....}
-		Perry: TABLE 20-24
-	\end{frame}
-	
-	\begin{frame}\frametitle{Factors to picking a membrane}
-		% Perry's: chapter 20.4
-		\begin{itemize}
-			\item	size rating (MWCO) from vendor [rough guide only]
-			\item	selectivity (quantified by a separation factor)
-			\item	permeability
-			\item	mechanical robustness (to allow module fabrication and withstand operating conditions)
-			\item	chemical robustness (to fabrication materials, process fluids, cleaners, and sanitizers)
-			\item	low fouling
-			\item	high flux
-			\item	low cost
-			\item	and manufacturer's consistency in producing membrane
-		\end{itemize}
-	\end{frame}
-	
-	\begin{frame}\frametitle{UF: Membrane selection}
-		Millipore catalog
-		Membrane geometry: Geankoplis, p 893 describes trade-off for geometry
-	\end{frame}
+\begin{frame}\frametitle{Dialysis}
+	Uhlmanns2-pdf, p 467
+\end{frame}
 
-	\begin{frame}\frametitle{Geometries}
-		TABLE 20-17 Commercial TFF Modules
-		Very useful table
-	\end{frame}
-	
-	\begin{frame}\frametitle{Making membrane}
-		% Perry: 20.4
-		
-		Composition and Structure Commercial membranes consist primarily of polymers and some ceramics. Other membrane types include sintered metal, glass, and liquid film. Polymeric membranes are formed by precipitating a 5 to 25 wt \% casting solution (lacquer) into a film by solvent evaporation (air casting), liquid extraction (immersion casting), or cooling (melt casting or thermally induced phase separation). Membranes can be cast as flat sheets on a variety of supports or as fibers through a die. Ceramic membranes are formed by depositing successive layers of smaller and smaller inorganic particles on a monolith substrate, to create smaller and smaller interstices or “pores” between particles. These layers are then sintered below the melting point to create a rigid structure.
+\begin{frame}\frametitle{Economics and operating costs}
+	Schweitzer, p 2-69
+\end{frame}
 
-		Membranes may be surface-modified to reduce fouling or improve chemical resistance. This can involve adding surface-modifying agents directly to the lacquer or modifying the cast membrane through chemical or physical treatment. Membranes can also be formed by selective etching or track-etching (radiation treatment followed by etching). Stretching is used to change pore morphology.
+\begin{frame}\frametitle{Waste water flowsheet options}
+	Schweitzer, p 2-77
+\end{frame}
 
-		Liquid film membranes consist of immiscible solutions held in membrane supports by capillary forces. The chemical composition of these solutions is designed to enhance transport rates of selected components through them by solubility or coupled chemical reaction.
-	\end{frame}
-	
-	%Geankop: Fig 7.1.3 	
-	%Why have sweep: increase $k_c2$ coefficient
-	%Film on wall effect
-	%Surface adsorption or materials and fouling
-	
-	\begin{frame}\frametitle{Effect of pressure difference}
-		Ghosh fig 11.18
-	\end{frame}
+\begin{frame}\frametitle{Other factors influencing UF flux}
+	Ghosh book:
+	\begin{itemize}
+		\item	p 219
+		\item	p 226
+	\end{itemize}
+\end{frame}
 
-	\begin{frame}\frametitle{Velocity function}
-		Green book, or Ghosh 11.20
-	\end{frame}
+\begin{frame}\frametitle{UF example}
+	Batch equation:
+	Ghosh book p. 231
+\end{frame}
 
-	\begin{frame}\frametitle{Feed concentration function}
-		Ghosh 11.20
-	\end{frame}
-	
-	\begin{frame}\frametitle{Pumps used for microfiltration}
-		* Pumps
-		* Capital cost
-		* Operating costs
-	\end{frame}
-	
-	\begin{frame}\frametitle{Understanding mass transfer}
-		* Geankop book
-		* Ghosh: p 214
-	\end{frame}
-	
-	\begin{frame}\frametitle{Bubble point test}
-		Bio applications: sterilize membranes
-		Bubble-point test: Appendix A of Schweitzer, p 2-89
-	\end{frame}
+\begin{frame}\frametitle{UF: material of construction: ....}
+	Perry: TABLE 20-24
+\end{frame}
 
-	\begin{frame}\frametitle{Geometries and flow patterns}
-		Wankat p 537
-	\end{frame}	
-	
-	\begin{frame}\frametitle{Principles used to separate: DISCUSS THESE AS NEEDED, ie. when you are introducing microfiltration vs dialysis}
-		* Principle(s) used:
-		 - diffusion differences (different solubilities)
-		 - size differences
-		 - electric attraction
-	\end{frame}
-\end{comment}
+\begin{frame}\frametitle{Factors to picking a membrane}
+	% Perry's: chapter 20.4
+	\begin{itemize}
+		\item	size rating (MWCO) from vendor [rough guide only]
+		\item	selectivity (quantified by a separation factor)
+		\item	permeability
+		\item	mechanical robustness (to allow module fabrication and withstand operating conditions)
+		\item	chemical robustness (to fabrication materials, process fluids, cleaners, and sanitizers)
+		\item	low fouling
+		\item	high flux
+		\item	low cost
+		\item	and manufacturer's consistency in producing membrane
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{UF: Membrane selection}
+	Millipore catalog
+	Membrane geometry: Geankoplis, p 893 describes trade-off for geometry
+\end{frame}
+
+\begin{frame}\frametitle{Geometries}
+	TABLE 20-17 Commercial TFF Modules
+	Very useful table
+\end{frame}
+
+\begin{frame}\frametitle{Making membrane}
+	% Perry: 20.4
+
+	Composition and Structure Commercial membranes consist primarily of polymers and some ceramics. Other membrane types include sintered metal, glass, and liquid film. Polymeric membranes are formed by precipitating a 5 to 25 wt \% casting solution (lacquer) into a film by solvent evaporation (air casting), liquid extraction (immersion casting), or cooling (melt casting or thermally induced phase separation). Membranes can be cast as flat sheets on a variety of supports or as fibers through a die. Ceramic membranes are formed by depositing successive layers of smaller and smaller inorganic particles on a monolith substrate, to create smaller and smaller interstices or “pores” between particles. These layers are then sintered below the melting point to create a rigid structure.
+
+	Membranes may be surface-modified to reduce fouling or improve chemical resistance. This can involve adding surface-modifying agents directly to the lacquer or modifying the cast membrane through chemical or physical treatment. Membranes can also be formed by selective etching or track-etching (radiation treatment followed by etching). Stretching is used to change pore morphology.
+
+	Liquid film membranes consist of immiscible solutions held in membrane supports by capillary forces. The chemical composition of these solutions is designed to enhance transport rates of selected components through them by solubility or coupled chemical reaction.
+\end{frame}
+
+%Geankop: Fig 7.1.3
+%Why have sweep: increase $k_c2$ coefficient
+%Film on wall effect
+%Surface adsorption or materials and fouling
+
+\begin{frame}\frametitle{Effect of pressure difference}
+	Ghosh fig 11.18
+\end{frame}
+
+\begin{frame}\frametitle{Velocity function}
+	Green book, or Ghosh 11.20
+\end{frame}
+
+\begin{frame}\frametitle{Feed concentration function}
+	Ghosh 11.20
+\end{frame}
+
+\begin{frame}\frametitle{Pumps used for microfiltration}
+	* Pumps
+	* Capital cost
+	* Operating costs
+\end{frame}
+
+\begin{frame}\frametitle{Understanding mass transfer}
+	* Geankop book
+	* Ghosh: p 214
+\end{frame}
+
+\begin{frame}\frametitle{Bubble point test}
+	Bio applications: sterilize membranes
+	Bubble-point test: Appendix A of Schweitzer, p 2-89
+\end{frame}
+
+\begin{frame}\frametitle{Geometries and flow patterns}
+	Wankat p 537
+\end{frame}
+
+\begin{frame}\frametitle{Principles used to separate: DISCUSS THESE AS NEEDED, ie. when you are introducing microfiltration vs dialysis}
+	* Principle(s) used:
+	 - diffusion differences (different solubilities)
+	 - size differences
+	 - electric attraction
+\end{frame}
 
 
 
