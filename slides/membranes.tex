@@ -9,13 +9,43 @@
 % Application areas
 % Brain storming session: on a loose sheet of paper write bullet points \emph{or} draw a diagram \emph{or} describe ``what you know about membranes''
 
+\begin{frame}\frametitle{Membranes}
+	\begin{columns}[c]
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/flickr-2057883807_e05aceecb8_o.jpg}
+			\end{center}
+			\see{Flickr: 21182585@N07/2057883807}
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/flickr-ultrafiltration-3574729377_938b4ecaf7_b}
+			\end{center}
+			\see{Flickr: 21182585@N07/3574729377}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{References}
+	\begin{itemize}
+		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 20.
+		\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16.
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 2.1. % <---- very well written; use this reference more in future years
+		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 14.
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8.
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13.
+		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 11.
+		\item	Uhlmann's Encyclopedia, ``Membrane Separation Processes, 1. Principles'',  \href{http://dx.doi.org/10.1002/14356007.a16_187.pub3}{DOI:10.1002/14356007.a16\_187.pub3}
+		%* Membrane bioreactors: http://www.gewater.com/products/equipment/mf\_uf\_mbr/mbr.jsp
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Why use membranes?}
 	Some really difficult separations:
 	\begin{itemize}
 		\item	finely dispersed solids; density close to liquid phase; gelatinous particles
-		\item	dissolved salts
+		\item	dissolved salts must be removed
 		\item	non-volatile organics (e.g. \href{http://en.wikipedia.org/wiki/Humic_acid}{humic substances})
 		\item	biological materials: sensitive to the environment
+		\item	biological materials: aseptic operation is required
 			\begin{itemize}
 				\item	cannot centrifuge
 				\item	cannot sediment
@@ -51,7 +81,6 @@
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-module-Henk-Koops-talk.png}
 			\end{center}
-			\see{Henk Koops' slides, GE Water and Process Technologies}
 		\column{0.60\textwidth}
 			Modules:
 			\begin{itemize}
@@ -60,12 +89,13 @@
 				\item	can be expanded as needs grow
 			\end{itemize}
 	\end{columns}
+	\see{Henk Koops' slides, GE Water and Process Technologies}
 \end{frame}
 
 \begin{frame}\frametitle{Challenges in membrane design}
-	Challenges:
+	Challenges that still remain:
 	\begin{itemize}
-		\item	withstanding high pressure differences but still have thin membrane
+		\item	withstanding high pressure differences but still have a thin membrane
 		\item	dealing with fouling and cleaning
 		\item	increasing selectivity (separation factor) for specific application areas
 		\item	uniformity of pore sizes
@@ -123,7 +153,8 @@
 			\begin{itemize}
 				\item	$J$ = flux = $\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}$
 				\item	e.g. 42 $\text{mol.s}^{-1}\text{.m}^{-2}$
-				\item	never simplify the units: write 13 $\text{m}^3.\text{s}^{-1}\text{.m}^{-2}$
+				\item	never simplify the units: write 13 $\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}$
+				\item	you may, and probably should, omit the brackets: 13 $\text{m}^3.\text{s}^{-1}\text{.m}^{-2}$
 				\item	{\color{myRed}{do not write}} 13 $\text{m}\text{.s}^{-1}$
 			\end{itemize}
 		\column{0.35\textwidth}
@@ -166,7 +197,7 @@
 		\item	how long should we operate unit at constant \( \Delta P \) to achieve desired separation?
 		\item	what is the mass transfer coefficient through the lab membrane?
 		\item	what pressure drop (and therefore pump size) do I expect?
-		\item	how many cassettes does this application require?
+		\item	how many cassettes (area) does this application require?
 	\end{enumerate}
 \end{frame}
 
@@ -203,8 +234,8 @@
 				\item	conventional filters: not effective below $\sim 5$~\micron
 				\item	microfiltration membranes: generally symmetric pores
 				\item	\href{http://en.wikipedia.org/wiki/Polysulfone}{polysulfone} membrane
-				\item	porosity as high as $\epsilon = 0.8$
-				\item	driving force = $\Delta P$: 100 to 500 kPa % C+Rv2;5ed;p443
+				\item	(surface) porosity as high as $\epsilon = 0.8$
+				\item	driving force = ${\color{red}\Delta P}$: 100 to 500 kPa % C+Rv2;5ed;p443
 				\item	high fluxes at low {\color{purple}{TMP}} (trans-membrane pressure)
 				\item	application areas:
 					\begin{itemize}
@@ -220,37 +251,40 @@
 			\begin{center}
 				\includegraphics[width=0.95\textwidth]{\imagedir/separations/membranes/symmetric-pore-structure-Henk-Koops-talk.png}
 			\end{center}
-			\see{Henk Koops' slide}
+			\see{Henk Koops' slides}
 	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{General modelling equation applied}
-
+	\vspace{-12pt}
 	\begin{columns}[c]
 		\column{0.60\textwidth}
 			\[
 				\begin{array}{rl}
-					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_M + R_c L_c \right)} \\
+					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \dfrac{{\color{red}\Delta P}}{\mu \left(R_m \ell_M + R_c L_c \right)} \\
 					\\
-					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R'_c \right)}
+					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \dfrac{{\color{red}\Delta P}}{\mu \left(R'_m + R'_c \right)}
 				\end{array}
 			\]
 		\column{0.40\textwidth}
+			\vspace{-12pt}
 			\begin{center}
 				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/solute-build-up-CRv2-5ed-p446.png}
 			\end{center}
 	\end{columns}
+	
 	\vspace{-24pt}
 	\begin{tabular}{cll}
 		$J$			&	[$\text{kg}.\text{s}^{-1}\text{.m}^{-2}$] 				& permeate flux \\
 		$\mu$ 		&  	$[\text{kg}.\text{m}^{-1}\text{.s}^{-1}]$				& permeate viscosity\\
-		$\Delta P$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & TMP varies for different applications\\
+		${\color{red}\Delta P}$	&	$[\text{Pa}] = [\text{kg}.\text{m}^{-1}\text{.s}^{-2}]$ & TMP varies for different applications\\
 		$R_m$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through membrane (small)\\
 		$R_c$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through cake (large)\\
 		$\ell_m$ 	&   $[\text{m}]$											& membrane thickness\\
-		$L_c$ 		&   $[\text{m}]$											& effective cake thickness
+		$L_c$ 		&   $[\text{m}]$											& effective cake thickness\\
+		$\rho_f$ 	& 	$[\text{kg.m}^{-3}]$ 									& fluid density
 	\end{tabular}
-	\vspace{6pt}
+	\vspace{12pt}
 	\see{Illustration from Richardson and Harker, Ch8}
 \end{frame}
 
@@ -282,10 +316,10 @@
 				\item	main purpose?
 				\pause
 					\begin{itemize}
-						\item	\iftoggle{instructor}{microfiltration: tends to have cake build up}{}
-						\item	\iftoggle{instructor}{cross-flow induces shearing to erode cake}{}
-						\item	\iftoggle{instructor}{reduces cake resistance, $R'_c$}{}
-						\item	\iftoggle{instructor}{$\Delta P = \displaystyle \frac{P_\text{in} + P_\text{out}}{2} - P_\text{P}$}{}
+						\item	microfiltration: tends to have cake build up
+						\item	cross-flow induces shearing to erode cake
+						\item	reduces cake resistance, $R'_c$
+						\item	${\color{red}\Delta P} = \displaystyle \frac{P_\text{in} + P_\text{out}}{2} - P_\text{P}$
 					\end{itemize}
 			\end{itemize}
 	\end{columns}
@@ -343,6 +377,8 @@
 	\vspace{-12pt}
 	\see{Richardson and Harker, Ch8}
 \end{frame}
+
+\begin{comment}
 
 \begin{frame}\frametitle{A preliminary design}
 	\begin{exampleblock}{Main aim}
@@ -1187,21 +1223,6 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{References}
-	\begin{itemize}
-		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 20.
-		\item	Wankat, ``Separation Process Engineering'', 2nd edition, chapter 16.
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 2.1. % <---- very well written; use this reference more in future years
-		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 14.
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 8.
-		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 7 (theory) and chapter 13.
-		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 11.
-		\item	Uhlmann's Encyclopedia, ``Membrane Separation Processes, 1. Principles'',  \href{http://dx.doi.org/10.1002/14356007.a16_187.pub3}{DOI:10.1002/14356007.a16\_187.pub3}
-		%* Membrane bioreactors: http://www.gewater.com/products/equipment/mf\_uf\_mbr/mbr.jsp
-	\end{itemize}
-\end{frame}
-
-
 % \begin{frame}\frametitle{UF: continuous operation}
 % 	% eqn 20-84 Perry
 % \end{frame}
@@ -1271,15 +1292,15 @@
 	Very useful table
 \end{frame}
 
-\begin{frame}\frametitle{Making membrane}
-	% Perry: 20.4
-
-	Composition and Structure Commercial membranes consist primarily of polymers and some ceramics. Other membrane types include sintered metal, glass, and liquid film. Polymeric membranes are formed by precipitating a 5 to 25 wt \% casting solution (lacquer) into a film by solvent evaporation (air casting), liquid extraction (immersion casting), or cooling (melt casting or thermally induced phase separation). Membranes can be cast as flat sheets on a variety of supports or as fibers through a die. Ceramic membranes are formed by depositing successive layers of smaller and smaller inorganic particles on a monolith substrate, to create smaller and smaller interstices or “pores” between particles. These layers are then sintered below the melting point to create a rigid structure.
-
-	Membranes may be surface-modified to reduce fouling or improve chemical resistance. This can involve adding surface-modifying agents directly to the lacquer or modifying the cast membrane through chemical or physical treatment. Membranes can also be formed by selective etching or track-etching (radiation treatment followed by etching). Stretching is used to change pore morphology.
-
-	Liquid film membranes consist of immiscible solutions held in membrane supports by capillary forces. The chemical composition of these solutions is designed to enhance transport rates of selected components through them by solubility or coupled chemical reaction.
-\end{frame}
+% \begin{frame}\frametitle{Making membrane}
+% 	% Perry: 20.4
+%
+% 	Composition and Structure Commercial membranes consist primarily of polymers and some ceramics. Other membrane types include sintered metal, glass, and liquid film. Polymeric membranes are formed by precipitating a 5 to 25 wt \% casting solution (lacquer) into a film by solvent evaporation (air casting), liquid extraction (immersion casting), or cooling (melt casting or thermally induced phase separation). Membranes can be cast as flat sheets on a variety of supports or as fibers through a die. Ceramic membranes are formed by depositing successive layers of smaller and smaller inorganic particles on a monolith substrate, to create smaller and smaller interstices or “pores” between particles. These layers are then sintered below the melting point to create a rigid structure.
+%
+% 	Membranes may be surface-modified to reduce fouling or improve chemical resistance. This can involve adding surface-modifying agents directly to the lacquer or modifying the cast membrane through chemical or physical treatment. Membranes can also be formed by selective etching or track-etching (radiation treatment followed by etching). Stretching is used to change pore morphology.
+%
+% 	Liquid film membranes consist of immiscible solutions held in membrane supports by capillary forces. The chemical composition of these solutions is designed to enhance transport rates of selected components through them by solubility or coupled chemical reaction.
+% \end{frame}
 
 %Geankop: Fig 7.1.3
 %Why have sweep: increase $k_c2$ coefficient
@@ -1326,5 +1347,5 @@
 \end{frame}
 
 
-
+\end{comment}
 
