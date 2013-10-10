@@ -246,9 +246,17 @@
 		\item	how many cassettes (area) does this application require?
 	\end{enumerate}
 	
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/ide-tech.com-1D13_0-low-res.jpg}
-	\end{center}
+	\begin{columns}[t]
+		\column{0.35\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/membrane-cartridge-CEP-article-April-2013-Wang-Zhou.jpg}
+			\end{center}
+			
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/membranes/ide-tech.com-1D13_0-low-res.jpg}
+			\end{center}
+	\end{columns}	
 \end{frame}
 
 \begin{frame}\frametitle{The general equation}
@@ -268,7 +276,7 @@
 		\item	 $\text{\color{purple}{permeance}} = \dfrac{\text{\color{purple}{permeability}}}{L} = \dfrac{1}{\text{\color{purple}{resistance}}} = \dfrac{1}{R} = \text{{\color{purple}{\tiny ``mass transfer coeff''}}}$
 		\item	permeance: easier to measure
 		\item	permeance units: depend on choice of (driving force) and $J$
-		\item	resistance = $f(\text{thickness, viscosity, porosity, pore size})$
+		\item	resistance = $f(\text{thickness $L$, viscosity, porosity, pore size})$
 		\item	we will specifically define resistance in each case
 	\end{itemize}
 \end{frame}
@@ -278,7 +286,7 @@
 		\column{0.65\textwidth}
 			\vspace{-20pt}
 			\begin{itemize}
-				\item	0.1 \micron ~to 10 \micron ~retained mainly by sieving mechanism
+				\item	0.1\micron \,\,to 10\micron\, pores: sieving mechanism % Uhlmann, p 433, Membranes and Membrane Separation Processes, 1. Principles
 				\item	conventional filters: not effective below $\sim 5$~\micron
 				\item	microfiltration membranes: generally symmetric pores
 				\item	\href{http://en.wikipedia.org/wiki/Polysulfone}{polysulfone} membrane
@@ -297,7 +305,7 @@
 			% no more text allowed
 			
 		\column{0.40\textwidth}
-			\vspace{-48pt}
+			\vspace{-45pt}
 			\begin{center}
 				\includegraphics[width=0.85\textwidth]{\imagedir/separations/membranes/pore-structure-Henk-Koops-talk.png}
 			\end{center}
@@ -410,17 +418,20 @@
 
 \begin{frame}\frametitle{Cross-flow flowsheet}
 	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/flowsheet-for-microfiltration-CRv2-5ed-p444.png}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/membranes/flowsheet-for-microfiltration-CRv2-5ed-p444.png}
 	\end{center}
-
-	\vspace{-12pt}
+	\vspace{-16pt}
+	\see{Illustration from Richardson and Harker, Ch8}
+	
+	
 	How to pressurize the unit?
 	\begin{enumerate}
 		\item	\small Supply feed at pressure; valve at retentate to adjust/control $\Delta P$
 		\item	Draw a vacuum at permeate and pull material through membrane
 	\end{enumerate}
+	\emph{Question}: why recycle the retentate stream?
 	% Also see Ghosh: p 212
-	\see{Illustration from Richardson and Harker, Ch8}
+	
 \end{frame}
 
 \begin{frame}\frametitle{Dealing with fouling}
@@ -438,31 +449,6 @@
 	\see{Richardson and Harker, Ch8}
 \end{frame}
 
-% \begin{frame}\frametitle{A preliminary design}
-% 	\begin{exampleblock}{Main aim}
-% 		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of permeate.
-% 	\end{exampleblock}
-% 	We have a reasonable budget to purchase equipment, and membrane samples from suppliers.
-% 
-% 	\vspace{12pt}
-% 	How would you set up your lab experiment(s) to get the information required?
-% 	\pause
-% 	\begin{itemize}
-% 		\item	$J = \displaystyle \rho_f	 \frac{Q_p}{A} = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$
-% 
-% 		\vspace{6pt}
-% 		\item	$R'_m$: estimated using pure solvent through membrane at $\Delta P$
-% 
-% 		\vspace{6pt}
-% 		\item	$R'_c$: obtained from plots of $V$ against $t$ at a fixed $\Delta P_i$
-% 			\begin{itemize}
-% 				\item	as we saw in {\color{myOrange}Filtration} section we can estimate $R_c$
-% 				\item	vary 
-% 				find $J_i$ (interpolate) that gives required $Q_p$ by varying $A$
-% 			\end{itemize}
-% 	\end{itemize}
-% \end{frame}
-
 \begin{frame}\frametitle{Factors to improve flux}
 	\begin{itemize}
 		\item	increase pressure difference
@@ -475,22 +461,44 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Pop-quiz question}
+\begin{frame}\frametitle{Question}
 	A microfiltration membrane operating with pure feed of water produces a flux of 0.06 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ when operated with a TMP of 150 kPa.
 
 	\begin{enumerate}
 		\item	What is the resistance due to the membrane? Specify the units.
 		\item	If operated with a protein-water mixture at a 200 kPa pressure difference, a flux of $0.0216~\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ is measured at steady state. What is the resistance due to cake build-up? Specify the units.
+		\item	Next, \emph{estimate} the pressure drop required to achieve a flux of $0.035~\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ {\color{myOrange} \scriptsize [\emph{Ans} $\sim 325$ kPa]}.
 	\end{enumerate}
+	\textbf{To consider}: are we likely to achieve fluxes of $0.1~\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ with this membrane? If not, how could we?
+	
+	% Part 1
+	% ------
+	% J = 0.06 kg/s/m2
+	% dP = 150000 Pa
+	% mu = 0.001 Pa.s
+	% R'_m = dP / (mu x J) = 150000/(0.001 x 0.06) = 2.5 x 10^9 m^2/kg
+	%
+	% Part 2
+	% ------
+	% J = 0.0216 kg/s/m2
+	% dP = 200000 Pa
+	% R'_c = dP / (mu x J) - R'_m = 200000/(0.001 x 0.0216) - 2.5 x 10^9 = 6.8 x 10^9 m^2/kg
+	%
+	% Part 3
+	% ------
+	% dP = (J)(mu)(R'_m + R'_c) = (0.035)(0.001)(2.5E9 + 6.8E9) = 325 kPa
+	% 
+	% Part 4: No, we would need a TMP of around 930 kPa, much higher than normally found for these types of membranes. Run membranes at lower pressure, in parallel (increase surface area).
+	
 \end{frame}
 
 \begin{frame}\frametitle{A \textbf{very crude} estimate of the membrane resistance, $R'_m$}
 	\begin{itemize}
 		\item	Assume the pores are cylinders of diameter $D$ with length $\ell_M$
-		\item	The velocity in this tube is \[v = \dfrac{(D^2)(\Delta P)}{32 \mu \ell_M} \qquad \qquad \text{Hagen-Poiseulle}\]
+		\item	The velocity in this tube \textbf{for pure solvent} is \[v = \dfrac{(D^2)(\Delta P)}{32 \mu \ell_M} \qquad \qquad \text{Hagen-Poiseulle}\]
 		\item	Consider a $1~\text{m}^2$ surface of tube pore openings, where $\epsilon$ is the fraction of pore openings of diameter $D$
-		\item	The total flux of material through all pores is \[J = v\, \rho_f\, \epsilon = \dfrac{(D^2)(\Delta P)}{32 \mu \ell_M}\, \rho_f\, \epsilon = \dfrac{\Delta P}{\mu {\color{myOrange}\left(\dfrac{32 \,\ell_M}{\rho_f D^2 \,\epsilon } \right)}} = \dfrac{\Delta P}{\mu \, {\color{myOrange}R'_m}}\] % Seider, p 509, 510
-		\item	\emph{\textbf{Note}}: true pores are of different sizes, they are not straight through the membrane, they bend and twist
+		\item	The total flux of solvent through all pores is \[J = v\, \rho_f\, \epsilon = \dfrac{(D^2)(\Delta P)}{32 \mu \ell_M}\, \rho_f\, \epsilon = \dfrac{\Delta P}{\mu {\color{myOrange}\left(\dfrac{32 \,\ell_M}{\rho_f D^2 \,\epsilon } \right)}} = \dfrac{\Delta P}{\mu \, {\color{myOrange}R'_m}}\] % Seider, p 509, 510
+		\item	\emph{\textbf{Note}}: true pores are of different sizes, they are not straight through the membrane; they bend and twist
 		\item	\emph{\textbf{Note}}: this $R'_m$ will always be too low 
 	\end{itemize}
 \end{frame}
@@ -533,10 +541,10 @@
 					\item	1 {\color{purple}kilodalton} = 1000 dalton = 1000~g/mol
 					\item	particles with lower molecular weight, e.g. most solvents, pass through
 				\end{itemize}
-				\item	pore sizes: 1 to 20nm
+				\item	pore sizes: 1 to 20nm  % Uhlmann, has 2 to 10nm
 				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,500 \text{~L}\text{.m}^{-2}.\text{hr}^{-1}$ ({\color{purple}{LMH}}) % C+R v2, 5ed reports 0.01 to 0.2
 				\item	asymmetric structure
-				\item	almost always operated in {\color{purple}{TFF}}
+				\item	almost always operated in {\color{purple}{TFF}} (cross-flow filtration)
 			\end{itemize}
 			% no more text allowed
 		\column{0.40\textwidth}
@@ -556,9 +564,9 @@
 		\item	Fine colloidal particles: e.g. paint/dyes
 		\item	Large molecules of interest might remain in retentate; permeate discarded
 		\item	e.g. albumin (egg white) concentration
-		\item	e.g whey processing: %Green book chapter
+		\item	e.g whey processing (liquid ``waste'' after cheese-making): %Green book chapter, "Lacey--Membrane Separation-CE-article.pdf"
 		\begin{itemize}
-			\item	UF first, followed by reverse osmosis (RO)
+			\item	centrifuge $\longrightarrow$ UF $\longrightarrow$ reverse osmosis (RO)
 			\item	valuable proteins retained by UF
 			\item	permeate sent to RO to concentrate smaller molecule sugars and salts
 			\item	that RO concentrated permeate: used for ethanol and lactic acid production
