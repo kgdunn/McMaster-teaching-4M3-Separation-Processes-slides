@@ -6,9 +6,14 @@
 
 % Investigate http://arstechnica.com/science/2013/09/microbial-battery-could-turn-wastewater-into-electricity/
 
-% How they are made?
-% What do they look like
-% Application areas
+
+% Artificial lungs? 
+% Use of membranes as interfaced with the human body, e.g. dialysis: what is being separated here (waste solids vs cells: based on size exclusion?)
+% Life expectancy
+% Captial cost
+% Thickness
+
+
 
 % 08 October 2013
 
@@ -110,6 +115,8 @@
 			\item	ambient temperature operation
 		\end{itemize}
 		\item	often easier to operate and control
+		\item	more compact  % Seader, p 502/3
+		\item	lower capital cost than alternatives % Seader, p 502/3
 	\end{itemize}
 
 	\begin{columns}[c]
@@ -137,6 +144,9 @@
 		\item	uniformity of pore sizes
 		\item	temperature stability (e.g. steam sterilization)
 	\end{itemize}
+	
+	\vspace{12pt}
+	{\color{myOrange}Membrane manufacture is a complex area: very fruitful area for polymer engineers}
 \end{frame}
 
 \begin{frame}\frametitle{Market size}
@@ -166,14 +176,14 @@
 	{\color{purple}{energy separating agent}}: the applied pressure (pressure drop)
 
 	\vspace{12pt}
-	{\color{purple}{porosity}} = $\displaystyle \frac{\text{area of open pores}}{\text{total surface area}}$
+	{\color{purple}{porosity}} = $\dfrac{\text{area of open pores}}{\text{total surface area}}$
 		%\item	permeate: the material passing through the membrane from feed to outlet side
 		%\item	retentate: the material retained on the feed-side of the membrane
 		%\item	solute: most often retained on the inside (feed side) of the membrane and deposited on the membrane wall
 		%\item	solvent: the liquid phase that carries the solute
 		%\item	gel effect / buildup: the solute will build up on the membrane wall and form a gel
 		%\item	kilodalton
-		%\item	MWCO: C+Rv2ed5, p 440 and 441: A parameter often quoted in manufacturer’s literature is the nominal molecular weight cut-off (MWCO) of a membrane. This is based on studies of how solute molecules are rejected by membranes. A solute will pass through a membrane if it is sufficiently small to pass through a pore, if it does not significantly interact with the membrane and if it does not interact with other, larger solutes. It is possible to define a solute rejection coefficient R by: R = 1 − (C_p/C_f ) where C_f is the concentration of solute in the feed stream and C_p is the concentration of solute in the permeate. See fig 8.3 in C+Rv2ed5
+		%\item	MWCO: C+Rv2ed5, p 440 and 441: A parameter often quoted in manufacturer’s literature is the nominal molecular weight cut-off (MWCO) of a membrane. This is based on studies of how solute molecules are rejected by membranes. A solute will pass through a membrane if it is sufficiently small to pass through a pore, if it does not significantly interact with the membrane and if it does not interact with other, larger solutes. It is possible to define a solute rejection coefficient R by: R = 1 − (C_p/C_b ) where C_b is the concentration of solute in the feed stream and C_p is the concentration of solute in the permeate. See fig 8.3 in C+Rv2ed5
 		%\item	Pervaporation
 		%\item	Reverse osmosis
 \end{frame}
@@ -187,7 +197,7 @@
 	\begin{columns}[t]
 		\column{0.80\textwidth}
 			\begin{itemize}
-				\item	$J$ = flux = $\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}$
+				\item	$J$ = flux = $\dfrac{\text{transfer rate}}{\text{transfer area}}$
 				\item	e.g. 42 $\text{mol.s}^{-1}\text{.m}^{-2}$
 				\item	never simplify the units: write 13 $\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}$
 				\item	you may, and probably should, omit the brackets: 13 $\text{m}^3.\text{s}^{-1}\text{.m}^{-2}$
@@ -244,7 +254,7 @@
 \begin{frame}\frametitle{The general equation}
 	\begin{exampleblock}{}
 		\[
-			\displaystyle \frac{\text{transfer rate}}{\text{transfer area}}  = \text{flux} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle \frac{\text{driving force}}{\text{resistance}}
+			\dfrac{\text{transfer rate}}{\text{transfer area}}  = \text{flux} = \dfrac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \dfrac{\text{driving force}}{\text{resistance}}
 		\]
 	\end{exampleblock}
 
@@ -252,16 +262,15 @@
 	\vfill
 	{\color{myOrange}{Symbolically:}}
 	\[
-		\displaystyle \rho_f\frac{Q_p}{A} = \displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \displaystyle \frac{(\text{permeability})(\text{driving force})}{L} = \displaystyle \frac{\text{driving force}}{R}
+		 \rho_f\dfrac{Q_p}{A} = \dfrac{\rho_f}{A}\cdot\frac{dV}{dt} =  J = \dfrac{(\text{permeability})(\text{driving force})}{L} = \dfrac{\text{driving force}}{R}
 	\]
 	\begin{itemize}
-		\item	 $\text{\color{purple}{permeance}} = \displaystyle \frac{\text{\color{purple}{permeability}}}{L} = \displaystyle \frac{1}{\text{\color{purple}{resistance}}} = \displaystyle \frac{1}{R} = \text{{\color{purple}{\tiny ``mass transfer coeff''}}}$
+		\item	 $\text{\color{purple}{permeance}} = \dfrac{\text{\color{purple}{permeability}}}{L} = \dfrac{1}{\text{\color{purple}{resistance}}} = \dfrac{1}{R} = \text{{\color{purple}{\tiny ``mass transfer coeff''}}}$
 		\item	permeance: easier to measure
 		\item	permeance units: depend on choice of (driving force) and $J$
 		\item	resistance = $f(\text{thickness, viscosity, porosity, pore size})$
 		\item	we will specifically define resistance in each case
 	\end{itemize}
-
 \end{frame}
 
 \begin{frame}\frametitle{Microfiltration}
@@ -286,9 +295,11 @@
 					\end{itemize}
 			\end{itemize}
 			% no more text allowed
+			
 		\column{0.40\textwidth}
+			\vspace{-48pt}
 			\begin{center}
-				\includegraphics[width=0.95\textwidth]{\imagedir/separations/membranes/symmetric-pore-structure-Henk-Koops-talk.png}
+				\includegraphics[width=0.85\textwidth]{\imagedir/separations/membranes/pore-structure-Henk-Koops-talk.png}
 			\end{center}
 			\see{Henk Koops' slides}
 	\end{columns}
@@ -300,9 +311,9 @@
 		\column{0.60\textwidth}
 			\[
 				\begin{array}{rl}
-					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \dfrac{{\color{red}\Delta P}}{\mu \left(R_m \ell_M + R_c L_c \right)} \\
+					\dfrac{\rho_f}{A}\cdot\dfrac{dV}{dt} = \text{Flux} &= J = \dfrac{{\color{red}\Delta P}}{\mu \left(R_m \ell_M + R_c L_c \right)} \\
 					\\
-					\displaystyle\frac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \dfrac{{\color{red}\Delta P}}{\mu \left(R'_m + R'_c \right)}
+					\dfrac{\rho_f}{A}\cdot\frac{dV}{dt} = \text{Flux} &= J = \dfrac{{\color{red}\Delta P}}{\mu \left(R'_m + R'_c \right)}
 				\end{array}
 			\]
 		\column{0.40\textwidth}
@@ -321,12 +332,14 @@
 		$R_c$ 		&  	$[\text{m}.\text{kg}^{-1}]$								& resistance through cake (large)\\
 		$\ell_m$ 	&   $[\text{m}]$											& membrane thickness\\
 		$L_c$ 		&   $[\text{m}]$											& effective cake thickness\\
-		$\rho_f$ 	& 	$[\text{kg.m}^{-3}]$ 									& fluid density
+		$\rho_f$ 	& 	$[\text{kg.m}^{-3}]$ 									& fluid density\\
+		$R'_c$ 		&  	$[\text{m}^2.\text{kg}^{-1}]$							& ``cake resistance''
 	\end{tabular}
 	\vspace{12pt}
 	\see{Illustration from Richardson and Harker, Ch8}
 \end{frame}
 
+% 10 October 2013
 \begin{frame}\frametitle{Flow patterns for microfiltration}
 	\begin{columns}[t]
 		\column{0.40\textwidth}
@@ -341,7 +354,7 @@
 			\end{itemize}
 			\begin{exampleblock}{}
 					\[
-						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)}
+						J = \dfrac{\Delta P}{\mu \left(R'_m + R_c L_c\right)}
 					\]
 			\end{exampleblock}
 
@@ -356,9 +369,10 @@
 				\pause
 					\begin{itemize}
 						\item	microfiltration: tends to have cake build up
-						\item	cross-flow induces shearing to erode cake
+						\item	induces shearing to erode cake
+						\item	mobile slurry for downstream  % C+R v2, 5ed, p 443
 						\item	reduces cake resistance, $R'_c$
-						\item	${\color{red}\Delta P} = \displaystyle \frac{P_\text{in} + P_\text{out}}{2} - P_\text{P}$
+						\item	${\color{red}\Delta P} = \dfrac{P_\text{in} + P_\text{out}}{2} - P_\text{P}$
 					\end{itemize}
 			\end{itemize}
 	\end{columns}
@@ -376,7 +390,7 @@
 			\vspace{12pt}
 			\begin{exampleblock}{}
 					\[
-						J = \displaystyle \frac{\Delta P}{\mu \left(R'_m + R_c L_c\right)}
+						J = \dfrac{\Delta P}{\mu \left(R'_m + R_c L_c\right)}
 					\]
 			\end{exampleblock}
 		\column{0.60\textwidth}
@@ -411,37 +425,43 @@
 
 \begin{frame}\frametitle{Dealing with fouling}
 	\begin{center}
-		\includegraphics[width=0.85\textwidth]{\imagedir/separations/membranes/cross-flow-patters-CRv2-5ed-p444.png}
+		\includegraphics[width=0.7\textwidth]{\imagedir/separations/membranes/cross-flow-patters-CRv2-5ed-p444.png}
 	\end{center}
 	\vspace{-12pt}
+	\renewcommand{\theenumi}{\alph{enumi}}
+	\begin{enumerate}
+		\item	slow cross-flow velocity
+		\item	high cross-flow velocity
+		\item	high cross-flow with regular backwashing
+	\end{enumerate}
+	\vspace{-6pt}
 	\see{Richardson and Harker, Ch8}
 \end{frame}
 
-\begin{comment}
-
-\begin{frame}\frametitle{A preliminary design}
-	\begin{exampleblock}{Main aim}
-		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of permeate.
-	\end{exampleblock}
-	We have a reasonable budget to purchase equipment, and membrane samples from suppliers.
-
-	\vspace{12pt}
-	How would you set up your lab experiment(s) to get the information required?
-	\pause
-	\begin{itemize}
-		\item	\iftoggle{instructor}{$J = \displaystyle \rho_f	 \frac{Q_p}{A} = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$}{}
-
-		\vspace{6pt}
-		\item	\iftoggle{instructor}{$R'_m$: estimated using pure solvent through membrane at $\Delta P$}{}
-
-		\vspace{6pt}
-		\item	\iftoggle{instructor}{$R'_c = R_c L_c$: obtained from a plot of $J_i$ vs $\Delta P_i$}{}
-			\iftoggle{instructor}{\begin{itemize}
-				\item	set different $\Delta P_i$; then measure corresponding $J_i$ once steady
-				\item	find $J_i$ (interpolate) that gives required $Q_p$ by varying $A$
-			\end{itemize}}{}
-	\end{itemize}
-\end{frame}
+% \begin{frame}\frametitle{A preliminary design}
+% 	\begin{exampleblock}{Main aim}
+% 		Determine the \textbf{size} of a membrane for a required \textbf{flow rate} of permeate.
+% 	\end{exampleblock}
+% 	We have a reasonable budget to purchase equipment, and membrane samples from suppliers.
+% 
+% 	\vspace{12pt}
+% 	How would you set up your lab experiment(s) to get the information required?
+% 	\pause
+% 	\begin{itemize}
+% 		\item	$J = \displaystyle \rho_f	 \frac{Q_p}{A} = \displaystyle \frac{\Delta P}{\mu \left(R_m \ell_m + R_c L_c\right)} = \frac{\Delta P}{\mu \left(R'_m + R'_c\right)}$
+% 
+% 		\vspace{6pt}
+% 		\item	$R'_m$: estimated using pure solvent through membrane at $\Delta P$
+% 
+% 		\vspace{6pt}
+% 		\item	$R'_c$: obtained from plots of $V$ against $t$ at a fixed $\Delta P_i$
+% 			\begin{itemize}
+% 				\item	as we saw in {\color{myOrange}Filtration} section we can estimate $R_c$
+% 				\item	vary 
+% 				find $J_i$ (interpolate) that gives required $Q_p$ by varying $A$
+% 			\end{itemize}
+% 	\end{itemize}
+% \end{frame}
 
 \begin{frame}\frametitle{Factors to improve flux}
 	\begin{itemize}
@@ -455,49 +475,52 @@
 	\end{itemize}
 \end{frame}
 
-% 05 October 2012: course evaluation; in-class pop-quiz and the example to end microfiltration
 \begin{frame}\frametitle{Pop-quiz question}
-	A microfiltration membrane operating with pure feed of water produces a flux of 0.06 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ when operated with a TMP of 30 kPa.
+	A microfiltration membrane operating with pure feed of water produces a flux of 0.06 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ when operated with a TMP of 150 kPa.
 
 	\begin{enumerate}
 		\item	What is the resistance due to the membrane? Specify the units.
-		\item	If operated with a protein-water mixture at a 20 kPa pressure difference, a flux of $216 \times 10^{-6}$ $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ is measured at steady state. What is the resistance due to cake build-up? Specify the units.
+		\item	If operated with a protein-water mixture at a 200 kPa pressure difference, a flux of $0.0216~\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ is measured at steady state. What is the resistance due to cake build-up? Specify the units.
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
+\begin{frame}\frametitle{A \textbf{very crude} estimate of the membrane resistance, $R'_m$}
 	\begin{itemize}
-		\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
-		\item	$R_{c,v} = R_{c} \cdot \rho_f$ and similarly $R_{m,v} = R_{m} \cdot \rho_f$
-		\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $\left[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}\right]$
-		\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$
-		\item	$\epsilon$ = porosity of the cake
-		\item	$D_p$ = \href{http://en.wikipedia.org/wiki/Sauter_mean_diameter}{Sauter mean particle diameter} [m]
-		\item	$L_c$ = estimated cake thickness [m]
-		\item	$R'_{c,v}$ has units of $[\text{m}^{-1}]$
-		\item	$R_{c,v}$ has units of $[\text{m}^{-2}]$
+		\item	Assume the pores are cylinders of diameter $D$ with length $\ell_M$
+		\item	The velocity in this tube is \[v = \dfrac{(D^2)(\Delta P)}{32 \mu \ell_M} \qquad \qquad \text{Hagen-Poiseulle}\]
+		\item	Consider a $1~\text{m}^2$ surface of tube pore openings, where $\epsilon$ is the fraction of pore openings of diameter $D$
+		\item	The total flux of material through all pores is \[J = v\, \rho_f\, \epsilon = \dfrac{(D^2)(\Delta P)}{32 \mu \ell_M}\, \rho_f\, \epsilon = \dfrac{\Delta P}{\mu {\color{myOrange}\left(\dfrac{32 \,\ell_M}{\rho_f D^2 \,\epsilon } \right)}} = \dfrac{\Delta P}{\mu \, {\color{myOrange}R'_m}}\] % Seider, p 509, 510
+		\item	\emph{\textbf{Note}}: true pores are of different sizes, they are not straight through the membrane, they bend and twist
+		\item	\emph{\textbf{Note}}: this $R'_m$ will always be too low 
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Microfiltration example}
-	The previous lab experiment to determine mass-transfer resistance is preferred. But we can estimate it.
-	\vspace{12pt}
-	\begin{exampleblock}{Water microfiltration}
-		\begin{itemize}
-			\item	Constant $\Delta P = 50\text{kPa}$ applied in cross-flow membrane set up
-			\item	Membrane area = 50cm$^2$ = 0.005m$^2$
-			\item	Pure water at this $\Delta P$ produced a flux of 1.0 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$
-			\item	Feed at this same TMP produced a flux of 0.065 $\text{kg}.\text{s}^{-1}\text{.m}^{-2}$ permeate
-			%\item	Cake porosity estimated at $\epsilon = 0.55$ for particles of $D_p$ = 2\micron
-			\item	What is the estimated thickness of the cake build-up if the average particle size diameter is 2\micron?
-		\end{itemize}
-	\end{exampleblock}
-	\vfill
-	Practical use of this example?
+\begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
+	Exactly the same approach as we saw in the filtration section:
+	\begin{enumerate}
+		\item	Measure $V$ (volume of permeate) against time $t$ at a constant and known $\Delta P$
+		\begin{center}
+			\includegraphics[width=0.7\textwidth]{\imagedir/separations/membranes/filtrate-volume-against-time.png}
+		\end{center}
+		\item	The slope is related to $\alpha$, the specific cake resistance $[\text{m.kg}^{-1}]$ (\emph{we defined this in the filtration section})
+		\item	${\color{myOrange}R'_c(t) = \dfrac{\alpha C_S }{\rho_f A} V(t)}$ will increase over time
+	\end{enumerate}
+	% \begin{itemize}
+	% 	\item	$R'_{c,v} = R_{c,v} L_c = R_{c,v} \displaystyle\frac{V_\text{cake}}{A_\text{membrane}}$
+	% 	\item	$R_{c,v} = R_{c} \cdot \rho_f$ and similarly $R_{m,v} = R_{m} \cdot \rho_f$
+	% 	\item	\textbf{Important note}: $R'_{c,v}$ emphasizes that this is a resistance only when $J_v = \displaystyle\frac{J}{\rho_f}$, which has units $\left[\left(\text{m}^3.\text{s}^{-1}\right)\text{.m}^{-2}\right]$
+	% 	
+	% 	\todo{Where is Carman equation from?}
+	% 	
+	% 	\item	Carman relationship: $R_{c,v} = 180 \left( \displaystyle \frac{1-e}{e^3} \right)\left(\displaystyle \frac{1}{D_p^2} \right)$
+	% 	\item	$\epsilon$ = porosity of the cake
+	% 	\item	$D_p$ = \href{http://en.wikipedia.org/wiki/Sauter_mean_diameter}{Sauter mean particle diameter} [m]
+	% 	\item	$L_c$ = estimated cake thickness [m]
+	% 	\item	$R'_{c,v}$ has units of $[\text{m}^{-1}]$
+	% 	\item	$R_{c,v}$ has units of $[\text{m}^{-2}]$
+	% \end{itemize}
 \end{frame}
 
-% 09 October 2012: UF and nano-filtration
-% Delayed: covered assignment 3 solutions and course evaluation feedback in the class
 \begin{frame}\frametitle{Ultrafiltration (UF)}
 	\begin{columns}[c]
 		\column{0.65\textwidth}
@@ -507,11 +530,11 @@
 				\item	1 to 1000 kDa particles are retained (move to using molecular weight)
 				\begin{itemize}
 					\item	1 dalton = 1 atomic mass unit
-					\item	1 kilodalton = 1000 dalton = 1000~g/mol
+					\item	1 {\color{purple}kilodalton} = 1000 dalton = 1000~g/mol
 					\item	particles with lower molecular weight, e.g. most solvents, pass through
 				\end{itemize}
 				\item	pore sizes: 1 to 20nm
-				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,50 \text{~L}\text{.m}^{-2}.\text{hr}^{-1}$ ({\color{purple}{LMH}})
+				\item	typical fluxes: $J_v = 0.01 \text{~to~} 0.5 \text{~m}^3\text{.m}^{-2}.\text{hr}^{-1}$\\$J_v = ~~\,10 \text{~to~} \,500 \text{~L}\text{.m}^{-2}.\text{hr}^{-1}$ ({\color{purple}{LMH}}) % C+R v2, 5ed reports 0.01 to 0.2
 				\item	asymmetric structure
 				\item	almost always operated in {\color{purple}{TFF}}
 			\end{itemize}
@@ -538,17 +561,30 @@
 			\item	UF first, followed by reverse osmosis (RO)
 			\item	valuable proteins retained by UF
 			\item	permeate sent to RO to concentrate smaller molecule sugars and salts
-			\item	this concentrated permeate: used for ethanol and lactic acid production
+			\item	that RO concentrated permeate: used for ethanol and lactic acid production
 		\end{itemize}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{More terminology}
+	\begin{itemize}
+		\item	{\color{purple}permeate}: the material passing through the membrane from feed to outlet side
+		\item	{\color{purple}retentate}: the material retained on the feed-side of the membrane
+		\item	{\color{purple}solute}: most often retained on the inside (feed side) of the membrane and deposited on the membrane wall
+		\item	{\color{purple}solvent}: the liquid phase that carries the solute
+		\item	{\color{purple}gel effect}: buildup of the solute on the membrane wall to form a high concentration gradient ``gel''
+		%\item	MWCO: C+Rv2ed5, p 440 and 441: A parameter often quoted in manufacturer’s literature is the nominal molecular weight cut-off (MWCO) of a membrane. This is based on studies of how solute molecules are rejected by membranes. A solute will pass through a membrane if it is sufficiently small to pass through a pore, if it does not significantly interact with the membrane and if it does not interact with other, larger solutes. It is possible to define a solute rejection coefficient R by: R = 1 − (C_p/C_f ) where C_f is the concentration of solute in the feed stream and C_p is the concentration of solute in the permeate. See fig 8.3 in C+Rv2ed5
+		
+	\end{itemize}
+	
 \end{frame}
 
 \begin{frame}\frametitle{Ultrafiltration (UF)}
 
 	\begin{itemize}
-		\item	driving force = $\Delta P$ of 0.1 to 1.0 MPa % Perry and C+Rv2
+		\item	driving force = $\Delta P$ of 0.1 to 1.0 MPa % Perry; C+Rv2 5ed, p 446 report up to 0.7 MPa
 		\item	``tight'', low-permeability side faces the TFF to retain particles
-		\item	this skin layer is about 10\micron~ thick; provides selectivity
+		\item	this skin layer is about 10\micron\, thick; provides {\color{purple}selectivity}, $S$
 		\item	open, high-permeability side mainly for mechanical strength % Perrys
 	\end{itemize}
 
@@ -563,9 +599,9 @@
 			\see{Richardson and Harker, Ch8}
 		\column{0.30\textwidth}
 
-			$R = 1 -\displaystyle \frac{C_\text{permeate}}{C_\text{feed}}$
+			$R = 1 -\dfrac{C_\text{permeate}}{C_\text{feed}}$
 
-			$R = 1- \displaystyle \frac{C_p}{C_f} = 1 -S$
+			$R = 1- \dfrac{C_p}{C_f} = 1 -S$
 
 			\vspace{12pt}
 			{\color{purple}{MWCO}}: molecular weight where $R=0.9$
@@ -578,11 +614,11 @@
 \begin{frame}\frametitle{Transport phenomena in UF}
 	\begin{itemize}
 		\item	solute (i.e. particles) carried towards membrane by solvent
-		\item	$J = \displaystyle\frac{\Delta P}{R_m + R_{cp}}$
+		\item	$J = \dfrac{\Delta P}{R_m + R_{cp}}$
 		\item	$R_m$ = membrane resistance [$\text{m.s}^{-1}$ if $J$ is mass flux]
 		\item	$R_{cp}$ = resistance due to ``concentration polarization''
 		\item	$R_{cp}$ effectively is the resistance due to solute boundary layer
-		\item	Mass concentration $C_f$ (in retentate), steadily increasing to $C_w$ (wall)
+		\item	Mass concentration $C_b$ (in bulk), steadily increasing to $C_w$ (wall)
 		\item	Units of $C$ are kg solute per m$^3$ solvent
 	\end{itemize}
 	\begin{center}
@@ -608,39 +644,38 @@
 	\see{Chemical Engineering Magazine, 8 May 1978}
 \end{frame}
 
-% 11 October 2012: UF and nano-filtration
 \begin{frame}\frametitle{Transport phenomena in UF}
 	\begin{itemize}
-		\item	Solute flux towards membrane: $\displaystyle \frac{J\cdot C}{\rho_f} = J_v C$
+		\item	\textbf{Solute} flux towards membrane: $\dfrac{J}{\rho_f}\cdot C = J_v C$
 		\\
-		\item	Solute flux out of membrane: $J_v C_\text{permeate} \approx 0$  {\tiny if membrane retains solute}
+		\item	\textbf{Solute} flux out of membrane (leakage): $J_v C_\text{permeate} \approx 0$ 
 	\end{itemize}
 	\begin{exampleblock}{}
-		Net transport of solute = $J(C - C_p)$
+		Net transport of solute = $J_v(C - C_p)$
 	\end{exampleblock}
 
 	\begin{tabular}{cll}
-		$J_v$		&	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& permeate volumetric flux \\
-		$C$ 		&  	$\left[\displaystyle\frac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration in bulk\\
-		$C_p \approx 0$ &  	$\left[\displaystyle\frac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration in permeate\\
+		$J_v$		&	$\left[\dfrac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& volumetric flux of the permeate \\
+		$C$ 		&  	$\left[\dfrac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration at a given point\\
+		$J_v C$ 	&  	$\left[\dfrac{\text{kg} \text{~solute}}{\text{m}^2 \text{.s}}\right]$ & \textbf{solute} mass flux towards membrane\\
+		$C_p \approx 0$ &  	$\left[\dfrac{\text{kg} \text{~solute}}{\text{m}^3 \text{~solvent}}\right]$	& solute mass concentration in permeate\\
 	\end{tabular}
 	\vfill
-	{\tiny Space for picture}
 \end{frame}
 
 \begin{frame}\frametitle{Diffusion term}
 	\begin{itemize}
-		\item	Solute {\color{purple}{diffusion}} away from membrane
+		\item	\textbf{Solute} {\color{purple}{diffusion}} away from membrane = $J_\text{diffusion}$
 		\begin{exampleblock}{}
 			\[
-				J_\text{v,diffusion} = -D_{AB} \displaystyle \frac{1}{\rho_f}\frac{dC}{dy}
+				J_\text{diffusion} = -D_{AB} \,\frac{dC}{dy}
 			\]
 		\end{exampleblock}
 	\end{itemize}
 
 	\begin{tabular}{cll}
-		$D_{AB}$				&	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m.s}}\right] = \left[\text{m}^2\text{.s}^{-1}\right]$	& diffusion of solute in solvent \\
-		$J_\text{v,diffusion}$ 	&  	$\left[\displaystyle\frac{\text{m}^3 \text{~solvent}}{\text{m}^2 \text{.s}}\right]$	& solvent volumetric flux\\
+		$D_{AB}$				&	$\left[\dfrac{\text{m}^3 \text{~solvent}}{\text{m.s}}\right] = \left[\text{m}^2\text{.s}^{-1}\right]$	& diffusion of solute in solvent \\
+		$J_\text{diffusion}$ 	&  	$\left[\dfrac{\text{kg solute}}{\text{m}^2 \text{.s}}\right]$	& solute mass flux into bulk\\
 	\end{tabular}
 	\begin{center}
 		\includegraphics[width=0.9\textwidth]{\imagedir/separations/membranes/solute-build-up.png}
@@ -655,9 +690,9 @@
 	At steady state: diffusion back equals transfer through membrane
 	\[
 		\begin{array}{rl}
-		 	\displaystyle  \frac{J(C - C_p)}{\rho_f}  &= -D_{AB} \displaystyle \frac{1}{\rho_f}\frac{dC}{dy} \\
-			\displaystyle -\frac{J}{D_{AB}} \int_{0}^{L_c}{dy} &= \displaystyle \int_{C_w}^{C_f}{\frac{dC}{C-C_p}} \\ \\
-			\displaystyle\ln\left(\frac{C_w - C_p}{C_f - C_p}\right) &= \displaystyle\frac{J L_c}{D_{AB}} = \displaystyle \frac{J}{h_w}
+		 	J_v(C - C_p)  &= -D_{AB} \dfrac{dC}{dy} \\
+			-\dfrac{J_v}{D_{AB}} \displaystyle \int_{0}^{L_c}{dy} &= \displaystyle \int_{C_w}^{C_b}{\frac{dC}{C-C_p}} \\ \\
+			\displaystyle\ln\left(\frac{C_w - C_p}{C_b - C_p}\right) &= \dfrac{J_v \,L_c}{D_{AB}} = \dfrac{J_v}{h_w}
 		\end{array}
 	\]
 	\vspace{6pt}
@@ -668,10 +703,10 @@
 \end{frame}
 
 \begin{frame}\frametitle{UF: mass-transfer {\color{myOrange}{key points}}}
-	Assuming $C_p \approx 0$
+	Assuming $C_p \approx 0$ (i.e. $R=1$)
 	\begin{exampleblock}{}
 		\[
-			\displaystyle\frac{J L_c}{D_{AB}} =  \displaystyle \frac{J}{h_w} = \displaystyle \ln\left(\frac{C_w }{C_f }\right)
+			\dfrac{J_v L_c}{D_{AB}} =  \dfrac{J_v}{h_w} = \displaystyle \ln\left(\frac{C_w }{C_b }\right)
 		\]
 	\end{exampleblock}
 	where $h_w$ is a  mass-transfer coefficient, with units of $\text{m.s}^{-1}$
@@ -685,27 +720,28 @@
 			\item	net effect: almost zero (see earlier plot)
 			\item	experiments mostly agree with this theory
 		\end{itemize}
-		\item	there is a limiting flux $J_\text{lim} = f(C_w, C_f, h_w)$
+		\item	there is a limiting flux $J_\text{lim} = f(C_w, C_b, h_w)$
 		\item	at higher feed concentrations, lower fluxes if we are at/near the gel polarization state (gelling)
 		\item	typical diffusivities: $1 \times 10^{-9}$ (fast!) to $1 \times 10^{-11} \text{~m}^2\text{.s}^{-1}$
 	\end{itemize}
 \end{frame}
 
+\begin{comment}
 \begin{frame}\frametitle{Example question}
 	An ultrafiltration application is required to treat a waste stream that has 0.5~$\text{kg}\text{.m}^{-3}$ waste in the feed. The desired solute concentrate must be 20~$\text{kg}^3\text{.m}^{-3}$.
 
 	\vspace{12pt}
 	Pilot plant studies show the flux can be expressed as
 	\[
-		J = 0.02 \ln \left(\frac{25}{C_f} \right)
+		J = 0.02 \ln \left(\frac{25}{C_b} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$. Due to fouling the flux from this membrane system never exceeds 0.05 $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 
 	\vspace{12pt}
-	What is the limiting final concentration, $C_f$? What is the interpretation of it?
+	What is the limiting final concentration, $C_b$? What is the interpretation of it?
 \end{frame}
 
-\begin{frame}\frametitle{Geometries for ultrafiltration (recap)}
+\begin{frame}\frametitle{Geometries for ultrafiltration}
 	\begin{columns}[t]
 		\column{0.60\textwidth}
 			\textbf{Tubes in a shell}
@@ -734,14 +770,14 @@
 	%figure for future use: /Users/kevindunn/Sync/Figures/separations/membranes/application-area-geometry-Perrys-8ed-Table-20-25.png
 \end{frame}
 
-\begin{frame}\frametitle{Geometries for ultrafiltration (recap)}
+\begin{frame}\frametitle{Geometries for ultrafiltration}
 	\begin{columns}[t]
 		\column{0.60\textwidth}
 			\textbf{Spiral wound}
 
 				\begin{itemize}
-					\item	\iftoggle{instructor}{high surface area per unit volume}{}
-					\item	\iftoggle{instructor}{high turbulence, reducing mass transfer resistance}{}
+					\item	high surface area per unit volume
+					\item	high turbulence, reducing mass transfer resistance
 				\end{itemize}
 			\vfill
 			\begin{center}
@@ -794,7 +830,7 @@
 	\includegraphics[width=\textwidth]{\imagedir/separations/membranes/ide-tech.com-1D13_0-low-res.jpg}
 	\begin{itemize}
 		\item	Larnaca, Cyprus
-		\item	SWRO membrane, i.e. desalination
+		\item	Sea-water reverse osmosis membrane, i.e. desalination
 		\item	21.5 million $\text{m}^3$ per year
 		\item	parallel and series
 	\end{itemize}
@@ -825,14 +861,13 @@
 	\end{itemize}
 \end{frame}
 
-% 16 October 2012
 \begin{frame}\frametitle{Class example}
 	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
 
 	\vspace{12pt}
 	At steady-state the feed-plus-bleed circuit operates with a flux
 	\[
-		J = 0.02 \ln \left(\frac{25}{C_f} \right)
+		J = 0.02 \ln \left(\frac{25}{C_b} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 
@@ -852,14 +887,13 @@
 
 % 2013: check if you can say \frac{Q_0}{Q_R1} = \frac{Q_R1}{Q_R2}  (i.e the ratio of the feed to retentate in unit 1 is the same as the corresponding ratio from unit 2)
 
-% 16 October 2012
-\begin{frame}\frametitle{Class example (11 Oct)}
+\begin{frame}\frametitle{Class example}
 	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
 
 	\vspace{12pt}
 	At steady-state the feed-plus-bleed circuit operates with a flux
 	\[
-		J = 0.02 \ln \left(\frac{25}{C_f} \right)
+		J = 0.02 \ln \left(\frac{25}{C_b} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 
@@ -871,7 +905,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Multiple units in series (will be in Assignment 4)}
+\begin{frame}\frametitle{Multiple units in series}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/feed-and-bleed-in-series.png}
 	\end{center}
@@ -960,7 +994,7 @@
 \begin{frame}\frametitle{Typical values of osmotic press}
 	\begin{exampleblock}{}
 		\[
-			\pi \approx \displaystyle \frac{nRT}{V_m} = CRT
+			\pi \approx \dfrac{nRT}{V_m} = CRT
 		\]
 	\end{exampleblock}
 	\begin{tabular}{cll}
@@ -1089,7 +1123,7 @@
 	{\color{myOrange}{Symbolically:}}
 	{ \small
 	\[
-		J = \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle (\text{permeance})(\text{driving force}) = \displaystyle \frac{\text{driving force}}{\text{resistance}}
+		J = \frac{(\text{permeability})(\text{driving force})}{\text{thickness}} = \displaystyle (\text{permeance})(\text{driving force}) = \dfrac{\text{driving force}}{\text{resistance}}
 	\]
 	}
 	\begin{itemize}
@@ -1115,7 +1149,7 @@
 			\[	R_{m,v} = f(\text{\small membrane's thickness=$\ell_M$, diffusivity of solvent in membrane})\]
 		\item	\textbf{Solute} (\emph{salt}) flux
 			\[
-				J_\text{salt} = \displaystyle \frac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \displaystyle \frac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
+				J_\text{salt} = \dfrac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \dfrac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
 			\]
 			\begin{itemize}
 				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n}$ = $C_\text{p}$
@@ -1131,7 +1165,6 @@
 	%\textbf{Note}: all units must be checked for consistency
 \end{frame}
 
-% 19 October 2012: Friday tutorial-style lecture
 \begin{frame}\frametitle{Example to try at home}
 	Brackish water of 1.8wt\% NaCl at 25$^{\circ}\text{C}$ and 1000 psia is fed to a spiral wound membrane.
 
@@ -1145,7 +1178,7 @@
 		\item	Calculate the flux of water in LMH.
 		\item	What is the flux of salt through the membrane?
 		\item	How do these fluxes compare?
-		\item	Calculate the rejection coefficient for salt.
+		\item	Calculate the rejection coefficient, $R$, for salt.
 		\item	Calculate the separation factor.
 	\end{enumerate}
 \end{frame}
@@ -1163,11 +1196,11 @@
 \begin{frame}\frametitle{Some old and new terminology}
 	Recall from ultrafiltration:
 	\begin{itemize}
-		\item	$R = 1 - \displaystyle\frac{C_P}{C_F}$
+		\item	$R = 1 - \dfrac{C_P}{C_b}$
 
-		\item	This {\color{purple}{rejection coefficient}} also applies to reverse osmosis.
+		\item	This {\color{purple}{rejection coefficient}}, $R$, also applies to reverse osmosis.
 
-		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
+		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \dfrac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
 	\end{itemize}
 \end{frame}
 
@@ -1183,10 +1216,10 @@
 
 \begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
 	\begin{enumerate}
-		\item	Usually we specify the desired cut, $\theta = \displaystyle \frac{Q_\text{P}}{Q_\text{F}}$
+		\item	Usually we specify the desired cut, $\theta = \dfrac{Q_\text{P}}{Q_\text{F}}$
 		\item	$Q_\text{F} C_\text{F} = Q_\text{R} C_\text{R} + Q_\text{P} C_\text{P}$
 		\item	$Q_\text{F} = Q_\text{R} + Q_\text{P}$
-		\item	$1 = \displaystyle \frac{Q_\text{R}}{Q_\text{F}} + \theta$
+		\item	$1 = \dfrac{Q_\text{R}}{Q_\text{F}} + \theta$
 		\item	$C_\text{F} = (1 - \theta)C_\text{R} + \theta C_\text{P}$ from equation (2) and (4)
 		\item	$J_\text{solv}C_\text{P} = A_\text{solv}(\Delta P - \Delta \pi)C_\text{P}$ = salt flux leaving in permeate
 		\item	$J_\text{salt} = A_\text{salt}(C_\text{R} - C_\text{P})$ = salt flux into membrane
