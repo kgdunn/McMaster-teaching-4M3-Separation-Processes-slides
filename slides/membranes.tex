@@ -6,17 +6,13 @@
 
 % Investigate http://arstechnica.com/science/2013/09/microbial-battery-could-turn-wastewater-into-electricity/
 
-
 % Artificial lungs? 
 % Use of membranes as interfaced with the human body, e.g. dialysis: what is being separated here (waste solids vs cells: based on size exclusion?)
 % Life expectancy
 % Captial cost
 % Thickness
 
-
-
 % 08 October 2013
-
 \begin{frame}\frametitle{Administrative issues}
 	\begin{itemize}
 		\item	Assignment 3 is posted (\emph{with a minor update})
@@ -431,7 +427,7 @@
 	\end{enumerate}
 	\emph{Question}: why recycle the retentate stream?
 	% Also see Ghosh: p 212
-	
+	% Also recommend students look up "GE-Membrane-Filtration-Handbook.pdf" (GE Osmonics) for different flowsheet and control loop options
 \end{frame}
 
 \begin{frame}\frametitle{Dealing with fouling}
@@ -503,6 +499,7 @@
 	\end{itemize}
 \end{frame}
 
+% 11 October 2013
 \begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
 	Exactly the same approach as we saw in the filtration section:
 	\begin{enumerate}
@@ -734,19 +731,22 @@
 	\end{itemize}
 \end{frame}
 
-\begin{comment}
 \begin{frame}\frametitle{Example question}
-	An ultrafiltration application is required to treat a waste stream that has 0.5~$\text{kg}\text{.m}^{-3}$ waste in the feed. The desired solute concentrate must be 20~$\text{kg}^3\text{.m}^{-3}$.
+	An ultrafiltration application is required to treat a waste stream that has 4~$\text{kg}\text{.m}^{-3}$ waste in the feed. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$.
 
 	\vspace{12pt}
 	Pilot plant studies show the flux can be expressed as
 	\[
-		J = 0.02 \ln \left(\frac{25}{C_b} \right)
+		J_v = 0.02 \ln \left(\frac{25}{C_b} \right)
 	\]
-	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$. Due to fouling the flux from this membrane system never exceeds 0.05 $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
+	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$. Due to gelling and fouling the flux cannot exceed 0.05 $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 
 	\vspace{12pt}
-	What is the limiting final concentration, $C_b$? What is the interpretation of it?
+	\begin{enumerate}
+		\item	What is the flux $J_v$ at the membrane entrance?
+		\item	What is the flux $J_v$ at the membrane exit if we are able to reach our desired end-point?
+	\end{enumerate}
+	% p 462, C+R2, v2, 5ed
 \end{frame}
 
 \begin{frame}\frametitle{Geometries for ultrafiltration}
@@ -870,7 +870,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Class example}
-	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
+	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 4.0~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
 
 	\vspace{12pt}
 	At steady-state the feed-plus-bleed circuit operates with a flux
@@ -887,31 +887,13 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Covered in class on 11 October}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/White-board-11-Oct-2012}
-	\end{center}
-\end{frame}
+% \begin{frame}\frametitle{Covered in class on 11 October}
+% 	\begin{center}
+% 		\includegraphics[width=\textwidth]{\imagedir/separations/membranes/White-board-11-Oct-2012}
+% 	\end{center}
+% \end{frame}
 
 % 2013: check if you can say \frac{Q_0}{Q_R1} = \frac{Q_R1}{Q_R2}  (i.e the ratio of the feed to retentate in unit 1 is the same as the corresponding ratio from unit 2)
-
-\begin{frame}\frametitle{Class example}
-	We need to treat 50 $\text{m}^3\text{.day}^{-1}$ of waste containing a solute at 0.5~$\text{kg}\text{.m}^{-3}$. The desired solute concentrate must be 20~$\text{kg}\text{.m}^{-3}$. The plant operates 20 hours per day.
-
-	\vspace{12pt}
-	At steady-state the feed-plus-bleed circuit operates with a flux
-	\[
-		J = 0.02 \ln \left(\frac{25}{C_b} \right)
-	\]
-	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
-
-	\vspace{12pt}
-	If each membrane module is 30 m$^2$:
-	\begin{itemize}
-		\item	how many membrane modules are required?
-		\item	series or parallel?
-	\end{itemize}
-\end{frame}
 
 \begin{frame}\frametitle{Multiple units in series}
 	\begin{center}
@@ -921,6 +903,7 @@
 	Now consider the previous example. Find the optimal areas, $A_1$ and $A_2$ for the membranes.
 \end{frame}
 
+\begin{comment}
 \begin{frame}\frametitle{Reverse osmosis}
 	\begin{itemize}
 		\item	The \textbf{most requested} topic on your list of learning objectives
