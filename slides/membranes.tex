@@ -425,7 +425,7 @@
 		\item	\small Supply feed at pressure; valve at retentate to adjust/control $\Delta P$
 		\item	Draw a vacuum at permeate and pull material through membrane
 	\end{enumerate}
-	\emph{Question}: why recycle the retentate stream?
+	\emph{Question}: why recycle the retentate stream? % for further processing later on; we add diluting wash water to keep the concentration low 
 	% Also see Ghosh: p 212
 	% Also recommend students look up "GE-Membrane-Filtration-Handbook.pdf" (GE Osmonics) for different flowsheet and control loop options
 \end{frame}
@@ -500,7 +500,7 @@
 \end{frame}
 
 % 11 October 2013
-\begin{frame}\frametitle{Estimating the cake resistance, $R_c$}
+\begin{frame}\frametitle{Estimating the cake resistance, $R_c$: {\color{red}for dead-end filtration}}
 	Exactly the same approach as we saw in the filtration section:
 	\begin{enumerate}
 		\item	Measure $V$ (volume of permeate) against time $t$ at a constant and known $\Delta P$
@@ -743,8 +743,8 @@
 
 	\vspace{12pt}
 	\begin{enumerate}
-		\item	What is the flux $J_v$ at the membrane entrance?
-		\item	What is the flux $J_v$ at the membrane exit if we are able to reach our desired end-point?
+		\item	What is the flux $J_v$ right at the membrane entrance?
+		\item	What is the flux $J_v$ \emph{{\color{myOrange}for most of the membrane}} if we are able to reach our desired end-point?
 	\end{enumerate}
 	% p 462, C+R2, v2, 5ed
 \end{frame}
@@ -866,6 +866,7 @@
 		\item	Initially close retentate valve (batch mode operation)
 		\item	Fluxes slowly reduce
 		\item	Open retentate valve and operate at steady state
+		\item	\textbf{AIM}: achieve a given concentration in the retentate 
 	\end{itemize}
 \end{frame}
 
@@ -875,7 +876,7 @@
 	\vspace{12pt}
 	At steady-state the feed-plus-bleed circuit operates with a flux
 	\[
-		J = 0.02 \ln \left(\frac{25}{C_b} \right)
+		{\color{red}J_v} = 0.02 \ln \left(\frac{25}{C_b} \right)
 	\]
 	in units of $\text{m}^3.\text{hour}^{-1}.\text{m}^{-2}$.
 
@@ -901,6 +902,24 @@
 	\end{center}
 
 	Now consider the previous example. Find the optimal areas, $A_1$ and $A_2$ for the membranes.
+\end{frame}
+
+\begin{frame}\frametitle{Fouling}
+	% C+R v2, 5ed
+	\begin{itemize}
+		\item	Process feed pretreatment is important. 
+		\item	Bio operations: prefiltration, pasteurisation to destroy bacteria, or adjust pH to prevent protein precipitation
+		\item	Backflushing mostly restores permeation rate
+		\item	Can also use pulsated feed flows
+		\item	Chemical cleaning is eventually required [long time], e.g.:
+		\begin{itemize}
+			\item	flushing with filtered water 
+			\item	recirculate/back-flushing with a cleaning agent at high temperature
+			\item	rinsing to remove the cleaning agent
+			\item	sterilize by recirculating of a weak chlorine solution at higher temperature
+			\item	flushing with water to remove sterilizing solution
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
 \begin{comment}
