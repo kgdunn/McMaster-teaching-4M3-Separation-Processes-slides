@@ -671,7 +671,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Transport at steady state}
-	At steady state: diffusion back equals transfer through membrane
+	At steady state: transfer \emph{\color{myOrange}towards} membrane equals diffusion back
 	\[
 		\begin{array}{rl}
 		 	J_v(C - C_p)  &= -D_{AB} \dfrac{dC}{dy} \\
@@ -742,8 +742,12 @@
 	\begin{enumerate}
 		\item	What is the flux $J_v$ right at the membrane entrance?
 		\item	What is the flux $J_v$ \emph{{\color{myOrange}for most of the membrane}} if we are able to reach our desired end-point?
+		\item	Interesting: what happens if we require a solute concentration of 10~$\text{kg}\text{.m}^{-3}$?
 	\end{enumerate}
 	% p 462, C+R2, v2, 5ed
+	% 1. Jv = 37 LMH = 0.02 ln(25/4) x 1000
+	% 2. Jv = 4.5 LMH = 0.02 ln(25/20) x 1000
+	% 3. Jv = 18 LMH = 0.02 ln(25/20) x 1000; more than quadruples, but our retentate is half the original strength
 \end{frame}
 
 \begin{frame}\frametitle{Geometries for ultrafiltration}
@@ -973,7 +977,7 @@
 \begin{frame}\frametitle{(Reverse) Osmosis principle}
 	\begin{itemize}
 		\item	Assume solute barely passes through membrane ($C_p \approx 0$)
-		\item	Solvent passes freely
+		\item	but solvent passes freely: this is why we call it a {\color{purple}\emph{semipermeable membrane}}
 		\item	Chemical potential drives pure solvent (water) to dilute the solute/solvent (mixture).
 		\item	This \emph{solvent flux} continues until equilibrium is reached
 			\begin{itemize}
@@ -981,7 +985,7 @@
 				\item	results in a pressure difference (head)
 				\item	called the \emph{osmotic pressure} = $\pi$ [Pa]
 				\item	a thermodynamic property $\neq f(\text{membrane})$
-				\item	a thermodynamic property $= f(\text{fluid and solute properties})$
+				\item	a thermodynamic property $= f(\text{fluid and solute properties})$, e.g. {\color{myOrange}temperature, concentration, pressure}
 			\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -1075,6 +1079,11 @@
 			\item	Even more correctly: $\Delta \pi = C_\text{ions,wall}RT_\text{wall} - C_\text{ions,perm}RT_\text{perm}$
 		\end{itemize}
 	\end{itemize}
+	
+	\vspace{12pt}
+	\begin{exampleblock}{Key point}
+		There's a natural limitation here: what if we try to recover too much solvent?
+	\end{exampleblock}	
 \end{frame}
 
 \begin{frame}\frametitle{Widest application for RO: desalination}
