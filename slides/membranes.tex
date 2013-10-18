@@ -902,14 +902,19 @@
 	Now consider the previous example.
     \begin{enumerate}
         \item    Consider 2 membranes in series of 30 m$^2$. What are concentration and flow values for unit 1 and unit 2?
-        \item    Now try find the optimal areas, $A_1$ and $A_2$ for the membranes.
+		\begin{itemize}
+			\item	{\color{myOrange}\textbf{Note}: we do not know the outlet concentration, $C_{R2}$ this time!}
+		\end{itemize}
+        \item    Now try find the optimal areas, $A_1$ and $A_2$ for the membranes {\color{myOrange}for a desired outlet  $C_{R2}$ concentration}.
     \end{enumerate} 
     
     \vspace{12pt}
     \emph{Hint}: use a guess-and-check strategy, bearing in mind the modules can only be purchased in 30m$^2$ units.
 	% 2013: check if you can say \frac{Q_0}{Q_R1} = \frac{Q_R1}{Q_R2}  (i.e the ratio of the feed to retentate in unit 1 is the same as the corresponding ratio from unit 2)
+	% Yes: you can, to a good approximation, and it also holds for concentrations: CR1/C0 = CR2/CR1
 \end{frame}
 
+% 18 October 2013
 \begin{frame}\frametitle{Fouling}
 	% C+R v2, 5ed
 	\begin{itemize}
@@ -1140,8 +1145,6 @@
 	\end{columns}
 \end{frame}
 
-\begin{comment}
-% Still review Ghosh and Dickson's notes
 \begin{frame}\frametitle{Transport modelling of RO}
 	{\color{myOrange}{Symbolically:}}
 	{ \small
@@ -1177,15 +1180,14 @@
 			\begin{itemize}
 				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n}$ = $C_\text{p}$
 				\begin{itemize}
-					\item	how would you enforce this reasonable assumption?
+					\item	how would you enforce this reasonable assumption?  % upstream filtering and flocculation; adjust pH to encourage solute to remain in solution; avoid oxygen entering so some solutes do not oxidize 
 				\end{itemize}
-				\item	Crudely assume: $C_\text{bulk}  \approx C_\text{feed}$ [back-of-envelope calculation]
+				\item	Crudely assume: $C_\text{bulk}  \approx C_\text{feed}$ {\scriptsize [for back-of-envelope calculations]}
 				\item	$P_\text{solv}$ = permeability of the solvent [notation: $P_\text{solv} \equiv P_\text{w}$]
 				\item	$C_p$ = concentration of solute in the permeate
 				\item	$P_\text{salt}$ = permeability of the salt
 			\end{itemize}
 	\end{enumerate}
-	%\textbf{Note}: all units must be checked for consistency
 \end{frame}
 
 \begin{frame}\frametitle{Example to try at home}
@@ -1257,7 +1259,7 @@
 		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
 	\end{itemize}
 \end{frame}
-
+\begin{comment}
 % ---> Cover this new slide 2013
 \begin{frame}\frametitle{Alternative to the above}
 	\begin{itemize}\item	Specify $C_\text{F}$ and $\theta$
