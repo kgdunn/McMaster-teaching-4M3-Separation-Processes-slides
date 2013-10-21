@@ -1083,19 +1083,22 @@
 			\item	$\Delta \pi = \pi_\text{feed} - \pi_\text{perm}$
 			\item	$\Delta \pi = C_\text{ions,feed}RT_\text{feed} - C_\text{ions,perm}RT_\text{perm}$
 			\item	Even more correctly: $\Delta \pi = C_\text{ions,wall}RT_\text{wall} - C_\text{ions,perm}RT_\text{perm}$
+			\item	{\color{myOrange}Draw a picture}
 		\end{itemize}
 	\end{itemize}
 	
 	\vspace{12pt}
 	\begin{exampleblock}{Key point}
-		There's a natural limitation here: what if we try to recover too much solvent?
-	\end{exampleblock}	
+		There's a natural limitation here: what if we try to recover too much solvent (\emph{high solvent flux})?
+	\end{exampleblock}
+	% We can do this by trying to use a higher Delta P. But then the retentate gets very high in concentration, 
+	% creating an even greater osmotic pressure. So we have to use a higher Delta P to overcome this osmosis.
 \end{frame}
 
 \begin{frame}\frametitle{Widest application for RO: desalination}
 	Some quotes:
 	\begin{itemize}
-		\item	``\emph{McIlvaine forecasts that world RO equipment and membrane sales will reach \$5.6 billion (USD) in 2012, compared to \$3.8 billion in 2008 (actual).}''
+		\item	``\emph{\href{http://www.sciencedirect.com/science/article/pii/S0958211809701053}{McIlvaine forecasts} that world RO equipment and membrane sales will reach \$5.6 billion (USD) in 2012, compared to \$3.8 billion in 2008 (actual).}''
 		\item	``\emph{Depleting water supplies, coupled with increasing water demand, are driving the global market for desalination technology, which is expected to reach \$52.4 billion by 2020, up 320.3\% from \textbf{\$12.5 billion in 2010}. According to a recent report from energy research publisher SBI Energy, membrane technology reverse osmosis will see the largest growth, reaching \$39.46 billion by 2020.}''
 	\end{itemize}
 \end{frame}
@@ -1113,7 +1116,7 @@
 		 	\end{itemize}
 		 \item	tomato, citrus, and apple juice dewatering [$\sim$ 4.5 c/L; 1995]
 		 \item	dealcoholization of wine and beer to retain flavour in the retentate
-		 \item	other: keep antifreeze, paint, dyes, PAH, pesticides in retentate; discharge permeate to municipal wastewater
+		 \item	other: keep antifreeze, paint, dyes, PAH, pesticides in retentate; discharge permeate to municipal wastewater % PAH = Polycyclic aromatic hydrocarbons
 	\end{itemize}
 \end{frame}
 
@@ -1157,8 +1160,8 @@
 		\item	permeability = $f(\text{membrane properties}, \text{diffusivity}, \text{other physical properties})$
 		\item	permeance: easier to calculate:
 		\begin{itemize}
-			\item	given the driving force: easy to measure
-			\item	given the flux: easy to measure
+			\item	given the driving force (easy to measure)
+			\item	given the flux (easy to measure)
 		\end{itemize}
 		\item	units are always case specific and must be self-consistent [check!]
 	\end{itemize}
@@ -1173,7 +1176,7 @@
 	\begin{enumerate}
 		\item	\textbf{Solvent} flux
 			\[	J_v = J_\text{solv} = \frac{(\Delta P - \Delta \pi)}{R_{m,v} + \cancelto{0}{R_{cp,v}}} = \frac{P_\text{solv}}{\ell_M}(\Delta P - \Delta \pi) \] \\
-			\[	R_{m,v} = f(\text{\small membrane's thickness=$\ell_M$, diffusivity of solvent in membrane})\]
+			\[	R_{m,v} = f(\text{\small $\ell_M=\text{membrane's thickness}$, diffusivity of solvent in membrane})\]
 		\item	\textbf{Solute} (\emph{salt}) flux
 			\[
 				J_\text{salt} = \dfrac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \dfrac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
@@ -1186,12 +1189,12 @@
 				\item	Crudely assume: $C_\text{bulk}  \approx C_\text{feed}$ {\scriptsize [for back-of-envelope calculations]}
 				\item	$P_\text{solv}$ = permeability of the solvent [notation: $P_\text{solv} \equiv P_\text{w}$]
 				\item	$C_p$ = concentration of solute in the permeate
-				\item	$P_\text{salt}$ = permeability of the salt
+				\item	$P_\text{salt}$ = permeability of the salt through membrane
 			\end{itemize}
 	\end{enumerate}
 \end{frame}
 
-\begin{frame}\frametitle{Example to try at home}
+\begin{frame}\frametitle{Example to try}
 	Brackish water of 1.8wt\% NaCl at 25$^{\circ}\text{C}$ and 1000 psia is fed to a spiral wound membrane.
 
 	\vspace{6pt}
@@ -1200,13 +1203,34 @@
 	\vspace{6pt}
 	The permeance of water has been established as $1.1 \times 10^{-4} \text{~kg.s}^{-1}\text{.m}^{-2}\text{.atm}^{-1}$ [how would you get this number?] and $16 \times 10^{-8} \text{m.s}^{-1}$ for salt is determined experimentally.
 
-	\begin{enumerate}
-		\item	Calculate the flux of water in LMH.
-		\item	What is the flux of salt through the membrane?
-		\item	How do these fluxes compare?
-		\item	Calculate the rejection coefficient, $R$, for salt.
-		\item	Calculate the separation factor.
-	\end{enumerate}
+	
+	%\begin{columns}[c]
+		%\column{0.60\textwidth}
+			\begin{enumerate}
+				\item	Calculate the flux of water in LMH.
+				\item	What is the flux of salt through the membrane?
+				\item	How do these fluxes compare?
+				\item	Calculate the rejection coefficient, $R$, for salt.
+				%\item	Calculate the separation factor.
+			\end{enumerate}
+
+		%\column{0.40\textwidth}
+			
+			% \begin{center}
+% 				\includegraphics[width=\textwidth]{\imagedir/separations/overview-class/separation-factor.png}
+% 			\end{center}
+% 			$S_{ij} = \displaystyle \frac{x_{i,1} / x_{j,1}}{x_{i,2} / x_{j,2}}$
+%	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Another example: calculating permeances}
+	At 25 $^\circ$C in a lab membrane with area $A = 2 \times 10^{-3}$ $\text{m}^{2}$ we feed a solution of 10 kg NaCl per m$^3$ solution so well mixed and so rapidly that essentially it has the same strength leaving.
+
+	\vspace{12pt}
+	The permeate is measured as 0.39 kg NaCl per $\text{m}^{3}$ solution at a rate of $1.92 \times 10^{-8}~\text{m}^3\text{.s}^{-1}$ when applying a constant pressure difference of 54.42 atm.
+
+	\vspace{12pt}
+	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.
 \end{frame}
 
 \begin{frame}\frametitle{Some questions to consider}
@@ -1222,22 +1246,12 @@
 \begin{frame}\frametitle{Some old and new terminology}
 	Recall from ultrafiltration:
 	\begin{itemize}
-		\item	$R = 1 - \dfrac{C_P}{C_b}$
+		\item	$R = 1 - \dfrac{C_P}{C_\text{feed}} \approx 1 -  \dfrac{C_P}{C_\text{bulk}}$
 
 		\item	This {\color{purple}{rejection coefficient}}, $R$, also applies to reverse osmosis.
 
 		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \dfrac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
 	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Another example: calculating permeances}
-	At 25 $^\circ$C in a lab membrane with area $A = 2 \times 10^{-3}$ $\text{m}^{2}$ we feed a solution of 10 kg NaCl per m$^3$ solution so well mixed that essentially it has the same strength leaving.
-
-	\vspace{12pt}
-	The permeate is measured as 0.39 kg NaCl per $\text{m}^{3}$ solution at a rate of $1.92 \times 10^{-8}~\text{m}^3\text{.s}^{-1}$ when applying a constant pressure difference of 54.42 atm.
-
-	\vspace{12pt}
-	Calculate the permeance constants for solvent and salt (these were previously given, this example shows how to calculate them experimentally), as well as the rejection coefficient.
 \end{frame}
 
 \begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
