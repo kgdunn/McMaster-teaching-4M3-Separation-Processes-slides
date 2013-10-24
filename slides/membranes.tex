@@ -1175,11 +1175,11 @@
 	\vspace{-6pt}
 	\begin{enumerate}
 		\item	\textbf{Solvent} flux
-			\[	J_v = J_\text{solv} = \frac{(\Delta P - \Delta \pi)}{R_{m,v} + \cancelto{0}{R_{cp,v}}} = \frac{P_\text{solv}}{\ell_M}(\Delta P - \Delta \pi) \] \\
+			\[	J_v = J_\text{solv} = \frac{(\Delta P - \Delta \pi)}{R_{m,v} + \cancelto{0}{R_{cp,v}}} = \frac{P_\text{solv}}{\ell_M}(\Delta P - \Delta \pi) = {\color{myOrange}A_\text{solv}\left(\Delta P - \Delta \pi\right)} \] \\
 			\[	R_{m,v} = f(\text{\small $\ell_M=\text{membrane's thickness}$, diffusivity of solvent in membrane})\]
 		\item	\textbf{Solute} (\emph{salt}) flux
 			\[
-				J_\text{salt} = \dfrac{(\text{permeability})(\text{driving force})}{\text{resistance}} = \dfrac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right)
+				J_\text{salt} = {\scriptsize \dfrac{(\text{permeability})(\text{driving force})}{\text{ resistance}} }= \dfrac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right) = {\color{myOrange}A_\text{salt} \left(C_w - C_p\right)}
 			\]
 			\begin{itemize}
 				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n}$ = $C_\text{p}$
@@ -1246,27 +1246,27 @@
 \begin{frame}\frametitle{Some old and new terminology}
 	Recall from ultrafiltration:
 	\begin{itemize}
-		\item	$R = 1 - \dfrac{C_P}{C_\text{feed}} \approx 1 -  \dfrac{C_P}{C_\text{bulk}}$
+		\item	$R = 1 - \dfrac{C_P}{C_\text{feed}} = 1 - \dfrac{C_P}{C_\text{0}} \approx 1 -  \dfrac{C_P}{C_\text{bulk}}$
 
 		\item	This {\color{purple}{rejection coefficient}}, $R$, also applies to reverse osmosis.
 
-		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \dfrac{Q_\text{P}}{Q_\text{F}}$ is between 40 and 50\% typically
+		\item	A new term = {\color{purple}{cut}} = {\color{purple}{conversion}} = {\color{purple}{recovery}} = $\theta = \dfrac{Q_\text{P}}{Q_\text{0}}$ is between 40 and 50\% typically
 	\end{itemize}
 \end{frame}
-\begin{comment}
+
 \begin{frame}\frametitle{Relaxing the assumption of $C_\text{R}$ = $C_\text{feed}$}
 	\begin{enumerate}
-		\item	Usually we specify the desired cut, $\theta = \dfrac{Q_\text{P}}{Q_\text{F}}$
-		\item	$Q_\text{F} C_\text{F} = Q_\text{R} C_\text{R} + Q_\text{P} C_\text{P}$
-		\item	$Q_\text{F} = Q_\text{R} + Q_\text{P}$
-		\item	$1 = \dfrac{Q_\text{R}}{Q_\text{F}} + \theta$
-		\item	$C_\text{F} = (1 - \theta)C_\text{R} + \theta C_\text{P}$ from equation (2) and (4)
-		\item	$J_\text{solv}C_\text{P} = A_\text{solv}(\Delta P - \Delta \pi)C_\text{P}$ = salt flux leaving in permeate
+		\item	Usually we specify the desired cut, $\theta = \dfrac{Q_\text{P}}{Q_\text{0}}$
+		\item	$Q_\text{0} C_\text{0} = Q_\text{R} C_\text{R} + Q_\text{P} C_\text{P}$
+		\item	$Q_\text{0} = Q_\text{R} + Q_\text{P}$
+		\item	$1 = \dfrac{Q_\text{R}}{Q_\text{0}} + \theta$
+		\item	$C_\text{0} = (1 - \theta)C_\text{R} + \theta C_\text{P}$ from equation (2) and (4)
+		\item	${\color{myOrange}J_\text{solv,V}} \cdot C_\text{P} = A_\text{solv}(\Delta P - \Delta \pi)C_\text{P}$ = salt flux leaving in permeate. \hfill {\color{myOrange}\scriptsize [you might have to divide by the solvent density to get $J_\text{solv,V}$]}
 		\item	$J_\text{salt} = A_\text{salt}(C_\text{R} - C_\text{P})$ = salt flux into membrane
 	\end{enumerate}
 	\hrule
 	\begin{itemize}
-		\item	Specify $C_\text{F}$ and $\theta$
+		\item	Specify $C_\text{0}$ and $\theta$
 		\item	Guess $C_\text{P}$ value [how?]
 		\item	Calculate $C_\text{R}$ from equation 5
 		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
@@ -1275,21 +1275,36 @@
 	\end{itemize}
 \end{frame}
 
-% ---> Cover this new slide 2013
 \begin{frame}\frametitle{Alternative to the above}
-	\begin{itemize}\item	Specify $C_\text{F}$ and $\theta$
-		\item	Guess $C_\text{R}$ value [what's a reasonable value?]
-		\item	Calculate $C_\text{P}$ from equation 5
-		\item	If your calculated value of $C_\text{P}$ is negative or exceeds $C_\text{F}$, then repeat your guess for $C_\text{R}$, until you get a $C_\text{P}$ that lies between 0 and $C_\text{F}$ and double check also that the rejection coefficient from this $C_\text{P}$ is reasonable, around 90 to 99%.
-		\item	Calculate $J_\text{solv} C_\text{P}$ from equation 6, noting however that $J_\text{solv} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
-		\item	Note then that equation 6 and 7 must be equal
-		\item	Solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
+	\begin{enumerate}
+		\item	Specify $C_\text{0}$ and $\theta$
+		\item	Guess a reasonable rejection coefficient around 90 to 99\%
+		\item	From which you get a reasonable $C_\text{P}$ guess
+		\item	Calculate $C_\text{R}$ from equation 5
+		\item	Your guesses for $C_\text{P}$ and $C_\text{R}$ cannot be negative, and $C_\text{R}$ must exceed $C_\text{0}$.
+		\item	Calculate $J_\text{solv, V} C_\text{P}$ from equation 6, noting however that $J_\text{solv, V} = f(\pi_\text{R}, \pi_\text{P})$. So recalculate $\pi_\text{R}$ and $\pi_\text{P}$
+		\item	Note then that equation 6 and 7 must be equal. So solve eqn 7 for $C_\text{P}$ and use that as a revised value to iterate.
+		\item	You should try this on a computer, rather than by hand.
 		%Now carry on with the rest of the steps as described in the previous slide. It's interesting how simply flipping what you guess first leads to much faster convergence.
 		%If you iterate and get a negative value for CP or CR, it simply means that you must decrease your guess for that term, since you obviously can't have a negative concentration.
 		%And a final hint: this question is much better to solve on a computer, with goal seek, than by hand. There is tremendous sensitivity to initial guesses, so solving by hand will take too long.
-	\end{itemize}
+	\end{enumerate}
 \end{frame}
 
+\begin{frame}\frametitle{Problem for home}
+	
+	Reverse osmosis with an NaCl-water feed, 2.5 g/L NaCl is being separated into a permeate and retentate stream using a TMP of 27.2 atm at 25 $^\circ$C.
+	
+	\vspace{12pt}
+	Through lab experiments the permeance of the membrane with respect to salt is $4.2 \times 10^{-7}\,\text{m.s}^{-1}$ and solvent is $5.0 \times 10^{-4}\,\text{kg.s}^{-1}\text{.m}^{-2}\text{.atm}^{-1}$. The membrane is operated so the cut is at 40\%, producing a permeate stream of 0.38 $\text{m}^3$ per hour.
+	
+	\vspace{12pt}
+	Calculate the permeate concentration, retentate concentration, rejection coefficient, and separation factor. It is not reasonable to assume that the feed and retentate concentration are the same in this problem: we require accurate estimates.
+	
+\end{frame}
+
+
+\begin{comment}
 \begin{frame}\frametitle{Nanofiltration (NF)}
 
 	\begin{center}
