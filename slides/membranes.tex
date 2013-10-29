@@ -1024,7 +1024,7 @@
 \begin{frame}\frametitle{Typical values of osmotic press}
 	\begin{exampleblock}{For dilute solutions}  % only for dilute solutions
 		\[
-			\pi \approx \dfrac{nRT}{V_m} = CRT
+			\pi \approx \dfrac{nRT}{V_m} = cRT
 		\]
 	\end{exampleblock}
 	\begin{tabular}{cll}
@@ -1033,7 +1033,7 @@
 		$R$			&	$[\text{m}^3\text{.atm.K}^{-1}\text{.mol}^{-1}]$ 		& gas law constant: $8.2057 \times 10^{-5}$\\
 		$V_m$ 		&  	$[\text{m}^{3}]$										& volume of solvent associated with solute\\
 		$T$ 		&  	[K]														& temperature\\
-		$C$ 		&  	[mol of ions per m$^{3}$]								& generic concentration
+		$c$ 		&  	[mol of ions per m$^{3}$]								& generic concentration
 	\end{tabular}
 
 	\vspace{12pt}
@@ -1082,7 +1082,7 @@
 			\item	$\Delta P$ is the usual TMP we measure
 			\item	$\Delta \pi = \pi_\text{feed} - \pi_\text{perm}$
 			\item	$\Delta \pi = C_\text{ions,feed}RT_\text{feed} - C_\text{ions,perm}RT_\text{perm}$
-			\item	Even more correctly: $\Delta \pi = C_\text{ions,wall}RT_\text{wall} - C_\text{ions,perm}RT_\text{perm}$
+			\item	Even more correctly: $\Delta \pi = c_\text{ions,wall}RT_\text{wall} - c_\text{ions,perm}RT_\text{perm}$
 			\item	{\color{myOrange}Draw a picture}
 		\end{itemize}
 	\end{itemize}
@@ -1182,7 +1182,7 @@
 				J_\text{salt} = {\scriptsize \dfrac{(\text{permeability})(\text{driving force})}{\text{ resistance}} }= \dfrac{P_\text{salt}}{\ell_M} \left(C_w - C_p\right) = {\color{myOrange}A_\text{salt} \left(C_w - C_p\right)}
 			\]
 			\begin{itemize}
-				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n}$ = $C_\text{p}$
+				\item	Our assumption: $C_\text{wall} \approx C_\text{bulk}$ = bulk solute conc$^\text{n}$ = {\color{myOrange}$C_\text{w}$}
 				\begin{itemize}
 					\item	how would you enforce this reasonable assumption?  % upstream filtering and flocculation; adjust pH to encourage solute to remain in solution; avoid oxygen entering so some solutes do not oxidize 
 				\end{itemize}
@@ -1195,32 +1195,34 @@
 \end{frame}
 
 \begin{frame}\frametitle{Example to try}
-	Brackish water of 1.8wt\% NaCl at 25$^{\circ}\text{C}$ and 1000 psia is fed to a spiral wound membrane.
+	Brackish water of 1.8wt\% NaCl at 25$^{\circ}\text{C}$ and 1000 psia [68.5 atm] is fed to a spiral wound membrane.
 
 	\vspace{6pt}
-	Conditions on the permeate side are 0.05 wt\% NaCl, at same temperature, but 50 psia.
+	Conditions on the permeate side are 0.05 wt\% NaCl, at same temperature, but 50 psia [3.42 atm]
 
 	\vspace{6pt}
 	The permeance of water has been established as $1.1 \times 10^{-4} \text{~kg.s}^{-1}\text{.m}^{-2}\text{.atm}^{-1}$ [how would you get this number?] and $16 \times 10^{-8} \text{m.s}^{-1}$ for salt is determined experimentally.
 
+	\begin{enumerate}
+		\item	Calculate the flux of water in LMH.
+		\item	What is the flux of salt through the membrane?
+		\item	How do these fluxes compare?
+		\item	Calculate the rejection coefficient, $R$, for salt.
+	\end{enumerate}
+	% pi_feed = c_feed x R x T
+	% c_feed = 2 x 1.8 g NaCl/ 98.2 g H2O x 1000 g H2O/L x 1000 L/m^3 x 1 mol/58.4 g NaCl = 628 mol/m^3
+	% pi_feed = 628 x 8.2057E-5 x 298 = 15.4 atm (reasonable, when compared to ocean water)	
+	% pi_perm = 0.42 atm (similar calculation)
 	
-	%\begin{columns}[c]
-		%\column{0.60\textwidth}
-			\begin{enumerate}
-				\item	Calculate the flux of water in LMH.
-				\item	What is the flux of salt through the membrane?
-				\item	How do these fluxes compare?
-				\item	Calculate the rejection coefficient, $R$, for salt.
-				%\item	Calculate the separation factor.
-			\end{enumerate}
+	% 1. Water flux = J = Asolv x (Delta P - Delta pi) with units of kg/(s.m^2)
+	%    Volumetric flux = Jv = J / rho_f = 1.1E-4/1000 x ( (68.5 - 3.42) - (15.4 - 0.42)) = 5.51E-6 m^3/(s.m^2) x 3600 s/hr x 1000 L/m^3 = 19.8 LMH (compares well with RO)
+	% 2. Salt flux = Jsalt = Asalt (Cw - Cp)
+	%    Cw \approx Cfeed = 1.8 g salt/98.2 g water x 1 kg salt/1000 g salt x 1000 g water/1L x 1000 L/m^3 = 18.3 kg/m^3
+	%    Cperm - 0.5 kg/m^3 in a similar calculation
+	%    Salt flux  = 16E06 x (18.3 - 0.5) = 2.85E-6 kg salt/(s.m^2) x 3600 s/hr x 1000 g/kg = 10.2 g/(hr.m^2)
+	% 3. Low salt flux, high water flux. Looks like good rejection
+	% 4. Rejection coefficient = R = 1 - Cp / Cf = 1 - 0.5 / 18.3 = 97.3%. It is also R = 1 - pi_perm/pi_feed = 1 - c_perm / c_feed <--- units of mol/m^3 or units of pressure
 
-		%\column{0.40\textwidth}
-			
-			% \begin{center}
-% 				\includegraphics[width=\textwidth]{\imagedir/separations/overview-class/separation-factor.png}
-% 			\end{center}
-% 			$S_{ij} = \displaystyle \frac{x_{i,1} / x_{j,1}}{x_{i,2} / x_{j,2}}$
-%	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Another example: calculating permeances}
@@ -1246,7 +1248,7 @@
 \begin{frame}\frametitle{Some old and new terminology}
 	Recall from ultrafiltration:
 	\begin{itemize}
-		\item	$R = 1 - \dfrac{C_P}{C_\text{feed}} = 1 - \dfrac{C_P}{C_\text{0}} \approx 1 -  \dfrac{C_P}{C_\text{bulk}}$
+		\item	$R = 1 - \dfrac{C_P}{C_\text{feed}} = 1 - \dfrac{C_P}{C_\text{0}}$ %and $R \approx 1 -  \dfrac{C_P}{C_\text{bulk}}$ if high inlet feed flows
 
 		\item	This {\color{purple}{rejection coefficient}}, $R$, also applies to reverse osmosis.
 
