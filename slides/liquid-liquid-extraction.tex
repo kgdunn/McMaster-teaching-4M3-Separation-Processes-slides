@@ -10,8 +10,7 @@
 
 % 2013: question: Assuming production of 200 tons per day, a daily basis was used to perform the calculations. Utilizing an inlet feed of 20% oil (solute), a final outlet of 0.6% oil (solute), a pure solvent feed, and a final raffinate consisting of 28% oil (solute), a ternary diagram was constructed. Find the amount of solvent required  (i.e. back calculate M, then S). Then go and find the number of stages required.
 
-
-% 23 October 2012: Liquid-liquid extraction section
+% 04 November 2013: Liquid-liquid extraction section
 \begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
 	\begin{center}
 		\includegraphics[width=0.60\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
@@ -20,16 +19,37 @@
 	\see{\href{http://www.flickr.com/photos/39357285@N00/3453475667/}{Flickr\# 3453475667}}
 \end{frame}
 
+\begin{frame}\frametitle{References}
+	% Green book: Separation Techniques 1: Liquid-liquid systems, articles from "Chemical Engineering Magazine"
+	% Perry's
+	% Existing slides from Santiago/Dickson/Ghosh
+	\begin{itemize}
+		% \item	Perry's???
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 1.9
+		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 8
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 13
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 12.5 and 12.6
+		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 7
+		\item	Uhlmann's Encyclopedia, ``Liquid-Liquid Extraction'',  \href{http://dx.doi.org/10.1002/14356007.b03\_06.pub2}{DOI:10.1002/14356007.b03\_06.pub2}
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Definitions}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/terminology.png}
 	\end{center}
 	
 	\begin{itemize}
-		\item	{\color{purple}{solute}}: species we aim to recover (A) from the feed 
+		\item	{\color{purple}{solute}}: species we aim to recover (A) from the {\color{purple}{feed}} 
 		\item	{\color{purple}{feed or ``feed solvent''}}: one of the liquids in the system {\tiny (``{\color{purple}{carrier}}'')}
 		\item	{\color{purple}{solvent}}: MSA (by convention: the ``added'' liquid)
-		\item	{\color{purple}{extract}}: solvent (not solute) mostly present in this layer. $y_\text{E,A} =$~concentration of A, the solute, in extract.
+		\item	{\color{purple}{extract}}: solvent (not solute) mostly present in this layer. 
+		
+				$y_\text{E,A} =$~concentration of A, the solute, in extract.
+				
+				We aim for the solute (A) to be mostly in the extract stream.
+				
+				
 		\item	{\color{purple}{raffinate}}: residual solute in this layer = $x_\text{R,A}$
 		\item	{\color{purple}{distribution}}: how the solute {\color{purple}{partitions}} itself = $D_\text{A} = \displaystyle \frac{y_\text{E,A}}{x_\text{R,A}}$
 			\begin{itemize}
@@ -49,6 +69,7 @@
 		\item	Mining: nickel/cobalt; copper/iron
 		\item	Perfumes, fragrances and essential oils
 		\item	Fine and specialty chemicals
+		\item	Oil sands: extract bitumen away from sand
 	\end{itemize}
 	Why?
 	\begin{itemize}
@@ -61,7 +82,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Extractor types}
+\begin{frame}\frametitle{Extractor types: \emph{3 major steps required}}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/terminology.png}
 	\end{center}
@@ -78,11 +99,14 @@
 		 	\end{itemize}
 		\item	Phase separation: 
 			\begin{itemize}
-				\item	reverse of mixing step
-				\item	drops coalesce 
+				\item	reverse of above mixing step
+				\item	drops come together and coalesce
 				\item	relies on density difference
 			\end{itemize}
 		\item	Collection of phases leaving the unit
+			\begin{itemize}
+				\item	split the raffinate from the extract
+			\end{itemize}
 	\end{enumerate}
 \end{frame}
 
@@ -96,20 +120,37 @@
 	\vspace{12pt}
 	\emph{How to achieve this}?
 	\begin{itemize}
+		\item	Cocurrent mixer-settlers
+		\item	Cross-current mixer settlers
 		\item	Counter-current mixer-settlers in series
 		\item	High interfacial area during mixing
 		\item	Reduce mass-transfer resistance
-		\item	Promote mass transfer
+		\item	Promote mass transfer: aim is to move \emph{solute} in feed to the solvent in \emph{extract} stream
+		% Seader, Henly, Roper, 3rd ed, p 85
 		\begin{itemize}
-			\item	molecular diffusion
+			\item	molecular diffusion \hfill {\color{myOrange}{$\leftarrow$ microscopic movement}}
 			\item	eddy diffusion  \hfill {\color{myOrange}{$\leftarrow$ orders of magnitude greater}}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Some photos of equipment}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/5062827346_c07bf72670_b.jpg}
+	\end{center}
+	\see{\href{Flickr}{http://www.flickr.com/photos/51009184@N06/5062827346/}}
+\end{frame}
+
+\begin{frame}\frametitle{Some photos of equipment}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Mixer-settler-pic-2lg.jpg}
+	\end{center}
+	\see{\href{Rousselet Robatel}{http://www.rousselet-robatel.com/images/products/Mixer-settler-pic-2lg.jpg}}
+\end{frame}
+
 \begin{frame}\frametitle{Equipment for LLE}	
 	\begin{enumerate}
-		\item	Mixer-settlers
+		\item	Mixer-settlers (integrated unit)
 		\begin{itemize}
 			\item	mix: impellers
 			\item	mix: nozzles
@@ -121,7 +162,7 @@
 			\item	settle: chemical treatment
 			\item	settle: centrifuges
 		\end{itemize}
-		\item	Columns with:
+		\item	Column-type units contain:
 			\begin{itemize}
 				\item	(a) nothing or
 				\item	(b) trays and/or
@@ -134,7 +175,6 @@
 	{\color{myRed}{Important point}}: LLE is an equilibrium-limited separation (as opposed to rate-limited separations seen up to now).
 \end{frame}
 
-% 25 October 2012
 \begin{frame}\frametitle{Mixer-settlers}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/mixer-settler-CRv2-5ed-p745.png}
@@ -202,6 +242,7 @@
 \end{frame}
 
 % To do for 2013: add slides of centrifuge settlers
+
 \begin{frame}\frametitle{Rotating devices}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Seader-3ed-p306.png}
@@ -213,6 +254,9 @@
 		\item	``grey'' = heavier liquid
 	\end{itemize}
 	Used when foams and emulsions would easily form: i.e. gentle mass transfer.
+	
+	\vspace{12pt}
+	{\color{myOrange}Look up in your own time: centrifuge mixer-settlers}
 \end{frame}
 
 \begin{frame}\frametitle{Linking up units (more on this later)}
@@ -338,14 +382,6 @@
 \end{frame}
 
 \begin{frame}\frametitle{Q2: Using the lever rule}
-	Slide removed: was not a useful question
-	% \begin{center}
-	% 		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram.png}
-	% 	\end{center}
-	% 	{\color{myRed}{Which of C or S, when used as a solvent, will obtain a higher extract composition?}} {\color{myOrange}{Answer:}} S
-\end{frame}
-
-\begin{frame}\frametitle{Q3: Using the lever rule}
 	
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
@@ -354,7 +390,7 @@
 \end{frame}
 
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q3 {\color{myOrange}{\emph{solution}}}: Using the lever rule}
+	\begin{frame}\frametitle{Q2 {\color{myOrange}{\emph{solution}}}: Using the lever rule}
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
 		\end{center}
@@ -362,7 +398,7 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Q4: Going to equilibrium}
+\begin{frame}\frametitle{Q3: Going to equilibrium}
 	\iftoggle{student}{
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
@@ -376,7 +412,7 @@
 \end{frame}
 
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q4 {\color{myOrange}{\emph{solution}}}: Going to equilibrium}
+	\begin{frame}\frametitle{Q3 {\color{myOrange}{\emph{solution}}}: Going to equilibrium}
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E.png}
 		\end{center}
@@ -384,7 +420,7 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Q5: Altering flows}
+\begin{frame}\frametitle{Q4: Altering flows}
 	\iftoggle{student}{	
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
@@ -398,7 +434,7 @@
 \end{frame}
 
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q5 {\color{myOrange}{\emph{solution}}}: Altering flows}
+	\begin{frame}\frametitle{Q4 {\color{myOrange}{\emph{solution}}}: Altering flows}
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E-R-E.png}
 		\end{center}
@@ -409,7 +445,7 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Q6: Composition of the mixture, $M$?}
+\begin{frame}\frametitle{Q5: Composition of the mixture, $M$?}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -434,7 +470,7 @@
 \end{frame}
 
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q6 {\color{myOrange}{\emph{solution}}}: Composition of the mixture, $M$?}
+	\begin{frame}\frametitle{Q5 {\color{myOrange}{\emph{solution}}}: Composition of the mixture, $M$?}
 		\begin{columns}[t]
 			\column{0.70\textwidth}
 				\begin{center}
@@ -464,7 +500,7 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Q7: Composition of the 2 phases leaving in equilibrium?}
+\begin{frame}\frametitle{Q6: Composition of the 2 phases leaving in equilibrium?}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -490,7 +526,7 @@
 \end{frame}
 
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q7 {\color{myOrange}{\emph{solution}}}: Composition of the 2 phases in equilibrium?}
+	\begin{frame}\frametitle{Q6 {\color{myOrange}{\emph{solution}}}: Composition of the 2 phases in equilibrium?}
 		\begin{columns}[t]
 			\column{0.70\textwidth}
 				\begin{center}
@@ -602,7 +638,7 @@
 	\see{Richardson and Harker, p 723}
 \end{frame}
 
-\begin{frame}\frametitle{Q8: send raffinate from Q7 to second mixer-settler}
+\begin{frame}\frametitle{Q7: send raffinate from Q6 to second mixer-settler}
 
 	\begin{columns}[t]
 		\column{0.70\textwidth}
@@ -622,7 +658,7 @@
 
 %\todo{Come back to this one}
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q8 {\color{myOrange}{\emph{solution}}}: send raffinate from Q7 to second mixer-settler}
+	\begin{frame}\frametitle{Q7 {\color{myOrange}{\emph{solution}}}: send raffinate from Q6 to second mixer-settler}
 		\begin{columns}[t]
 			\column{0.70\textwidth}
 				\begin{center}
@@ -652,47 +688,6 @@
 		% Note that at point B, for example, E2 vs R2 ratio is about the same; but at D, we get a very low quantity of E2 with a higher concentration (conversely at R2 we get a lower solute concentration of A [desirable], but a very high quantity of raffinate])
 	\end{frame}
 }{}
-
-\begin{frame}\frametitle{Course project}
-	{\color{myGreen}{You should have all received feedback from me, via Google Docs}}
-	
-	\vspace{6pt}
-	For the final report:
-	\begin{itemize}
-		\item	Please give a flowsheet of the overall process
-		\item	Only focus on 1 separation unit operation
-		\item	Some groups have 2 or 3 separation steps: only 10 pages!
-		\item	You must focus on the {\color{myRed}{\textbf{separation}}} step in the flowsheet
-		\item	Provide a detailed drawing of the unit
-		\item	You must show the detailed design calculation for \textbf{sizing} the unit		
-		\item	Choose a basis for sizing: e.g.
-			\begin{itemize}
-				\item	based on the inlet requirement(s), or
-				\item	based on the outlet requirement(s)
-			\end{itemize}
-		\item	Brief discussion on capital costs and annual operating costs
-		\begin{itemize}
-			\item	maintenance 
-			\item	ESA and/or MSA requirements
-		\end{itemize}
-	\end{itemize}
-	\begin{exampleblock}{Report's length}
-		10 pages maximum, please see \href{http://learnche.mcmaster.ca/4M3/Course_project_-_2012}{course website}
-	\end{exampleblock}
-\end{frame}
-
-\begin{frame}\frametitle{Administrative issues: dates}
-	\begin{tabular}{lll}
-		\textbf{Unit}		& 	\textbf{Previous date} 	&	\textbf{Revised date}\\ \hline
-		Assignment 4		&	01 November				&	06 November\\
-		Project report		&  	09 November				&   16 November\\
-		Assignment 5		&	16 November			    & 	23 November\\
-		Take-home exam 		&  	30 November				& 	30 November
-	\end{tabular}
-	\begin{center}
-		\includegraphics[width=0.8\textwidth]{\imagedir/separations/liquid-liquid-extraction/revised-calendar.png}
-	\end{center}
-\end{frame}
 
 % 01 November 2012
 \begin{frame}\frametitle{Series of co-current units}
@@ -1069,21 +1064,6 @@
 			\end{center}
 		\column{0.30\textwidth}
 	\end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{References}
-	% Green book: Separation Techniques 1: Liquid-liquid systems, articles from "Chemical Engineering Magazine"
-	% Perry's
-	% Existing slides from Santiago/Dickson/Ghosh
-	\begin{itemize}
-		% \item	Perry's???
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 1.9
-		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 8
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 13
-		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 12.5 and 12.6
-		\item	Ghosh, ``Principles of Bioseparation Engineering'', chapter 7
-		\item	Uhlmann's Encyclopedia, ``Liquid-Liquid Extraction'',  \href{http://dx.doi.org/10.1002/14356007.b03\_06.pub2}{DOI:10.1002/14356007.b03\_06.pub2}
-	\end{itemize}
 \end{frame}
 
 \begin{comment}
