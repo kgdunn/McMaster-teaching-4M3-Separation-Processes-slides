@@ -358,6 +358,7 @@
 % Question 4 (which leads to Q7)
 % Move "furfural" example after
 % Question 7
+% PUt the "Review from last time slides" here
 % Delete Q1
 
 \begin{frame}\frametitle{Lever rule}
@@ -663,7 +664,7 @@
 	\end{frame}
 }{}
 
-\iftoggle{student}{
+\iftoggle{instructor}{
     % Handout: to print for class
 	%\begin{frame}\frametitle{}
 	%	\begin{center}
@@ -813,6 +814,7 @@
 				\item	Far lower solvent flows
 				\item	Recovery = 	\(1 - \displaystyle\frac{(x_{R_N})(R_N)}{(x_F) (F)}\)
 				\item	Concentration = \(\displaystyle  y_{E_1}\)
+				\item	{\color{brown}\emph{How many stages? What solvent flow?}}
 			\end{itemize}
 	\end{columns}	
 	\vspace{6pt}
@@ -870,7 +872,7 @@
 				$R_1 + S = R_2 + E_2$
 		\end{columns}
 	\end{center}
-	Rearrange:
+	\emph{Rearrange}:
 	\begin{center}		
 		\begin{columns}[t]
 		\column{0.30\textwidth}
@@ -879,9 +881,9 @@
 				$R_1 - E_2 = R_2 - S$
 		\end{columns}
 		\vspace{12pt}
-		$(F - E_1)  =  (R_1 - E_2) = (R_2 - S) = P$
+		$(F - E_1)  =  (R_1 - E_2) = (R_2 - S) = {\color{myGreen}\fbox{$P$}}$
 	\end{center}
-	Note: each \textbf{\emph{difference}} is equal to $P$ (look on the flow sheet where those \emph{differences} are).
+	Note: each \textbf{\emph{difference}} is equal to {\color{myGreen}$P$} (look on the flow sheet above where those \emph{differences} are).
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
@@ -890,16 +892,16 @@
 	\end{center}
 		
 	Rearranging again:
-	\[	F + P = E_1 \]
-	\[	R_1 + P = E_2 \]
-	\[	R_2 + P = S \]
+	\[	F + {\color{myGreen}P} = E_1 \]
+	\[	R_1 + {\color{myGreen}P} = E_2 \]
+	\[	R_2 + {\color{myGreen}P} = S \]
 		
-	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}} on the ternary diagram} (from lever rule)
+	\emph{Interpretation}: \textbf{~{\color{myGreen}$P$} is a fictitious {\color{purple}{operating point}} on the ternary diagram} (from lever rule)
 	\vspace{6pt}
 	\begin{itemize}
-		\item	$E_1$ is on the line that connects $F$ and $P$
-		\item	$E_2$ is on the line that connects $R_1$ and $P$
-		\item	$S$ is on the line that connects $R_2$ and $P$
+		\item	$E_1$ is on the line that connects $F$ and {\color{myGreen}$P$}
+		\item	$E_2$ is on the line that connects $R_1$ and {\color{myGreen}$P$}
+		\item	$S$ is on the line that connects $R_2$ and {\color{myGreen}$P$}
 		%\item	$P$ connects $F$ and $E_1$ 
 		%\item	$P$ connects $R_1$ and $E_2$ 
 		%\item	$P$ connects $R_2$ and $S$
@@ -1053,7 +1055,7 @@
 			\end{columns}
 		\end{center}
 		\vspace{-12pt}
-		Rearrange:
+		\emph{Rearrange}:
 		\begin{center}		
 			\begin{columns}[t]
 				\column{0.30\textwidth}
@@ -1127,16 +1129,17 @@
 	\begin{columns}[t]
 		\column{1.15\textwidth}
 			\begin{enumerate}		
+				{\color{myLightGrey}
 				\item	Calculate the flow and composition of the extract and raffinate from:
 				\begin{itemize}
-					\item	1st cross-current stage, using a pure solvent flow of 50 kg/hr.
-					\item	2nd cross-current stage, with an additional solvent flow of 50 kg/hr.
+					\item	{\color{myLightGrey}1st cross-current stage, using a pure solvent flow of 50 kg/hr.}
+					\item	{\color{myLightGrey}2nd cross-current stage, with an additional solvent flow of 50 kg/hr.}
 				\end{itemize}
 				\item	For the overall 2-stage cross-current system, find the:
 				\begin{itemize}
-					\item	overall recovery {\small \color{myOrange}[\emph{answer:} $\sim$93\%]}
-					\item	overall concentration of combined extract streams {\small \color{myOrange}[\emph{answer:} $\sim$21\%]}
-				\end{itemize}				
+					\item	{\color{myLightGrey}overall recovery {\small \color{myOrange}[\emph{answer:} $\sim$93\%]}}
+					\item	{\color{myLightGrey}overall concentration of combined extract streams {\small \color{myOrange}[\emph{answer:} $\sim$21\%]}}
+				\end{itemize}}				
 				\item	{\color{myGreen}{The objective now is to have a counter-current system so the raffinate leaving in the $N^\text{th}$ stage, $R_N$ has $y_{R_N} = 0.025$}}
 				\begin{itemize}
 					%\item	What is the \emph{maximum allowable solvent flow}?
@@ -1147,6 +1150,48 @@
 				\end{itemize}
 			\end{enumerate}
 	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: step 1}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/step-1.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: step 2}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/step-2.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: step 3}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/step-3.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: step 4}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/step-4.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: step 5}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/step-4.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: step 6}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/step-6.png}
+	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Tutorial solution: concentration profile}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/concentration-profile.png}
+	\end{center}
 \end{frame}
 
 \begin{frame}\frametitle{For practice (A)}
