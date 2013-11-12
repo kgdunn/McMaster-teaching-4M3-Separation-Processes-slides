@@ -144,7 +144,6 @@
 	
 \end{frame}
 
-
 \begin{frame}\frametitle{Some photos of equipment}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/5062827346_c07bf72670_b.jpg}
@@ -254,6 +253,8 @@
 
 % To do for 2014: add slides of centrifuge settlers
 
+% For 2014: add photos/pics from Dad, that he emailed on 11 November 2013
+
 \begin{frame}\frametitle{Rotating devices}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Graesser-contactor-Seader-3ed-p306.png}
@@ -349,6 +350,16 @@
 	\see{\href{http://www.youtube.com/watch?v=gGYHXhcKM5s}{http://www.youtube.com/watch?v=gGYHXhcKM5s}}
 \end{frame}
 
+% For 2014: reorder the questions
+% Question 2
+% Question 3
+% Question 5
+% Question 6
+% Question 4 (which leads to Q7)
+% Move "furfural" example after
+% Question 7
+% Delete Q1
+
 \begin{frame}\frametitle{Lever rule}
 	\begin{columns}[t]
 		\column{0.80\textwidth}
@@ -362,9 +373,9 @@
 			\begin{itemize}
 				\item	mixture = K
 				\vspace{12pt}
-				\item	$\displaystyle \frac{\text{PK}}{\text{KQ}} = \displaystyle\frac{\text{amount Q}}{\text{amount P}}$
-				\vspace{12pt}
-				\item	The converse applies also: when separating a settled mixture
+				\item	$\displaystyle \frac{\text{PK}}{\text{KQ}} = \displaystyle\frac{\text{{\color{myOrange}mass} Q}}{\text{{\color{myOrange}mass} P}}$
+				\vspace{8pt}
+				\item	The converse applies also: when a settled mixture separates into P and Q
 				\item	Applies anywhere: even in the miscible region
 			\end{itemize}
 	\end{columns}
@@ -372,7 +383,7 @@
 
 % 26 October 2012
 \begin{frame}\frametitle{Q1: Using the lever rule}
-	Which is a more \emph{flexible} system?
+	Which is a more \emph{flexible} system: (a) or (b)?
 	\begin{itemize}
 		\item	S = pure solvent used 
 		\item	F = feed concentration point (more correctly it is $x_F$)
@@ -405,7 +416,7 @@
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
 		\end{center}
-		Composition of the mixture? Trick question: \emph{we need more information} (e.g. amount of $F$ \textbf{and} $S$ must be given)
+		Composition of the mixture? \emph{we need more information} (e.g. amount of $F$ \textbf{and} $S$ must be given to find point $M$)
 	\end{frame}
 }{}
 
@@ -432,23 +443,47 @@
 }{}
 
 \begin{frame}\frametitle{Q4: Altering flows}
-	\iftoggle{student}{	
-		\begin{center}
-			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
-		\end{center}
-	}{
-		\begin{center}
-			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture.png}
-		\end{center}
-	}
+	\begin{columns}[t]
+		\column{0.8\textwidth}
+			\begin{center}
+				\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
+			\end{center}
+			\vfill
+		\column{0.2\textwidth}
+		
+			\vspace{-0.5cm}
+			
+			{\color{purple}{Recovery}} = fraction of solute recovered
+			\begin{exampleblock}{For 1 stage}
+				\[1 - \displaystyle\frac{(x_{R})(R)}{(x_F) (F)}\]
+			\end{exampleblock}
+			\begin{exampleblock}{Specifically}
+				\[1 - \displaystyle\frac{(x_{R,A})(R)}{(x_{F,A}) (F)}\]
+			\end{exampleblock}
+	\end{columns}
 	Same system, but now lower solvent flow rate {\tiny (to try save money!)}. What happens to (a) extract concentration and (b) solute recovery?
 \end{frame}
 
 \iftoggle{student}{
 	\begin{frame}\frametitle{Q4 {\color{myOrange}{\emph{solution}}}: Altering flows}
-		\begin{center}
-			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E-R-E.png}
-		\end{center}
+		\begin{columns}[t]
+			\column{0.8\textwidth}
+				\begin{center}
+					\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M-R-E-R-E.png}
+				\end{center}
+				\vfill
+			\column{0.2\textwidth}
+		
+				\vspace{-0.5cm}
+			
+				{\color{purple}{Recovery}} = fraction of solute recovered
+				\begin{exampleblock}{For 1 stage}
+					\[1 - \displaystyle\frac{(x_{R})(R)}{(x_F) (F)}\]
+				\end{exampleblock}
+				\begin{exampleblock}{Specifically}
+					\[1 - \displaystyle\frac{(x_{R,A})(R)}{(x_{F,A}) (F)}\]
+				\end{exampleblock}
+		\end{columns}
 		(a) {\small \emph{extract concentration increases}}: (A at E*) $>$ (A at E): $y_{E^*}>y_{E}$
 		
 		\vspace{2pt}
@@ -515,7 +550,7 @@
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
-				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture.png}
 			\end{center}
 			\vfill
 		\column{0.3\textwidth}
@@ -533,7 +568,7 @@
 				\end{tabular}
 			}
 	\end{columns}
-	$R_1 = \qquad\quad x_{R_1,A} = \qquad\quad x_{R_1,C} = \qquad\quad x_{R_1,S} = \qquad\quad$ $E_1 = \qquad\quad x_{E_1,A} = \qquad\quad x_{E_1,C} = \qquad\quad x_{E_1,S} = \qquad\quad$ 
+	$R_1 = \qquad\quad x_{R_1,A} = \qquad\quad x_{R_1,C} = \qquad\quad x_{R_1,S} = \qquad\quad$ $E_1 = \qquad\quad y_{E_1,A} = \qquad\quad y_{E_1,C} = \qquad\quad y_{E_1,S} = \qquad\quad$ 
 \end{frame}
 
 \iftoggle{student}{
@@ -563,11 +598,96 @@
 					\end{exampleblock}
 				}
 		\end{columns}
-		$R_1 = 222\text{kg};\quad x_{R_1,A} = 0.10;\quad x_{R_1,C} = 0.82;\quad x_{R_1,S} = 0.08$ $E_1 = 128\text{kg};\quad x_{E_1,A} = 0.33;\quad x_{E_1,C} = 0.06;\quad x_{E_1,S} = 0.61$ 
+		$R_1 = 222\text{kg};\quad x_{R_1,A} = 0.10;\quad x_{R_1,C} = 0.82;\quad x_{R_1,S} = 0.08$ $E_1 = 128\text{kg};\quad y_{E_1,A} = 0.33;\quad y_{E_1,C} = 0.06;\quad y_{E_1,S} = 0.61$ 
 	\end{frame}
 }{}
 
-% 30 October 2012
+\begin{frame}\frametitle{Link units in \emph{series}}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-modified.png}
+	\end{center}
+	\see{Richardson and Harker, p 723}
+	
+	\vspace{12pt}
+	{\color{myOrange}Introduce fresh solvent each time}
+\end{frame}
+
+\begin{frame}\frametitle{Q7: send raffinate from Q6 to second mixer-settler}
+
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated.png}
+			\end{center}
+		\column{0.4\textwidth}			
+			\begin{center}
+				\hspace{-3cm}
+				\vspace{24pt}
+				\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
+			\end{center}
+	\end{columns}
+	\vspace{12pt}
+	\textbf{Question}: how much solvent should we use in the second stage?	
+\end{frame}
+
+%\todo{Come back to this one}
+\iftoggle{student}{
+	\begin{frame}\frametitle{Q7 {\color{myOrange}{\emph{solution}}}: send raffinate from Q6 to second mixer-settler}
+		\begin{columns}[t]
+			\column{0.70\textwidth}
+				\begin{center}
+					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated-second-round.png}
+				\end{center}
+			\column{0.4\textwidth}			
+				\begin{center}
+					\hspace{-3cm}
+					\vspace{24pt}
+					\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
+				\end{center}
+				Compare extract:
+				\vspace{24pt}
+				%\begin{itemize}
+				%	\item	$x_\text{solute}$ from mixture B \_\_\_ $x_\text{solute}$ from D
+				%\end{itemize}
+				
+				Compare volumes:
+				\vspace{24pt}
+				%\begin{itemize}
+				%	\item	$x_\text{solute}$ from mixture B \_\_\_ $x_\text{solute}$ from D
+				%\end{itemize}
+		\end{columns}
+		\vspace{12pt}
+		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs lower recovery}
+		%Answer: less solvent added: higher extract concentration, but raffinate will also contain more solute (i.e. lower recovery). We can't achieve both with units in series.	
+		% Note that at point B, for example, E2 vs R2 ratio is about the same; but at D, we get a very low quantity of E2 with a higher concentration (conversely at R2 we get a lower solute concentration of A [desirable], but a very high quantity of raffinate])
+	\end{frame}
+}{}
+
+\begin{frame}\frametitle{{\color{myOrange}Cross-flow arrangements}}
+	\begin{columns}[t]
+		\column{0.40\textwidth}			
+			\begin{center}
+				\vspace{-12pt}
+				{\color{myGreen}{$N=3$ in this illustration}}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/cross-current-extraction-Schweitzer-p1-263.png}
+			\end{center}
+			\see{Schweitzer, p 1-263}
+		\column{0.60\textwidth}
+			\begin{itemize}
+				\item	{\color{purple}{Recovery}} = fraction of solute recovered
+					\begin{exampleblock}{}
+						\[1 - \displaystyle\frac{(x_{R_N})(R_N)}{(x_F) (F)}\]
+					\end{exampleblock}
+				
+				\vspace{6pt}
+				\item	{\color{purple}{Concentration}} of overall extract = solute leaving in each extract stream, divided by total extract flow rate 
+					\begin{exampleblock}{}
+						\[\frac{\displaystyle \sum_n^N{(y_{E_n})(E_n)}}{ \displaystyle \sum_n^N{E_n}}\]
+					\end{exampleblock}
+			\end{itemize}
+	\end{columns}	
+\end{frame}
+
 \iftoggle{student}{
     % Handout: to print for class
 	%\begin{frame}\frametitle{}
@@ -638,98 +758,14 @@
 		\vspace{12pt}
 		$M = 300\text{kg};\quad x_{M,A} = 0.15;\quad x_{M,C} = 0.18;\quad x_{M,S} = 0.67$ 
 		$R_1 = ~82\text{kg};\quad x_{R_1,A} = 0.33;\quad x_{R_1,C} = 0.57;\quad x_{R_1,S} = 0.10$ 
-		$E_1 = 218\text{kg};\quad x_{E_1,A} = 0.09;\quad x_{E_1,C} = 0.04;\quad x_{E_1,S} = 0.87$ 
+		$E_1 = 218\text{kg};\quad y_{E_1,A} = 0.09;\quad y_{E_1,C} = 0.04;\quad y_{E_1,S} = 0.87$ 
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Link units in \emph{series}}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-modified.png}
-	\end{center}
-	\see{Richardson and Harker, p 723}
-\end{frame}
-
-\begin{frame}\frametitle{Q7: send raffinate from Q6 to second mixer-settler}
-
-	\begin{columns}[t]
-		\column{0.70\textwidth}
-			\begin{center}
-				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated.png}
-			\end{center}
-		\column{0.4\textwidth}			
-			\begin{center}
-				\hspace{-3cm}
-				\vspace{24pt}
-				\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
-			\end{center}
-	\end{columns}
-	\vspace{12pt}
-	\textbf{Question}: how much solvent should we use in the second stage?	
-\end{frame}
-
-%\todo{Come back to this one}
-\iftoggle{student}{
-	\begin{frame}\frametitle{Q7 {\color{myOrange}{\emph{solution}}}: send raffinate from Q6 to second mixer-settler}
-		\begin{columns}[t]
-			\column{0.70\textwidth}
-				\begin{center}
-					\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base-with-mixture-equilibrated-second-round.png}
-				\end{center}
-			\column{0.4\textwidth}			
-				\begin{center}
-					\hspace{-3cm}
-					\vspace{24pt}
-					\includegraphics[width=1.4\textwidth]{\imagedir/separations/liquid-liquid-extraction/multiple-contacts-mixer-settler-CRv2-5ed-p723-coloured.png}
-				\end{center}
-				Compare extract:
-				\vspace{24pt}
-				%\begin{itemize}
-				%	\item	$x_\text{solute}$ from mixture B \_\_\_ $x_\text{solute}$ from D
-				%\end{itemize}
-				
-				Compare volumes:
-				\vspace{24pt}
-				%\begin{itemize}
-				%	\item	$x_\text{solute}$ from mixture B \_\_\_ $x_\text{solute}$ from D
-				%\end{itemize}
-		\end{columns}
-		\vspace{12pt}
-		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs lower recovery}
-		%Answer: less solvent added: higher extract concentration, but raffinate will also contain more solute (i.e. lower recovery). We can't achieve both with units in series.	
-		% Note that at point B, for example, E2 vs R2 ratio is about the same; but at D, we get a very low quantity of E2 with a higher concentration (conversely at R2 we get a lower solute concentration of A [desirable], but a very high quantity of raffinate])
-	\end{frame}
-}{}
-
-% 01 November 2012
-\begin{frame}\frametitle{Series of co-current units}
-	\begin{columns}[t]
-		\column{0.40\textwidth}			
-			\begin{center}
-				\vspace{-12pt}
-				{\color{myOrange}{$N=3$ in this illustration}}
-				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/cross-current-extraction-Schweitzer-p1-263.png}
-			\end{center}
-			\see{Schweitzer, p 1-263}
-		\column{0.60\textwidth}
-			\begin{itemize}
-				\item	{\color{purple}{Recovery}} = fraction of solute recovered
-					\begin{exampleblock}{}
-						\[1 - \displaystyle\frac{(x_{R_N})(R_N)}{(x_F) (F)}\]
-					\end{exampleblock}
-				
-				\vspace{6pt}
-				\item	{\color{purple}{Concentration}} of overall extract = solute leaving in each extract stream, divided by total extract flow rate 
-					\begin{exampleblock}{}
-						\[\frac{\displaystyle \sum_n^N{(y_{E_n})(E_n)}}{ \displaystyle \sum_n^N{E_n}}\]
-					\end{exampleblock}
-			\end{itemize}
-	\end{columns}	
-\end{frame}
-
-\begin{frame}\frametitle{Co-current \emph{vs} counter-current}
+\begin{frame}\frametitle{Cross-current \emph{vs} counter-current}
 	\begin{columns}[t]
 		\column{0.50\textwidth}
-			{\color{myGreen}{Co-current ($N=2$ stages)}} 
+			{\color{myGreen}{Cross-current ($N=2$ stages)}} 
 		\column{0.50\textwidth}
 			{\color{myGreen}{Counter-current ($N=2$ stages)}}
 	\end{columns}
@@ -765,17 +801,55 @@
 	You will have an assignment question to compare and contrast these two configurations
 \end{frame}
 
-\begin{frame}\frametitle{Some theory: Two \emph{counter-current} units}
+\begin{frame}\frametitle{What we are aiming for}
+	\vspace{12pt}
+	General approach:
+	\begin{enumerate}
+		\item	Use ternary diagrams to determine operating lines
+		\item	Estimate number of ``theoretical plates'' or ``theoretical stages''
+		\item	Convert ``theoretical stages'' to actual equipment size. E.g. assume we calculate that we need $N\approx 6$ theoretical stages.
+			\begin{itemize}
+				\item	does \textbf{not mean} we require 6 mixer-settlers (though we could do that, but costly)
+				\item	it means we need a \textbf{column} which has equivalent operation of 6 counter-current mixer-settlers that fully reach equilibrium
+				\item	at this point we resort to correlations and vendor assistance
+				\item	vendors: provide {\color{purple}{HETS = height equivalent to a theoretical stage}}
+				\item	use that to size the column
+			\end{itemize}
+	\end{enumerate}
+	\begin{itemize}
+		\item	unit height (or size) = $\dfrac{\text{HETS} \,\, \times \,\, \text{number of theoretical stages}}{\text{stage efficiency}}$
+	\end{itemize}	
+\end{frame}
+
+\begin{frame}\frametitle{For example}
+
+	\begin{columns}[t]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/WINTRAY-vs-RDC.png}
+			\end{center}
+		\column{0.65\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/WINTRAY-LLE-concept.png}
+			\end{center}
+	\end{columns}
+	
+	\vspace{24pt}
+	\see{\href{http://www.jgc.co.jp/en/04tech/10plant/wintray.html}{WINTRAY} (Japanese company; newly patented design)}
+\end{frame}
+
+\begin{frame}\frametitle{Two \emph{counter-current} units}
+	\emph{Reference for this section}: {\color{myOrange}Seader textbook, 3rd ed, p 312 to 324.}
 	\begin{center}
-		\includegraphics[width=0.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+		\includegraphics[width=0.45\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 	\end{center}
-	Just \textbf{{\color{myGreen}{consider $N=2$ stages}}} for now. Steady state mass balance:
+	\textbf{{\color{myGreen}{Consider $N=2$ stages}}} for now. Steady state mass balance:
 	\begin{center}
 		\begin{columns}[t]
 			\column{0.30\textwidth}
-				$F + E_2 = E_1 + R_1$
+				$F + E_2 = R_1 + E_1$
 			\column{0.30\textwidth}
-				$E_2 + R_2 = S + R_1$
+				$R_1 + S = R_2 + E_2$
 		\end{columns}
 	\end{center}
 	Rearrange:
@@ -789,7 +863,7 @@
 		\vspace{12pt}
 		$(F - E_1)  =  (R_1 - E_2) = (R_2 - S) = P$
 	\end{center}
-	Note: each difference is equal to $P$ (look on the flow sheet where those \emph{differences} are).
+	Note: each \textbf{\emph{difference}} is equal to $P$ (look on the flow sheet where those \emph{differences} are).
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
@@ -805,13 +879,17 @@
 	\emph{Interpretation}: \textbf{~~$P$ is a fictitious {\color{purple}{operating point}} on the ternary diagram} (from lever rule)
 	\vspace{6pt}
 	\begin{itemize}
-		\item	$P$ connects $F$ and $E_1$ 
-		\item	$P$ connects $R_1$ and $E_2$ 
-		\item	$P$ connects $R_2$ and $S$
+		\item	$E_1$ is on the line that connects $F$ and $P$
+		\item	$E_2$ is on the line that connects $R_1$ and $P$
+		\item	$S$ is on the line that connects $R_2$ and $P$
+		%\item	$P$ connects $F$ and $E_1$ 
+		%\item	$P$ connects $R_1$ and $E_2$ 
+		%\item	$P$ connects $R_2$ and $S$
 	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 1}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -819,15 +897,28 @@
 			\end{center}
 		\column{0.40\textwidth}
 			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units-boundary.png}
 			\end{center}
+			{\scriptsize
+				\begin{tabular}{ll}
+					\textbf{Feed}		& 	\textbf{Solvent}\\ \hline
+					$F$ = 250 kg		&	$S$ = 100 kg \\
+					$x_{F,A} = 0.24$	&	$x_{S,A} = 0.0$\\
+					$x_{F,C} = 0.76$	&	$x_{S,C} = 0.0$\\
+					$x_{F,S} = 0.00$	&	$x_{S,S} = 1.0$\\\hline
+				\end{tabular}
+				\vspace{12pt}
+				\begin{exampleblock}{{\small Overall balance gives:}}
+					\[M = S + F = E_1 + R_2\]
+				\end{exampleblock}
+			}
 	\end{columns}
 	\vspace{12pt}
-	For example, let's require $x_{R_2,A} = 0.05$ {\scriptsize (solute concentration in raffinate)}. What is $y_{E_1,A}$ then {\scriptsize (concentration of solute in the extract)}?	
-	\vfill
+	For example, let's require $x_{R_2,A} = 0.05$ {\scriptsize (solute concentration in raffinate)}. Given an $S$ flow rate, what is $y_{E_1,A}$? {\scriptsize (concentration of solute in extract)}
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 2}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -835,16 +926,18 @@
 			\end{center}
 		\column{0.40\textwidth}
 			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units-boundary.png}
 			\end{center}
 			\textbf{Note}: the line connecting {\color{myBlue}{\textbf{$E_1$ to $R_2$ is not a tie line}}}. We use the lever rule and an overall mass balance $(F + S = E_1 + R_2)$ to solve for all flows and compositions of $F, S, E_1,$ and $R_2$.
 	\end{columns}
 	\vspace{12pt}
 	$y_{E_1,A}\approx 0.38$ is found from an overall mass balance, through $M$.
-	\vfill
+
+	Simply connect $R_2$ and $M$ and project out to $E_1$.
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 3}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -855,47 +948,25 @@
 				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 			\end{center}
 			\textbf{Recall}: 
+			
 			\vspace{-10pt}
 			\[	F + P = E_1 \]
-			\[	R_2 + P = S \]			
+			
+			\vspace{-12pt}
+			{\color{myOrange}\tiny$E_1$ is on the line that connects $F$ and $P$}
+			
+			\[	R_2 + P = S \]
+			
+			\vspace{-12pt}
+			{\color{myOrange}\tiny$S$ is on the line that connects $R_2$ and $P$}
 	\end{columns}
 	\begin{exampleblock}{}
 		Extrapolate through these lines until intersection at point {\color{myGreen}{$P$}}.
 	\end{exampleblock}	
-	\vspace{-6pt}
-	{\small
-		Minimal achievable $E_1$ concentration? \emph{mentally move point} {\color{myRed}{$M$}} \emph{towards} $S$. What happens to $P$? Alternative (simpler?) explanation on next slide.
-	}
-\end{frame}
-
-\begin{comment}
-\begin{frame}\frametitle{Counter-current graphical solution: maximum solvent flow}
-	\begin{columns}[t]
-		\column{0.70\textwidth}
-			\begin{center}
-				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step3-min-E1.png}
-			\end{center}
-		\column{0.40\textwidth}
-			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
-			\end{center}
-			\textbf{Recall}: 
-			\vspace{-10pt}
-			\[	F + P = E_1 \]
-			\[	R_2 + P = S \]			
-	\end{columns}
-	\vspace{12pt}
-	{\color{myOrange}{Subtle point}}: minimal achievable $E^\text{min}_1$ concentration: 
-	{\small
-		\begin{itemize}
-			\item	occurs at a certain \emph{maximum} solvent flow rate indicated by {\LARGE{\color{myRed}{$\mathbf{\circ}$}}}
-			\vspace{-6pt}
-			\item	note that $R_2$ is fixed (specified) in this example
-		\end{itemize}
-	}
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 4}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -907,11 +978,12 @@
 			\end{center}
 	\end{columns}
 	\vspace{12pt}
-	Once we have $E_1$, we can start: note that in stage 1 the $R_1$ and $E_1$ streams leave in equilibrium and can be connected with a tie line.
+	Once we have $E_1$, we can start: note that in stage 1 the $R_1$ and $E_1$ streams leave in equilibrium and can be connected with a {\color{myOrange}tie line}.
 	\vfill
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 5}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -924,6 +996,9 @@
 			\textbf{Again recall}: 
 			\vspace{-12pt}
 			\[	R_1 + P = E_2 \]
+			
+			\vspace{-12pt}
+			{\color{myOrange}\tiny$E_2$ is on the line that connects $R_1$ and $P$}
 	\end{columns}
 	\vspace{12pt}
 	Since we have point $P$ and $R_1$ we can bring the operating line back and locate point $E_2$
@@ -931,6 +1006,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 6}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
@@ -941,7 +1017,6 @@
 				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
 			\end{center}
 	\end{columns}
-	\vspace{12pt}
 	The last unit in a cascade is a special case: we already know $R_{N=2}$, but we could have also calculated it from the tie line with $E_2$. We aim for some overshoot of $R_N$. {\scriptsize (Good agreement in this example.)}
 \end{frame}
 
@@ -1025,23 +1100,10 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Relating the theoretical stages to an actual unit}
- 	Assume we calculated $N\approx 6$, for example, as the theoretical stages required:
-
-	\vspace{12pt}
-	\textbf{Note:}
-	\begin{itemize}
-		\item	does not mean we require 6 mixer-settlers (though we could do that, but costly)
-		\item	it means we need a \textbf{column} which has equivalent operation of 6 counter-current mixer-settlers that fully reach equilibrium
-		\item	at this point we resort to correlations and vendor assistance
-	\end{itemize}
-\end{frame}
-
-% 02 November 2012
 \begin{frame}\frametitle{Tutorial-style question}
 	\begin{exampleblock}{}
-		{\color{myBlue}{Consider a system for which you have been given the ternary diagram (see next slides). $A$ = solute, $S$ = solvent, $C$ = carrier.
-		The feed, $F$ enters at 112 kg/hr with composition of 25 wt\% solute and 75 wt\% carrier.	}}
+		{\color{myBlue}{Consider a system for which you have been given the ternary diagram (see next slides). $A$ = solute, $S$ = solvent (100\% pure), $C$~=~carrier.
+		The feed, $F$ enters at 112 kg/hr with composition of 25~wt\% solute and 75 wt\% carrier.	}}
 	\end{exampleblock}
 	\vspace{-16pt}
 	\begin{columns}[t]
@@ -1049,62 +1111,86 @@
 			\begin{enumerate}		
 				\item	Calculate the flow and composition of the extract and raffinate from:
 				\begin{itemize}
-					\item	1st co-current stage, using a pure solvent flow of 50 kg/hr.
-					\item	2nd co-current stage, with an additional solvent flow of 50 kg/hr.
+					\item	1st cross-current stage, using a pure solvent flow of 50 kg/hr.
+					\item	2nd cross-current stage, with an additional solvent flow of 50 kg/hr.
 				\end{itemize}
-				\item	For the overall 2-stage system, find the:
+				\item	For the overall 2-stage cross-current system, find the:
 				\begin{itemize}
-					\item	overall recovery [\emph{answer:} $\sim$93\%]
-					\item	overall concentration of combined extract streams [\emph{answer:} $\sim$21\%]
+					\item	overall recovery {\small \color{myOrange}[\emph{answer:} $\sim$93\%]}
+					\item	overall concentration of combined extract streams {\small \color{myOrange}[\emph{answer:} $\sim$21\%]}
 				\end{itemize}				
 				\item	{\color{myGreen}{The objective now is to have a counter-current system so the raffinate leaving in the $N^\text{th}$ stage, $R_N$ has $y_{R_N} = 0.025$}}
 				\begin{itemize}
-					\item	What is the \emph{maximum allowable solvent flow}?
-					\item	Explain whether it's possible to achieve an extract stream of $y_{E_1} = 0.21$?
-					\item	Show the construction on the ternary diagram for the number of equili- brium stages to achieve $y_{R_N} = 0.025$, given a solvent flow of 60 kg/hr.
+					%\item	What is the \emph{maximum allowable solvent flow}?
+					%\item	Explain whether it's possible to achieve an extract stream of $y_{E_1} = 0.21$.
+					\item	Show the construction on the ternary diagram for the number of equili- brium stages to achieve $x_{R_N} = 0.025$, given a solvent flow of 28 kg/hr.
+					\item	Calculate the overall recovery and concentration of the extract stream.
 					\item	Plot on the same axes the concentrations in the extract and raffinate streams.
 				\end{itemize}
 			\end{enumerate}
 	\end{columns}	
 \end{frame}
 
-\begin{frame}\frametitle{For practice}
+\begin{frame}\frametitle{Counter-current graphical solution: 2 units}
+	\textbf{Step 3(b)}
 	\begin{columns}[t]
 		\column{0.70\textwidth}
 			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step3.png}
 			\end{center}
-		\column{0.30\textwidth}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+			\textbf{Recall}: 
+			\vspace{-10pt}
+			\[	F + P = E_1 \]
+			
+			\[	R_2 + P = S \]
 	\end{columns}
+	\textbf{Thought experiment}: What is the minimal achievable $E_1$ concentration? \emph{mentally move point} {\color{myRed}{$M$}} \emph{towards} $S$. What happens to $P$ as solvent flow $S$ is increased? 
+	{\small Alternative explanation next.}
 \end{frame}
 
-	\begin{frame}\frametitle{The phase rule}
-		{\color{myGreen}{\iftoggle{instructor}{Recall the phase rule: $F = C - P + 2$}{}}}
-	\end{frame}
-	
-	\begin{frame}\frametitle{Approach to sizing a unit}
-		There are so many variations in LLE equipment: mixer-settlers; towers; rotating devices.
-
-		\vspace{12pt}
-		How do we design for them?
-
-		\vspace{12pt}
-		General approach:
-		\begin{enumerate}
-			\item	Use ternary diagrams to determine operating curves
-			\item	Estimate number of ``theoretical plates''
-			\item	Convert ``theoretical plates'' to actual equipment size
-				\begin{itemize}
-					\item	using mass transfer coefficients, and
-					\item	concentration differences
-				\end{itemize}
-			\item	Take co- or counter-current operation into account
-		\end{enumerate}
+\begin{frame}\frametitle{Counter-current graphical solution: maximum solvent flow}
+	\textbf{Step 3(b)}
+	\begin{columns}[t]
+		\column{0.70\textwidth}
+			\begin{center}
+				\includegraphics[width=1.5\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-counter-step3-min-E1.png}
+			\end{center}
+		\column{0.40\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/counter-current-2-units.png}
+			\end{center}
+			\textbf{Recall}: 
+			\vspace{-10pt}
+			\[	F + P = E_1 \]
+			\[	R_2 + P = S \]
+	\end{columns}
+	%\vspace{12pt}
+	{\color{myOrange}{Subtle point}}: minimal achievable $E^\text{min}_1$ concentration: 
+	{\small
 		\begin{itemize}
-			\item	{\color{purple}{HETS = height equivalent to a theoretical stage}}
+			\item	occurs at a certain \emph{maximum} solvent flow rate indicated by {\LARGE{\color{myRed}{$\mathbf{\circ}$}}}
+			\vspace{-6pt}	
+			\item	note that $R_2$ is fixed (specified) in this example
 		\end{itemize}
+	}
+\end{frame}
 
-		\vspace{12pt}
-		Let's start slowly: a single stage, well-mixed.
-	\end{frame}
-\end{comment}
+\begin{frame}\frametitle{For practice (A)}
+	\begin{columns}[t]
+		\column{0.90\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/Seader-ternary-example-base.png}
+			\end{center}
+		\column{0.10\textwidth}
+	\end{columns}	
+\end{frame}
+
+\begin{frame}\frametitle{For practice (B)}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/liquid-liquid-extraction/furfural-water-ethylene-glycol-ternary-phase-diagram-Seader-3ed-p153.png.pdf}
+	\end{center}
+\end{frame}
