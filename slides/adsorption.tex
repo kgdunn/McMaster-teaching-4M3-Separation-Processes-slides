@@ -103,6 +103,34 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{This section in context of the course}
+	\begin{itemize}
+		\item	Continuous operation
+		\begin{itemize}
+			\item	Sedimentation
+			\item	Centrifuges, cyclones
+			\item	Membranes (except periodically backflushed to regenerate)
+			\item	Liquid-liquid extraction
+		\end{itemize}
+		
+		\vspace{12pt}
+		\item	Batch/cycled operation
+		\begin{itemize}
+			\item	filtration (e.g. plate and frame)
+			\item	{\color{red}adsorption units}
+			\item	drying units (\emph{next})
+		\end{itemize}
+	\end{itemize}
+	
+	\vspace{12pt}
+	{\color{myOrange}Our goals}
+	\begin{itemize}
+		\item	understand what adsorbers look like and how they are operated
+		\item	how to find the equilibrium isotherms for a new system
+		\item	preliminary sizing of a adsorption unit
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Introduction to \textbf{{\color{purple}{sorption}}} processes}
 	\begin{exampleblock}{\textbf{Sorption}}
 		Components in a fluid phase, {\color{myGreen}{solutes}}, are selectively transferred to insoluble, (rigid) particles that are suspended in a vessel or packed in a column.
@@ -117,7 +145,7 @@
 	\emph{Some sorption processes}:
 	\begin{itemize}
 		\item	a\textbf{b}sorption: gas into liquid phase [it is strictly speaking a sorption process, but not considered here (3M4)]
-		\item	{\color{purple}{adsorption}}: molecules bond with a solid surface
+		\item	{\color{purple}{adsorption}}: molecules bond with a solid {\color{red}surface}
 		\item	{\color{purple}{ion-exchange}}: ions displace dissimilar ions from solid phase
 			\begin{itemize}
 				\item	Water softening: $\text{Ca}^{2+}_\text{(aq)} + 2\text{NaR}_\text{(s)} \longleftrightarrow \text{CaR}_{2\text{(s)}} + 2\text{Na}^{+}_\text{(aq)}$
@@ -141,168 +169,7 @@
 		\item	ion-exchange: synthetic polymer resins widely used to soften water
 	\end{itemize}
 
-	Industrial use of adsorption picked up with molecular zeolites in the 1960s
-\end{frame}
-
-\begin{frame}\frametitle{Adsorbents}
-	General principle (more details coming up soon)
-	\begin{columns}[c]
-		\column{0.60\textwidth}
-			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Adsorbent-pores-Seader-p569-3ed-mod.png}
-			\end{center}
-		\column{0.45\textwidth}
-			Molecules attach to the particle's surfaces: outside and on the pore walls
-
-			\vspace{12pt}
-			Main characterization: {\color{purple}{pore diameter}} of adsorbent
-
-			\vspace{12pt}
-			Mechanisms during adsorption
-				\begin{itemize}
-				\item	{\color{purple}{equilibrium interaction}}: solid-fluid interactions
-				\item	{\color{purple}{kinetic}}: differences in diffusion rates
-				\item	{\color{purple}{steric}}: pore structure hinders/retains molecules of a certain shape
-			\end{itemize}
-	\end{columns}
-	\see{Modified from: Seader, 3ed, p 569}
-\end{frame}
-
-\begin{frame}\frametitle{Quick recap of some familiar concepts}
-	\begin{itemize}
-		\item	1m = 100cm = 1000mm = $10^6$\micron = $10^9$nm = $10^{10}$\AA
-		\item	Hydrogen and helium atoms: $\sim 1$\AA
-		\item	For a pore: \[\frac{\text{Internal surface area}}{\text{Pore volume}} = \frac{\pi d_p L}{\pi d_p^2 L/4} = \frac{4}{d_p}\]
-		\item	$d_p$ = pore diameter: typically around 10 to 200 \AA
-	\end{itemize}
-\end{frame}
-
-\begin{frame}\frametitle{Adsorbents}
-	Helpful to see what they look like to understand the principles:
-	\begin{columns}[c]
-		\column{0.60\textwidth}
-			\begin{center}
-				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Active_Al2O3-Wikipedia.png}
-			\end{center}
-			\vspace{-12pt}
-			\see{\href{http://en.wikipedia.org/wiki/File:Active_Al2O3.jpg}{Wikipedia}}
-		\column{0.40\textwidth}
-			{\color{myGreen}{Activated alumina}}
-
-			\begin{itemize}
-				\item	made from from aluminum hydroxide
-				\item	$\sim 300~\text{m}^2$ per gram
-				\item	most widely used adsorbent
-				\item	hydrophilic
-				\item	pore diameter: 10 to 75 \AA
-			\end{itemize}
-	\end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Adsorbents}
-	\begin{columns}[c]
-		\column{0.50\textwidth}
-			\begin{center}
-				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/DOI-{10.1016}{j.saa.2011.10.012}1-s2.0-S1386142511009012-gr3.jpg}
-			\end{center}
-			\vspace{-12pt}
-			\see{\href{http://dx.doi.org/10.1016/j.saa.2011.10.012}{DOI:10.1016/j.saa.2011.10.012}}
-		\column{0.50\textwidth}
-			{\color{myGreen}{Activated carbon}}
-
-			\begin{itemize}
-				\item	partially oxidized coconut shells, nuts, wood, peat, bones, sewage sludge
-				\item	difference hardnesses of adsorbent
-				\item	400 to 1200 $\text{m}^2$ per gram
-				\item	hydrophobic
-				\item	pore diameter:  10 to over 50\AA
-			\end{itemize}
-			e.g. bone char: decolourizing syrups % Article by Johnston, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
-	\end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Adsorbents}
-	\begin{columns}[t]
-
-		\column{0.60\textwidth}
-			\vspace{-24pt}
-			\begin{center}
-				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Zeolites-Seader-3ed-p575.png}
-			\end{center}
-			\see{Seader, 3ed, p575}
-
-			\see{Uhlmanns, p565}
-			\vspace{-4pt}
-			\begin{center}
-				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Zeolites-Uhlmanns-p565.png}
-			\end{center}
-		\column{0.40\textwidth}
-			{\color{myGreen}{Zeolite lattices}}
-
-			\vspace{12pt}
-			\emph{Some examples}
-
-			\vspace{6pt}
-			$\text{K}_{12}[(\text{AlO}_2)_{12}(\text{SiO}_2)_{12}]$:
-
-			\hfill {\color{myOrange}{drying gases  [2.9\AA]}}
-
-			\vspace{12pt}
-			$\text{Na}_{12}[(\text{AlO}_2)_{12}(\text{SiO}_2)_{12}]$:
-
-			\hfill {\color{myOrange}{$\text{CO}_2$ removal  [3.8\AA]}}
-
-
-			\vspace{12pt}
-			$\text{Ca}_{43}[(\text{AlO}_2)_{86}(\text{SiO}_2)_{106}]$:
-
-			\hfill {\color{myOrange}{air separation [8\AA]}}
-
-
-			\vspace{18pt}
-			Very specific pore diameters.
-			\begin{itemize}
-				\item	40 naturally occurring
-				\item	$\sim$  150 synthesized % C+R v2, 5ed, p975
-				\item	$\sim$	650 $\text{m}^2$ per gram
-			\end{itemize}
-
-	\end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{Adsorbents}
-	Molecular sieves (zeolites):
-
-	\begin{tabular}{cll}\\
-		\textbf{Size}	&	\textbf{Adsorbs} ... 					&	\textbf{Dehydrates} ...\vspace{6pt}\\ \hline
-		3\AA			&	$\text{H}_2\text{O}$, $\text{NH}_3$		& 	unsaturated hydrocarbons\\
-		4\AA			&  	$\text{H}_2\text{S}$, $\text{CO}_2$, $\text{C}_3\text{H}_6$		& 	saturated hydrocarbons\\
-		5\AA			&	\emph{n}-paraffins from iso-paraffins   & \\
-		8\AA			& 	iso-paraffins and olefins				&	\\
-	\end{tabular}
-	\vspace{12pt}
-	\see{Johnston}%, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
-
-	\vspace{12pt}
-	% Rousseau "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
-	Rousseau, ``Handbook of Separation Technology''
-
-	\begin{tabular}{ll}\\
-		\textbf{Adsorbent}				&	\textbf{Market size (1983)} \vspace{6pt}\\ \hline
-			Activated carbon 			&	\$ 380 million $\longleftarrow$ 25\% for water treatment \\
-			Molecular-sieve zeolites 	&	\$ 100 million  \\
-			Silica gel					&	\$ 27 million  \\
-			Activated alumina			&	\$ 26 million
-	\end{tabular}
-\end{frame}
-
-\begin{frame}\frametitle{Pore diameter characterization}
-	\begin{center}
-		\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Pore-size-distribution-Seader-3ed-p574.png}
-	\end{center}
-	\see{Seader, 3ed, p574}
-	{\scriptsize Determined using He and Hg porosimetry (see reference for details)}
-	% MSC = molecular-sieve carbon (specially processed activated carbon to obtain smaller pores)
+	Industrial use of adsorption picked up with synthetic manufacturing of molecular zeolites in the 1960s.
 \end{frame}
 
 \begin{frame}\frametitle{Adsorption examples}
@@ -357,16 +224,190 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Adsorbents}
+	General principle (more details coming up soon)
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Adsorbent-pores-Seader-p569-3ed-mod.png}
+			\end{center}
+		\column{0.45\textwidth}
+			Molecules attach to the {\color{red}particle's surface}: outside and on the pore walls
+
+			\vspace{12pt}
+			Main characterization: {\color{purple}{pore diameter}} of adsorbent
+
+			\vspace{12pt}
+			Mechanisms during adsorption
+				\begin{itemize}
+				\item	{\color{purple}{equilibrium interaction}}: solid-fluid interactions
+				\item	{\color{purple}{kinetic}}: differences in diffusion rates
+				\item	{\color{purple}{steric}}: pore structure hinders/retains molecules of a certain shape
+			\end{itemize}
+	\end{columns}
+	\see{Modified from: Seader, 3ed, p 569}
+\end{frame}
+
+\begin{frame}\frametitle{Quick recap of some familiar concepts}
+	\begin{itemize}
+		\item	1m = 100cm = 1000mm = $10^6$\micron = $10^9$nm = $10^{10}$\AA
+		\item	Hydrogen and helium atoms: $\sim 1$\AA
+		\item	For a pore: \[\frac{\text{Internal surface area}}{\text{Pore volume}} = \frac{\pi d_p L}{\pi d_p^2 L/4} = \frac{4}{d_p}\]
+		\item	$d_p$ = pore diameter: typically around 10 to 200 \AA
+	\end{itemize}
+	
+	\vspace{12pt}Our main concern is solid's adsorption area per unit mass:
+	\begin{itemize}
+		\item	solids are about 30 to 85\% porous
+		\item	typical values: 300 to 1200 $\text{m}^2$ per gram
+		\item	area of hockey field = 91.4 $\times$ 55 m = 5027 $\text{m}^2$
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	Helpful to see what they look like to understand the principles:
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Active_Al2O3-Wikipedia.png}
+			\end{center}
+			\vspace{-12pt}
+			\see{\href{http://en.wikipedia.org/wiki/File:Active_Al2O3.jpg}{Wikipedia}}
+		\column{0.40\textwidth}
+			{\color{myGreen}{Activated alumina}}
+
+			\begin{itemize}
+				\item	made from from aluminum hydroxide
+				\item	$\sim 300~\text{m}^2$ per gram
+				\item	most widely used adsorbent
+				\item	hydrophilic
+				\item	pore diameter: 10 to 75 \AA
+			\end{itemize}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	\begin{columns}[c]
+		\column{0.50\textwidth}
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/DOI-{10.1016}{j.saa.2011.10.012}1-s2.0-S1386142511009012-gr3.jpg}
+			\end{center}
+			\vspace{-12pt}
+			\see{\href{http://dx.doi.org/10.1016/j.saa.2011.10.012}{DOI:10.1016/j.saa.2011.10.012}}
+		\column{0.50\textwidth}
+			{\color{myGreen}{Activated carbon}}
+
+			\begin{itemize}
+				\item	partially oxidized coconut shells, nuts, wood, peat, bones, sewage sludge
+				\item	difference hardnesses of adsorbent
+				\item	400 to 1200 $\text{m}^2$ per gram
+				\item	hydrophobic
+				\item	pore diameter:  10 to over 50\AA
+			\end{itemize}
+			e.g. bone char: decolourizing syrups % Article by Johnston, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	
+	% See: http://cool.conservation-us.org/byorg/abbey/an/an20/an20-7/an20-702.html
+	
+	\begin{columns}[t]
+
+		\column{0.60\textwidth}
+			\vspace{-24pt}
+			\begin{center}
+				\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Zeolites-Seader-3ed-p575.png}
+			\end{center}
+			\see{Seader, 3ed, p575}
+
+			\see{Uhlmanns, p565}
+			\vspace{-4pt}
+			\begin{center}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Zeolites-Uhlmanns-p565.png}
+			\end{center}
+		\column{0.40\textwidth}
+			{\color{myGreen}{Zeolite lattices}}
+
+			\vspace{12pt}
+			\emph{Some examples}
+
+			\vspace{6pt}
+			$\text{K}_{12}[(\text{AlO}_2)_{12}(\text{SiO}_2)_{12}]$:
+
+			\hfill {\color{myOrange}{drying gases  [2.9\AA]}}
+
+			\vspace{12pt}
+			$\text{Na}_{12}[(\text{AlO}_2)_{12}(\text{SiO}_2)_{12}]$:
+
+			\hfill {\color{myOrange}{$\text{CO}_2$ removal  [3.8\AA]}}
+
+
+			\vspace{12pt}
+			$\text{Ca}_{43}[(\text{AlO}_2)_{86}(\text{SiO}_2)_{106}]$:
+
+			\hfill {\color{myOrange}{air separation [8\AA]}}
+
+
+			\vspace{18pt}
+			Very specific pore diameters.
+			\begin{itemize}
+				\item	40 naturally occurring
+				\item	$\sim$  150 synthesized % C+R v2, 5ed, p975
+				\item	$\sim$	650 $\text{m}^2$ per gram
+			\end{itemize}
+
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorbents}
+	Molecular sieves (zeolites):
+
+	\begin{tabular}{cll}\\
+		{\small \textbf{Window size}}	&	{\small \textbf{Adsorbs}...}	&	{\small \textbf{Dehydrates} ...}\vspace{6pt}\\ \hline
+		3\AA			&	$\text{H}_2\text{O}$, $\text{NH}_3$		& 	unsaturated hydrocarbons\\
+		4\AA			&  	$\text{H}_2\text{S}$, $\text{CO}_2$, $\text{C}_3\text{H}_6$		& 	saturated hydrocarbons\\
+		5\AA			&	\emph{n}-paraffins from iso-paraffins   & \\
+		8\AA			& 	iso-paraffins and olefins				&	\\
+	\end{tabular}
+	\vspace{5pt}
+	\see{Johnston}%, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
+	
+	{Electrostatic fields exist inside the zeolite cavity: strong interactions with polar molecules. Not only based on shape/size exclusion.}
+
+	\vspace{3pt}
+	% Rousseau "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
+	Rousseau, ``Handbook of Separation Technology''
+	
+	\vspace{-5pt}
+	\begin{tabular}{ll}\\
+		\textbf{Adsorbent}				&	\textbf{Market size (1983)} \vspace{6pt}\\ \hline
+			Activated carbon 			&	\$ 380 million $\longleftarrow$ 25\% for water treatment \\
+			Molecular-sieve zeolites 	&	\$ 100 million  \\
+			Silica gel					&	\$ 27 million  \\
+			Activated alumina			&	\$ 26 million \\\hline
+	\end{tabular}
+\end{frame}
+
+\begin{frame}\frametitle{Pore diameter characterization}
+	\begin{center}
+		\includegraphics[width=0.9\textwidth]{\imagedir/separations/adsorption/Pore-size-distribution-Seader-3ed-p574.png}
+	\end{center}
+	\see{Seader, 3ed, p574}
+	{\scriptsize Determined using He and Hg porosimetry (see reference for details)}
+	% MSC = molecular-sieve carbon (specially processed activated carbon to obtain smaller pores)
+\end{frame}
+
 \begin{frame}\frametitle{{\color{myOrange}{Example}}: Gold leaching and adsorption}
 	\begin{columns}[c]
 		\column{1.08\textwidth}
 			\begin{itemize}
 				\item	Crushed rock has gold particles exposed
-				\item	Leaching: $4\text{Au} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \longrightarrow  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
+				\item	Leaching: $4\text{Au}\text{\scriptsize (s)} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \rightleftharpoons  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
 				\item	Adsorption: aurocyanide complex, $\text{Au(CN)}_2^{-}$, is adsorbed onto activated carbon
 					\begin{itemize}
 						\item	drives the equilibrium in the leaching step forward
-						\item	separates the gold from the pulp (slurry)
+						\item	separates the solid gold, Au{\scriptsize (s)}, from the pulp (slurry)
 						\item	obtain $C_\text{A,S}$ = 8000 grams of Au per tonne of carbon
 					\end{itemize}
 			\end{itemize}
@@ -376,7 +417,7 @@
 			\begin{itemize}
 				\item	Desorption:
 					\begin{itemize}
-						\item	separate the highly concentrated gold-carbon pulp (screens/filter)
+						\item	separate the highly concentrated gold-carbon pulp (screens/filter/ cyclones/sedimentation)
 						\item	desorb the gold off the carbon with caustic contact
 						\item	recycle the regenerated carbon
 					\end{itemize}
@@ -386,6 +427,25 @@
 				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Batch-adsorption-Seader-3ed-p610.png}
 			\end{center}
 	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Gold leaching: Johannesburg, RSA}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Gold-CIP-circuit.png}
+	\end{center}
+	\begin{center}
+		\includegraphics[width=.95\textwidth]{\imagedir/separations/adsorption/Gold-CIP-flows.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{\href{http://dx.doi.org/10.1590/S0104-66322007000400014}{Lima, 2007. Brazilian Journal of Chemical Engineering}}
+\end{frame}
+
+\begin{frame}\frametitle{H$_2$S and CO$_2$ pre-treatment adsorbers}
+	\begin{center}
+		\includegraphics[width=.95\textwidth]{\imagedir/separations/adsorption/flickr-4565083761_18fcf20d57_b.jpg}
+	\end{center}
+	\see{Flickr: http://www.flickr.com/photos/vmeprocess/4565083761}
+	
 \end{frame}
 
 \begin{frame}\frametitle{When to consider adsorption}
@@ -405,26 +465,26 @@
 	\begin{itemize}
 		\item	only the surface of the adsorbent used
 		\item	regeneration of MSA adsorbent required
-		\item	MSA will break down mechanically over time
+		\item	MSA will break down mechanically over time as my move it around
 		\begin{itemize}
-			\item	{\color{myOrange}{we can pump it, filter it, and/or put it through cyclones}}
+			\item	{\color{myOrange}{we must pump it, filter it, and/or put it through cyclones to process it}}
 		\end{itemize}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Quantifying the adsorbent}
-	\seefull{Perry's, Ch 22}: A fixed bed of porous adsorbent material. Bulk density is 500 kg.m$^{-3}$, and the {\color{purple}{interparticle}} [between] void fraction is 0.40. The {\color{purple}{intraparticle}} [within] porosity is 0.50, with two-thirds of this in cylindrical pores of diameter 1.4 nm and the rest in much larger pores. \textbf{Find}:
-	\begin{itemize}
-		\item	surface area of the adsorbent
-		\item	if solute has formed a complete {\color{purple}{monomolecular layer}} 0.3 nm thick inside the pores, determine the percent of the particle volume and the percent of the total bed volume filled with adsorbate.
-	\end{itemize}
-
-	\vspace{12pt}
-	\emph{Solution}:
-	Assume from surface area to volume ratio that the internal area is practically all in the small pores [ignore large pores].
-	One gram of the adsorbent occupies 2cm$^3$ as packed and has 0.4cm$^3$ in small pores, which gives a surface area of 1150 m$^2$/gram {\scriptsize (university stadium field area $\sim 5000~\text{to}~8000 \text{m}^2$)}.
-	Based on the area of the annular region filled with adsorbate, the solute occupies 22.5\% of internal pore volume and 13.5\% of the total packed-bed volume.
-\end{frame}
+% \begin{frame}\frametitle{Quantifying the adsorbent}
+% 	\seefull{Perry's, Ch 22}: A fixed bed of porous adsorbent material. Bulk density is 500 kg.m$^{-3}$, and the {\color{purple}{interparticle}} [between] void fraction is 0.40. The {\color{purple}{intraparticle}} [within] porosity is 0.50, with two-thirds of this in cylindrical pores of diameter 1.4 nm and the rest in much larger pores. \textbf{Find}:
+% 	\begin{itemize}
+% 		\item	surface area of the adsorbent
+% 		\item	if solute has formed a complete {\color{purple}{monomolecular layer}} 0.3 nm thick inside the pores, determine the percent of the particle volume and the percent of the total bed volume filled with adsorbate.
+% 	\end{itemize}
+% 
+% 	\vspace{12pt}
+% 	\emph{Solution}:
+% 	Assume from surface area to volume ratio that the internal area is practically all in the small pores [ignore large pores].
+% 	One gram of the adsorbent occupies 2cm$^3$ as packed and has 0.4cm$^3$ in small pores, which gives a surface area of 1150 m$^2$/gram {\scriptsize (university stadium field area $\sim 5000~\text{to}~8000 \text{m}^2$)}.
+% 	Based on the area of the annular region filled with adsorbate, the solute occupies 22.5\% of internal pore volume and 13.5\% of the total packed-bed volume.
+% \end{frame}
 
 \begin{frame}\frametitle{Physical principles}
 	\begin{exampleblock}{Adsorption releases heat. Why?}
@@ -503,40 +563,6 @@
 	{\color{purple}{Regeneration}}: puts the adsorbate in a new solvent or medium, usually at a higher concentration than it was at originally, or at least in a medium that is much easier to separate from.
 \end{frame}
 
-\begin{frame}\frametitle{Rotary devices}
-	\begin{center}
-		%\includegraphics[width=.7\textwidth]{\imagedir/separations/adsorption/Rotary-adsorber-Uhlmanns-p557.png}
-		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Rotary-devices-CR-v2-5ed-p1034.png}
-	\end{center}
-	\vspace{-12pt}
-	\see{Richardson and Harker, p 1034}
-\end{frame}
-
-\begin{frame}\frametitle{Adsorption equipment: Sorbex column}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Sorbex-Uhlmanns-p560.png}
-	\end{center}
-	\see{Uhlmanns, p 560}
-
-	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
-
-	% Over 100 commercial installations
-	% It simulates counter-current operation,since true counter-current operation is not possible without axial mixing and damage to the adsorbent, this approach works very well.
-
-	% From Rousseau:
-
-	% The problems associated with moving-bed processes have been solved by the development of the simulated moving bed.
-	% This process, the bed is maintained stationary, and the feed and the displacement-liquid inlets and the two product outlets are moved as a function of time. In addition, the displacement liquid is continuously circulated by a pump from the bottom to the top of the bed. The most widely used version of this scheme is the Sorbex process, developed by Universal Oil Products, Inc. (UOP). A schematic diagram is given in Fig. 12.5-10. The lines shown as open are 2, 5, 9, and 12. After a short period of time each of the first three streams is moved to the next-higher-number point by the rotary valve. The less-adsorbed product line is switched from 12 to 1. During subsequent time periods the four lines are moved in the same manner. A more detailed description is given in Ref. 26.
-	% Other versions of the simulated moving-bed process have been commercialized by Toray Industries,
-	% This process can also be thought of as a variation of a displacement-purge cycle. In this
-	% 27 28 29 Inc. ' and Mitsubishi Chemical Industries, Ltd.
-	% These processes vary from the Sorbex technology in
-	% details rather than in their basic concept.
-	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
-	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
-	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
-\end{frame}
-
 \begin{frame}\frametitle{Modelling the adsorption process}
 	\begin{enumerate}
 		\item	Diffusion
@@ -562,10 +588,10 @@
 	\end{exampleblock}
 
 	\vspace{12pt}
-	For now, assume we are only limited by equilibrium (i.e diffusion resistance is negligible)
+	For now, assume we are only limited by equilibrium [we'll get there, we don't mind \emph{how long} {\small (due to kinetics of diffusion and mass transfer resistance) }it takes to get there]
 	\begin{itemize}
 		\item	Derive/Postulate a model relating bulk concentration to surface concentration of adsorbate
-		\item	We call these equations/models: ``isotherms''
+		\item	We call these equilibrium equations: ``isotherms''
 		\item	{\color{purple}{Isotherm}}: relates amount of adsorbate on adsorbent ($C_\text{A,S}$) at different concentrations of adsorbate in the bulk ($C_\text{A}$), but at a fixed temperature.
 	\end{itemize}
 \end{frame}
@@ -728,6 +754,9 @@
 	1: Temperature swing adsorption (TSA)
 	\begin{itemize}
 		\item	heat the bed: usually steam is used (due to high latent heat)
+		\begin{itemize}
+			\item	why add heat? (recall, heat is released during adsorption)
+		\end{itemize}
 		\item	creates a thermal wave through the packed bed
 		\item	isotherm at higher temperature is shifted down
 		\item	causes the adsorbate to be diluted in the stripping fluid
@@ -890,7 +919,7 @@
 	\[
 		C_\text{A,S} = \frac{0.05C_\text{A}}{32.1 + C_\text{A}}
 	\]
-	where $C_\text{A,S}$ has units of [grams/grams], and the constant has units of 32.1 ppm. In a {\color{myRed}{\sout{batch}}} tank we have an inlet flow of TME solution at 10L/min with density of 1000$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1ppm concentrations. The tank contains 15kg of initially fresh adsorbent which is retained in the tank. We wish to know:
+	where $C_\text{A,S}$ has units of [grams/grams], and the constant has units of 32.1 ppm. In a tank we have an inlet flow of TME solution at 10L/min with density of 1000$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1ppm concentrations. The tank contains 15kg of initially fresh adsorbent which is retained in the tank. We wish to know:
 
 	\begin{enumerate}
 		\item	How much TME is adsorbed when the breakthrough concentration reaches 1 ppm? [{\color{myOrange}{Ans: 22.65kg}}]
@@ -918,6 +947,40 @@
 		\column{0.30\textwidth}
 			\[C_\text{A,S} = \frac{0.145 C_\text{A}}{0.0174 + C_\text{A}}\]
 	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Rotary devices}
+	\begin{center}
+		%\includegraphics[width=.7\textwidth]{\imagedir/separations/adsorption/Rotary-adsorber-Uhlmanns-p557.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Rotary-devices-CR-v2-5ed-p1034.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Richardson and Harker, p 1034}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorption equipment: Sorbex column}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Sorbex-Uhlmanns-p560.png}
+	\end{center}
+	\see{Uhlmanns, p 560}
+
+	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
+
+	% Over 100 commercial installations
+	% It simulates counter-current operation,since true counter-current operation is not possible without axial mixing and damage to the adsorbent, this approach works very well.
+
+	% From Rousseau:
+
+	% The problems associated with moving-bed processes have been solved by the development of the simulated moving bed.
+	% This process, the bed is maintained stationary, and the feed and the displacement-liquid inlets and the two product outlets are moved as a function of time. In addition, the displacement liquid is continuously circulated by a pump from the bottom to the top of the bed. The most widely used version of this scheme is the Sorbex process, developed by Universal Oil Products, Inc. (UOP). A schematic diagram is given in Fig. 12.5-10. The lines shown as open are 2, 5, 9, and 12. After a short period of time each of the first three streams is moved to the next-higher-number point by the rotary valve. The less-adsorbed product line is switched from 12 to 1. During subsequent time periods the four lines are moved in the same manner. A more detailed description is given in Ref. 26.
+	% Other versions of the simulated moving-bed process have been commercialized by Toray Industries,
+	% This process can also be thought of as a variation of a displacement-purge cycle. In this
+	% 27 28 29 Inc. ' and Mitsubishi Chemical Industries, Ltd.
+	% These processes vary from the Sorbex technology in
+	% details rather than in their basic concept.
+	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
+	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
+	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
 \end{frame}
 
 
