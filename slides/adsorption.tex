@@ -169,7 +169,7 @@
 		\item	ion-exchange: synthetic polymer resins widely used to soften water
 	\end{itemize}
 
-	Industrial use of adsorption picked up with synthetic manufacturing of molecular zeolites in the 1960s.
+	Industrial use of adsorption picked up with synthetic manufacturing of zeolites in the 1960s.
 \end{frame}
 
 \begin{frame}\frametitle{Adsorption examples}
@@ -361,7 +361,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Adsorbents}
-	Molecular sieves (zeolites):
+	Zeolites; also called {\color{purple}molecular sieves}
 
 	\begin{tabular}{cll}\\
 		{\small \textbf{Window size}}	&	{\small \textbf{Adsorbs}...}	&	{\small \textbf{Dehydrates} ...}\vspace{6pt}\\ \hline
@@ -373,7 +373,7 @@
 	\vspace{5pt}
 	\see{Johnston}%, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
 	
-	{\small Electrostatic fields exist inside the zeolite cavity: strong interactions with polar molecules. Not only based on shape/size exclusion.}
+	{\small Electrostatic fields exist inside the zeolite cage: strong interactions with polar molecules. Sieving not only based on shape/size exclusion.}
 
 	\vspace{3pt}
 	% Rousseau "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
@@ -403,12 +403,12 @@
 		\column{1.08\textwidth}
 			\begin{itemize}
 				\item	Crushed rock has gold particles exposed
-				\item	Leaching: $4\text{Au}\text{\scriptsize (s)} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \rightleftharpoons  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
+				\item	Leaching: $4\text{Au}_\text{(s)} + 8\text{NaCN} + \text{O}_2 + 2 \text{H}_2\text{O} \rightleftharpoons  4 \text{Na[Au(CN)}_2\text{]} + 4 \text{NaOH}$
 				\item	Adsorption: aurocyanide complex, $\text{Au(CN)}_2^{-}$, is adsorbed onto activated carbon
 					\begin{itemize}
 						\item	drives the equilibrium in the leaching step forward
-						\item	separates the solid gold, Au{\scriptsize (s)}, from the pulp (slurry)
-						\item	obtain $C_\text{A,S}$ = 8000 grams of Au per tonne of carbon
+						\item	separates the solid gold, $\text{Au}_\text{(s)}$, from the pulp (slurry)
+						\item	obtain $C_\text{A,S} \sim 8000$ grams of Au per tonne of carbon
 					\end{itemize}
 			\end{itemize}
 	\end{columns}
@@ -487,7 +487,7 @@
 % \end{frame}
 
 \begin{frame}\frametitle{Physical principles}
-	\begin{exampleblock}{Adsorption releases heat. Why?}
+	\begin{exampleblock}{Adsorption releases heat, it's exothermic. Why?}
 		\pause
 		\iftoggle{instructor}{Loss of degrees of freedom of fluid: free energy is reduced, so $\Delta S \downarrow$}{Thermodynamics: ...}
 
@@ -566,6 +566,7 @@
 		\item	\textbf{lower the pressure} (vapour-phase adsorbate)
 		\item	displace the adsorbate with an alternative (e.g. steam)
 	\end{enumerate}
+	Regenerate is shorter duration when done in the reverse direction to loading.
 	
 	% An adsorption unit using thermal swing regeneration usually consists of two packed beds, one on-line and one regenerating, as shown in the figure. Regenerating consists of heating, and purging to remove adsorbate. The arrangement is flexible and robust. The desorption temperature depends on the properties of the adsorbent and the adsorbates. Manufacturers normally recommend the best regenerating temperature for their particular adsorbent. Exceeding this temperature may accelerate the ageing processes which cause pores to coalesce and capacity to be reduced. Too low a temperature may result in incomplete regeneration so that the effluent concentration in subsequent adsorption stages will be higher than its design value. Hot spots may develop in the operation of a fixed bed, so particular care has to be taken to control temperature when handling flammable materials.
 	% The relatively poor conductivity of a packed bed makes it difficult to get the heat of regeneration into the bed, either from a jacket or from coils embedded in the packing. This is more easily achieved by preheating the purge stream. Even in the best conditions, it takes time for the temperature of the bed to rise to the required level. Thermal regeneration is normally associated with long cycle times, measured in hours. Such cycles require large beds and, since the adsorption wave occupies only a small part of the bed on-line, the utilisation of the total adsorbent in the unit is low.
@@ -710,93 +711,61 @@
 	These are far more flexible models (more parameters); e.g. Langmuir isotherm is a special case of the BET isotherm.
 \end{frame}
 
-\begin{frame}\frametitle{Understanding adsorption in packed beds}
+\begin{frame}\frametitle{Isotherms change at different temperatures}
+	Temperature swing example
+\end{frame}
+
+
+\begin{frame}\frametitle{Understanding adsorption in packed beds (1 of 2)}
 	\begin{center}
 		% Lukchis article
 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Lukchis-MTZ-illustration-part-1.png}
 	\end{center}
+	\vspace{-12pt}
+	{\footnotesize $L$ = length; $\theta$ = time; $\theta_0$ = start-up time on a regenerated bed}
 \end{frame}
 
-\begin{frame}\frametitle{Understanding adsorption in packed beds}
+\begin{frame}\frametitle{Understanding adsorption in packed beds (2 of 2)}
 	\begin{center}
 		% Lukchis article
 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Lukchis-MTZ-illustration-part-2.png}
 	\end{center}
-	\vspace{-16pt}
+	\vspace{-24pt}
 	\see{Lukchis}
 	\vspace{-18pt}
 	\begin{columns}[t]
 		\column{1.1\textwidth}
 			\begin{itemize}
 				\item	{\small $C_\text{A,S}$ = concentration of adsorbate on adsorbent}
-				\item	{\small $C_\text{A,S}^e$ = concentration at equilibrium on the adsorbent}
+				\item	{\small $C_\text{A,S}^e$ = concentration at equilibrium on the adsorbent (max loading)}
 				\item	{\small $C_\text{A,S}^0$ = concentration on the regenerated adsorbent at time 0}
-				\item	{\small $\theta_b$ = breakthrough time}
-				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used}
-				\item	{\small $C_\text{A,S}$ values are not measurable; outlet concentration $C_\text{A}$ is easy}
+				\item	{\small $\theta_b$ = breakthrough time: ``\emph{time to stop using the packed bed!\,}''}; usually when $C_\text{A} = 0.05 C_\text{A,F}$
+				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used} 
+				
+				\vspace{-5pt}
+				\item	{\small $C_\text{A,S}$ values are not easy measured; outlet concentration $C_\text{A}$ is easy}
 			\end{itemize}
 	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Bed concentration just prior to breakthrough}
 	\begin{center}
-		\includegraphics[width=0.8\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
+		\includegraphics[width=0.7\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
 	\end{center}
 	\vspace{-12pt}
 	\see{Ghosh (adapted), p144}
 	\vspace{6pt}
 	{\small
 		\begin{itemize}
-			\item	{\color{purple}{MTZ}}: mass transfer zone is where adsorption takes place. Assumed to be from 5 to 95\% of the concentration range.
-			\item	It is S-shaped: indicates there is mass-transfer resistance.
+			\item	{\color{purple}{MTZ}}: mass transfer zone is where adsorption takes place.% Assumed to be from 5 to 95\% of the concentration range.
+			\item	It is S-shaped: indicates there is mass-transfer resistance and axial dispersion and mixing. Contrast to the ideal shape: is a perfectly vertical line moving through the bed
 			\item	{\color{purple}{Equilibrium zone}}: this is where the isotherm applies!
-			\item	{\color{purple}{Breakthrough}}: arbitrarily \textbf{defined as time} when either (a)  the lower limit of adsorbate detection, or (b) the maximum allowable adsorbate in effluent leaves the bed. Usually around 1 to 5\% of $C_\text{A,F}$
+			\item	{\color{purple}{Breakthrough}}: arbitrarily \textbf{defined as time} when either (a)  the lower limit of adsorbate detection, or (b) the maximum allowable adsorbate in effluent leaves the bed. Usually around 1 to 5\% of $C_\text{A,F}$.
 		\end{itemize}
 	}
 \end{frame}
 
-\begin{frame}\frametitle{Regenerating the bed}
-	\begin{exampleblock}{Aim}
-		To remove adsorbate from the packed bed.
-	\end{exampleblock}
-
-	1: Temperature swing adsorption (TSA)
-	\begin{itemize}
-		\item	heat the bed: usually steam is used (due to high latent heat)
-		\begin{itemize}
-			\item	why add heat? (recall, heat is released during adsorption)
-		\end{itemize}
-		\item	creates a thermal wave through the packed bed
-		\item	isotherm at higher temperature is shifted down
-		\item	causes the adsorbate to be diluted in the stripping fluid
-		\item	often leave some residual adsorbate behind, since time to completely strip adsorbent of it would be excessive
-		\item	care must be taken with flammable adsorbates:
-		\begin{itemize}
-			\item	stripping temperatures are high
-			\item	often near flammable limits
-			\item	carbon beds have been known to catch fire
-		\end{itemize}
-	\end{itemize}
-	\emph{See illustration on next page}
-\end{frame}
-
-\begin{frame}\frametitle{Regenerating the bed}
-	2.	Pressure swing adsorption (PSA)
-	\begin{itemize}
-		\item	used when the ``product'' is the cleaned (stripped) fluid
-		\item	add feed with adsorbate at high pressure (loads the adsorbate)
-		\item	drop the pressure and the adsorbate starts to desorb
-		\item	run two beds in parallel (one desorbing, the other adsorbing)
-		\item	widely used for portable oxygen generation, $\text{H}_2\text{S}$ capture in refineries
-	\end{itemize}
-	\begin{center}
-		\includegraphics[width=0.6\textwidth]{\imagedir/separations/adsorption/pressure-and-temperature-swing-Seader-p610.png}
-	\end{center}
-	\vspace{-12pt}
-	\see{Seader, 3ed, p610}
-\end{frame}
-
-\begin{frame}\frametitle{Example (and some theory)}
+\begin{frame}\frametitle{Example (and some new theory applied)}
 	An adsorbate in vapour is adsorbed in an experimental packed bed. The inlet contains $C_\text{A,F} = 600$ ppm of adsorbate. Data measuring the outlet concentration over time from the bed are plotted below:
 
 	\begin{center}
@@ -913,6 +882,81 @@
 	{\color{myBlue}{Use these to determine mass of adsorbent required.}}
 \end{frame}
 
+\begin{frame}\frametitle{Regenerating the bed}
+	\begin{exampleblock}{Aim}
+		To remove adsorbate from the packed bed.
+	\end{exampleblock}
+
+	1: Temperature swing adsorption (TSA)
+	\begin{itemize}
+		\item	heat the bed: usually steam is used (due to high latent heat)
+		\begin{itemize}
+			\item	why add heat? (recall, heat is released during adsorption)
+		\end{itemize}
+		\item	creates a thermal wave through the packed bed
+		\item	isotherm at higher temperature is shifted down
+		\item	causes the adsorbate to be diluted in the stripping fluid
+		\item	often leave some residual adsorbate behind, since time to completely strip adsorbent of it would be excessive
+		\item	care must be taken with flammable adsorbates:
+		\begin{itemize}
+			\item	stripping temperatures are high
+			\item	often near flammable limits
+			\item	carbon beds have been known to catch fire
+		\end{itemize}
+	\end{itemize}
+	\emph{See illustration on next page}
+\end{frame}
+
+\begin{frame}\frametitle{Regenerating the bed}
+	2.	Pressure swing adsorption (PSA)
+	\begin{itemize}
+		\item	used when the ``product'' is the cleaned (stripped) fluid
+		\item	add feed with adsorbate at high pressure (loads the adsorbate)
+		\item	drop the pressure and the adsorbate starts to desorb
+		\item	run two beds in parallel (one desorbing, the other adsorbing)
+		\item	widely used for portable oxygen generation, $\text{H}_2\text{S}$ capture in refineries
+	\end{itemize}
+	\begin{center}
+		\includegraphics[width=0.6\textwidth]{\imagedir/separations/adsorption/pressure-and-temperature-swing-Seader-p610.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Seader, 3ed, p610}
+\end{frame}
+
+\begin{frame}\frametitle{Rotary devices}
+	\begin{center}
+		%\includegraphics[width=.7\textwidth]{\imagedir/separations/adsorption/Rotary-adsorber-Uhlmanns-p557.png}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Rotary-devices-CR-v2-5ed-p1034.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Richardson and Harker, p 1034}
+\end{frame}
+
+\begin{frame}\frametitle{Adsorption equipment: Sorbex column}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Sorbex-Uhlmanns-p560.png}
+	\end{center}
+	\see{Uhlmanns, p 560}
+
+	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
+
+	% Over 100 commercial installations
+	% It simulates counter-current operation,since true counter-current operation is not possible without axial mixing and damage to the adsorbent, this approach works very well.
+
+	% From Rousseau:
+
+	% The problems associated with moving-bed processes have been solved by the development of the simulated moving bed.
+	% This process, the bed is maintained stationary, and the feed and the displacement-liquid inlets and the two product outlets are moved as a function of time. In addition, the displacement liquid is continuously circulated by a pump from the bottom to the top of the bed. The most widely used version of this scheme is the Sorbex process, developed by Universal Oil Products, Inc. (UOP). A schematic diagram is given in Fig. 12.5-10. The lines shown as open are 2, 5, 9, and 12. After a short period of time each of the first three streams is moved to the next-higher-number point by the rotary valve. The less-adsorbed product line is switched from 12 to 1. During subsequent time periods the four lines are moved in the same manner. A more detailed description is given in Ref. 26.
+	% Other versions of the simulated moving-bed process have been commercialized by Toray Industries,
+	% This process can also be thought of as a variation of a displacement-purge cycle. In this
+	% 27 28 29 Inc. ' and Mitsubishi Chemical Industries, Ltd.
+	% These processes vary from the Sorbex technology in
+	% details rather than in their basic concept.
+	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
+	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
+	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
+\end{frame}
+
 \begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
 	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
 
@@ -957,39 +1001,4 @@
 			\[C_\text{A,S} = \frac{0.145 C_\text{A}}{0.0174 + C_\text{A}}\]
 	\end{columns}
 \end{frame}
-
-\begin{frame}\frametitle{Rotary devices}
-	\begin{center}
-		%\includegraphics[width=.7\textwidth]{\imagedir/separations/adsorption/Rotary-adsorber-Uhlmanns-p557.png}
-		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Rotary-devices-CR-v2-5ed-p1034.png}
-	\end{center}
-	\vspace{-12pt}
-	\see{Richardson and Harker, p 1034}
-\end{frame}
-
-\begin{frame}\frametitle{Adsorption equipment: Sorbex column}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Sorbex-Uhlmanns-p560.png}
-	\end{center}
-	\see{Uhlmanns, p 560}
-
-	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
-
-	% Over 100 commercial installations
-	% It simulates counter-current operation,since true counter-current operation is not possible without axial mixing and damage to the adsorbent, this approach works very well.
-
-	% From Rousseau:
-
-	% The problems associated with moving-bed processes have been solved by the development of the simulated moving bed.
-	% This process, the bed is maintained stationary, and the feed and the displacement-liquid inlets and the two product outlets are moved as a function of time. In addition, the displacement liquid is continuously circulated by a pump from the bottom to the top of the bed. The most widely used version of this scheme is the Sorbex process, developed by Universal Oil Products, Inc. (UOP). A schematic diagram is given in Fig. 12.5-10. The lines shown as open are 2, 5, 9, and 12. After a short period of time each of the first three streams is moved to the next-higher-number point by the rotary valve. The less-adsorbed product line is switched from 12 to 1. During subsequent time periods the four lines are moved in the same manner. A more detailed description is given in Ref. 26.
-	% Other versions of the simulated moving-bed process have been commercialized by Toray Industries,
-	% This process can also be thought of as a variation of a displacement-purge cycle. In this
-	% 27 28 29 Inc. ' and Mitsubishi Chemical Industries, Ltd.
-	% These processes vary from the Sorbex technology in
-	% details rather than in their basic concept.
-	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
-	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
-	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
-\end{frame}
-
 
