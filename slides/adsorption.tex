@@ -251,7 +251,7 @@
 \begin{frame}\frametitle{Quick recap of some familiar concepts}
 	\begin{itemize}
 		\item	1m = 100cm = 1000mm = $10^6$\micron = $10^9$nm = $10^{10}$\AA
-		\item	Hydrogen and helium atoms: $\sim 1$\AA
+		\item	Hydrogen and helium atoms: $\approx 1$\AA
 		\item	For a pore: \[\frac{\text{Internal surface area}}{\text{Pore volume}} = \frac{\pi d_p L}{\pi d_p^2 L/4} = \frac{4}{d_p}\]
 		\item	$d_p$ = pore diameter: typically around 10 to 200 \AA
 	\end{itemize}
@@ -781,17 +781,17 @@
 		\column{1.05\textwidth}
 		\begin{enumerate}
 			\item	Determine the {\color{purple}{breakthrough time}}, $\theta_b$. \pause \iftoggle{instructor}{[{\color{myOrange}{\small Ans: 3.65 hours}}]}{}
-			\item	What is the {\color{purple}{usable capacity}} of the bed \textbf{at time $\theta_b$} if we had an {\color{purple}{ideal wavefront}} (no mass transfer resistance)? \pause \iftoggle{instructor}{[{\color{myOrange}{Ans:}} the fractional area of $A_1$ = 3.65 / 6.9 = {\color{orange}{53\%}}]}{}
+			\item	What would be the {\color{purple}{usable capacity}} of the bed \textbf{at time $\theta_b$} if we had an {\color{purple}{ideal wavefront}} (no mass transfer resistance)? \pause \iftoggle{instructor}{[{\color{myOrange}{Ans:}} the fractional area of $A_1$ = 3.65 / 6.9 = {\color{orange}{53\%}}]}{}
 			\pause
 				\begin{itemize}
-					\item	Note total plot area = ``total time'', since ``height'' of y-axis = 1.0
+					\item	Note plot area units = ``total time'', since ``height'' of y-axis = 1.0
 					\item	Note: (area up to $\theta_b$) $\approx \theta_b$  when using a normalized y-axis
 				\end{itemize}
 			\begin{center}
 				\includegraphics[width=0.45\textwidth]{\imagedir/separations/adsorption/example-Geankoplis-p768.png}
 			\end{center}
 			\vspace{-6pt}
-			\item	How long does it take to reach this capacity? {\color{myOrange}{3.65 \text{hours}}}, but if we want to be exact, it is $t_\text{used} = \displaystyle \int_0^{\theta_B}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt} \approx 3.65$
+			\item	How long does it take to reach this ideal capacity? {\color{myOrange}{$\approx$3.65 \text{hours}}}%, but if we want to be exact, it is $t_\text{used} = \displaystyle \int_0^{\theta_B}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt} \approx 3.65$
 
 			\vspace{-4pt}
 			{\tiny Ignore the tiny part missing from the integrated area.}
@@ -799,6 +799,7 @@
 	\end{columns}
 \end{frame}
 
+\begin{comment}
 \begin{frame}\frametitle{Example}
 	\vspace{-12pt}
 	\begin{columns}[t]
@@ -824,14 +825,14 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}\frametitle{Figures to help with the example}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
-	\end{center}
-	\begin{center}
-		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/stoichiometric-time-Lukchis.png}
-	\end{center}
-\end{frame}
+% \begin{frame}\frametitle{Figures to help with the example}
+% 	\begin{center}
+% 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
+% 	\end{center}
+% 	\begin{center}
+% 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/stoichiometric-time-Lukchis.png}
+% 	\end{center}
+% \end{frame}
 
 \begin{frame}\frametitle{Example}
 	\vspace{-12pt}
@@ -1002,3 +1003,4 @@
 	\end{columns}
 \end{frame}
 
+\end{comment}
