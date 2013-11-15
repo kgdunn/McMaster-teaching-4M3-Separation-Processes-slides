@@ -112,7 +112,7 @@
 			\item	Membranes (except periodically backflushed to regenerate)
 			\item	Liquid-liquid extraction
 		\end{itemize}
-		
+
 		\vspace{12pt}
 		\item	Batch/cycled operation
 		\begin{itemize}
@@ -121,7 +121,7 @@
 			\item	drying units (\emph{next})
 		\end{itemize}
 	\end{itemize}
-	
+
 	\vspace{12pt}
 	{\color{myOrange}Our goals}
 	\begin{itemize}
@@ -255,7 +255,7 @@
 		\item	For a pore: \[\frac{\text{Internal surface area}}{\text{Pore volume}} = \frac{\pi d_p L}{\pi d_p^2 L/4} = \frac{4}{d_p}\]
 		\item	$d_p$ = pore diameter: typically around 10 to 200 \AA
 	\end{itemize}
-	
+
 	\vspace{12pt}Our main concern is solid's adsorption area per unit mass:
 	\begin{itemize}
 		\item	solids are about 30 to 85\% porous
@@ -309,9 +309,9 @@
 \end{frame}
 
 \begin{frame}\frametitle{Adsorbents}
-	
+
 	% See: http://cool.conservation-us.org/byorg/abbey/an/an20/an20-7/an20-702.html
-	
+
 	\begin{columns}[t]
 
 		\column{0.60\textwidth}
@@ -372,13 +372,13 @@
 	\end{tabular}
 	\vspace{5pt}
 	\see{Johnston}%, Green book, "Designing Fixed-Bed Adsorption Columns.pdf"
-	
+
 	{\small Electrostatic fields exist inside the zeolite cage: strong interactions with polar molecules. Sieving not only based on shape/size exclusion.}
 
 	\vspace{3pt}
 	% Rousseau "21FC8B40D9C71DB16CAE2B81BA3244.pdf"
 	\see{Rousseau, ``Handbook of Separation Technology''}
-	
+
 	\vspace{-5pt}
 	\begin{tabular}{ll}\\
 		\textbf{Adsorbent}				&	\textbf{Market size (1983)} \vspace{6pt}\\ \hline
@@ -445,7 +445,8 @@
 		\includegraphics[width=.95\textwidth]{\imagedir/separations/adsorption/flickr-4565083761_18fcf20d57_b.jpg}
 	\end{center}
 	\see{Flickr: http://www.flickr.com/photos/vmeprocess/4565083761}
-	
+
+	% Note the vertical orientation of the vessels
 \end{frame}
 
 \begin{frame}\frametitle{When to consider adsorption}
@@ -455,9 +456,9 @@
 	But adsorption is considered when:
 	\begin{itemize}
 		\item	relative volatility between components is $<1.5$ (e.g. isomers)
-		\item	large reflux ratios would be required
-		\item	excessive temperatures or high pressure drops are to be avoided
+		\item	large reflux ratios would be required % higher reflux improves separation between low and high key, at the expense of greater reboiler and condensor usage
 		\item	too large area for a membrane
+		\item	excessive temperatures or high pressure drops are to be avoided
 		\item	high selectivity is required
 		\item	feed is a very dilute stream of solute ({\color{purple}adsorbate})
 	\end{itemize}
@@ -478,6 +479,8 @@
 		\iftoggle{instructor}{Loss of degrees of freedom of fluid: free energy is reduced, so $\Delta S \downarrow$}{Thermodynamics: ...}
 
 		\iftoggle{instructor}{$\Delta G = \Delta H - T \Delta S \quad \Longrightarrow  \quad \Delta H = \Delta G + T \Delta S \quad \Longrightarrow  \quad \Delta H < 0$}{\vspace{18pt}}
+
+		% Delta G is always negative for stuff to occur, so is Delta S (entropy), so Delta H is negative
 	\end{exampleblock}
 
 	\vspace{6pt}
@@ -506,7 +509,28 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Fluidized beds}
+% These next 3 slides might seem out of place, but they work well here as an interjection, as well as introducing the concept of regeneration.
+\begin{frame}\frametitle{Packed beds: adsorption and desorption steps}
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{\imagedir/separations/adsorption/Packed-bed-CR-v2-5ed-p1028-1.png}
+	\end{center}
+	\vspace{-6pt}
+	\see{Richardson and Harker, p 1028}
+
+	{\color{purple}{Regeneration}} reverses the adsorbate-adsorbent equilibrium:
+	\begin{enumerate}
+		\item	\textbf{raise the temperature} to shift the equilibrium constant
+		\item	\textbf{lower the pressure} (vapour-phase adsorbate)
+		\item	displace the adsorbate with an alternative (e.g. steam)
+	\end{enumerate}
+	Regenerate is shorter duration when done in the reverse direction to loading.
+
+	% An adsorption unit using thermal swing regeneration usually consists of two packed beds, one on-line and one regenerating, as shown in the figure. Regenerating consists of heating, and purging to remove adsorbate. The arrangement is flexible and robust. The desorption temperature depends on the properties of the adsorbent and the adsorbates. Manufacturers normally recommend the best regenerating temperature for their particular adsorbent. Exceeding this temperature may accelerate the ageing processes which cause pores to coalesce and capacity to be reduced. Too low a temperature may result in incomplete regeneration so that the effluent concentration in subsequent adsorption stages will be higher than its design value. Hot spots may develop in the operation of a fixed bed, so particular care has to be taken to control temperature when handling flammable materials.
+	% The relatively poor conductivity of a packed bed makes it difficult to get the heat of regeneration into the bed, either from a jacket or from coils embedded in the packing. This is more easily achieved by preheating the purge stream. Even in the best conditions, it takes time for the temperature of the bed to rise to the required level. Thermal regeneration is normally associated with long cycle times, measured in hours. Such cycles require large beds and, since the adsorption wave occupies only a small part of the bed on-line, the utilisation of the total adsorbent in the unit is low.
+	% It is good operating practice to regenerate a bed in the reverse direction to that followed during adsorption. This ensures that the adsorbent at the end of the bed, which controls the quality of the treated stream, is that which is most thoroughly regenerated. CARTER(44) has quantified the effect and showed that regeneration is achieved in a shorter time in this way.
+\end{frame}
+
+\begin{frame}\frametitle{Fluidized beds: for continual operation}
 	\begin{columns}[t]
 		\column{0.80\textwidth}
 			\begin{center}
@@ -539,26 +563,6 @@
 	\emph{Zoom in on the high resolution photo to see details.}
 \end{frame}
 
-\begin{frame}\frametitle{Packed beds: adsorption and desorption steps}
-	\begin{center}
-		\includegraphics[width=.8\textwidth]{\imagedir/separations/adsorption/Packed-bed-CR-v2-5ed-p1028-1.png}
-	\end{center}
-	\vspace{-6pt}
-	\see{Richardson and Harker, p 1028}
-
-	{\color{purple}{Regeneration}} reverses the adsorbate-adsorbent equilibrium:
-	\begin{enumerate}
-		\item	\textbf{raise the temperature} to shift the equilibrium constant
-		\item	\textbf{lower the pressure} (vapour-phase adsorbate)
-		\item	displace the adsorbate with an alternative (e.g. steam)
-	\end{enumerate}
-	Regenerate is shorter duration when done in the reverse direction to loading.
-	
-	% An adsorption unit using thermal swing regeneration usually consists of two packed beds, one on-line and one regenerating, as shown in the figure. Regenerating consists of heating, and purging to remove adsorbate. The arrangement is flexible and robust. The desorption temperature depends on the properties of the adsorbent and the adsorbates. Manufacturers normally recommend the best regenerating temperature for their particular adsorbent. Exceeding this temperature may accelerate the ageing processes which cause pores to coalesce and capacity to be reduced. Too low a temperature may result in incomplete regeneration so that the effluent concentration in subsequent adsorption stages will be higher than its design value. Hot spots may develop in the operation of a fixed bed, so particular care has to be taken to control temperature when handling flammable materials.
-	% The relatively poor conductivity of a packed bed makes it difficult to get the heat of regeneration into the bed, either from a jacket or from coils embedded in the packing. This is more easily achieved by preheating the purge stream. Even in the best conditions, it takes time for the temperature of the bed to rise to the required level. Thermal regeneration is normally associated with long cycle times, measured in hours. Such cycles require large beds and, since the adsorption wave occupies only a small part of the bed on-line, the utilisation of the total adsorbent in the unit is low.
-	% It is good operating practice to regenerate a bed in the reverse direction to that followed during adsorption. This ensures that the adsorbent at the end of the bed, which controls the quality of the treated stream, is that which is most thoroughly regenerated. CARTER(44) has quantified the effect and showed that regeneration is achieved in a shorter time in this way.
-\end{frame}
-
 \begin{frame}\frametitle{Modelling the adsorption process}
 	\begin{enumerate}
 		\item	Diffusion
@@ -576,7 +580,7 @@
 				\item	adsorbate will detach from an occupied site
 			\end{itemize}
 	\end{enumerate}
-	
+
 	\vspace{12pt}
 	Mechanisms during adsorption
 	\begin{itemize}
@@ -707,9 +711,9 @@
 
 \begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
 	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
-	
+
 	\vspace{12pt}
-	
+
 	For the full scale system:
 
 	\begin{enumerate}
@@ -773,8 +777,8 @@
 				\item	{\small $C_\text{A,S}^e$ = concentration at equilibrium on the adsorbent {\color{myOrange}(equil loading)}}
 				\item	{\small $C_\text{A,S}^0$ = concentration on the regenerated adsorbent at time 0}
 				\item	{\small $\theta_b$ = breakthrough time: ``\emph{time to stop using the packed bed!\,}''}; usually when $C_\text{A} = 0.05 C_\text{A,F}$
-				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used} 
-				
+				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used}
+
 				\vspace{-5pt}
 				\item	{\small $C_\text{A,S}$ values are not easy measured; outlet concentration $C_\text{A}$ is easy}
 			\end{itemize}
