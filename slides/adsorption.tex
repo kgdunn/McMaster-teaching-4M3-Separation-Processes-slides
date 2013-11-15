@@ -472,20 +472,6 @@
 	\end{itemize}
 \end{frame}
 
-% \begin{frame}\frametitle{Quantifying the adsorbent}
-% 	\seefull{Perry's, Ch 22}: A fixed bed of porous adsorbent material. Bulk density is 500 kg.m$^{-3}$, and the {\color{purple}{interparticle}} [between] void fraction is 0.40. The {\color{purple}{intraparticle}} [within] porosity is 0.50, with two-thirds of this in cylindrical pores of diameter 1.4 nm and the rest in much larger pores. \textbf{Find}:
-% 	\begin{itemize}
-% 		\item	surface area of the adsorbent
-% 		\item	if solute has formed a complete {\color{purple}{monomolecular layer}} 0.3 nm thick inside the pores, determine the percent of the particle volume and the percent of the total bed volume filled with adsorbate.
-% 	\end{itemize}
-% 
-% 	\vspace{12pt}
-% 	\emph{Solution}:
-% 	Assume from surface area to volume ratio that the internal area is practically all in the small pores [ignore large pores].
-% 	One gram of the adsorbent occupies 2cm$^3$ as packed and has 0.4cm$^3$ in small pores, which gives a surface area of 1150 m$^2$/gram {\scriptsize (university stadium field area $\sim 5000~\text{to}~8000 \text{m}^2$)}.
-% 	Based on the area of the annular region filled with adsorbate, the solute occupies 22.5\% of internal pore volume and 13.5\% of the total packed-bed volume.
-% \end{frame}
-
 \begin{frame}\frametitle{Physical principles}
 	\begin{exampleblock}{Adsorption releases heat, it's exothermic. Why?}
 		\pause
@@ -590,6 +576,14 @@
 				\item	adsorbate will detach from an occupied site
 			\end{itemize}
 	\end{enumerate}
+	
+	\vspace{12pt}
+	Mechanisms during adsorption
+	\begin{itemize}
+		\item	{\color{purple}{equilibrium interaction}}: solid-fluid interactions
+		\item	{\color{purple}{kinetic}}: differences in diffusion rates (if multiple adsorbates)
+		\item	{\color{purple}{steric}}: pore structure hinders/retains molecules of a certain shape
+	\end{itemize}
 \end{frame}
 
 \begin{frame}\frametitle{Equilibrium modelling}
@@ -711,10 +705,49 @@
 	These are far more flexible models (more parameters); e.g. Langmuir isotherm is a special case of the BET isotherm.
 \end{frame}
 
-\begin{frame}\frametitle{Isotherms change at different temperatures}
-	Temperature swing example
+\begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
+	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
+	
+	\vspace{12pt}
+	
+	For the full scale system:
+
+	\begin{enumerate}
+		\item	At the end of the batch, what will be the concentration of the solution in the adsorber and concentration of A on the adsorbent?
+		\item	How much adsorbent do you need?
+
+	\end{enumerate}
 \end{frame}
 
+\begin{frame}\frametitle{Further questions to try}
+	\seefull{Adapted from Geankoplis question 12.2-1}
+
+	2.5 $\text{m}^3$ of wastewater solution with 0.25 kg phenol/$\text{m}^3$ is mixed with 3.0 kg granular activated carbon until equilibrium is reached. Use the following isotherm, determined from lab values, to calculate the final equilibrium values of phenol extracted and percent recovery. Show the operating point on the isotherm. {\footnotesize Units of $C_\text{A}$ are [kg per $\text{m}^3$] and $C_\text{A,S}$ is in [kg solute per kg of activated carbon].}
+
+	\vspace{1pt}
+
+	{\small [{\color{myOrange}{Ans: $C_\text{A} \approx 0.10$ kg per $\text{m}^3$, $C_\text{A,S} \approx 0.12$ kg/kg, recovery = 58\%}}]}
+
+	\begin{columns}[t]
+
+		\column{0.70\textwidth}
+			\vspace{-12pt}
+			\begin{center}
+				{\scriptsize\emph{~~~~~~~~~~Experimental isotherm data}}
+				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/isotherm-Geankoplis-question-12-1-1.png}
+			\end{center}
+		\column{0.30\textwidth}
+			\[C_\text{A,S} = \frac{0.145 C_\text{A}}{0.0174 + C_\text{A}}\]
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{Isotherms change at different temperatures}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/pressure-and-temperature-swing-Seader-p610-cleaned.png}
+	\end{center}
+	\vspace{-12pt}
+	\see{Seader, 3ed, p610}
+\end{frame}
 
 \begin{frame}\frametitle{Understanding adsorption in packed beds (1 of 2)}
 	\begin{center}
@@ -737,7 +770,7 @@
 		\column{1.1\textwidth}
 			\begin{itemize}
 				\item	{\small $C_\text{A,S}$ = concentration of adsorbate on adsorbent}
-				\item	{\small $C_\text{A,S}^e$ = concentration at equilibrium on the adsorbent (max loading)}
+				\item	{\small $C_\text{A,S}^e$ = concentration at equilibrium on the adsorbent {\color{myOrange}(equil loading)}}
 				\item	{\small $C_\text{A,S}^0$ = concentration on the regenerated adsorbent at time 0}
 				\item	{\small $\theta_b$ = breakthrough time: ``\emph{time to stop using the packed bed!\,}''}; usually when $C_\text{A} = 0.05 C_\text{A,F}$
 				\item	{\small $\theta_e$ = the bed at equilibrium time; packed bed is completely used} 
@@ -799,7 +832,6 @@
 	\end{columns}
 \end{frame}
 
-\begin{comment}
 \begin{frame}\frametitle{Example}
 	\vspace{-12pt}
 	\begin{columns}[t]
@@ -958,15 +990,6 @@
 	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
 \end{frame}
 
-\begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
-	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
-
-	\begin{enumerate}
-		\item	How much adsorbent do you need?
-		\item	At the end of the process what will be the concentration of the solution in the adsorber and concentration of A on the adsorbent?
-	\end{enumerate}
-\end{frame}
-
 \begin{frame}\frametitle{Modified from a previous exam}
 
 	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream. A bench scale system indicates that an adsorbent follows a Langmuir adsorption isotherm as:
@@ -980,27 +1003,3 @@
 		\item	Assuming a long residence time, give a rough estimate of how long it will take to reach this detectable outlet concentration? [{\color{myOrange}{15.7 days}}]
 	\end{enumerate}
 \end{frame}
-
-\begin{frame}\frametitle{Further questions to try}
-	\seefull{Adapted from Geankoplis question 12.2-1}
-
-	2.5 $\text{m}^3$ of wastewater solution with 0.25 kg phenol/$\text{m}^3$ is mixed with 3.0 kg granular activated carbon until equilibrium is reached. Use the following isotherm, determined from lab values, to calculate the final equilibrium values of phenol extracted and percent recovery. Show the operating point on the isotherm. {\footnotesize Units of $C_\text{A}$ are [g per $\text{cm}^3$] and $C_\text{A,S}$ is in [grams solute per gram of activated carbon].}
-
-	\vspace{1pt}
-
-	\iftoggle{instructor}{{\small [{\color{myOrange}{Ans: $C_\text{A} \approx 0.10$ g per $\text{cm}^3$, $C_\text{A,S} \approx 0.12$ g/g, recovery = 58\%}}]}}{}
-
-	\begin{columns}[t]
-
-		\column{0.70\textwidth}
-			\vspace{-12pt}
-			\begin{center}
-				{\scriptsize\emph{~~~~~~~~~~Experimental isotherm data}}
-				\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/isotherm-Geankoplis-question-12-1-1.png}
-			\end{center}
-		\column{0.30\textwidth}
-			\[C_\text{A,S} = \frac{0.145 C_\text{A}}{0.0174 + C_\text{A}}\]
-	\end{columns}
-\end{frame}
-
-\end{comment}
