@@ -626,6 +626,20 @@
 	\end{itemize}
 \end{frame}
 
+\begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
+	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
+
+	\vspace{12pt}
+
+	For the full scale system:
+
+	\begin{enumerate}
+		\item	At the end of the batch, what will be the concentration of the solution in the adsorber and concentration of A on the adsorbent?
+		\item	How much adsorbent do you need? {\color{myOrange}[Ans: 4.95 kg]}
+
+	\end{enumerate}
+\end{frame}
+
 \begin{frame}\frametitle{Equilibrium modelling: Freundlich model}
 	\begin{exampleblock}{Freundlich isotherm}
 		\[C_\text{A,S} = K \left(C_\text{A}\right)^{1/m}\qquad \text{for $ 1 < m < 5$}\]
@@ -709,20 +723,6 @@
 	These are far more flexible models (more parameters); e.g. Langmuir isotherm is a special case of the BET isotherm.
 \end{frame}
 
-\begin{frame}\frametitle{Batch system example (\emph{previous midterm question})}
-	You are to design a batch adsorber to remove an organic contaminant (A) from 400L of aqueous solution containing 0.05g/L of the contaminant. To facilitate this you do a bench scale experiment with 1L solution at the same concentration (0.05g/L) and 3g of an adsorbent. In the bench scale experiment you find that 96\% of the contaminant was removed. You need to remove 99\% of the contaminant in the full scale apparatus. You can assume that a linear isotherm applies.
-
-	\vspace{12pt}
-
-	For the full scale system:
-
-	\begin{enumerate}
-		\item	At the end of the batch, what will be the concentration of the solution in the adsorber and concentration of A on the adsorbent?
-		\item	How much adsorbent do you need?
-
-	\end{enumerate}
-\end{frame}
-
 \begin{frame}\frametitle{Further questions to try}
 	\seefull{Adapted from Geankoplis question 12.2-1}
 
@@ -802,6 +802,23 @@
 	}
 \end{frame}
 
+\begin{frame}\frametitle{Figures to help with the next example}
+	\begin{center}
+		\includegraphics[width=.9\textwidth]{\imagedir/separations/adsorption/adsorber-loading-Seader-p605.png}
+	\end{center}
+	\vspace{-24pt}
+	\see{Seader, Henly, Roper, p 605}
+\end{frame}
+
+\begin{frame}\frametitle{Terminology}
+	\begin{itemize}
+		\item	{\color{purple}LES} = length of equilibrium section (increases as bed is used)
+		\item	{\color{purple}LUB} = length of unused bed (decreases as bed is used up)
+		\item	$L$ = total bed length = LES + LUB
+		\item	No data available: use MTZ distance of 4ft
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Example (and some new theory applied)}
 	An adsorbate in vapour is adsorbed in an experimental packed bed. The inlet contains $C_\text{A,F} = 600$ ppm of adsorbate. Data measuring the outlet concentration over time from the bed are plotted below:
 
@@ -825,7 +842,7 @@
 					\item	Note: (area up to $\theta_b$) $\approx \theta_b$  when using a normalized y-axis
 				\end{itemize}
 			\begin{center}
-				\includegraphics[width=0.45\textwidth]{\imagedir/separations/adsorption/example-Geankoplis-p768.png}
+				\includegraphics[width=0.55\textwidth]{\imagedir/separations/adsorption/example-Geankoplis-p768.png}
 			\end{center}
 			\vspace{-6pt}
 			\item	How long does it take to reach this ideal capacity? {\color{myOrange}{$\approx$3.65 \text{hours}}}%, but if we want to be exact, it is $t_\text{used} = \displaystyle \int_0^{\theta_B}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt} \approx 3.65$
@@ -842,7 +859,7 @@
 		\column{1.1\textwidth}
 		\begin{enumerate}
 			\setcounter{enumi}{3}
-			\item	But what actual fraction of the bed's capacity is used at $\theta_b$?
+			\item	What actual fraction of the bed's capacity is used at $\theta_b$?
 				\begin{center}
 					\includegraphics[width=0.67\textwidth]{\imagedir/separations/adsorption/various-times-from-bed.png}
 				\end{center}
@@ -854,46 +871,58 @@
 					\item	{\color{purple}{stoichiometric time}}, $\theta_S$, is defined as \textbf{time taken} for this \emph{actual capacity} to be used
 					\item	$\theta_S$ is the point that breaks the MTZ into equal areas: in this case, $A_2$ \emph{vs} the unshaded area in previous diagram
 					\vspace{2pt}
-					\item	{\scriptsize $\theta_S = \displaystyle \int_0^{\infty}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt}$ = shaded area = $A_1 + A_2 = 3.65 + 1.5 = 5.15$ hrs}
-					\item	So actual bed capacity used at $\theta_b = \displaystyle\frac{t_\text{used}}{\theta_S}$ = 3.65/5.15 hours {\color{myOrange}{$\sim71\%$}}
+					\item	{\scriptsize $\theta_S = \displaystyle \int_0^{\infty}{\left(1-\frac{C_\text{A}}{C_\text{A,F}} \right)dt}$ = shaded area = $A_1 + A_2 = 3.65 + 1.55 = 5.20$ hrs}
+					\item	So actual bed fraction used at $\theta_b$ is $\dfrac{5.2}{6.9}$ = 0.75 {\color{myOrange}{$\sim75\%$}}
+					%$\theta_b = \dfrac{t_\text{used}}{\theta_S} = \dfrac{5.2}{6.9}$ = 0.75 {\color{myOrange}{$\sim75\%$}}
 				\end{itemize}
 		\end{enumerate}
 	\end{columns}
 \end{frame}
 
-% \begin{frame}\frametitle{Figures to help with the example}
-% 	\begin{center}
-% 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
-% 	\end{center}
-% 	\begin{center}
-% 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/stoichiometric-time-Lukchis.png}
-% 	\end{center}
-% \end{frame}
+\begin{frame}\frametitle{Figures to help with the example}
+	\begin{center}
+		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Bed-concentration-Ghosh-p144.png}
+	\end{center}
+	\vspace{-16pt}
+	\begin{columns}[t]
+		\column{1.1\textwidth}
+		\begin{enumerate}
+			\setcounter{enumi}{4}
+			\item	If the lab-scale bed was originally 14cm long, what equivalent ``length'' is unused at time $\theta_b$?
+				\begin{itemize}
+					\item	intuitively: $14(1 - 0.75)$ = {\color{myOrange}{3.5 cm}}
+					\item	LUB = length of unused bed = {\color{myOrange}{3.5 cm}}
+					\item	LES = {\color{purple}{length of equilibrium section}} = the used up part = $14.0 - 3.5 = 10.5$~cm
+				\end{itemize}
+		\end{enumerate}
+	\end{columns}
+\end{frame}
 
 \begin{frame}\frametitle{Example}
 	\vspace{-12pt}
 	\begin{columns}[t]
 		\column{1.1\textwidth}
 		\begin{enumerate}
-			\setcounter{enumi}{4}
-			\item	If the lab-scale bed were originally 14cm long, what ``length'' is totally unused at time $\theta_b$?
-				\begin{itemize}
-					\item	intuitively: $14 - 0.71 \times 14$ = {\color{myOrange}{4.1 cm}}
-					\item	equation: $L_\text{UNB} = \left(1 - \displaystyle\frac{t_\text{used}}{\theta_S} \right)L_\text{total} = \left(1 - \displaystyle\frac{3.65}{5.15} \right)14$ = {\color{myOrange}{4.1 cm}}
-					\item	where $L_\text{UNB}$ is the {\color{purple}{length of the unused bed}} (LUB)
-					\item	and $L_\text{total}$ is the total bed length
-					\item	LES = {\color{purple}{length of equilibrium section}} = the other part = 14.0 - 4.1 = 9.9cm
-				\end{itemize}
-			\vspace{6pt}
-			\pause
-			\item	If we wanted a break-point time of 7.5 hours instead, how much longer should the bed be {\small (keeping the diameter and {\color{purple}{flow profile}} fixed)}?
+			\setcounter{enumi}{5}
+
+			\item	If we wanted a break-point time of $\theta_b = 7.5$ hours instead, how much longer should the bed be {\small (keeping the diameter and flow profile fixed)}?
+			
+			\begin{center}
+				\begin{tabular}{c||c|r}
+							&	\textbf{Current}			& \textbf{Desired} \\ \hline
+					LES		&	$0.75 \times 14 = 10.5$cm	&	21.6cm \\
+					LUB 	&	$0.25 \times 14 = \,\,\,3.5$cm	&	3.5cm\\ \hline
+					Total 	&	14cm						&   25.1cm\\
+				\end{tabular}
+			\end{center}
+			
 			\begin{itemize}
-				\item	Ratio the bed lengths: $\displaystyle \frac{7.5}{3.65} \times 0.71(14) = \frac{7.5}{3.65} \times 9.9 = 20.4$ cm
-				\item	But that's the length to get to breakthrough in 7.5 hours
+				\item	Ratio LES lengths to breakthrough times: $ \dfrac{\text{LES}^\text{des}}{\text{LES}^\text{curr}} =  \dfrac{\theta_b^\text{des}}{\theta_b^\text{curr}}$
+				\item	Length to get to breakthrough in 7.5 hours = $\text{LES}^\text{des} = 21.6$~cm
 				\item	We have to add on the length of the unused bed = 4.1 cm from before (same diameter, same flow profile!)
-				\item	So new bed length = LES + LUB = 20.4 + 4.1  = {\color{myOrange}{24.5 cm}}
+				\item	So new bed length = LES + LUB = 21.6 + 4.1  = {\color{myOrange}{25.1 cm}}
 				\item	LUB is the same length, provided all other conditions are the same
-				\item	Then fraction actually used = 20.4 / 24.5 = 0.83 {\scriptsize (compared to 0.71)}
+				\item	Then fraction actually used = $\dfrac{21.6}{24.5}$ = 0.88 {\scriptsize (compared to 0.75)}
 			\end{itemize}
 		\end{enumerate}
 	\end{columns}
@@ -901,22 +930,37 @@
 
 \begin{frame}\frametitle{Bed mass balance}
 
-	\begin{exampleblock}{Amount of material loaded into the bed up to $\theta_b$}
-		\[Q_F C_\text{A,F} \theta_b = C_\text{A,S} \rho_B \left(1-\epsilon_b \right) A L_b \]
+	\begin{exampleblock}{Amount of material loaded into the bed up to $\theta_b$ in LES}
+		\[Q_F \,\, C_\text{A,F} \,\, \theta_b = C_\text{A,S}^\text{e} \,\, \rho_B  \,\, A \, L_\text{LES} \]  %\left(1-\epsilon_b \right) <--- had this in previously, but if we use the bulk density, then it is accounted for already
 	\end{exampleblock}
-
-	\begin{tabular}{llr}\vspace{6pt}
-		$Q_F $					& Feed flow rate					& $\left[ \displaystyle\frac{\text{m}^3}{\text{minute}}\right]$ \\ 	\vspace{6pt}
-		$C_\text{A,F} $			& Inlet concentration				& $\left[ \displaystyle\frac{\text{kg solute}}{\text{m}^3~\text{fluid}}\right]$ \\ 	\vspace{6pt}
-		$\theta_b$				& Breakthrough time					& $\left[ \text{minute}\right]\,$ \\ 	\vspace{6pt}
-		$C_\text{A,S}$			& Adsorbed solute concentration		& $\left[ \displaystyle\frac{\text{kg solute}}{\text{kg adsorbent}}\right]$ \\ \vspace{6pt}
-		$\rho_\text{B}$			& Adsorbent bulk density			& $\left[ \displaystyle\frac{\text{kg adsorbent charged}}{\text{m}^3~\text{of occupied space}}\right]$ \\ 	\vspace{6pt}
-		$\epsilon_b$			& Bed voidage						& $\left[ - \right]\,$ \\
-		$A L_\text{total}$		& Bed volume = area $\times$ total length	& $\left[ \text{m}^3\right]$
+	
+	\begin{tabular}{llr}\vspace{0pt}
+		$Q_F $					& Feed flow rate					& $\left[ \dfrac{\text{m}^3}{\text{second}}\right]$ \\ 	\vspace{2pt}
+		$C_\text{A,F} $			& Inlet concentration				& $\left[ \dfrac{\text{kg solute}}{\text{m}^3~\text{fluid}}\right]$ \\ 	\vspace{2pt}
+		$\theta_b$				& Breakthrough time					& $\left[ \text{second}\right]\,$ \\ 	\vspace{2pt}
+		$C_\text{A,S}^{e}$		& Eqbm adsorbed solute conc$^\text{n}$& $\left[ \dfrac{\text{kg solute}}{\text{kg adsorbent}}\right]$ \\ \vspace{2pt}
+		$\rho_\text{B}$			& Adsorbent's {\color{purple}bulk density}			& $\left[ \dfrac{\text{kg adsorbent charged}}{\text{m}^3~\text{of occupied space}}\right]$ \\ 	\vspace{2pt}
+		%$\epsilon_b$			& Bed voidage						& $\left[ \dfrac{\text{m$^3$ adsorbent}}{\text{m}^3~\text{of occupied space}} \right]$ \\  \vspace{2pt}
+		$A L_\text{LES}$		& Bed volume = area $\times$ LES length	& $\left[ \text{m}^3~\text{of occupied space}\right]$
 	\end{tabular}
 
 	\vspace{6pt}
-	{\color{myBlue}{Use these to determine mass of adsorbent required.}}
+	{\small \color{myBlue}Add on LUB; determine volume adsorbent required = $A( L_\text{LES}+L_\text{LUB})$.}
+	{\small \color{myOrange}Take porosity into account when calculating mass of adsorbent from the occupied volume.}
+\end{frame}
+
+\begin{frame}\frametitle{Modified from a previous exam}
+
+	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream on a \emph{continuous basis} (this is not a batch system). A bench scale system indicates that the adsorbent follows a Langmuir adsorption isotherm as:
+	\[
+		C_\text{A,S} = \frac{0.05C_\text{A}}{32.1 + C_\text{A}}
+	\]
+	where $C_\text{A,S}$ has units of [grams/grams], and the constant has units of 32.1\,ppm. In a tank we have an inlet flow of TME solution at 10L/min with density of 1000\,$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1\,ppm concentrations. The tank contains 15\,kg of initially fresh adsorbent which is retained in the tank. We wish to know:
+
+	\begin{enumerate}
+		\item	How much TME is adsorbed when the breakthrough concentration reaches 1 ppm? {\small\color{myOrange}[Ans: 22.66kg]}
+		\item	How long it will take to reach this detectable outlet concentration? {\small\color{myOrange}[15.7 days]}
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{Regenerating the bed}
@@ -973,6 +1017,7 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/adsorption/Sorbex-Uhlmanns-p560.png}
 	\end{center}
+	\vspace{-12pt}
 	\see{Uhlmanns, p 560}
 
 	{\scriptsize a) Pump; b) Adsorbent chamber; c) Rotary valve; d) Extract column; e) Raffinate column}
@@ -994,16 +1039,3 @@
 	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
 \end{frame}
 
-\begin{frame}\frametitle{Modified from a previous exam}
-
-	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream. A bench scale system indicates that an adsorbent follows a Langmuir adsorption isotherm as:
-	\[
-		C_\text{A,S} = \frac{0.05C_\text{A}}{32.1 + C_\text{A}}
-	\]
-	where $C_\text{A,S}$ has units of [grams/grams], and the constant has units of 32.1 ppm. In a tank we have an inlet flow of TME solution at 10L/min with density of 1000$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1ppm concentrations. The tank contains 15kg of initially fresh adsorbent which is retained in the tank. We wish to know:
-
-	\begin{enumerate}
-		\item	How much TME is adsorbed when the breakthrough concentration reaches 1 ppm? [{\color{myOrange}{Ans: 22.65kg}}]
-		\item	Assuming a long residence time, give a rough estimate of how long it will take to reach this detectable outlet concentration? [{\color{myOrange}{15.7 days}}]
-	\end{enumerate}
-\end{frame}
