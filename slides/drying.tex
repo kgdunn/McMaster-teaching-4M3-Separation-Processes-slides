@@ -1,14 +1,25 @@
+\begin{frame}\frametitle{References used (in alphabetical order)}
+	\begin{itemize}
+		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 9.
+		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 12.
+		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 16.
+		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4.10.
+		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 18.
+		\item	Uhlmann's Encyclopedia, ``Drying'', {\tiny \href{http://dx.doi.org/10.1002/14356007.b02\_04.pub2}{DOI:10.1002/14356007.b02\_04.pub2}}
+	\end{itemize}
+\end{frame}
+
 \begin{frame}\frametitle{Background}
 	We consider \textbf{drying of solid products} here.
 	\begin{itemize}
 		\item	Remove {\color{myOrange}{liquid phase}} from {\color{myOrange}{solid phase}} by an {\color{myOrange}{ESA = thermal energy}}
 		\item	It is the final separating step in many processes, especially after a filtration step
 		\begin{itemize}
-			\item	pharmaceuticals
-			\item	foods
-			\item	crops, grains and cereal products
-			\item	lumber, pulp and paper products
-			\item	catalysts, fine chemicals
+			\item	pharmaceuticals % compaction
+			\item	foods % stabilized and preserve flvour; crispiness
+			\item	crops, grains and cereal products % prevent bacterial growth
+			\item	lumber, pulp and paper products % warping
+			\item	catalysts, fine chemicals  %  CuSO4.nH20
 			\item	detergents
 		\end{itemize}
 	\end{itemize}
@@ -23,7 +34,6 @@
 	\end{itemize}
 \end{frame}
 
-% 2013: Update this with the diagram from Seader: more informative labelling on theirs
 \begin{frame}\frametitle{The nature of water in solid material}
 	% p4-142 Schweitzer
 	% C+R v2, Ch16, p902
@@ -38,8 +48,20 @@
 			\see{Richardson and Harker, p 902}
 		\column{0.50\textwidth}
 			Material, when exposed to air with a certain humidity, will reach equilibrium with that air.
-			
-			\vspace{12pt}
+			\vspace{3cm}
+	\end{columns}
+\end{frame}
+
+\begin{frame}\frametitle{The nature of water in solid material}
+	% p4-142 Schweitzer
+	% C+R v2, Ch16, p902
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\begin{center}
+				\includegraphics[width=0.95\textwidth]{\imagedir/separations/drying/Isotherm-moisture-solid-Seader-p749.png}
+			\end{center}
+		\column{0.50\textwidth}
+
 			\begin{enumerate}
 				\item	\textbf{Bound moisture}
 				\begin{itemize}
@@ -52,6 +74,8 @@
 					\item	water in excess of the above equilibrium water
 				\end{itemize}
 			\end{enumerate}
+			\vspace{3cm}
+			\see{Seader, Henley and Roper, p 749}
 	\end{columns}
 \end{frame}
 
@@ -79,7 +103,7 @@
 				\item	portion remains in the solid as ({\color{purple}{sensible heat}})
 			\end{itemize}
 	\end{columns}
-	\vspace{12pt}
+	%\vspace{12pt}
 	\begin{itemize}
 		\item	Key point: heat to vapourize the liquid is adiabatically provided by the air stream. Air is cooled as a result of this evaporation
 		\item	The $\Delta H_\text{vap}$ is a function of the temperature at which it occurs:
@@ -96,6 +120,7 @@
 		\includegraphics[width=0.85\textwidth]{\imagedir/separations/drying/Phase_diagram_of_water.svg.png}
 	\end{center}
 	\see{\href{http://en.wikipedia.org/wiki/File:Phase\_diagram\_of\_water.svg}{Wikipedia File:Phase\_diagram\_of\_water.svg}}
+	% Created by 
 \end{frame}
 
 \begin{frame}\frametitle{Terminology}
@@ -161,7 +186,7 @@
 	\textbf{Example:} Air at 65\degC$\,$ and 10\% humidity has a dew point temperature of 25\degC. This parcel of air contains 0.021 kg of water per kilogram of dry air.
 \end{frame}
 
-% 2013: Verify iff heat capacity of water vapour is 1.88 kJ/(kg water vapour)/K
+% 2013: Verify if heat capacity of water vapour is 1.88 kJ/(kg water vapour)/K
 \begin{frame}\frametitle{Terminology}
 	\begin{itemize}
 		\item	 {\color{purple}{Humid heat}}: amount of energy to raise 1kg of air and the water vapour it contains by 1\degC
@@ -596,15 +621,4 @@
 				\item	fluidizing air scrubbed before vented
 			\end{itemize}
 	\end{columns}
-\end{frame}
-
-\begin{frame}\frametitle{References used (in alphabetical order)}
-	\begin{itemize}
-		\item	Geankoplis, ``Transport Processes and Separation Process Principles'', 4th edition, chapter 9.
-		\item	\href{http://accessengineeringlibrary.com/browse/perrys-chemical-engineers-handbook-eighth-edition}{Perry's Chemical Engineers' Handbook}, 8th edition, chapter 12.
-		\item	Richardson and Harker, ``Chemical Engineering, Volume 2'', 5th edition, chapter 16.
-		\item	Schweitzer, ``Handbook of Separation Techniques for Chemical Engineers'', chapter 4.10.
-		\item	Seader, Henley and Roper, ``Separation Process Principles'', 3rd edition, chapter 18.
-		\item	Uhlmann's Encyclopedia, ``Drying'', {\tiny \href{http://dx.doi.org/10.1002/14356007.b02\_04.pub2}{DOI:10.1002/14356007.b02\_04.pub2}}
-	\end{itemize}
 \end{frame}
