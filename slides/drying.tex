@@ -127,6 +127,10 @@
 	\begin{itemize}	
 		\item	{\color{purple}{Partial pressure}}, recall, is the pressure due to water vapour in the water-air mixture
 		\item	{\color{purple}{Vapour pressure}}, is the pressure exerted by (molecules of liquid water in the solid) on the gas phase in order to escape into the gas [a measure of volatility]
+		\begin{itemize}
+			\item	ethanol's vapour pressure at room temperature: $\approx$ 6000 Pa
+			\item	water's vapour pressure at room temperature: $\approx$ 2300 Pa
+		\end{itemize}
 	\end{itemize}
 	\begin{exampleblock}{}
 		Moisture evaporates from a wet solid only when its vapour pressure exceeds the partial pressure
@@ -218,11 +222,13 @@
 \end{frame}
 
 \begin{frame}\frametitle{Terminology: adiabatic saturation}
-	Quantify it: do an enthalpy balance at $T_\text{ref} = T_S$ {\scriptsize (i.e. disregard water)}
+	Quantify it: do an enthalpy balance at $T_\text{ref} = T_S$ 
+	
+	{ i.e. we can disregard water; and at $T_s$ water is in liquid phase}
 	\begin{center}
 		\includegraphics[width=0.4\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
 	\end{center}
-	\vspace{-6pt}
+	\vspace{-12pt}
 	\begin{exampleblock}{Enthalpy of vapour phase entering:}
 		\[c_S\left(T - T_S \right) + (\psi) (\Delta H_\text{vap})\]
 	\end{exampleblock}
@@ -230,6 +236,7 @@
 		\[c_S\left(T_S - T_S \right) + (\psi_S) (\Delta H_\text{vap})\]
 	\end{exampleblock}
 	
+	\vspace{-12pt}
 	\[	
 		\displaystyle \frac{y\text{-axis change}}{x\text{-axis change}} = \frac{\color{red}{\boldsymbol \psi} \color{black} - \color{myGreen}{\boldsymbol \psi_S}}{\color{red}T \color{black}- \color{myGreen}{\boldsymbol T_S}} = - \frac{c_S}{\Delta H_\text{vap}} = - \frac{1.005 + 1.88 \color{red}{\boldsymbol \psi}}{\Delta H_\text{vap}}
 	\]
@@ -247,14 +254,14 @@
 	An air stream at 70\degC$\,$ and carrying 0.055 kg water per kg dry air is adiabatically contacted with liquid water until it reaches equilibrium. The process is continuous and operating at steady-state. Air feed is 1 kg dry air per minute.
 	{\small
 	\begin{enumerate}
-		\item	What is the percentage humidity of the incoming air stream? %{\color{myOrange}{[20\%]}}
-		\item	What is the percentage humidity of the air stream leaving?  %{\color{myOrange}{[100\%]}}
-		\item	What is the humidity [mass/mass] of the air stream leaving? %{\scriptsize{\color{myOrange}{[66g/kg]}}}
-		\item	What is the temperature of the air stream leaving? %{\color{myOrange}{[45\degC]}}
-		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? %{\color{myOrange}{[$(66-55) = 11$ g per min]}}
+		\item	What is the percentage humidity of the incoming air stream? {\color{myOrange}{[20\%]}}
+		\item	What is the percentage humidity of the air stream leaving?  {\color{myOrange}{[100\%]}}
+		\item	What is the humidity [mass/mass] of the air stream leaving? {\scriptsize{\color{myOrange}{[66g/kg]}}}
+		\item	What is the temperature of the air stream leaving? {\color{myOrange}{[45\degC]}}
+		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? {\color{myOrange}{[$(66-55) = 11$ g per min]}}
 	\end{enumerate}}
 
-	\vspace{-5pt}
+	\vspace{-12pt}
 	\hfill\includegraphics[width=0.68\textwidth]{\imagedir/separations/drying/adiabatic-saturation-temperature.png}
 	
 \end{frame}
