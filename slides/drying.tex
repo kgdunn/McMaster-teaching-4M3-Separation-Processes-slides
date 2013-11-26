@@ -120,7 +120,14 @@
 		\includegraphics[width=0.85\textwidth]{\imagedir/separations/drying/Phase_diagram_of_water.svg.png}
 	\end{center}
 	\see{\href{http://en.wikipedia.org/wiki/File:Phase\_diagram\_of\_water.svg}{Wikipedia File:Phase\_diagram\_of\_water.svg}}
-	% Created by 
+	% Created by a screenshot from the wikipedia page
+	
+	% Two phases exist along the lines that separate the phases
+	% Liquid/vapour line: is the vapour pressure line
+	% e.g. at 100 degC, the vapour pressure of water is 101325Pa, so water boils at 1atm at that temperature
+	% e.g. at  65 degC, the vapour pressure of water is  25700Pa, so at that temperature and pressure we will get boiling
+	% we get sublimation of ice to steam at low pressures
+	% at high pressures, H2O only exists in solid phase
 \end{frame}
 
 \begin{frame}\frametitle{Terminology}
@@ -150,7 +157,7 @@
 
 \begin{frame}\frametitle{Terminology}
 	\begin{itemize}
-		\item	{\color{purple}{Dry bulb temperature}}: or just $T_\text{db}$ = ``\emph{temperature}'' {\tiny (nothing new here)}
+		\item	{\color{purple}{Dry bulb temperature}}: or just $T_\text{db}$ = ``\emph{temperature}'' 
 		\begin{itemize}
 			\item	the horizontal axis on the psychrometric chart
 		\end{itemize}
@@ -169,7 +176,7 @@
 		\item	{\color{purple}{Percentage humidity}} = $\displaystyle \frac{\psi}{\psi_S}\times 100$	
 		\vspace{4pt}
 		\item	{\color{purple}{Partial pressure}} we said is the pressure due to water vapour in the water-air mixture
-		\vspace{4pt}
+		\vspace{0pt}
 		\begin{itemize}
 			\item	$\psi = \displaystyle \frac{\text{mass of water vapour}}{\text{mass of dry air}} = \displaystyle \frac{18.02}{28.97}\frac{p_A}{P-p_A}$
 			\item	$p_A$ = partial pressure of water in the air
@@ -178,7 +185,6 @@
 	\end{itemize}
 \end{frame}
 
-% 2013: update the figure with larger red arrows
 \begin{frame}\frametitle{Terminology}
 	\begin{itemize}
 		\item	{\color{purple}{Dew point}}: the temperature to which you must cool the air/vapour mixture to just obtain saturation (100\% humidity), i.e. condensation just starts to occur.
@@ -278,6 +284,16 @@
 		\item	Surprisingly, the slope coefficient is very close to adiabatic slope coefficient
 		\item	This is only true for water vapour
 	\end{itemize}
+	
+	% One thermometer is covered with a wet wick 
+	% Other thermometer is dry-bulb temperature
+	% Swing the device around in an atmosphere that has constant temperature and humidity
+	% Moisture on the wick will evaporate and cool the region down around that tip of the thermometer
+	% That is the wet-bulb temperature
+	% That minor evaporation into the room isn't going to change the temperature and humidity in the room where the thermometer is being swung
+	
+	% In drying, we are going to expose the solid to a constant stream of air at a particular temperature and humidity
+	% The temperature at the surface of the solid is the wet bulb temperature, and it is going to be critical to calculating the mass transfer and heat transfer taking place
 \end{frame}
 
 \begin{frame}\frametitle{{\color{purple}{Humid volume}}}
@@ -285,7 +301,7 @@
 	Equivalent to the inverse density $1/\rho$ of moist air.
 	
 	\vspace{12pt}
-	Derived from the ideal-gas law and simplified here:
+	Derived from the ideal-gas law and simplified here:  % mass balance to get the density of air and water mixture combined
 	\begin{exampleblock}{}
 		\[ v_H = \left[ 2.83 \times 10^{-3} + 4.56 \times 10^{-3} \psi \right] T_\text{db} \qquad\quad \left[\frac{\text{m}^3}{\text{kg moist air}}\right] \]
 	\end{exampleblock}
