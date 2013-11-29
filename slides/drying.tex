@@ -23,7 +23,7 @@
 			\item	detergents
 		\end{itemize}
 	\end{itemize}
-	Why dry?
+	Why dry?)
 	\begin{itemize}
 		\item	packaging dry product is much easier than moist/wet product
 		\item	reduces weight for shipping
@@ -397,7 +397,7 @@
 	\see{Geankoplis, p 561}
 \end{frame}
 
-% YouTube videos
+% YouTube video links added
 \begin{frame}\frametitle{Some equipment examples: Rotating dryer}
 	\begin{columns}[t]
 		\column{0.60\textwidth}
@@ -467,7 +467,7 @@
 				\includegraphics[width=\textwidth]{\imagedir/separations/drying/centrifugal-atomizer-Seader-p737.png}
 			\end{center}
 			\vspace{-12pt}
-			\hfill\see{Seader \emph{et al.}, p 373}
+			\hfill\see{Seader, Henley and Roper, p 737}
 	\end{columns}
 	\begin{itemize}
 		\item	Also called atomizers
@@ -478,7 +478,7 @@
 
 \begin{frame}\frametitle{Some equipment examples: Fluidized bed dryer}
 
-	\see{Richardson and Harker \emph{et al.}, p 972}
+	\see{Richardson and Harker, p 972}
 	\vspace{-18pt}
 	\begin{center}
 		\includegraphics[width=.95\textwidth]{\imagedir/separations/drying/fluidized-bed-CR-v2-5ed-p972}
@@ -504,7 +504,7 @@
 \begin{frame}\frametitle{Drying profiles}
 	Solid drying is phenomenally complex for different materials. Observe it experimentally and plot it:
 
-	\hfill\see{Seader, \emph{et al.}, p 751 and 752}
+	\hfill\see{Seader, Henley and Roper, p 751 and 752}
 	\vspace{-12pt}
 	\begin{columns}[b]
 		\column{0.50\textwidth}
@@ -549,7 +549,7 @@
 	\end{itemize}
 	\vspace{12pt}
 	$\begin{array}{rcl}
-		(\text{Water flux})(\Delta H_\text{vap})  							&=& \text{Heat flux}\\
+		(\text{Moisture flux})(\Delta H_\text{vap})  							&=& \text{Heat flux}\\
 		\\
 		\displaystyle\frac{1}{A} \frac{d(m_w)}{dt} \times \Delta H_\text{vap} 	&=& \displaystyle\frac{\text{driving force}}{\text{resistance}} = \displaystyle\frac{(T_\text{air} - T_\text{solid surface}) }{1/h} \\
 		\\
@@ -601,28 +601,38 @@
 	\[\frac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{(h)(A)(T_\text{db} - T_\text{wb})} = \text{time to remove $\Delta M_\text{water}$}
 	\]
 	\[h = a(G)^{b} = a(\rho v)^{b}\]
+	
+	% Note: at 60 degC, and 10% humidity: then Twb = 30 degC, so Tdb - Twb = 60-30 degC
+	%       at 60 degC, but 40% humidity: then Twb = 45 degC. sp Tdb - Twb = 60-45 degC
 \end{frame}
 
 \begin{frame}\frametitle{Wet basis and dry basis}
 	\begin{enumerate}
-		\item	Wet basis
+		\item	{\color{myOrange}\textbf{Wet basis = (mass of water)/(mass of wet solids)}}
 		\begin{itemize}
-			\item	For example, if we have 200 kg of moist solids, that contains 30\% moisture (wet basis)
+			\item	For example, if we have 200 kg of wet solids, that contains 30\% moisture (wet basis)
 			\item	30\% of that is moisture = $0.3 \times 200 = 60$ kg of water
 			\item	70\% of that is solid = $0.7 \times 200 = 140$ kg of dry solid
 		\end{itemize}
 
-		\vspace{24pt}
-		\item	Dry basis
+		\vspace{12pt}
+		\item	{\color{myOrange}\textbf{Dry basis = (mass of water)/(mass of dry solids)}}
 		\begin{itemize}
-			\item	For example, if we have 200 kg of moist solids, that contains 30\% moisture (dry basis)
-			\item	Consider a 100 kg amount of moist solids, and ratio against it
+			\item	For example, if we have 200 kg of wet solids, that contains 30\% moisture (dry basis)
+			\item	Consider a 100 kg amount of {\color{red}\cancel{moist} dry} solids, and ratio against it
 
-			\item	$\dfrac{\text{30 kg water}}{\text{30 kg water + 100 kg solid}} \times \text{200 kg moist solids}$
-			\item	Moisture amount = $\dfrac{30}{130} \times 200$ = 46.2 kg water
+			\item	$\dfrac{\text{30 kg water}}{\text{30 kg water + 100 kg solid}} \times \text{200 kg wet solids}$
+			\item	Moisture amount = $\dfrac{30}{130} \times 200 = 0.231 \times 200$ = 46.2 kg water
 			\item	Solids amount = $\dfrac{100}{130} \times 200$ = 153.8 kg dry solid
-			%\item	Link between the two: solve for $x$ where $\dfrac{x}{100-x} = 0.3$
 		\end{itemize}
+		
+		
+		% \item	\emph{Understanding} the link between the two:
+% 		\begin{itemize}
+% 			\item	$x$ = mass of water and $y$ = mass of wet solids
+% 			\item	$\dfrac{x}{y - x} = \dfrac{\text{mass of water}}{\text{mass of dry solids}} = 0.3$ dry basis
+% 			\item	If $y = 100$, solve for $x = 23.1$, or 23.1\% moisture on the wet basis
+% 		\end{itemize}
 	\end{enumerate}
 \end{frame}
 
@@ -641,7 +651,7 @@
 			\see{\href{http://www.flickr.com/photos/cdeimages/6322211031}{Flickr, CC BY 2.0}}
 	\end{columns}
 	\vspace{12pt}
-	Consider 100kg of cake, discharged at 30\% moisture (wet basis). Air to dry the cake at 75\degC$\,$ is used, 10\% relative humidity, with a velocity of 4 m/s parallel to the solids in a tray dryer; the tray holds $2\,\text{m}^2$. The aim is to achieve a 15\% (dry basis) cake which can be milled and packaged.
+	Consider 100kg of cake, discharged at 30\% moisture (wet basis). Air to dry the cake at 75\degC$\,$ is used, 10\% humidity, with a velocity of 4 m/s parallel to the solids in a tray dryer; the tray holds $2\,\text{m}^2$. The aim is to achieve a 15\% (dry basis) cake which can be milled and packaged.
 
 	\vspace{12pt}
 	Estimate the drying time.
@@ -666,20 +676,20 @@
 	\begin{enumerate}
 		\item	What is the humidity of the incoming air stream? \visible<2->{\\{\scriptsize \color{myOrange}{[$\psi$ = 0.04 kg water/kg dry air]}}}
 		\item	What is the wet-bulb temperature of this air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{wb} \approx 41.3$\degC]}}}
-		\item	What is the humid volume of the drying air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{db}=348$K, $v_H = 1.048 \text{m}^3\text{/kg}$]}}}
+		\item	What is the humid volume of the drying air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{db}=348$K, $v_H = 1.048 \text{m}^3\text{.kg}^{-1}$]}}}
 		\item	Estimate the heat transfer coefficient.
 		\begin{itemize}
-			\item	$G = 3\,600\, \rho v_\text{avg} = 3\,600 (1.048)^{-1} \times 4 =$  \visible<3->{{\color{myOrange}{$13\,740\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}}
-			\item	$h = 0.0204 (13\,740)^{0.8} =$ \visible<3->{{\color{myOrange}{$h = 41.7\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}}
+			\item	$G = 3\,600\, \rho v_\text{avg} = 3\,600 (1.048)^{-1} \times 4 =$  \visible<2->{{\color{myOrange}{$13\,740\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}}
+			\item	$h = 0.0204 (13\,740)^{0.8} =$ \visible<2->{{\color{myOrange}{$h = 41.7\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}}
 		\end{itemize}
 		\item	Substitute into the constant-drying rate expression to find:
 		\begin{itemize}
-			\item	drying time = $\dfrac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} =$ {\scriptsize $\displaystyle \frac{(19.5)(2401\times 1000)}{(41.7)(2)(75-41.3)} =$} \visible<5->{{\\ \color{myOrange}{drying time = $\mathbf{4.6\,\textbf{hrs}}$}}}
+			\item	drying time = $\dfrac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} =$ {\scriptsize $\displaystyle \frac{(19.5)(2401\times 1000)}{(41.7)(2)(75-41.3)} =$} \visible<2->{{\\ \color{myOrange}{drying time = $\mathbf{4.6\,\textbf{hrs}}$}}}
 
 			\vspace{12pt}
 			\item	Water initially = 30 kg; dry basis = $0.15 = \dfrac{30 - \Delta M_\text{water}}{70\,\text{kg dry solids}}$
 			\item	So $\Delta M_\text{water} = 19.5\,\text{kg}$
-			\item	We need the $\Delta H_\text{vap}$ at $T_\text{wb}$ (why?) \visible<4->{{\small \color{myOrange}{[2401 kJ/kg]}}}
+			\item	We need the $\Delta H_\text{vap}$ at $T_\text{wb}$ (why?) \visible<2->{{\small \color{myOrange}{[2401 kJ.kg$^{-1}$.K$^{-1}$]}}}
 			\begin{itemize}
 				\item	2501 kJ/kg at 0\degC
 				\item	2260 kJ/kg at 100\degC 
