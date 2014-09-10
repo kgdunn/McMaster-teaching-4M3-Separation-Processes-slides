@@ -1,10 +1,33 @@
-% /Users/kevindunn/Sync/Figures/examples/waste-water-treatment/flickr-4578619015_895f8dabbb_o-CC-BY-NC-SA-2.jpg
+%DONE /Users/kevindunn/Sync/Figures/examples/waste-water-treatment/flickr-4578619015_895f8dabbb_o-CC-BY-NC-SA-2.jpg
 %	See: http://www.flickr.com/photos/sawater/6434889743/
-%	Watch video: http://www.youtube.com/watch?v=gVeW1rr8GEI&feature=related
-%	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
+%DONE	Watch video: http://www.youtube.com/watch?v=gVeW1rr8GEI&feature=related
+%DONE	Irregular sedmination: http://www.youtube.com/watch?v=u6Y6d7oH6Vs&feature=relmfu
 
-% 10 September 2013
-\begin{frame}\frametitle{Last class: Separation factor}
+% 10 September 2014
+
+\begin{frame}\frametitle{\emph{Prior class}: {\color{purple} Separating agents}: MSA and ESA}
+	\begin{exampleblock}
+		{\small A material, force, or energy source applied to the feed for separation }
+	\end{exampleblock}
+	\vspace{6pt}
+	i.e. what you add to get a separation. {\color{purple}MSA} = mass separating agent and {\color{purple}ESA} = energy separating agent
+	\vspace{6pt}
+	\begin{itemize}
+		\item	heat (ESA)
+		\item	liquid solvent (MSA)
+		\item	pressure (ESA)
+		\item	\pause\iftoggle{instructor}{vacuum}{}
+		\item	\iftoggle{instructor}{membrane}{}
+		\item	\iftoggle{instructor}{filter media}{}
+		\item	\iftoggle{instructor}{electric field}{}
+		\item	\iftoggle{instructor}{temperature gradient}{}
+		\item	\iftoggle{instructor}{gravitational field (natural, or artificially created)}{}
+		\item	\iftoggle{instructor}{adsorbent}{}
+		\item	\iftoggle{instructor}{absorbent}{}
+	\end{itemize}
+\end{frame}
+
+\begin{frame}\frametitle{\emph{Prior class}: Separation factor}
 	As mentioned, we will introduce a number of important principles we will re-use later.
 
 	\begin{exampleblock}{{\color{purple} Separation factor}}
@@ -27,17 +50,31 @@
 	Based on this definition: we can see why solid-fluid separations often have high separation factors
 \end{frame}
 
+\begin{frame}\frametitle{Try this calculation to get a feel for the Separation Factor}
+	\begin{columns}[b]
+		\column{0.60\textwidth}
+			\centerline{\includegraphics[width=.9\textwidth]{\imagedir/separations/cyclones/cyclone-separator-CRv2-5ed-p74-flipped.png}}
+			\see{Richardson and Harker, 5ed, v2, p74}
+			
+		\column{0.40\textwidth}
+			\centerline{\includegraphics[width=.7\textwidth]{\imagedir/separations/cyclones/flow-pattern-CRv6-p451-labelled.png}}
+			\see{Sinnott, 4ed, v6, p451}
+			\[S_{ij} = \displaystyle \frac{x_{i,1} / x_{j,1}}{x_{i,2} / x_{j,2}}\]
+	\end{columns}
+\end{frame}
+
+
 \begin{frame}\frametitle{Mechanical separations}
 	We will start with this topic
 	\begin{itemize}
 		\item	It's easy to understand!
 		\item	Requires only a knowledge of basic physics (e.g. 1st year physics)
-		\item	It introduces a number of important principles we will re-use later
+		\item	It introduces a number of important principles we will re-use 
 		\item	Mechanical separations remain some of the most widely used steps in many flowsheets. Why?
 		\begin{itemize}
 			\item	reliable units
 			\item	relatively inexpensive to maintain and operate
-			\item	we can often achieve a very high \emph{separation factor} (that's desirable!)
+			\item	we can often achieve a very high \emph{\color{myOrange}separation factor} (that's desirable!)
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -91,17 +128,21 @@
 \end{frame}
 
 \begin{frame}\frametitle{What is sedimentation?}
-
-	Sugar video, \href{http://www.youtube.com/watch?v=ZBOou6cahtw}{http://www.youtube.com/watch?v=ZBOou6cahtw} at \texttt{04:35 to 05:02}
-
-	\vspace{12pt}
-	DIY:
-	\begin{itemize}
-		\item	concrete powder in water
-		\item	drywall compound (calcium carbonate and other particles) in water
-		\item	add vinegar to milk to make it curdle, stir, then settle
-	\end{itemize}
-
+	\begin{columns}[c]
+		\column{0.60\textwidth}
+			\centerline{\includegraphics[width=.9\textwidth]{\imagedir/separations/overview-class/sugar-video-ZBOou6cahtw-screenshot-05-01.png}}
+			
+		\column{0.50\textwidth}
+			Sugar video, \href{http://www.youtube.com/watch?v=ZBOou6cahtw}{(YouTube)} at \texttt{04:35 to 05:02}
+			
+			\vspace{12pt}
+			DIY:
+			\begin{itemize}
+				\item	concrete powder in water
+				\item	drywall compound (calcium carbonate and other particles) in water
+				\item	add vinegar to milk to make it curdle, stir, then settle
+			\end{itemize}
+	\end{columns}
 \end{frame}
 
 \begin{frame}\frametitle{Definitions}
@@ -118,6 +159,9 @@
 		
 		\vspace{12pt}
 		\item	{\color{purple}{Clarification}}: remove solids from a relatively dilute stream, usually aims for complete suspended-solids removal: units are deeper, and have provision for {\color{purple}{coagulation}} of feed.
+		
+		\vspace{12pt}
+		\item	{\color{purple}{Dewatering}}: remove moisture from the retained solids
 	\end{itemize}
 	\seefull{Perry, 8ed, Ch 18.5}
 \end{frame}
@@ -142,7 +186,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{List any factors that influence sedimentation process}
+\begin{frame}\frametitle{List any factors that influence sedimentation velocity (rate)}
 	\begin{itemize}
 		\item	diameter of the particles
 		\item	i.e mass of particle (as long as density is constant)
@@ -183,7 +227,7 @@
 	\]
 \end{frame}
 
-\begin{frame}\frametitle{Drag force}
+\begin{frame}\frametitle{Drag force on  a spherical particle}
 	\[
 	 	F_\text{drag} = C_D A_p \frac{\rho_f v^2}{2}
 	\]
@@ -246,7 +290,7 @@
 	\end{exampleblock}
 \end{frame}
 
-\begin{frame}\frametitle{Stokes' law}
+\begin{frame}\frametitle{Stokes' law is defined for the case when Re $< 1$}
 
 	Simplification of the above equation when Re $< 1$:
 
@@ -320,7 +364,7 @@
 	\end{itemize}
 
 	\vspace{12pt}
-	Video: \href{http://www.youtube.com/watch?v=h8n3Nt4tPXU}{http://www.youtube.com/watch?v=h8n3Nt4tPXU} shows some of these issues
+	Video: \href{https://www.youtube.com/watch?v=u6Y6d7oH6Vs}{https://www.youtube.com/watch?v=u6Y6d7oH6Vs} shows some of these issues
 
 \end{frame}
 
@@ -346,6 +390,11 @@
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/sedimentation/sedimentation-vessel-Brown-and-Associates-p113.png}
 	\end{center}
+\end{frame}
+
+\begin{frame}\frametitle{Large scale settlers}
+	\centerline{\includegraphics[width=\textwidth]{\imagedir/separations/waste-water-treatment/flickr-6893478699_10df4ee0de_o-BY-NC-ND-2.jpg}}
+	\see{Flickr: \href{https://www.flickr.com/photos/bobex_pics/6893478699/}{bobex\_pics}}
 \end{frame}
 
 \begin{frame}\frametitle{Settling zones during sedimentation}
@@ -506,11 +555,12 @@
 		\item	Give a preliminary estimate of the clarifier diameter required to treat a waste stream of 2100 L per minute. Over-design by a factor of 2, based on the settling rate, and account for about 7 $\text{m}^2$ of entry area used to eliminate turbulence in the entering stream.
 		\item	If the feed concentration is 1.2 kg per $\text{m}^3$ feed, what is the loading rate? Is it within the typical thickener range of 50 to 120 kg per day per square meter? \see{Perry, 8ed, p22-79}
 	\end{enumerate}
-	{\color{myGreen}{Answers}}:
+\iftoggle{instructor}{	{\color{myGreen}{Answers}}:
 	\begin{enumerate}
 		\item	Settling rate = 171 mm per 4 minutes = 42.8 mm/min.\\Area = $\displaystyle \frac{2.1~\text{m}^3.\text{min}^{-1}}{\left(\frac{1}{2}\right)\left(42.8 \times 10^{-3} \text{m}.\text{min}^{-1}\right)} = 98 + 7 \text{m}^2$
 		\item	$\psi = C_0 v = 1.2 \displaystyle\frac{\text{kg}}{\text{m}^3} \cdot 0.0428 \displaystyle \frac{\text{m}}{\text{min}} \cdot \displaystyle\frac{60 \times 24 \text{min}}{\text{day}} = 74 \displaystyle \frac{\text{kg}}{\text{day}.\text{m}^2}$
 	\end{enumerate}
+}{}
 \end{frame}
 
 \begin{frame}\frametitle{Settler design: shape, length, width}
@@ -665,7 +715,7 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Practice question}
+\begin{frame}\frametitle{Practice questions}
 	\begin{enumerate}
 		\item	Calculate the minimum area of a circular thickener to treat 720 $\text{m}^3$ per hour of slurry containing 65\micron~particles of silica, whose density is about 2600 kg.$\text{m}^{-3}$. The particles are suspended in water at a concentration of 0.650~kg.$\text{m}^{-3}$. Use an over-design factor of 1.5 on the settling velocity. \newline {\color{myOrange}[Ans: $v = 3.7/1.5~\text{mm.s}^{-1}$ and $A=81.4~\text{m}^{2}$]}
 		\item	If it is desired to have an underflow density of 1560 kg solids per $\text{m}^{3}$ underflow; what is the underflow volumetric flow rate if total separation of solids occurs? \newline {\color{myOrange}[Ans: $Q_\text{under} = 0.3~\text{m}^3~\text{solids.hr}^{-1}$]}
