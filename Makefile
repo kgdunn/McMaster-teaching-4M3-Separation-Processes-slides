@@ -14,7 +14,7 @@ else
 	SUBDIR = classes/
 endif
 
-.DEFAULT_GOAL := 02
+.DEFAULT_GOAL := 03
 
 default:
 	pdflatex --shell-escape --jobname=$(SUBDIR)2014-4M3-class-$* $(MAIN).tex;

@@ -308,7 +308,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Sigma theory for centrifuges}
-	Take the previous equation for $Q_\text{cut}$, multiply numerator and denominator by $g$, then substitute Stokes' law for particles settling under gravity:
+	Take the previous equation for $Q_\text{cut} = \dfrac{V}{t_\text{cut}}$, multiply numerator and denominator by $g$, then substitute Stokes' law for particles settling under gravity:
 	\[
 		v_\text{TSV}^\text{grav} = \frac{\left( \rho_p - \rho_f \right) g D_p^2}{18 \mu_f}
 	\]
@@ -409,7 +409,7 @@
 			\begin{itemize}
 				\item	$N$ = number of disc plates
 				\item	$\theta$ = angle of discs
-				\item	$r_1$ = outer cone radius
+				\item	$r_1$ = outer cone radius (\emph{different!})
 				\item	$r_2$ = inner cone radius
 			\end{itemize}
 		\column{0.55\textwidth}
@@ -479,12 +479,21 @@
 	\end{itemize}
 \end{frame}
 
-\begin{frame}\frametitle{Sequencing of centrifuges}
+\begin{frame}\frametitle{Sequencing of centrifuges: to get an overall separation of multiple streams}
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/centrifuge/oil-sands-mining-Westfalia.png}
 	\end{center}
 	\see{\href{http://www.westfalia-separator.com/products/innovations/oil-sand-bitumen-process.html}{http://www.westfalia-separator.com/products/innovations/oil-sand-bitumen-process.html}}
 \end{frame}
+
+\begin{frame}\frametitle{Details around the secondary unit in the prior flowsheet}
+	\centerline{\includegraphics[width=.8\textwidth]{\imagedir/separations/centrifuge/westfalia-separator--ODB260_EN.jpg}}
+	
+	
+	\vspace{-3cm}
+	\see{\href{http://www.westfalia-separator.com/products/innovations/oil-sand-bitumen-process.html}{http://www.westfalia-separator.com/products/innovations/oil-sand-bitumen-process.html}}
+\end{frame}
+
 
 \begin{frame}\frametitle{Safety}
 	\begin{itemize}
@@ -498,7 +507,7 @@
 			\item	safety interlocks
 			\item	cameras are increasingly used to monitor sediment buildup: auto-stop and clean
 		\end{itemize}
-		\item	flammable fluids (e.g. solvents): nitrogen blanket
+		\item	flammable fluids, such as solvents must be blanketed in an environment where ignition can occur: use nitrogen, or any other inert gas, as a ``blanket''
 	\end{itemize}
 \end{frame}
 
@@ -521,7 +530,7 @@
 	Design a separation plant to remove suspended yeast cells from beer.
 
 	\vspace{12pt}
-	Beer is produced in batches of 100 $\text{m}^3$, with 4 batches per day.
+	The beer is produced in batches of 100 $\text{m}^3$, with 4 batches per day.
 
 	\vspace{12pt}
 	Some data:
@@ -532,6 +541,10 @@
 		\item	11.5 metric tonnes of yeast are suspended in each 100 $\text{m}^3$ fermenter
 		\item	Aseptic operation is vital
 	\end{itemize}
+	
+	\vspace{12pt}
+	\onslide+<2->{
+	See the spreadsheet at \href{http://yint.org/centrifuge}{http://yint.org/centrifuge}}
 \end{frame}
 
 \begin{frame}\frametitle{Further practice questions}
@@ -539,7 +552,7 @@
 		\item	In a test particles of density $2800~\text{kg.m}^{-3}$ and of size 5 \micron, equivalent spherical diameter, were separated from suspension in water fed at a volumetric throughput rate of $0.25~\text{m}^{3}\text{.s}^{-1}$. Calculate the value of the capacity factor, $\Sigma$. {\color{myOrange}\tiny{[\emph{Ans}: $\Sigma = 1.02 \times 10^4~\text{m}^2$]}}
 		
 		\vspace{12pt}
-		\item	What will be the corresponding size cut for a suspension of coal particles in oil fed at the rate of $0.04~\text{kg.s}^{-3}$? The density of coal is $1300~\text{kg.m}^{-3}$ and the density of the oil is $850~\text{kg.m}^{-3}$ and its viscosity is $0.01~\text{N.s.m}^{-2}$. {\color{myOrange}\tiny{[\emph{Ans}: $D_\text{p,cut} = 4$\micron]}}
+		\item	Continuing from above: what will be the corresponding size cut for a suspension of coal particles in oil fed at the rate of $0.04~\text{m}^{3}\text{.s}^{-1}$? The density of coal is $1300~\text{kg.m}^{-3}$ and the density of the oil is $850~\text{kg.m}^{-3}$ and its viscosity is $0.01~\text{N.s.m}^{-2}$. {\color{myOrange}\tiny{[\emph{Ans}: $D_\text{p,cut} = 4$\micron]}}
 		
 		\vspace{12pt}
 		\item	Is Stokes' law applicable?  {\color{myOrange}\tiny{[\emph{Ans}: Calculate the $v_\text{TSV}^\text{cent}$ and confirm if Re$<1$]}}
