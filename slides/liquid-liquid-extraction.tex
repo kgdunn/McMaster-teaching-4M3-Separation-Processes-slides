@@ -17,8 +17,8 @@
 
 % For 2014: add a slide on residence times in mixer settlers. There's a question in Seader, Q 8.12 on page 353, that asks about it, so it must be covered.
 
+% 2015: search-and-fix for all parts where it has "2015" updates below
 
-% 04 November 2013: Liquid-liquid extraction section
 \begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
 	\begin{center}
 		\includegraphics[width=0.60\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
@@ -42,7 +42,7 @@
 	\end{itemize}
 \end{frame}
 
-% 2014: improve this slide. There was immediate confusion between "solvent" in the feed/carrier stream vs the "solvent" (MSA) that is added.
+% 2014: improve this slide. There was immediate confusion between "solvent" in the feed/carrier stream vs the "solvent" (MSA) that is added. DONE
 % 2014: break this slide up into 2 parts. Too much on here for the time spent on the slide.
 \begin{frame}\frametitle{Definitions}
 	\begin{center}
@@ -51,7 +51,7 @@
 
 	\begin{itemize}
 		\item	{\color{purple}{solute}}: species we aim to recover (A) from the {\color{purple}{feed}}
-		\item	{\color{purple}{feed or ``feed solvent''}}: one of the liquids in the system {\tiny (``{\color{purple}{carrier}}'')}
+		\item	{\color{purple}{``carrier'' or ``feed solvent''}}: one of the liquids in the system carrying the solute
 		\item	{\color{purple}{solvent}}: MSA (by convention: the ``added'' liquid)
 		\item	{\color{purple}{extract}}: solvent (not solute) mostly present in this layer.
 
@@ -140,6 +140,7 @@
 		\begin{itemize}
 			\item	molecular diffusion \hfill {\color{myOrange}{$\leftarrow$ microscopic movement}}
 			\item	eddy diffusion  \hfill {\color{myOrange}{$\leftarrow$ orders of magnitude greater}}
+			% /4M3/References/Liquid-liquid-extraction/Bailes-Hanson-Hughes--Liquid-liquid-extraction.pdf
 		\end{itemize}
 	\end{itemize}
 \end{frame}
@@ -221,7 +222,10 @@
 		\includegraphics[height=0.9\textheight]{\imagedir/separations/liquid-liquid-extraction/spray-towers-CRv2-5ed-p750.png}
 	\end{center}
 	\vspace{-14pt}
-	\see{Richardson and Harker, p 751}
+	\see{Richardson and Harker, p 750}
+	
+	% a) Light phase is being dispersed;
+	% b) Heavier phase is being dispersed; mostly light phase in column
 \end{frame}
 
 \begin{frame}\frametitle{Tray columns}
@@ -297,11 +301,15 @@
 \begin{frame}\frametitle{Selecting a solvent}
 	Schweitzer: ``The \textbf{choice of solvent} for a LLE process can often have a more significant impact on the process economics than any other design decision that has to be made''.
 
-	\vspace{12pt}
+	\vspace{6pt}
 	Which properties of a solvent influence our aims with LLE?
 	\begin{itemize}
-		\item	High distribution coefficient (selectivity) for solute
+		\item	High distribution coefficient for solute
 		\item	Low distribution coefficient for carrier
+			\begin{itemize}
+				\item	the above two jointly described the {\color{purple} selectivity} for the solute
+			\end{itemize}
+		\item	{\color{myOrange} Has a high loading capacity for the solute}  % 2015: remove orange colour
 		\item	Reasonable volatility difference with solute and carrier
 		\item	Reasonable surface tension: easy to disperse \textbf{and} coalesce
 		\item	High density difference: separates rapidly by gravity
