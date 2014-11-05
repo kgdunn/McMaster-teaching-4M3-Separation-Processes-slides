@@ -19,6 +19,18 @@
 
 % 2015: search-and-fix for all parts where it has "2015" updates below
 
+% 2015 updates: reorder the tutorial questions
+% Question 2
+% Question 3
+% Question 5
+% Question 6
+% Question 4 (which leads to Q7)
+% Move "furfural" example after
+% Question 7
+% PUt the "Review from last time slides" here
+% Delete Q1
+
+
 \begin{frame}\frametitle{Liquid-liquid extraction (LLE)}
 	\begin{center}
 		\includegraphics[width=0.60\textwidth]{\imagedir/separations/liquid-liquid-extraction/flickr-3453475667_b781c8fa46_b-modified.jpg}
@@ -323,6 +335,7 @@
 	\end{itemize}
 \end{frame}
 
+% 2105 update: redraw this diagram yourself
 \begin{frame}\frametitle{Calculating the distribution coefficient {\color{myOrange}{(in the lab only)}}}
 	\begin{columns}[t]
 		\column{0.60\textwidth}
@@ -337,6 +350,11 @@
 		\column{0.40\textwidth}
 			\begin{center}
 				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263.png}
+		
+				\vspace{-6pt}
+				\see{Schweitzer, p 1-263}
+				
+				\vspace{-6pt}
 			\end{center}
 	\end{columns}
 	\begin{itemize}
@@ -346,7 +364,7 @@
 	\end{itemize}
 	Once $D$ is determined, we can obtain phase diagrams to understand how the process will operate.
 
-	\vspace{12pt}
+	\vspace{6pt}
 	Also: see Perry's for many values of $D$
 \end{frame}
 
@@ -366,18 +384,7 @@
 	\see{\href{http://www.youtube.com/watch?v=gGYHXhcKM5s}{http://www.youtube.com/watch?v=gGYHXhcKM5s}}
 \end{frame}
 
-% For 2014: reorder the questions
-% Question 2
-% Question 3
-% Question 5
-% Question 6
-% Question 4 (which leads to Q7)
-% Move "furfural" example after
-% Question 7
-% PUt the "Review from last time slides" here
-% Delete Q1
-
-\begin{frame}\frametitle{Lever rule}
+\begin{frame}\frametitle{Now add the lever rule onto the phase diagram}
 	\begin{columns}[t]
 		\column{0.80\textwidth}
 			\begin{center}
@@ -387,13 +394,13 @@
 		\column{0.30\textwidth}
 			\textbf{Mix P and Q}
 
+			\vspace{6pt}
+			Mixture point is K
 			\begin{itemize}
-				\item	mixture = K
-				\vspace{12pt}
 				\item	$\displaystyle \frac{\text{PK}}{\text{KQ}} = \displaystyle\frac{\text{{\color{myOrange}mass} Q}}{\text{{\color{myOrange}mass} P}}$
 				\vspace{8pt}
 				\item	The converse applies also: when a settled mixture separates into P and Q
-				\item	Applies anywhere: even in the miscible region
+				\item	Applies anywhere: even in the miscible (single-phase) region
 			\end{itemize}
 	\end{columns}
 \end{frame}
@@ -433,7 +440,7 @@
 		\begin{center}
 			\includegraphics[width=0.85\textwidth]{\imagedir/separations/liquid-liquid-extraction/ternary-base-diagram-mixture-with-M.png}
 		\end{center}
-		Composition of the mixture? \emph{we need more information} (e.g. amount of $F$ \textbf{and} $S$ must be given to find point $M$)
+		Composition of the mixture is somewhere on the line that connects $F$ and $S$. To find where on the line: we use the lever rule.
 	\end{frame}
 }{}
 
@@ -459,7 +466,7 @@
 	\end{frame}
 }{}
 
-\begin{frame}\frametitle{Q4: Altering flows}
+\begin{frame}\frametitle{Q4: Altering solvent flow}
 	\begin{columns}[t]
 		\column{0.8\textwidth}
 			\begin{center}
@@ -482,7 +489,7 @@
 \end{frame}
 
 \iftoggle{student}{
-	\begin{frame}\frametitle{Q4 {\color{myOrange}{\emph{solution}}}: Altering flows}
+	\begin{frame}\frametitle{Q4 {\color{myOrange}{\emph{solution}}}: Altering solvent flow}
 		\begin{columns}[t]
 			\column{0.8\textwidth}
 				\begin{center}
@@ -516,9 +523,9 @@
 			\end{center}
 			\vfill
 		\column{0.3\textwidth}
-			\vspace{-1cm}
+			\vspace{-0.4cm}
 			\begin{center}
-				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation.png}
+				\includegraphics[width=1.2\textwidth]{\imagedir/separations/liquid-liquid-extraction/mass-balance-Schweitzer-p1-263-new-notation-red-M.png}
 			\end{center}
 			{\scriptsize
 			\begin{tabular}{ll}
@@ -615,7 +622,7 @@
 					\end{exampleblock}
 				}
 		\end{columns}
-		$R_1 = 222\text{kg};\quad x_{R_1,A} = 0.10;\quad x_{R_1,C} = 0.82;\quad x_{R_1,S} = 0.08$ $E_1 = 128\text{kg};\quad y_{E_1,A} = 0.33;\quad y_{E_1,C} = 0.06;\quad y_{E_1,S} = 0.61$
+		$R_1 = 221{kg};\quad x_{R_1,A} = 0.10;\quad x_{R_1,C} = 0.82;\quad x_{R_1,S} = 0.08$ $E_1 = 129\text{kg};\quad y_{E_1,A} = 0.33;\quad y_{E_1,C} = 0.06;\quad y_{E_1,S} = 0.61$
 	\end{frame}
 }{}
 
@@ -674,7 +681,7 @@
 				%\end{itemize}
 		\end{columns}
 		\vspace{12pt}
-		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (most solvent), $C$, $D$ (least solvent) will each be different. Trade-off: higher extraction vs lower recovery}
+		{\scriptsize \textbf{Answer}: equilibrium from point $B$ (more solvent), $C$, $D$ (less solvent) will each be different. Trade-off: higher extraction vs lower recovery}
 		%Answer: less solvent added: higher extract concentration, but raffinate will also contain more solute (i.e. lower recovery). We can't achieve both with units in series.
 		% Note that at point B, for example, E2 vs R2 ratio is about the same; but at D, we get a very low quantity of E2 with a higher concentration (conversely at R2 we get a lower solute concentration of A [desirable], but a very high quantity of raffinate])
 	\end{frame}
