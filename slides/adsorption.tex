@@ -942,6 +942,61 @@
 % For 2014: the problem is "usable capacity in an ideal wavefront = 3.65/6.9 = 53%" <---- don't put that question in.
 % In the example, cover that LES / L = (A1+A2) / AREA, where AREA = total (x,y) area = (6.9 - 0)*(1-0) = 6.9 hours
 
+\begin{frame}\frametitle{Bed mass balance}
+
+	\begin{exampleblock}{Amount of material loaded into the bed up to $\theta_b$ in LES}
+		\[Q_F \,\, C_\text{A,F} \,\, \theta_b = C_\text{A,S}^\text{e} \,\, \rho_B  \,\, A \, L_\text{LES} \]  %\left(1-\epsilon_b \right) <--- had this in previously, but if we use the bulk density, then it is accounted for already
+	\end{exampleblock}
+	
+	\begin{tabular}{llr}\vspace{0pt}
+		$Q_F $					& Feed flow rate					& $\left[ \dfrac{\text{m}^3\text{fluid}}{\text{second}}\right]$ \\ 	\vspace{2pt}
+		$C_\text{A,F} $			& Inlet concentration				& $\left[ \dfrac{\text{kg solute}}{\text{m}^3~\text{fluid}}\right]$ \\ 	\vspace{2pt}
+		$\theta_b$				& Breakthrough time					& $\left[ \text{second}\right]\,$ \\ 	\vspace{2pt}
+		$C_\text{A,S}^{e}$		& Equilibirum adsorbed solute conc$^\text{n}$& $\left[ \dfrac{\text{kg solute}}{\text{kg adsorbent}}\right]$ \\ \vspace{2pt}
+		$\rho_\text{B}$			& Adsorbent's {\color{purple}bulk density}			& $\left[ \dfrac{\text{kg adsorbent charged}}{\text{m}^3~\text{of occupied space}}\right]$ \\ 	\vspace{2pt}
+		$A L_\text{LES}$		& Bed volume = area $\times$ LES length	& $\left[ \text{m}^3~\text{of occupied space}\right]$
+	\end{tabular}
+
+	\vspace{6pt}
+	{\small \color{myBlue}Add on LUB; determine volume adsorbent required = $A( L_\text{LES}+L_\text{LUB})$.}
+	{\small \color{myOrange}Take porosity into account when calculating mass of adsorbent from the occupied volume.}
+\end{frame}
+
+
+\begin{frame}\frametitle{Another question from a previous exam}
+
+	The isotherm for benzene, at 25$^\circ C$, on an activated carbon adsorbent is given as: $C_\text{A,S} = 32 C_\text{A}^{0.428}$
+	
+	where $C_\text{A,S}$ is in units of mg benzene per gram of carbon, and $C_\text{A}$ is in units of mg benzene per litre of water-based solution.
+	
+	You want to create your own adsorber packed bed from a piece of piping that has diameter of 24.5 cm. The activated carbon supplier has given you the following specification sheet:	
+	
+	\begin{itemize}
+		\item	activated carbon bulk density = 410 g/L
+		\item	activated carbon particle density = 520 g/L
+	\end{itemize}
+
+	You want a breakthrough time of 4 hours for a feed stream of 2.8 g of benzene per litre. You must treat 30 L/min of waste water.
+	 
+	\begin{enumerate}
+		\item	How long should your packed bed be? Be clear with any simplifying assumptions you make. Use the approximation that if you don't know MTZ, that your MTZ = 4ft [1.22m], and assuming a symmetric wavefront, that the $\text{LUB} = 2 \times \text{MTZ}$.
+		\item	What will be the cost of the adsorbent you need to purchase [\$5.50 per kilogram activated carbon]? 
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}\frametitle{Modified from a previous exam}
+
+	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream on a \emph{continuous basis} (this is not a batch system). A bench scale system indicates that the adsorbent follows a Langmuir adsorption isotherm as:
+	\[
+		C_\text{A,S} = \frac{0.05C_\text{A}}{32.1 + C_\text{A}}
+	\]
+	where $C_\text{A,S}$ has units of [grams/grams], and the constant has units of 32.1\,ppm. In a tank we have an inlet flow of TME solution at 10L/min with density of 1000\,$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1\,ppm concentrations. The tank contains 15\,kg of initially fresh adsorbent which is retained in the tank. We wish to know:
+
+	\begin{enumerate}
+		\item	How much TME is adsorbed when the breakthrough concentration reaches 1 ppm? {\small\color{myOrange}[Ans: 22.66 g]}
+		\item	How long it will take to reach this detectable outlet concentration? {\small\color{myOrange}[22.6 minutes]}
+	\end{enumerate}
+\end{frame}
 
 \begin{frame}\frametitle{Regenerating the bed}
 	\begin{exampleblock}{Aim}
@@ -1002,7 +1057,7 @@
 	\vspace{-12pt}
 	\see{Seader, Henley, Roper, p 611}
 
-	{\tiny A) Pump; B) Adsorbent chamber; C) \href{http://www.uop.com/products/equipment/aromatics-separation/}{Rotary valve}; D) Extract column; E) Raffinate column}
+	{\tiny A) Pump; B) Adsorbent chamber; C) \href{http://www.uop.com/equipment/aromatics-separation/}{Rotary valve}; D) Extract column; E) Raffinate column}
 	
 	% As described by Broughton [139], the bed is held sta- tionary in one column, which is equipped with a number (perhaps 12) of liquid feed entry and discharge locations. By shifting, with a rotary valve (RV), the locations of feed entry, desorbent entry, extract (adsorbed) removal, and raffinate (nonadsorbed) removal, countercurrent movement of solids is simulated by a downward movement of liquid. For the valve positions shown in Figure 15.43, Lines 2 (entering desorbent), 5 (exiting extract), 9 (entering feed), and 12 (exit- ing raffinate) are operational, with all other numbered lines closed. Liquid is circulated down through and, externally, back up to the top of the column by a pump. Ideally, an infi- nite number of entry and exit locations exist and the valve would continuously change the four operational locations. Since this is impractical, a finite number of locations are
 	
@@ -1028,63 +1083,6 @@
 	% Although simulated moving-bed processes have now reached wide commercial acceptance for a number
 	% of separations, the need for a displacement liquid, which must subsequently be distilled from both product streams, constitutes a process complexity and an economic hindrance. For this reason, applications of these processes have been confined to those separations that are difficult or impossible to make by distillation.
 	% The separation of fructose and glucose via simulated moving-bed adsorption is an example, like IsoSiv in the Total Isomerization Process for isoparaffin production, of the close coupling of reaction and separation systems. Glucose, which can be obtained from hydrolysis of starch, is isomerized to a near-equilibrium mixture of fructose and glucose (high-fructose corn syrup, HFCS). The resulting mixture can then be further enriched in fructose while also producing a glucose stream for recycle to isomerization. HFCS, because it rivals sucrose (cane sugar) in sweetness, is finding rapidly growing uses in beverages, candies, baking products, and so on.
-\end{frame}
-
-% 2015: move these back before the regenaration section
-\begin{frame}\frametitle{Bed mass balance}
-
-	\begin{exampleblock}{Amount of material loaded into the bed up to $\theta_b$ in LES}
-		\[Q_F \,\, C_\text{A,F} \,\, \theta_b = C_\text{A,S}^\text{e} \,\, \rho_B  \,\, A \, L_\text{LES} \]  %\left(1-\epsilon_b \right) <--- had this in previously, but if we use the bulk density, then it is accounted for already
-	\end{exampleblock}
-	
-	\begin{tabular}{llr}\vspace{0pt}
-		$Q_F $					& Feed flow rate					& $\left[ \dfrac{\text{m}^3\text{fluid}}{\text{second}}\right]$ \\ 	\vspace{2pt}
-		$C_\text{A,F} $			& Inlet concentration				& $\left[ \dfrac{\text{kg solute}}{\text{m}^3~\text{fluid}}\right]$ \\ 	\vspace{2pt}
-		$\theta_b$				& Breakthrough time					& $\left[ \text{second}\right]\,$ \\ 	\vspace{2pt}
-		$C_\text{A,S}^{e}$		& Equilibirum adsorbed solute conc$^\text{n}$& $\left[ \dfrac{\text{kg solute}}{\text{kg adsorbent}}\right]$ \\ \vspace{2pt}
-		$\rho_\text{B}$			& Adsorbent's {\color{purple}bulk density}			& $\left[ \dfrac{\text{kg adsorbent charged}}{\text{m}^3~\text{of occupied space}}\right]$ \\ 	\vspace{2pt}
-		$A L_\text{LES}$		& Bed volume = area $\times$ LES length	& $\left[ \text{m}^3~\text{of occupied space}\right]$
-	\end{tabular}
-
-	\vspace{6pt}
-	{\small \color{myBlue}Add on LUB; determine volume adsorbent required = $A( L_\text{LES}+L_\text{LUB})$.}
-	{\small \color{myOrange}Take porosity into account when calculating mass of adsorbent from the occupied volume.}
-\end{frame}
-
-
-\begin{frame}\frametitle{Another question from a previous exam}
-
-	The isotherm for benzene, at 25$^\circ C$, on an activated carbon adsorbent is given as: $C_\text{A,S} = 32 C_\text{A}^{0.428}$
-	
-	where $C_\text{A,S}$ is in units of mg benzene per gram of carbon, and $C_\text{A}$ is in units of mg benzene per litre of water-based solution.
-	
-	You want to create your own adsorber packed bed from a piece of piping that has diameter of 24.5 cm. The activated carbon supplier has given you the following specification sheet:	
-	
-	\begin{itemize}
-		\item	activated carbon bulk density = 410 g/L
-		\item	activated carbon particle density = 520 g/L
-	\end{itemize}
-
-	You want a breakthrough time of 4 hours for a feed stream of 2.8 g of benzene per litre. You must treat 30 L/min of waste water.
-	 
-	\begin{enumerate}
-		\item	How long should your packed bed be? Be clear with any simplifying assumptions you make. Use the approximation that if you don't know MTZ, that your MTZ = 4ft [1.22m], and assuming a symmetric wavefront, that the $\text{LUB} = 2 \times \text{MTZ}$.
-		\item	What will be the cost of the adsorbent you need to purchase [\$5.50 per kilogram activated carbon]? 
-	\end{enumerate}
-\end{frame}
-
-\begin{frame}\frametitle{Modified from a previous exam}
-
-	Trimethylethylene (TME) is being removed from an aqueous chemical plant waste stream on a \emph{continuous basis} (this is not a batch system). A bench scale system indicates that the adsorbent follows a Langmuir adsorption isotherm as:
-	\[
-		C_\text{A,S} = \frac{0.05C_\text{A}}{32.1 + C_\text{A}}
-	\]
-	where $C_\text{A,S}$ has units of [grams/grams], and the constant has units of 32.1\,ppm. In a tank we have an inlet flow of TME solution at 10L/min with density of 1000\,$\text{kg.m}^{-3}$. The TME enters at 100 ppm (parts per million, mass solute per $10^6$ mass solution) in the feed. The impurity is not detectable below 1\,ppm concentrations. The tank contains 15\,kg of initially fresh adsorbent which is retained in the tank. We wish to know:
-
-	\begin{enumerate}
-		\item	How much TME is adsorbed when the breakthrough concentration reaches 1 ppm? {\small\color{myOrange}[Ans: 22.66 g]}
-		\item	How long it will take to reach this detectable outlet concentration? {\small\color{myOrange}[22.6 minutes]}
-	\end{enumerate}
 \end{frame}
 
 

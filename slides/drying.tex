@@ -256,11 +256,12 @@
 	An air stream at 70\degC$\,$ and carrying 55 g water per kg dry air is adiabatically contacted with liquid water until it reaches equilibrium. The process is continuous and operating at steady-state. Air feed is 1 kg dry air per minute.
 	{\small
 	\begin{enumerate}
-		\item	What is the percentage humidity of the incoming air stream? \visible<2->{{\color{myOrange}{[20\%]}}}
-		\item	What is the percentage humidity of the air stream leaving?  \visible<3->{{\color{myOrange}{[100\%]}}}
-		\item	What is the humidity [mass/mass] of the air stream leaving? \visible<4->{{\scriptsize{\color{myOrange}{[66g/kg]}}}}
-		\item	What is the temperature of the air stream leaving? \visible<5->{{\color{myOrange}{[45\degC]}}}
-		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? \visible<5->{{\color{myOrange}{[$(66-55) = 11$ g per min]}}}
+		\item	What is the percentage humidity of the incoming air stream? \iftoggle{instructor}{\visible<2->{{\color{myOrange}{[20\%]}}}}
+		\item	What is the percentage humidity of the air stream leaving?  \iftoggle{instructor}{\visible<3->{{\color{myOrange}{[100\%]}}}}
+		\item	What is the humidity [mass/mass] of the air stream leaving? \iftoggle{instructor}{\visible<4->{{\scriptsize{\color{myOrange}{[66g/kg]}}}}}
+		\item	What is the temperature of the air stream leaving? \iftoggle{instructor}{\visible<5->{{\color{myOrange}{[45\degC]}}}}
+		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? 
+		\iftoggle{instructor}{\visible<5->{{\color{myOrange}{[$(66-55) = 11$ g per min]}}}}
 	\end{enumerate}}
 
 	\iftoggle{instructor}{\vspace{-12pt}}{}
@@ -323,12 +324,12 @@
 
 	\vspace{12pt}
 	\begin{itemize}
-		\item	the recorded dry-bulb temperature \visible<2->{ {\color{myOrange}[55$^\circ$C]}}
-		\item	percentage humidity  \visible<2->{{\color{myOrange}[26\%]}}
-		\item	dew point temperature  \visible<2->{{\color{myOrange}[$\approx 31^\circ$C]}}
-		\item	humid heat   \visible<2->{{\color{myOrange}$\left[c_S = 1.061 \dfrac{\text{kJ}}{\text{(kg dry air)(K)}}\right]$}}
-		\item	humid volume  \visible<2->{{\color{myOrange}[$T=328\text{K}$; $v_H = 0.973 \text{m}^3/(\text{kg moist air})$ ]}}
-		\item	wet-bulb temperature \visible<2->{ {\color{myOrange}[$\approx 36^\circ$C]}}
+		\item	the recorded dry-bulb temperature \iftoggle{instructor}{\visible<2->{ {\color{myOrange}[55$^\circ$C]}}}
+		\item	percentage humidity  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[26\%]}}}
+		\item	dew point temperature  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[$\approx 31^\circ$C]}}}
+		\item	humid heat   \iftoggle{instructor}{\visible<2->{{\color{myOrange}$\left[c_S = 1.061 \dfrac{\text{kJ}}{\text{(kg dry air)(K)}}\right]$}}}
+		\item	humid volume  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[$T=328\text{K}$; $v_H = 0.973 \text{m}^3/(\text{kg moist air})$ ]}}}
+		\item	wet-bulb temperature \iftoggle{instructor}{\visible<2->{ {\color{myOrange}[$\approx 36^\circ$C]}}}
 	\end{itemize}
 
 \end{frame}
@@ -612,7 +613,7 @@
 	\begin{enumerate}
 		\item	{\color{myOrange}\textbf{Wet basis = (mass of water)/(mass of wet solids)}}
 		\begin{itemize}
-			\item	For example, if we have 200 kg of wet solids, that contains 30\% moisture (wet basis)
+			\item	For example, if we have 200 kg of wet solids, that contains 30\% moisture on a wet basis
 			\item	30\% of that is moisture = $0.3 \times 200 = 60$ kg of water
 			\item	70\% of that is solid = $0.7 \times 200 = 140$ kg of dry solid
 		\end{itemize}
@@ -620,8 +621,8 @@
 		\vspace{12pt}
 		\item	{\color{myOrange}\textbf{Dry basis = (mass of water)/(mass of dry solids)}}
 		\begin{itemize}
-			\item	For example, if we have 200 kg of wet solids, that contains 30\% moisture (dry basis)
-			\item	Consider a 100 kg amount of {\color{red}\cancel{moist} dry} solids, and ratio against it
+			\item	For example, if we have 200 kg of wet solids, that contains 30\% moisture on a dry basis
+			\item	Consider a 100 kg amount of dry solids, and ratio against it
 
 			\item	$\dfrac{\text{30 kg water}}{\text{30 kg water + 100 kg solid}} \times \text{200 kg wet solids}$
 			\item	Moisture amount = $\dfrac{30}{130} \times 200 = 0.231 \times 200$ = 46.2 kg water
@@ -676,22 +677,22 @@
 % 2014: fix up this slide to reveal less of the answer. Students should plan it themselves
 \begin{frame}\frametitle{Filter cake drying example}
 	\begin{enumerate}
-		\item	What is the humidity of the incoming air stream? \visible<2->{\\{\scriptsize \color{myOrange}{[$\psi$ = 0.04 kg water/kg dry air]}}}
-		\item	What is the wet-bulb temperature of this air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{wb} \approx 41.3$\degC]}}}
-		\item	What is the humid volume of the drying air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{db}=348$K, $v_H = 1.048 \text{m}^3\text{.kg}^{-1}$]}}}
+		\item	What is the humidity of the incoming air stream? \visible<2->{\\{\scriptsize \color{myOrange}{[$\psi$ = \iftoggle{instructor}{0.04}{\_\_\_\_\_\_} kg water/kg dry air]}}}
+		\item	What is the wet-bulb temperature of this air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{wb} \approx \iftoggle{instructor}{41.3}{\_\_\_\_\_\_}$\degC]}}}
+		\item	What is the humid volume of the drying air stream? \visible<2->{{\scriptsize \color{myOrange}{[$T_\text{db}=\iftoggle{instructor}{348}{\_\_\_\_\_\_}$K, $v_H = \iftoggle{instructor}{1.048}{\_\_\_\_\_\_} \text{m}^3\text{.kg}^{-1}$]}}}
 		\item	Estimate the heat transfer coefficient.
 		\begin{itemize}
-			\item	$G = 3\,600\, \rho v_\text{avg} = 3\,600 (1.048)^{-1} \times 4 =$  \visible<2->{{\color{myOrange}{$13\,740\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}}
-			\item	$h = 0.0204 (13\,740)^{0.8} =$ \visible<2->{{\color{myOrange}{$h = 41.7\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}}
+			\item	$G = 3\,600\, \rho v_\text{avg} = 3\,600 (1.048)^{-1} \times 4 =$  \visible<2->{{\color{myOrange}{$\iftoggle{instructor}{13\,740}{\_\_\_\_\_\_}\,\text{kg.hr}^{-1}\text{.m}^{-2}$}}}
+			\item	$h = 0.0204 (13\,740)^{0.8} =$ \visible<2->{{\color{myOrange}{$h = \iftoggle{instructor}{41.7}{\_\_\_\_\_\_}\,\,\text{W.m}^{-2}\text{.K}^{-1}$}}}
 		\end{itemize}
 		\item	Substitute into the constant-drying rate expression to find:
 		\begin{itemize}
-			\item	drying time = $\dfrac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} =$ {\scriptsize $\displaystyle \frac{(19.5)(2401\times 1000)}{(41.7)(2)(75-41.3)} =$} \visible<2->{{\\ \color{myOrange}{drying time = $\mathbf{4.6\,\textbf{hrs}}$}}}
+			\item	drying time = $\dfrac{(\Delta M_\text{water}) (\Delta H_\text{vap})}{hA(T_\text{db} - T_\text{wb})} =$ {\scriptsize $\displaystyle \frac{(19.5)(2401\times 1000)}{(41.7)(2)(75-41.3)} =$} \visible<2->{{\\ \color{myOrange}{drying time = $\mathbf{\iftoggle{instructor}{4.6}{\_\_\_\_\_\_}\,\textbf{hrs}}$}}}
 
 			\vspace{12pt}
 			\item	Water initially = 30 kg; dry basis = $0.15 = \dfrac{30 - \Delta M_\text{water}}{70\,\text{kg dry solids}}$
 			\item	So $\Delta M_\text{water} = 19.5\,\text{kg}$
-			\item	We need the $\Delta H_\text{vap}$ at $T_\text{wb}$ (why?) \visible<2->{{\small \color{myOrange}{[2401 kJ.kg$^{-1}$.K$^{-1}$]}}}
+			\item	We need the $\Delta H_\text{vap}$ at $T_\text{wb}$ (why?) \visible<2->{{\small \color{myOrange}{[\iftoggle{instructor}{2401}{\_\_\_\_\_\_} kJ.kg$^{-1}$.K$^{-1}$]}}}
 			\begin{itemize}
 				\item	2501 kJ/kg at 0\degC
 				\item	2260 kJ/kg at 100\degC 
