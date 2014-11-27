@@ -76,6 +76,8 @@
 			\end{enumerate}
 			\vspace{3cm}
 			\see{Seader, Henley and Roper, p 749}
+			
+			% 2015: be careful here: bound and unbound are terms used at 100% humidity. At other levels use the free and equilibrium amounts.
 	\end{columns}
 \end{frame}
 
@@ -256,12 +258,12 @@
 	An air stream at 70\degC$\,$ and carrying 55 g water per kg dry air is adiabatically contacted with liquid water until it reaches equilibrium. The process is continuous and operating at steady-state. Air feed is 1 kg dry air per minute.
 	{\small
 	\begin{enumerate}
-		\item	What is the percentage humidity of the incoming air stream? \iftoggle{instructor}{\visible<2->{{\color{myOrange}{[20\%]}}}}
-		\item	What is the percentage humidity of the air stream leaving?  \iftoggle{instructor}{\visible<3->{{\color{myOrange}{[100\%]}}}}
-		\item	What is the humidity [mass/mass] of the air stream leaving? \iftoggle{instructor}{\visible<4->{{\scriptsize{\color{myOrange}{[66g/kg]}}}}}
-		\item	What is the temperature of the air stream leaving? \iftoggle{instructor}{\visible<5->{{\color{myOrange}{[45\degC]}}}}
+		\item	What is the percentage humidity of the incoming air stream? \iftoggle{instructor}{\visible<2->{{\color{myOrange}{[20\%]}}}}{}
+		\item	What is the percentage humidity of the air stream leaving?  \iftoggle{instructor}{\visible<3->{{\color{myOrange}{[100\%]}}}}{}
+		\item	What is the humidity [mass/mass] of the air stream leaving? \iftoggle{instructor}{\visible<4->{{\scriptsize{\color{myOrange}{[66g/kg]}}}}}{}
+		\item	What is the temperature of the air stream leaving? \iftoggle{instructor}{\visible<5->{{\color{myOrange}{[45\degC]}}}}{}
 		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? 
-		\iftoggle{instructor}{\visible<5->{{\color{myOrange}{[$(66-55) = 11$ g per min]}}}}
+		\iftoggle{instructor}{\visible<6->{{\color{myOrange}{[$(66-55) = 11$ g per min]}}}}{}
 	\end{enumerate}}
 
 	\iftoggle{instructor}{\vspace{-12pt}}{}
@@ -324,12 +326,12 @@
 
 	\vspace{12pt}
 	\begin{itemize}
-		\item	the recorded dry-bulb temperature \iftoggle{instructor}{\visible<2->{ {\color{myOrange}[55$^\circ$C]}}}
-		\item	percentage humidity  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[26\%]}}}
-		\item	dew point temperature  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[$\approx 31^\circ$C]}}}
-		\item	humid heat   \iftoggle{instructor}{\visible<2->{{\color{myOrange}$\left[c_S = 1.061 \dfrac{\text{kJ}}{\text{(kg dry air)(K)}}\right]$}}}
-		\item	humid volume  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[$T=328\text{K}$; $v_H = 0.973 \text{m}^3/(\text{kg moist air})$ ]}}}
-		\item	wet-bulb temperature \iftoggle{instructor}{\visible<2->{ {\color{myOrange}[$\approx 36^\circ$C]}}}
+		\item	the recorded dry-bulb temperature \iftoggle{instructor}{\visible<2->{ {\color{myOrange}[55$^\circ$C]}}}{}
+		\item	percentage humidity  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[26\%]}}}{}
+		\item	dew point temperature  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[$\approx 31^\circ$C]}}}{}
+		\item	humid heat   \iftoggle{instructor}{\visible<2->{{\color{myOrange}$\left[c_S = 1.061 \dfrac{\text{kJ}}{\text{(kg dry air)(K)}}\right]$}}}{}
+		\item	humid volume  \iftoggle{instructor}{\visible<2->{{\color{myOrange}[$T=328\text{K}$; $v_H = 0.973 \text{m}^3/(\text{kg moist air})$ ]}}}{}
+		\item	wet-bulb temperature \iftoggle{instructor}{\visible<2->{ {\color{myOrange}[$\approx 36^\circ$C]}}}{}
 	\end{itemize}
 
 \end{frame}
@@ -344,7 +346,7 @@
 	\end{itemize}
 	\vspace{12pt}
 	Some major distinctions though:
-	\begin{itemize}
+	\begin{enumerate}
 		\item	\textbf{{\color{myGreen}{mode of operation}}}: batch (low volume) \emph{vs} continuous
 		\item	how the \textbf{{\color{myGreen}{heat is provided}}}:
 		\begin{itemize}
@@ -356,7 +358,7 @@
 			\item	stationary material
 			\item	fluidized or mixed in some way
 		\end{itemize}
-	\end{itemize}
+	\end{enumerate}
 \end{frame}
 
 \begin{frame}\frametitle{How to choose the equipment*}
@@ -417,6 +419,7 @@
 			\begin{itemize}
 				\item	0.3 to 7 m in diameter
 				\item	1.0 to 30 m in length
+				\item	use to dry: sand, ore, resins, fibres, pulp
 			\end{itemize}
 		\column{0.65\textwidth}
 			\begin{itemize}
@@ -575,7 +578,7 @@
 	\begin{enumerate}
 		\item	Parallel flow to surface:
 		\begin{itemize}
-			\item	Air between 45 to 150\degC
+			\item	Air has $T_\text{db}$ between 45 to 150\degC
 			\item	$G = 2\,450\text{~to~}29\,300\, \text{kg.hr}^{-1}\text{.m}^{-2}$
 			\item	This corresponds to a velocity of $v$ = 0.61 to 7.6$\text{m.s}^{-1}$
 			\vspace{5pt}
