@@ -259,11 +259,11 @@
 	{\small
 	\begin{enumerate}
 		\item	What is the percentage humidity of the incoming air stream? \iftoggle{instructor}{\visible<2->{{\color{myOrange}{[20\%]}}}}{}
-		\item	What is the percentage humidity of the air stream leaving?  \iftoggle{instructor}{\visible<3->{{\color{myOrange}{[100\%]}}}}{}
-		\item	What is the humidity [mass/mass] of the air stream leaving? \iftoggle{instructor}{\visible<4->{{\scriptsize{\color{myOrange}{[66g/kg]}}}}}{}
-		\item	What is the temperature of the air stream leaving? \iftoggle{instructor}{\visible<5->{{\color{myOrange}{[45\degC]}}}}{}
+		\item	What is the percentage humidity of the air stream leaving?  \iftoggle{instructor}{\visible<2->{{\color{myOrange}{[100\%]}}}}{}
+		\item	What is the humidity [mass/mass] of the air stream leaving? \iftoggle{instructor}{\visible<2->{{\scriptsize{\color{myOrange}{[66g/kg]}}}}}{}
+		\item	What is the temperature of the air stream leaving? \iftoggle{instructor}{\visible<2->{{\color{myOrange}{[45\degC]}}}}{}
 		\item	If the contacting takes place in a unit shown below, what is the mass of inlet make-up water required at steady-state operation? 
-		\iftoggle{instructor}{\visible<6->{{\color{myOrange}{[$(66-55) = 11$ g per min]}}}}{}
+		\iftoggle{instructor}{\visible<2->{{\color{myOrange}{[$(66-55) = 11$ g per min]}}}}{}
 	\end{enumerate}}
 
 	\iftoggle{instructor}{\vspace{-12pt}}{}
@@ -367,7 +367,11 @@
 		\begin{itemize}
 			\item	solid, slurry, paste, flowing powder, filter cake, fibrous, \emph{etc}
 		\end{itemize}
-		\item	Heating choice: temperature-sensitive if convective heat is directly applied
+		\item	Heating choice direction:
+		\begin{itemize}
+			\item	temperature-sensitive products dried co-current
+			\item	counter-current more energy efficient
+		\end{itemize} 
 		\item	Agitation:
 		\begin{itemize}
 			\item	produce fines (dust hazard) or fragile material
@@ -574,7 +578,7 @@
 	\end{itemize}
 
 	\vspace{6pt}
-	In all cases: $G = 3\,600\,\rho v_\text{avg}$ where $v$ and $\rho$ are in SI units and $G$ is in \([\text{kg.hr}^{-1}\text{.m}^{-2}]\) already
+	In all cases here: $G = 3\,600\,\rho v_\text{avg}$ where $v$ and $\rho$ are in SI units and $G$ is in \([\text{kg.hr}^{-1}\text{.m}^{-2}]\) already
 	\begin{enumerate}
 		\item	Parallel flow to surface:
 		\begin{itemize}
@@ -664,7 +668,7 @@
 \end{frame}
 
 \begin{frame}\frametitle{Some equipment examples: Shelf/tray dryer}
-	We will see more equipment examples next.
+	%We will see more equipment examples next.
 	\begin{center}
 		\includegraphics[width=\textwidth]{\imagedir/separations/drying/tray-dryer-Seader-p728.png}
 	\end{center}
@@ -677,7 +681,8 @@
 	\end{frame}
 }{}
 
-% 2014: fix up this slide to reveal less of the answer. Students should plan it themselves
+% 2015: fix up this slide to reveal less of the answer. Students should plan it themselves
+% 2015: split the slide into two parts: Q1 to 4 and then Q5 on a separate slide
 \begin{frame}\frametitle{Filter cake drying example}
 	\begin{enumerate}
 		\item	What is the humidity of the incoming air stream? \visible<2->{\\{\scriptsize \color{myOrange}{[$\psi$ = \iftoggle{instructor}{0.04}{\_\_\_\_\_\_} kg water/kg dry air]}}}
@@ -718,7 +723,7 @@
 	So slightly longer drying time required. No real benefit of perpendicular flow.
 
 	\vspace{12pt}
-	{\color{myGreen}What if we created spherical pellets of particles first?}
+	{\color{myGreen}What about spherical pellets of particles and using a packed bed?}
 	\begin{itemize}
 		\item	if $N_{Re}<350$, then $h = 0.214 \dfrac{G^{0.49}}{d_p^{0.51}}$
 		\item	if $N_{Re}\geq 350$, then $h = 0.151 \dfrac{G^{0.59}}{d_p^{0.41}}$
